@@ -1,5 +1,11 @@
-# Android build output (the Android project's own .gitignore covers the rest,
-# including the release keystore and its passwords)
+# Release signing key and its passwords -- must never be committed.
+# (Backup copies live in "Important Files"; the Android project's own
+# .gitignore covers its keystore/ folder and keystore.properties.)
+Important Files/
+*.jks
+*.keystore
+
+# Android build output
 LetsSing_Android_Project/app/build/
 LetsSing_Android_Project/.artifacts/
 
