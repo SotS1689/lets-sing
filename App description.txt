@@ -1,0 +1,8 @@
+Let's sing app:
+Goal: android app to help people learn to sing harmonies on hymns
+Features
+Midi for every hymn
+Searchable or browsable (alphabetically or in hymnal order)
+Able to adjust volume for each part (soprano, alto, tenor, bass)
+Displays lyrics in time with the music (like karaoke)
+Source midi and lyrics from the Trinity Hymnal (1990 revision)

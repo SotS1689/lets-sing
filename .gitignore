@@ -1,0 +1,20 @@
+# Android build output (the Android project's own .gitignore covers the rest,
+# including the release keystore and its passwords)
+LetsSing_Android_Project/app/build/
+LetsSing_Android_Project/.artifacts/
+
+# Web app
+web/node_modules/
+web/dist/
+
+# Python
+__pycache__/
+*.pyc
+
+# Old timestamped data backups -- git history replaces these from here on
+# (the files themselves are left on disk)
+hymns_data.json.*
+LetsSing_Android_Project/app/src/main/assets/hymns_data.json.*
+
+# Local tool state
+.claude/

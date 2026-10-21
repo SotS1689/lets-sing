@@ -1,0 +1,18 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Standalone JDK vendored for this project (see gradle.properties) --
+# large, machine-fetchable, doesn't belong in version control.
+/.tools/
+
+# Release signing key and its passwords -- must never be committed.
+/keystore/
+keystore.properties
