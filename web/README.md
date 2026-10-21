@@ -37,9 +37,16 @@ unchanged: edit the root JSON / add MIDI files as before, then build.
   change replaces the whole cache — no stale MIDI files.
 - Icons: `python scripts/make_icons.py` redraws them from the Android launcher artwork.
 
+## Publishing
+
+The live site is **https://sots1689.github.io/lets-sing/**. Every push to
+`main` that changes `web/`, `hymns_data.json` or the Android MIDI folder
+rebuilds and republishes it automatically (`.github/workflows/pages.yml`;
+progress shows in the repo's **Actions** tab, usually done in about a minute).
+Installed copies pick up the new version the next time they're opened online.
+
 ## Testing on a phone
 
 Audio worklets and offline support only work over **HTTPS** (or on
 `localhost`), so opening the dev server from a phone by its local IP address
-won't play sound. To try it on a phone, deploy `dist/` to an HTTPS host such
-as GitHub Pages.
+won't play sound. Test on a phone with the live site above.
