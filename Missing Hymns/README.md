@@ -1,5 +1,9 @@
 # Hymn database workflow
 
+> Only the ongoing intake tool lives here now. The one-off research and MIDI
+> fix-up scripts, their data, and backups were moved (2026-10-21) to
+> `..\..\Let's Sing App - Archive\Missing Hymns\`, same file names.
+
 Three files, all local — no AI calls needed after today.
 
 - **`hymns_data.json`** — your database (also fixed a stray trailing comma

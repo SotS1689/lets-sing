@@ -1,5 +1,10 @@
 # Psalm database workflow
 
+> Only the ongoing intake tool (`compile_psalms.py`, `Psalms_To_Add.xlsx`) and
+> `full_1912_psalter_index.json` live here now. The other scripts and data
+> this README mentions (MIDI sourcing, research output, backups) were moved
+> (2026-10-21) to `..\..\Let's Sing App - Archive\Psalms\`, same file names.
+
 Adds all 150 metrical Psalms into the same `hymns_data.json` the app already
 seeds from, using the same spreadsheet-intake pattern as
 [`Missing Hymns/compile_hymns.py`](../Missing%20Hymns/compile_hymns.py).
