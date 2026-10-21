@@ -1,0 +1,20 @@
+{
+  "name": "lets-sing-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "prepare-content": "node scripts/prepare-content.mjs",
+    "build-soundfont": "node scripts/build-soundfont.mjs",
+    "dev": "npm run prepare-content && vite",
+    "build": "npm run prepare-content && vite build && node scripts/stamp-sw.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "spessasynth_lib": "4.3.14"
+  },
+  "devDependencies": {
+    "spessasynth_core": "4.3.22",
+    "vite": "8.3.5"
+  }
+}

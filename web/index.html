@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Let's Sing</title>
+    <meta name="description" content="Learn your part: hymns and psalms in four-part harmony with a volume control for each voice.">
+    <meta name="theme-color" content="#B71C1C">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <button class="icon-btn" id="back" aria-label="Back" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20z"/></svg>
+        </button>
+        <h1 id="page-title">Let's Sing</h1>
+        <button class="icon-btn" id="theme-toggle" aria-label="Change theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18V3z" /><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </button>
+        <a class="icon-btn" id="support" href="https://buymeacoffee.com/reformedretrieval"
+           target="_blank" rel="noopener" aria-label="Support" title="Support">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </a>
+    </header>
+    <main id="app"></main>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>

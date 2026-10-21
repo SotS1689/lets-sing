@@ -1,0 +1,253 @@
+/* Colours follow the Android app's theme (ui/theme/Color.kt). */
+:root {
+    --primary: #4A5D6B;
+    --on-primary: #FFFFFF;
+    --primary-container: #CFE3F2;
+    --secondary: #8A6D3B;
+    --bg: #FBFAF7;
+    --surface: #FFFFFF;
+    --text: #1B1C1B;
+    --text-2: #44483F;
+    --line: #E1E3E0;
+    --brand: #B71C1C;
+    --on-brand: #FFFFFF;
+    color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --primary: #A8CADE;
+        --on-primary: #163240;
+        --primary-container: #304A58;
+        --secondary: #DABE8B;
+        --bg: #14161A;
+        --surface: #1D2024;
+        --text: #E3E2DF;
+        --text-2: #C5C7BE;
+        --line: #2E3238;
+        --brand: #7F1414;
+        color-scheme: dark;
+    }
+}
+:root[data-theme="dark"] {
+    --primary: #A8CADE;
+    --on-primary: #163240;
+    --primary-container: #304A58;
+    --secondary: #DABE8B;
+    --bg: #14161A;
+    --surface: #1D2024;
+    --text: #E3E2DF;
+    --text-2: #C5C7BE;
+    --line: #2E3238;
+    --brand: #7F1414;
+    color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: inherit; }
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-height: 56px;
+    padding: env(safe-area-inset-top) 8px 0 16px;
+    background: var(--brand);
+    color: var(--on-brand);
+}
+.topbar h1 {
+    flex: 1;
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.icon-btn {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-left: -8px;
+    border: 0;
+    border-radius: 50%;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+}
+#theme-toggle, #support { margin-left: 0; }
+.icon-btn:hover { background: rgb(255 255 255 / 0.12); }
+.icon-btn svg { width: 24px; height: 24px; fill: currentColor; }
+
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 16px calc(32px + env(safe-area-inset-bottom));
+}
+
+/* List */
+.search { position: sticky; top: 56px; z-index: 5; padding: 12px 0 4px; background: var(--bg); }
+.search input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+}
+.search input:focus { outline: 2px solid var(--primary); outline-offset: 0; }
+.count { margin: 4px 4px 0; font-size: 0.85rem; color: var(--text-2); }
+.hymn-list { list-style: none; margin: 0; padding: 0; }
+.hymn-list a {
+    display: block;
+    padding: 12px 4px;
+    border-bottom: 1px solid var(--line);
+    text-decoration: none;
+}
+.hymn-list a:hover { background: color-mix(in srgb, var(--primary) 8%, transparent); }
+.hymn-list .title { display: block; font-weight: 500; }
+.hymn-list .sub { display: block; font-size: 0.875rem; color: var(--text-2); }
+.offline { margin-top: 24px; text-align: center; }
+.hint { font-size: 0.85rem; color: var(--text-2); }
+
+/* Player */
+.hymn-head { padding: 16px 0 8px; }
+.hymn-head h2 { margin: 0; font-size: 1.4rem; line-height: 1.3; }
+.hymn-head .tune { margin: 4px 0 0; font-size: 1.05rem; color: var(--secondary); font-weight: 500; }
+.hymn-head .sub { margin: 2px 0 0; font-size: 0.875rem; color: var(--text-2); }
+
+.card {
+    margin: 12px 0;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--surface);
+}
+.card h3, .lyrics h3 { margin: 0 0 8px; font-size: 1rem; }
+
+input[type="range"] { width: 100%; margin: 0; accent-color: var(--primary); }
+
+/* Player controls: one compact panel that stays under the top bar while
+   you scroll the lyrics */
+.controls {
+    position: sticky;
+    top: 64px;
+    z-index: 4;
+    display: grid;
+    gap: 10px;
+    padding: 10px 12px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
+}
+.transport { display: flex; align-items: center; gap: 8px; }
+.mini-btn {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+}
+.mini-btn.primary { width: 36px; height: 36px; border: 0; background: var(--primary); color: var(--on-primary); }
+.mini-btn svg { width: 18px; height: 18px; fill: currentColor; }
+.mini-btn:disabled { opacity: 0.4; cursor: default; }
+.times { flex: none; font-size: 0.75rem; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.status { margin: -4px 0 0; text-align: center; font-size: 0.8rem; color: var(--text-2); }
+.status:empty { display: none; }
+
+/* S A T B: the letter turns the part on/off, the slider under it sets its volume */
+.parts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.part { display: grid; justify-items: center; gap: 4px; }
+.part-toggle {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--on-primary);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+.part-toggle[aria-pressed="false"] {
+    background: transparent;
+    color: var(--text-2);
+    border-color: var(--line);
+    text-decoration: line-through;
+}
+.part.is-off input[type="range"] { opacity: 0.35; }
+
+/* Instrument, tempo, pitch on one line (wraps on narrow phones) */
+.settings { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.settings select {
+    min-height: 32px;
+    padding: 0 8px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.875rem;
+}
+.stepper { display: flex; align-items: center; gap: 4px; font-size: 0.875rem; }
+.stepper-value { display: grid; justify-items: center; min-width: 2.8rem; line-height: 1.15; }
+.stepper-label { font-size: 0.7rem; color: var(--text-2); }
+.stepper button {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+.stepper button:disabled { opacity: 0.35; cursor: default; }
+.stepper output { font-variant-numeric: tabular-nums; }
+
+.lyrics { padding: 8px 4px; }
+.lyrics p { margin: 0 0 16px; white-space: pre-line; }
+.lyrics .credits { font-size: 0.8rem; color: var(--text-2); }
+
+.btn {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 20px;
+    background: var(--primary);
+    color: var(--on-primary);
+    font: inherit;
+    cursor: pointer;
+}
+.btn:disabled { opacity: 0.5; }
+.message { padding: 24px 0; }
+
+.toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(24px + env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: var(--text);
+    color: var(--bg);
+    font-size: 0.9rem;
+}
