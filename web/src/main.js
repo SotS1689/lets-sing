@@ -61,12 +61,15 @@ const fmtPitch = (n) => (n > 0 ? `+${n}` : String(n));
 
 const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
-function toast(message) {
+/** Shows a short message; ms = 0 keeps it up until the caller removes it. */
+function toast(message, ms = 1800) {
     const el = document.createElement("div");
     el.className = "toast";
+    el.setAttribute("role", "status");
     el.textContent = message;
     document.body.append(el);
-    setTimeout(() => el.remove(), 1800);
+    if (ms) setTimeout(() => el.remove(), ms);
+    return el;
 }
 
 // ---- Data -------------------------------------------------------------------
@@ -91,11 +94,7 @@ async function showList() {
                    autocomplete="off" aria-label="Search hymns" value="${esc(searchText)}">
         </div>
         <p class="count" id="count"></p>
-        <ul class="hymn-list" id="list"></ul>
-        <div class="offline" id="offline" hidden>
-            <button class="btn" id="offline-btn">Download all hymns for offline use</button>
-            <p class="hint" id="offline-status"></p>
-        </div>`;
+        <ul class="hymn-list" id="list"></ul>`;
 
     const list = document.getElementById("list");
     const count = document.getElementById("count");
@@ -119,46 +118,83 @@ async function showList() {
         render();
     });
     window.scrollTo(0, listScroll);
-
-    setUpOfflineDownload(hymns);
 }
 
-// Fetching every file through the service worker stores it in its cache.
-function setUpOfflineDownload(hymns) {
-    if (!navigator.serviceWorker) return;
-    if (!navigator.serviceWorker.controller) {
-        // First visit: the worker takes over a moment after the page loads
-        navigator.serviceWorker.addEventListener("controllerchange", () => {
-            if (!location.hash.startsWith("#/hymn/")) setUpOfflineDownload(hymns);
-        }, { once: true });
-        return;
+// ---- Download all for offline (top bar arrow) --------------------------------
+// Fetching a file through the service worker stores it in its cache. Whether
+// everything is downloaded is checked against that cache itself, so the arrow
+// stays truthful after an update replaces the cache.
+
+const downloadBtn = document.getElementById("download");
+const DOWNLOAD_ICONS = {
+    todo: "M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z",
+    done: "M5 20h14v-2H5v2zm4.6-5.6L5.4 10.2 6.8 8.8l2.8 2.8 7.6-7.6 1.4 1.4-9 9z",
+};
+const DOWNLOAD_LABELS = {
+    todo: "Download all hymns for offline use",
+    busy: "Downloading hymns…",
+    done: "All hymns downloaded for offline use",
+};
+
+function setDownloadState(state) {
+    downloadBtn.dataset.state = state;
+    downloadBtn.setAttribute("aria-label", DOWNLOAD_LABELS[state]);
+    downloadBtn.title = DOWNLOAD_LABELS[state];
+    if (state !== "busy") downloadBtn.querySelector("path").setAttribute("d", DOWNLOAD_ICONS[state]);
+}
+
+async function offlineFiles() {
+    const hymns = await hymnsPromise;
+    return [...new Set(hymns.map((h) => h.midi).filter(Boolean))]
+        .map((f) => `./midi/${encodeURIComponent(f)}`)
+        .concat("./soundfont/instruments.sf2");
+}
+
+async function missingFiles() {
+    const missing = [];
+    for (const url of await offlineFiles()) {
+        if (!(await caches.match(url, { ignoreSearch: true, ignoreVary: true }))) missing.push(url);
     }
-    const box = document.getElementById("offline");
-    const btn = document.getElementById("offline-btn");
-    const status = document.getElementById("offline-status");
-    box.hidden = false;
-    if (store.get("offlineDone", false)) status.textContent = "Downloaded. Tap again to refresh.";
-    btn.addEventListener("click", async () => {
-        btn.disabled = true;
-        const files = [...new Set(hymns.map((h) => h.midi).filter(Boolean))].map(
-            (f) => `./midi/${encodeURIComponent(f)}`
-        );
-        files.push("./soundfont/instruments.sf2");
-        let done = 0, failed = 0;
-        const next = async () => {
-            while (files.length) {
-                const url = files.pop();
-                try { if (!(await fetch(url)).ok) failed++; } catch { failed++; }
-                done++;
-                status.textContent = `Downloading… ${done} files`;
-            }
-        };
-        await Promise.all(Array.from({ length: 6 }, next));
-        status.textContent = failed ? `${failed} files failed. Check your connection and try again.` : "Downloaded. Every hymn now works offline.";
-        if (!failed) store.set("offlineDone", true);
-        btn.disabled = false;
-    });
+    return missing;
 }
+
+async function downloadAll() {
+    if (!navigator.onLine) return toast("Connect to the internet to download the hymns.", 3000);
+    setDownloadState("busy");
+    const files = await missingFiles();
+    const total = files.length;
+    const progress = toast("Downloading hymns…", 0);
+    let done = 0;
+    const next = async () => {
+        while (files.length) {
+            try { await fetch(files.pop()); } catch { /* counted by the re-check below */ }
+            progress.textContent = `Downloading hymns… ${++done} of ${total}`;
+        }
+    };
+    await Promise.all(Array.from({ length: 6 }, next));
+    progress.remove();
+    const failed = (await missingFiles()).length;
+    setDownloadState(failed ? "todo" : "done");
+    toast(failed
+        ? `${failed} files didn't download. Check your connection and tap the arrow again.`
+        : "All hymns downloaded. The app now works offline.", 3500);
+}
+
+downloadBtn.addEventListener("click", () => {
+    const state = downloadBtn.dataset.state;
+    if (state === "busy") return;
+    if (state === "done") return toast("All hymns are downloaded. The app works offline.", 2500);
+    downloadAll();
+});
+
+// Only offered once the service worker (production builds) is in control;
+// on a first visit it takes over a moment after the page loads.
+async function showDownloadButton() {
+    downloadBtn.hidden = false;
+    setDownloadState((await missingFiles()).length ? "todo" : "done");
+}
+if (navigator.serviceWorker?.controller) showDownloadButton();
+else navigator.serviceWorker?.addEventListener("controllerchange", showDownloadButton, { once: true });
 
 // ---- Player screen ----------------------------------------------------------
 

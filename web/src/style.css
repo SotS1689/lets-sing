@@ -86,7 +86,9 @@ a { color: inherit; }
     color: inherit;
     cursor: pointer;
 }
-#theme-toggle, #support { margin-left: 0; }
+#theme-toggle, #support, #download { margin-left: 0; }
+#download[data-state="busy"] svg { animation: pulse 1s ease-in-out infinite alternate; }
+@keyframes pulse { from { opacity: 1; } to { opacity: 0.3; } }
 .icon-btn:hover { background: rgb(255 255 255 / 0.12); }
 .icon-btn svg { width: 24px; height: 24px; fill: currentColor; }
 
@@ -119,7 +121,6 @@ main {
 .hymn-list a:hover { background: color-mix(in srgb, var(--primary) 8%, transparent); }
 .hymn-list .title { display: block; font-weight: 500; }
 .hymn-list .sub { display: block; font-size: 0.875rem; color: var(--text-2); }
-.offline { margin-top: 24px; text-align: center; }
 .hint { font-size: 0.85rem; color: var(--text-2); }
 
 /* Player */
