@@ -1,0 +1,16 @@
+% Source: transcribed from the app's own MIDI (howard_cuthbert.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:HOWARD
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:C
+[V:S] E3/4 F1/4 | G2 A | G2 c | A G F | F E E | D2 G | A G ^F | G2 G | c2 d | e d c | c B A | G2 c3/4 A1/4 | G2 A | G3/4 F1/4 E D | C3 |]
+[V:A] C3/4 D1/4 | E2 F | E2 G | F E D | D C C | B,2 D | E D D | D2 D | G2 G | G F E | E G F | E2 E3/4 F1/4 | E3/4 F1/4 G C | C3/4 D1/4 C B, | C3 |]
+[V:T] G, | G,3/2 C/ C | C2 C | C G, G, | G,2 G, | G,2 D | C B, A, | B,2 B, | C2 B, | C G, G, | G,2 C | C2 C | C2 C | C3/4 A,1/4 G, F, | E,3 |]
+[V:B] C, | C,2 C, | C,2 E, | F, G, G,, | C,2 C, | G,2 B,, | C, D, D, | G,,2 G,3/4 F,1/4 | E,2 D, | C,2 C, | C,2 C, | C,2 C, | C,3/4 D,1/4 E, F, | E,3/4 F,1/4 G, G,, | C,3 |]

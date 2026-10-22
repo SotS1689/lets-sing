@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (culross_satb.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:CULROSS
+C:Scottish Psalter, 1635
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Am
+[V:S] E2 | A c B A | ^G A B2 | E2 A ^G | A B c2 | G2 c e | d c B A | ^G2 E2 | A c B B | A4 |]
+[V:A] C2 | E E E E | E/ D/ C E2 | B,2 E E | E G G2 | E2 G G | G E F D | E2 z2 | E E F E/ D/ | C4 |]
+[V:T] A,2 | A, A, ^G, A, | E, A, ^G,2 | ^G,2 A, B, | C D E2 | C2 C C | B, C D A, | B,2 ^G,2 | A, A, A, ^G, | A,4 |]
+[V:B] A,,2 | C, A,, E, C, | B,, A,, E,2 | E,2 C, E, | A, G, C,2 | C,2 E, C, | G, A, D, F, | E,2 E,3/2 D,/ | C, A,, D, E, | A,,4 |]

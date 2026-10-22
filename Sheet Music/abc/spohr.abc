@@ -1,0 +1,16 @@
+% Source: transcribed from the app's own MIDI (spohr.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:SPOHR
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] G | B2 B | d2 G | B2 A | G2 G | e d B | c2 d | B3- | B2 B | A2 ^G | A2 B | c2 e | d2 c | B2 c | A2 A | G3 |]
+[V:A] D | G2 G | B2 G | G2 F | D2 G | G d G | G2 D | D3- | D2 D | E2 E | E2 E | E2 E | F2 D | D2 E | D2 D | B,3 |]
+[V:T] B, | D2 E | D2 E | D2 D | B,2 B, | C B, D | C2 A, | G,3- | G,2 G, | C2 B, | C2 B, | A,2 A, | A,2 A, | G,2 G, | G, E, F, | G,3 |]
+[V:B] G, | G,2 E, | B,,2 C, | D,2 D, | G,2 G, | C, G, G, | E,2 F, | G,3- | G,2 G, | C,2 E, | A,2 ^G, | A,2 C, | D,2 F, | G,2 C, | D, E, D, | G,,3 |]

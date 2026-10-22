@@ -1,0 +1,16 @@
+% Source: transcribed from the app's own MIDI (manoah.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:MANOAH
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] G/ A/ | B2 A | G2 F | F2 E | E2 A/ B/ | c2 B | A2 G | G3 | F2 D | B2 A | c2 B | e2 B | d c A | G2 D | B2 A | G3 |]
+[V:A] G/ A/ | G2 E | E2 D | C2 C | C2 E | E2 E | E2 E | D3 | D2 C | B, D C | E2 D | E2 E | E2 E | D2 D | G2 D | D3 |]
+[V:T] B,/ C/ | D2 C | B,2 G, | G,2 G, | G,2 E,/ ^G,/ | A,2 ^G, | A,2 ^A, | B,3 | A,2 F, | G,2 G, | G,2 G, | G,2 ^G, | A,2 A, | B,2 B, | D2 C | B,3 |]
+[V:B] G, | G,2 G, | E,2 B,, | C,2 C, | C,2 C,/ B,,/ | A,,2 B,, | C,2 ^C, | D,3 | D,2 D, | G,,2 G,, | G,,2 G,, | C,2 E, | A,,2 C, | D,2 D, | D,2 D, | G,,3 |]

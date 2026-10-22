@@ -1,0 +1,16 @@
+% Source: transcribed from the app's own MIDI (resignation.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:RESIGNATION
+M:2/2
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Bb
+[V:S] F | F2 G F | F2 D F | G2 B G | F3 F | B2 c d | G2 c B | A2 B G | F3 F | F2 G F | F2 D F | G2 B G | F3 B | d2 c B | e2 d c | B2 A A | B4 |]
+[V:A] D | D2 E D | D2 B, D | E2 G E | D3 D | F2 F F | E2 G G | F2 G =E | F3 D | D2 E D | D2 B, D | E2 G E | D3 D | F2 F F | G2 F G | F2 E E | D4 |]
+[V:T] B, | B,2 B, B, | B,2 B, B, | B,2 B, B, | B,3 B, | B,2 A, B, | B,2 G, C | C2 C B, | A,3 B, | B,2 B, B, | B,2 F, B, | B,2 B, B, | B,3 B, | B,2 A, B, | G, C B, B, | D2 C C | B,4 |]
+[V:B] B,, | B,,2 B,, B,, | B,,2 B,, B,, | E,2 E, E, | B,,3 B,, | D,2 C, B,, | E,2 E, =E, | F,2 C, C, | F,3 B,, | B,,2 B,, B,, | B,,2 B,, B,, | E,2 E, E, | B,,3 B,, | B,,2 C, D, | C,2 D, E, | F,2 F, F, | B,,4 |]

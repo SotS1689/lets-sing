@@ -49,7 +49,7 @@ export async function loadScore(host, url, { words = true, verses = true, view =
             // runs on into what's coming instead of jumping back to its start. One row
             // of words per time through. No tempo mark: the Tempo control sets the pace
             const passes = state.verse < lastVerse ? [state.verse, state.verse + 1] : [state.verse];
-            const shown = stripAbc(abc, passes.map(wordsFor)).replace(/\[Q:[^\]]*\]/g, "").replace(/^Q:.*$/gm, "");
+            const shown = stripAbc(abc, passes.map(wordsFor)).replace(/\[Q:[^\]]*\]/g, "").replace(/^Q:.*(\r?\n|$)/gm, ""); // the whole line: a blank line would end the tune
             const previousWidth = state.passWidth;
             Object.assign(state, drawStrip(host, shown), { passes: passes.length });
             // A single time through (the last verse) can't measure itself, but the

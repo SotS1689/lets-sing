@@ -1,0 +1,16 @@
+% Source: transcribed from the app's own MIDI (vox_dilecti.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:VOX DILECTI
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Gm
+[V:S] D | z G G [AF] | B3/2 B/ [AF] A | G G G G | ^F3 D | D G G A | B3/2 c/ A d | c B A G | D3 (D/ C/) | D =B A G | G =E D D | G (A/ =B/) c B/ A/ | A3 A | d3/2 c/ =B B | =e3/2 d/ c A | G =B d3/2 ^F/ | G4 |]
+[V:A] D | [DB,]3 C | [FD]2 C E | D D C E | D3 D | D D E E | D3/2 D/ D D | G D E =E | D3 D/ C/ | =B, D C B, | =E C =B, A, | =B, C/ D/ =E/ ^F/ G | ^F3 D | D3/2 D/ D =E | =E3/2 E/ E E/ ^F/ | G G ^F3/2 D/ | D4 |]
+[V:T] D, | [G,D,]3 [A,F,] | B,3/2 B,/ [B,F,] C | B, B, G, C | A,3 A, | B, B, B, C | B, G, A, A, | G, G, A, A,/ G,/ | ^F,3 =B,/ A,/ | G, G,,/ D,/ =E,/ ^F,/ G, | G, G, G, A, | G, G,/ ^F,/ G,/ A,/ =B,/ C/ | D3 ^F,/ G,/ | A,3/2 A,/ G, ^G,/ A,/ | =B,3/2 B,/ A, C | =B, D C3/2 C/ | =B,4 |]
+[V:B] D, | G,,3 F,, | [F,B,,]2 F,, F, | G, G, E, C, | D,3 ^F, | G, G, E, C, | G,, G, F, F, | E, D, C, ^C, | D,3 D, | G, G,,/ G,,/ G,, G,, | C, =E, G, ^F, | =E, E,/ D,/ C, G, | D,3 D,/ =E,/ | ^F,3/2 F,/ G, =E,/ F,/ | ^G,3/2 G,/ A, C, | D, D, D,3/2 D,/ | G,,4 |]

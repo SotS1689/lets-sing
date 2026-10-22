@@ -1,0 +1,16 @@
+% Source: transcribed from the app's own MIDI (invitation_wallace.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:INVITATION
+M:2/2
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:E
+[V:S] G | G2 G2 | A3 G | G2 F2 | F3 F | B2 F2 | G2 A2 | G3 A | B2 B2 | e3 d | d2 c2 | c3 c | B3 G | G2 F2 | E4 |]
+[V:A] E | E2 E2 | E3 E | E2 E2 | D3 D | E2 D2 | E2 D2 | E3 D | E2 E2 | E3 F | E2 E2 | E3 E | E3 E | D2 D2 | E4 |]
+[V:T] B, | B,2 B, =C | C3 B, | ^A,2 A,2 | B,3 B, | B,2 B,2 | B,2 B,2 | B,3 B, | B,2 B,2 | B,3 =C | C2 A,2 | A,3 =G, | G,3 B, | B,2 A,2 | G,4 |]
+[V:B] E, | E,2 E,2 | E,3 E, | C,2 C,2 | B,,3 A, | G,2 A,2 | G,2 F,2 | E,3 F, | G,2 G,2 | G,3 G, | A,2 A,,2 | A,,3 ^A,, | B,,3 B,, | B,,2 B,,2 | E,4 |]

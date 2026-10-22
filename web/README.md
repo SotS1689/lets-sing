@@ -55,6 +55,10 @@ switched on. The design follows the #doreancon hymnal player
   which converts them (`nwc.mjs`; moved into the MIDI's key where the Cyber
   Hymnal's MIDI is a key away from its score) and keeps one only when every part
   of our MIDI follows it note for note. Each starts with a `% Source:` line.
+  Tunes none of those sources has are written out from our own MIDI file by
+  `python "../Sheet Music/transcribe_midi.py" <hymn ids>` (after the svrbc
+  psalter's `tools/midi_to_abc.py`), slurring the melody only where it's plain
+  which notes share a syllable; otherwise the score shows the notes alone.
   To add a score from elsewhere, drop it in with the matching name.
 - **Words under the notes** for every verse, not only those the score sets:
   `scripts/underlay.mjs` sets the hymn's own words under the notes, following a

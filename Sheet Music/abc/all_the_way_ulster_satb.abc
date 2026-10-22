@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (all_the_way_ulster_satb.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:ULSTER (ALL THE WAY)
+C:Robert Lowry, 1875
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] B3/4 B1/4 | B3/2 B/ A/ G/ | D G G/ B/ | A3/2 F/ G/ A/ | B2 B3/4 B1/4 | c3/2 B/ A/ G/ | B A A/ A/ | A3/2 E/ F/ G/ | F2 E/ D/ | G3/2 A/ G/ E/ | D G G/ A/ | B3/2 G/ c/ B/ | A2 B/ c/ | d3/2 B/ A/ G/ | A G F/ E/ | D/ G/ B A | B2 B/ c/ | d3/2 B/ A/ G/ | A G F/ E/ | D/ G/ B A | G3 |]
+[V:A] D3/4 D1/4 | D3/2 D/ C/ B,/ | B, B, B,/ D/ | D3/2 D/ D/ D/ | D2 D3/4 D1/4 | E3/2 D/ C/ B,/ | D D D/ D/ | ^C3/2 C/ C/ C/ | D2 C/ C/ | B,3/2 C/ B,/ C/ | B, B, D/ D/ | D3/2 B,/ E/ D/ | D2 D/ D/ | D3/2 D/ D/ D/ | E E D/ C/ | B,/ D/ G F | G2 D/ D/ | D3/2 D/ D/ D/ | E E D/ C/ | B,/ D/ G F | D3 |]
+[V:T] G,3/4 G,1/4 | G,3/2 G,/ E,/ D,/ | G, D, D,/ G,/ | F,3/2 A,/ G,/ F,/ | G,2 G,3/4 G,1/4 | G,3/2 G,/ F,/ G,/ | G, F, F,/ F,/ | E,3/2 G,/ A,/ B,/ | A,2 A,/ F,/ | G,3/2 G,/ G,/ G,/ | G, D, G,/ F,/ | G,3/2 G,/ G,/ G,/ | F,2 G,/ A,/ | B,3/2 G,/ F,/ G,/ | G, E, G,/ G,/ | G,/ B,/ D D | D2 G,/ A,/ | B,3/2 G,/ F,/ G,/ | G, C A,/ G,/ | G,/ B,/ D C | B,3 |]
+[V:B] G,,3/4 G,,1/4 | G,,3/2 G,,/ G,,/ G,,/ | G,, G,, G,,/ G,,/ | D,3/2 C,/ B,,/ A,,/ | G,,2 z | z2 D,/ E,/ | D, D, D,/ D,/ | A,,3/2 A,,/ A,,/ A,,/ | D,2 D,/ D,/ | G,,3/2 G,,/ G,,/ G,,/ | G,, G,, B,,/ D,/ | z3 | D,2 z/ G,/ | G,3/2 G,,/ A,,/ B,,/ | C, C, C,/ C,/ | D,/ D,/ D, D, | G,2 z/ G,/ | G,3/2 G,,/ A,,/ B,,/ | C, C, C,/ C,/ | D,/ D,/ D, D, | G,3 |]
