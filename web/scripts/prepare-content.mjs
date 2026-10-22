@@ -21,7 +21,9 @@ rmSync(`${OUT}/midi`, { recursive: true, force: true });
 mkdirSync(`${OUT}/midi`, { recursive: true });
 
 // Sheet music, for the hymns that have a score (see build-scores.mjs)
-const scores = buildScores(Object.fromEntries(hymns.map((h) => [midiFile(h), h.verses || []])), MIDI_SRC);
+const versesOf = {};
+for (const h of hymns) (versesOf[midiFile(h)] ??= []).push(h.verses || []);
+const scores = buildScores(versesOf, MIDI_SRC);
 
 // A score is the tune's: hymns sharing a tune share its MIDI file and score.
 // The words set under its notes are shown only when they are this hymn's own,

@@ -101,14 +101,14 @@
     "midi_url": "http://openhymnal.org/Midi/A_Hymn_of_Glory_Let_Us_Sing-Lasst_Uns_Erfreuen.mid",
     "mp3_url": "http://openhymnal.org/Mp3/A_Hymn_of_Glory_Let_Us_Sing-Lasst_Uns_Erfreuen.mp3",
     "verses": [
-      "1. A hymn of glory let us sing!\nNew hymns throughout the world shall ring:\nAlleluia! Alleluia!\nChrist by a way none ever trod,\nAscends unto the throne of God.\nAlleluia! Alleluia! Alleluia! Alleluia! Alleluia!",
-      "2. The angels say to the elev'n,\n\"Why stand ye gazing into heav'n?\"\nAlleluia! Alleluia!\nThis is the Savior This is He!\nJesus has triumphed gloriously.\nAlleluia! Alleluia! Alleluia! Alleluia! Alleluia!",
-      "3. Again shall ye behold Him so\nAs ye today have seen Him go;\nAlleluia! Alleluia!\nCalm soaring through the radiant sky,\nMounting its dazzling summits high.\nAlleluia! Alleluia! Alleluia! Alleluia! Alleluia!",
-      "4. May our affections there do tend,\nAnd with unwearied hearts ascend,\nAlleluia! Alleluia!\nToward Thy kingdom's throne where Thou\nAs in our faith are seated now.\nAlleluia! Alleluia! Alleluia! Alleluia! Alleluia!",
-      "5. Be Thou our present joy O Lord!\nWho will be ever our reward,\nAlleluia! Alleluia!\nAnd, as the countless ages flee,\nMay all our glory be in Thee!\nAlleluia! Alleluia! Alleluia! Alleluia! Alleluia!",
-      "6. Δ O risen Christ ascended Lord.\nAll praise to Thee let earth accord,\nAlleluia! Alleluia!\nWho are while endless ages run,\nWith Father and with Spirit One.\nAlleluia! Alleluia! Alleluia! Alleluia! Alleluia!"
+      "1. A hymn of glory let us sing\nNew songs throughout the world shall ring\nAlleluia, Alleluia.\nChrist, by a road before untrod\nAscendeth to the throne of God.\nAlleluia, Alleluia, Alleluia, Alleluia, Alleluia.",
+      "2. To whom the angels drawing nigh,\nWhy stand and gaze upon the sky?\nAlleluia, Alleluia.\nThis is the Savior, thus they say.\nThis is His noble triumph day.\nAlleluia, Alleluia, Alleluia, Alleluia, Alleluia.",
+      "3. Again ye shall behold Him so,\nAs ye have today seen Him go.\nAlleluia, Alleluia.\nIn glorious pomp ascending high\nUp to the portals of the sky.\nAlleluia, Alleluia, Alleluia, Alleluia, Alleluia.",
+      "4. O grant us thitherward to tend\nAnd with unwearied hearts ascend,\nAlleluia, Alleluia.\nUnto Thy kingdom's throne, where Thou\nAs is our faith, art seated now,\nAlleluia, Alleluia, Alleluia, Alleluia, Alleluia.",
+      "5. Be Thou our joy and strong defense,\nWho art our future recompense,\nAlleluia, Alleluia.\nSo shall the light that springs from Thee\nBe ours through all eternity,\nAlleluia, Alleluia, Alleluia, Alleluia, Alleluia.",
+      "6. Δ O risen Christ, ascended Lord,\nAll praise to Thee let earth accord,\nAlleluia, Alleluia.\nWho art, while endless ages run,\nWith Father and with Spirit One,\nAlleluia, Alleluia, Alleluia, Alleluia, Alleluia."
     ],
-    "credits": "Words: The Venerable Bede, 735. Translation composite of Elizabeth Rundle Charles, 1858 and Benjamin Webb, 1854. Music: 'Lasst Uns Erfreuen' from Geistliche Kirchengesäng, Köln, 1623. Setting: Ralph Vaughan Williams, 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision."
+    "credits": "Words: The Venerable Bede, 735. Translation composite of Elizabeth Rundle Charles, 1858 and Benjamin Webb, 1854. Music: 'Lasst Uns Erfreuen' from Geistliche Kirchengesäng, Köln, 1623. Setting: Ralph Vaughan Williams, 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision. Words as given by the Cyber Hymnal."
   },
   {
     "id": 4,
@@ -139,12 +139,12 @@
     "midi_url": "http://openhymnal.org/Midi/A_Mighty_Fortress_Is_Our_God-Ein_Feste_Burg_Isorhythmic.mid",
     "mp3_url": "http://openhymnal.org/Mp3/A_Mighty_Fortress_Is_Our_God-Ein_Feste_Burg_Isorhythmic.mp3",
     "verses": [
-      "1. A mighty Fortress is our God,\nA trusty Shield and Weapon;\nHe helps us free from every need\nThat hath us now o'ertaken.\nThe old evil Foe\nNow means deadly woe;\nDeep guile and great might\nAre his dread arms in fight;\nOn Earth is not his equal.",
-      "2. With might of ours can naught be done,\nSoon were our loss effected;\nBut for us fights the Valiant One,\nWhom God Himself elected.\nAsk ye, Who is this?\nJesus Christ it is.\nOf Sabaoth Lord,\nAnd there's none other God;\nHe holds the field forever.",
-      "3. Though devils all the world should fill,\nAll eager to devour us.\nWe tremble not, we fear no ill,\nThey shall not overpower us.\nThis world's prince may still\nScowl fierce as he will,\nHe can harm us none,\nHe's judged; the deed is done;\nOne little word can fell him.",
-      "4. The Word they still shall let remain\nNor any thanks have for it;\nHe's by our side upon the plain\nWith His good gifts and Spirit.\nAnd take they our life,\nGoods, fame, child and wife,\nLet these all be gone,\nThey yet have nothing won;\nThe Kingdom ours remaineth."
+      "1. A mighty fortress is our God,\nA bulwark never failing;\nOur helper He, amid the flood\nOf mortal ills prevailing:\nFor still our ancient foe\nDoth seek to work us woe;\nHis craft and power are great,\nAnd, armed with cruel hate,\nOn earth is not his equal.",
+      "2. Did we in our own strength confide,\nOur striving would be losing;\nWere not the right Man on our side,\nThe Man of God's own choosing:\nDost ask who that may be?\nChrist Jesus, it is He;\nLord Sabaoth, His name,\nFrom age to age the same,\nAnd He must win the battle.",
+      "3. And though this world, with devils filled,\nShould threaten to undo us,\nWe will not fear, for God hath willed\nHis truth to triumph through us:\nThe Prince of Darkness grim,\nWe tremble not for him;\nHis rage we can endure,\nFor lo, his doom is sure,\nOne little word shall fell him.",
+      "4. That word above all earthly powers,\nNo thanks to them, abideth;\nThe Spirit and the gifts are ours\nThrough Him who with us sideth:\nLet goods and kindred go,\nThis mortal life also;\nThe body they may kill:\nGod's truth abideth still,\nHis kingdom is forever."
     ],
-    "credits": "Words: Martin Luther, 1529. Translation composite circa 1868 Pennsylvania Lutheran Church Book. Music: 'Ein Feste Burg (Rhythmic)' Martin Luther, 1529. Setting: \"Evangelical Lutheran Hymn-Book\", 1931. copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision."
+    "credits": "Words: Martin Luther, 1529. Translated by Frederic H. Hedge, 1853. Music: 'Ein Feste Burg (Rhythmic)' Martin Luther, 1529. Setting: \"Evangelical Lutheran Hymn-Book\", 1931. copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision."
   },
   {
     "id": 6,
@@ -154,12 +154,12 @@
     "midi_url": "http://openhymnal.org/Midi/A_Mighty_Fortress_Is_Our_God-Ein_Feste_Burg_Rhythmic.mid",
     "mp3_url": "http://openhymnal.org/Mp3/A_Mighty_Fortress_Is_Our_God-Ein_Feste_Burg_Rhythmic.mp3",
     "verses": [
-      "1. A mighty Fortress is our God,\nA trusty Shield and Weapon;\nHe helps us free from every need\nThat hath us now o'ertaken.\nThe old evil Foe\nNow means deadly woe;\nDeep guile and great might\nAre his dread arms in fight;\nOn Earth is not his equal.",
-      "2. With might of ours can naught be done,\nSoon were our loss effected;\nBut for us fights the Valiant One,\nWhom God Himself elected.\nAsk ye, Who is this?\nJesus Christ it is.\nOf Sabaoth Lord,\nAnd there's none other God;\nHe holds the field forever.",
-      "3. Though devils all the world should fill,\nAll eager to devour us.\nWe tremble not, we fear no ill,\nThey shall not overpower us.\nThis world's prince may still\nScowl fierce as he will,\nHe can harm us none,\nHe's judged; the deed is done;\nOne little word can fell him.",
-      "4. The Word they still shall let remain\nNor any thanks have for it;\nHe's by our side upon the plain\nWith His good gifts and Spirit.\nAnd take they our life,\nGoods, fame, child and wife,\nLet these all be gone,\nThey yet have nothing won;\nThe Kingdom ours remaineth."
+      "1. A mighty fortress is our God,\nA bulwark never failing;\nOur helper He, amid the flood\nOf mortal ills prevailing:\nFor still our ancient foe\nDoth seek to work us woe;\nHis craft and power are great,\nAnd, armed with cruel hate,\nOn earth is not his equal.",
+      "2. Did we in our own strength confide,\nOur striving would be losing;\nWere not the right Man on our side,\nThe Man of God's own choosing:\nDost ask who that may be?\nChrist Jesus, it is He;\nLord Sabaoth, His name,\nFrom age to age the same,\nAnd He must win the battle.",
+      "3. And though this world, with devils filled,\nShould threaten to undo us,\nWe will not fear, for God hath willed\nHis truth to triumph through us:\nThe Prince of Darkness grim,\nWe tremble not for him;\nHis rage we can endure,\nFor lo, his doom is sure,\nOne little word shall fell him.",
+      "4. That word above all earthly powers,\nNo thanks to them, abideth;\nThe Spirit and the gifts are ours\nThrough Him who with us sideth:\nLet goods and kindred go,\nThis mortal life also;\nThe body they may kill:\nGod's truth abideth still,\nHis kingdom is forever."
     ],
-    "credits": "Words: Martin Luther, 1529. Translation composite circa 1868 Pennsylvania Lutheran Church Book. Music: 'Ein Feste Burg (Rhythmic)' Martin Luther, 1529. Setting: \"Evangelical Lutheran Hymn-Book\", 1931. copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision."
+    "credits": "Words: Martin Luther, 1529. Translated by Frederic H. Hedge, 1853. Music: 'Ein Feste Burg (Rhythmic)' Martin Luther, 1529. Setting: \"Evangelical Lutheran Hymn-Book\", 1931. copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision."
   },
   {
     "id": 7,
@@ -399,10 +399,9 @@
     "title": "All the Way My Savior Leads Me",
     "tune": "ALL THE WAY",
     "verses": [
-      "1. All the way my Saviour leadeth me;\nShepherd, Friend and Guide is He;\nAnd tho’ clouds of darkness o’er me roll,\nThere is joy and sunlight in my soul.",
-      "2. All the way my Saviour leadeth me,\nNever can I doubtful be,\nFor he sweetly whispers in my hear,\n“Child, be patient, I, thy Lord, am near!” [Chorus]",
-      "3. All the way my Saviour leadeth me,\nAnd communion sweet have we;\nGrace He gives me, and such peace affords,\nThat I feel and know I’m all the Lord’s. [Chorus]",
-      "4. All the way my Saviour leadeth me,\nAnd, throughout eternity,\nI will praise Him for the love and pow’r\nThat sustains and saves me ev’ry hour. [Chorus]\nSource:\nMelodies of Salvation: a collection of psalms, hymns and spiritual songs #208"
+      "1. All the way my Savior leads me;\nWhat have I to ask beside?\nCan I doubt His tender mercy,\nWho through life has been my guide?\nHeav'nly peace, divinest comfort,\nHere by faith in Him to dwell!\nFor I know, whate'er befall me,\nJesus doeth all things well;\nFor I know, whate'er befall me,\nJesus doeth all things well.",
+      "2. All the way my Savior leads me,\nCheers each winding path I tread;\nGives me grace for every trial,\nFeeds me with the living bread.\nThough my weary steps may falter,\nAnd my soul athirst may be,\nGushing from the rock before me,\nLo! A spring of joy I see;\nGushing from the rock before me,\nLo! A spring of joy I see.",
+      "3. All the way my Savior leads me\nO the fullness of His love!\nPerfect rest to me is promised\nIn my Father's house above.\nWhen my spirit, clothed immortal,\nWings its flight to realms of day\nThis my song through endless ages—\nJesus led me all the way;\nThis my song through endless ages—\nJesus led me all the way."
     ],
     "Author": "Fanny Crosby",
     "Composer": "Robert Lowry",
@@ -740,17 +739,17 @@
     "midi_url": "http://openhymnal.org/Midi/Awake_My_Heart_With_Gladness-Auf_Auf_Mein_Herz_mit_Freuden.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Awake_My_Heart_With_Gladness-Auf_Auf_Mein_Herz_mit_Freuden.mp3",
     "verses": [
-      "1. Awake, my heart, with gladness,\nSee what today is done;\nHow after gloom and sadness,\nComes forth the glorious Sun.\nMy Savior there was laid\nWhere our bed must be made\nWhen to the realms of light\nOur spirit wings its flight.",
-      "2. They in the grave did sink Him,\nThe foe held jubilee;\nBefore he can bethink him,\nLo! Christ again is free.\nAnd \"Victory\" He cries,\nAnd waving tow'rds the skies\nHis banner, while the field\nIs by the Hero held!",
+      "1. Awake, my heart, with gladness,\nSee what today is done!\nNow, after gloom and sadness,\nComes forth the glorious Sun!\nMy Savior there was laid\nWhere our bed must be made\nWhen to the realms of light\nOur spirit wings its flight.",
+      "2. The foe in triumph shouted\nWhen Christ lay in the tomb;\nBut, lo, he now is routed,\nHis boast is turned to gloom.\nFor Christ again is free;\nIn glorious victory\nHe who is strong to save\nHas triumphed o'er the grave.",
       "3. Upon the grave is standing\nThe Hero looking round;\nThe foe, no more withstanding,\nHis weapons on the ground\nThrows down, his hellish pow'r\nTo Christ must he give o'er,\nAnd to the Victor's bands\nMust yield his feet and hands.",
-      "4. A sight it is to gladden;\nAnd fill the heart with glee,\nNo more affright or sadden\nShall aught, or take from me\nMy trust or fortitude,\nOr any precious good\nThe Savior bought for me\nIn sov'reign love and free.",
-      "5. Hell and its prince, the devil,\nOf all their pow'rs are shorn;\nNow I am safe from evil,\nAnd sin I laugh to scorn.\nGrim Death with all his might\nCannot my soul affright;\nHe is a pow'rless form,\nHowe'er he rage and storm.",
-      "6. The world against me rageth\nIts fury I disdain;\nThough bitter war it wageth\nIts work is all in vain.\nMy heart from care is free,\nMisfortune now is play,\nNo trouble troubles me,\nAnd night is bright as day.",
-      "7. I cleave now and forever\nTo Christ, a member true,\nMy Head will leave me never,\nWhate'er He passeth through.\nHe treads the world beneath\nHis feet, and conquers death\nAnd hell, and breaks sin's thrall;\nI'm with Him through it all.",
-      "8. To halls of heavenly splendor\nWith Him I penetrate;\nAnd trouble ne'er may hinder\nNor make me hesitate.\nNo enemy I fear,\nBecause my Head is near;\nMy Savior is my Shield,\nBy Him all rage is stilled.",
-      "9. He brings me to the portal\nThat opens into bliss,\nWhere graved in words immortal\nThis golden scripture is:\n\"Who's there despised with me,\nHere with me crown'd shall be;\nWho there with Me shall die,\nHere's raised with me on high!\""
+      "4. This is a sight that gladdens;\nWhat peace it doth impart!\nNow nothing ever saddens\nThe joy within my heart.\nNo gloom shall ever shake,\nNo foe shall ever take,\nThe hope which God's own Son\nIn love for me hath won.",
+      "5. Now hell, its prince, the devil\nOf all their pow'rs are shorn;\nNow I am safe from evil,\nAnd sin I laugh to scorn.\nGrim Death with all his might\nCannot my soul affright;\nHe is a pow'rless form,\nHowe'er he rave and storm.",
+      "6. The world against me rageth\nIts fury I disdain;\nThough bitter war it wageth\nIts work is all in vain.\nMy heart from care is free,\nNo trouble troubles me.\nMisfortune now is play\nAnd night is bright as day.",
+      "7. Now I will cling forever\nTo Christ, my Savior true;\nMy Lord will leave me never,\nWhate'er He passeth through.\nHe rends death's iron chain,\nHe breaks through sin and pain,\nHe shatters hell's dark thrall,\nI follow Him through all.",
+      "8. To halls of heavenly splendor\nWith Him I penetrate;\nAnd trouble ne'er may hinder\nNor make me hesitate.\nLet tempests rage at will,\nMy Savior shields me still;\nHe grants abiding peace\nAnd bids all tumult cease.",
+      "9. He brings me to the portal\nThat leads to bliss untold,\nWhereon this rhyme immortal\nIs found in script of gold:\nWho there My cross hath shared\nFinds here a crown prepared;\nWho there with Me hath died\nShall here be glorified."
     ],
-    "credits": "Words: Paul Gerhardt, 1648.  Translated by John Kelly, 1867, alt. Music: 'Auf, Auf, Mein Herz mit Freuden' Johann Crüger, 1648. Setting: \"Mehrstimmiges ChoralBuch\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision."
+    "credits": "Words: Paul Gerhardt, 1648.  Translated by John Kelly, 1867, alt. Music: 'Auf, Auf, Mein Herz mit Freuden' Johann Crüger, 1648. Setting: \"Mehrstimmiges ChoralBuch\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision. Words as given by the Cyber Hymnal in stanzas 1, 2, 4, 5, 6, 7, 8, 9."
   },
   {
     "id": 33,
@@ -818,15 +817,15 @@
     "midi_url": "http://openhymnal.org/Midi/Baptized_Into_Your_Name_Most_Holy-O_Dass_Ich_Tausend_Zungen_Hatte_Dretzel.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Baptized_Into_Your_Name_Most_Holy-O_Dass_Ich_Tausend_Zungen_Hatte_Dretzel.mp3",
     "verses": [
-      "1. Baptized into Thy Name most holy,\nO Father, Son, and Holy Ghost,\nI claim a place, though weak and lowly,\nAmong Thy seed, Thy chosen host.\nBuried with Christ and dead to sin,\nThy Spirit now shall live within.",
-      "2. My loving Father, here doth take me\nTo be henceforth His child and heir;\nMy faithful Savior, now doth make me\nThe fruit of all His sorrows share;\nMy Comforter will comfort me\nWhen darkest clouds around I see.",
-      "3. And I have vowed to fear and love Thee\nAnd to obey Thee, Lord, alone;\nI felt Thy Holy Spirit move me,\nI dared to pledge myself Thine own,\nRenouncing sin to keep the faith\nAnd war with evil unto death.",
-      "4. My faithful God, Thou failest never,\nThy cov'nant surely will abide;\nOh, cast me not away forever\nShould I transgress it on my side!\nBut if I fall hide not Thy face,\nRestore Thy child, Lord, by Thy Grace.",
-      "5. Yes, all I am and love most dearly,\nTo Thee I offer now the whole;\nO let me make my vows sincerely,\nTake full possession of my soul!\nLet naught within me, naught I own,\nServe any will save Thine alone.",
+      "1. Baptized into Thy name most holy,\nO Father, Son, and Holy Ghost,\nI claim a place, though weak and lowly,\nAmong Thy seed, Thy chosen host.\nBuried with Christ and dead to sin,\nThy Spirit now shall live within.",
+      "2. My loving Father, Thou dost take me\nTo be henceforth Thy child and heir;\nMy faithful Savior, Thou dost make me\nThe fruit of all Thy sorrows share;\nThou, Holy Ghost, wilt comfort me\nWhen darkest clouds around I see.",
+      "3. And I have vowed to fear and love Thee\nAnd to obey Thee, Lord, alone;\nBecause the Holy Ghost did move me,\nI dared to pledge myself Thine own,\nRenouncing sin to keep the faith\nAnd war with evil unto death.",
+      "4. My faithful God, Thou failest never,\nThy cov'nant surely will abide;\nOh, cast me not away forever\nShould I transgress it on my side!\nTho' I have oft my soul defiled,\nDo Thou forgive, restore, Thy child.",
+      "5. Yea, all I am and love most dearly\nI offer now, O Lord, to Thee.\nOh, let me make my vows sincerely\nAnd help me Thine own child to be!\nLet naught within me, naught I own,\nServe any will but Thine alone.",
       "6. Hence, Prince of darkness, hence forever,\nFor I belong now to my God!\n'Tis true, I sinned; but my dear Savior Hath\ncleansed me with His holy blood.\nAway, vain world, sin, leave me now,\nI turn from you; God hears my vow.",
-      "7. And never let my purpose falter,\nO Father, Son, and Holy Ghost,\nBut keep me faithful to Thine altar,\nTill Thou shalt call me from my post;\nSo unto Thee I live and die,\nAnd praise Thee evermore on high."
+      "7. And never let my purpose falter,\nO Father, Son, and Holy Ghost,\nBut keep me faithful to Thine altar\nTill Thou shalt call me from my post.\nSo unto Thee I live or die\nAnd praise Thee evermore on high."
     ],
-    "credits": "Words: Johann Jakob Rambach, 1734.  Translated by Catherine Winkworth, 1863 and August Crull, 1884. Music: 'O Dass Ich Tausend Zungen Hätte (Dretzel)' Kornelius Heinrich Dretzel, 1731. Setting: \"Mehrstimmiges ChoralBuch\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision."
+    "credits": "Words: Johann Jakob Rambach, 1734.  Translated by Catherine Winkworth, 1863 and August Crull, 1884. Music: 'O Dass Ich Tausend Zungen Hätte (Dretzel)' Kornelius Heinrich Dretzel, 1731. Setting: \"Mehrstimmiges ChoralBuch\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision. Words as given by the Cyber Hymnal in stanzas 1, 2, 3, 4, 5, 7."
   },
   {
     "id": 396,
@@ -1201,18 +1200,18 @@
     "midi_url": "http://openhymnal.org/Midi/By_Grace_Im_Saved-O_Dass_Ich_Tansend_Zungen.mid",
     "mp3_url": "http://openhymnal.org/Mp3/By_Grace_Im_Saved-O_Dass_Ich_Tansend_Zungen.mp3",
     "verses": [
-      "1. By grace I'm savedgrace free and boundless!\nMy heart, believ'st thou this or not?\nWhy tremblest thou with terror groundless?\nHas ever God a falsehood taught?\nHis Word is truethen this must be:\nBy grace there is a crown for thee.",
-      "2. By grace! our works are all rejected,\nAll claims of merit pass for naught;\nThe mighty Savior, long expected,\nTo us this blissful truth has brought,\nThat He by death redeems our race,\nAnd we are saved alone by grace.",
-      "3. By grace! mark well this phrase's meaning,\nWhen sin rolls sorrows o'er thy breast,\nWhen Satan threats with pride o'erweening,\nWhen troubled conscience sighs for rest:\nWhat reason ne'er can comprehend\nIt pleases God by grace to send.",
+      "1. By grace I'm saved, grace free and boundless;\nMy soul, believe and doubt it not;\nWhy stagger at this word of promise?\nHath Scripture ever falsehood taught?\nNay; then this word must true remain:\nBy grace thou, too, shalt Heav'n obtain.",
+      "2. By grace! None dare lay claim to merit;\nOur works and conduct have no worth,\nGod in His love sent our Redeemer,\nChrist Jesus, to this sinful earth;\nHis death did for our sins atone,\nAnd we are saved by grace alone.",
+      "3. By grace! O, mark this word of promise\nWhen thou art by thy sins oppressed,\nWhen Satan plagues thy troubled conscience,\nAnd when thy heart is seeking rest.\nWhat reason cannot comprehend\nGod by His grace to thee doth send.",
       "4. By grace His Son, on earth appearing,\nVouchsafed beneath thy woe to bend;\nHadst thou, damnation justly fearing,\nDone aught to render Him thy friend?\nWas't not that He thy welfare sought,\nAnd but by grace deliv'rance wrought?",
-      "5. By grace! this ground of our salvation\nAs long as God is true endures:\nWhat saints have penned by inspiration,\nWhat God to our poor soul secures,\nWhat all our faith must rest upon,\nIs grace, free grace through His dear Son.",
+      "5. By grace! This ground of faith is certain;\nSo long as God is true, it stands.\nWhat saints have penned by inspiration,\nWhat in His Word our God commands,\nWhat our whole faith must rest upon,\nIs grace alone, grace in His Son.",
       "6. By grace! but think not, thou who livest\nSecurely on in godless ways,\nThat thou, though all are called, receivest\nThe promised rest that wakes our praise:\nBy grace none find in heaven a place\nWho live in sin in hope of grace.",
       "7. By grace! They who have heard this sentence\nMust bid hypocrisy farewell;\nFor only after deep repentance\nThe soul what grace imports can tell;\nTo sin while grace a trifle seems,\nTo faith it bright with glory beams.",
       "8. By grace the timid hearts that languish,\nFind access to the Father's heart,\nWhen conflicts fierce and bitter anguish\nBid all their joy and hopes depart.\nWhere, oftimes, should I strength obtain,\nBid grace my anchor not remain!",
       "9. By grace! on this in death I'll rest me,\nRejoicing e'en though feeling naught;\nI know my sin it oft oppressed me\nBut Him, too, who my soul hath bought:\nMy heart exults grief flees apace\nBecause my soul is saved by grace.",
       "10. By grace! O sin and Satan hear it!\nI bear my flag of faith in hand,\nAnd pass, in spite of doubts, nor fear it,\nThe Red Sea to the promised land;\nI hold the word my Savior taught\nAs certain, whether felt or not."
     ],
-    "credits": "Words: Christian L. Scheidt, 1742. Translated by Matthias Loy, (1828-1915). Music: 'O Dass Ich Tansend Zungen' Johann Balthasar König, 1738. Setting: \"The Evangelical Lutheran Hymnal\" (Ohio Synod), 1908. copyright: public domain.  This score is a part of the Open Hymnal Project, 2007 Revision."
+    "credits": "Words: Christian L. Scheidt, 1742. Translated by Matthias Loy, (1828-1915). Music: 'O Dass Ich Tansend Zungen' Johann Balthasar König, 1738. Setting: \"The Evangelical Lutheran Hymnal\" (Ohio Synod), 1908. copyright: public domain.  This score is a part of the Open Hymnal Project, 2007 Revision. Words as given by the Cyber Hymnal in stanzas 1, 2, 3, 5."
   },
   {
     "id": 49,
@@ -1582,18 +1581,18 @@
     "midi_url": "http://openhymnal.org/Midi/Dear_Christians_One_And_All_Rejoice-Es_ist_Gewisslich_an_der_Zeit.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Dear_Christians_One_And_All_Rejoice-Es_ist_Gewisslich_an_der_Zeit.mp3",
     "verses": [
-      "1. Dear Christians, one and all rejoice,\nWith exultation springing,\nAnd with united heart and voice\nAnd holy rapture singing,\nProclaim the wonders God hath done,\nHow his right arm the vict'ry won;\nRight dearly it hath cost him.",
-      "2. Fast bound in Satan's chains I lay.\nDeath brooded darkly o'er me;\nSin was my torment night and day,\nTherein my mother bore me.\nDeeper and deeper still I fell,\nLife was become a living hell,\nSo firmly sin possessed me.",
-      "3. My good works could avail me naught,\nFor they with sin were stainéd;\nFreewill against God's judgment fought,\nAnd dead to good remainéd.\nGrief drove me to despair, and I\nHad nothing left me but to die,\nTo hell I fast was sinking.",
-      "4. God saw, in his eternal grace,\nMy sorrow out of measure;\nHe thought upon his tenderness\nTo save was his good pleasure.\nHe turn'd to me a Father's heart—\nNot small the cost to heal my smart\nHe gave his best and dearest.",
-      "5. He spake to his beloved Son:\n'Tis time to take compassion;\nThen go, bright jewel of my crown,\nAnd bring to man salvation;\nFrom sin and sorrow set him free,\nSlay bitter death for him, that he\nMay live with thee forever.",
-      "6. The Son delighted to obey,\nAnd born of Virgin mother,\nAwhile on this low earth did stay\nThat he might be my brother.\nHis mighty power he hidden bore,\nA servant's form like mine he wore,\nTo bind the devil captive.",
-      "7. To me he spake : cling fast to me,\nThou'lt win a triumph worthy:\nI wholly give myself for thee,\nI strive and wrestle for thee;\nFor I am thine, thou mine also;\nAnd where I am thou art. The foe\nShall never more divide us.",
-      "8. For he shall shed my precious blood,\nMe of my life bereaving;\nAll this I suffer for thy good;\nBe steadfast and believing.\nMy life from death the day shall win,\nMy righteousness shall bear thy sin,\nSo art thou blest forever.",
-      "9. Now to my Father I depart,\nFrom earth to heaven ascending;\nThence heavenly wisdom to impart,\nThe Holy Spirit sending.\nHe shall in trouble comfort thee,\nTeach thee to know and follow me,\nAnd to the truth conduct thee.",
-      "10. What I have done and taught, do thou\nTo do and teach endeavor;\nSo shall my kingdom flourish now,\nAnd God be praised forever.\nTake heed lest men with base alloy\nThe heavenly treasure should destroy.\nThis counsel I bequeath thee."
+      "1. Dear Christians, one and all, rejoice,\nWith exultation springing,\nAnd, with united heart and voice,\nAnd holy rapture singing,\nProclaim the wonders God hath done,\nHow His right arm the victory won;\nRight dearly it hath cost Him.",
+      "2. Fast bound in Satan's chains I lay,\nDeath brooded darkly o'er me,\nSin was my torment night and day,\nIn sin my mother bore me;\nYea, deep and deeper still I fell,\nLife had become a living hell,\nSo firmly sin possessed me.",
+      "3. My own good works availed me naught,\nNo merit they attaining;\nFree will against God's judgment fought,\nDead to all good remaining.\nMy fears increased till sheer despair\nLeft naught but death to be my share;\nThe pangs of hell I suffered.",
+      "4. But God beheld my wretched state\nBefore the world's foundation,\nAnd, mindful of His mercies great,\nHe planned my soul's salvation.\nA father's heart He turned to me,\nSought my redemption fervently:\nHe gave His dearest treasure.",
+      "5. He spoke to His belovèd Son:\n'Tis time to have compassion.\nThen go, bright Jewel of My crown,\nAnd bring to man salvation;\nFrom sin and sorrow set him free,\nSlay bitter death for him that he\nMay live with Thee forever.",
+      "6. The Son obeyed His Father's will,\nWas born of virgin mother,\nAnd God's good pleasure to fulfill,\nHe came to be my brother.\nNo garb of pomp or power He wore,\nA servant's form, like mine, He bore,\nTo lead the devil captive.",
+      "7. To me He spake: Hold fast to Me,\nI am thy rock and castle;\nThy ransom I Myself will be,\nFor thee I strive and wrestle;\nFor I am with thee, I am thine,\nAnd evermore thou shalt be Mine:\nThe foe shall not divide us.",
+      "8. The foe shall shed my precious blood,\nMe of My life bereaving.\nAll this I suffer for thy good;\nBe steadfast and believing.\nLife shall from death the victory win,\nMy innocence shall bear thy sin;\nSo art Thou blest forever.",
+      "9. Now to my Father I depart,\nThe Holy Spirit sending\nAnd, heav'nly wisdom to impart,\nMy help to thee extending.\nHe shall in trouble comfort thee,\nTeach thee to know and follow Me,\nAnd in all truth shall guide thee.",
+      "10. What I have done and taught, teach thou,\nMy ways forsake thou never;\nSo shall My kingdom flourish now\nAnd God be praised forever.\nTake heed lest men with base alloy\nThe heav'nly treasure should destroy;\nThis counsel I bequeath thee."
     ],
-    "credits": "Words: Martin Luther, 1523.  Translated by Richard Massie, 1854, alt. Music: 'Nun Freut Euch' attr. Martin Luther from Etlich Christlich Lider, Wittenberg, 1524. Setting: Johann Hermann Schein, 1627. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision."
+    "credits": "Words: Martin Luther, 1523.  Translated by Richard Massie, 1854, alt. Music: 'Nun Freut Euch' attr. Martin Luther from Etlich Christlich Lider, Wittenberg, 1524. Setting: Johann Hermann Schein, 1627. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision. Words as given by the Cyber Hymnal."
   },
   {
     "id": 69,
@@ -1603,18 +1602,18 @@
     "midi_url": "http://openhymnal.org/Midi/Dear_Christians_One_And_All_Rejoice-Nun-Freut-Euch.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Dear_Christians_One_And_All_Rejoice-Nun-Freut-Euch.mp3",
     "verses": [
-      "1. Dear Christians, one and all rejoice,\nWith exultation springing,\nAnd with united heart and voice\nAnd holy rapture singing,\nProclaim the wonders God hath done,\nHow his right arm the vict'ry won;\nRight dearly it hath cost him.",
-      "2. Fast bound in Satan's chains I lay.\nDeath brooded darkly o'er me;\nSin was my torment night and day,\nTherein my mother bore me.\nDeeper and deeper still I fell,\nLife was become a living hell,\nSo firmly sin possessed me.",
-      "3. My good works could avail me naught,\nFor they with sin were stainéd;\nFreewill against God's judgment fought,\nAnd dead to good remainéd.\nGrief drove me to despair, and I\nHad nothing left me but to die,\nTo hell I fast was sinking.",
-      "4. God saw, in his eternal grace,\nMy sorrow out of measure;\nHe thought upon his tenderness\nTo save was his good pleasure.\nHe turn'd to me a Father's heart—\nNot small the cost to heal my smart\nHe gave his best and dearest.",
-      "5. He spake to his beloved Son:\n'Tis time to take compassion;\nThen go, bright jewel of my crown,\nAnd bring to man salvation;\nFrom sin and sorrow set him free,\nSlay bitter death for him, that he\nMay live with thee forever.",
-      "6. The Son delighted to obey,\nAnd born of Virgin mother,\nAwhile on this low earth did stay\nThat he might be my brother.\nHis mighty power he hidden bore,\nA servant's form like mine he wore,\nTo bind the devil captive.",
-      "7. To me he spake : cling fast to me,\nThou'lt win a triumph worthy:\nI wholly give myself for thee,\nI strive and wrestle for thee;\nFor I am thine, thou mine also;\nAnd where I am thou art. The foe\nShall never more divide us.",
-      "8. For he shall shed my precious blood,\nMe of my life bereaving;\nAll this I suffer for thy good;\nBe steadfast and believing.\nMy life from death the day shall win,\nMy righteousness shall bear thy sin,\nSo art thou blest forever.",
-      "9. Now to my Father I depart,\nFrom earth to heaven ascending;\nThence heavenly wisdom to impart,\nThe Holy Spirit sending.\nHe shall in trouble comfort thee,\nTeach thee to know and follow me,\nAnd to the truth conduct thee.",
-      "10. What I have done and taught, do thou\nTo do and teach endeavor;\nSo shall my kingdom flourish now,\nAnd God be praised forever.\nTake heed lest men with base alloy\nThe heavenly treasure should destroy.\nThis counsel I bequeath thee."
+      "1. Dear Christians, one and all, rejoice,\nWith exultation springing,\nAnd, with united heart and voice,\nAnd holy rapture singing,\nProclaim the wonders God hath done,\nHow His right arm the victory won;\nRight dearly it hath cost Him.",
+      "2. Fast bound in Satan's chains I lay,\nDeath brooded darkly o'er me,\nSin was my torment night and day,\nIn sin my mother bore me;\nYea, deep and deeper still I fell,\nLife had become a living hell,\nSo firmly sin possessed me.",
+      "3. My own good works availed me naught,\nNo merit they attaining;\nFree will against God's judgment fought,\nDead to all good remaining.\nMy fears increased till sheer despair\nLeft naught but death to be my share;\nThe pangs of hell I suffered.",
+      "4. But God beheld my wretched state\nBefore the world's foundation,\nAnd, mindful of His mercies great,\nHe planned my soul's salvation.\nA father's heart He turned to me,\nSought my redemption fervently:\nHe gave His dearest treasure.",
+      "5. He spoke to His belovèd Son:\n'Tis time to have compassion.\nThen go, bright Jewel of My crown,\nAnd bring to man salvation;\nFrom sin and sorrow set him free,\nSlay bitter death for him that he\nMay live with Thee forever.",
+      "6. The Son obeyed His Father's will,\nWas born of virgin mother,\nAnd God's good pleasure to fulfill,\nHe came to be my brother.\nNo garb of pomp or power He wore,\nA servant's form, like mine, He bore,\nTo lead the devil captive.",
+      "7. To me He spake: Hold fast to Me,\nI am thy rock and castle;\nThy ransom I Myself will be,\nFor thee I strive and wrestle;\nFor I am with thee, I am thine,\nAnd evermore thou shalt be Mine:\nThe foe shall not divide us.",
+      "8. The foe shall shed my precious blood,\nMe of My life bereaving.\nAll this I suffer for thy good;\nBe steadfast and believing.\nLife shall from death the victory win,\nMy innocence shall bear thy sin;\nSo art Thou blest forever.",
+      "9. Now to my Father I depart,\nThe Holy Spirit sending\nAnd, heav'nly wisdom to impart,\nMy help to thee extending.\nHe shall in trouble comfort thee,\nTeach thee to know and follow Me,\nAnd in all truth shall guide thee.",
+      "10. What I have done and taught, teach thou,\nMy ways forsake thou never;\nSo shall My kingdom flourish now\nAnd God be praised forever.\nTake heed lest men with base alloy\nThe heav'nly treasure should destroy;\nThis counsel I bequeath thee."
     ],
-    "credits": "Words: Martin Luther, 1523.  Translated by Richard Massie, 1854, alt. Music: 'Nun Freut Euch' attr. Martin Luther from Etlich Christlich Lider, Wittenberg, 1524. Setting: Johann Hermann Schein, 1627. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision."
+    "credits": "Words: Martin Luther, 1523.  Translated by Richard Massie, 1854, alt. Music: 'Nun Freut Euch' attr. Martin Luther from Etlich Christlich Lider, Wittenberg, 1524. Setting: Johann Hermann Schein, 1627. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision. Words as given by the Cyber Hymnal."
   },
   {
     "id": 459,
@@ -1733,7 +1732,7 @@
     "title": "Fairest Lord Jesus",
     "tune": "CRUSADERS' HYMN",
     "verses": [
-      "1. Fairest Lord Jesus, Ruler of all nature,\nSon of God and Son of Man!\nThee will I cherish, thee will I honor,\nThou, my soul's glory, joy, and crown.",
+      "1. Fairest Lord Jesus, Ruler of all nature,\nO Thou of God and man the Son,\nThee will I cherish, thee will I honor,\nThou, my soul's glory, joy, and crown.",
       "2. Fair are the meadows, fair are the woodlands,\nRobed in the blooming garb of spring:\nJesus is fairer, Jesus is purer,\nWho makes the woeful heart to sing.",
       "3. Fair is the sunshine, fair is the moonlight,\nAnd all the twinkling, starry host:\nJesus shines brighter, Jesus shines purer\nThan all the angels heav'n can boast.",
       "4. Beautiful Saviour! Lord of the nations!\nSon of God and Son of Man!\nGlory and honor, praise, adoration,\nNow and for evermore be thine."
@@ -1887,15 +1886,15 @@
     "midi_url": "http://openhymnal.org/Midi/From_God_Shall_Naught_Divide_Me-Von_Gott_Will_Ich_Nicht_Lassen.mid",
     "mp3_url": "http://openhymnal.org/Mp3/From_God_Shall_Naught_Divide_Me-Von_Gott_Will_Ich_Nicht_Lassen.mp3",
     "verses": [
-      "1. From God shall naught divide me,\nFor He is true for aye,\nAnd on my path will guide me,\nWho else should often stray;\nHis ever bounteous hand\nBy night and day is heedful\nAnd gives me what is needful,\nWhere'er I go or stand.",
+      "1. From God shall naught divide me,\nFor He is true for aye\nAnd on my path will guide me,\nWho else should often stray.\nHis right hand holdeth me;\nFor me He truly careth,\nMy burdens ever beareth,\nWherever I may be.",
       "2. If sorrow comes, He sent it\nIn Him I put my trust;\nI never shall repent it,\nFor He is true and just,\nAnd loves to bless us still;\nMy life and soul I owe them\nTo Him who doth bestow them,\nLet Him do as He will.",
       "3. Whate'er shall be His pleasure\nIs surely best for me;\nHe gave His dearest treasure,\nThat our weak hearts might see\nHow good His will toward us;\nAnd in His Son He gave us\nWhate'er could bless and save us;\nPraise Him who loveth thus!",
-      "4. O praise Him, for He never\nForgets our daily need;\nO blest the hour whenever\nTo Him our thoughts can speed;\nYea, all the time we spend\nWithout Him is but wasted,\nTill we His joy have tasted,\nThe joy that hath no end.",
-      "5. For when the world is passing\nWith all its pomp and pride,\nAll we were here amassing\nNo longer may abide;\nBut in our earthly bed,\nWhere softly we are sleeping,\nGod hath us in His keeping,\nTo wake us from the dead.",
-      "6. Then, though on earth I suffer\nMuch trial, well I know\nI merit ways still rougher;\nAnd 'tis to heav'n I go;\nFor Christ I know and love,\nTo Him I now am hasting,\nAnd gladness everlasting\nWith Him my heart shall prove.",
+      "4. Oh, praise Him, for He never\nForgets our daily need;\nOh, blest the hour whenever\nTo Him our thoughts can speed;\nYea, all the time we spend\nWithout Him is but wasted,\nTill we His joy have tasted,\nThe joy that hath no end.",
+      "5. Yea, when the world shall perish\nWith all its pride and power,\nWhatever worldlings cherish\nShall vanish in that hour.\nBut though in death they make\nThe deepest grave our cover,\nWhen there our sleep is over,\nOur God will us awake.",
+      "6. What though I here must suffer\nDistress and trials sore,\nI merit ways still rougher;\nAnd yet there is in store\nFor me eternal bliss,\nYea, pleasures without measure,\nSince Christ is now my treasure,\nAnd shall be evermore.",
       "7. Δ For such His will who made us;\nThe Father seeks our good;\nThe Son hath grace to aid us,\nAnd save us by His blood;\nHis Spirit rules our ways,\nBy faith in us abiding,\nTo heav'n our footsteps guiding;\nTo Him be thanks and praise."
     ],
-    "credits": "Words: Ludwig Helmbold, 1563.  Translated by Catherine Winkworth, 1863. Music: 'Von Gott Will Ich Nicht Lassen' from Recueil de plusieurs chansons, 1557. Sometimes mislabeled as German, 1571. Setting: \"The Lutheran Hymnary\", 1913. copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision."
+    "credits": "Words: Ludwig Helmbold, 1563.  Translated by Catherine Winkworth, 1863. Music: 'Von Gott Will Ich Nicht Lassen' from Recueil de plusieurs chansons, 1557. Sometimes mislabeled as German, 1571. Setting: \"The Lutheran Hymnary\", 1913. copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision. Words as given by the Cyber Hymnal in stanzas 1, 4, 5, 6."
   },
   {
     "id": 81,
@@ -1919,8 +1918,7 @@
       "12. Thus hath it pleased Thee to make plain\nThe truth to us, poor fools and vain,\nThat this world's honor, wealth and might\nAre naught and worthless in Thy sight.",
       "13. Ah, dearest Jesus, holy Child,\nMake Thee a bed, soft, undefiled,\nHere in my poor heart's inmost shrine,\nThat I may evermore be Thine.",
       "14. My heart for very joy doth leap,\nMy lips no more can silence keep,\nI too must sing, with joyful tongue,\nThat sweetest ancient cradle song.",
-      "15. Glory to God in highest Heaven,\nWho unto man His Son hath given,\nWhile angels sing, with pious mirth,\nA glad New Year to all the earth.",
-      "This hymn was written by Martin Luther to teach his 3 year old son about Christmas, and became a part of the Luther family Christmas tradition. One of the adults would dress up as an angel and sing the first 5 verses to the family. The rest of the family would sing verses 6 through 15."
+      "15. Glory to God in highest Heaven,\nWho unto man His Son hath given,\nWhile angels sing, with pious mirth,\nA glad New Year to all the earth."
     ],
     "credits": "Words: Martin Luther, 1535. translated by Catherine Winkworth, 1855. Music: 'Vom Himmel Hoch' traditional German from Schumann's Geistliche Lieder, Leipzig, 1539. Setting: \"Common Service Book\" (ULCA), 1917. copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision."
   },
@@ -2152,12 +2150,12 @@
     "midi_url": "http://openhymnal.org/Midi/God_The_Father_Be_Our_Stay-Gott_Der_Vater_Wohn_uns_bei.mid",
     "mp3_url": "http://openhymnal.org/Mp3/God_The_Father_Be_Our_Stay-Gott_Der_Vater_Wohn_uns_bei.mp3",
     "verses": [
-      "1. God the Father, be our Stay,\nWhen hell's dread pow'rs assail us;\nCleanse us from our sins, we pray,\nNor in our last hour fail us.\nKeep us from the Evil One;\nFirm in the faith abiding,\nIn Christ our Savior hiding,\nAnd heartily confiding.\nLet us put God's armor on:\nWith all true Christians running\nOur heav'nly race and shunning\nThe devil's wiles and cunning.\nAmen, Amen, this be done,\nSo sing we, Hallelujah!",
-      "2. Jesus Christ be Thou our Stay,\nWhen hell's dread pow'rs assail us;\nCleanse us from our sins, we pray,\nNor in our last hour fail us.\nKeep us from the Evil One;\nFirm in the faith abiding,\nIn Christ our Savior hiding,\nAnd heartily confiding.\nLet us put God's armor on:\nWith all true Christians running\nOur heav'nly race and shunning\nThe devil's wiles and cunning.\nAmen, Amen, this be done,\nSo sing we, Hallelujah!",
-      "3. Holy Ghost, be Thou our Stay,\nWhen hell's dread pow'rs assail us;\nCleanse us from our sins, we pray,\nNor in our last hour fail us.\nKeep us from the Evil One;\nFirm in the faith abiding,\nIn Christ our Savior hiding,\nAnd heartily confiding.\nLet us put God's armor on:\nWith all true Christians running\nOur heav'nly race and shunning\nThe devil's wiles and cunning.\nAmen, Amen, this be done,\nSo sing we, Hallelujah!",
-      "1(alt).~Triune God, be Thou our Stay,\nWhen hell's dread pow'rs assail us;\nCleanse us from our sins, we pray,\nNor in our last hour fail us.\nKeep us from the Evil One;\nFirm in the faith abiding,\nIn Christ our Savior hiding,\nAnd heartily confiding.\nLet us put God's armor on:\nWith all true Christians running\nOur heav'nly race and shunning\nThe devil's wiles and cunning.\nAmen, Amen, this be done,\nSo sing we, Hallelujah!"
+      "1. God the Father, be our Stay;\nOh, let us perish never!\nCleanse us from our sins, we pray,\nAnd grant us life forever.\nKeep us from the Evil One;\nUphold our faith most holy,\nGrant us to trust Thee solely\nWith humble hearts and lowly.\nLet us put God's armor on,\nWith all true Christians running\nOur heav'nly race and shunning\nThe devil's wiles and cunning.\nAmen, amen, this be done;\nSo sing we, Hallelujah!",
+      "2. Jesus Christ, be Thou our Stay;\nOh, let us perish never!\nCleanse us from our sins, we pray,\nAnd grant us life forever.\nKeep us from the Evil One;\nUphold our faith most holy,\nGrant us to trust Thee solely\nWith humble hearts and lowly.\nLet us put God's armor on,\nWith all true Christians running\nOur heav'nly race and shunning\nThe devil's wiles and cunning.\nAmen, amen, this be done;\nSo sing we, Hallelujah!",
+      "3. Holy Ghost, be Thou our Stay;\nOh, let us perish never!\nCleanse us from our sins, we pray,\nAnd grant us life forever.\nKeep us from the Evil One;\nUphold our faith most holy,\nGrant us to trust Thee solely\nWith humble hearts and lowly.\nLet us put God's armor on,\nWith all true Christians running\nOur heav'nly race and shunning\nThe devil's wiles and cunning.\nAmen, amen, this be done;\nSo sing we, Hallelujah!",
+      "1(alt).~Triune God, be Thou our Stay;\nOh, let us perish never!\nCleanse us from our sins, we pray,\nAnd grant us life forever.\nKeep us from the Evil One;\nUphold our faith most holy,\nGrant us to trust Thee solely\nWith humble hearts and lowly.\nLet us put God's armor on,\nWith all true Christians running\nOur heav'nly race and shunning\nThe devil's wiles and cunning.\nAmen, amen, this be done;\nSo sing we, Hallelujah!"
     ],
-    "credits": "Words: 15th Century Litany, adapted by Martin Luther, 1524.  Translated by Richard Massie, 1854, alt. Music: 'Gott Der Vater, Wohn Uns Bei' from Walter's Geistliche Gesangbüchlein, 1524. Setting: composite from Landgraf Moritz, 1612 and \"Evangelical Lutheran Hymn-Book\", 1931. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision."
+    "credits": "Words: 15th Century Litany, adapted by Martin Luther, 1524.  Translated by Richard Massie, 1854, alt. Music: 'Gott Der Vater, Wohn Uns Bei' from Walter's Geistliche Gesangbüchlein, 1524. Setting: composite from Landgraf Moritz, 1612 and \"Evangelical Lutheran Hymn-Book\", 1931. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision. Words as given by the Cyber Hymnal."
   },
   {
     "id": 93,
@@ -2190,16 +2188,16 @@
   },
   {
     "id": 92,
-    "title": "God, Whose Almighty Word",
+    "title": "Thou, Whose Almighty Word",
     "tune": "Italian Hymn",
     "composer_arranger": "Giardini, F.",
     "midi_url": "http://openhymnal.org/Midi/God_Whose_Almighty_Word-Italian_Hymn.mid",
     "mp3_url": "http://openhymnal.org/Mp3/God_Whose_Almighty_Word-Italian_Hymn.mp3",
     "verses": [
-      "1. God, whose almighty word\nChaos and darkness heard\nAnd took their flight:\nHear us, we humble pray,\nAnd where the Gospel day\nSheds not its glorious ray,\nLet there be light!",
-      "2. Lord, who once came to bring,\nOn your redeeming wing,\nHealing and sight,\nHealth to the sick in mind,\nSight to the inly blind:\nOh, now to humankind\nLet there be light!",
-      "3. Spirit of truth and love,\nLife giving, holy dove,\nSpeed forth your flight;\nMove on the water's face,\nBearing the lamp of grace,\nAnd in earth's darkest place\nLet there be light!",
-      "4.  Δ Holy and blessed three,\nGlorious Trinity,\nWisdom, love, might!\nBoundless as ocean's tide,\nRolling in fullest pride,\nThrough the earth, far and wide,\nLet there be light!"
+      "1. Thou, whose almighty Word\nChaos and darkness heard,\nAnd took their flight;\nHear us, we humbly pray,\nAnd, where the Gospel's day\nSheds not its glorious ray,\nLet there be light!",
+      "2. Thou, who didst come to bring\nOn Thy redeeming wing\nHealing and sight,\nHealth to the sick in mind,\nSight to the inly blind,\nO now, to all mankind,\nLet there be light!",
+      "3. Spirit of truth and love,\nLife giving, holy Dove,\nSpeed forth Thy flight;\nMove on the water's face\nBearing the lamp of grace,\nAnd, in earth's darkest place,\nLet there be light!",
+      "4. Δ Blessèd and holy Three,\nGlorious Trinity,\nWisdom, love, might!\nBoundless as ocean's tide,\nRolling in fullest pride,\nThrough the world far and wide,\nLet there be light!"
     ],
     "credits": "Words: John Marriott, 1813. Music: 'Italian Hymn' Felice de Giardini, 1769. Setting: \"The Methodist Sunday School Hymnal\", 1911. copyright: public domain.  This score is a part of the Open Hymnal Project, 2005 Revision."
   },
@@ -2221,12 +2219,12 @@
   {
     "id": 495,
     "title": "Grace Greater Than Our Sin",
-    "tune": "WONDERFUL GRACE (MOODY)",
+    "tune": "MOODY",
     "verses": [
-      "1. Wonderful grace of Jesus,\nGreater than all my sin;\nHow shall my tongue describe it,\nWhere shall its praise begin?\nTaking away my burden,\nSetting my spirit free;\nFor the wonderful grace of Jesus reaches me.",
-      "2. Wonderful the matchless grace of Jesus,\nDeeper than the mighty rolling sea;\nHigher than the mountain, sparkling like a fountain,\nAll sufficient grace for even me,\nBroader than the scope of my transgressions,\nGreater far than all my sin and shame,\nO magnify the precious name of Jesus,\nPraise his name!",
-      "3. Wonderful grace of Jesus,\nReaching a mighty host,\nBy it I have been pardoned,\nSaved to the uttermost,\nChains have been torn asunder,\nGiving me liberty;\nFor the wonderful grace of Jesus reaches me.",
-      "4. Wonderful grace of Jesus,\nReaching the most defiled,\nBy its transforming power,\nMaking him God's dear child,\nPurchasing peace and heaven,\nFor all eternity;\nAnd the wonderful grace of Jesus reaches me."
+      "1. Marvelous grace of our loving Lord,\nGrace that exceeds our sin and our guilt!\nYonder on Calvary's mount outpoured,\nThere where the blood of the Lamb was spilled.\nGrace, grace, God's grace,\nGrace that will pardon and cleanse within;\nGrace, grace, God's grace,\nGrace that is greater than all our sin.",
+      "2. Sin and despair, like the sea waves cold,\nThreaten the soul with infinite loss;\nGrace that is greater, yes, grace untold,\nPoints to the refuge, the mighty cross.\nGrace, grace, God's grace,\nGrace that will pardon and cleanse within;\nGrace, grace, God's grace,\nGrace that is greater than all our sin.",
+      "3. Dark is the stain that we cannot hide.\nWhat can avail to wash it away?\nLook! There is flowing a crimson tide,\nBrighter than snow you may be today.\nGrace, grace, God's grace,\nGrace that will pardon and cleanse within;\nGrace, grace, God's grace,\nGrace that is greater than all our sin.",
+      "4. Marvelous, infinite, matchless grace,\nFreely bestowed on all who believe!\nYou that are longing to see His face,\nWill you this moment His grace receive?\nGrace, grace, God's grace,\nGrace that will pardon and cleanse within;\nGrace, grace, God's grace,\nGrace that is greater than all our sin."
     ],
     "Author": "Julia H. Johnston",
     "Composer": "Daniel B. Towner",
@@ -2649,10 +2647,10 @@
     "midi_url": "http://openhymnal.org/Midi/Holy_Ghost_With_Light_Divine-Canterbury-Song_13.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Holy_Ghost_With_Light_Divine-Canterbury-Song_13.mp3",
     "verses": [
-      "1. Holy Ghost, with light divine\nShine upon this heart of mine;\nChase the shades of night away,\nTurn the darkness into day.",
+      "1. Holy Ghost, with light divine\nShine upon this heart of mine;\nChase the shade of night away,\nTurn my darkness into day.",
       "2. Let me see my Savior's face,\nLet me all His beauties trace;\nShow those glorious truths to me\nWhich are only known to Thee.",
-      "3. Holy Ghost, with pow'r divine\nCleanse this guilty heart of mine;\nIn Thy mercy pity me,\nFrom sin's bondage set me free.",
-      "4. Holy Ghost, with joy divine\nCheer this saddened heart of mine;\nYield a sacred, settled peace,\nLet it grow and still increase.",
+      "3. Holy Ghost, with pow'r divine\nCleanse this guilty heart of mine;\nLong has sin, without control,\nHeld dominion o'er my soul.",
+      "4. Holy Ghost, with joy divine\nCheer this saddened heart of mine;\nBid my many woes depart,\nHeal my wounded, bleeding heart.",
       "5. Holy Spirit, all divine,\nDwell within this heart of mine;\nCast down every idol— throne,\nReign supreme, and reign alone.",
       "6. See, to Thee I yield my heart,\nShed Thy life through every part;\nA pure temple I would be,\nWholly dedicate to Thee.",
       "7. Holy Spirit, Truth divine,\nDawn upon this soul of mine;\nWord of God and inward light\nWake my spirit, clear my sight.",
@@ -3011,11 +3009,11 @@
     "title": "I Greet Thee, Who My Sure Redeemer Art",
     "tune": "TOULON",
     "verses": [
-      "1. I greet thee, who my sure Redeemer art,\nMy only trust and Saviour of my heart,\nWho pain didst undergo for my poor sake;\nI pray thee from our hearts all cares to take.",
-      "2. Thou art the King of mercy and of grace,\nReigning omnipotent in every place:\nSo come, O King, and our whole being sway;\nShine on us with the light of thy pure day.",
-      "3. Thou art the life, by which alone we live,\nAnd all our substance and our strength receive;\nO comfort us in death's approaching hour,\nStrong-hearted then to face it by thy pow'r.",
-      "4. Thou hast the true and perfect gentleness,\nNo harshness hast thou and no bitterness:\nMake us to taste the sweet grace found in thee\nAnd ever stay in thy sweet unity.",
-      "5. Our hope is in no other save in thee;\nOur faith is built upon thy promise free;\nO grant to us such stronger hope and sure\nThat we can boldly conquer and endure."
+      "1. I greet Thee, who my sure Redeemer art,\nMy only trust and Savior of my heart,\nWho pain didst undergo for my poor sake;\nI pray Thee from our hearts all cares to take.",
+      "2. Thou art the King of mercy and of grace,\nReigning omnipotent in every place;\nSo come, O King, and our whole being sway;\nShine on us with the light of Thy pure day.",
+      "3. Thou art the life, by which alone we live,\nAnd all our substance and our strength receive;\nSustain us by Thy faith and by Thy power,\nAnd give us strength in every trying hour.",
+      "4. Thou hast the true and perfect gentleness,\nNo harshness hast Thou and no bitterness;\nO grant to us the grace we find in Thee,\nThat we may dwell in perfect unity.",
+      "5. Our hope is in no other save in Thee;\nOur faith is built upon Thy promise free;\nLord, give us peace, and make us calm and sure,\nThat in Thy strength we evermore endure."
     ],
     "Author": "Attributed to John Calvin",
     "Composer": "Genevan Psalter (1551)",
@@ -3339,15 +3337,15 @@
     "midi_url": "http://openhymnal.org/Midi/If_God_Himself_Be_For_Me-Woodbird-Es_Flog_Ein_Kleins_Waldvogelein.mid",
     "mp3_url": "http://openhymnal.org/Mp3/If_God_Himself_Be_For_Me-Woodbird-Es_Flog_Ein_Kleins_Waldvogelein.mp3",
     "verses": [
-      "1. If God Himself be for me,\nI may a host defy;\nFor when I pray, before me\nMy foes, confounded, fly.\nIf Christ, my Head and Master,\nBefriend me from above,\nWhat foe or what disaster\nCan drive me from His love?",
+      "1. If God Himself be for me,\nI may a host defy,\nFor when I pray, before me\nMy foes confounded fly.\nIf Christ, the Head, befriend me,\nIf God be my support,\nThe mischief they intend me\nShall quickly come to naught.",
       "2. This I believe, yea, rather,\nOf this I make my boast,\nThat God is my dear Father,\nThe Friend who loves me most,\nAnd that, whate'er betide me,\nMy Savior is at hand\nThrough stormy seas to guide me\nAnd bring me safe to land.",
-      "3. I build on this foundation,\nThat Jesus and His blood\nAlone are my salvation,\nThe true, eternal good.\nWithout Him all that pleases\nIs valueless on earth;\nThe gifts I owe to Jesus\nAlone my love are worth.",
+      "3. I build on this foundation,\nThat Jesus and His blood\nAlone are my salvation,\nThe true eternal good;\nWithout Him, all that pleases\nIs valueless on earth:\nThe gifts I owe to Jesus\nAlone my love are worth.",
       "4. My Jesus is my Splendor,\nMy Sun, my Light, alone;\nWere He not my Defender\nBefore God's awe— full throne,\nI never should find favor\nAnd mercy in His sight,\nBut be destroyed forever\nAs darkness by the light.",
       "5. He canceled my offenses,\nDelivered me from death;\nHe is the Lord who cleanses\nMy soul from sin through faith.\nIn Him I can be cheerful,\nBold, and undaunted aye;\nIn Him I am not fearful\nOf God's great Judgment Day.",
       "6. Naught, naught, can now condemn me\nNor set my hope aside;\nNow hell no more can claim me,\nIts fury I deride.\nNo sentence e'er reproves me,\nNo ill destroys my peace;\nFor Christ, my Savior, loves me\nAnd shields me with His grace.",
-      "7. His Spirit in me dwelleth,\nAnd o'er my mind He reigns.\nAll sorrow He dispelleth\nAnd soothes away all pains.\nHe crowns His work with blessing\nAnd helpeth me to cry,\n\"My Father!\" without ceasing,\nTo Him who dwells on high.",
+      "7. His Holy Spirit dwelleth\nWithin my willing heart,\nTames it when it rebelleth,\nAnd soothes the keenest smart.\nHe crowns His work with blessing,\nAnd helpeth me to cry\nMy Father! without ceasing\nTo Him who reigns on high.",
       "8. And when my soul is lying\nWeak, trembling, and opprest,\nHe pleads with groans and sighing\nThat cannot be exprest;\nBut God's quick eye discerns them,\nAlthough they give no sound,\nAnd into language turns them\nE'en in the heart's deep ground.",
-      "9. To mine His Spirit speaketh\nSweet word of holy cheer,\nHow God to him that seeketh\nFor rest is always near\nAnd how He hath erected\nA city fair and new,\nWhere what our faith expected\nWe evermore shall view.",
+      "9. To mine His Spirit speaketh\nSweet words of soothing power,\nHow God to Him that seeketh\nFor rest, hath rest in store;\nHow God Himself prepareth\nMy heritage and lot,\nAnd though my body weareth,\nMy Heav'n shall fail me not.",
       "10. In yonder home doth flourish\nMy heritage, my lot;\nThough here I die and perish,\nMy heaven shall fail me not.\nThough care my life oft saddens\nAnd causeth tears to flow,\nThe light of Jesus gladdens\nAnd sweetens every woe.",
       "11. Who clings with resolution\nTo Him whom Satan hates\nMust look for persecution;\nFor him the burden waits\nOf mockery, shame, and losses,\nHeaped on his blameless head;\nA thousand plagues and crosses\nWill be his daily bread.",
       "12. From me this is not hidden,\nYet I am not afraid;\nI leave my cares, as bidden,\nTo whom my vows were paid.\nThough life and limb it cost me\nAnd everything I won,\nUnshaken shall I trust Thee\nAnd cleave to Thee alone.",
@@ -3355,7 +3353,7 @@
       "14. No angel and no gladness,\nNo throne, no pomp, no show,\nNo love, no hate, no sadness,\nNo pain, no depth of woe,\nNo scheme of man's contrivance,\nHowever small or great,\nShall draw me from Thy guidance\nNor from Thee separate.",
       "15. My heart for joy is springing\nAnd can no more be sad,\n'Tis full of mirth and singing,\nSees naught but sunshine glad.\nThe Sun that cheers my spirit\nIs Jesus Christ, my King;\nThat which I shall inherit\nMakes me rejoice and sing."
     ],
-    "credits": "Words: Paul Gerhardt, 1656.  Verses 1-3, 7-9, 11-15 Translated by Richard Massie, 1856, alt. Verses 4-6,10 Translated for Evangelical Lutheran Hymn-Book (Pittsburgh), 1907, alt. Music: 'Woodbird' or 'Es Flog Ein Kleins Waldvögelein' traditional German found in \"Memminger Tabulaturbuche\", 17th Century. Setting: George Ratcliffe Woodward, 1904. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision."
+    "credits": "Words: Paul Gerhardt, 1656.  Verses 1-3, 7-9, 11-15 Translated by Richard Massie, 1856, alt. Verses 4-6,10 Translated for Evangelical Lutheran Hymn-Book (Pittsburgh), 1907, alt. Music: 'Woodbird' or 'Es Flog Ein Kleins Waldvögelein' traditional German found in \"Memminger Tabulaturbuche\", 17th Century. Setting: George Ratcliffe Woodward, 1904. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision. Words as given by the Cyber Hymnal in stanzas 1, 3, 7, 9."
   },
   {
     "id": 136,
@@ -3474,8 +3472,7 @@
       "2. Our God, Heav'n cannot hold Him,\nnor earth sustain;\nHeav'n and earth shall flee away\nwhen He comes to reign.\nIn the bleak midwinter\na stable place sufficed\nThe Lord God Almighty,\nJesus Christ.",
       "3. Enough for Him, whom cherubim,\nworship night and day,\nBreastful of milk,\nand a mangerful of hay;\nEnough for Him, whom angels\nfall down before,\nOx and ass and camel\nwhich adore.",
       "4.  Angels and archangels\nmay have gathered there,\nCherubim and seraphim\nthronged the air;\nBut His mother only,\nin her maiden bliss,\nWorshiped the beloved\nwith a kiss.",
-      "5.  What can I give Him,\npoor as I am?\nIf I were a shepherd,\nI would bring a lamb;\nIf I were a Wise Man,\nI would do my part;\nYet what can I give Him:\ngive my heart.",
-      "These lyrics are rather obscure, though quite beautiful. The earth (which represents all of God's promises to His People, Gen 13:14-15, Rom 4:13-17, Mt 5:5) and the water (which represents Baptism and forgiveness, Jn 3:5, Eph 5:25-27, 1Pt 3:21) are frozen and lifeless as the Law reigns alone (2Cor 3:6b), with no grace flowing before Christ.  The Spirit (the wind) works in the world through the condemnation of the Law and the hope for redemption to come (frosty wind made moan, Micah 4:10, Ez 21:6-7). Then Christ humbly comes to melt the icy world in grace. This then inspires those saved, who recognize that they have nothing to give to Him, to finally, through His grace, fulfill the greatest commandment (Mt 22:37)."
+      "5.  What can I give Him,\npoor as I am?\nIf I were a shepherd,\nI would bring a lamb;\nIf I were a Wise Man,\nI would do my part;\nYet what can I give Him:\ngive my heart."
     ],
     "credits": "Words: Christina Georgina Rossetti, 1872, alt. Music and Setting: 'Cranham' Gustav Theodore Holst, 1906, alt. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision."
   },
@@ -3736,18 +3733,18 @@
     "midi_url": "http://openhymnal.org/Midi/Jesus_Christ_Our_Blessed_Savior-Jesus_Christus_Unser_Heiland_Der_Von_Uns_1524.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Jesus_Christ_Our_Blessed_Savior-Jesus_Christus_Unser_Heiland_Der_Von_Uns_1524.mp3",
     "verses": [
-      "1. Jesus Christ, our Blessed Savior,\nTurned away God's wrath forever;\nSuff'ring pains no tongue can tell,\nHe saved us from the pains of hell.",
-      "2. To remind us that, to save us\nHe hath died, His flesh He gave us\nWith this bread, a quick'ning food,\nAnd with this wine, His precious blood.",
-      "3. Whoso to this board repaireth,\nTake good heed how He prepareth;\nDeath instead of life shall He\nReceive who comes unworthily.",
-      "4. Praise the Father, God in heaven,\nWho such dainty food hath given,\nAnd for misdeeds thou hast done\nGave to die His beloved Son.",
-      "5. Thou shalt hold with faith unshaken,\nThat this food is to be taken\nBy the sick who are distressed,\nBy those whose heart is sin— oppressed.",
+      "1. Jesus Christ, our blessèd Savior,\nTurned away God's wrath forever;\nBy His bitter grief and woe\nHe saved us from the evil foe.",
+      "2. As His pledge of love undying\nHe, this precious food supplying,\nGives His body with the bread\nAnd with the wine the blood He shed.",
+      "3. Whoso to this board repaireth\nMay take heed how he prepareth;\nFor if he does not believe,\nThen death for life he shall receive.",
+      "4. Praise the Father, who from Heaven\nUnto us such food hath given\nAnd, to mend what we have done,\nGave into death His only Son.",
+      "5. Thou shalt hold with faith unshaken\nThat this food is to be taken\nBy the sick who are distressed,\nBy hearts that long for peace and rest.",
       "6. To such grace and mercy turneth\nEvery soul that truly mourneth;\nArt thou well? Avoid this board,\nElse thou reapest an ill reward.",
-      "7. Christ says: \"Come ye heavy-laden,\nI your weary hearts will gladden;\nThey that are yet strong and well,\nDespise the best physician's skill.",
-      "8. Couldst thou earn thine own salvation,\nUseless were my death and passion;\nThis feast is not spread for thee,\nIf thine own helper thou wilt be.",
-      "9. If thou this believest truly,\nAnd confession makest duly,\nThou a welcome guest art here,\nThis heavenly food thy soul shall cheer.",
+      "7. Christ says, \"Come, all ye that labor,\nAnd receive My grace and favor;\nThey who feel no want nor ill\nNeed no physician's help nor skill.",
+      "8. Useless were for thee My passion\nIf thy works thy weal could fashion.\nThis feast is not spread for thee\nIf thine own savior thou wilt be.",
+      "9. If thy heart this truth professes,\nAnd thy mouth thy sin confesses,\nHis dear guest thou here shalt be,\nAnd Christ Himself shall banquet thee.",
       "10. But the fruits must not be missing,\nLove thy neighbor without ceasing,\nThat true love let him receive,\nWhich here to thee thy God doth give."
     ],
-    "credits": "Words: John Hus (1369-1415) expanded by Martin Luther, 1524. Translator v.4,6 by Richard Massie Other verses unknown. Music: 'Jesus Christus Unser Heiland, Der Von Uns (Klug)' from Klug's Geistliche Lieder, Wittenberg, 1533. Setting: \"Evangelical Lutheran Hymn-Book\", 1931. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision."
+    "credits": "Words: John Hus (1369-1415) expanded by Martin Luther, 1524. Translator v.4,6 by Richard Massie Other verses unknown. Music: 'Jesus Christus Unser Heiland, Der Von Uns (Klug)' from Klug's Geistliche Lieder, Wittenberg, 1533. Setting: \"Evangelical Lutheran Hymn-Book\", 1931. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision. Words as given by the Cyber Hymnal in stanzas 1, 2, 3, 4, 5, 7, 8, 9."
   },
   {
     "id": 148,
@@ -3757,18 +3754,18 @@
     "midi_url": "http://openhymnal.org/Midi/Jesus_Christ_Our_Blessed_Savior-Jesus_Christus_Unser_Heiland_Der_Von_Uns_1533.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Jesus_Christ_Our_Blessed_Savior-Jesus_Christus_Unser_Heiland_Der_Von_Uns_1533.mp3",
     "verses": [
-      "1. Jesus Christ, our Blessed Savior,\nTurned away God's wrath forever;\nSuff'ring pains no tongue can tell,\nHe saved us from the pains of hell.",
-      "2. To remind us that, to save us\nHe hath died, His flesh He gave us\nWith this bread, a quick'ning food,\nAnd with this wine, His precious blood.",
-      "3. Whoso to this board repaireth,\nTake good heed how He prepareth;\nDeath instead of life shall He\nReceive who comes unworthily.",
-      "4. Praise the Father, God in heaven,\nWho such dainty food hath given,\nAnd for misdeeds thou hast done\nGave to die His beloved Son.",
-      "5. Thou shalt hold with faith unshaken,\nThat this food is to be taken\nBy the sick who are distressed,\nBy those whose heart is sin— oppressed.",
+      "1. Jesus Christ, our blessèd Savior,\nTurned away God's wrath forever;\nBy His bitter grief and woe\nHe saved us from the evil foe.",
+      "2. As His pledge of love undying\nHe, this precious food supplying,\nGives His body with the bread\nAnd with the wine the blood He shed.",
+      "3. Whoso to this board repaireth\nMay take heed how he prepareth;\nFor if he does not believe,\nThen death for life he shall receive.",
+      "4. Praise the Father, who from Heaven\nUnto us such food hath given\nAnd, to mend what we have done,\nGave into death His only Son.",
+      "5. Thou shalt hold with faith unshaken\nThat this food is to be taken\nBy the sick who are distressed,\nBy hearts that long for peace and rest.",
       "6. To such grace and mercy turneth\nEvery soul that truly mourneth;\nArt thou well? Avoid this board,\nElse thou reapest an ill reward.",
-      "7. Christ says: \"Come ye heavy-laden,\nI your weary hearts will gladden;\nThey that are yet strong and well,\nDespise the best physician's skill.",
-      "8. Couldst thou earn thine own salvation,\nUseless were my death and passion;\nThis feast is not spread for thee,\nIf thine own helper thou wilt be.",
-      "9. If thou this believest truly,\nAnd confession makest duly,\nThou a welcome guest art here,\nThis heavenly food thy soul shall cheer.",
+      "7. Christ says, \"Come, all ye that labor,\nAnd receive My grace and favor;\nThey who feel no want nor ill\nNeed no physician's help nor skill.",
+      "8. Useless were for thee My passion\nIf thy works thy weal could fashion.\nThis feast is not spread for thee\nIf thine own savior thou wilt be.",
+      "9. If thy heart this truth professes,\nAnd thy mouth thy sin confesses,\nHis dear guest thou here shalt be,\nAnd Christ Himself shall banquet thee.",
       "10. But the fruits must not be missing,\nLove thy neighbor without ceasing,\nThat true love let him receive,\nWhich here to thee thy God doth give."
     ],
-    "credits": "Words: John Hus (1369-1415) expanded by Martin Luther, 1524. Translator v.4,6 by Richard Massie Other verses unknown. Music: 'Jesus Christus Unser Heiland, Der Von Uns (Klug)' from Klug's Geistliche Lieder, Wittenberg, 1533. Setting: \"Evangelical Lutheran Hymn-Book\", 1931. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision."
+    "credits": "Words: John Hus (1369-1415) expanded by Martin Luther, 1524. Translator v.4,6 by Richard Massie Other verses unknown. Music: 'Jesus Christus Unser Heiland, Der Von Uns (Klug)' from Klug's Geistliche Lieder, Wittenberg, 1533. Setting: \"Evangelical Lutheran Hymn-Book\", 1931. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision. Words as given by the Cyber Hymnal in stanzas 1, 2, 3, 4, 5, 7, 8, 9."
   },
   {
     "id": 150,
@@ -3841,16 +3838,16 @@
     "midi_url": "http://openhymnal.org/Midi/Jesus_Sinners_Doth_Receive-Meinen_Jesum_Lass_ich_Nicht_Darmstadt.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Jesus_Sinners_Doth_Receive-Meinen_Jesum_Lass_ich_Nicht_Darmstadt.mp3",
     "verses": [
-      "1. Jesus sinners doth receive;\nWell may we this saying ponder\nWho in sin's delusions live,\nAnd from God and Heaven wander:\nHere is hope for all who grieve—\nJesus sinners doth receive.",
-      "2. We deserve but grief and shame,—\nYet His words, rich grace revealing,\nPardon, peace, and life proclaim;\nHere their ills have perfect healing\nWho with humble hearts believe—\nJesus sinners doth receive.",
-      "3. As the shepherd seeks to find\nHis lost sheep that from Him strayeth,\nSo hath Christ each soul in mind,\nAnd for its salvation prayeth;\nFain He'd have each wand'rer live:\nJesus sinners doth receive.",
-      "4. Come, then, all by guilt oppressed,\nJesus calls, and He would make you\nGod's own children, pure and blest,\nAnd to glory He would take you;\nThink on this, and well believe\nJesus sinners doth receive.",
-      "5. Savior, now I come to Thee:\nGreat my sins, a weary burden!\nWilt Thou mercy show to me?\nCan I hope to find a pardon?\nI will trust: my soul relieve!\nMe, a sinner, Lord, receive!",
-      "6. Rich Thy mercy— strangely good!\nO how oft have I offended!\nBut through Thy redeeming blood\nAll my fear of wrath is ended:\nYes I now can witness give:\nJesus sinners doth receive!",
-      "7. Now my conscience is at peace;\nFrom the Law I stand acquitted;\nChrist hath purchased my release,\nAnd my every sin remitted.\nNaught remains my soul to grieve:\nJesus sinners doth receive.",
-      "8. Jesus sinners doth receive!\nHappy in His ceaseless favor,\nHere for Heaven I will live,\nThere shall live with Him forever,\n\"Joy in death these tidings give;\nJesus sinners doth receive!\""
+      "1. Jesus sinners doth receive;\nOh, may all this saying ponder\nWho in sin's delusions live\nAnd from God and Heaven wander!\nHere is hope for all who grieve—\nJesus sinners doth receive.",
+      "2. We deserve but grief and shame,\nYet His words, rich grace revealing,\nPardon, peace and life proclaim.\nHere their ills have perfect healing\nWho with humble hearts believe—\nJesus sinners doth receive.",
+      "3. Sheep that from the fold did stray\nNo true shepherd e'er forsaketh;\nWeary souls that lost their way\nChrist, the Shepherd, gently taketh\nIn His arms that they may live—\nJesus sinners doth receive.",
+      "4. Come, ye sinners, one and all,\nCome, accept His invitation;\nCome, obey His gracious call,\nCome and take His free salvation!\nFirmly in these words believe:\nJesus sinners doth receive.",
+      "5. I, a sinner, come to Thee\nWith a penitent confession;\nSavior, mercy show to me\nGrant for all my sins remission.\nLet these words my soul relieve:\nJesus sinners doth receive.",
+      "6. Oh, how blest it is to know:\nWere as scarlet my transgression,\nIt shall be as white as snow\nBy Thy blood and bitter Passion;\nFor these words I now believe:\nJesus sinners doth receive.",
+      "7. Now my conscience is at peace,\nFrom the Law I stand acquitted;\nChrist hath purchased my release\nAnd my every sin remitted.\nNaught remains my soul to grieve—\nJesus sinners doth receive.",
+      "8. Jesus sinners doth receive.\nAlso I have been forgiven;\nAnd when I this earth must leave,\nI shall find an open Heaven.\nDying, still to Him I cleave—\nJesus sinners doth receive."
     ],
-    "credits": "Words: Erdmann Neumeister, 1718.  Translated by Henry Mills, 1845 (et al). Music: 'Meinen Jesum Lass` Ich Nicht (Darmstadt)' from Neu-verfertigtes Darmstädtiches Gesang-Buch, 1699. Setting: \"Mehrstimmiges ChoralBuch\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2013 Revision."
+    "credits": "Words: Erdmann Neumeister, 1718.  Translated by Henry Mills, 1845 (et al). Music: 'Meinen Jesum Lass` Ich Nicht (Darmstadt)' from Neu-verfertigtes Darmstädtiches Gesang-Buch, 1699. Setting: \"Mehrstimmiges ChoralBuch\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2013 Revision. Words as given by the Cyber Hymnal."
   },
   {
     "id": 534,
@@ -3860,16 +3857,16 @@
     "midi_url": "assets/midi/Jesus_Sinners_Doth_Receive-Jesus_nimmt_die_Sunder_an.mid",
     "mp3_url": "",
     "verses": [
-      "1. Jesus sinners doth receive;\nWell may we this saying ponder\nWho in sin's delusions live,\nAnd from God and Heaven wander:\nHere is hope for all who grieve—\nJesus sinners doth receive.",
-      "2. We deserve but grief and shame,—\nYet His words, rich grace revealing,\nPardon, peace, and life proclaim;\nHere their ills have perfect healing\nWho with humble hearts believe—\nJesus sinners doth receive.",
-      "3. As the shepherd seeks to find\nHis lost sheep that from Him strayeth,\nSo hath Christ each soul in mind,\nAnd for its salvation prayeth;\nFain He'd have each wand'rer live:\nJesus sinners doth receive.",
-      "4. Come, then, all by guilt oppressed,\nJesus calls, and He would make you\nGod's own children, pure and blest,\nAnd to glory He would take you;\nThink on this, and well believe\nJesus sinners doth receive.",
-      "5. Savior, now I come to Thee:\nGreat my sins, a weary burden!\nWilt Thou mercy show to me?\nCan I hope to find a pardon?\nI will trust: my soul relieve!\nMe, a sinner, Lord, receive!",
-      "6. Rich Thy mercy— strangely good!\nO how oft have I offended!\nBut through Thy redeeming blood\nAll my fear of wrath is ended:\nYes I now can witness give:\nJesus sinners doth receive!",
-      "7. Now my conscience is at peace;\nFrom the Law I stand acquitted;\nChrist hath purchased my release,\nAnd my every sin remitted.\nNaught remains my soul to grieve:\nJesus sinners doth receive.",
-      "8. Jesus sinners doth receive!\nHappy in His ceaseless favor,\nHere for Heaven I will live,\nThere shall live with Him forever,\n\"Joy in death these tidings give;\nJesus sinners doth receive!\""
+      "1. Jesus sinners doth receive;\nOh, may all this saying ponder\nWho in sin's delusions live\nAnd from God and Heaven wander!\nHere is hope for all who grieve—\nJesus sinners doth receive.",
+      "2. We deserve but grief and shame,\nYet His words, rich grace revealing,\nPardon, peace and life proclaim.\nHere their ills have perfect healing\nWho with humble hearts believe—\nJesus sinners doth receive.",
+      "3. Sheep that from the fold did stray\nNo true shepherd e'er forsaketh;\nWeary souls that lost their way\nChrist, the Shepherd, gently taketh\nIn His arms that they may live—\nJesus sinners doth receive.",
+      "4. Come, ye sinners, one and all,\nCome, accept His invitation;\nCome, obey His gracious call,\nCome and take His free salvation!\nFirmly in these words believe:\nJesus sinners doth receive.",
+      "5. I, a sinner, come to Thee\nWith a penitent confession;\nSavior, mercy show to me\nGrant for all my sins remission.\nLet these words my soul relieve:\nJesus sinners doth receive.",
+      "6. Oh, how blest it is to know:\nWere as scarlet my transgression,\nIt shall be as white as snow\nBy Thy blood and bitter Passion;\nFor these words I now believe:\nJesus sinners doth receive.",
+      "7. Now my conscience is at peace,\nFrom the Law I stand acquitted;\nChrist hath purchased my release\nAnd my every sin remitted.\nNaught remains my soul to grieve—\nJesus sinners doth receive.",
+      "8. Jesus sinners doth receive.\nAlso I have been forgiven;\nAnd when I this earth must leave,\nI shall find an open Heaven.\nDying, still to Him I cleave—\nJesus sinners doth receive."
     ],
-    "credits": "Words: Erdmann Neumeister, 1718.  Translated by Henry Mills, 1845 (et al). Music: 'Jesus nimmt die Sunder an'. Alternate tune per Trinity Hymnal (Orthodox Presbyterian Church / Great Commission Publications). copyright: public domain (tune)."
+    "credits": "Words: Erdmann Neumeister, 1718.  Translated by Henry Mills, 1845 (et al). Music: 'Jesus nimmt die Sunder an'. Alternate tune per Trinity Hymnal (Orthodox Presbyterian Church / Great Commission Publications). copyright: public domain (tune). Words as given by the Cyber Hymnal."
   },
   {
     "id": 159,
@@ -4318,15 +4315,15 @@
     "midi_url": "http://openhymnal.org/Midi/Lo_God_To_Heavn_Ascendeth-Von_Gott_will_ich_Nicht_Lazen.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Lo_God_To_Heavn_Ascendeth-Von_Gott_will_ich_Nicht_Lazen.mp3",
     "verses": [
-      "1. Lo, God to Heav'n ascendeth! Throughout its regions vast\nWith shouts triumphant blendeth the trumpet's thrilling blast:\nSing praise to Christ the Lord; sing praise with exultation,\nKing of each heathen nation, the God of Hosts adored!",
-      "2. With joy is Heav'n resounding Christ's glad return to see;\nBehold the saints surrounding the Lord who set them free.\nBright myriads, thronging, come; the cherub band rejoices,\nAnd loud seraphic voices Welcome Messiah home.",
-      "3. No more the way is hidden, Since Christ our Head arose:\nNo more to man forbidden The road to Heav'n that goes.\nOur Lord is gone before; yet here He will not leave us,\nAnd soon in Heav'n receive us and open wide the door.",
-      "4. Christ is our place preparing; to Heav'n we, too, shall rise,\nAnd, joys angelic sharing, Be where our treasure lies:\nThere may each heart be found! Where Jesus Christ has entered,\nThere let our Hope be centered; Our course still heav'nward bound.",
-      "5. May we, His servants, thither In heart and mind ascend,\nAnd let us sing together: \"We seek Thee, Christ, our friend,\nThee, God's exalted Son, our Life, and Way to Heaven,\nTo whom all pow'r is given, our Joy and Hope and Crown.\"",
+      "1. Lo, God to Heav'n ascendeth! Throughout its regions vast\nWith shouts triumphant blendeth The trumpet's thrilling blast:\nSing praise to Christ the Lord; Sing praise with exultation,\nKing of each heathen nation, The God of hosts adored!",
+      "2. With joy is Heav'n resounding Christ's glad return to see;\nBehold the saints surrounding The Lord who set them free.\nBright myriads, thronging, come; The cherub band rejoices,\nAnd loud seraphic voices All welcome Jesus home.",
+      "3. From cross to throne ascending, We follow Christ on high\nAnd know the pathway wending To mansions in the sky.\nOur Lord is gone before; Yet here He will not leave us,\nAnd soon in Heav'n receive us And open wide the door.",
+      "4. Our place He is preparing; To Heav'n we, too, shall rise,\nWith Him His glory sharing, Be where our treasure lies.\nBestir thyself, my soul! Where Jesus Christ has entered,\nThere let Thy hope be centered; Press onward toward the goal.",
+      "5. Let all our thoughts be winging To where Thou didst ascend,\nAnd let our hearts be singing: We seek Thee, Christ, our friend,\nThee, God's exalted Son, Our life, and way to Heaven,\nTo whom all power is given, Our joy and hope and crown.",
       "6. Farewell with all thy treasures, O world, to falsehood giv'n!\nThy dross gives no true pleasures; We seek the joys of Heav'n:\nThe Savior is our Prize; He comforts us in sadness,\nAnd fills our hearts with gladness; to Him we lift our eyes.",
       "7. When, on our vision dawning, Will break the wished-for hour\nOf that all glorious morning, When Christ shall come with power?\nO come, thou welcome day! When we, our Savior meeting,\nHis second advent greeting, Shall hail the heav'n-sent ray."
     ],
-    "credits": "Words: Gottfried Wilhelm Sacer, 1661.  verses 1-5,7 Translated by Frances Elizabeth Cox, 1841.verse 6 translator unknown. Music: 'Von Gott will ich Nicht Lazen' Johann Crüger, 1640. Setting: \"Kern des Deutschen Kirchengesangs Zum Gebrauch\" Fridrich Layriz, 1854. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision."
+    "credits": "Words: Gottfried Wilhelm Sacer, 1661.  verses 1-5,7 Translated by Frances Elizabeth Cox, 1841.verse 6 translator unknown. Music: 'Von Gott will ich Nicht Lazen' Johann Crüger, 1640. Setting: \"Kern des Deutschen Kirchengesangs Zum Gebrauch\" Fridrich Layriz, 1854. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision. Words as given by the Cyber Hymnal in stanzas 1, 2, 3, 4, 5."
   },
   {
     "id": 173,
@@ -4821,7 +4818,7 @@
       "3. May the peace of God my Father\nrule my life in everything,\nthat I may be calm to comfort\nsick and sorrowing.",
       "4. May the love of Jesus fill me\nas the waters fill the sea;\nHim exalting, self abasing:\nthis is victory.",
       "5. May I run the race before me,\nstrong and brave to face the foe,\nlooking only unto Jesus\nas I onward go.",
-      "6. May His beauty rest upon me\nas I seek the lost to win,\nand may they forget the channel,\nseeing only Him.\nSource:\nPsalms and Hymns to the Living God #350"
+      "6. May His beauty rest upon me\nas I seek the lost to win,\nand may they forget the channel,\nseeing only Him."
     ],
     "Author": "Kate B. Wilkinson",
     "Composer": "A. Cyril Barham-Gould",
@@ -5140,10 +5137,10 @@
     "mp3_url": "http://openhymnal.org/Mp3/My_Song_Shall_Be_Of_Jesus-Sondance.mp3",
     "verses": [
       "1. My song shall be of Jesus, His Mercy crowns my days\nHe fills my cup with blessings and tunes my heart to praise\nMy song shall be of Jesus the precious Lamb of God\nWho gave Himself my ransom and bought me with His blood",
-      "2. My song shall be of Jesus, while sitting at His feet\nHe calls to mind His goodness, and makes my joy complete;\nMy song shall be of Jesus, whatever ills befall,\nI'll sing the grace that saves me, and triumphs over all.",
-      "3. My song shall be of Jesus, when pressing on my way\nTo where my home shines glorious in pure and perfect day.\nAnd when my soul shall enter the many mansions fair,\nA song of praise to Jesus I'll sing forever there."
+      "2. My song shall be of Jesus; When, sitting at His feet,\nI call to mind His goodness, In meditation sweet;\nMy song shall be of Jesus, Whatever ill betide;\nI'll sing the grace that saves me, And keeps me at His side.",
+      "3. My song shall be of Jesus, While pressing on my way\nTo reach the blissful region Of pure and perfect day.\nAnd when my soul shall enter The gate of Eden fair,\nA song of praise to Jesus I'll sing forever there."
     ],
-    "credits": "Words: Fanny J. Crosby, 1875.  Adapted by Margaret Clarkson, 1973. Music: 'Sondance' Kenneth W. Paxton, 1998. Setting: Kenneth W. Paxton, 1998. copyright: Words, public domain.  Adaptation released into public domain by Hope Publishing Company.Music and Setting copyright: Copyright 1998 Kenneth W. Paxton.  This tune and setting may be freely reproduced or published for Christian worship, provided they are not altered, and this notice is on each copy. All other rights reserved.  This score is a part of the Open Hymnal Project, 2009 Revision."
+    "credits": "Words: Fanny J. Crosby, 1875. Music: 'Sondance' Kenneth W. Paxton, 1998. Setting: Kenneth W. Paxton, 1998. copyright: Words, public domain. Music and Setting copyright: Copyright 1998 Kenneth W. Paxton.  This tune and setting may be freely reproduced or published for Christian worship, provided they are not altered, and this notice is on each copy. All other rights reserved.  This score is a part of the Open Hymnal Project, 2009 Revision."
   },
   {
     "id": 470,
@@ -5210,12 +5207,12 @@
     "verses": [
       "1. Nearer, my God, to Thee, nearer to Thee!\nE'en though it be a cross that raiseth me,\nStill all my song shall be, nearer, my God, to Thee.\nNearer, my God, to Thee, Nearer to Thee!",
       "2. Though like the wanderer, the sun gone down,\nDarkness be over me, my rest a stone.\nYet in my dreams I'd be nearer, my God to Thee.\nNearer, my God, to Thee, Nearer to Thee!",
-      "3. Nearer, my Lord, to thee, Nearer to thee!\nWho to the cross didst come, Dying for me!\nStrengthen my willing feet, Hold me in service sweet\nNearer, my God, to Thee, Nearer to Thee!",
-      "4. Nearer, O Comforter, Nearer to thee!\nWho with my loving Lord Dwellest with me!\nGrant me thy fellowship! Help me each day to keep\nNearer, my God, to Thee, Nearer to Thee!",
-      "5. But to be nearer still, Bring me, O God,\nNot by the visioned steeps Angels have trod.\nHere where thy cross I see, Jesus, I wait for thee,\nThen evermore to be Nearer to Thee!",
-      "6.There in my Father's home, safe and at rest, There in my Savior's love, perfectly blest; Age after age to be, nearer my God to Thee.\nNearer, my God, to Thee, Nearer to Thee!"
+      "3. There let the way appear, steps unto heav'n;\nAll that Thou sendest me, in mercy giv'n;\nAngels to beckon me nearer, my God, to Thee.\nNearer, my God, to Thee, nearer to Thee!",
+      "4. Then, with my waking thoughts bright with Thy praise,\nOut of my stony griefs Bethel I'll raise;\nSo by my woes to be nearer, my God, to Thee.\nNearer, my God, to Thee, nearer to Thee!",
+      "5. Or, if on joyful wing cleaving the sky,\nSun, moon, and stars forgot, upward I'll fly,\nStill all my song shall be, nearer, my God, to Thee.\nNearer, my God, to Thee, nearer to Thee!",
+      "6. There in my Father's home, safe and at rest,\nThere in my Savior's love, perfectly blest;\nAge after age to be, nearer, my God, to Thee.\nNearer, my God, to Thee, nearer to Thee!"
     ],
-    "credits": "Words: st. 1-2 by Sarah F. Adams, 1841; st. 3-5 by Hervey D. Ganse (1822-1891); st. 6 by Edward H. Bickersteth, Jr. (1825-1906). Music: 'Bethany' Lowell Mason, 1856. Setting: The Evangelical Lutheran Hymnal (Ohio Synod), 1908. copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision."
+    "credits": "Words: st. 1-5 by Sarah F. Adams, 1841; st. 6 by Edward H. Bickersteth, Jr. (1825-1906). Music: 'Bethany' Lowell Mason, 1856. Setting: The Evangelical Lutheran Hymnal (Ohio Synod), 1908. copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision."
   },
   {
     "id": 201,
@@ -5325,16 +5322,16 @@
     "midi_url": "http://openhymnal.org/Midi/Now_Praise_We_Christ_The_Holy_One-Christum_Wir_Sollen_Loben_Schon.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Now_Praise_We_Christ_The_Holy_One-Christum_Wir_Sollen_Loben_Schon.mp3",
     "verses": [
-      "1. Now praise we Christ, the Holy One,\nThe spotless virgin Mary's Son,\nFar as the blesséd sun doth shine\nE'en to the world's remote confine",
-      "2. He, who Himself all things did make,\nA servant's form vouchsafed to take,\nThat He as man mankind might win,\nAnd save His creatures from their sin.",
-      "3. The grace of God, th'Almighty Lord,\nOn the chaste mother was outpoured\na virgin pure and undefiled\nIn wondrous wise conceived a child.",
-      "4. The holy maid became th'abode\nAnd temple of the living God;\nAnd she, who knew not man, was blest\nWith God's own Word made manifest.",
-      "5. The noble mother bare a Son,\nFor so did Gabriel's promise run,\nWhom John confessed and leapt with joy,\nEre yet the mother knew her boy.",
-      "6. In a rude manger, stretched on hay,\nIn poverty content He lay;\nWith milk was fed the Lord of all,\nWho feeds the ravens when they call.",
-      "7. Th' angelic choir rejoice, and raise\nTheir voice to God in songs of praise;\nTo humble shepherds is proclaimed\nThe Shepherd who the world hath framed.",
-      "8. Δ Honor to Thee, O Christ, be paid,\nPure offspring of a holy maid,\nWith Father and with Holy Ghost,\nTill time in time's abyss be lost."
+      "1. Now praise we Christ, the Holy One,\nThe blessèd virgin Mary's son,\nFar as the glorious sun doth shine,\nE'en to the world's remote confine.",
+      "2. He who Himself all things did make\nA servant's form vouchsafed to take\nThat He as man mankind might win\nAnd save His creatures from their sin.",
+      "3. The grace and power of God the Lord\nUpon the mother was outpoured;\nA virgin pure and undefiled\nIn wondrous wise conceived a child.",
+      "4. The holy maid became th'abode\nAnd temple of the living God,\nAnd she, who knew not man, was blest\nWith God's own Word made manifest.",
+      "5. The noble mother bore a son—\nFor so did Gabriel's promise run—\nWhom John confessed and leaped with joy\nEre yet the mother knew her boy.",
+      "6. Upon a manger filled with hay\nIn poverty content He lay;\nWith milk was fed the Lord of all,\nWho feeds the ravens when they call.",
+      "7. The heav'nly choirs rejoice and raise\nTheir voice to God in songs of praise.\nTo humble shepherds is proclaimed\nThe Shepherd who the world hath framed.",
+      "8. Δ All honor unto Christ be paid,\nPure offspring of the favored maid,\nWith Father and with Holy Ghost,\nTill time in endless time be lost."
     ],
-    "credits": "Words: Coelius Sedulius, circa 450.  Translated to German by Martin Luther, 1524. Translated from German to English by Richard Massie, 1854, alt. Music: 'Christum Wir Sollen Loben Schon' ancient Latin found in Erfurt Enchiridion, 1524. Setting: Michael Praetorius, 1609. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision."
+    "credits": "Words: Coelius Sedulius, circa 450.  Translated to German by Martin Luther, 1524. Translated from German to English by Richard Massie, 1854, alt. Music: 'Christum Wir Sollen Loben Schon' ancient Latin found in Erfurt Enchiridion, 1524. Setting: Michael Praetorius, 1609. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision. Words as given by the Cyber Hymnal."
   },
   {
     "id": 205,
@@ -5802,16 +5799,16 @@
     "midi_url": "http://openhymnal.org/Midi/O_Holy_Spirit_Enter_In-Wie_Schon_Leuchtet.mid",
     "mp3_url": "http://openhymnal.org/Mp3/O_Holy_Spirit_Enter_In-Wie_Schon_Leuchtet.mp3",
     "verses": [
-      "1. O Holy Spirit, enter in,\nAnd in our hearts Thy work begin\nThy Temple deign to make us;\nSun of the soul, Thou Light divine,\nAround and in us brightly shine,\nTo joy and gladness wake us.\nThat we to Thee\nTruly living, To Thee giving\nPrayer unceasing\nMay in love be still increasing.",
-      "2. Give to Thy Word impressive pow'r\nThat in our hearts, from this good hour,\nAs fire it may be glowing;\nThat we confess the Father, Son,\nAnd Thee, the Spirit, Three in One,\nThy glory ever showing.\nStay Thou, guide now\nOur souls ever that they never\nMay forsake Thee.\nBut by faith their refuge make Thee.",
-      "3. Thou fountain whence all wisdom flows\nWhich God on pious hearts bestows,\nGrant us Thy consolation.\nThat in our pure faith's unity\nWe faithful witnesses may be\nOf grace that brings salvation.\nHear us, cheer us,\nBy Thy teaching; let our preaching,\nAnd our labor\nPraise Thee, Lord, and serve our neighbor.",
-      "4. Left to ourselves, we shall but stray;\nO lead us on the narrow way,\nWith wisest counsel guide us;\nAnd give us steadfastness, that we\nMay ever faithful prove to Thee,\nWhatever woes betide us;\nLord now Heal Thou\nAll hearts broken, And betoken\nThou art near us,\nWhom we trust to light and cheer us.",
-      "5. Thy heav'nly strength sustain our heart\nThat we may act the valiant part\nWith Thee as our Reliance;\nBe Thou our Refuge and our Shield\nThat we may never quit the field,\nBut stand in bold defiance.\nDescend, defend\nFrom all errors And earth's terrors\nThy salvation\nBe our constant consolation.",
-      "6. O mighty Rock, O Source of life,\nLet Thy dear Word 'mid doubt and strife\nBe so within us burning,\nThat we be faithful unto death,\nIn Thy pure love and holy faith,\nFrom Thee true wisdom learning!\nThy grace And peace\nOn us shower; By Thy power\nChrist confessing,\nLet us win our Savior's blessing.",
-      "7. O gentle Dew, from Heav'n now fall\nWith pow'r upon the hearts of all,\nThy tender love instilling,\nThat heart to heart more closely bound,\nFruitful in kindly deeds be found,\nThe law of love fulfilling;\nThe Lord, Discord\nShall not grieve Thee; We recieve Thee;\nWhere Thou livest.\nPeace, and love, and joy Thou givest.",
-      "8. Grant that our days, while life shall last,\nIn purest holiness be passed,\nBe Thou our Strength forever;\nGrant that our hearts henceforth be free\nFrom sinful lust and vanity\nWhich us from Thee must sever.\nKeep Thou pure Now\nFrom offenses Heart and senses.\nBlessed Spirit!\nLet us heavenly life inherit."
+      "1. O Holy Spirit, enter in,\nAmong these hearts Thy work begin,\nThy temple deign to make us;\nSun of the soul, Thou Light divine,\nAround and in us brightly shine,\nTo strength and gladness wake us.\nWhere Thou shinest, life from Heaven\nThere is given; we before Thee\nFor that precious gift implore Thee.",
+      "2. Give to Thy Word impressive pow'r\nThat in our hearts, from this good hour,\nAs fire it may be glowing;\nThat we confess the Father, Son,\nAnd Thee, the Spirit, Three in One,\nThy glory ever showing.\nStay Thou, guide now\nOur souls ever that they never\nMay forsake Thee.\nMay in love be still increasing.",
+      "3. Thou fountain whence all wisdom flows\nWhich God on pious hearts bestows,\nGrant us Thy consolation\nThat in our pure faith's unity\nWe faithful witnesses may be\nOf grace that bring salvation.\nHear us, cheer us,\nBy Thy teaching; let our preaching,\nAnd our labor praise Thee,\nLord, and serve our neighbor.",
+      "4. Left to ourselves, we shall but stray;\nO lead us on the narrow way,\nWith wisest counsel guide us;\nAnd give us steadfastness, that we\nMay henceforth truly follow Thee,\nWhatever woes betide us;\nHeal Thou gently hearts now broken,\nGive some token Thou art near us,\nWhom we trust to light and cheer us.",
+      "5. Thy heav'nly strength sustain our heart\nThat we may act the valiant part\nWith Thee as our reliance;\nBe Thou our refuge and our shield\nThat we may never quit the field,\nBut bid all foes defiance.\nDescend, defend\nFrom all errors and earth's terrors\nThy salvation be our constant consolation.",
+      "6. O mighty Rock, O Source of life,\nLet Thy dear word 'mid doubt and strife\nBe so within us burning,\nThat we be faithful unto death,\nIn Thy pure love and holy faith,\nFrom Thee true wisdom learning!\nLord, Thy graces on us shower;\nBy Thy power Christ confessing,\nLet us win His grace and blessing.",
+      "7. O gentle dew, from Heaven now fall\nWith power upon the hearts of all,\nThy tender love instilling,\nThat heart to heart more closely bound,\nIn kindly deeds be fruitful found,\nThe law of love fulfilling.\nDwell thus in us; envy banish;\nStrife will vanish where Thou livest.\nPeace and love and joy Thou givest.",
+      "8. Grant that our days, while life shall last,\nIn purest holiness be passed;\nOur minds so rule and strengthen\nThat they may rise o'er things of earth,\nThe hopes and joys that here have birth;\nAnd if our course Thou lengthen,\nKeep Thou pure, Lord, from offenses\nHeart and senses; blessèd Spirit,\nBid us thus true life inherit."
     ],
-    "credits": "Words: Michael Schirmer, 1650 except verse 2 by unknown author circa 1660.  Verses 1, 4, 6-8 translated by by Catherine Winkworth, 1863.  Remaining verses unknown translator before 1931. Music: 'Wie Schön Leuchtet' Phillipp Nicolai, 1599. Setting: \"Mehrstimmiges ChoralBuch\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2012 Revision."
+    "credits": "Words: Michael Schirmer, 1650 except verse 2 by unknown author circa 1660.  Verses 1, 4, 6-8 translated by by Catherine Winkworth, 1863.  Remaining verses unknown translator before 1931. Music: 'Wie Schön Leuchtet' Phillipp Nicolai, 1599. Setting: \"Mehrstimmiges ChoralBuch\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2012 Revision. Words as given by the Cyber Hymnal."
   },
   {
     "id": 218,
@@ -6495,7 +6492,7 @@
       "2. O send Thy Spirit down to write\nThy law upon my heart!\nNor let my tongue indulge deceit,\nNor act the liar's part.",
       "3. From vanity turn off mine eyes;\nLet no corrupt design,\nNor covetous desires arise\nWithin this soul of mine.",
       "4. Order my footsteps by Thy Word,\nAnd make my heart sincere;\nLet sin have no dominion, Lord,\nBut keep my conscience clear.",
-      "5. Assist my soul, too apt to stray,\nA stricter watch to keep;\nAnd should I e'er forget Thy way,\nRestore Thy wand'ring sheep.",
+      "5. My soul hath gone too far astray,\nMy feet too often slip;\nYet since I've not forgot Thy way,\nRestore Thy wand'ring sheep.",
       "6. Make me to walk in Thy commands,\n'Tis a delightful road;\nNor let my head, or heart, or hands,\nOffend against my God."
     ],
     "credits": "Words: Isaac Watts, 1719, alt. Music: 'Evan' or 'Eva' William H. Havergal, 1847. Setting: Lowell Mason, 1850. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision."
@@ -6707,18 +6704,18 @@
     "midi_url": "http://openhymnal.org/Midi/One_Things_Needful-Eins_Ist_Not.mid",
     "mp3_url": "http://openhymnal.org/Mp3/One_Things_Needful-Eins_Ist_Not.mp3",
     "verses": [
-      "1. One thing's needful: then, Lord Jesus,\nKeep this one thing in my mind;\nAll beside, though first it please us,\nSoon a grievous yoke we find:\nBeneath it the heart is still fretting and striving,\nNo true, lasting happiness ever deriving.\nThe gain of this one thing all loss can requite\nAnd teach me in all things to find true delight.",
-      "2. Soul, wilt thou this one thing find thee?\nSeek not midst created things;\nWhat is earthly, leave behind thee,\nover nature stretch thy wings;\nFor where God and man both in One are united,\nWith God's perfect fullness the heart is delighted;\nThere, there is the worthiest lot and the best,\nMy One and my All, and my Joy, and my Rest.",
-      "3. How were Mary's thoughts devoted,\nHer eternal joy to find,\nAs intent each word she noted,\nAt her Savior's feet reclined:\nHow kindled her heart, how devout was its feeling,\nWhile hearing the lessons that Christ was revealing;\nFor Jesus all earthly concerns she forgot,\nAnd all was repaid in that one happy lot.",
-      "4. Thus my longings, heav'nward tending,\nJesus, rest alone on Thee;\nHelp me, thus on Thee depending,\nSavior! come and dwell in me:\nAlthough all the world should forsake and forget Thee,\nIn love I will follow Thee, ne'er will I quit Thee;\nFor Jesus, both Spirit and life is Thy Word,\nAnd is there a joy which Thou dost not afford?",
-      "5. Wisdom's highest noblest treasure,\nJesus, lies conceal'd in Thee;\nGrant that this may still the measure\nOf my will and actions be:\nHumility there and simplicity reigning,\nMy steps shall in wisdom for ever be training;\nOh! if I of Christ have this knowledge divine,\nThe fullness of heavenly wisdom is mine.",
-      "6. Christ, Thou art the sole oblation\nThat I'll bring before my God;\nIn his sight I've acceptation\nOnly through Thy streaming blood:\nImmaculate righteousness now I've acquired,\nSince Thou on the tree of the cross hast expired;\nThe robe of salvation for ever is mine,\nIn this shall my faith through eternity shine.",
+      "1. One thing's needful; Lord this treasure\nTeach me highly to regard;\nAll else, though it first give pleasure,\nIs a yoke that presses hard.\nBeneath it the heart is still fretting and striving,\nNo true, lasting happiness ever deriving.\nThe gain of this one thing all loss can requite\nAnd teach me in all things to find true delight.",
+      "2. Wilt thou find this one thing needful,\nTurn from all created things\nUnto Jesus and be heedful\nOf the blessèd joy He brings.\nFor where God and man both in one are united,\nWith God's perfect fullness the heart is delighted;\nThere, there is the worthiest lot and the best,\nMy one and my all and my joy and my rest.",
+      "3. How were Mary's thoughts devoted,\nHer eternal joy to find\nAs intent each word she noted,\nAt her Savior's feet reclined!\nHow kindled her heart, how devout was its feeling,\nWhile hearing the lessons that Christ was revealing!\nFor Jesus all earthly concerns she forgot,\nAnd all was repaid in that one happy lot.",
+      "4. Thus my longings, heav'nward tending,\nJesus, rest alone on Thee.\nHelp me, thus on Thee depending;\nSavior, come and dwell in me.\nAlthough all the world should forsake and forget Thee,\nIn love I will follow Thee, ne'er will I quit Thee.\nLord Jesus, both spirit and life is Thy Word;\nAnd is there a joy which Thou dost not afford?",
+      "5. Wisdom's highest, noblest treasure,\nJesus, lies concealed in Thee;\nGrant that this may still the measure\nOf my will and actions be,\nHumility there and simplicity reigning,\nIn paths of true wisdom my steps ever training.\nOh, if I of Christ have this knowledge divine,\nThe fullness of heavenly wisdom is mine.",
+      "6. Naught have I, O Christ, to offer\nNaught but Thee, my highest Good.\nNaught have I, O Lord, to proffer\nBut Thy crimson-colored blood.\nThy death on the cross hath death wholly defeated\nAnd thereby my righteousness fully completed;\nSalvation's white raiments I there did obtain,\nAnd in them in glory with Thee I shall reign.",
       "7. Let my soul, in full exemption,\nWake up in Thy likeness now;\nThou art made to me redemption,\nMy sanctification Thou.\nWhatever I need for my Journey to Heaven\nIn Thee, I my Savior, is unto me given.\nOh! let me all perishing pleasures forgo,\nAnd Thy life, O Jesus! alone let me know.",
       "8. Where should else my hopes be centered?\nGrace o'erwhelms me with its flood;\nThou, my Savior, once hast enter'd\nHoliest heaven through Thy blood:\nEternal redemption for sinners there finding,\nFrom hell's dark dominion my spirit unbinding,\nTo me perfect freedom Thy entrance has brought,\nAnd childlike to cry, \"Abba, Father,\" I'm taught.",
       "9. Christ Himself, my Shepherd, feeds me,\nPeace and joy my spirit fill;\nIn a pasture green He leads me\nForth beside the waters still:\nOh! naught to my soul is so sweet and reviving,\nAs thus unto Jesus alone to be living;\nTrue happiness this, and this only supplies,\nThrough faith on my Savior to fasten my eyes.",
-      "10. Therefore, Jesus, my Salvation,\nThou my One, my All shalt be;\nProve my fix'd determination,\nRoot out all hypocrisy:\nLook well if on sin's slippery paths I am hasting,\nAnd lead me, O Lord, in the way everlasting;\nThis one thing is needful, all others are vain,\nI count all but loss that I Christ may obtain."
+      "10. Therefore Thou alone, my Savior,\nShalt be all in all to me;\nSearch my heart and my behavior,\nRoot out all hypocrisy.\nRestrain me from wandering on pathways unholy\nAnd through all life's pilgrimage keep my heart lowly.\nThis one thing is needful, all others are vain;\nI count all but loss that I Christ may obtain."
     ],
-    "credits": "Words: Johann H. Schröder, 1697.  Translated by Frances E. Cox, 1841, alt. Music: 'Eins ist Not' Adam Krieger (1634-1666). Setting: Fridrich Layriz, 1853, alt. copyright: public domain.  This score is a part of the Open Hymnal Project, 2012 Revision."
+    "credits": "Words: Johann H. Schröder, 1697.  Translated by Frances E. Cox, 1841, alt. Music: 'Eins ist Not' Adam Krieger (1634-1666). Setting: Fridrich Layriz, 1853, alt. copyright: public domain.  This score is a part of the Open Hymnal Project, 2012 Revision. Words as given by the Cyber Hymnal in stanzas 1, 2, 3, 4, 5, 6, 10."
   },
   {
     "id": 241,
@@ -7127,11 +7124,11 @@
     "title": "Rejoice, The Lord is King",
     "tune": "DARWALLS 148TH",
     "verses": [
-      "1. The Lord is King! Lift up thy voice,\nO earth; and all ye heavens, rejoice:\nFrom world to world the joy shall ring,\nThe Lord omnipotent is king.",
-      "2. The Lord is King! Who then shall dare\nResist his will, distrust his care,\nOr murmur at his wise decrees,\nOr doubt his royal promises?",
-      "3. The Lord is King! Child of the dust,\nThe judge of all the earth is just;\nHoly and true are all his ways:\nLet every creature speak his praise.",
-      "4. Alike pervaded by his eye,\nAll parts of his dominion lie;\nThis world of ours, and worlds unseen,\nAnd thin the boundary between.",
-      "5. One Lord, one empire, all secures;\nHe reigns, and life and death are yours:\nThrough earth and heaven one song shall ring,\n\"The Lord omnipotent is King!\""
+      "1. Rejoice, the Lord is king!\nYour Lord and king adore;\nMortals give thanks and sing,\nAnd triumph evermore;\nLift up your heart, lift up your voice;\nRejoice, again I say, rejoice!",
+      "2. Jesus, the Savior, reigns,\nThe God of truth and love;\nWhen He had purged our stains\nHe took His seat above;\nLift up your heart, lift up your voice;\nRejoice, again I say, rejoice!",
+      "3. His kingdom cannot fail,\nHe rules o'er earth and Heav'n,\nThe keys of death and hell\nAre to our Jesus giv'n;\nLift up your heart, lift up your voice;\nRejoice, again I say, rejoice!",
+      "4. He sits at God's right hand\nTill all His foes submit,\nAnd bow to His command,\nAnd fall beneath His feet:\nLift up your heart, lift up your voice;\nRejoice, again I say, rejoice!",
+      "5. Rejoice in glorious hope!\nJesus the Judge shall come,\nAnd take His servants up\nTo their eternal home.\nWe soon shall hear th'archangel's voice;\nThe trump of God shall sound, rejoice!"
     ],
     "Author": "Charles Wesley",
     "Composer": "John Darwall",
@@ -7144,11 +7141,11 @@
     "title": "Rejoice, The Lord is King",
     "tune": "Arthur's Seat",
     "verses": [
-      "1. The Lord is King! Lift up thy voice,\nO earth; and all ye heavens, rejoice:\nFrom world to world the joy shall ring,\nThe Lord omnipotent is king.",
-      "2. The Lord is King! Who then shall dare\nResist his will, distrust his care,\nOr murmur at his wise decrees,\nOr doubt his royal promises?",
-      "3. The Lord is King! Child of the dust,\nThe judge of all the earth is just;\nHoly and true are all his ways:\nLet every creature speak his praise.",
-      "4. Alike pervaded by his eye,\nAll parts of his dominion lie;\nThis world of ours, and worlds unseen,\nAnd thin the boundary between.",
-      "5. One Lord, one empire, all secures;\nHe reigns, and life and death are yours:\nThrough earth and heaven one song shall ring,\n\"The Lord omnipotent is King!\""
+      "1. Rejoice, the Lord is king!\nYour Lord and king adore;\nMortals give thanks and sing,\nAnd triumph evermore;\nLift up your heart, lift up your voice;\nRejoice, again I say, rejoice!",
+      "2. Jesus, the Savior, reigns,\nThe God of truth and love;\nWhen He had purged our stains\nHe took His seat above;\nLift up your heart, lift up your voice;\nRejoice, again I say, rejoice!",
+      "3. His kingdom cannot fail,\nHe rules o'er earth and Heav'n,\nThe keys of death and hell\nAre to our Jesus giv'n;\nLift up your heart, lift up your voice;\nRejoice, again I say, rejoice!",
+      "4. He sits at God's right hand\nTill all His foes submit,\nAnd bow to His command,\nAnd fall beneath His feet:\nLift up your heart, lift up your voice;\nRejoice, again I say, rejoice!",
+      "5. Rejoice in glorious hope!\nJesus the Judge shall come,\nAnd take His servants up\nTo their eternal home.\nWe soon shall hear th'archangel's voice;\nThe trump of God shall sound, rejoice!"
     ],
     "Author": "Charles Wesley",
     "Composer": "",
@@ -7313,11 +7310,11 @@
     "midi_url": "http://openhymnal.org/Midi/Savior_When_In_Dust_To_Thee-Aberystwyth.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Savior_When_In_Dust_To_Thee-Aberystwyth.mp3",
     "verses": [
-      "1. Savior, when in dust to Thee\nLow we bow th'adoring knee,\nWhen, repentant, to the skies\nScarce we lift our weeping eyes,\nO by all the pains and woes\nSuffered once for man below,\nBending from Thy throne on high,\nHear our penitential cry!",
-      "2. By Thy helpless infant years,\nBy Thy life of want and tears,\nBy Thy days of sore distress\nIn the savage wilderness,\nBy the dread mysterious hour\nOf th'insulting tempter's pow'r,\nTurn, O turn a fav'ring eye,\nHear our penitential cry!",
-      "3. By the sacred griefs that wept\nO'er the grave where Laz'rus slept,\nBy the boding tears that flowed\nOver Salem's loved abode,\nBy the anguished sigh that told\nTreachery lurked within Thy fold,\nFrom Thy seat above the sky,\nHear our penitential cry!",
-      "4. By Thine hour of dire despair,\nBy Thine agony of prayer,\nBy the cross, the nail, the thorn,\nPiercing spear, and torturing scorn,\nBy the gloom that veiled the skies\nO'er the dreadful sacrifice,\nListen to our humble cry,\nHear our penitential cry!",
-      "5. By Thy deep expiring groan,\nBy the sad sepulchral stone,\nBy the vault whose dark abode\nHeld in vain the rising God,\nO from earth to heaven restored,\nMighty, reascended Lord,\nListen, listen to the sigh\nOf our penitential cry!"
+      "1. Savior, when in dust to Thee\nLow we bow th'adoring knee,\nWhen, repentant, to the skies\nScarce we lift our weeping eyes,\nO by all the pains and woes\nSuffered once for man below,\nBending from Thy throne on high,\nHear our solemn litany!",
+      "2. By Thy helpless infant years,\nBy Thy life of want and tears,\nBy Thy days of sore distress\nIn the savage wilderness,\nBy the dread mysterious hour\nOf th'insulting tempter's pow'r,\nTurn, O turn a fav'ring eye,\nHear our solemn litany!",
+      "3. By the sacred griefs that wept\nO'er the grave where Laz'rus slept,\nBy the boding tears that flowed\nOver Salem's loved abode,\nBy the anguished sigh that told\nTreachery lurked within Thy fold,\nFrom Thy seat above the sky,\nHear our solemn litany!",
+      "4. By Thine hour of dire despair,\nBy Thine agony of prayer,\nBy the cross, the nail, the thorn,\nPiercing spear, and torturing scorn,\nBy the gloom that veiled the skies\nO'er the dreadful sacrifice,\nListen to our humble cry,\nHear our solemn litany!",
+      "5. By Thy deep expiring groan,\nBy the sad sepulchral stone,\nBy the vault whose dark abode\nHeld in vain the rising God,\nO from earth to heaven restored,\nMighty, reascended Lord,\nListen, listen to the cry\nOf our solemn litany!"
     ],
     "credits": "Words: Robert Grant, 1815, alt. Music: 'Aberystwyth (Parry)' Joseph Parry, 1879. Setting: \"The English Hymnal\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision."
   },
@@ -7397,13 +7394,13 @@
     "midi_url": "http://openhymnal.org/Midi/Shepherd_of_Tender_Youth-Italian_Hymn.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Shepherd_of_Tender_Youth-Italian_Hymn.mp3",
     "verses": [
-      "1. Shepherd of tender youth,\nGuiding in love and truth,\nThrough devious ways!\nChrist, our triumphant King!\nWe come your Name to sing,\nAnd here our children bring,\nTo shout your praise.",
-      "2. You are our holy Lord!\nThe all subduing Word!\nHealer of strife!\nYou did yourself abase,\nThat from sin's deep disgrace\nYou might now save our race,\nAnd give us life.",
-      "3. You are our soul's High Priest!\nYou have prepared the feast\nOf holy love,\nAnd in our mortal pain\nNone calls on you in vain,\nOur plea do not disdain,\nHelp from above.",
-      "4. O ever be our guide,\nOur Shepherd and our pride,\nOur staff and song!\nJesus! O Christ of God!\nBy your perennial Word\nLead us where you have trod,\nMake our faith strong.",
-      "5. So now, and till we die,\nSound we your praises high,\nAnd joyful sing;\nInfants and the glad throng\nWho to your Church belong,\nUnite to swell the song\nTo Christ, our King."
+      "1. Shepherd of tender youth,\nGuiding in love and truth\nThrough devious ways;\nChrist our triumphant king,\nWe come Thy name to sing\nAnd here our children bring\nTo join Thy praise.",
+      "2. Thou art our holy Lord,\nO all subduing Word,\nHealer of strife.\nThou didst Thyself abase\nThat from sin's deep disgrace\nThou mightest save our race\nAnd give us life.",
+      "3. Thou art the great high priest;\nThou hast prepared the feast\nOf holy love;\nAnd in our mortal pain,\nNone calls on Thee in vain;\nHelp Thou dost not disdain,\nHelp from above.",
+      "4. Ever be Thou our guide,\nOur shepherd and our pride,\nOur staff and song;\nJesus, Thou Christ of God,\nBy Thine enduring Word\nLead us where Thou hast trod,\nMake our faith strong.",
+      "5. So now, and till we die,\nSound we Thy praises high\nAnd joyful sing;\nInfants and the glad throng\nWho to Thy Church belong,\nUnite to swell the song\nTo Christ, our king."
     ],
-    "credits": "Words: Clement of Alexandria, ca200.  Translated by Henry Martyn Dexter, 1846, alt.. Music: 'Italian Hymn' Felice de Giardini, 1769. Setting: \"The Methodist Sunday School Hymnal\", 1911. copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision."
+    "credits": "Words: Clement of Alexandria, ca200.  Translated by Henry Martyn Dexter, 1846. Music: 'Italian Hymn' Felice de Giardini, 1769. Setting: \"The Methodist Sunday School Hymnal\", 1911. copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision."
   },
   {
     "id": 546,
@@ -7413,13 +7410,13 @@
     "midi_url": "assets/midi/Shepherd_of_Tender_Youth-Braun.mid",
     "mp3_url": "",
     "verses": [
-      "1. Shepherd of tender youth,\nGuiding in love and truth,\nThrough devious ways!\nChrist, our triumphant King!\nWe come your Name to sing,\nAnd here our children bring,\nTo shout your praise.",
-      "2. You are our holy Lord!\nThe all subduing Word!\nHealer of strife!\nYou did yourself abase,\nThat from sin's deep disgrace\nYou might now save our race,\nAnd give us life.",
-      "3. You are our soul's High Priest!\nYou have prepared the feast\nOf holy love,\nAnd in our mortal pain\nNone calls on you in vain,\nOur plea do not disdain,\nHelp from above.",
-      "4. O ever be our guide,\nOur Shepherd and our pride,\nOur staff and song!\nJesus! O Christ of God!\nBy your perennial Word\nLead us where you have trod,\nMake our faith strong.",
-      "5. So now, and till we die,\nSound we your praises high,\nAnd joyful sing;\nInfants and the glad throng\nWho to your Church belong,\nUnite to swell the song\nTo Christ, our King."
+      "1. Shepherd of tender youth,\nGuiding in love and truth\nThrough devious ways;\nChrist our triumphant king,\nWe come Thy name to sing\nAnd here our children bring\nTo join Thy praise.",
+      "2. Thou art our holy Lord,\nO all subduing Word,\nHealer of strife.\nThou didst Thyself abase\nThat from sin's deep disgrace\nThou mightest save our race\nAnd give us life.",
+      "3. Thou art the great high priest;\nThou hast prepared the feast\nOf holy love;\nAnd in our mortal pain,\nNone calls on Thee in vain;\nHelp Thou dost not disdain,\nHelp from above.",
+      "4. Ever be Thou our guide,\nOur shepherd and our pride,\nOur staff and song;\nJesus, Thou Christ of God,\nBy Thine enduring Word\nLead us where Thou hast trod,\nMake our faith strong.",
+      "5. So now, and till we die,\nSound we Thy praises high\nAnd joyful sing;\nInfants and the glad throng\nWho to Thy Church belong,\nUnite to swell the song\nTo Christ, our king."
     ],
-    "credits": "Words: Clement of Alexandria, ca200.  Translated by Henry Martyn Dexter, 1846, alt. Music: 'Braun'. Alternate tune per Trinity Hymnal (Orthodox Presbyterian Church / Great Commission Publications). copyright: public domain (tune)."
+    "credits": "Words: Clement of Alexandria, ca200.  Translated by Henry Martyn Dexter, 1846. Music: 'Braun'. Alternate tune per Trinity Hymnal (Orthodox Presbyterian Church / Great Commission Publications). copyright: public domain (tune)."
   },
   {
     "id": 395,
@@ -7494,31 +7491,30 @@
     "midi_url": "http://openhymnal.org/Midi/Sing_My_Tongue_the_Glorious_Battle-Pange_Lingua.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Sing_My_Tongue_the_Glorious_Battle-Pange_Lingua.mp3",
     "verses": [
-      "1. Sing, my tongue, the glorious  battle,\nWith completed  vict'ry  rife,\nAnd  above  the  cross's  trophy\nTell  the  triumph  of  the  strife,\nHow  the  world's  Redeemer  conquered\nBy  surrend'ring  of  His  Life.",
-      "2. God  his  Maker  sorely  grieving\nThat the  first  born  Adam  fell,\nWhen  he  ate  the  noxious  apple\nWhose reward  was  death  and  hell,\nNoted  then  this  wood,  the  ruin\nOf  the  ancient  wood  to  quell.",
+      "1. Sing, my tongue, the glorious battle,\nSing the ending of the fray;\nNow above the cross, the trophy,\nSound the loud triumphant lay:\nTell how Christ the world's Redeemer,\nAs a victim won the day.",
+      "2. He, our maker, deeply grieving\nThat the first made Adam fell,\nWhen he ate the fruit forbidden\nWhose reward was death and hell,\nMarked e'en then this tree the ruin\nOf the first tree to dispel.",
       "3. For  the  work  of  our  salvation\nNeeds would  have  his  order  so,\nAnd  the  multiform  deceiver's\nArt  by  art  would  overthrow.\nAnd  from  thence  would  bring  the  med'cine\nWhence  the  venom  of  the  foe.",
-      "4. Wherefore,  when  the  sacred  fullness\nOf th'appointed  time was  come,\nThis  world's  Maker  left  His  Father,\nLeft  His  bright  and  heav'nly  home,\nAnd  proceeded,  God  Incarnate,\nFrom  the  virgin's  holy  womb.",
-      "5. Weeps  the  Infant  in  the  manger\nThat in  Bethl'hem's  stable  stands;\nAnd  His  limbs  the  virgin  mother\nDoth  compose  in  swad dling bands,\nMeetly  thus  in  linen  folding\nOf her  God the  feet  and  hands.",
-      "6. Thirty years among us dwelling,\nHis appointed time fulfilled;\nGiv'n for this, He meets His Passion,\nFor that this He freely willed;\nOn the Cross the Lamb is lifted,\nOn Whose Death our hope we build.",
-      "7. He endured the shame and spitting.\nVinegar and nails and reed;\nAs His Blessed Side is opened,\nWater thence and blood proceed:\nEarth, and sky, and stars, and ocean,\nBy that flood are cleansed indeed.",
-      "8. Faithful Cross! above all other\nOne and only noble Tree!\nNone in foliage, none in blossom,\nNone in fruit compares with Thee:\nSweetest wood, and sweetest iron,\nSweetest weight sustaining free.",
-      "9. Bend thy boughs, O Tree of Glory!\nThy relaxing sinews bend;\nFor awhile the ancient rigour\nThat thy birth bestowed, suspend:\nAnd the King of Heavenly Beauty\nOn thy bosom gently tend.",
-      "10. Thou alone wast counted worthy\nThis world's ransom to uphold;\nFor a shipwrecked world preparing\nHarbor, like the Ark of old;\nWith the sacred Blood anointed\nFrom the wounded Lamb that rolled.",
-      "11. Δ Laud and honor to the Father,\nLaud and honor to the Son,\nLaud and honor to the Spirit,\nEver Three and ever One:\nConsubstantial, co-eternal,\nWhile unending ages run."
+      "4. Tell how, when at length the fullness,\nOf th'appointed time was come,\nChrist, the Word, was born of woman,\nLeft for us His heavenly home;\nShowed us human life made perfect,\nShone as light amid the gloom.",
+      "5. Lo! He lies an infant weeping,\nWhere the narrow manger stands,\nWhile the mother-maid His members\nWraps in mean and lowly bands,\nAnd the swaddling clothes is winding\nRound His helpless feet and hands.",
+      "6. Thus, with thirty years accomplished,\nWent He forth from Nazareth,\nDestined, dedicated, willing,\nWrought His work, and met His death.\nLike a lamb He humbly yielded\nOn the cross His dying breath.",
+      "7. There the nails and spears He suffers,\nVinegar, and gall, and reed;\nFrom His sacred body piercèd\nBlood and water both proceed;\nPrecious flood, which all creation\nFrom the stain of sin hath freed.",
+      "8. Faithful cross, thou sign of triumph,\nNow for us the noblest tree,\nNone in foliage, none in blossom,\nNone in fruit thy peer may be;\nSymbol of the world's redemption,\nFor the weight that hung on thee!",
+      "9. Bend thy boughs, O tree of glory!\nThy relaxing sinews bend;\nFor awhile the ancient rigor\nThat thy birth bestowed, suspend;\nAnd the King of heavenly beauty\nOn thy bosom gently tend!",
+      "10. Thou alone wast counted worthy\nThis world's ransom to sustain,\nThat a shipwrecked race forever\nMight a port of refuge gain,\nWith the sacred blood anointed\nOf the Lamb of sinners slain.",
+      "11. Δ To the Trinity be glory\nEverlasting, as is meet:\nEqual to the Father, equal\nTo the Son, and Paraclete:\nGod the Three in One, whose praises\nAll created things repeat."
     ],
-    "credits": "Words:  Venantius Fortunatus, 569.  Translated by John M. Neale, 1851. Music: 'Pange Lingua', Proper Sarum Melody, alt. Setting: \"The Church Hymnal, Revised and Enlarged\" (Episcopal), 1898, alt. copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision."
+    "credits": "Words:  Venantius Fortunatus, 569.  Translated by John M. Neale, 1851. Music: 'Pange Lingua', Proper Sarum Melody, alt. Setting: \"The Church Hymnal, Revised and Enlarged\" (Episcopal), 1898, alt. copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision. Words as given by the Cyber Hymnal in stanzas 1, 2, 4, 5, 6, 7, 8, 9, 10, 11."
   },
   {
     "id": 513,
     "title": "Sing Praise to God Who Reigns Above",
     "tune": "MIT FREUDEN ZART",
     "verses": [
-      "1. All praise to God, who reigns above,\nThe God of all creation,\nThe God of wonders, pow'r, and love,\nThe God of our salvation!\nWith healing balm my soul he fills,\nThe God who every sorrow stills,\nTo God all praise and glory!",
-      "2. What God's almighty pow'r hath made\nHis gracious mercy keepeth;\nBy morning dawn or evening shade\nHis watchful eye ne'er sleepeth;\nWithin the kingdom of his might,\nLo, all is just and all is right,\nTo God all praise and glory!",
-      "3. I cried to him in time of need:\nLord God, O, hear my calling!\nFor death he gave me life indeed\nAnd kept my feet from falling.\nFor this my thanks shall endless be;\nO thank him, thank our God, with me,\nTo God all praise and glory!",
-      "4. The Lord forsaketh not his flock,\nHis chosen generation;\nHe is their refuge and their rock,\nTheir peace and their salvation.\nAs with a mother's tender hand\nHe leads his own, his chosen band,\nTo God all praise and glory!",
-      "5. Ye who confess Christ's holy name,\nTo God give praise and glory!\nYe who the Father's power proclaim,\nTo God give praise and glory!\nAll idols under foot be trod,\nThe Lord is God! the Lord is God!\nTo God all praise and glory!",
-      "6. Then come before his presence now\nAnd banish fear and sadness;\nTo your Redeemer pay your vow\nAnd sing with joy and gladness:\nThough great distress my soul befell,\nThe Lord, my God, did all things well,\nTo God all praise and glory!"
+      "1. Sing praise to God who reigns above,\nThe God of all creation,\nThe God of power, the God of love,\nThe God of our salvation.\nWith healing balm my soul is filled\nAnd every faithless murmur stilled:\nTo God all praise and glory.",
+      "2. What God's almighty power hath made\nHis gracious mercy keepeth,\nBy morning glow or evening shade\nHis watchful eye ne'er sleepeth;\nWithin the kingdom of His might,\nLo! all is just and all is right:\nTo God all praise and glory.",
+      "3. The Lord is never far away,\nBut through all grief distressing,\nAn ever present help and stay,\nOur peace and joy and blessing.\nAs with a mother's tender hand,\nGod gently leads the chosen band:\nTo God all praise and glory.",
+      "4. Thus, all my toilsome way along,\nI sing aloud Thy praises,\nThat earth may hear the grateful song\nMy voice unwearied raises.\nBe joyful in the Lord, my heart,\nBoth soul and body bear your part:\nTo God all praise and glory.",
+      "5. Let all who name Christ's holy name\nGive God all praise and glory;\nLet all who own His power proclaim\nAloud the wondrous story!\nCast each false idol from its throne,\nFor Christ is Lord, and Christ alone:\nTo God all praise and glory."
     ],
     "Author": "Johann Jakob Schütz (trans. Frances E. Cox)",
     "Composer": "Bohemian Brethren (Kirchengesäng)",
@@ -7572,7 +7568,7 @@
       "3. Heaven and earth must pass away;\nsongs of praise shall crown that day:\nGod will make new heavens and earth;\nsongs of praise shall hail their birth.",
       "4. And shall we alone be dumb\ntill that glorious kingdom come?\nNo, the church delights to raise\npsalms and hymns and songs of praise.",
       "5. Saints below, with heart and voice,\nstill in songs of praise rejoice;\nlearning here, by faith and love,\nsongs of praise to sing above.",
-      "6. Hymns of glory, songs of praise,\nFather, unto thee we raise,\nJesu, glory unto thee,\nwith the Spirit, ever be.\nSource:\nAncient and Modern: hymns and songs for refreshing worship #782"
+      "6. Hymns of glory, songs of praise,\nFather, unto thee we raise,\nJesu, glory unto thee,\nwith the Spirit, ever be."
     ],
     "Author": "James Montgomery",
     "Composer": "John Antes",
@@ -7685,20 +7681,20 @@
     "midi_url": "http://openhymnal.org/Midi/That_Men_A_Godly_Life_Might_Live-Dies_sind_die_heilgen_zehu_Gebot.mid",
     "mp3_url": "http://openhymnal.org/Mp3/That_Men_A_Godly_Life_Might_Live-Dies_sind_die_heilgen_zehu_Gebot.mp3",
     "verses": [
-      "1. That man a godly life might live,\nGod did these ten commandments give\nBy His true servant Moses, high\nUpon the mount Sinai.\nHave mercy, Lord.",
-      "2. I am thy God and Lord alone,\nNo other God besides Me own;\nOn My great mercy venture thee,\nWith all thy heart love thou Me.\nHave mercy, Lord.",
-      "3. By idle word and speech profane\nTake not My holy Name in vain;\nAnd praise not aught as good and true\nBut what God doth say and do.\nHave mercy, Lord.",
-      "4. Hallow the day which God hath blest,\nThat thou and all thy house may rest;\nKeep hand and heart from labor free,\nThat God may so work in thee.\nHave mercy, Lord.",
-      "5. Give to thy parents honor due,\nBe dutiful and loving too;\nAnd help them when their strength decays\nSo shalt thou have length of days.\nHave mercy, Lord.",
-      "6. Kill thou not out of evil will,\nNor hate, nor render ill for ill;\nBe patient and of gentle mood,\nAnd to thy foe do thou good.",
-      "7. Be faithful to thy marriage vows,\nThy heart give only to thy spouse\nKeep thy life pure, and lest thou sin\nKeep thyself with discipline.",
-      "8. Steal not; oppressive acts abhor;\nNor wring their life-blood from the poor;\nBut open wide thy loving hand\nTo all the poor in the land.",
-      "9. Bear not false witness, nor belie\nThy neighbor by foul calumny;\nDefend his innocence from blame,\nWith charity hide his shame.",
-      "10.Thy neighbor's wife desire thou not,\nHis house, nor aught that he hath got\nBut wish that his such good may be\nAs thy heart doth wish for thee.",
-      "11.God these commandments gave, therein\nTo show thee, son of man, thy sin,\nAnd make thee also well perceive\nHow man for God ought to live.",
-      "12.Help us, Lord Jesus Christ, for we\nA Mediator have in Thee;\nWithout Thy help our works so vain\nMerit naught but endless pain."
+      "1. That man a godly life might live,\nGod did these Ten Commandments give\nBy His true servant Moses, high\nUpon the Mount Sinai.\nHave mercy, Lord!",
+      "2. I am thy God and Lord alone,\nNo other God before Me own;\nPut thy whole confidence in Me\nAnd love Me e'er cordially.\nHave mercy, Lord!",
+      "3. By idle word and speech profane\nTake not My holy name in vain\nAnd praise but that as good and true\nWhich I Myself say and do.\nHave mercy, Lord!",
+      "4. Hallow the day which God hath blest\nThat thou and all thy house may rest;\nKeep hand and heart from labor free\nThat God may so work in thee.\nHave mercy, Lord!",
+      "5. Give to thy parents honor due,\nBe dutiful, and loving, too,\nAnd help them when their strength decays,\nSo shalt thou have length of days.\nHave mercy, Lord!",
+      "6. Kill thou not out of evil will,\nNor hate, nor render ill for ill;\nBe patient and of gentle mood,\nAnd to thy foe do thou good.\nHave mercy, Lord.",
+      "7. Be faithful to thy marriage vows,\nThy heart give only to thy spouse;\nThy life keep pure, and lest thou sin,\nUse temperance and discipline.\nHave mercy, Lord!",
+      "8. Steal not; oppressive acts abhor;\nNor wring their life blood from the poor;\nBut open wide thy loving hand\nTo all the poor in the land.\nHave mercy, Lord.",
+      "9. Bear not false witness nor belie\nThy neighbor by foul calumny.\nDefend his innocence from blame;\nWith charity hide his shame.\nHave mercy, Lord!",
+      "10.Thy neighbor's house desire thou not,\nHis wife, nor aught that he hath got,\nBut wish that his such good may be\nAs thy heart doth wish for thee.\nHave mercy, Lord!",
+      "11.God these commandments gave therein\nTo show thee, child of man, thy sin\nAnd make thee also well perceive\nHow man unto God should live.\nHave mercy, Lord!",
+      "12.Help us, Lord Jesus Christ, for we\nA mediator have in Thee.\nOur works cannot salvation gain;\nThey merit but endless pain.\nHave mercy, Lord!"
     ],
-    "credits": "Words: Martin Luther, 1524.  Translated by Richard Massie, 1854, alt. Music: 'Dies sind die heil`gen zehu Gebot' or 'In Gottes Namen fahren wir' circa1200s found in Erfurt Enchiridion, 1524. Setting: Michael Praetorius, 1609. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision."
+    "credits": "Words: Martin Luther, 1524.  Translated by Richard Massie, 1854, alt. Music: 'Dies sind die heil`gen zehu Gebot' or 'In Gottes Namen fahren wir' circa1200s found in Erfurt Enchiridion, 1524. Setting: Michael Praetorius, 1609. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision. Words as given by the Cyber Hymnal."
   },
   {
     "id": 392,
@@ -7729,14 +7725,14 @@
     "midi_url": "http://openhymnal.org/Midi/The_Advent_of_Our_God-St_Thomas.mid",
     "mp3_url": "http://openhymnal.org/Mp3/The_Advent_of_Our_God-St_Thomas.mp3",
     "verses": [
-      "1. The advent of our God\nShall be our theme for prayer\nCome, let us meet him on the road\nAnd place for Him prepare.",
-      "2. The everlasting Son\nIncarnate stoops to be,\nHimself the servant's form puts on\nTo set His people free.",
-      "3. Come, Zion's daughter, rise\nTo meet your lowly King,\nNor let your faithless heart despise\nThe peace He comes to bring.",
-      "4. As judge, on clouds of light,\nHe soon will come again\nAnd all His scattered saints unite\nWith  Him on high to reign.",
-      "5. Before the dawning day\nLet sin be put to flight;\nNo longer let the law hold sway,\nBut walk in freedom's light.",
-      "6. Δ All glory to the Son\nWho comes to set us free,\nWith Father, Spirit, ever One,\nThrough all eternity."
+      "1. The advent of our God\nOur prayers must now employ,\nAnd we must meet Him on His road\nWith hymns of holy joy.",
+      "2. The everlasting Son\nIncarnate deigns to be;\nHimself a servant's form puts on\nTo set His people free.",
+      "3. Daughter of Zion, rise\nTo meet thy lowly king,\nNor let thy faithless heart despise\nThe peace He comes to bring.",
+      "4. As judge, on clouds of light,\nHe soon will come again,\nAnd all His scattered saints unite\nWith Him in Heaven to reign.",
+      "5. Before the dawning day\nLet sin's dark deeds be gone;\nThe old man all be put away,\nThe new man all put on.",
+      "6. All glory to the Son\nWho comes to set us free,\nWith Father, Spirit, ever One,\nThrough all eternity."
     ],
-    "credits": "Words: Charles Coffin, 1736.  translated by John Chandler, 1837, alt. Music: 'St. Thomas' Aaron Williams, 1770. Setting: \"The Church Hymnal, Revised and Enlarged\" (Episcopal), 1905. copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision."
+    "credits": "Words: Charles Coffin, 1736.  translated by John Chandler, 1837. Music: 'St. Thomas' Aaron Williams, 1770. Setting: \"The Church Hymnal, Revised and Enlarged\" (Episcopal), 1905. copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision."
   },
   {
     "id": 276,
@@ -8065,8 +8061,8 @@
     "mp3_url": "http://openhymnal.org/Mp3/The_Lily_of_the_Valley-Salvation-The_Lily_of_the_Valley.mp3",
     "verses": [
       "1. I've found a friend in Jesus,\nHe's everything to me,\nHe's the fairest of ten thousand to my soul;\nThe Lily of the Valley,\nin Him alone I see\nAll I need to cleanse and make me fully whole.\nIn sorrow He's my comfort,\nin trouble He's my stay;\nHe tells me every care on Him to roll.\nHe's the Lily of the Valley,\nthe Bright and Morning Star,\nHe's the fairest of ten thousand to my soul.",
-      "2. He all my grief has taken,\nand all my sorrows borne;\nIn temptation He's my strong and mighty tow'r;\nI'll  all for Him forsake now,\nI'll all my idols tear\nFrom my heart for now He keeps me by His pow'r.\nThough all the world forsake me,\nand Satan tempt me sore,\nThrough Jesus I shall safely reach the goal.\nHe's the Lily of the Valley,\nthe Bright and Morning Star,\nHe's the fairest of ten thousand to my soul.",
-      "3. He'll never, never leave me,\nnor yet forsake me here,\nSo I live by faith and do His blessed will;\nA wall of fire about me,\nI've nothing now to fear,\nWith His manna He my hungry soul shall fill.\nWhen crown'd at last in glory,\nI'll see His blessed face,\nWhere rivers of delight shall ever roll.\nHe's the Lily of the Valley,\nthe Bright and Morning Star,\nHe's the fairest of ten thousand to my soul."
+      "2. He all my grief has taken,\nand all my sorrows borne;\nIn temptation He's my strong and mighty tow'r;\nI've all for Him forsaken,\nand all my idols torn\nFrom my heart and now He keeps me by His pow'r.\nThough all the world forsake me,\nand Satan tempt me sore,\nThrough Jesus I shall safely reach the goal.\nHe's the Lily of the Valley,\nthe Bright and Morning Star,\nHe's the fairest of ten thousand to my soul.",
+      "3. He'll never, never leave me,\nnor yet forsake me here,\nWhile I live by faith and do His blessed will;\nA wall of fire about me,\nI've nothing now to fear,\nFrom His manna He my hungry soul shall fill.\nThen sweeping up to glory\nto see His blessed face,\nWhere the rivers of delight shall ever roll.\nHe's the Lily of the Valley,\nthe Bright and Morning Star,\nHe's the fairest of ten thousand to my soul."
     ],
     "credits": "Words: C. W. Fry, 1881, alt. Music: 'Salvation' or 'The Lily of the Valley' William S. Hays, 1881. Setting: Ira D. Sankey, 1887. copyright: public domain.  This score is a part of the Open Hymnal Project, 2013 Revision."
   },
@@ -8232,14 +8228,14 @@
     "midi_url": "http://openhymnal.org/Midi/The_Mouth_of_Fools_Doth_God_Confess-Es_spricht_der_Unweisen_Mund.mid",
     "mp3_url": "http://openhymnal.org/Mp3/The_Mouth_of_Fools_Doth_God_Confess-Es_spricht_der_Unweisen_Mund.mp3",
     "verses": [
-      "1. The mouth of fools doth God confess,\nBut while their lips draw nigh Him,\nTheir heart is full of wickedness,\nAnd all their deeds deny Him.\nCorrupt are they, and every one\nAbominable works hath done;\nThere is not one welldoer.",
-      "2. The Lord looked down from his high tow'r\nOn all mankind below Him,\nTo see if any owned His pow'r,\nAnd truly sought to know Him;\nWho all their understanding bent\nTo search His holy Word, intent\nTo do his will in earnest.",
-      "3. But none there was who walked with God,\nFor all aside had slidden,\nDelusive paths of folly trod,\nAnd followed lusts forbidden;\nNot one there was who practiced good,\nAnd yet they deemed, in haughty mood,\nTheir deeds must surely please Him.",
-      "4. How long, by folly blindly led,\nWill ye oppress the needy,\nAnd eat my people up like bread?\nSo fierce are ye, and greedy!\nIn God they put no trust at all,\nNor will on Him in trouble call,\nBut be their own providers.",
-      "5. Therefore their heart is never still,\nA falling leaf dismays them;\nGod is with him who doth His will,\nWho trusts him and obeys Him;\nBut ye the poor man's hope despise,\nAnd laugh at him, e'en when he cries,\nThat God is his sure comfort.",
-      "6. Who shall to Israel's outcast race\nFrom Zion bring salvation?\nGod will himself at length show grace,\nAnd loose the captive nation;\nThat will he do by Christ their King;\nLet Jacob then be  glad and sing,\nAnd Israel be joyful."
+      "1. The mouth of fools doth God confess,\nBut while their lips draw nigh Him,\nTheir heart is full of wickedness,\nAnd all their deeds deny Him.\nCorrupt are they, and every one\nAbominable works hath done;\nThere is not one well-doer.",
+      "2. The Lord looked from His heavenly throne\nOn all mankind below Him\nTo see if there were any one\nWho truly sought to know Him,\nAnd all his understanding bent\nTo search His holy Word, intent\nTo do His will in earnest.",
+      "3. But none there was who walked with God,\nFor all aside had slidden,\nDelusive paths of folly trod,\nAnd followed lusts forbidden;\nNot one there was who practiced good,\nThough many deemed, in haughty mood,\nTheir deeds to God were pleasing.",
+      "4. How long, by folly blindly led,\nWill they oppress the needy\nAnd My own flock devour like bread?\nSo fierce are they and greedy!\nIn God they put no trust at all,\nNor on His name in trouble call,\nBut be their own providers.",
+      "5. Therefore their heart is never still,\nA constant fear dismays them,\nGod is with him who doth His will,\nWho trusts Him and obeys Him;\nYe shame the counsel of the poor\nAnd mock him when he doth assure\nThat God is e'er his refuge.",
+      "6. Who shall to Israel's outcast race\nFrom Zion bring salvation?\nGod will Himself at length show grace\nAnd loose the captive nation;\nThat will He do by Christ, their king;\nLet Jacob then be glad and sing\nAnd Israel be joyful."
     ],
-    "credits": "Words: Martin Luther, 1524.  Translated by Richard Massie, 1854, alt. Music: 'Es spricht der Unweisen Mund' from Walter's Geistliche Gesangbüchlein, 1524. Setting: Michael Praetorius, 1610. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision."
+    "credits": "Words: Martin Luther, 1524.  Translated by Richard Massie, 1854, alt. Music: 'Es spricht der Unweisen Mund' from Walter's Geistliche Gesangbüchlein, 1524. Setting: Michael Praetorius, 1610. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision. Words as given by the Cyber Hymnal."
   },
   {
     "id": 295,
@@ -8299,14 +8295,14 @@
     "mp3_url": "http://openhymnal.org/Mp3/The_Strife_Is_Oer_The_Battle_Done-Victory-Palestrina.mp3",
     "verses": [
       "Alleluia, Alleluia, Alleluia.",
-      "1. The strife is o'er, the battle done;\nThe triumph of the Lord is won;\nO Let the song of praise be sung:\nAlleluia!",
-      "2. The pow'rs of death have done their worst;\nand Jesus hath  His foes dispersed;\nLet shouts of praise and joy outburst:\nAlleluia!",
-      "3. On that third morn He rose again\nIn glorious majesty to reign;\nO let us swell the joyful strain.\nAlleluia!",
-      "4. He closed the yawning gates of hell;\nThe bars from heav'ns  high portals fell;\nLet songs of joy His triumphs tell.\nAlleluia!",
-      "5. Lord, by the stripes which wounded Thee,\nFrom death's dread sting  Thy servants free,\nThat we may live, and sing to Thee.\nAlleluia!",
+      "1. The strife is o'er, the battle done;\nThe victory of life is won;\nThe song of triumph has begun:\nAlleluia!",
+      "2. The powers of death have done their worst;\nBut Christ their legions hath dispersed;\nLet shouts of holy joy outburst:\nAlleluia!",
+      "3. The three sad days are quickly sped;\nHe rises glorious from the dead;\nAll glory to our risen head!\nAlleluia!",
+      "4. He closed the yawning gates of hell;\nThe bars from Heaven's high portals fell;\nLet hymns of praise His triumphs tell!\nAlleluia!",
+      "5. Lord, by the stripes which wounded Thee,\nFrom death's dread sting Thy servants free,\nThat we may live, and sing to Thee:\nAlleluia!",
       "Alleluia, Alleluia, Alleluia."
     ],
-    "credits": "Words: from Symphonia Sirenum Selectarum, Köln, 1695; translated by Francis Pott, 1861. Music: 'Victory' or  'Palestrina' Giovanni P. da Palestrina, 1591. Setting: William Henry Monk, 1861. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision."
+    "credits": "Words: from Symphonia Sirenum Selectarum, Köln, 1695; translated by Francis Pott, 1861. Music: 'Victory' or  'Palestrina' Giovanni P. da Palestrina, 1591. Setting: William Henry Monk, 1861. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision. Words as given by the Cyber Hymnal in stanzas 2, 3, 4, 5, 6."
   },
   {
     "id": 376,
@@ -8542,11 +8538,10 @@
     "title": "Tis So Sweet to Trust in Jesus",
     "tune": "FALL RIVER",
     "verses": [
-      "1. 'Tis so sweet to trust in Jesus,\nJust to take him at his word;\nJust to rest upon his promise;\nJust to know, thus saith the Lord.",
-      "2. Jesus, Jesus, how I trust him!\nHow I've proved him o'er and o'er!\nJesus, Jesus, precious Jesus!\nO for grace to trust him more.",
-      "3. O how sweet to trust in Jesus,\nJust to trust his cleansing blood;\nJust in simple faith to plunge me\n'Neath the healing, cleansing flood!",
-      "4. Yes, 'tis sweet to trust in Jesus,\nJust from sin and self to cease;\nJust from Jesus simply taking\nLife and rest, and joy and peace.",
-      "5. I'm so glad I learned to trust thee,\nPrecious Jesus, Saviour, Friend;\nAnd I know that thou art with me,\nWilt be with me to the end."
+      "1. 'Tis so sweet to trust in Jesus,\nJust to take him at his word;\nJust to rest upon his promise;\nJust to know, thus saith the Lord.\nJesus, Jesus, how I trust him!\nHow I've proved him o'er and o'er!\nJesus, Jesus, precious Jesus!\nO for grace to trust him more.",
+      "2. O how sweet to trust in Jesus,\nJust to trust his cleansing blood;\nJust in simple faith to plunge me\n'Neath the healing, cleansing flood!\nJesus, Jesus, how I trust him!\nHow I've proved him o'er and o'er!\nJesus, Jesus, precious Jesus!\nO for grace to trust him more.",
+      "3. Yes, 'tis sweet to trust in Jesus,\nJust from sin and self to cease;\nJust from Jesus simply taking\nLife and rest, and joy and peace.\nJesus, Jesus, how I trust him!\nHow I've proved him o'er and o'er!\nJesus, Jesus, precious Jesus!\nO for grace to trust him more.",
+      "4. I'm so glad I learned to trust thee,\nPrecious Jesus, Saviour, Friend;\nAnd I know that thou art with me,\nWilt be with me to the end.\nJesus, Jesus, how I trust him!\nHow I've proved him o'er and o'er!\nJesus, Jesus, precious Jesus!\nO for grace to trust him more."
     ],
     "Author": "Louisa M. R. Stead",
     "Composer": "William J. Kirkpatrick",
@@ -8740,8 +8735,7 @@
       "1. 'Twas in the moon of wintertime,\nWhen all the birds had fled,\nThat mighty Gitchi Manitou\nSent angel choirs instead;\nBefore their light the stars grew dim,\nAnd wand'ring hunters heard the hymn:\nJesus your King is born,\nJesus is born,\nIn excelsis gloria.",
       "2. Within a lodge of broken bark\nThe tender babe was found,\nA ragged robe of rabbit skin\nEnwrapped His beauty 'round;\nBut as the hunter braves drew nigh,\nThe angel song rang loud and high:\nJesus your King is born,\nJesus is born,\nIn excelsis gloria.",
       "3. The earliest moon of wintertime\nIs not so round and fair\nAs was the ring of glory on\nThe helpless Infant there.\nThe chiefs from far before Him knelt\nWith gifts of fox and beaver pelt.\nJesus your King is born,\nJesus is born,\nIn excelsis gloria.",
-      "4. Oh children of the forest free,\nOh sons of Manitou,\nThe holy Child of earth and Heav'n\nIs born today for you.\nCome kneel before the radiant Boy,\nWho brings you beauty, peace and joy.\nJesus your King is born,\nJesus is born,\nIn excelsis gloria.",
-      "This hymn was written by Fr. Jean de Brébeuf, a French missionary to the Huron (first nations / native American) people. He was eventually martyred for the faith by Iroquois during the Iroquois-Huron wars. \"When the Japanese have a Christmas devotional booklet, Mary is a Japanese woman, and her Child is a Japanese boy. With that, they are confessing that He was born for them too. For that was the message of the angel, that He was born to be the Savior for all people, and all people means one of us ... and so whether it is in Papau New Guinea or Japan or among the Eskimos, when they think of the birth of the Savior they see Him as born one of them.\" - Dr. Norman Nagel, 22 Dec 2005"
+      "4. Oh children of the forest free,\nOh sons of Manitou,\nThe holy Child of earth and Heav'n\nIs born today for you.\nCome kneel before the radiant Boy,\nWho brings you beauty, peace and joy.\nJesus your King is born,\nJesus is born,\nIn excelsis gloria."
     ],
     "credits": "Words: Jean de Brébeuf, 1642.  Translated by Jesse Edgar Middleton, 1926. Music: 'Huron Carol' or 'Jesous Ahatonia' or 'Une Jeunne Pucelle' traditional French, 1557. Setting:  John Murphy, 2008. copyright: Music & Lyrics public domain. Setting: CPDL (see http://www2.cpdl.org/wiki/index.php/ChoralWiki:CPDL).This score is a part of the Open Hymnal Project, 2013 Revision."
   },
@@ -8818,24 +8812,24 @@
     "midi_url": "http://openhymnal.org/Midi/Upon_the_Cross_Extended-Innsbruck-Nun_ruhen_alle_Walder-O_Welt_Ich_Muss_Dich_Lassen.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Upon_the_Cross_Extended-Innsbruck-Nun_ruhen_alle_Walder-O_Welt_Ich_Muss_Dich_Lassen.mp3",
     "verses": [
-      "1. Upon the cross extended,\nSee, world, thy Lord suspended,\nThy Savior yields His breath.\nThe Prince of Life from heaven\nHimself hath freely given\nTo shame and blows and bitter death.",
+      "1. Upon the cross extended,\nSee, world, thy Lord suspended.\nThy Savior yields His breath.\nThe Prince of Life from Heaven\nHimself hath freely given\nTo shame and blows and bitter death.",
       "2. Come hither now and ponder,\n'Twill fill thy soul with wonder,\nBlood streams from every pore.\nThrough grief whose depth none knoweth,\nFrom His great heart there floweth\nSigh after sigh of anguish o'er.",
       "3. Who is it that hath bruised Thee?\nWho hath so sore abused Thee\nAnd caused Thee all Thy woe?\nWhile we must make confession\nOf sin and dire transgression,\nThou deeds of evil dost not know.",
       "4. I caused Thy grief and sighing\nBy evils multiplying\nAs countless as the sands.\nI caused the woes unnumbered\nWith which Thy soul is cumbered,\nThy sorrows raised by wicked hands.",
-      "5. 'Tis I who should be smitten\nMy doom should here be written:\nBound hand and foot in hell.\nThe fetters and the scourging,\nThe floods around Thee surging,\n'Tis I who have deserved them well.",
-      "6. The load Thou takest on Thee,\nThat pressed so sorely on me,\nit crushed me to the ground.\nThe cross for me enduring,\nThe crown for me securing,\nMy healing in Thy wounds is found.",
-      "7. A crown of thorns Thou wearest,\nMy shame and scorn Thou bearest,\nThat I might ransomed be.\nMy Bondsman, ever willing,\nMy place with patience filling,\nFrom sin and guilt hast made me free.",
+      "5. 'Tis I who should be smitten,\nMy doom should here be written;\nBound hand and foot in hell.\nThe fetters and the scourging,\nThe floods around Thee surging,\n'Tis I who have deserved them well.",
+      "6. The load Thou takest on Thee,\nThat pressed so sorely on me,\nIt crushed me to the ground.\nThe cross for me enduring,\nThe crown for me securing,\nMy healing in Thy wounds is found.",
+      "7. A crown of thorns Thou wearest,\nMy shame and scorn Thou bearest,\nThat I might ransomed be.\nMy bondsman, ever willing,\nMy place with patience filling,\nFrom sin and guilt hast made me free.",
       "8. Into death's jaws Thou springest,\nDeliv'rance to me bringest\nFrom such a monster dire.\nMy death away Thou takest,\nThy grave its grave Thou makest;\nOf love, O unexampled fire!",
       "9. Thy cords of love, my Savior,\nBind me to Thee forever,\nI am no longer mine.\nTo Thee I gladly tender\nAll that my life can render\nAnd all I have to Thee resign.",
       "10. Not much can I be giving\nIn this poor life I'm living,\nBut one thing do I say:\nThy death and sorrows ever,\nTill soul from body sever,\nMy heart remember shall for aye.",
       "11. Thy cross I'll place before me,\nIts saving power be o'er me,\nWherever I may be;\nThine innocence revealing,\nThy love and mercy sealing,\nThe pledge of truth and constancy.",
-      "12. How God at our transgression\nTo anger gives expression,\nHow loud His thunder rolls,\nHow fearfully He smiteth,\nHow sorely He requiteth,-\nAll this Thy sufferings teach my soul.",
+      "12. How God at our transgression\nTo anger gives expression,\nHow loud His thunders roll,\nHow fearfully He smiteth,\nHow sorely He requiteth—\nAll this Thy sufferings teach my soul.",
       "13. From them shall I be learning,\nHow I may be adorning,\nMy heart with quietness,\nAnd how I still should love them\nWhose malice aye doth move them\nTo grieve me by their wickedness.",
-      "14. When evil men revile me,\nWith wicked tongues defile me,\nI'll curb my vengeful heart.\nThe unjust wrong I'll suffer,\nUnto my neighbor offer\nForgiveness for each bitter smart.",
+      "14. When evil men revile me,\nWith wicked tongues defile me,\nI'll curb my vengeful heart.\nThe unjust wrong I'll suffer,\nUnto my neighbor offer\nForgiveness of each bitter smart.",
       "15. I'll on the cross unite me\nTo Thee, what doth delight me\nI'll there renounce for aye.\nWhate'er Thy Spirit's grieving,\nThere I'll for aye be leaving,\nAs much as in my strength doth lay.",
-      "16. Thy groaning and thy sighing,\nThy bitter tears and dying,\nWith which Thou wast opprest,-\nThey shall, when life is ending,\nBe guiding and attending\nMy way to Thine eternal rest."
+      "16. Thy groaning and Thy sighing,\nThy bitter tears and dying,\nWith which Thou was oppressed—\nThey shall, when life is ending,\nBe guiding and attending\nMy way to Thine eternal rest."
     ],
-    "credits": "Words: Paul Gerhardt, 1648.  Translation composite before 1941. Music: 'Innsbruck' or 'Nun ruhen alle Wälder' or 'O Welt, Ich Muss Dich Lassen' Heinrich Isaac, 1490. Setting: Johann Sebastian Bach, 1734. copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision."
+    "credits": "Words: Paul Gerhardt, 1648.  Translation composite before 1941. Music: 'Innsbruck' or 'Nun ruhen alle Wälder' or 'O Welt, Ich Muss Dich Lassen' Heinrich Isaac, 1490. Setting: Johann Sebastian Bach, 1734. copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision. Words as given by the Cyber Hymnal in stanzas 1, 5, 6, 7, 12, 14, 16."
   },
   {
     "id": 317,
@@ -9013,13 +9007,13 @@
     "midi_url": "http://openhymnal.org/Midi/What_Wondrous_Love_Is_This-Wondrous_Love_Southern_Harmony.mid",
     "mp3_url": "http://openhymnal.org/Mp3/What_Wondrous_Love_Is_This-Wondrous_Love_Southern_Harmony.mp3",
     "verses": [
-      "1. What wondrous love is this; O my soul! O my soul!\nWhat wondrous love is this; O my soul!\nWhat wondrous love is this; That caused the Lord of bliss\nTo bear the dreadful curse, For my soul, For my soul,\nTo bear the dreadful curse, For my soul?",
-      "2. When I was sinking down, sinking down, sinking down\nWhen I was sinking down, sinking down\nWhen I was sinking down, Beneath God's righteous frown,\nChrist laid aside His crown, For my soul! For my soul!\nChrist laid aside His crown, For my soul!",
-      "3. Ye winged seraphs fly! Bear the news, Bear the news,\nYe winged seraphs fly! Bear the news,\nYe winged seraphs fly! Like comets through the sky,\nFill vast eternity with the news, with the news.\nFill vast eternity with the news.",
-      "4. To God and to the Lamb, I will sing, I will sing,\nTo God and to the Lamb, I will sing,\nTo God and to the Lamb, And to the Great I AM,\nWhile millions join the theme, I will sing. I will sing.\nWhile millions join the theme, I will sing.",
-      "5. Come friends of Zion's King, Join the praise, Join the praise,\nCome friends of Zion's King, Join the praise,\nCome friends of Zion's King, With hearts and voices sing,\nAnd strike each tuneful string In His praise! In His praise!\nAnd strike each tuneful string In His praise!",
-      "6. Thus, while from death we're free, we'll sing on, we'll sing on,\nThus, while from death we're free, we'll sing on,\nThus, while from death we're free, We'll sing and joyful be,\nAnd through eternity We'll sing on.",
-      "7. And when to that bright world we arise, we arise\nAnd when to that bright world we arise,\nWhen to that world we go, Free from all pain and woe,\nWe'll join the happy throng, And sing on!"
+      "1. What wondrous love is this, O my soul, O my soul!\nWhat wondrous love is this, O my soul!\nWhat wondrous love is this That caused the Lord of bliss\nTo bear the dreadful curse For my soul, for my soul,\nTo bear the dreadful curse For my soul.",
+      "2. When I was sinking down, Sinking down, sinking down,\nWhen I was sinking down, Sinking down,\nWhen I was sinking down Beneath God's righteous frown,\nChrist laid aside His crown For my soul, for my soul,\nChrist laid aside His crown For my soul.",
+      "3. Ye wingèd seraphs fly, Bear the news, bear the news!\nYe wingèd seraphs fly, Bear the news!\nYe wingèd seraphs fly, Like comets through the sky,\nFill vast eternity With the news, with the news!\nFill vast eternity With the news!",
+      "4. To God and to the Lamb, I will sing, I will sing;\nTo God and to the Lamb, I will sing.\nTo God and to the Lamb Who is the great I Am;\nWhile millions join the theme, I will sing, I will sing;\nWhile millions join the theme, I will sing.",
+      "5. Ye friends of Zion's king, Join His praise, join His praise;\nYe friends of Zion's king, Join His praise;\nYe friends of Zion's king, With hearts and voices sing,\nAnd strike each tuneful string In His praise, in His praise!\nAnd strike each tuneful string In His praise!",
+      "6. And when from death I'm free, I'll sing on, I'll sing on;\nAnd when from death I'm free, I'll sing on.\nAnd when from death I'm free, I'll sing and joyful be;\nAnd through eternity, I'll sing on, I'll sing on;\nAnd through eternity, I'll sing on.",
+      "7. Yes, when to that bright world We arise, we arise,\nYes, when to that bright world We arise;\nWhen to that world we go, Free from all pain and woe,\nWe'll join the happy throng, And sing on, and sing on,\nWe'll join the happy throng, And sing on."
     ],
     "credits": "Words: Anonymous before 1811. Music: 'Wondrous Love' American Folk Tune. Setting: Rufus Henry Cornelius, 1916, alt. copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision."
   },
@@ -9197,14 +9191,13 @@
     "midi_url": "http://openhymnal.org/Midi/While_Oer_Our_Guilty_Land-Federal_Street.mid",
     "mp3_url": "http://openhymnal.org/Mp3/While_Oer_Our_Guilty_Land-Federal_Street.mp3",
     "verses": [
-      "1. While o'er our guilty land, O Lord,\nWe view the terrors  of Your sword,\nO where can all the helpless fly?\nTo whom but You direct their cry?",
-      "2. On You, our guardian God, we call;\nBefore Your throne of grace we fall;\nBut is there no deliv'rance there?\nAnd must we perish in despair?",
-      "3. See, we repent, we weep, we mourn;\nTo our forsaken God we turn;\nO spare our guilty country, spare\nThe Church which You have planted there.",
-      "4. We are the old, the sick, the lame;\nWe blind and deaf cry Jesus' Name.\nWe plead Your mercy for His sake,\nAnd trust that You will not forsake.",
-      "5. Christ is our only righteousness,\nHis death for us is our redress.\nYour promise stronger than our sin;\nBlot out O Lord what we have been.",
-      "6. We are your children after all,\nRedeemed by Christ after the fall.\nMarked with Your Name in Baptism,\nOur home remains in Your Kingdom."
+      "1. While o'er our guilty land, O Lord,\nWe view the terrors of Thy sword,\nO whither shall the helpless fly?\nTo whom but Thee direct their cry?",
+      "2. On Thee, our guardian God, we call;\nBefore Thy throne of grace we fall;\nAnd is there no deliverance there?\nAnd must we perish in despair?",
+      "3. See, we repent, we weep, we mourn;\nTo our forsaken God we turn;\nO spare our guilty country, spare\nThe Church which Thou hast planted there.",
+      "4. We plead Thy grace, indulgent God,\nWe plead Thy Son's atoning blood,\nWe plead Thy gracious promises;\nAnd are they unavailing pleas?",
+      "5. These pleas, presented at Thy throne,\nHave brought ten thousand blessings down\nOn guilty lands in helpless woe;\nLet them prevail and help us, too."
     ],
-    "credits": "Words: verses 1-3, Samuel Davies, 1769. alt. verses 4-6, Brian J. Dumont, 15 Nov 2010. Music: 'Federal Street' Henry K. Oliver, 1832. Setting: \"The Evangelical Lutheran Hymnal\" (Ohio Synod), 1908. copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision."
+    "credits": "Words: Samuel Davies, 1769. Music: 'Federal Street' Henry K. Oliver, 1832. Setting: \"The Evangelical Lutheran Hymnal\" (Ohio Synod), 1908. copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision."
   },
   {
     "id": 334,
@@ -9274,19 +9267,19 @@
     "midi_url": "http://openhymnal.org/Midi/Why_Should_Cross_and_Trial_Grieve_Me-Ebeling-Bonn-Warum_Sollt_Ich-All_My_Heart_This_Night.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Why_Should_Cross_and_Trial_Grieve_Me-Ebeling-Bonn-Warum_Sollt_Ich-All_My_Heart_This_Night.mp3",
     "verses": [
-      "1. Why should cross and trial grieve me?\nChrist is near With His cheer;\nNever will He leave me.\nWho can rob me of the heaven\nThat God's Son, For my own,\nTo my faith hath given?",
+      "1. Why should cross and trial grieve me?\nChrist is near with His cheer,\nNever will He leave me.\nWho can rob me of the Heaven\nThat God's Son for my own\nTo my faith hath given?",
       "2. Nought not e'en the life I'm living,\nIs mine own, God alone\nAll to me is giving.\nMust I then His own restore Him?\nThough bereft Of my flesh\nStill shall I adore Him.",
-      "3. Though a heavy cross I'm bearing,\nAnd my heart Feels the smart,\nShall I be despairing?\nGod can help me, who doth send it,\nHe doth know All my woe\nAnd how best to end it.",
-      "4. God oft gives me days of gladness,\nShall I grieve If He give\nSeasons too of sadness?\nGod is good, and tempers ever\nAll my ill, And He will\nWholly leave me never.",
+      "3. Though a heavy cross I'm bearing\nAnd my heart feels the smart,\nShall I be despairing?\nGod, my helper, who doth send it,\nWell doth know all my woe\nAnd how best to end it.",
+      "4. God oft gives me days of gladness;\nShall I grieve if He give\nSeasons, too, of sadness?\nGod is good and tempers ever\nAll my ill, and He will\nWholly leave me never.",
       "5. Though united world and devil,\nAll their pow'r Can no more\nDo but mock and quibble.\nLet them now employ their jeering,\nChrist will here Then appear\nStrike their hearts with fearing.",
-      "6. True believers shrinking never,\nWhere they dwell Should reveal\nTheir true colors ever.\nWhen approaching death may scare them,\nStill should they Patient stay\nAnd with courage bear them.",
-      "7. Death can never kill us even,\nBut relief From all grief\nTo us then is given.\nIt doth close life's mournful story,\nMake a way That we may\nPass to heav'nly glory.",
+      "6. Hopeful, cheerful, and undaunted\nEverywhere they appear\nWho in Christ are planted.\nDeath itself cannot appall them,\nThey rejoice when the voice\nOf their Lord doth call them.",
+      "7. Death cannot destroy forever;\nFrom our fears, cares and tears\nIt will us deliver.\nIt will close life's mournful story,\nMake a way that we may\nEnter heavenly glory.",
       "8. There I'll reap enduring pleasure,\nAfter woe Here below\nSuffered in large measure.\nLasting good we find here never,\nAll that earth Deems as worth\nVanishes for ever.",
-      "9. What is all this life possesses?\nBut a hand Full of sand\nThat the heart distresses.\nNoble gifts that pall me never,\nChrist so free There gives me\nTo enjoy for ever.",
-      "10. Shepherd! Lord! joy's fountain ever,\nThou art mine, I am Thine,\nNo one can us sever.\nI am Thine, because Thou bought me;\nLost I stood, But Thy blood\nFree salvation brought me.",
-      "11. Thou art mine; I love and own Thee,\nLight of joy, Ne'er shall I,\nFrom my heart dethrone Thee.\nSavior, let me soon behold Thee\nFace to face, Thy embrace\nMay it soon enfold me!"
+      "9. What is all this life possesses?\nBut a hand full of sand\nThat the heart distresses.\nNoble gifts that pall me never\nChrist, our Lord, will accord\nTo His saints forever.",
+      "10. Lord, my Shepherd, take me to Thee.\nThou art mine; I was Thine\nEven ere I knew Thee.\nI am Thine, for Thou hast bought me;\nLost I stood, but Thy blood\nFree salvation bought me.",
+      "11. Thou art mine; I love and own Thee.\nLight of joy, ne'er shall I\nFrom my heart dethrone Thee.\nSavior, let me soon behold Thee\nFace to face, may Thy grace\nEvermore enfold me!"
     ],
-    "credits": "Words: Paul Gerhardt, 1653.  Translated by John Kelly, 1867, alt. Music: 'Ebeling' or 'Bonn' or 'Warum Sollt Ich' or 'All My Heart This Night' Johann Georg Ebeling, 1666. Setting: Karl Brauer, 1906, alt. copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision."
+    "credits": "Words: Paul Gerhardt, 1653.  Translated by John Kelly, 1867, alt. Music: 'Ebeling' or 'Bonn' or 'Warum Sollt Ich' or 'All My Heart This Night' Johann Georg Ebeling, 1666. Setting: Karl Brauer, 1906, alt. copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision. Words as given by the Cyber Hymnal in stanzas 1, 3, 4, 6, 7, 9, 10, 11."
   },
   {
     "id": 350,

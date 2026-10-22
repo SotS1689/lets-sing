@@ -64,7 +64,10 @@ switched on. The design follows the #doreancon hymnal player
   (`python "../Sheet Music/build_syllables.py" cmudict.dict` rebuilds it from the
   CMU Pronouncing Dictionary after verses change). Each line of a verse must come
   out to exactly the tune's number of notes for that line, or the verse is left
-  without words; the build lists those.
+  without words; the build lists those. Where a score sets other words than the
+  hymn's (another translation, an older wording), those verses are set again with
+  the hymn's words in the score's rhythm for that verse, so the words under the
+  notes always match the lyrics shown, or are left out.
 - **`scripts/build-scores.mjs`** (run by prepare-content) works out, ahead of
   time, when every notehead sounds in *our* MIDI file: each part's MIDI notes are
   matched by pitch against the score line it follows, which handles intros,

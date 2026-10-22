@@ -322,8 +322,9 @@ export const plainWords = (text) =>
 /** Writes public/scores/ for every hymn that has a score; returns, per MIDI file,
  *  { abc: score file, version: content hash, words: verse 1 as set under the notes,
  *    verses: verses found in the MIDI }.
- *  `versesOf` maps each MIDI file to its hymn's verses, which are set under the
- *  notes wherever the score doesn't already set them (see underlay.mjs). */
+ *  `versesOf` maps each MIDI file to the verses of each hymn that plays it; the
+ *  hymn the score's own words come nearest (a psalm sung to a hymn's tune shares
+ *  its file) has its words set under the notes (see underlay.mjs). */
 export function buildScores(versesOf, midiDir) {
     rmSync(OUT, { recursive: true, force: true });
     mkdirSync(OUT, { recursive: true });
@@ -341,7 +342,9 @@ export function buildScores(versesOf, midiDir) {
             console.warn(`  score ${name}: no hymn plays ${midi}`);
             continue;
         }
-        const verses = versesOf[midi];
+        const own = new Set(firstVerseWords(screened));
+        const shared = (verses) => plainWords(verses[0] || "").filter((w) => own.has(w)).length;
+        const verses = versesOf[midi].reduce((best, v) => (shared(v) >= shared(best) ? v : best));
         let abc = screened, result;
         try {
             const words = fillVerses(screened, verses, dict);

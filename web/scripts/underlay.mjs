@@ -2,6 +2,8 @@
 // score happens to set. Open Hymnal scores put the first five verses under the
 // notes and print the rest as plain text, and the Cyber Hymnal scores and the
 // psalter's tunes set no words at all; this sets the hymn's own words under them.
+// Where a score sets other words than the hymn's (another translation, an older
+// wording), those verses are set again with the hymn's words.
 //
 // A new verse follows a verse the score already sets where there is one: the
 // same notes take a fresh syllable, the same notes carry a syllable on. Where
@@ -178,10 +180,58 @@ function mode(values) {
     return [...c.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0]?.[0];
 }
 
+/** One word spelled two ways: "pow'rs" and "powers", "bless'd" and "blessed". */
+const sameWord = (a, b) => a === b || a.replace(/[aeiouy]/g, "") === b.replace(/[aeiouy]/g, "");
+
+/** How a row of the score's words compares with a verse: "same", "near" (but for
+ *  a word or few), "part" (one holds the other, as when a refrain is set only
+ *  under the first verse, or a row sets two verses or alleluias the verse leaves
+ *  out) or "other" words. */
+function likeness(words, lines) {
+    const own = lines.flat().map(key), set = words.map((w) => key(w.join("")));
+    if (own.length === set.length) {
+        const same = own.filter((w, i) => sameWord(w, set[i])).length;
+        if (same === own.length) return "same";
+        if (same >= 0.85 * own.length) return "near";
+    }
+    // How many words the row and the verse have in common, in order
+    let prev = new Array(own.length + 1).fill(0);
+    for (const s of set) {
+        const row = [0];
+        for (let j = 0; j < own.length; j++) row.push(sameWord(s, own[j]) ? prev[j] + 1 : Math.max(prev[j + 1], row[j]));
+        prev = row;
+    }
+    const shorter = Math.min(set.length, own.length), longer = Math.max(set.length, own.length);
+    const common = prev[own.length];
+    // A word or two more or fewer, and a word or two changed: an older wording
+    if (longer - shorter <= 2 && common < shorter && common >= 0.85 * longer) return "near";
+    return shorter && set.length !== own.length && common >= Math.max(0.9 * shorter, shorter - 2) ? "part" : "other";
+}
+
+/** Syllables for each line of most of a hymn's verses (as their words are first
+ *  split): the tune's lines, for verses whose own count is off by a "heav'n". */
+function meterOf(verses, dict) {
+    const all = verses.map(verseLines);
+    const lineCount = mode(all.map((l) => l.length));
+    const wants = all.filter((l) => l.length === lineCount).map((l) => naturalCounts(l, dict));
+    return Array.from({ length: lineCount }, (_, i) => mode(wants.map((w) => w[i])));
+}
+
+/** Ways to share `total` syllables among a verse's lines when the score doesn't
+ *  say: as its words are first split, else as the hymn's meter has them. Only
+ *  whole lines, never a syllable moved across a line. */
+function lineCounts(lines, total, dict, meter) {
+    const sum = (c) => c.reduce((a, b) => a + b, 0);
+    return [naturalCounts(lines, dict), meter].filter((c) => c.length === lines.length && sum(c) === total);
+}
+
 /**
- * Adds `w:` lines for every verse of `verses` the score doesn't already set.
- * Returns { abc, added, missed }: the verse numbers set, and those that wouldn't
- * fit. Leaves the score as it was when its words aren't this hymn's.
+ * Sets the hymn's own words under the notes: adds `w:` lines for every verse of
+ * `verses` the score doesn't already set, and sets afresh any verse the score
+ * sets other words for (another translation, an older wording), keeping that
+ * verse's own rhythm, which notes take a syllable. Returns { abc, added, missed }:
+ * the verse numbers set, and those that wouldn't fit (a verse whose words the
+ * score had wrong is then left without words rather than with the wrong ones).
  */
 export function fillVerses(abc, verses, dict) {
     const voices = lyricNotes(abc);
@@ -191,81 +241,116 @@ export function fillVerses(abc, verses, dict) {
     const notes = most && rowsOf(most) ? most : voices["0.0"];
     if (!notes?.length) return unchanged;
     const rows = rowsOf(notes);
-    if (verses.length <= rows) return unchanged;
 
-    // Patterns a new verse can follow: which notes take a fresh syllable, and how
-    // many syllables each line of the verse has
+    // Patterns a verse can follow: which notes take a fresh syllable, and how
+    // many syllables each line of the verse has. Each verse the score sets with
+    // (nearly) this hymn's words gives one; a verse set with other words is set again.
     const patterns = [];
-    for (let r = 0; r < rows; r++) {
+    const addPattern = (p) => {
+        if (!patterns.some((q) => q.perLine.join() === p.perLine.join() && q.slots.join() === p.slots.join())) patterns.push(p);
+    };
+    const redo = [];
+    // A score whose first verse holds more or less than the hymn's (two verses to
+    // a row, alleluias the hymn leaves out) sets its verses its own way: it is
+    // added to only when its first verse is this hymn's or is set again
+    let extend = true;
+    for (let r = 0; r < Math.min(rows, verses.length); r++) {
         const words = setWords(notes, r);
-        const lines = verseLines(verses[r] || "");
-        if (words.length !== lines.flat().length) {
-            if (r === 0) return unchanged; // the score's words aren't this hymn's
-            continue;
-        }
-        let w = 0;
-        const perLine = lines.map((line) => line.reduce((sum) => sum + words[w++].length, 0));
+        const lines = verseLines(verses[r]);
         const slots = notes.map((n) => !!n.lyric[r]?.syllable);
-        if (!patterns.some((p) => p.perLine.join() === perLine.join() && p.slots.join() === slots.join())) patterns.push({ perLine, slots });
+        const like = likeness(words, lines);
+        if (like === "same" || (like === "near" && words.length === lines.flat().length)) {
+            let w = 0;
+            addPattern({ perLine: lines.map((line) => line.reduce((sum) => sum + words[w++].length, 0)), slots });
+        }
+        // Words of another of this hymn's verses (the score numbers them differently) stay
+        const elsewhere = like === "other" && verses.some((v, i) => i !== r && likeness(words, verseLines(v)) !== "other");
+        if (like === "near" || (like === "other" && !elsewhere)) redo.push({ r, slots, near: like === "near" });
+        if (r === 0 && (like === "part" || elsewhere)) extend = false;
     }
+    // Syllables in each line of most verses: the tune's lines
+    const meter = meterOf(verses, dict);
     if (!rows) {
         // No words in the score: a syllable on every note a slur or tie doesn't carry
         // on, and each line of the tune as long as most verses' lines want
         const slots = notes.map((n) => !n.carried);
         const total = slots.filter(Boolean).length;
-        const all = verses.map(verseLines);
-        const lineCount = mode(all.map((l) => l.length));
-        const wants = all.filter((l) => l.length === lineCount).map((l) => naturalCounts(l, dict));
-        const perLine = Array.from({ length: lineCount }, (_, i) => mode(wants.map((w) => w[i])));
+        const perLine = meter;
         if (perLine.reduce((a, b) => a + b, 0) !== total) return { abc, added: [], missed: verses.map((_, v) => v + 1) };
         patterns.push({ perLine, slots });
     }
 
-    const newRows = [], added = [], missed = [];
-    for (let v = rows; v < verses.length; v++) {
+    /** Verse v fitted to the first pattern it fits (one without line lengths
+     *  takes those its words fit best), as one token per note: a syllable ("-"
+     *  joins it to the rest of its word, the verse number goes on the first),
+     *  or "_" carrying the one before on. */
+    const setVerse = (v, first = []) => {
         const lines = verseLines(verses[v]);
-        let fit = null;
-        for (const p of patterns) {
-            if (p.perLine.length !== lines.length) continue;
-            const fitted = lines.map((line, i) => fitLine(line, p.perLine[i], dict));
-            if (fitted.every(Boolean)) {
-                fit = { words: fitted.flat(), pattern: p };
-                break;
-            }
+        const tries = [...first, ...patterns].flatMap((p) =>
+            (p.perLine ? [p.perLine] : lineCounts(lines, p.slots.filter(Boolean).length, dict, meter)).map((perLine) => ({ perLine, slots: p.slots }))
+        );
+        for (const { perLine, slots } of tries) {
+            if (perLine.length !== lines.length) continue;
+            const fitted = lines.map((line, i) => fitLine(line, perLine[i], dict));
+            if (!fitted.every(Boolean)) continue;
+            addPattern({ perLine, slots });
+            const sung = fitted.flat().flatMap((word) => word.map((syl, i) => escapeWord(syl) + (i < word.length - 1 ? "-" : "")));
+            sung[0] = `${v + 1}.~${sung[0]}`;
+            let s = 0;
+            return { tokens: notes.map((n, j) => (slots[j] ? sung[s++] : "_")), count: sung.length };
         }
-        if (!fit) {
-            missed.push(v + 1);
-            newRows.push(null);
-            continue;
+        return null;
+    };
+
+    const added = [], missed = [];
+    // Verses the score sets with other words, each in its own rhythm first
+    const replaced = new Map();
+    for (const { r, slots, near } of redo) {
+        const row = setVerse(r, [{ perLine: null, slots }]);
+        if (row) {
+            replaced.set(r, row);
+            added.push(r + 1);
+        } else if (!near) {
+            // Nearly the hymn's words (an old spelling, a word or two) are better
+            // than none and stay; other words don't
+            replaced.set(r, null);
+            missed.push(r + 1);
         }
-        added.push(v + 1);
-        // One token per note: a syllable ("-" joins it to the rest of its word,
-        // the verse number goes on the first), or "_" carrying the one before on
-        const sung = fit.words.flatMap((word) => word.map((syl, i) => escapeWord(syl) + (i < word.length - 1 ? "-" : "")));
-        sung[0] = `${v + 1}.~${sung[0]}`;
-        let s = 0;
-        newRows.push({ tokens: notes.map((n, j) => (fit.pattern.slots[j] ? sung[s++] : "_")), count: sung.length });
+    }
+    // Verses beyond those the score sets; when it set none of this hymn's, they
+    // follow the rhythm of its first verse
+    const fallback = rows && !patterns.length ? [{ perLine: null, slots: notes.map((n) => !!n.lyric[0]?.syllable) }] : [];
+    const newRows = [];
+    for (let v = rows; extend && v < verses.length; v++) {
+        const row = setVerse(v, fallback);
+        if (row) added.push(v + 1);
+        else missed.push(v + 1);
+        newRows.push(row);
     }
     // Rows after the last verse that fits would only be blank
     while (newRows.length && !newRows[newRows.length - 1]) newRows.pop();
-    if (!added.length) return { abc, added, missed };
-    const out = writeRows(abc, notes, newRows);
+    if (!newRows.length && !replaced.size) return { abc, added: [], missed };
+    const out = writeRows(abc, notes, newRows, replaced);
 
-    // Read back: every new verse's syllables must land on the notes meant for them
+    // Read back: every verse's syllables must land on the notes meant for them
     const check = lyricNotes(out);
     const voice = Object.values(check).find((n) => rowsOf(n) >= rows + newRows.length);
+    const sungIn = (r) => voice.filter((n) => n.lyric[r]?.syllable).length;
     const ok =
         voice &&
-        newRows.every((row, i) => !row || voice.filter((n) => n.lyric[rows + i]?.syllable).length === row.count);
+        [...replaced].every(([r, row]) => sungIn(r) === (row ? row.count : 0)) &&
+        newRows.every((row, i) => !row || sungIn(rows + i) === row.count);
     if (!ok) return { abc, added: [], missed: [...added, ...missed].sort((a, b) => a - b) };
-    return { abc: out, added, missed };
+    return { abc: out, added: added.sort((a, b) => a - b), missed: missed.sort((a, b) => a - b) };
 }
 
 /** A syllable written so nothing in it means something else in a w: line. */
 const escapeWord = (syl) => syl.replace(/[_*|~\\]/g, "").replace(/-/g, "\\-");
 
-/** Writes the new rows under each line of the voice's music, after the rows there. */
-function writeRows(abc, notes, newRows) {
+/** Writes the new rows under each line of the voice's music, after the rows
+ *  there, and the rows set afresh (`replaced`, by row; null clears one) in place. */
+function writeRows(abc, notes, newRows, replaced = new Map()) {
+    const rowCount = rowsOf(notes);
     const src = abc.split("\n");
     const offsets = [];
     let at = 0;
@@ -293,11 +378,17 @@ function writeRows(abc, notes, newRows) {
     for (let l = 0; l < src.length; l++) {
         out.push(src[l]);
         if (!byLine.has(l)) continue;
-        // Past the rows of words already under this line
-        let k = l + 1;
-        while (k < src.length && /^w\s*:/.test(src[k])) out.push(src[k++]);
         // A verse that doesn't fit keeps its place with "*" (a note with no word)
-        for (const row of newRows) out.push("w: " + byLine.get(l).map((j) => (row ? row.tokens[j] : "*")).join(" "));
+        const words = (row) => "w: " + byLine.get(l).map((j) => (row ? row.tokens[j] : "*")).join(" ");
+        // The rows of words already under this line; a line with fewer than the
+        // score's other lines (a refrain set once) gets blank ones, so that every
+        // verse written here lands in its own row
+        const there = [];
+        let k = l + 1;
+        while (k < src.length && /^w\s*:/.test(src[k])) there.push(src[k++]);
+        const rows = Math.max(there.length, newRows.length ? rowCount : 0, ...[...replaced.keys()].map((r) => r + 1));
+        for (let r = 0; r < rows; r++) out.push(replaced.has(r) ? words(replaced.get(r)) : there[r] ?? words(null));
+        for (const row of newRows) out.push(words(row));
         l = k - 1;
     }
     return out.join("\n");

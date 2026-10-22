@@ -53,7 +53,8 @@ def load_cmu(path):
 def vowel_groups(word):
     """Start and end of each run of vowels, a final silent e dropped."""
     groups = []
-    for m in re.finditer(r"[aeiou]+|y(?![aeiou])", word):
+    # y is a vowel before a consonant ("my-stery") and before -ing ("sup-ply-ing")
+    for m in re.finditer(r"[aeiou]+|y(?![aeiou])|(?<=[^aeiou])y(?=ing)", word):
         if m.start() == 0 and m.group() == "y":
             continue
         groups.append([m.start(), m.end()])
