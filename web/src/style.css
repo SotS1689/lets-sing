@@ -216,6 +216,17 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--primary); }
     padding: 10px 12px;
     box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
 }
+/* Fills the space between the top bar and the stuck panel, so the score and
+   words don't show through it as they scroll past */
+.controls::before {
+    content: "";
+    position: absolute;
+    left: -17px;
+    right: -17px;
+    bottom: calc(100% + 1px);
+    height: 8px;
+    background: var(--bg);
+}
 .transport { display: flex; align-items: center; gap: 8px; }
 .mini-btn {
     flex: none;
