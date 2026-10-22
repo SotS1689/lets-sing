@@ -417,6 +417,71 @@ async function showHymn(id) {
     }
 }
 
+// ---- Support callout (occasional, dismissible ask for financial support) -------
+// Same cadence as DA Tool's and BibleSearch's: never on first visit; first
+// appears once the app has actually been used (10 visits OR 3 distinct days),
+// then resurfaces roughly every 24 days after "Maybe later". Stops popping up
+// (the heart itself always stays) after 5 "Maybe later"s, or for good after
+// "Don't ask again" or clicking through to support.
+
+const SUPPORT_DAY_MS = 20 * 60 * 60 * 1000;
+const SUPPORT_FIRST_VISITS_THRESHOLD = 10;
+const SUPPORT_FIRST_DAYS_THRESHOLD = 3;
+const SUPPORT_RESHOW_INTERVAL_DAYS = 24;
+const SUPPORT_MAX_MAYBE_LATER = 5;
+const supportCallout = document.getElementById("support-callout");
+const supportLink = document.getElementById("support");
+
+function trackSupportUsage() {
+    if (store.get("supportDismissedForever", false) || store.get("supportActed", false)) return;
+
+    const visits = store.get("supportVisits", 0) + 1;
+    store.set("supportVisits", visits);
+
+    let days = store.get("supportDaysUsed", 0);
+    const today = new Date().toISOString().slice(0, 10);
+    if (store.get("supportLastDayUsed", "") !== today) {
+        days += 1;
+        store.set("supportDaysUsed", days);
+        store.set("supportLastDayUsed", today);
+    }
+
+    if (store.get("supportMaybeLaterCount", 0) >= SUPPORT_MAX_MAYBE_LATER) return;
+    const lastShown = store.get("supportLastShown", 0);
+    const due = lastShown === 0
+        ? visits >= SUPPORT_FIRST_VISITS_THRESHOLD || days >= SUPPORT_FIRST_DAYS_THRESHOLD
+        : Date.now() - lastShown >= SUPPORT_RESHOW_INTERVAL_DAYS * SUPPORT_DAY_MS;
+    // A moment after opening, so it doesn't land on top of the app loading
+    if (due) setTimeout(showSupportCallout, 1500);
+}
+
+function showSupportCallout() {
+    supportCallout.classList.add("open");
+    store.set("supportLastShown", Date.now());
+    // Dismiss on outside click (doesn't count as "Maybe later" -- just closes it)
+    setTimeout(() => document.addEventListener("click", supportOutsideClick), 0);
+}
+
+function supportOutsideClick(e) {
+    if (supportCallout.contains(e.target) || supportLink.contains(e.target)) return;
+    supportCallout.classList.remove("open");
+    document.removeEventListener("click", supportOutsideClick);
+}
+
+function supportDismiss(mode) {
+    supportCallout.classList.remove("open");
+    document.removeEventListener("click", supportOutsideClick);
+    if (mode === "forever") store.set("supportDismissedForever", true);
+    else if (mode === "later") store.set("supportMaybeLaterCount", store.get("supportMaybeLaterCount", 0) + 1);
+    else if (mode === "acted") store.set("supportActed", true);
+}
+
+supportLink.addEventListener("click", () => supportDismiss("acted"));
+supportCallout.querySelectorAll("[data-support]").forEach((el) =>
+    el.addEventListener("click", () => supportDismiss(el.dataset.support))
+);
+trackSupportUsage();
+
 // A hymn shouldn't keep singing after you leave the app (as on Android).
 document.addEventListener("visibilitychange", () => {
     if (document.hidden && player.isPlaying()) player.pause();

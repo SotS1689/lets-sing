@@ -87,6 +87,58 @@ a { color: inherit; }
     cursor: pointer;
 }
 #theme-toggle, #support, #download { margin-left: 0; }
+/* Occasional "would you consider supporting it?" callout under the heart
+   (same look and cadence as DA Tool's -- see the support section of main.js) */
+.support-wrap { position: relative; display: inline-flex; }
+#support-callout {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: min(290px, calc(100vw - 32px));
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: 0 6px 20px rgb(0 0 0 / 0.25);
+    text-align: left;
+    z-index: 20;
+}
+#support-callout.open { display: block; animation: support-callout-in 0.18s ease-out; }
+@keyframes support-callout-in {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.support-callout-arrow {
+    position: absolute;
+    top: -6px;
+    right: 17px;
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid var(--line);
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+    transform: rotate(45deg);
+}
+.support-callout-title { margin: 0 0 4px; font-size: 0.9rem; font-weight: 700; }
+.support-callout-body { margin: 0 0 10px; font-size: 0.85rem; line-height: 1.5; color: var(--text-2); }
+.support-callout-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.support-callout-btn {
+    padding: 6px 12px;
+    border: 0;
+    border-radius: 6px;
+    font: inherit;
+    font-size: 0.85rem;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.support-callout-btn-primary { background: var(--brand); color: var(--on-brand); font-weight: 600; }
+.support-callout-btn-secondary { border: 1px solid var(--line); background: var(--surface); color: var(--text); }
+.support-callout-btn-text { padding: 6px 2px; background: none; color: var(--text-2); font-size: 0.8rem; }
+.support-callout-btn-text:hover { color: var(--text); text-decoration: underline; }
+
 #download[data-state="busy"] svg { animation: pulse 1s ease-in-out infinite alternate; }
 @keyframes pulse { from { opacity: 1; } to { opacity: 0.3; } }
 .icon-btn:hover { background: rgb(255 255 255 / 0.12); }
