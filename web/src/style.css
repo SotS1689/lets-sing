@@ -217,15 +217,29 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--primary); }
     box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
 }
 /* Fills the space between the top bar and the stuck panel, so the score and
-   words don't show through it as they scroll past */
-.controls::before {
+   words don't show through it as they scroll past. The strip runs a little
+   into the top bar and down behind the panel's rounded corners, and the
+   panel's own background and border are drawn on ::after so they sit on top
+   of it. */
+.controls { background: none; border-color: transparent; }
+.controls::before,
+.controls::after {
     content: "";
     position: absolute;
+    z-index: -1;
+}
+.controls::before {
+    top: -11px;
     left: -17px;
     right: -17px;
-    bottom: calc(100% + 1px);
-    height: 8px;
+    height: 28px;
     background: var(--bg);
+}
+.controls::after {
+    inset: -1px;
+    border: 1px solid var(--line);
+    border-radius: inherit;
+    background: var(--surface);
 }
 .transport { display: flex; align-items: center; gap: 8px; }
 .mini-btn {
