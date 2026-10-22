@@ -167,7 +167,10 @@ export function nwcToAbc(text, { transpose = 0 } = {}) {
                         } else {
                             // Only one part free: it takes the notes, and a rest beside
                             // them only holds the place of the part still singing
-                            const notes = [main, second].filter((g) => !g.rest);
+                            let notes = [main, second].filter((g) => !g.rest);
+                            // Both layers the same note: a unison written twice, sung by the free part
+                            const same = (a, b) => a.l === b.l && a.pitches.map((p) => p.step).join() === b.pitches.map((p) => p.step).join();
+                            if (notes.length === 2 && same(...notes)) notes = [main];
                             if (notes.length !== 1) throw new Error("two layers of notes but only one part free");
                             const v = up ? upper : lower;
                             place(v, pick(notes[0], v));

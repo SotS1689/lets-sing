@@ -115,7 +115,8 @@ const verseLines = (verse) =>
     verse
         .replace(/^\s*\d+\.\s*/, "")
         .split("\n")
-        .map((line) => line.split(/\s+/).filter((w) => key(w)))
+        // A dash between words ("cross—the grave") parts them as a space would
+        .map((line) => line.split(/\s+|(?<=[a-z][—–])(?=[a-z])/i).filter((w) => key(w)))
         .filter((line) => line.length);
 
 const isLetter = (c) => /[a-z]/i.test(c.normalize("NFD")[0]);

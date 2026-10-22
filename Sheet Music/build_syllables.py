@@ -174,8 +174,9 @@ def main():
     words = {}
     for h in hymns:
         for verse in h.get("verses") or []:
-            for w in re.sub(r"^\s*\d+\.\s*", "", verse).split():
-                w = w.strip(".,;:!?\"()[]“”‘")
+            # Words parted by spaces or by a dash between them, as underlay.mjs reads them
+            for w in re.split(r"\s+|(?<=[a-zA-Z][—–])(?=[a-zA-Z])", re.sub(r"^\s*\d+\.\s*", "", verse)):
+                w = w.strip(".,;:!?\"()[]“”‘—–")
                 key = re.sub(r"[^a-z]", "", w.lower())
                 if key and key not in words:
                     words[key] = splits(w, cmu)

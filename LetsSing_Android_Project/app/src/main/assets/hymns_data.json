@@ -506,6 +506,25 @@
     "credits": "Words: Charles Wesley, 1738. Music: 'Fillmore' Jeremiah Ingalls (1764-1828). Setting: \"The Methodist Hymnal\", 1905. copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision."
   },
   {
+    "id": 553,
+    "title": "And Can It Be?",
+    "tune": "Sagina",
+    "Author": "Charles Wesley",
+    "Composer": "Thomas Campbell",
+    "meter": "88.88.88 with repeat",
+    "midi_url": "assets/midi/And_Can_It_Be-Sagina.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. And can it be that I should gain\nAn interest in the Savior’s blood?\nDied He for me, who caused His pain—\nFor me, who Him to death pursued?\nAmazing love! How can it be,\nThat Thou, my God, shouldst die for me?\nAmazing love! How can it be,\nThat Thou, my God, shouldst die for me?",
+      "2. ’Tis mystery all: th’Immortal dies:\nWho can explore His strange design?\nIn vain the firstborn seraph tries\nTo sound the depths of love divine.\n’Tis mercy all! Let earth adore,\nLet angel minds inquire no more.\n’Tis mercy all! Let earth adore;\nLet angel minds inquire no more.",
+      "3. He left His Father’s throne above\nSo free, so infinite His grace—\nEmptied Himself of all but love,\nAnd bled for Adam’s helpless race:\n’Tis mercy all, immense and free,\nFor O my God, it found out me!\n’Tis mercy all, immense and free,\nFor O my God, it found out me!",
+      "4. Long my imprisoned spirit lay,\nFast bound in sin and nature’s night;\nThine eye diffused a quickening ray—\nI woke, the dungeon flamed with light;\nMy chains fell off, my heart was free,\nI rose, went forth, and followed Thee.\nMy chains fell off, my heart was free,\nI rose, went forth, and followed Thee.",
+      "5. Still the small inward voice I hear,\nThat whispers all my sins forgiven;\nStill the atoning blood is near,\nThat quenched the wrath of hostile Heaven.\nI feel the life His wounds impart;\nI feel the Savior in my heart.\nI feel the life His wounds impart;\nI feel the Savior in my heart.",
+      "6. No condemnation now I dread;\nJesus, and all in Him, is mine;\nAlive in Him, my living head,\nAnd clothed in righteousness divine,\nBold I approach th’eternal throne,\nAnd claim the crown, through Christ my own.\nBold I approach th’eternal throne,\nAnd claim the crown, through Christ my own."
+    ],
+    "credits": "Words: Charles Wesley, Hymns and Sacred Poems, 1739. Music: 'SAGINA' Thomas Campbell, 1825. Text and tune as given in the Cyber Hymnal (hymntime.com/tch/htm/a/c/a/n/acanitbe.htm). copyright: public domain."
+  },
+  {
     "id": 24,
     "title": "Angel Voices, Ever Singing",
     "tune": "Angel Voices (Monk)",
@@ -1301,6 +1320,30 @@
       "10.Jesus Christ is risen today,\nOur triumphant holy day.\nWho did once upon the cross\nSuffer to redeem our loss."
     ],
     "credits": "Words: Stanzas 1-7, Charles Wesley, 1739. Stanzas 8-10, 14th Century; translated in Lyra Davidica. Music: 'Orientis Partibus' or 'Redhead 45' traditional French. Setting: \"The Church Hymnal, Revised and Enlarged\" (Episcopal), 1893. copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision."
+  },
+  {
+    "id": 554,
+    "title": "Christ the Lord Is Risen Today (Wesley)",
+    "tune": "Easter Hymn",
+    "Author": "Charles Wesley",
+    "Composer": "from Lyra Davidica, 1708",
+    "meter": "77.77 with alleluias",
+    "midi_url": "assets/midi/Christ_The_Lord_Is_Risen_Today-Easter_Hymn.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Christ the Lord is risen today, Alleluia!\nSons of men and angels say, Alleluia!\nRaise your joys and triumphs high, Alleluia!\nSing ye heav’ns, and earth reply, Alleluia!",
+      "2. Love’s redeeming work is done, Alleluia!\nFought the fight, the battle won, Alleluia!\nLo! Our sun’s eclipse is o’er, Alleluia!\nLo! He sets in blood no more, Alleluia!",
+      "3. Vain the stone, the watch, the seal, Alleluia!\nChrist has burst the gates of hell, Alleluia!\nDeath in vain forbids His rise, Alleluia!\nChrist has opened paradise, Alleluia!",
+      "4. Lives again our glorious king, Alleluia!\nWhere, O death, is now thy sting? Alleluia!\nDying once He all doth save, Alleluia!\nWhere thy victory, O grave? Alleluia!",
+      "5. Soar we now, where Christ has led, Alleluia!\nFollowing our exalted head, Alleluia!\nMade like Him, like Him we rise, Alleluia!\nOurs the cross—the grave—the skies, Alleluia!",
+      "6. What tho’ once we perished all, Alleluia!\nPartners in our parents’ fall, Alleluia!\nSecond life we all receive, Alleluia!\nIn our heav’nly Adam live, Alleluia!",
+      "7. Ris’n with Him, we upward move, Alleluia!\nStill we seek the things above, Alleluia!\nStill pursue, and kiss the Son, Alleluia!\nSeated on His Father’s throne, Alleluia!",
+      "8. Scarce on earth a thought bestow, Alleluia!\nDead to all we leave below, Alleluia!\nHeav’n our aim, and loved abode, Alleluia!\nHid our life with Christ in God, Alleluia!",
+      "9. Hid till Christ our life appear, Alleluia!\nGlorious in His members here, Alleluia!\nJoined to Him, we then shall shine, Alleluia!\nAll immortal, all divine, Alleluia!",
+      "10. Hail the Lord of earth and Heaven, Alleluia!\nPraise to Thee by both be given, Alleluia!\nThee we greet triumphant now, Alleluia!\nHail the resurrection Thou, Alleluia!",
+      "11. King of Glory, Soul of Bliss, Alleluia!\nEverlasting life is this, Alleluia!\nThee to know, Thy power to prove, Alleluia!\nThus to sing, and thus to love, Alleluia!"
+    ],
+    "credits": "Words: Charles Wesley, Hymns and Sacred Poems, 1739; the alleluias were a later addition to fit the music. Music: 'EASTER HYMN' from Lyra Davidica, 1708. Setting: as for \"Jesus Christ Is Risen Today\" (Open Hymnal Project). Text and tune as given in the Cyber Hymnal (hymntime.com/tch/htm/c/t/l/r/ctlrisen.htm). copyright: public domain."
   },
   {
     "id": 55,

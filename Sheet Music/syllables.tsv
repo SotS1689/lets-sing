@@ -337,7 +337,6 @@ awoke	a-woke
 axe	axe
 axes	a-xes
 aye	aye
-b	b
 babe	babe
 babel	ba-bel
 babels	ba-bels
@@ -1432,7 +1431,7 @@ discouraged	di-scou-raged	di-sco-u-raged
 discouragement	di-scou-ra-gement
 discourse	di-scourse
 disdain	dis-dain
-disdaineth	dis-dai-neth	dis-daineth	dis-da-i-neth
+disdaineth	dis-dai-neth
 disease	di-sease
 diseases	di-sea-ses
 disgrace	dis-grace
@@ -1612,6 +1611,7 @@ een	een	e-en
 eer	eer	e-er
 efface	ef-face
 effect	ef-fect
+effected	ef-fec-ted
 effort	ef-fort
 efforts	ef-forts
 egypt	e-gypt
@@ -1620,6 +1620,7 @@ either	ei-ther
 elder	el-der
 elders	el-ders
 elect	e-lect
+elected	e-lec-ted
 eleison	e-lei-son	e-leison	e-le-i-son
 elements	e-le-ments
 elias	e-li-as
@@ -1926,6 +1927,7 @@ fig	fig
 fight	fight
 fighting	figh-ting	fighting
 fightings	figh-tings	fightings
+fights	fights
 file	file
 fill	fill
 filland	fil-land	filland
@@ -2528,8 +2530,6 @@ highway	high-way
 hill	hill
 hills	hills
 him	him
-himjesus	him-je-sus	him-jesus
-himprophet	him-pro-phet	him-prophet
 himself	him-self
 hinder	hin-der
 hindered	hin-dered
@@ -2560,7 +2560,6 @@ hope	hope
 hopeful	ho-peful
 hopeless	ho-peless
 hopes	hopes
-hopewhen	ho-pe-when	ho-pewhen
 horn	horn
 horns	horns
 horrid	hor-rid
@@ -3529,6 +3528,7 @@ overcome	o-ver-come
 overflow	o-ver-flow
 overflows	o-ver-flows
 overpass	o-ver-pass
+overpower	o-ver-po-wer	o-ver-power
 overpowr	o-ver-powr	o-verpowr
 overtake	o-ver-take
 overthrew	o-verth-rew
@@ -3585,6 +3585,7 @@ partaker	par-ta-ker	par-taker
 partakes	par-takes	partakes
 parted	par-ted
 parting	par-ting	parting
+partners	part-ners
 parts	parts
 paschal	pas-chal
 pass	pass
@@ -3780,12 +3781,10 @@ pours	pours
 poverty	po-ver-ty
 povertys	po-ver-tys
 power	po-wer	power
-powerall	po-we-rall	po-werall
-powerless	po-wer-less
 powers	po-wers	powers
-powersurely	po-wer-su-re-ly	po-wer-su-rely
 powr	powr
 powrful	powr-ful	powrful
+powrless	powr-less	powrless
 powrs	powrs
 practice	prac-tice
 practiced	prac-ticed
@@ -3813,7 +3812,7 @@ prepared	pre-pared
 prepares	pre-pares
 prepareth	pre-pa-reth
 preparing	pre-pa-ring	pre-paring
-prerogative	pre-ro-ga-tive	pre-ro-gative	pre-ro-ga-ti-ve
+prerogative	pre-ro-ga-tive
 presence	pre-sence
 present	pre-sent
 presentation	pre-sen-ta-tion
@@ -3948,6 +3947,7 @@ questions	que-stions
 quibble	quib-ble
 quick	quick
 quicken	quick-en
+quickening	quick-e-ning	quick-ening
 quickly	quick-ly
 quickning	quick-ning	quickning	qu-ick-ning
 quiet	qu-iet
@@ -4423,6 +4423,7 @@ scorns	scorns
 scourge	scourge
 scourged	scourged	sco-urged
 scourging	scour-ging	scourging
+scowl	scowl
 screened	screened	scre-ened
 scribe	scribe
 script	script
@@ -5399,6 +5400,7 @@ trumpets	trum-pets
 trust	trust
 trusting	tru-sting	trusting
 trusts	trusts
+trusty	tru-sty
 truth	truth
 truths	truths
 try	try
@@ -5739,6 +5741,7 @@ weak	weak
 weakness	wea-kness
 weal	weal	we-al
 wealth	wealth
+weapon	wea-pon
 weapons	wea-pons
 wear	wear
 wearest	wea-rest
