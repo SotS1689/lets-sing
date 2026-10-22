@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/p/r/o/t/Protection.nwc
+X:1
+T:Protection
+M:2/2
+L:1/8
+Q:1/4=135
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Ab
+[V:S] (E2 F2) | A4 F2 A2 | E4 A2 A2 | c4 A2 c2 |
+[V:A] (C2 D2) | E4 D2 F2 | C4 C2 C2 | E4 C2 A,2 |
+[V:T] A,4 | C4 A,2 A,2 | A,4 E,2 E,2 | A,4 A,2 A,2 |
+[V:B] A,,4 | A,,4 D,2 D,2 | C,4 A,,2 A,,2 | A,,4 A,,2 A,,2 |
+[V:S] E4 (E2 F2) | A4 F2 A2 | E4 A2 A2 | c4 B2 B2 |
+[V:A] B,4 (C2 D2) | E4 D2 F2 | C4 C2 C2 | E4 E2 D2 |
+[V:T] G,4 A,4 | C4 A,2 A,2 | A,4 A,2 A,2 | A,4 G,2 G,2 |
+[V:B] E,4 A,,4 | A,,4 D,2 D,2 | C,4 F,2 F,2 | E,4 E,2 E,2 |
+[V:S] A4 c4 | e4 c2 e2 | A4 A2 A2 | c4 A2 c2 |
+[V:A] C4 E4 | A4 E2 E2 | F4 F2 F2 | E4 C2 C2 |
+[V:T] A,4 A,4 | C4 A,2 B,2 | C4 B,2 A,2 | A,4 A,2 A,2 |
+[V:B] A,,4 C,4 | A,4 A,2 G,2 | F,4 D,2 D,2 | A,,4 A,,2 A,,2 |
+[V:S] E4 (E2 F2) | A4 F2 A2 | E4 A2 A2 | c4 B2 B2 |
+[V:A] B,4 (C2 D2) | E4 D2 F2 | E4 C2 C2 | E4 E2 D2 |
+[V:T] G,4 A,4 | C4 A,2 A,2 | A,4 A,2 A,2 | A,4 G,2 G,2 |
+[V:B] E,4 A,,4 | A,,4 D,2 D,2 | C,4 F,2 F,2 | E,4 E,2 E,2 |
+[V:S] A4 |]
+[V:A] C4 |]
+[V:T] A,4 |]
+[V:B] A,,4 |]

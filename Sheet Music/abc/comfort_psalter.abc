@@ -1,0 +1,28 @@
+% Source: Cyber Hymnal nwc/c/o/m/f/Comfort(Psalter).nwc
+X:1
+T:Comfort (Psalter)
+M:4/4
+L:1/8
+Q:1/4=110
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:E
+[V:S] G3 G G2 F2 | G3 A (^A2 B2) | F3 F F2 E2 | F3 G E4 |
+[V:A] E3 E E2 D2 | E3 F (^^F2 G2) | D3 D D2 B,2 | D3 D B,4 |
+[V:T] B,3 B, B,2 B,2 | B,3 B, E4 | A,3 A, A,2 G,2 | A,3 B, G,4 |
+[V:B] E,3 E, E,2 B,,2 | E,3 E, E,4 | B,,3 B,, B,,2 B,,2 | B,,3 B,, E,4 |
+[V:S] G3 G G2 F2 | G3 A (c2 B2) | F3 F F2 E2 | (F A2) G E4 |
+[V:A] E3 E E2 D2 | E3 F (A2 G2) | D3 D D2 B,2 | (D C2) D E4 |
+[V:T] B,3 B, B,2 B,2 | B,3 B, E4 | A,3 A, A,2 G,2 | A,3 B, G,4 |
+[V:B] E,3 E, E,2 B,,2 | E,3 E, E,4 | B,,3 B,, B,,2 B,,2 | B,,3 B,, E,4 |
+[V:S] e3 e e2 B2 | c2 e2 B4 | G3 B G2 E2 | F2 G2 E4 |
+[V:A] G3 G G2 G2 | A2 A2 G4 | E3 G E2 B,2 | D2 D2 B,4 |
+[V:T] B,3 B, B,2 E2 | E2 C2 E4 | E3 E B,2 G,2 | A,2 B,2 G,4 |
+[V:B] E,3 E, E,2 E,2 | E,2 E,2 E,4 | B,,3 B,, B,,2 B,,2 | B,,2 B,,2 E,4 |
+[V:S] e3 e e2 B2 | c2 e2 B4 | G2 B2 G2 E2 | F2 (A G) E4 |]
+[V:A] G3 G G2 G2 | A2 A2 G4 | E2 E2 E2 B,2 | D2 (C D) B,4 |]
+[V:T] B,3 B, B,2 E2 | E2 C2 E4 | B,2 G,2 B,2 G,2 | A,2 (A, B,) G,4 |]
+[V:B] E,3 E, E,2 E,2 | A,2 A,2 E,4 | B,,2 B,,2 B,,2 B,,2 | B,,2 B,,2 E,4 |]

@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/t/a/l/l/TallisOrdinal.nwc
+X:1
+T:Tallisâ Ordinal
+M:4/4
+L:1/8
+Q:1/4=106
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] D2 | F2 G2 A2 A2 | B2 B2 A2 A2 | d2 c2 B2 B2 |
+[V:A] A,2 | D2 D2 C2 D2 | D2 D2 D2 E2 | D2 E2 F2 E2 |
+[V:T] F,2 | A,2 G,2 E,2 F,2 | G,2 G,2 F,2 E,2 | ^G,2 A,2 A,2 ^G,2 |
+[V:B] D,2 | D,2 B,,2 A,,2 D,2 | G,,2 B,,2 D,2 C,2 | B,,2 C,2 D,2 E,2 |
+[V:S] A6 D2 | F2 G2 A2 A2 | B2 B2 A2 D2 | G2 F2 E2 E2 |
+[V:A] C6 A,2 | D2 D2 C2 D2 | D2 D2 D2 D2 | D2 D2 D2 C2 |
+[V:T] A,6 F,2 | A,2 G,2 E,2 F,2 | G,2 G,2 F,2 F,2 | B,2 A,2 A,2 A,2 |
+[V:B] A,,6 D,2 | D,2 B,,2 A,,2 D,2 | G,,2 B,,2 D,2 B,,2 | G,,2 D,2 A,,2 A,,2 |
+[V:S] D6 |]
+[V:A] D6 |]
+[V:T] F,6 |]
+[V:B] D,6 |]

@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/r/e/s/t/Rest(Maker).nwc
+X:1
+T:Rest (Maker)
+M:4/4
+L:1/8
+Q:1/4=105
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] F2 | F3 F ^E2 F2 | A2 A2 ^G2 =G2 | F3 D D2 E2 |
+[V:A] D2 | D3 D D2 D2 | D2 D2 D2 E2 | D3 D D2 D2 |
+[V:T] A,2 | A,3 A, ^G,2 A,2 | A,2 A,2 B,2 A,2 | A,3 F, F,2 ^G,2 |
+[V:B] D,2 | D,3 D, D,2 D,2 | F,2 F,2 E,2 C,2 | D,3 D, B,,2 B,,2 |
+[V:S] E6 F2 | F3 G A2 d2 | d3 c B2 B2 | B3 A G2 ^G2 |
+[V:A] C6 D2 | D3 C D2 D2 | E3 E D2 D2 | D3 ^D E2 E2 |
+[V:T] A,6 A,2 | A,3 A, A,2 A,2 | ^A,3 ^A, B,2 B,2 | B,3 B, B,2 B,2 |
+[V:B] A,,6 D,2 | D,3 E, F,2 F,2 | F,3 F, G,2 G,2 | G,3 F, E,2 D,2 |
+[V:S] A2 G2 F2 A2 | D3 D D2 E2 | F6 |]
+[V:A] E2 E2 D2 D2 | D3 D D2 C2 | D6 |]
+[V:T] A,2 A,2 A,2 =C2 | =C3 B, B,2 _B,2 | A,6 |]
+[V:B] C,2 C,2 D,2 F,2 | G,3 G, G,2 G,2 | D,6 |]

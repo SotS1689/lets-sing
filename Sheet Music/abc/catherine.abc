@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/c/a/t/h/Catherine.nwc
+X:1
+T:Catherine
+M:3/2
+L:1/8
+Q:1/4=140
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Bb
+[V:S] F2 F2 F2 | F6 F2 G2 F2 | B6 B2 A2 B2 | c6 c2 B2 c2 |
+[V:A] D2 D2 D2 | D6 D2 E2 D2 | D6 F2 F2 F2 | F6 F2 F2 F2 |
+[V:T] B,2 B,2 B,2 | B,6 B,2 B,2 B,2 | F,6 D2 C2 D2 | E6 A,2 B,2 A,2 |
+[V:B] B,,2 B,,2 B,,2 | B,,6 B,,2 B,,2 B,,2 | B,,6 F,2 F,2 F,2 | F,6 E,2 D,2 C,2 |
+[V:S] d6 d2 d2 d2 | B6 B2 B2 B2 | G6 G2 F2 F2 | F6 F2 G2 A2 |
+[V:A] F6 F2 F2 F2 | D6 D2 E2 F2 | E6 E2 F2 D2 | C6 F2 E2 E2 |
+[V:T] B,6 B,2 B,2 B,2 | B,6 B,2 B,2 B,2 | B,6 B,2 B,2 B,2 | A,6 B,2 B,2 F,2 |
+[V:B] B,,6 B,,2 B,,2 B,,2 | B,,6 B,,2 C,2 D,2 | E,6 E,2 D,2 B,,2 | F,6 D,2 E,2 F,2 |
+[V:S] B6 F2 F2 F2 | A6 F2 F2 F2 | B6 B2 A2 B2 | c6 F2 G2 A2 |
+[V:A] D6 C2 C2 C2 | E6 E2 E2 E2 | D6 D2 C2 D2 | E6 F2 E2 E2 |
+[V:T] F,6 A,2 A,2 A,2 | C6 A,2 A,2 A,2 | B,6 F,2 F,2 F,2 | A,6 A,2 B,2 F,2 |
+[V:B] B,,6 F,2 F,2 F,2 | F,6 F,2 F,2 F,2 | B,,6 F,2 F,2 F,2 | F,6 F,2 F,2 F,2 |
+[V:S] B6 d2 d2 d2 | B6 B2 B2 B2 | G6 B2 A2 G2 | F2 B2 c4 A4 |
+[V:A] D6 F2 F2 F2 | D6 D2 E2 F2 | E6 G2 F2 E2 | F2 D2 E4 E4 |
+[V:T] F,6 B,2 B,2 B,2 | B,6 B,2 B,2 B,2 | B,6 B,2 B,2 B,2 | B,2 B,2 G,4 F,4 |
+[V:B] B,,6 B,,2 B,,2 B,,2 | B,,6 B,,2 C,2 D,2 | E,6 E,2 E,2 E,2 | D,2 B,,2 E,4 F,4 |
+[V:S] B6 |]
+[V:A] D6 |]
+[V:T] F,6 |]
+[V:B] B,,6 |]

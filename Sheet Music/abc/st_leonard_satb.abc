@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/s/t/l/e/StLeonard(Hiles).nwc
+X:1
+T:St. Leonard (Hiles)
+M:4/4
+L:1/8
+Q:1/4=110
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] F2 | G2 B2 A2 G2 | G3 F F2 F2 | G2 G2 G2 G2 |
+[V:A] C2 | D2 F2 F2 F2 | E3 F F2 F2 | F2 F2 F2 F2 |
+[V:T] A,2 | B,2 D2 C2 =B,2 | B,3 A, A,2 A,2 | D2 G,2 D2 G,2 |
+[V:B] F,2 | F,2 F,2 F,2 F,2 | F,3 F, F,2 D,2 | B,,2 B,,2 =B,,2 =B,,2 |
+[V:S] G6 G2 | A2 c2 B2 A2 | A3 G G2 F2 | F2 F2 F2 E2 |
+[V:A] E6 E2 | F2 _E2 D2 _E2 | D3 D D2 D2 | C2 C2 C2 C2 |
+[V:T] G,6 C2 | C2 A,2 B,2 C2 | B,3 B, B,2 _A,2 | G,2 A,2 B,2 B,2 |
+[V:B] C,6 C,2 | F,2 F,2 F,2 F,2 | B,,3 B,, B,,2 =B,,2 | C,2 C,2 C,2 C,2 |
+[V:S] F6 C2 | D2 E2 F2 F2 | G2 G2 A2 A2 | A2 A2 =B2 =B2 |
+[V:A] C6 C2 | B,2 C2 C2 D2 | F2 E2 F2 F2 | G2 F2 F2 F2 |
+[V:T] A,6 F,2 | F,2 G,2 F,2 A,2 | D2 C2 C2 C2 | ^C2 D2 D2 D2 |
+[V:B] F,,6 A,,2 | B,,2 B,,2 A,,2 D,2 | B,,2 C,2 F,2 F,2 | E,2 D,2 G,2 G,,2 |
+[V:S] c6 c2 | c2 _e2 d2 A2 | c2 B2 A2 G2 | F2 F2 F2 E2 |
+[V:A] E6 E2 | F2 A2 A2 ^F2 | ^F2 G2 ^F2 G2 | C2 D2 C2 C2 |
+[V:T] (C2 G,2 A,2) B,2 | A,2 C2 C2 D2 | A,2 B,2 C2 D2 | A,2 _A,2 G,2 G,2 |
+[V:B] C,6 C,2 | F,2 F,2 ^F,2 D,2 | G,2 G,,2 A,,2 B,,2 | C,2 =B,,2 C,2 C,2 |
+[V:S] F6 |]
+[V:A] A,6 |]
+[V:T] F,6 |]
+[V:B] F,,6 |]

@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/s/t/m/i/StMichael.nwc
+X:1
+T:St. Michael
+M:4/4
+L:1/8
+Q:1/4=113
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] D2 | G2 B2 A2 A2 | B6 d2 | c2 B2 A2 A2 |
+[V:A] B,2 | E2 G2 G2 F2 | G6 A2 | G2 G2 G2 F2 |
+[V:T] G,2 | B,2 D2 E2 D2 | D6 D2 | E2 D2 D3 C |
+[V:B] G,2 | E,2 B,,2 C,2 D,2 | G,6 F,2 | E,2 G,2 D,2 D,2 |
+[V:S] G6 G2 | F2 E2 D2 G2 | G2 A2 B2 B2 | A2 G2 G2 F2 |
+[V:A] G6 E2 | D2 C2 B,2 D2 | E2 E2 ^D2 =D2 | C2 D2 E2 D2 |
+[V:T] B,6 B,2 | B,2 G,2 G,2 G,2 | B,2 A,2 F,2 G,2 | (E, F,) G,2 C2 A,2 |
+[V:B] G,,6 E,2 | B,,2 C,2 G,,2 B,,2 | E,2 C,2 B,,2 G,,2 | A,,2 B,,2 B,,2 D,2 |
+[V:S] G6 |]
+[V:A] D6 |]
+[V:T] B,6 |]
+[V:B] G,,6 |]

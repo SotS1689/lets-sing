@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/b/a/n/g/Bangor.nwc
+X:1
+T:Bangor
+M:4/4
+L:1/8
+Q:1/4=104
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] G2 | E2 D2 C2 G2 | c2 (B A) G2 G2 | G2 (B =A) G2 ^F2 |
+[V:A] D2 | C2 =B,2 C2 D2 | E2 D2 E2 F2 | E2 (G E) D2 D2 |
+[V:T] G,2 | G,2 G,2 (E, G,) B,2 | C2 (F, B,) B,2 =B,2 | C2 (D C) B,2 =A,2 |
+[V:B] =B,,2 | C,2 G,,2 C,2 B,,2 | A,,2 B,,2 E,2 D,2 | C,2 (B,, C,) D,2 D,2 |
+[V:S] G6 G2 | c2 =B2 c2 (e d) | c2 (B A) G2 G2 | c2 (G F) E2 D2 |
+[V:A] D6 G2 | G2 F2 E2 E2 | E2 D2 E2 (C D) | E2 C2 C2 =B,2 |
+[V:T] =B,6 =B,2 | C2 G,2 G,2 B,2 | A,2 (F, B,) B,2 G,2 | G,2 (G, A,) (G,3 F,) |
+[V:B] G,,6 (G, F,) | E,2 D,2 C,2 G,,2 | A,,2 B,,2 E,2 (E, D,) | C,2 (E, F,) x2 (G,,2 |
+[V:S] C6 |]
+[V:A] C6 |]
+[V:T] E,6 |]
+[V:B] C,6) |]

@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/s/w/e/e/t/h/SweetHour.nwc (moved to the MIDI's key)
+X:1
+T:Sweet Hour
+M:6/8
+L:1/8
+Q:1/4=78
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Db
+[V:S] D | F2 G A2 A | B2 c d2 B | A2 F (F E) D |
+[V:A] D | D2 E F2 F | G2 A B2 G | F2 D (D C) D |
+[V:T] F, | A,2 A, D2 D | D2 D D2 D | D2 A, (A, G,) F, |
+[V:B] D, | D,2 D, D,2 D, | G,2 G, G,2 G, | D,2 D, D,2 D, |
+[V:S] E2 F E2 D | F2 G A2 A | B2 c d2 B | A2 F (F E) D |
+[V:A] C2 D C2 D | D2 E F2 F | G2 A B2 G | F2 D (D C) D |
+[V:T] A,2 A, A,2 F, | A,2 A, D2 D | D2 D D2 D | D2 A, (A, G,) F, |
+[V:B] A,,2 A,, A,,2 D, | D,2 D, D,2 D, | G,2 G, G,2 G, | D,2 D, D,2 D, |
+[V:S] F2 E D3 A | d2 c d2 B | A2 F A2 A | d2 c d2 B |
+[V:A] D2 C D3 F | F2 G A2 G | F2 D F2 D | F2 G A2 G |
+[V:T] A,2 G, F,3 A, | A,2 A, A,2 D | D2 A, D2 F, | A,2 A, A,2 D |
+[V:B] A,,2 A,, D,3 D, | D,2 E, F,2 G, | D,2 D, D,2 D, | D,2 E, F,2 G, |
+[V:S] A2 F E2 D | F2 G A2 A | B2 c d2 B | A2 F (F E) D |
+[V:A] F2 D C2 D | D2 E F2 F | G2 A B2 G | F2 D (D C) D |
+[V:T] D2 A, A,2 F, | A,2 A, D2 D | D2 D D2 D | D2 A, (A, G,) F, |
+[V:B] D,2 D, A,,2 D, | D,2 D, D,2 D, | G,2 G, G,2 G, | D,2 D, D,2 D, |
+[V:S] F2 E D2 |]
+[V:A] D2 C D2 |]
+[V:T] A,2 G, F,2 |]
+[V:B] A,,2 A,, D,2 |]

@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/c/a/n/o/Canonbury.nwc
+X:1
+T:Canonbury
+M:4/4
+L:1/8
+Q:1/4=105
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] D2 | B2 B2 B2 (c B) | A2 (G A) B2 D2 | E2 F2 G2 A2 |
+[V:A] D2 | D2 ^D2 E2 E2 | C2 C2 B,2 D2 | C2 C2 D2 E2 |
+[V:T] D,2 | B,2 A,2 G,2 (A, G,) | F,2 (E, F,) G,2 G,2 | G,2 A,2 G,2 E,2 |
+[V:B] D,2 | G,2 F,2 E,2 A,,2 | D,2 D,2 G,,2 B,,2 | C,2 A,,2 B,,2 ^C,2 |
+[V:S] F2 E2 D2 (D C) | B2 B2 B2 (c B) | A2 (G A) B2 D2 | E2 F2 G2 (B A) |
+[V:A] D2 ^C2 D2 (D =C) | B,2 ^D2 E2 E2 | C2 C2 B,2 D2 | C2 C2 D2 E2 |
+[V:T] A,2 G,2 F,2 F,2 | G,2 F,2 ^G,2 (A, =G,) | F,2 (E, F,) G,2 G,2 | G,2 A,2 G,2 (^G, A,) |
+[V:B] D,2 A,,2 D,2 D,2 | G,,2 B,,2 E,2 A,,2 | D,2 D,2 G,,2 B,,2 | C,2 A,,2 B,,2 C,2 |
+[V:S] G2 F2 G2 |]
+[V:A] D2 D2 D2 |]
+[V:T] B,2 C2 B,2 |]
+[V:B] D,2 D,2 G,,2 |]

@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/m/e/n/d/Mendebras.nwc (moved to the MIDI's key)
+X:1
+T:Mendebras
+M:4/4
+L:1/8
+Q:1/4=103
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] (E3/2 F1/2) | G3 G (G F) (E F) | E2 B,4 (E G) | B2 B2 (B A) (G A) |
+[V:A] B,2 | B,3 B, B,2 B,2 | B,2 B,4 (B, E) | G2 G2 (G F) (E F) |
+[V:T] (G,3/2 A,1/2) | B,3 B, (B, A,) (G, A,) | G,2 G,4 (G, B,) | E2 B,2 B,2 B,2 |
+[V:B] E,2 | E,3 E, B,,2 B,,2 | E,2 E,4 E,2 | E,2 E,2 B,,2 B,,2 |
+[V:S] G6 (E3/2 F1/2) | G3 G (G F) (E F) | E2 B,4 (E G) | B2 B2 (B A) (G A) |
+[V:A] E6 B,2 | B,3 B, B,2 B,2 | B,2 B,4 (B, E) | G2 G2 (G F) (E F) |
+[V:T] B,6 (G,3/2 A,1/2) | B,3 B, (B, A,) (G, A,) | G,2 G,4 (G, B,) | E2 B,2 B,2 B,2 |
+[V:B] E,6 E,2 | E,3 E, B,,2 B,,2 | E,2 E,4 E,2 | E,2 E,2 B,,2 B,,2 |
+[V:S] G6 B2 | c3 c c2 c2 | B2 G4 B2 | B2 (A G) A2 B2 |
+[V:A] E6 E2 | E3 E E2 E2 | E2 E4 E2 | G2 (F E) F2 D2 |
+[V:T] B,6 G,2 | A,3 A, A,2 A,2 | G,2 B,4 G,2 | B,2 B,2 B,2 B,2 |
+[V:B] E,6 E,2 | A,,3 A,, (A,, B,,) (C, D,) | E,2 E,4 E,2 | B,,2 B,,2 B,,2 B,,2 |
+[V:S] G6 B2 | c3 c e2 c2 | B2 G4 B2 | B2 (G B) (B A) (G F) |
+[V:A] E6 E2 | E3 E E2 E2 | E2 B,4 E2 | E2 (E G) (G F) (E D) |
+[V:T] B,6 G,2 | A,3 A, C2 A,2 | G,2 B,4 G,2 | G,2 B,2 B,2 (B, A,) |
+[V:B] E,6 E,2 | A,,3 A,, A,,2 C,2 | E,2 E,4 E,2 | B,,2 B,,2 B,,2 B,,2 |
+[V:S] E6 |]
+[V:A] E6 |]
+[V:T] G,6 |]
+[V:B] E,6 |]

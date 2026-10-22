@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/g/a/l/i/Galilee(Jude).nwc
+X:1
+T:Galilee (Jude)
+M:3/4
+L:1/8
+Q:1/4=95
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Ab
+[V:S] c E | B2 B2 B E | A2 A2 A A | A3 F A B |
+[V:A] C C | D2 D2 D D | C2 C2 E =E | F3 F F F |
+[V:T] A, A, | G,2 G,2 G, B, | A,2 A,2 A, A, | A,3 A, F, F, |
+[V:B] A,, A,, | E,2 E,2 E, E, | A,,2 A,,2 C, C, | D,3 D, D, D, |
+[V:S] c4 c F | B2 B2 B E | A2 A2 c c | d2 F2 c B |
+[V:A] =E4 _E _E | =D2 =D2 E _D | C2 C2 E E | D2 D2 D D |
+[V:T] G,4 =A, C | B,2 A,2 G, B, | A,2 A,2 A, A, | A,2 A,2 G, G, |
+[V:B] C,4 F, F, | B,,2 B,,2 E, E, | A,,2 A,,2 _G, _G, | F,2 F,2 E, E, |
+[V:S] A4 |]
+[V:A] C4 |]
+[V:T] A,4 |]
+[V:B] A,,4 |]

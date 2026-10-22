@@ -1,0 +1,28 @@
+% Source: Cyber Hymnal nwc/s/i/a/l/Sialkot.nwc
+X:1
+T:Sialkot
+M:4/4
+L:1/8
+Q:1/4=110
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Ab
+[V:S] E2 | c2 B2 A2 E2 | G3 F E2 A2 | F2 G2 A2 d2 |
+[V:A] C2 | E2 D2 C2 E2 | E3 D C2 E2 | D2 E2 E2 F2 |
+[V:T] A,2 | E,2 (F, G,) A,2 A,2 | A,3 A, A,2 A,2 | A,2 B,2 A,2 A,2 |
+[V:B] A,,2 | A,,2 A,,2 A,,2 C,2 | D,3 F, A,2 C,2 | D,2 B,,2 C,2 D,2 |
+[V:S] c3 B A2 c2 | B2 c2 =d2 B2 | e3 c B2 G2 | F2 G2 A2 c2 |
+[V:A] E3 D C2 E2 | E2 E2 A2 A2 | G3 E E2 E2 | E2 E2 E2 E2 |
+[V:T] (A,2 G,) G, A,2 A,2 | G,2 A,2 B,2 B,2 | B,3 A, G,2 B,2 | C2 C2 C2 F,2 |
+[V:B] E,3 E, A,,2 A,,2 | E,2 A,2 F,2 =D,2 | E,3 E, E,2 G,2 | A,2 G,2 F,2 A,,2 |
+[V:S] B3 =D E2 E2 | c2 B2 A2 E2 | G3 F E2 A2 | F2 G2 A2 d2 |
+[V:A] (E2 =D) B, B,2 _D2 | C2 D2 E2 C2 | E3 D C2 E2 | D2 E2 E2 F2 |
+[V:T] (G,2 F,) A, G,2 G,2 | A,2 (F, G,) A,2 A,2 | A,3 A, A,2 A,2 | A,2 B,2 A,2 A,2 |
+[V:B] B,,3 B,, E,2 E,2 | A,,2 B,,2 C,2 A,,2 | D,3 F, A,2 C,2 | D,2 B,,2 C,2 D,2 |
+[V:S] c3 B A2 |]
+[V:A] E3 D C2 |]
+[V:T] (A,2 G,) G, A,2 |]
+[V:B] E,3 E, A,,2 |]

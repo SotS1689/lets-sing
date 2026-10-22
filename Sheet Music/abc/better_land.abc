@@ -1,0 +1,28 @@
+% Source: Cyber Hymnal nwc/b/e/t/t/BetterLand.nwc
+X:1
+T:Better Land
+M:3/4
+L:1/8
+Q:1/4=93
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Ab
+[V:S] E3/2 E1/2 | E3 A G A | B4 E3/2 E1/2 | B3 B A B |
+[V:A] C3/2 C1/2 | C3 E D C | E4 E3/2 E1/2 | D3 D C E |
+[V:T] A,3/2 A,1/2 | A,3 E, E, A, | G,4 E,3/2 E,1/2 | G,3 G, A, G, |
+[V:B] A,,3/2 A,,1/2 | A,,3 C, B,, A,, | E,4 E,3/2 E,1/2 | E,3 E, E, E, |
+[V:S] c4 c3/2 B1/2 | A3 F B A | G4 A3/2 A1/2 | G E G2 F2 |
+[V:A] E4 =E3/2 G1/2 | F3 F =D F | E4 E3/2 E1/2 | E E E2 B,2 |
+[V:T] A,4 G,3/2 C1/2 | C3 A, F, B, | B,4 C3/2 C1/2 | B, G, B,2 A,2 |
+[V:B] A,4 C,3/2 C,1/2 | F,3 F, B,, B,, | E,4 A,,3/2 A,,1/2 | B,, B,, B,,2 B,,2 |
+[V:S] E4 c3/2 d1/2 | e3 c B A | F4 A3/2 F1/2 | E3 A B c |
+[V:A] B,4 E3/2 E1/2 | A3 E E E | D4 F3/2 D1/2 | C3 C D E |
+[V:T] G,4 A,3/2 B,1/2 | C3 A, G, A, | A,4 A,3/2 A,1/2 | A,3 A, G, G, |
+[V:B] E,4 A,3/2 A,1/2 | A,3 A,, B,, C, | D,4 D,3/2 D,1/2 | E,3 E, E, E, |
+[V:S] A4 |]
+[V:A] C4 |]
+[V:T] A,4 |]
+[V:B] A,,4 |]

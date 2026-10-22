@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/e/v/a/n/Evan.nwc
+X:1
+T:Evan
+M:3/2
+L:1/8
+Q:1/4=140
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Ab
+[V:S] E4 | E2 A2 c4 B4 | A2 F2 E4 E4 | E2 A2 c4 A4 |
+[V:A] C4 | C2 C2 E4 D4 | C2 D2 C4 C4 | C2 C2 C4 C4 |
+[V:T] A,4 | A,2 A,2 A,4 G,4 | A,2 A,2 A,4 A,4 | A,2 A,2 A,4 A,4 |
+[V:B] A,,4 | A,,2 A,,2 A,,4 E,4 | F,2 D,2 A,,4 A,,4 | A,,2 A,2 F,4 F,4 |
+[V:S] B8 d4 | c2 B2 A4 B4 | c2 A2 F4 E4 | E2 A2 c4 B4 |
+[V:A] E8 E4 | E2 D2 C4 E4 | E2 E2 D4 B,4 | C2 C2 E4 D4 |
+[V:T] G,8 B,4 | A,2 G,2 A,4 G,4 | A,2 A,2 A,4 G,4 | A,2 A,2 A,4 G,4 |
+[V:B] E,8 G,4 | A,2 E,2 F,4 E,4 | A,2 C,2 D,4 E,4 | A,,2 F,2 E,4 E,4 |
+[V:S] A8 |]
+[V:A] C8 |]
+[V:T] A,8 |]
+[V:B] A,,8 |]

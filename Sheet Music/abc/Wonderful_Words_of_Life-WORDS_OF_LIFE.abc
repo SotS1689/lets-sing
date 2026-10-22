@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/w/o/n/d/e/r/WonderfulWordsOfLife.nwc (moved to the MIDI's key)
+X:1
+T:Wonderful Words of Life
+M:6/8
+L:1/8
+Q:1/4=105
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] B2 B B c B | B2 A A3 | D A A B2 A | (G3 D3) |
+[V:A] D2 D D E D | D2 C C3 | C C C D2 C | B,6 |
+[V:T] G,2 G, G, G, G, | G,2 F, F,3 | F, F, F, F,2 F, | G,6 |
+[V:B] G,2 G, G, G, G, | D,2 D, D,3 | D, D, D, D,2 D, | G,6 |
+[V:S] B2 B B c B | B2 A A3 | D A A B2 A | G6 |
+[V:A] D2 D D E D | D2 C C3 | C C C D2 C | B,6 |
+[V:T] G,2 G, G, G, G, | G,2 F, F,3 | F, F, F, F,2 F, | G,6 |
+[V:B] G,2 G, G, G, G, | D,2 D, D,3 | D, D, D, D,2 D, | G,,6 |
+[V:S] B2 B (B c) d | e3 d3 | B2 B (B c) d | e3 d3 |
+[V:A] G2 G (G A) B | c3 B3 | G2 G (G A) B | c3 B3 |
+[V:T] G,2 G, G,2 G, | G,3 G,3 | G,2 G, G,2 G, | G,3 G,3 |
+[V:B] G,2 G, G,2 G, | G,3 G,3 | G,2 G, G,2 G, | G,3 G,3 |
+[V:S] d c c c3 | c B B B3 | B A G A2 F | (G2 B d3) |
+[V:A] B A A A3 | A G G G3 | G D D D2 D | D3 G3 |
+[V:T] D D D D3 | D D D D3 | D C B, C2 A, | B,6 |
+[V:B] D, D, D, D,3 | G, G, G, G,3 | D, D, D, D,2 D, | G,6 |
+[V:S] d c c c3 | c B B B3 | B A G A2 F | G6 |]
+[V:A] B A A A3 | A G G G3 | G D D D2 D | D6 |]
+[V:T] D D D D3 | D D D D3 | D C B, C2 A, | B,6 |]
+[V:B] D, D, D, D,3 | G, G, G, G,3 | D, D, D, D,2 D, | G,6 |]

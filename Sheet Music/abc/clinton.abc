@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/c/l/i/n/Clinton.nwc
+X:1
+T:Clinton
+M:3/2
+L:1/8
+Q:1/4=150
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] B4 | B2 A2 G4 d4 | G2 A2 B4 B4 | c2 c2 B4 d4 |
+[V:A] D4 | D2 D2 D4 D4 | E2 F2 G4 G4 | G2 D2 D4 G4 |
+[V:T] D4 | D2 C2 B,4 A,4 | B,2 D2 D4 D4 | C2 A,2 B,4 D4 |
+[V:B] G,4 | G,2 G,2 G,4 F,4 | E,2 D,2 G,4 G,4 | E,2 F,2 G,4 B,,4 |
+[V:S] A8 B4 | B2 A2 G4 d4 | A2 B2 c4 e4 | G2 A2 B4 A4 |
+[V:A] F8 D4 | D2 D2 D4 G4 | E2 E2 E4 E4 | E2 _E2 (D2 G2) F4 |
+[V:T] D8 D4 | D2 C2 B,4 G,4 | A,2 ^G,2 A,4 A,4 | C2 C2 (B,2 D2) C4 |
+[V:B] D,8 G,4 | G,2 G,2 G,4 B,,4 | C,2 B,,2 A,,4 C,4 | C,2 C,2 D,4 D,4 |
+[V:S] G8 |]
+[V:A] G8 |]
+[V:T] B,8 |]
+[V:B] G,,8 |]

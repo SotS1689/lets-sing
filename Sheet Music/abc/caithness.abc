@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/c/a/i/t/Caithness.nwc
+X:1
+T:Caithness
+M:4/4
+L:1/8
+Q:1/4=108
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] D2 | F2 G2 A2 D2 | C2 D2 E2 F2 | G2 A2 B2 B2 |
+[V:A] A,2 | D2 D2 C2 A,2 | G,2 (A, B,) C2 D2 | D2 =C2 B,2 (B, ^C) |
+[V:T] F,2 | A,2 G,2 E,2 F,2 | G,2 F,2 A,2 A,2 | G,2 F,2 G,2 (D, E,) |
+[V:B] D,2 | D,2 B,,2 A,,2 F,2 | E,2 D,2 A,,2 D,2 | B,,2 A,,2 G,,2 G,,2 |
+[V:S] A6 A2 | B2 c2 d2 F2 | G2 A2 B2 A2 | G2 F2 E2 E2 |
+[V:A] D6 F2 | F2 E2 D2 C2 | D2 D2 D2 C2 | D2 D2 D2 C2 |
+[V:T] F,6 F,2 | F,2 A,2 B,2 F,2 | B,2 A,2 G,2 E,2 | G,2 A,2 B,2 (A, G,) |
+[V:B] D,6 D,2 | D,2 C,2 B,,2 A,,2 | G,,2 F,,2 G,,2 A,,2 | B,,2 D,2 G,,2 A,,2 |
+[V:S] D6 |]
+[V:A] D6 |]
+[V:T] F,6 |]
+[V:B] D,6 |]

@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/o/l/i/v/Oliva.nwc
+X:1
+T:Oliva
+M:3/4
+L:1/8
+Q:1/4=95
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] C2 | C3/2 F1/2 B3 A | (A3/2 G1/2) F2 E2 | D3 F B D |
+[V:A] C2 | C3/2 C1/2 F3 F | E2 D2 ^C2 | D3 D D B, |
+[V:T] A,2 | A,3/2 A,1/2 D3 C | (C3/2 B,1/2) A,2 G,2 | F,3 B, F, F, |
+[V:B] F,2 | F,3/2 F,1/2 F,3 F, | C,2 D,2 A,,2 | B,,3 B,, B,, B,, |
+[V:S] C4 C2 | C3/2 F1/2 B3 A | (c3/2 B1/2) A2 F2 | G3 E F D |
+[V:A] A,4 C2 | C3/2 C1/2 F3 F | (A3/2 G1/2) F2 F2 | E3 C D =B, |
+[V:T] F,4 A,2 | A,3/2 A,1/2 D3 C | C2 C2 A,2 | C3 G, G, F, |
+[V:B] F,4 F,2 | F,3/2 F,1/2 F,3 F, | C,2 F,2 F,2 | C,3 C, G,, G,, |
+[V:S] C4 c2 | c3 E F G | (A3/2 B1/2) c2 A2 | A3 E F G |
+[V:A] C4 E2 | E3 C C E | F2 F2 F2 | F3 E D D |
+[V:T] E,4 G,2 | G,3 B, A, G, | (F,3/2 G,1/2) A,2 F,2 | F,3 A, D D |
+[V:B] C,4 C,2 | C,3 C, C, C, | F,2 F,2 F,2 | D,3 ^C, D, B,, |
+[V:S] A4 c2 | f3 c B A | G3/2 B1/2 d2 d2 | c3 F G A |
+[V:A] E4 E2 | F3 F F F | F2 F2 F2 | F3 C C E |
+[V:T] ^C4 B,2 | A,3 A, B, C | D2 B,2 ^G,2 | A,3 A, B, C |
+[V:B] A,,4 G,2 | F,3 _E, D, C, | B,,2 B,,2 =B,,2 | C,3 C, C, C, |
+[V:S] F4 |]
+[V:A] F4 |]
+[V:T] A,4 |]
+[V:B] F,,4 |]

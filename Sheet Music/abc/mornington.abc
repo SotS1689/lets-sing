@@ -1,0 +1,28 @@
+% Source: Cyber Hymnal nwc/m/o/r/n/Mornington.nwc
+X:1
+T:Mornington
+M:2/4
+L:1/8
+Q:1/4=90
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:E
+[V:S] B2 B A | G2 F2 | E2 (e3/2 d1/2) | c2 (B c) |
+[V:A] E2 E F | E2 D2 | E2 E2 | E2 E2 |
+[V:T] G,2 B, C | B,2 (B, A,) | G,2 B,2 | A,2 E2 |
+[V:B] E,2 G, A, | B,2 B,,2 | E,2 G,2 | A,2 (G, A,) |
+[V:S] B2 A2 | G4 | A2 A A | (A2 G) A |
+[V:A] E2 E2 | E4 | E2 E F | (F2 E) D |
+[V:T] E2 B,2 | B,4 | A,2 C B, | B,3 B, |
+[V:B] G,2 F,2 | E,4 | C,2 C, D, | E,3 F, |
+[V:S] B2 c2 | F2 A2 | G2 (F E) | E2 D2 |
+[V:A] E2 E2 | D2 D2 | E2 C2 | B,2 B,2 |
+[V:T] (B, E) x C | B,2 B,2 | B,2 A,2 | G,2 (F, A,) |
+[V:B] G,2 A,2 | B,2 F,2 | E,2 A,,2 | B,,2 B,,2 |
+[V:S] E4 |]
+[V:A] B,4 |]
+[V:T] G,4 |]
+[V:B] E,4 |]

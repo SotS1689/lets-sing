@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/f/a/l/c/Falconer.nwc
+X:1
+T:Falconer
+M:4/4
+L:1/8
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:C
+[V:S] E2 | E3 A G E C D | E4- E E E E | E3 c (A E) ^F2 |
+[V:A] C2 | C3 F E C C C | C4- C C D D | C3 E E2 D2 |
+[V:T] G,2 | G,3 G, G, G, E, F, | G,4- G, G, ^G, ^G, | A,3 A, C2 C2 |
+[V:B] C,2 | C,3 C, C, C, C, C, | C,4- C, C, B,, B,, | A,,3 A,, A,,2 D,2 |
+[V:S] G4- G G A B | c4- c e e d | c4- c c B A | c2 G2 G3 F |
+[V:A] D4- D G ^F =F | E4- E G G F | E4- E E G F | G2 E2 D3 B, |
+[V:T] B,4- B, B, C D | C4- C C C B, | C4- C C C C | C2 C2 B,3 G, |
+[V:B] G,4- G, G, G, G, | C4- C C G, G, | C,4- C, C, E, F, | E,2 C,2 G,,3 G,, |
+[V:S] E6 |]
+[V:A] C6 |]
+[V:T] G,6 |]
+[V:B] C,6 |]

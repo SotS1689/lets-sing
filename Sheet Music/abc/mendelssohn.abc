@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/m/e/n/d/Mendelssohn.nwc
+X:1
+T:Mendelssohn, 77.77 D refrain
+M:4/4
+L:1/8
+Q:1/4=112
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] C2 F2 F3 E | F2 A2 (A2 G2) | c2 c2 c3 B | A2 G2 A4 |
+[V:A] C2 C2 C3 C | C2 F2 (F2 E2) | F2 E2 D2 G2 | F2 E2 F4 |
+[V:T] A,2 A,2 A,3 G, | F,2 C2 C4 | C2 C2 D2 D2 | C2 C2 C4 |
+[V:B] F,2 F,2 F,2 C,2 | A,,2 F,,2 C,4 | A,,2 A,,2 B,,2 B,,2 | C,2 C,2 F,,4 |
+[V:S] C2 F2 F3 E | F2 A2 (A2 G2) | c2 G2 G3 E | E2 D2 C4 |
+[V:A] C2 C2 C3 C | A,2 F2 F4 | E2 D2 E3 C | C2 =B,2 C4 |
+[V:T] A,2 A,2 A,3 G, | F,2 C2 D4 | A,2 G,2 G,3 G, | A,2 F,2 E,4 |
+[V:B] F,2 F,2 F,2 C,2 | D,2 C,2 =B,,4 | A,,2 =B,,2 C,2 E,2 | F,,2 G,,2 C,4 |
+[V:S] c2 c2 c2 F2 | B2 A2 (A2 G2) | c2 c2 c2 F2 | B2 A2 (A2 G2) |
+[V:A] C2 C2 C2 F2 | G2 F2 (F2 E2) | C2 C2 C2 F2 | G2 F2 (F2 E2) |
+[V:T] C2 C2 C2 C2 | C2 C2 C4 | C2 C2 C2 C2 | C2 C2 C4 |
+[V:B] C2 C2 C2 A,2 | E,2 F,2 C,4 | C2 C2 C2 A,2 | E,2 F,2 C,4 |
+[V:S] d2 d2 d2 c2 | B2 A2 B4 | G2 (A B) c3 F | F2 G2 A4 |
+[V:A] B2 B2 B2 A2 | G2 ^F2 G4 | E2 E2 F3 C | C2 E2 F4 |
+[V:T] D2 D2 D2 D2 | D2 D2 D4 | C2 C2 C3 A, | A,2 B,2 A,4 |
+[V:B] B,,2 B,,2 B,,2 B,,2 | B,,2 D,2 G,4 | B,2 B,2 A,2 F,2 | C,2 C,2 F,,4 |
+[V:S] d3 d d2 c2 | B2 A2 B4 | G2 (A B) c3 F | F2 G2 F4 |]
+[V:A] B2 B2 B2 A2 | G2 ^F2 G4 | C2 E2 F3 C | C2 E2 C4 |]
+[V:T] D2 D2 D2 C2 | B,2 A,2 B,4 | C2 C2 C3 A, | A,2 B,2 A,4 |]
+[V:B] B,,8 | B,,2 D,2 (G,2 F,2) | E,2 B,2 (B,2 F,2) | C,2 C,2 F,4 |]

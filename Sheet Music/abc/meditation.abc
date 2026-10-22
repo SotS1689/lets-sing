@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/m/e/d/i/Meditation.nwc
+X:1
+T:Meditation
+M:4/4
+L:1/8
+Q:1/4=110
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] G2 | G2 G2 G2 G2 | G3 E E2 E2 | A2 A2 G2 F2 |
+[V:A] E2 | E2 E2 E2 E2 | E3 B, B,2 B,2 | C2 E2 D2 D2 |
+[V:T] B,2 | B,2 B,2 B,2 B,2 | B,3 G, G,2 G,2 | F,2 C2 B,2 B,2 |
+[V:B] E,2 | E,2 E,2 E,2 C,2 | B,,3 B,, B,,2 B,,2 | B,,2 B,,2 B,2 A,2 |
+[V:S] B6 B2 | B2 B2 c2 G2 | B2 A2 G2 F2 | G2 E2 E2 D2 |
+[V:A] E6 D2 | E2 E2 =E2 =E2 | G2 F2 C2 C2 | B,2 B,2 C2 B,2 |
+[V:T] B,6 A,2 | G,2 G,2 G,2 C2 | C2 C2 B,2 A,2 | E,2 G,2 A,2 A,2 |
+[V:B] G,6 F,2 | E,2 _D,2 C,2 C,2 | F,2 F,,2 G,,2 A,,2 | B,,2 B,,2 B,,2 B,,2 |
+[V:S] E6 |]
+[V:A] B,6 |]
+[V:T] G,6 |]
+[V:B] E,6 |]

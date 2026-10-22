@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/l/i/s/b/Lisbon.nwc
+X:1
+T:Lisbon
+M:3/4
+L:1/8
+Q:1/4=105
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:A
+[V:S] A2 | F E A2 B2 | c4 c2 | B A d2 c2 |
+[V:A] C2 | D C C2 E2 | E4 E2 | D C F2 E2 |
+[V:T] A,2 | A, A, A,2 G,2 | A,4 A,2 | G, A, A,2 A,2 |
+[V:B] A,,2 | A,, A,, F,2 E,2 | A,,4 A,,2 | E, F, D,2 A,,2 |
+[V:S] B4 E2 | A A A2 B2 | c c c2 e2 | e d c2 B2 |
+[V:A] E4 E2 | E E E2 E2 | E E E2 E2 | F F E2 D2 |
+[V:T] G,4 G,2 | A, A, A,2 G,2 | A, A, A,2 A,2 | A, A, A,2 G,2 |
+[V:B] E,4 E,2 | C, C, C,2 E,2 | A, A, A,2 C,2 | D, D, E,2 E,2 |
+[V:S] A4 |]
+[V:A] C4 |]
+[V:T] A,4 |]
+[V:B] A,,4 |]

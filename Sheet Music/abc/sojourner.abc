@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/s/o/j/o/Sojourner.nwc
+X:1
+T:Sojourner
+M:4/4
+L:1/8
+Q:1/4=112
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:C
+[V:S] C2 | D2 E2 F2 E2 | D4 C2 D2 | E2 F2 G2 A2 |
+[V:A] C2 | C2 C2 C2 C2 | B,4 C2 B,2 | C2 C2 C2 F2 |
+[V:T] E,2 | F,2 G,2 A,2 G,2 | F,4 E,2 G,2 | G,2 G,2 G,2 C2 |
+[V:B] C,2 | C,2 C,2 C,2 C,2 | G,,4 A,,2 G,,2 | C,2 D,2 E,2 F,2 |
+[V:S] G6 G2 | c2 c2 B2 A2 | G4 E2 E2 | D2 G2 G2 ^F2 |
+[V:A] E6 E2 | E2 E2 F2 F2 | E4 C2 _B,2 | B,2 D2 C2 C2 |
+[V:T] C6 C2 | G,2 G,2 A,2 B,2 | C4 G,2 G,2 | G,2 B,2 A,2 A,2 |
+[V:B] C,6 C,2 | C,2 C,2 C,2 C,2 | C,4 C,2 ^C,2 | D,2 D,2 D,2 D,2 |
+[V:S] G6 G2 | d2 B2 A2 G2 | e4 c2 C2 | D2 E2 F2 G2 |
+[V:A] B,6 G2 | F2 F2 F2 F2 | E4 E2 _B,2 | _B,2 C2 C2 C2 |
+[V:T] G,6 G,2 | B,2 D2 C2 B,2 | C4 G,2 C,2 | D,2 E,2 F,2 G,2 |
+[V:B] G,6 G,2 | G,2 G,2 G,2 G,2 | C,4 C,2 C,,2 | C,,4 D,,2 E,,2 |
+[V:S] A6 B2 | c2 c2 B2 A2 | G4 G2 F2 | E2 C2 E2 D2 |
+[V:A] F6 ^G2 | E2 E2 ^D2 ^D2 | E4 D2 D2 | C2 C2 B,2 B,2 |
+[V:T] A,6 D2 | C2 A,2 ^F,2 B,2 | B,4 A,2 A,2 | G,2 G,2 F,2 F,2 |
+[V:B] C,6 E,2 | A,2 A,,2 B,,2 B,,2 | E,4 F,2 F,2 | G,2 E,2 G,,2 G,,2 |
+[V:S] C6 |]
+[V:A] G,6 |]
+[V:T] E,6 |]
+[V:B] C,6 |]

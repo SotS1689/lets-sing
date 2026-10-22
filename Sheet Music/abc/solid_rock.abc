@@ -1,0 +1,28 @@
+% Source: Cyber Hymnal nwc/s/o/l/i/SolidRock.nwc
+X:1
+T:Solid Rock, LM refrain
+M:3/4
+L:1/8
+Q:1/4=103
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] C2 | F A c2 A2 | A G G2 A2 | B B B2 G2 |
+[V:A] C2 | C C F2 F2 | F E E2 F2 | F F F2 D2 |
+[V:T] C,2 | A, A, A,2 C2 | C C C2 C2 | D D D2 B,2 |
+[V:B] C,2 | F, F, F,2 F,2 | C, C, C,2 F,2 | B,, B,, B,,2 B,,2 |
+[V:S] F E F2 C2 | F A c2 A2 | A G G2 A2 | B B B2 G2 |
+[V:A] C C C2 C2 | C C F2 F2 | F E E2 F2 | F F F2 D2 |
+[V:T] A, G, A,2 C,2 | A, A, A,2 C2 | C C C2 C2 | D D D2 B,2 |
+[V:B] C, C, F,2 C,2 | F, F, F,2 F,2 | C, C, C,2 F,2 | B,, B,, B,,2 B,,2 |
+[V:S] F E F2 | c2 | c c c2 c2 | d d d2 d2 |
+[V:A] C C C2 | F2 | F E F2 F2 | F F F2 F2 |
+[V:T] A, G, A,2 | A,2 | A, B, C2 A,2 | B, B, B,2 B,2 |
+[V:B] C, C, F,2 | F,2 | F, G, A,2 F,2 | B,, B,, B,,2 B,,2 |
+[V:S] c A A2 F2 | A A G2 C2 | F F F2 A2 | G G F2 |]
+[V:A] F C C2 C2 | C C C2 C2 | C A, D2 C2 | C B, A,2 |]
+[V:T] A, F, F,2 A,2 | F, F, E,2 E,2 | F, F, F,2 F,2 | F, E, F,2 |]
+[V:B] F, F, F,2 F,2 | F,, A,, C,2 C,2 | A,, F,, B,,2 F,,2 | C, C, F,,2 |]

@@ -1,0 +1,23 @@
+% Source: Cyber Hymnal nwc/s/o/u/t/Southport(Kingsley).nwc
+X:1
+T:Southport (Kingsley)
+M:3/2
+L:1/8
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] (E2 F2) | G3 G G4 B4 | c3 A A4 c4 | B3 F F4 G2 A2 |
+[V:A] B,4 | E3 E E4 E4 | E3 E E4 E4 | D3 D D4 E2 F2 |
+[V:T] (G,2 A,2) | B,3 B, B,4 G,4 | A,3 C C4 A,4 | F,3 B, B,4 B,4 |
+[V:B] E,4 | E,3 E, E,4 E,4 | A,,3 A,, A,,4 A,,4 | B,,3 B,, B,,4 B,,4 |
+[V:S] G8 G2 A2 | B3 B B4 e4 | e3 c c4 c4 | B3 F F2 B2 (A2 F2) |
+[V:A] E8 E2 F2 | G3 G G4 G4 | A3 A A4 A4 | F3 D D4 D4 |
+[V:T] B,8 B,4 | E3 E E4 B,4 | C3 E E4 E4 | D3 B, B,4 (B,2 A,2) |
+[V:B] E,8 E,4 | E,3 E, E,4 E,4 | A,3 A, A,4 A,,4 | B,,3 B,, B,,4 B,,4 |
+[V:S] E8 |]
+[V:A] E8 |]
+[V:T] G,8 |]
+[V:B] E,8 |]

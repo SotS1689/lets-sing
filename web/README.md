@@ -44,10 +44,27 @@ in its own colour (the ring around its S/A/T/B button), only for parts that are
 switched on. The design follows the #doreancon hymnal player
 (gitlab.com/svrbc/doreancon.org), used with its developer's permission.
 
-- **Scores** are Open Hymnal's own ABC files, in `../Sheet Music/abc/`, named
-  like the hymn's MIDI file (`<name>.abc` beside `<name>.mid`).
-  `python "../Sheet Music/download_openhymnal_abc.py"` fetches any that are
-  missing; to add a score from elsewhere, drop it in with the matching name.
+- **Scores** are ABC files in `../Sheet Music/abc/`, named like the hymn's MIDI
+  file (`<name>.abc` beside `<name>.mid`). Most are Open Hymnal's own
+  (`python "../Sheet Music/download_openhymnal_abc.py"` fetches any missing).
+  The rest - most of the psalms and the hymns from other sources - come from the
+  Cyber Hymnal's NoteWorthy scores (hymntime.com/tch, the `tch-nwc*.7z` archives
+  on its Downloads page) and the svrbc psalter's tune library
+  (gitlab.com/svrbc/psalter.svrbc.org, `tunes/`), via
+  `node "../Sheet Music/import_scores.mjs" --nwc <unpacked archives> --svrbc <checkout> --index tch-idx.txt`,
+  which converts them (`nwc.mjs`; moved into the MIDI's key where the Cyber
+  Hymnal's MIDI is a key away from its score) and keeps one only when every part
+  of our MIDI follows it note for note. Each starts with a `% Source:` line.
+  To add a score from elsewhere, drop it in with the matching name.
+- **Words under the notes** for every verse, not only those the score sets:
+  `scripts/underlay.mjs` sets the hymn's own words under the notes, following a
+  verse the score already sets where there is one (Open Hymnal sets five), or
+  else one syllable per note that no slur or tie carries on. Words split as the
+  scores split them elsewhere, then as `../Sheet Music/syllables.tsv` has them
+  (`python "../Sheet Music/build_syllables.py" cmudict.dict` rebuilds it from the
+  CMU Pronouncing Dictionary after verses change). Each line of a verse must come
+  out to exactly the tune's number of notes for that line, or the verse is left
+  without words; the build lists those.
 - **`scripts/build-scores.mjs`** (run by prepare-content) works out, ahead of
   time, when every notehead sounds in *our* MIDI file: each part's MIDI notes are
   matched by pitch against the score line it follows, which handles intros,

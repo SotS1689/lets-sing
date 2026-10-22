@@ -1,0 +1,20 @@
+% Source: svrbc psalter tunes/martyrdom.abc
+X:1
+T:MARTYRDOM
+C:Hugh Wilson (1766-1824), adapt. Robert A. Smith
+S:Cyber Hymnal NWC score (hymntime.com) - Source: The Methodist Hymnal (New York: Methodist Publishing House, 1939), # 70.
+%%psalter-meter CM
+%%psalter-capo 0
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] D | G2 E | D2 (G/ A/) | B2 A | G2 B | d2 (B/ A/) | G2 B | A3- | A2 d | B2 A | G2 B | c2 B | A2 B | (D E) (G/ A/) | B2 A | G2 |]
+[V:A] B, | B,2 C | B,2 (D/ E/) | D2 C | B,2 D | G2 D | D2 D | D3- | D2 D | D2 C | B,2 =F | E2 D | D2 D | D C (D/ E/) | D2 C | B,2 |]
+[V:T] G, | D,2 G, | G,2 G, | G,2 F, | G,2 G, | B,2 (G,/ F,/) | G,2 G, | F,3- | F,2 A, | G,2 F, | G,2 G, | G,2 G, | F,2 G, | G,2 G, | G,2 F, | G,2 |]
+[V:B] G,, | G,,2 G,, | G,,2 (B,,/ C,/) | D,2 D, | G,,2 G, | G,2 (G,,/ A,,/) | B,,2 G,, | D,3- | D,2 F, | G,2 D, | E,2 D, | C,2 G,, | D,2 G,, | (B,, C,) (B,,/ C,/) | G,2 D, | G,,2 |]

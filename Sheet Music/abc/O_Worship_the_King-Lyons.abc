@@ -1,0 +1,31 @@
+% Source: Cyber Hymnal nwc/l/y/o/n/Lyons.nwc
+X:1
+T:Lyons
+M:3/4
+L:1/8
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] D2 | G2 G2 A2 | (B2 B2) G2 | c2 c2 B2 |
+[V:A] B,2 | D2 D2 D2 | (D2 D2) D2 | C2 D2 D2 |
+[V:T] G,2 | B,2 G,2 F,2 | G,2 G,2 G,2 | G,2 A,2 G,2 |
+[V:B] G,,2 | G,,2 B,,2 D,2 | (G,2 G,2) B,,2 | E,2 F,2 G,2 |
+[V:S] A4 (D C) | G2 G2 A2 | (B2 B2) c2 | (d c) B2 A2 |
+[V:A] D4 (D C) | B,2 D2 D2 | (D2 D2) E2 | (D E) D2 C2 |
+[V:T] F,4 F,2 | G,2 G,2 F,2 | G,2 G,2 G,2 | G,2 G,2 F,2 |
+[V:B] D,4 D,2 | G,,2 B,,2 D,2 | (G,2 G,2) E,2 | (B,, C,) D,2 D,2 |
+[V:S] G4 D2 | D2 D2 E2 | F2 F2 G2 | A2 A2 B2 |
+[V:A] B,4 D2 | D2 D2 ^C2 | C2 C2 B,2 | A,2 D2 G2 |
+[V:T] G,4 F,2 | F,2 F,2 G,2 | A,2 A,2 G,2 | F,2 F,2 G,2 |
+[V:B] G,,4 D,2 | D,2 D,2 D,2 | D,2 D,2 D,2 | D,2 D,2 D,2 |
+[V:S] c4 (D C) | G2 G2 A2 | B2 B2 c2 | (d c) B2 A2 |
+[V:A] F4 (D C) | B,2 D2 D2 | D2 D2 E2 | (D E) D2 C2 |
+[V:T] A,4 F,2 | G,2 G,2 F,2 | G,2 G,2 G,2 | G,2 G,2 F,2 |
+[V:B] D,4 D,2 | G,,2 B,,2 D,2 | G,2 G,2 E,2 | (B,, C,) D,2 D,2 |
+[V:S] G4 |]
+[V:A] B,4 |]
+[V:T] G,4 |]
+[V:B] G,,4 |]

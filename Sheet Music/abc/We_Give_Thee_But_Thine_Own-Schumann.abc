@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/s/c/h/u/Schumann.nwc
+X:1
+T:Schumann
+M:4/4
+L:1/8
+Q:1/4=108
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Ab
+[V:S] E2 | A2 E2 F2 G2 | A6 A2 | d2 c2 B2 A2 |
+[V:A] C2 | C2 E2 E2 D2 | C6 C2 | D2 E2 F2 F2 |
+[V:T] A,2 | A,2 A,2 A,2 E,2 | E,6 A,2 | A,2 A,2 D2 _C2 |
+[V:B] A,,2 | A,,2 C,2 D,2 B,,2 | A,,6 _G,2 | F,2 E,2 D,2 =D,2 |
+[V:S] (A4 G2) G2 | A2 E2 F2 G2 | A2 B2 c2 e2 | d2 B2 A2 G2 |
+[V:A] E6 E2 | E2 E2 E2 D2 | C2 E2 E2 _G2 | F2 F2 E2 D2 |
+[V:T] B,6 B,2 | C2 A,2 A,2 B,2 | A,2 G,2 A,2 A,2 | B,2 D2 C2 B,2 |
+[V:B] E,6 E,2 | A,,2 C,2 D,2 B,,2 | F,2 E,2 A,2 C,2 | D,2 D,2 E,2 E,2 |
+[V:S] A6 |]
+[V:A] C6 |]
+[V:T] A,6 |]
+[V:B] A,,6 |]

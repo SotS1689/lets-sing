@@ -1,0 +1,20 @@
+% Source: svrbc psalter tunes/arlington.abc
+X:1
+T:ARLINGTON
+C:Thomas Arne (1710-1778)
+S:Cyber Hymnal NWC score (hymntime.com) - Source: The Hymnbook (Richmond, Virginia: Presbyterian Church in the United States, 1955), # 69.
+%%psalter-meter CM
+%%psalter-capo 3
+M:3/2
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] F2 | A3/2 A/ A2 G2 | F3/2 F/ F2 G2 | A c B2 A2 | (A2 G2) B2 | A3/2 A/ A2 d2 | c3/2 c/ c2 F2 | G B A2 G2 | F4 |]
+[V:A] F2 | F3/2 F/ F2 E2 | D3/2 D/ D2 E2 | F C (D E) F2 | (F2 E2) G2 | F3/2 F/ F2 F2 | F3/2 F/ F2 C2 | D G F2 E2 | F4 |]
+[V:T] A,2 | C3/2 C/ C2 B,2 | A,3/2 A,/ A,2 C2 | C A, B,2 C2 | C4 C2 | C3/2 C/ C2 B,2 | A,3/2 A,/ A,2 C2 | B, D C2 (C B,) | A,4 |]
+[V:B] F,2 | F,3/2 F,/ F,2 C,2 | D,3/2 D,/ D,2 C,2 | F, A, G,2 F,2 | C,4 E,2 | F,3/2 F,/ F,2 B,,2 | F,3/2 F,/ F,2 A,,2 | B,, G,, C,2 C,2 | F,4 |]

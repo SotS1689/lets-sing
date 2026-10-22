@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/h/e/a/v/HeavenlyFold.nwc
+X:1
+T:Heavenly Fold
+M:4/4
+L:1/8
+Q:1/4=115
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:C
+[V:S] C2 | D2 E2 F2 E2 | E3 D C2 E2 | c2 B2 A2 ^G2 |
+[V:A] C2 | C2 C2 C2 C2 | B,3 B, C2 D2 | E2 F2 E2 E2 |
+[V:T] E,2 | F,2 G,2 A,2 G,2 | G,3 F, E,2 B,2 | C2 C2 C2 B,2 |
+[V:B] C,2 | C,2 C,2 C,2 C,2 | G,,3 G,, A,,2 ^G,,2 | A,,2 D,2 E,2 E,2 |
+[V:S] A6 B2 | c2 d2 e2 c2 | G3 E G2 A2 | B2 G2 A2 ^F2 |
+[V:A] E6 F2 | E2 F2 G2 E2 | E3 C E2 E2 | D2 D2 D2 D2 |
+[V:T] C6 D2 | C2 G,2 G,2 G,2 | G,3 G, G,2 G,2 | G,2 B,2 C2 A,2 |
+[V:B] A,,6 G,,2 | C,2 B,,2 C,2 C,2 | C,3 C, C,2 C,2 | D,2 D,2 D,2 D,2 |
+[V:S] G6 G2 | B2 B2 B2 (A B) | c3 G G2 c2 | B2 B2 B2 (A B) |
+[V:A] D6 G2 | F2 F2 F2 F2 | E3 E E2 G2 | F2 F2 F2 (F B) |
+[V:T] B,6 G,2 | D2 D2 D2 D2 | C2 C2 C2 E2 | D2 D2 D2 D2 |
+[V:B] G,6 G,2 | G,,2 D,2 B,,2 G,,2 | C,2 G,2 E,2 C,2 | G,2 G,2 ^G,2 ^G,2 |
+[V:S] (c4 d2) G2 | e3 d c2 B2 | A2 G2 F2 A2 | G2 E2 C2 D2 |
+[V:A] (E4 F2) G2 | G3 F E2 D2 | C2 E2 D2 D2 | E2 C2 C2 B,2 |
+[V:T] (C4 B,2) B,2 | C3 B, A,2 ^G,2 | A,2 _B,2 A,2 G,2 | G,2 G,2 E,2 F,2 |
+[V:B] (A,4 G,2) G,2 | C3 G, A,2 E,2 | F,2 ^C,2 D,2 _B,,2 | C,2 C,2 G,,2 G,,2 |
+[V:S] C6 |]
+[V:A] C6 |]
+[V:T] E,6 |]
+[V:B] C,6 |]

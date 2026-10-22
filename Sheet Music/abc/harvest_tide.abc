@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/h/a/r/v/e/Harvest-tide.nwc
+X:1
+T:Harvest-Tide
+M:6/4
+L:1/8
+Q:1/4=140
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] D2 | D2 E2 D2 G2 A2 B2 | B6 A4 G2 | F2 G2 A2 D2 E2 ^C2 |
+[V:A] D2 | B,2 C2 B,2 D2 D2 D2 | D6 D4 B,2 | D2 D2 D2 A,2 A,2 A,2 |
+[V:T] D,2 | G,2 G,2 G,2 B,2 A,2 G,2 | G,6 F,4 G,2 | A,2 G,2 F,2 F,2 G,2 E,2 |
+[V:B] D,2 | G,,2 G,,2 G,,2 G,2 F,2 G,2 | D,6 D,4 E,2 | A,,2 A,,2 A,,2 A,,2 A,,2 A,,2 |
+[V:S] D6- D4 D2 | D2 E2 F2 G2 A2 B2 | d6 c4 B2 | A2 B2 c2 G2 A2 F2 |
+[V:A] A,6- A,4 A,2 | A,2 A,2 D2 D2 D2 D2 | =F6 E4 E2 | A,2 D2 D2 D2 D2 D2 |
+[V:T] F,6- F,4 F,2 | F,2 G,2 A,2 G,2 F,2 G,2 | ^G,6 A,4 =G,2 | F,2 G,2 A,2 B,2 C2 A,2 |
+[V:B] D,6- D,4 D,2 | D,2 ^C,2 =C,2 B,,2 A,,2 G,,2 | C,6 C,4 ^C,2 | D,2 D,2 D,2 D,2 D,2 D,2 |
+[V:S] G6- G4 |]
+[V:A] D6- D4 |]
+[V:T] B,6- B,4 |]
+[V:B] G,,6- G,,4 |]

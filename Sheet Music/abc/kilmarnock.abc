@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/k/i/l/m/Kilmarnock.nwc
+X:1
+T:Kilmarnock
+M:4/4
+L:1/8
+Q:1/4=110
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] E2 | G2 B2 c2 (B G) | G2 F2 E2 c2 | B2 (e c) B2 (E F) |
+[V:A] B,2 | E2 E2 E2 E2 | E2 D2 E2 E2 | E2 E2 E2 E2 |
+[V:T] G,2 | B,2 B,2 A,2 B,2 | B,3 A, G,2 A,2 | B,2 (G, A,) G,2 =A,2 |
+[V:B] E,2 | E,2 G,2 A,2 (G, E,) | x2 (B,,2 E,2) A,2 | G,2 E,2 (E, D,) C,2 |
+[V:S] (G2 F4) B2 | c2 B2 e2 (G F) | E2 F2 G2 c2 | B2 (E F) G2 F2 |
+[V:A] (E2 D4) E2 | E2 (E A) G2 D2 | E2 D2 E2 E2 | E2 E2 E2 D2 |
+[V:T] B,6 B,2 | A,2 B,2 B,2 =B,2 | (C G,) B,2 B,2 A,2 | B,2 C2 B,3 A, |
+[V:B] B,,6 G,2 | A,2 (G, F,) E,2 D,2 | C,2 B,,2 E,2 A,,2 | G,,2 A,,2 B,,2 (B,,2 |
+[V:S] E6 |]
+[V:A] E6 |]
+[V:T] G,6 |]
+[V:B] E,6) |]

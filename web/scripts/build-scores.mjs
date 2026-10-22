@@ -17,10 +17,12 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, rmSync } from "node:fs";
 import { createRequire } from "node:module";
 import { createHash } from "node:crypto";
+import { syllableDictionary, fillVerses } from "./underlay.mjs";
 
 const ABCJS = createRequire(import.meta.url)("abcjs");
 
 const SCORE_SRC = "../Sheet Music/abc";
+const SYLLABLES = "../Sheet Music/syllables.tsv";
 const OUT = "public/scores";
 
 /** Below this share of a voice's MIDI notes matched, the hymn is left without sheet music. */
@@ -320,22 +322,33 @@ export const plainWords = (text) =>
 /** Writes public/scores/ for every hymn that has a score; returns, per MIDI file,
  *  { abc: score file, version: content hash, words: verse 1 as set under the notes,
  *    verses: verses found in the MIDI }.
- *  `verseCounts` maps each MIDI file to its hymn's number of verses. */
-export function buildScores(verseCounts, midiDir) {
+ *  `versesOf` maps each MIDI file to its hymn's verses, which are set under the
+ *  notes wherever the score doesn't already set them (see underlay.mjs). */
+export function buildScores(versesOf, midiDir) {
     rmSync(OUT, { recursive: true, force: true });
     mkdirSync(OUT, { recursive: true });
     const built = {}, left = [];
     if (!existsSync(SCORE_SRC)) return built;
-    for (const name of readdirSync(SCORE_SRC).filter((f) => f.endsWith(".abc"))) {
+    const sources = readdirSync(SCORE_SRC)
+        .filter((f) => f.endsWith(".abc"))
+        .map((name) => ({ name, abc: screenAbc(readFileSync(`${SCORE_SRC}/${name}`, "utf8")) }));
+    const dict = syllableDictionary(sources.map((s) => s.abc), SYLLABLES);
+    let versesSet = 0;
+    const unset = [];
+    for (const { name, abc: screened } of sources) {
         const stem = name.slice(0, -4), midi = `${stem}.mid`;
-        if (!(midi in verseCounts) || !existsSync(`${midiDir}/${midi}`)) {
+        if (!(midi in versesOf) || !existsSync(`${midiDir}/${midi}`)) {
             console.warn(`  score ${name}: no hymn plays ${midi}`);
             continue;
         }
-        const abc = screenAbc(readFileSync(`${SCORE_SRC}/${name}`, "utf8"));
-        let result;
+        const verses = versesOf[midi];
+        let abc = screened, result;
         try {
-            result = noteMap(abc, readFileSync(`${midiDir}/${midi}`), verseCounts[midi]);
+            const words = fillVerses(screened, verses, dict);
+            abc = words.abc;
+            versesSet += words.added.length;
+            if (words.missed.length) unset.push(`${stem}: ${words.missed.join(", ")}`);
+            result = noteMap(abc, readFileSync(`${midiDir}/${midi}`), verses.length);
         } catch (e) {
             result = { error: `couldn't be read (${e.message})` };
         }
@@ -355,6 +368,8 @@ export function buildScores(verseCounts, midiDir) {
             verses: map.verses.length,
         };
     }
+    console.log(`  ${versesSet} verses set under the notes from the hymns' own words`);
+    if (unset.length) console.warn(`  verses whose words wouldn't fit the notes (left without words), in ${unset.length} scores:\n  ` + unset.join("\n  "));
     if (left.length) console.warn(`  ${left.length} scores left out (their notes don't line up with the MIDI):\n  ` + left.join("\n  "));
     return built;
 }

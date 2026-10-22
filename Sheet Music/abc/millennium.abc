@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal nwc/m/i/l/l/Millennium.nwc
+X:1
+T:Millennium
+M:4/4
+L:1/8
+Q:1/4=110
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:A
+[V:S] E2 | A2 A2 A2 (G F) | E6 E2 | F2 A2 G2 B2 |
+[V:A] (E D) | C2 C2 E2 (E D) | C6 E2 | D2 F2 E2 D2 |
+[V:T] G,2 | A,2 A,2 A,2 A,2 | A,6 C2 | D2 D2 B,2 G,2 |
+[V:B] E,2 | A,,2 A,,2 C,2 D,2 | A,,6 A,,2 | D,2 B,,2 E,2 E,2 |
+[V:S] A6 (A B) | c2 c2 c2 c2 | e6 c2 | B2 A2 G2 F2 |
+[V:A] C6 (C E) | E2 E2 E2 E2 | A6 A2 | G2 F2 E2 ^D2 |
+[V:T] A,6 A, G, | A,2 A,2 A,2 A,2 | C6 E2 | E2 (C ^D) E2 (B, A,) |
+[V:B] A,,6 (A, E,) | A,,2 A,,2 A,,2 A,,2 | (A,,2 C,2 E,2) A,2 | B,2 B,2 B,2 B,,2 |
+[V:S] E6 E2 | B4 (c3 B) | A4 E4 | d4 (e3 d) |
+[V:A] E6 E2 | D4 (E3 D) | C4 E4 | E4 E4 |
+[V:T] G,6 G,2 | G,4 G,4 | A,4 C4 | B,4 G,4 |
+[V:B] E,6 E,2 | E,4 E,4 | A,,4 A,4 | G,4 E,4 |
+[V:S] c6 E2 | (F2 G2) A2 B2 | c4 (e2 d2) | c4 B4 |
+[V:A] E6 E2 | D4 C2 E2 | E4 (E2 F2) | E4 (E2 D2) |
+[V:T] A,6 A,2 | A,2 G,2 C2 B,2 | A,4 A,4 | A,4 G,4 |
+[V:B] A,6 C,2 | F,2 E,2 F,2 G,2 | A,4 (C,2 D,2) | E,4 E,4 |
+[V:S] A6 |]
+[V:A] C6 |]
+[V:T] A,6 |]
+[V:B] A,,6 |]

@@ -1,0 +1,28 @@
+% Source: Cyber Hymnal nwc/g/a/i/r/GairneyBridge.nwc
+X:1
+T:Gairney Bridge
+M:3/4
+L:1/8
+Q:1/4=90
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] G F E | A3 A G F | B3 B c d | e2 B2 A G |
+[V:A] E D E | E3 E D D | E3 E A A | G2 E2 D E |
+[V:T] B, B, B, | C3 C B, B, | B,3 B, B, B, | B,2 B,2 B, B, |
+[V:B] E, A, G, | F,3 F, B, A, | G,3 G, F, F, | E,2 G,2 F, E, |
+[V:S] F2 z G F E | A3 A G F | B3 B B c | d d e2 =A2 |
+[V:A] D2 z E D E | E3 E D D | E3 E E =E | F F G2 E2 |
+[V:T] B,2 z B, B, B, | C3 C B, B, | B,3 B, B, B, | B, B, B,2 C2 |
+[V:B] B,,2 z E, A, G, | F,3 F, B, A, | G,3 G, _G, _G, | F, F, F,2 F,2 |
+[V:S] B2 z B c d | e3 G A B | c3 F F F | G G A2 D2 |
+[V:A] D2 z F F F | E3 E F G | E3 E E E | E E D2 B,2 |
+[V:T] B,2 z D C _C | B,3 E D _D | C3 _C _C _C | B, B, F,2 A,2 |
+[V:B] B,2 z B, =A, _A, | G,3 E, E, E, | A,3 A, A, A, | B, B,, B,,2 B,,2 |
+[V:S] E3 |]
+[V:A] B,3 |]
+[V:T] G,3 |]
+[V:B] E,3 |]

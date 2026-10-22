@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/c/h/r/i/s/t/m/a/s/Christmas.nwc
+X:1
+T:Christmas
+M:4/4
+L:1/8
+Q:1/4=102
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] (F3/2 G1/2) | A2 d2 c2 B2 | A2 (D3/2 E1/2) F2 (F3/2 G1/2) | A2 A2 A2 (G F) |
+[V:A] (D3/2 C1/2) | D2 F2 (E F) G2 | D2 (D3/2 C1/2) D2 D2 | D2 D2 (D F) (E D) |
+[V:T] A,2 | A,2 A,2 A,2 (B, C) | D2 A,2 A,2 A,2 | A,2 F,2 D2 B,2 |
+[V:B] (D,3/2 E,1/2) | F,2 D,2 A,2 G,2 | F,2 (F,3/2 E,1/2) D,2 (D,3/2 E,1/2) | F,2 D,2 F,2 G,2 |
+[V:S] (F2 E4) (c d) | e2 A2 G2 G2 | G2 (F E) F2 (d c) | B2 A2 G2 F2 |
+[V:A] (D2 C4) A2 | (A G) F2 E2 C2 | D2 D2 D2 F2 | G2 F2 D2 D2 |
+[V:T] A,6 E2 | E2 (D =C) B,2 A,2 | A,2 (A, G,) A,2 A,2 | D,2 (D C) B,2 A,2 |
+[V:B] A,6 (A,, B,,) | C,2 D,2 E,2 A,,2 | D,2 D,2 D,2 D,2 | D,2 D,2 D,2 D,2 |
+[V:S] (B2 A4) e2 | A2 d2 F2 E2 | D6 |]
+[V:A] D6 E2 | F2 (D3/2 E1/2) D2 C2 | D6 |]
+[V:T] (G,2 F,4) (B,3/2 C1/2) | D2 (A,3/2 B,1/2) A,3 G, | F,6 |]
+[V:B] D,6 G,2 | F,2 (F,3/2 G,1/2) A,2 A,,2 | D,6 |]

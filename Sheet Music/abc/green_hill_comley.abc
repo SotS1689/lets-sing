@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/g/r/e/e/GreenHill(Comley).nwc
+X:1
+T:Green Hill (Comley)
+M:4/4
+L:1/8
+Q:1/4=108
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] D2 | F2 A2 G2 F2 | F3 E D2 D2 | B2 A2 A2 F2 |
+[V:A] D2 | D2 D2 D2 D2 | C3 C D2 D2 | D2 D2 D2 D2 |
+[V:T] F,2 | A,2 =C2 B,2 A,2 | G,3 G, F,2 A,2 | G,2 A,2 A,2 A,2 |
+[V:B] D,2 | D,2 D,2 D,2 D,2 | A,,3 A,, B,,2 F,2 | G,2 F,2 C,2 D,2 |
+[V:S] E6 c2 | d2 F2 E2 B2 | A2 D2 G2 G2 | F2 D2 F2 E2 |
+[V:A] C6 E2 | D2 D2 D2 C2 | D2 D2 E2 E2 | D2 D2 D2 C2 |
+[V:T] A,6 A,2 | A,2 A,2 B,2 G,2 | A,2 B,2 B,2 A,2 | A,2 ^G,2 A,3 =G, |
+[V:B] A,,6 G,2 | F,2 D,2 G,2 E,2 | F,2 G,2 E,2 C,2 | D,2 B,,2 A,,2 A,,2 |
+[V:S] D6 |]
+[V:A] D6 |]
+[V:T] F,6 |]
+[V:B] D,6 |]

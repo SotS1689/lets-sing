@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/a/n/t/o/Anton.nwc
+X:1
+T:Anton
+M:4/4
+L:1/8
+Q:1/4=115
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:C
+[V:S] G2 | G2 E2 F2 G2 | A6 A2 | G2 c2 e2 d2 |
+[V:A] E2 | E2 C2 D2 E2 | F6 F2 | E2 E2 G2 F2 |
+[V:T] C2 | C2 C2 C2 C2 | C6 C2 | C2 C2 C2 B,2 |
+[V:B] C,2 | C,2 C,2 C,2 C,2 | F,6 F,2 | G,2 G,2 G,2 G,2 |
+[V:S] c6 c2 | B2 A2 B2 c2 | d2 c2 B2 B2 | c2 E2 F2 G2 |
+[V:A] E6 E2 | G2 G2 G2 G2 | G2 G2 G2 G2 | G2 C2 C2 C2 |
+[V:T] C6 C2 | D2 C2 D2 E2 | F2 F2 D2 D2 | C2 C2 C2 C2 |
+[V:B] C,6 C,2 | G,2 G,2 G,2 G,2 | G,2 G,2 G,2 F,2 | E,2 C,2 D,2 E,2 |
+[V:S] A6 A2 | G2 c2 e2 d2 | c6 |]
+[V:A] F6 F2 | E2 E2 G2 F2 | E6 |]
+[V:T] C6 C2 | C2 C2 C2 B,2 | C6 |]
+[V:B] F,6 F,2 | G,2 G,2 G,2 G,2 | C,6 |]

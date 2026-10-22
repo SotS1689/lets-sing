@@ -1,0 +1,20 @@
+% Source: Cyber Hymnal nwc/h/a/l/l/e/Halle.nwc
+X:1
+T:Halle
+M:4/4
+L:1/8
+Q:1/4=110
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Bb
+[V:S] G2 G2 A2 A2 | B2 B2 F4 | G2 G2 D2 (D E) | F2 (F E) D4 |
+[V:A] D2 D2 E2 D2 | D2 E2 (E2 D2) | B,2 B,2 B,2 B,2 | B,2 A,2 B,4 |
+[V:T] B,2 B,2 D2 (D C) | B,2 B,2 B,4 | G,2 G,2 F,2 G,2 | F,2 F,2 F,4 |
+[V:B] G,,2 G,2 G,2 ^F,2 | G,2 (G,, A,,) B,,4 | E,,2 (G,, A,,) B,,2 G,,2 | D,,2 F,,2 B,,4 |
+[V:S] B2 B2 c2 c2 | d2 d2 A4 | B2 G2 c2 B2 | A2 A2 G6 |]
+[V:A] D2 F2 G2 (F E) | D2 D2 D4 | D2 D2 D2 D2 | D2 (D C) B,6 |]
+[V:T] B,2 B,2 B,2 A,2 | (B, A,) G,2 (G,2 ^F,2) | G,2 G,2 A,2 G,2 | G,2 ^F,2 G,6 |]
+[V:B] G,2 D,2 E,2 F,2 | B,,2 (B,, C,) D,4 | G,,2 B,,2 ^F,,2 G,,2 | D,2 D,2 G,,6 |]

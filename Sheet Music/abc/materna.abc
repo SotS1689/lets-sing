@@ -1,0 +1,20 @@
+% Source: svrbc psalter tunes/materna.abc
+X:1
+T:MATERNA
+C:Samuel Augustus Ward, 1882
+S:Cyber Hymnal NWC score (hymntime.com) - Source: The Psalter (Pittsburgh, Pennsylvania: United Presbyterian Board of Publication, 1912), # 126. In the United States, this tune is used for the anthem \
+%%psalter-meter CMD
+%%psalter-capo 0
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:C
+[V:S] G | G3/2 E/ E G | G3/2 D/ D E | F G A B | G3 G | G3/2 E/ E G | G3/2 D/ D d | ^c d e A | d3 G | e3/2 e/ d c | c3/2 B/ B c | d B A G | c3 c | c3/2 A/ A c | c3/2 G/ G G | A c G d | c3 |]
+[V:A] E | E3/2 C/ C E | D3/2 B,/ B, C | D D F F | (E2 F) D | E3/2 C/ C E | D3/2 D/ D G | G G ^F F | (G ^F =F) G | G3/2 G/ G E | F3/2 G/ G G | F F F F | (E2 F) G | F3/2 F/ F F | E3/2 E/ E G | A c G F | E3 |]
+[V:T] C | C3/2 G,/ G, C | B,3/2 G,/ G, G, | B, B, D D | (C _B, =B,) B, | C3/2 G,/ G, C | B,3/2 B,/ B, B, | B, B, C C | (B, C D) G, | C3/2 C/ C C | D3/2 D/ D C | B, B, C D | (C G, A,) _B, | A,3/2 A,/ A, A, | G,3/2 C/ C G, | A, C G, B, | C3 |]
+[V:B] C, | C,3/2 C,/ C, G,, | D,3/2 D,/ D, G,, | D, D, G,, G,, | (C, ^C, D,) G,, | C,3/2 C,/ C, A,, | D,3/2 D,/ D, D, | D, D, D, A, | (G, A, B,) G, | G,3/2 E,/ E, G, | G,3/2 D,/ D, E, | F, G, A, B, | (C C,2) C, | F,3/2 F,/ F, D, | G,3/2 G,/ G, G, | A, C G, G,, | C,3 |]

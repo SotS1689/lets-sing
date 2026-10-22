@@ -1,0 +1,28 @@
+% Source: Cyber Hymnal nwc/d/a/r/w/Darwalls148th.nwc
+X:1
+T:Darwallâs 148th
+M:4/4
+L:1/8
+Q:1/4=112
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] D2 | F2 D2 A2 F2 | d6 c2 | B2 A2 G2 F2 |
+[V:A] D2 | D2 D2 E2 F2 | F6 F2 | G2 D2 C2 D2 |
+[V:T] F,2 | A,2 F,2 A,2 A,2 | D6 D2 | D2 A,2 A,2 A,2 |
+[V:B] D,2 | D,2 D,2 C,2 D,2 | B,6 A,2 | G,2 F,2 E,2 D,2 |
+[V:S] E6 E2 | F2 D2 B2 A2 | ^G2 E2 e2 d2 | c4 B4 |
+[V:A] C6 C2 | D2 D2 F2 F2 | E2 E2 E2 F2 | E6 x2 |
+[V:T] A,6 A,2 | A,2 F,2 D2 D2 | B,2 ^G,2 A,2 A,2 | A,4 ^G,4 |
+[V:B] A,,6 A,,2 | D,2 D,2 B,,2 B,,2 | E,2 D,2 C,2 D,2 | E,4 E,4 |
+[V:S] A6 A2 | B4 c4 | d6 D2 | E2 F2 G2 A2 |
+[V:A] C6 D2 | D4 G4 | F6 D2 | A,2 D2 G2 F2 |
+[V:T] A,6 F,2 | G,4 G,4 | A,6 F,2 | A,2 A,2 D2 D2 |
+[V:B] A,,6 D,2 | G,4 E,4 | D,6 D,2 | C,2 D,2 B,2 A,2 |
+[V:S] B2 c2 d2 e2 | d4 c4 | d6 |]
+[V:A] D2 F2 F2 E2 | F4 (E2 G2) | F6 |]
+[V:T] B,2 ^A,2 B,2 B,2 | A,4 A,4 | A,6 |]
+[V:B] G,2 F,2 B,2 G,2 | A,4 A,,4 | D,6 |]

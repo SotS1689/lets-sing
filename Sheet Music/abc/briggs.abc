@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/b/r/i/g/Briggs.nwc
+X:1
+T:Briggs
+M:3/4
+L:1/8
+Q:1/4=85
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Bb
+[V:S] F G F | B3 B A B | c3 c d c | B3 d c A |
+[V:A] D E D | F3 F F F | F3 F F F | F3 F F E |
+[V:T] B, B, B, | D3 D C B, | A,3 A, B, A, | B,3 B, A, C |
+[V:B] B,, B,, B,, | B,,3 B,, C, D, | F,3 F, B, F, | D,3 B,, F, F, |
+[V:S] B3 B A G | F3 F B c | d3 d c B | G3 c B A |
+[V:A] D3 D F E | D3 D F F | F3 F F F | E3 G F E |
+[V:T] B,3 B, B, B, | B,3 B, B, A, | B,3 B, A, B, | B,3 E D C |
+[V:B] B,,3 B,, B,, B,, | B,,3 B,, D, F, | B,3 B,, C, D, | E,3 C, F, F, |
+[V:S] B3 |]
+[V:A] D3 |]
+[V:T] B,3 |]
+[V:B] B,,3 |]

@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal nwc/m/o/u/n/MountAuburn.nwc
+X:1
+T:Mount Auburn
+M:3/2
+L:1/8
+Q:1/4=160
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] G4 | B2 G2 B4 c4 | G2 F2 E4 e4 | d2 c2 B4 G4 |
+[V:A] E4 | G2 E2 G4 A4 | E2 D2 E4 G4 | A2 A2 G4 E4 |
+[V:T] B,4 | B,2 B,2 B,4 E4 | B,2 A,2 G,4 B,4 | C2 C2 (E2 B,2) (B,2 G,2) |
+[V:B] E,4 | E,2 E,2 E,4 A,,4 | B,,2 B,,2 E,4 E,4 | E,2 E,2 E,4 (G,2 E,2) |
+[V:S] (G4 F4) F4 | F2 G2 A4 F4 | G2 A2 B4 e4 | d2 c2 (B2 G2) (A2 F2) |
+[V:A] (E4 D4) D4 | D2 E2 F4 D4 | E2 F2 G4 E4 | E2 E2 (G2 E2) D4 |
+[V:T] B,8 B,4 | B,2 B,2 B,4 B,4 | B,2 B,2 B,4 B,4 | C2 C2 (E2 B,2) (F,2 A,2) |
+[V:B] B,,8 B,,4 | B,,2 B,,2 B,,4 B,,4 | E,2 E,2 E,4 G,4 | A,2 A,2 B,4 B,,4 |
+[V:S] E8 |]
+[V:A] E8 |]
+[V:T] G,8 |]
+[V:B] E,8 |]

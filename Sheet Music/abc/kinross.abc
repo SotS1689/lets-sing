@@ -1,0 +1,28 @@
+% Source: Cyber Hymnal nwc/k/i/n/r/Kinross.nwc
+X:1
+T:Kinross
+M:4/4
+L:1/8
+Q:1/4=110
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] B3 B A2 G2 | c2 B2 (B A) G2 | E2 F2 G2 B2 | B2 (A G) A4 |
+[V:A] G3 G D2 D2 | G2 G2 F2 D2 | C2 D2 D2 G2 | G2 E2 F4 |
+[V:T] D3 D C2 B,2 | E2 D2 (D C) B,2 | G,2 A,2 G,2 D2 | ^C2 ^C2 D4 |
+[V:B] G,3 G, G,2 G,2 | G,2 G,2 D,2 G,,2 | C,2 C,2 B,,2 G,,2 | E,2 A,,2 D,4 |
+[V:S] c3 c B2 A2 | d2 d2 (d c) B2 | A2 E2 G2 (F E) | F3 G G4 |
+[V:A] G3 G G2 G2 | G2 F2 G2 D2 | E2 E2 D2 D2 | D3 D D4 |
+[V:T] C3 C D2 E2 | D2 C2 (B, A,) G,2 | G,2 A,2 B,2 B,2 | C3 B, B,4 |
+[V:B] E,3 E, D,2 C,2 | B,,2 A,,2 G,,2 G,,2 | C,2 C,2 D,2 D,2 | D,3 G,, G,,4 |
+[V:S] d3 d c2 B2 | e2 d2 (d c) B2 | A2 G2 c2 B2 | B2 (A G) A4 |
+[V:A] G3 G G2 G2 | G2 G2 F2 G2 | D2 D2 G2 G2 | G2 E2 F4 |
+[V:T] B,3 B, E2 D2 | C2 D2 D2 D2 | C2 B,2 C2 D2 | E2 ^C2 D4 |
+[V:B] G,3 G, G,2 G,2 | C2 B,2 A,2 G,2 | F,2 G,2 E,2 D,2 | ^C,2 A,,2 D,4 |
+[V:S] B3 B c2 A2 | d2 d2 (d c) B2 | A2 E2 G2 (F E) | F3 G G6 |]
+[V:A] G3 G F2 F2 | G2 F2 G2 D2 | E2 E2 D2 D2 | D3 D D6 |]
+[V:T] D3 D D2 D2 | D2 C2 (B, A,) G,2 | G,2 A,2 B,2 B,2 | C3 B, B,6 |]
+[V:B] G,3 G, A,2 C2 | B,2 A,2 G,2 G,,2 | C,2 C,2 D,2 D,2 | D,3 G,, G,,6 |]

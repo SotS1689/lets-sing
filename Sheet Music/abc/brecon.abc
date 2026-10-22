@@ -1,0 +1,20 @@
+% Source: Cyber Hymnal nwc/b/r/e/c/Brecon.nwc
+X:1
+T:Brecon
+M:4/4
+L:1/8
+Q:1/4=108
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] E2 E E F2 G2 | B3 A A2 G2 | G3 G F2 E2 | D6 D2 |
+[V:A] B,2 B, B, D2 E2 | E3 E E2 E2 | E3 D C2 C2 | B,6 B,2 |
+[V:T] G,2 G, G, A,2 B,2 | _D3 C C2 B,2 | B,3 B, A,2 G,2 | F,6 B,2 |
+[V:B] E,2 E, E, E,2 E,2 | E,3 E, E,2 E,2 | E,3 E, A,,2 A,,2 | B,,6 B,,2 |
+[V:S] E3 E F2 E2 | E2 F2 G2 A2 | G3 E G2 F2 | E8 |]
+[V:A] B,3 B, _D2 _D2 | C2 D2 E2 E2 | E3 E D2 D2 | B,8 |]
+[V:T] G,3 G, B,2 B,2 | C2 _C2 B,2 =C2 | B,3 G, B,2 A,2 | G,8 |]
+[V:B] E,3 E, G,,2 G,,2 | A,,2 A,2 G,2 F,2 | B,,3 B,, B,,2 B,,2 | E,8 |]
