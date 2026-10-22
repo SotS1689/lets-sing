@@ -171,6 +171,10 @@ function passWidth(state) {
 
 /** The music on one line inside a strip that slides sideways; returns its noteheads. */
 function drawStrip(host, abc) {
+    // The page view's "resize" mode sizes `host` itself (a padding-bottom as tall
+    // as the page); without clearing that, the box stays page-sized
+    host.removeAttribute("style");
+    host.classList.remove("abcjs-container");
     host.classList.add("is-scrolling");
     host.innerHTML = '<div class="score-strip"></div>';
     const strip = host.firstElementChild;
