@@ -1,5 +1,38 @@
 # Hymn database workflow
 
+## From a Cyber Hymnal page (one command)
+
+For a hymn on the Cyber Hymnal (hymntime.com/tch/htm/...), including another
+tune for a hymn the app already has, run from the project folder:
+
+```
+python "Missing Hymns/add_from_cyber_hymnal.py" "<page url>"
+```
+
+Options: `--tune NAME` picks one of the page's alternate tunes (any part of its
+name), `--verses 1-4,6` keeps only some stanzas, `--title TEXT` lists it under
+another title, `--dry-run` shows what it would add without changing anything.
+
+It takes the words (a refrain is written out after every verse), reuses the
+app's own MIDI and score when it already has the tune, otherwise fetches the
+Cyber Hymnal's MIDI (split into four parts, played once per verse) and score,
+adds the hymn to both `hymns_data.json` copies, and ends with a short summary,
+including whether every verse's words fit under the notes (any that don't
+still show as text). Nothing is committed; to undo a run, `git checkout -- .`
+and delete the "new files" the summary lists. Needs Python with `mido`
+(`pip install mido`) and Node; the first run downloads the CMU Pronouncing
+Dictionary to `~/.cache/lets-sing/` for counting syllables.
+
+In Claude Code, `/add-cyber-hymnal <url>` runs the same thing on a small, cheap
+model, then has one Opus reviewer compare the result with the page, fix what it
+can (titles, tune names, credits, a missing slur so the words fit, using the
+Cyber Hymnal's PDF), and commit it. It then asks you before pushing to the live
+site. The reviewer's checks are in `.claude/skills/add-cyber-hymnal/REVIEW.md`;
+`node "Sheet Music/check_words.mjs" <hymn id>` shows why a verse's words don't
+fit under the notes, and `--page-text` prints the page's words to compare.
+
+## From the spreadsheet
+
 > Only the ongoing intake tool lives here now. The one-off research and MIDI
 > fix-up scripts, their data, and backups were moved (2026-10-21) to
 > `..\..\Let's Sing App - Archive\Missing Hymns\`, same file names.

@@ -394,3 +394,6 @@ function writeRows(abc, notes, newRows, replaced = new Map()) {
     }
     return out.join("\n");
 }
+
+// For Sheet Music/check_words.mjs, which explains why a verse doesn't fit
+export { lyricNotes, rowsOf, setWords, verseLines, ways, naturalCounts, meterOf };
