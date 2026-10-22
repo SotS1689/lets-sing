@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2010 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Jn 14:1-4, 1Cor 15:35-38
+%OHTOPICS {Anticipation}, {Assurance [1]}, {Calmness}, {Comfort}, {Consolation}, {Courage in Affliction}, {Eternal Life}, {Faithfulness}, {Gospel}, {Hope}, {Jesus [1]}, {Nature [2]}, {Parables [The Seed, Mk 5:26-29]}, {Patience [3,4]}, {Promises (see also Gospel) [1]}, {Resurrection}, {Seasons [2]}, {Second Coming [4]}
+%OHCATEGORY FUNERAL
+%OHMETRICAL 9 9 9 9
+%OHCOMPLEXITY 2
+%OHCOMPOSER Luther, Martin (1483-1546)
+%OHARRANGER unknown
+%OHAUTHOR Prudentius, Aurelius Clemens (348-413)
+%OHTRANSLATOR Sanden, O. T. (1853-1917)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Despair Not, O Heart
+C: Words: Aurelius Clemens Prudentius (348-413). Translated by O. T. Sanden, 1909. 
+C: Music: 'Iam Moesta' or 'Jam Moesta' or 'Despair Not O Heart' or 'Med Sorgen Og Klagen' 
+C: unknown, sometimes attr. Martin Luther, 1542.  Setting: "The Wartburg Hymnal", 1918, alt.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision.
+S: Music source: 'The Wartburg Hymnal', 1918 Hymn 125. translation source: The Lutheran Hymnary, 1913 #595.
+M: 2/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] F | B G/ G/ | A G/ F/ | G2 | F  F | G A/ A/ |
+w: 1.~De- spair not, O heart, in thy sor- row, But hope from God's 
+w: 2.~The bo- dy is shroud- ed in mourn- ing; The gar- lands, the
+w: 3.~A dear- ly be- lov'd  one hath left us; God hath in His 
+w: 4.~When dawn- eth the glor- i- ous mor- row, This bo- dy that 
+w: 5.~The seed that in spring- time is plant- ed, Is hid in the 
+[V: S1V2]  F | F F/ E/ | F E/ C/ | (D E) | F  F | E F/ F/ |
+[V: S2V1]  A, | B, D/ C/ | C B,/ A,/ | (G, B,) | A,  A, | B, C/ D/ |
+[V: S2V2]  F, | D, B,,/ C,/ | F,, G,,/ A,,/ | (B,, C,) | F,  D, | G, F,/ D,/ |
+% 1
+[V: S1V1] c B/ A/ | G2 | A F | A G/ G/ | F E/ C/ |
+w: pro- mis- es bor- row Be- ware in thy sor- row, of 
+w: cas- ket a- dorn- ing, Are em- blems of hope that be- 
+w: Wis- dom be- reft us; But He will not leave us for- 
+w: we view with sor- row, A glor- if- ied form shall be 
+w: ground, but if grant- ed A meas- ure of sun- shine and 
+[V: S1V2]  E E/ F/ | D2 | E D | C D/ C/ | =B, C/ C/ |
+[V: S2V1]  G, G,/ F,/ | D2 | ^C A, | A, =B,/ G,/ | G, G,/ E,/ |
+[V: S2V2]  C, C,/ D,/ | B,,2 | A,, D, | F, F,/ E,/ | D, C,/ C,/ |
+% 9
+[V: S1V1]  D2 | C  !sintro!c | d B/ B/ | c B/ A/ | G2 | F !eintro!|]
+w: sin- ning For death is of life the be- ginn- ing. 
+w: to- ken, O Death, that thy pow- er is bro- ken.
+w: sa- ken,- We know that the dead shall a- wak- en.
+w: giv- en, Re- stored to its spi- rit in hea- ven.
+w: show- ers,  Will spring in- to fruit- age and flow- ers; 
+[V: S1V2]  =B,2 | C  F | F G/ G/ | G E/ F/ | (D E) | C |]
+[V: S2V1]  F,2 | E,  F, | F, G,/ D/ | C G,/ F,/ | B,2 | A, |]
+[V: S2V2]  G,,2 | C,  A,, | B,, G,/ F,/ | E, C,/ D,/ | (B,, C,) | F,, |]
+% 19
+W: 6.A gift to the churchyard we tender,
+W: As dust to the dust we surrender;
+W: Returning the clay to its Maker,
+W: We lay it to rest in God's acre.
+W: 
+W: 7.A soul in that body abided,
+W: A soul that in Jesus confided,
+W: A soul that hath longed for salvation,
+W: And now hath found hope's consummation.
+W: 
+W: 8.O earth, we consign to thy keeping
+W: This body with sorrow and weeping;
+W: In peace to await resurrection,
+W: When it shall arise in perfection.
+W: 
+W: 9.O Christ, our soul's Maker and Lover;
+W: When time and earth's travail are over,
+W: Thou closest the grave's mournful story,
+W: And callest Thine own to Thy glory.

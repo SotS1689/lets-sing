@@ -1,0 +1,131 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP 1Pt 2:5-8, Eph 2:19-22, Mt 7:24-27, Ps 18:2, 2Cor 3:4-6, 1Thess 4:16-17
+%OHTOPICS {Assurance}, {Atonement}, {Blood [1,3]}, {Comfort}, {Cornerstone}, {Courage in Affliction}, {God, Faithfulness of}, {Grace [2]}, {Jesus}, {Peace}, {Rest [2]}, {Trust}
+%OHCATEGORY TRUST
+%OHMETRICAL 8 8 8 8 8 8
+%OHCOMPLEXITY 3
+%OHCOMPOSER Dykes, John Bacchus (1823-1876)
+%OHARRANGER unknown
+%OHAUTHOR Mote, Edward (1797-1874)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: My Hope Is Built
+T: (also known as The Solid Rock)
+C: Words: Edward Mote, circa 1834.
+C: Music: 'Melita' John Bacchus Dykes, 1861.  Setting: "Hymns Ancient and Modern", 1869.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: Hymns Ancient and Modern, 1869 hymn 222.  Tune from Hymns Ancient and Modern, 1861.
+S: %OHARRANGER unknown assumed Dykes, John Bacchus (1823-1876)
+S: words found in "The service of song for Baptist churches", 1876 Hymn 1070
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1]  [Q:1/4=100] C | E3/2 E/ G G | A A G G | c d B G |
+w: 1.~My hope is built on no- thing less Than Je- sus' blood and 
+w: 2.~When dark- ness veils His lov- ely face, I rest on His un- 
+w: 3.~His oath, His cov- e- nant, His blood, Sup- port me in the 
+w: 4.~When He shall come with trum- pet sound, Oh may I then in 
+[V: S1V2]  C | C3/2 C/ E E | F F E G | G3/2 ^F/ G D/E/ |
+[V: S2V1]  E, | G,3/2 G,/ C3/2 B,/ | A,/B,/ C/D/ E D | C A, B, D/C/ |
+[V: S2V2]  C, | C,3/2 C,/ C, C, | F,/G,/ A,/B,/ C B, | A, D, G, B,,/C,/ |
+% 1
+[V: S1V1]  G ^F G D | F3/2 F/ E E | G3/2 G/ ^F B |
+w: right- eous- ness. I dare not trust the sweet- est frame, But 
+w: chang- ing grace. In ev- ery high and storm- y gale, My 
+w: whelm- ing flood. When all a- round my soul gives way, He 
+w: Him be found. Dressed in His right- eous- ness a- lone, Fault- 
+[V: S1V2]  D D D B, | D3/2 D/ C C | E3/2 E/ D ^F |
+[V: S2V1]  A, A, B, G, | G,3/2 G,/ G, G, | A,3/2 A,/ A, B, |
+[V: S2V2]  D, D, G, G, | B,,3/2 B,,/ C, C, | ^C,3/2 C,/ D, ^D, |
+% 5
+[V: S1V1]  G ^F E A | G ^F E E | E3/2 E/ F F |
+w: whol- ly trust in Je- sus' Name. On Christ the so- lid 
+w: an- chor holds with- in the veil. * * * * * 
+w: then is all my hope and stay.  * * * * * 
+w: less to stand be- fore the throne. * * * * * 
+[V: S1V2]  E3/2 ^D/ E3/2 ^F/ | E ^D E B, | _B,3/2 B,/ A, C |
+[V: S2V1]  B, A, B, C | B, B, G, G, | G,3/2 G,/ F, A, |
+[V: S2V2]  E, ^F, G, A, | B, B,, E, E, | C,3/2 C,/ F, F, |
+% 9
+[V: S1V1]  ^F3/2 F/ G !sintro!G | G A G E | D3/2 C/ C !eintro!|]
+w: Rock I stand, All o- ther ground is sink- ing sand. 
+[V: S1V2]  C3/2 C/ =B, =F | E D E C | B,3/2 C/ C |]
+[V: S2V1]  A,3/2 A,/ G, D | C C C G, | F,3/2 E,/ E, |]
+[V: S2V2]  D,3/2 D,/ G, B,, | C, ^F,, G,, G,, | G,,3/2 C,/ C, |]
+% 15

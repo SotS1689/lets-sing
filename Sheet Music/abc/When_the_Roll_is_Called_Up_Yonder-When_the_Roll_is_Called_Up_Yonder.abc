@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.680000
+%%staffsep	0.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Dan 12:1-3, Rev 20:12-15, 21:26-27, 1Thess 4:13-17
+%OHTOPICS {Activity [3]}, {Anticipation}, {Assurance}, {Church in Heaven (Church Victorious/Church Triumphant)}, {Comfort}, {Eternal Life}, {Faith}, {God's Children - the Faithful (see also Saints, People of the World)}, {Heaven}, {Hope}, {Jesus [2]}, {Resurrection}, {Saints (all Faithful)}, {Second Coming}, {Trust}
+%OHCATEGORY COMMUNION OF SAINTS
+%OHMETRICAL 15 11 15 11 8 8 8 11
+%OHCOMPLEXITY 3
+%OHCOMPOSER Black, James Milton (1856-1938)
+%OHARRANGER Gabriel, Charles Hutchinson (1856-1932)
+%OHAUTHOR Black, James Milton (1856-1938)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: When The Roll Is Called Up Yonder
+C: Words: James Milton Black, 1893.  
+C: Music: 'When The Roll Is Called Up Yonder' James Milton Black, 1893. 
+C: Setting: Charles Hutchinson Gabriel, 1893.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: "Epworth Songs", 1893 Hymn 57. 
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Ab % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] A3/4 B/4 | c3/4 c/4 c3/4 c/4 c3/4 B/4 A3/4 A/4 | B3/4 A/4 A3/4 F/4 E
+w: 1.~When the trum- pet of the Lord shall sound, and time shall be no more, 
+w: 2.~On that bright and cloud- less morn- ing when the dead in Christ shall rise, 
+w: 3.~Let us la- bor for the Mas- ter from the dawn till set- ting sun, 
+[V: S1V2] C3/4 D/4 | E3/4 E/4 E3/4 E/4 E3/4 E/4 E3/4 E/4 | D3/4 D/4 D3/4 D/4 C
+[V: S2V1] A,3/4 A,/4 | A,3/4 A,/4 A,3/4 A,/4 A,3/4 G,/4 A,3/4 A,/4 | F,3/4 F,/4 F,3/4 A,/4 A,
+[V: S2V2] A,,3/4 A,,/4 | A,,3/4 A,,/4 A,,3/4 A,,/4 A,,3/4 B,,/4 C,3/4 C,/4 | D,3/4  D,/4 D,3/4  D,/4 A,,
+% 4
+[V: S1V1] A3/4 B/4 | c3/4 c/4 c3/4 c/4 c3/4 c/4 B3/4 A/4 | B3 A3/4 B/4 | c3/4 c/4 c3/4
+w: And the morn- ing breaks, e- ter- nal, bright and fair; When the saved of earth 
+w: And the glo- ry of His res- ur- rec- tion share; When His cho- sen ones 
+w: Let us talk of all His won- drous love and care; Then when all of life 
+[V: S1V2] C3/4 D/4 | E3/4 E/4 E3/4 E/4 E3/4 E/4 E3/4 =D/4 | E3 C3/4 D/4 | E3/4 E/4 E3/4
+[V: S2V1] A,3/4 A,/4 | A,3/4 A,/4 A,3/4 A,/4 A,3/4 A,/4 B,3/4 B,/4 | G,3 A,3/4 A,/4 | A,3/4 A,/4 A,3/4
+[V: S2V2] A,,3/4 A,,/4 | A,,3/4 A,,/4 A,,3/4 A,,/4 A,3/4 A,/4 G,3/4 F,/4 | E,3 A,,3/4 A,,/4 | A,,3/4 A,,/4 A,,3/4
+% 7
+[V: S1V1] c/4 c3/4 B/4 A3/4 A/4 | B3/4 A/4 A3/4 F/4 E A3/4 B/4 | c3/4 c/4 c3/4 A/4 B3/4 B/4 B3/4 G/4 | A3
+w: shall ga- ther ov- er on the o- ther shore, And the roll is called up yon- der, I'll be there. 
+w: shall ga- ther to their home be- yond the skies, * * * * * * * * * * *
+w: is ov- er, and our work on earth is done,  * * * * * * * * * * *  
+[V: S1V2] E/4 E3/4 E/4 E3/4 E/4 | D3/4 D/4 D3/4 D/4 C C3/4 D/4 | E3/4 E/4 E3/4 C/4 D3/4 D/4 D3/4 D/4 | C3
+[V: S2V1] A,/4 A,3/4 G,/4 A,3/4 A,/4 | F,3/4 F,/4 F,3/4 A,/4 A, A,3/4 A,/4 | A,3/4 A,/4 A,3/4 A,/4 G,3/4 G,/4 G,3/4 B,/4 | A,3
+[V: S2V2] A,,/4 A,,3/4 B,,/4 C,3/4 C,/4 | D,3/4  D,/4 D,3/4  D,/4 A,, A,,3/4 A,,/4 | E,3/4 E,/4 E,3/4 E,/4 E,3/4 E,/4 E,3/4 E,/4 |A,,3
+% 10
+[V: S1V1] c3/4 d/4 | e2- e3/4 d/4 c3/4 d/4 | e2 c c3/4 c/4 | d2- d3/4
+w: When the roll * is called up yon- der, When the roll * 
+[V: S1V2] A3/4 B/4 | c2- c3/4 B/4 A3/4 B/4 | c2 A A3/4 A/4 | B2- B3/4
+[V: S2V1] z | z E3/4 E/4 E3/4 E/4 E3/4 E/4 | E3/4 E/4 E3/4 E/4 E z | z E3/4 E/4 E3/4
+[V: S2V2] x | x A,3/4 A,/4 A,3/4 A,/4 A,3/4 A,/4 | A,3/4 A,/4 A,3/4 A,/4 A, x | x E,3/4 E,/4 E,3/4
+w: When the roll is called up yon- der, I'll be there, When the roll 
+% 13
+[V: S1V1] c/4 B3/4 c/4 | d2 B c3/4 d/4 | e2- e3/4 c/4 B3/4 A/4 |
+w: is called up yon- der, When the roll * is called up 
+[V: S1V2] A/4 G3/4 A/4 | B2 G A3/4 B/4 | c2- c3/4 A/4 E3/4 E/4 |
+[V: S2V1] E/4 E3/4 E/4 | E3/4 E/4 E3/4 E/4 E z | z E3/4 E/4 E3/4 E/4 D3/4 C/4 |
+[V: S2V2] E,/4 E,3/4 E,/4 | E,3/4 E,/4 E,3/4 E,/4 E, x | x A,3/4 A,/4 A,3/4 A,/4 A,3/4 A,/4 |
+w: is called up yon- der, I'll be there, When the roll is called up 
+% 16
+[V: S1V1] A2 d !sintro!d3/4 B/4 | c3/4 c/4 c3/4 A/4 B3/4 B/4 B3/4 G/4 | A3 !eintro!|]
+w: yon- der, When the roll is called up yon- der, I'll be there. 
+[V: S1V2] F2 F F3/4 F/4 | E3/4 E/4 E3/4 C/4 D3/4 D/4 D3/4 D/4 | C3 |]
+[V: S2V1] D2 A, A,3/4 A,/4 | A,3/4 A,/4 A,3/4 A,/4 G,3/4 G,/4 G,3/4 B,/4 | A,3 |]
+[V: S2V2] D,2 D, D,3/4 D,/4 | E,3/4 E,/4 E,3/4 E,/4 E,3/4 E,/4 E,3/4 E,/4 | A,,3 |]

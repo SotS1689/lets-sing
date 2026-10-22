@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2005 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 90:1, Heb 1:1-2 
+%OHTOPICS {Assurance [1,2,9]}, {Brevity of Life}, {Calmness [1,2,9]}, {Faithfulness [1]}, {God, Care of [1,2,9]}, {God, Creator [3]}, {God, Eternity of}, {God, Faithfulness of [1,2]}, {God, Goodness of [1,2]}, {God, Majesty &amp; Power of}, {Gratitude [1,2,9]}, {Loyalty [1,2,9]}, {Saints (all Faithful) [2]}, {Security [1,2,9]}, {Throne (also see God - As King) [2]}, {Travel [1,2,9]}, {Trust [1,2,9]}, {Worship}
+%OHCATEGORY TRUST
+%OHMETRICAL 8 6 8 6
+%OHCOMPLEXITY 1
+%OHCOMPOSER Croft, William (1678-1727)
+%OHARRANGER composite
+%OHAUTHOR Watts, Isaac (1674-1748)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Our God, Our Help In Ages Past
+C: Words: Isaac Watts, 1719.  Music: 'St. Anne' William Croft, 1708.
+C: Setting: composite found in "The Lutheran Hymnary", 1913.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2005 Revision.
+S: Music source: 'The Lutheran Hymnary', 1913, Hymn 261.
+S: Arrangement is composite, first half from "Hymns Ancient and Modern", 1869, Hymn 231. ed  William Henry Monk
+S: Second half is from "The Hymnal Companion to the Book of Common Prayer", 1890, Hymn 279. ed. Charles Vincent, D.J. Wood, John Stainer
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] G | E A G c | c B c G | c G A ^F | G3
+w: 1.~Our God, our help in a- ges past, Our hope for years to come, 
+w: 2.~Un- der the sha- dow of Thy throne Thy saints have dwelt se- cure; 
+w: 3.~Be- fore the hills in or- der stood, Or earth re- ceived her frame, 
+w: 4.~Thy Word com- mands our flesh to dust, 'Re- turn, ye sons of men:' 
+w: 5.~A thou- sand a- ges in Thy sight Are like an eve- ning gone; 
+[V: S1V2]  C | C C C E | D D E E | E E E D | D3
+[V: S2V1]  E, | G, A, C C | A, G, G, C | C B, A, A, | B,3
+[V: S2V2]  C, | C, F, E, A, | F, G, C, C, | A,, E, C, D, | G,,3
+% 5
+[V: S1V1]  B | c A d B | c A B !sintro!G | A c d B | c3 !eintro!|]
+w: Our shel- ter from the storm- y blast, And our e- ter- nal home. 
+w: Suf- fic- ient is Thine arm a- lone, And our de- fense is sure. 
+w: From ev- er- last- ing Thou art God, To end- less years the same. 
+w: All na- tions rose from earth at first, And turn to earth a- gain. 
+w: Short as the watch that ends the night Be- fore the ris- ing sun. 
+[V: S1V2]  D | E C F D | E3/2 D/ B, C | F E D D | E3 |]
+[V: S2V1]  G, | G, A, A, G, | G, A, ^G, =G, | F, G, A, G, | G,3 |]
+[V: S2V2]  G, | C, F, D, G, | C, F, E, E, | D, C, F, G, | C,3 |]
+% 11
+W: 6.The busy tribes of flesh and blood,
+W: With all their lives and cares,
+W: Are carried downwards by the flood,
+W: And lost in following years.
+W:  
+W: 7.Time, like an ever rolling stream,
+W: Bears all its sons away;
+W: They fly, forgotten, as a dream
+W: Dies at the opening day.
+W:  
+W: 8.Like flowery fields the nations stand
+W: Pleased with the morning light;
+W: The flowers beneath the mower's hand
+W: Lie withering ere 'tis night.
+W:  
+W: 9.Our God, our help in ages past,
+W: Our hope for years to come,
+W: Be Thou our guard while troubles last,
+W: And our eternal home.
+

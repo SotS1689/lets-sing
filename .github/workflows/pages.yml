@@ -10,6 +10,7 @@ on:
     paths:
       - "web/**"
       - "hymns_data.json"
+      - "Sheet Music/abc/**"
       - "LetsSing_Android_Project/app/src/main/assets/midi/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:

@@ -6,8 +6,8 @@
 // - The app shell (page, code, icons, hymn list, soundfont) lives in a cache
 //   named after VERSION, a hash of every published file. Any release installs
 //   a new worker that starts a fresh shell cache and deletes the old one.
-// - Hymn MIDI files live in CONTENT_CACHE, which releases never delete. The app
-//   requests them as midi/<file>?v=<content hash>, so an unchanged hymn keeps
+// - Hymn MIDI files and scores live in CONTENT_CACHE, which releases never delete.
+//   The app requests them as midi/<file>?v=<content hash> (scores/ likewise), so an unchanged hymn keeps
 //   its offline copy across updates and a changed one is a new URL, fetched
 //   fresh. The page removes copies no current hymn uses (pruneOldHymns in
 //   src/main.js).
@@ -49,7 +49,7 @@ self.addEventListener("fetch", (event) => {
 
     // Hymns: matched exactly, version query included. Everything else ignores
     // the query string.
-    const isHymn = url.pathname.includes("/midi/");
+    const isHymn = url.pathname.includes("/midi/") || url.pathname.includes("/scores/");
     const cacheName = isHymn ? CONTENT_CACHE : CACHE;
     // ignoreVary: script/style tags send an Origin header the install-time
     // request didn't, and servers that answer with "Vary: Origin" would

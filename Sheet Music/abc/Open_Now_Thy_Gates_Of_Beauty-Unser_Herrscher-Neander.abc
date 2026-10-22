@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.720000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 100:1-5, Ps 118:19-26, Is 26:1-4, 1Cor 3:16-17, Lk 8:4-15
+%OHTOPICS {Anticipation [1]}, {Discipleship}, {Faith [4]}, {Harvest [3]}, {Heaven [2]}, {Joy}, {Light [1]}, {Presence}, {Sowing &amp; Reaping [3]}, {Temptation [4]}, {Worship}
+%OHCATEGORY OPENING SONGS
+%OHMETRICAL 8 7 8 7 7 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER Neander, Joachim (1650-1680)
+%OHARRANGER unknown
+%OHAUTHOR Schmolck, Benjamin (1672-1737)
+%OHTRANSLATOR Winkworth, Catherine (1827-1878)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Open Now Thy Gates of Beauty
+C: Words: Benjamin Schmolck, 1730.  Translated by Catherine Winkworth, 1863. 
+C: Music: 'Unser Herrscher' or 'Neander' Joachim Neander, 1680.  Setting: "Chorale Book for England", 1863.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+S: Music source: "Chorale Book for England", 1863 Hymn 15.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Bb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] B,3/2 C/ D B, | D E F F | B A/G/ F d | c c B2 |
+w: 1.~Op- en now thy gates of beau- ty, Zi- on, * let me en- ter there, 
+w: 2.~Lord, my God, I come be- fore Thee, Come Thou * al- so un- to me; 
+w: 3.~Here Thy praise is glad- ly chant- ed, Here Thy * seed is du- ly sown; 
+w: 4.~Thou my faith in- crease and quick- en, Let me * keep Thy gift di- vine, 
+w: 5.~Speak, O God, and I will hear Thee, Let Thy * will be done in- deed; 
+[V: S1V2]  B,3/2 A,/ B, B, | B, B, C C | B, B, B, F | G F/E/ D2 |
+[V: S2V1]  D,3/2 F,/ F, F, | F, G, A, A, | B, B, B, B, | B, A, F,2 |
+[V: S2V2]  B,,3/2 F,,/ B,, D, | B,, G,, F,, F, | G, F,/E,/ D, B,, | E, F, B,,2 |
+% 5
+[V: S1V1]  B,3/2 C/ D B, | D E F F | B A/G/ F d | c c B2 |
+w: Where my soul in joy- ful du- ty Waits for * Him Who an- swers prayer. 
+w: Where we find Thee and a- dore Thee, There a * heav'n on earth must be. 
+w: Let my soul, where it is plant- ed, Bring forth * pre- cious sheaves a- lone, 
+w: How- so- e'er temp- ta- tions thick- en; May Thy * Word still o'er me shine 
+w: May I un- dist- urbed draw near Thee While Thou * dost Thy peo- ple feed. 
+[V: S1V2]  B,3/2 A,/ B, B, | B, B, C C | B, B, B, F | G F/E/ D2 |
+[V: S2V1]  D,3/2 F,/ F, F, | F, G, A, A, | B, B, B, B, | B, A, F,2 |
+[V: S2V2]  B,,3/2 F,,/ B,, D, | B,, G,, F,, F, | G, F,/E,/ D, B,, | E, F, B,,2 |
+% 9
+[V: S1V1]  d3/2 d/ c c | B B A2 | !sintro!G3/2 G/ F B | c A B2 !eintro!|]
+w: Oh, how bless- èd is this place, Filled with so- lace, light and grace! 
+w: To my heart, oh, en- ter Thou, Let it be Thy tem- ple now! 
+w: So that all I hear may be Fruit- ful un- to life in me. 
+w: As my guid- ing star through life, As my com- fort in my strife. 
+w: Here of life the foun- tain flows, Here is balm for all our woes. 
+[V: S1V2]  F3/2 F/ F F | D D D2 | B,3/2 E/ D D | C C D2 |]
+[V: S2V1]  B,3/2 B,/ A, A, | G, G, ^F,2 | G,3/2 B,/ B, B, | G, F, F,2 |]
+[V: S2V2]  B,,3/2 D,/ F, F, | G, B,,/C,/ D,2 | E,3/2 E,/ B,, G, | E, F, B,,2 |]
+% 14

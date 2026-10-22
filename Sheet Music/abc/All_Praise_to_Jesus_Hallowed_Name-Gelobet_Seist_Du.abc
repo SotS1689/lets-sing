@@ -1,0 +1,132 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7500000
+%%staffsep	1.90000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Jn 1:14, Lk 2:7-14, Is 9:2, 1Tim 3:16, 1Jn 1:1-3
+%OHTOPICS {Angels [1,6]}, {Christmas/Advent}, {Compassion [6,7]}, {God, Care of [4-6]}, {God, Goodness of}, {God, Love of [4-6]}, {Grace [7]}, {Jesus}, {Kindness, God's}, {Light [4]}, {Praise, Son}, {Presence}
+%OHCATEGORY CHRISTMAS
+%OHMETRICAL 8 7 8 8 Alleluia4
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Walter's Geistliche Gesangbüchlein, 1524
+%OHARRANGER Haupt, Karl August (1810-1891)
+%OHAUTHOR German;Luther, Martin (1483-1546)
+%OHTRANSLATOR Massie, Richard (1800-1887)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: All Praise to Jesus' Hallowed Name
+T: (also known as All Praise to Thee, O Jesus Christ or O Jesus Christ, All Praise
+T: to Thee or We Praise You, Jesus at Your Birth or All Praise to Thee, Eternal Lord)
+C: Words: verse 1, ancient German.  verses 2-7, Martin Luther, 1524.  Translated by Richard Massie, 1854, alt. 
+C: Music: 'Gelobet Seist Du' ancient German found in Walter's Geistliche Gesangbüchlein, 1524. 
+C: Setting: Karl August Haupt, 1869.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+S: Music source: "The Hymns of Martin Luther by Leonard Woolsey Bacon 1883, p. 20.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] G | G G A G | c d c2 | B d e d |
+w: 1.~All praise to Je- sus' hal- lowed Name Who of vir- gin 
+w: 2.~Th'E- ter- nal Fa- ther's on- ly Son For a man- ger 
+w: 3.~He whom the world could not in- wrap Yon- der lies in 
+w: 4.~Th'E- ter- nal Light, come down from heav'n, Hath to us new 
+w: 5.~The Fa- ther's Son, God ev- er\- blest, In the world be- 
+[V: S1V2]  D | E E C E | E G/F/ E2 | G G G ^F |
+[V: S2V1]  B, | B, C A, B, | C B, C2 | D B, C A, |
+[V: S2V2]  G, | E, C, F, E, | A, G, C,2 | G, G, C, D, |
+% 5
+[V: S1V1]  B A !fermata!G G | c B d A | G E !fermata!D D |
+w: pure be- came True man for us! The an- gels sing As 
+w: leaves His throne Dis- guised in our poor flesh and blood See 
+w: Ma- ry's lap; He is be- come an in- fant small, Who 
+w: sun- shine giv'n; It shin- eth in the midst of night, And 
+w: came a guest; He leads us from this vale of tears, And 
+[V: S1V2]  D ^F !ferm!G E | G G G ^F | E ^C !ferm!D D |
+[V: S2V1]  B, D/C/ !invertedfermata!B, C | C D D D | B, A, !invertedfermata!^F, F, |
+[V: S2V2]  G, D, !ferm!G, C, | E, G, B,, D, | E, A,, !ferm!D, D, |
+% 9
+[V: S1V1]  A A A !sintro!d | c A (G/A/ B | !fermata!A) G G G | !fermata!G z2 !eintro!|]
+w: the glad news to earth they bring. * * * Hal- le- lu- jah! 
+w: now the ev- er- last- ing Good.  *  *  *  *  *  *  * 
+w: by His might up- hold- eth all.  *  *  *  *  *  *  * 
+w: mak- eth us the sons of light.  *  *  *  *  *  *  * 
+w: makes us in his king- dom heirs.  *  *  *  *  *  *  * 
+[V: S1V2]  ^C E D D | E D (B,/ C/ D | !ferm!D) B, D E | !ferm!E x2 |]
+[V: S2V1]  E, A,/G,/ ^F, G, | G, ^F, (G,2 | !invertedfermata!^F,) G, G, G,/A,/ | !invertedfermata!B, z2 |]
+[V: S2V2]  A,, ^C, D, B,, | C, D, (E, B,,/C,/ | !ferm!D,) E, B,, C, | !ferm!G, x2 |]
+% 13
+W: 6. He came to earth so mean and poor, Man to pity and restore,
+W: And make us rich in heaven above, Equal with angels through his love.
+W: 
+W: 7. All this He did to show His grace To our poor and sinful race;
+W: For this let Christendom adore And praise His name for evermore.

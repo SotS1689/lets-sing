@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2006 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.65000
+%%staffsep	0.20000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Eph 2:4-9, Titus 3:4-7, Is 64:6, Rom 3:23-24
+%OHTOPICS {Activity [2]}, {Assurance}, {Atonement [2,4]}, {Comfort}, {Conscience [6-7]}, {Fear of the Lord [4]}, {God, Faithfulness of [1-5]}, {God, Mercy of}, {Gospel}, {Grace}, {Judgment [6,7]}, {Pride (see also Humility) [3]}, {Promises (see also Gospel)}, {Saints (all Faithful) [5]}, {Salvation}, {Scripture [1]}, {Security}, {Sinners [3,6-10]}, {Truth [1]}, {Victory [8-10]}
+%OHCATEGORY JUSTIFICATION
+%OHMETRICAL 9 8 9 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER König, Johann Balthasar (1691-1758)
+%OHARRANGER unknown
+%OHAUTHOR Scheidt, Christian Ludwig (1709-1761)
+%OHTRANSLATOR Loy, Matthias (1828-1915)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: By Grace I'm Saved
+C: Words: Christian L. Scheidt, 1742. Translated by Matthias Loy, (1828-1915). 
+C: Music: 'O Dass Ich Tansend Zungen' Johann Balthasar König, 1738. 
+C: Setting: "The Evangelical Lutheran Hymnal" (Ohio Synod), 1908.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2007 Revision.
+S: Music source: 'The Evangelical Lutheran Hymnal' (Ohio Synod), 1908 Hymn 311.
+M: none
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] z c A c | d c B A | G2 F2 | A G F | G A B A | G2 |
+w: 1.~By grace I'm saved\- grace free and bound- less! My heart, be- liev'st thou this or not? 
+w: 2.~By grace! our works are all re- ject- ed, All claims of me- rit pass for naught; 
+w: 3.~By grace! mark well this phra- se's mean- ing, When sin rolls sor- rows o'er thy breast, 
+w: 4.~By grace His Son, on earth ap- pear- ing, Vouch- safed be- neath thy woe to bend; 
+w: 5.~By grace! this ground of our sal- va- tion As long as God is true en- dures: 
+[V: S1V2]  x F F F | F E F F | (F E) F2 | F E D | E F F F | E2 |
+[V: S2V1]  z A, C C | B, G, D C | C2 A,2 | C C A, | B, C D C | C2 |
+[V: S2V2]  x F,, F, A,, | B,, C, D, F, | C,2 F,,2 | F, C, D, | G, F, B,, F, | C,2 |
+% 5
+[V: S1V1]  c A c | d c B A | G2 F2 | A G F | G A B A | G2 |
+w: Why tremb- lest thou with ter- ror ground- less? Has ev- er God a false- hood taught? 
+w: The might- y Sa- vior, long ex- pec- ted, To us this bliss- ful truth has brought, 
+w: When Sa- tan threats with pride o'er- ween- ing, When troub- led con- science sighs for rest: 
+w: Hadst thou, dam- na- tion just- ly fear- ing, Done aught to ren- der Him thy friend? 
+w: What saints have penned by in- spi- ra- tion, What God to our poor soul se- cures, 
+[V: S1V2]  F F F | F E F F | (F E) F2 | F E D | E F F F | E2 |
+[V: S2V1]  A, C C | B, G, D C | C2 A,2 | C C A, | B, C D C | C2 |
+[V: S2V2]  F,, F, A,, | B,, C, D, F, | C,2 F,,2 | F, C, D, | G, F, B,, F, | C,2 |
+% 13
+[V: S1V1]  G G G | A c c =B | c2 !sintro!c | A F d B | A2 G2 | F4 !eintro!|]
+w: His Word is true- then this must be: By grace there is a crown for thee. 
+w: That He by death re- deems our race, And we are saved a- lone by grace. 
+w: What rea- son ne'er can com- pre- hend It pleas- es God by grace to send. 
+w: Was't not that He thy wel- fare sought, And but by grace de- liv'r- ance wrought? 
+w: What all our faith must rest u- pon, Is grace, free grace through His dear Son. 
+[V: S1V2]  E D C | C G F D | E2 G | F F F G | (G F) (F E) | C4 |]
+[V: S2V1]  C =B, G, | F, G, A, G, | G,2 C | C C B, D | C2 B,2 | A,4 |]
+[V: S2V2]  C, D, E, | F, E, F, G, | C,2 E, | F, A,, B,, A,, | C,2 C,,2 | F,,4 |]
+% 20
+W:6.By grace! but think not, thou who livest
+W:Securely on in godless ways,
+W:That thou, though all are called, receivest
+W:The promised rest that wakes our praise:
+W:By grace none find in heaven a place
+W:Who live in sin in hope of grace.
+W:
+W:7.By grace! They who have heard this sentence
+W:Must bid hypocrisy farewell;
+W:For only after deep repentance
+W:The soul what grace imports can tell;
+W:To sin while grace a trifle seems,
+W:To faith it bright with glory beams.
+W:
+W:8.By grace the timid hearts that languish,
+W:Find access to the Father's heart,
+W:When conflicts fierce and bitter anguish
+W:Bid all their joy and hopes depart.
+W:Where, oftimes, should I strength obtain,
+W:Bid grace my anchor not remain!
+W:
+W:9.By grace! on this in death I'll rest me,
+W:Rejoicing e'en though feeling naught;
+W:I know my sin it oft oppressed me
+W:But Him, too, who my soul hath bought:
+W:My heart exults grief flees apace
+W:Because my soul is saved by grace.
+W:
+W:10.By grace! O sin and Satan hear it!
+W:I bear my flag of faith in hand, 
+W:And pass, in spite of doubts, nor fear it,
+W:The Red Sea to the promised land;
+W:I hold the word my Savior taught
+W:As certain, whether felt or not. 
+

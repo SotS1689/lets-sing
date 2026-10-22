@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.730000
+%%staffsep	1.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Acts 2:22-24, Rom 5:10-11, 6:9-10, Is 12:1-6, 1Cor 15:54-57, 2Tim 1:10, Eph 2:1-6, Is 53:3-5
+%OHTOPICS {Atonement}, {Easter}, {Eternal Life}, {God, Majesty &amp; Power of}, {Heaven [4]}, {Jesus}, {Joy}, {Miracles}, {Praise, Son}, {Resurrection}, {Salvation}, {Victory}
+%OHCATEGORY EASTER
+%OHMETRICAL 8 8 8 with Alleluias
+%OHCOMPLEXITY 2
+%OHCOMPOSER Palestrina, Giovanni Pierluigi da (1525-1594)
+%OHARRANGER Monk, William Henry (1823-1889)
+%OHAUTHOR from Symphonia Sirenum Selectarum, Köln, 1695
+%OHTRANSLATOR Pott, Francis (1832-1909)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: The Strife Is O'er, The Battle Done
+C: Words: from Symphonia Sirenum Selectarum, Köln, 1695; translated by Francis Pott, 1861.
+C: Music: 'Victory' or  'Palestrina' Giovanni P. da Palestrina, 1591.
+C: Setting: William Henry Monk, 1861.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: "Hymns Ancient and Modern", 1861 Hymn 114.  Words checked against the same source.
+M: 3/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: E % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] z G G | A3 | G B B | c3 | B B e | d3 | e2 z |
+w: Al- le- lu- ia, Al- le- lu- ia, Al- le- lu- ia. 
+[V: S1V2] x E E | E3 | E E E | E3 | E E G | F3 G2 x |
+[V: S2V1] z B, B, | C3 | B, G, G, | A,3 | G, B, B, | B,3 | B,2 z |
+[V: S2V2] E,, E, E, | A,,3 | E, E, E, | A,,3 | E, G, E, | B,,3 | E,2 x |
+% 2
+[V: S1V1] |: B B B | c2 B | (B A) G | B3 | G G G | G2 G |
+w: 1.~The strife is o'er, the bat- * tle done; The tri- umph of the 
+w: 2.~The pow'rs of death have done * their worst; and Je- sus hath  His 
+w: 3.~On that third morn He rose * a- gain In glor- ious ma- jes- 
+w: 4.~He closed the yawn- ing gates * of hell; The bars from heav'ns  high 
+w: 5.~Lord, by the stripes which wound- * ed Thee, From death's dread sting  Thy 
+[V: S1V2] |: G G G | A2 G | (G C) C | F3 | E E E | E2 D |
+[V: S2V1] |: E E E | E2 E | (D F) E | D3 | B, B, B, | C2 B, |
+[V: S2V2] |: E, E, E, | A,2 E, | (G, F,) C | B,3 | E, E, E, | C,2 G, |
+% 2
+[V: S1V1] (G F) E | F3 | B B B | c2 B | (B A) G | B3 | z !sintro!B e | d3 | e3 !eintro!:|
+w: Lord * is won; O Let the song of praise * be sung: Al- le- lu- ia! 
+w: foes * dis- persed; Let shouts of praise and joy * out- burst: Al- le- lu- ia! 
+w: ty * to reign; O let us swell the joy- * ful strain. Al- le- lu- ia! 
+w: por- * tals fell; Let songs of joy His tri- * umphs tell. Al- le- lu- ia! 
+w: ser- * vants free, That we may live, and sing * to Thee. Al- le- lu- ia! 
+[V: S1V2] (E C) C | D3 | G G G | A2 G | (G C) C | F3 | x E G | F3 | G3 :|
+[V: S2V1] (B, A,) G, | B,3 | D E E | E2 E | (D F) E | D3 | z E B, | B,3 | B,3 :|
+[V: S2V2] (E, F,) C, | B,,3 | G, E, E, | A,2 E, | (G, F,) C | B,3 | x G, E, | B,,3 | E,3 :|
+% 1
+[V: S1V1] z G G | A3 | G B B | c3 | B B e | d3 | e2 z |]
+w: Al- le- lu- ia, Al- le- lu- ia, Al- le- lu- ia. 
+[V: S1V2] x E E | E3 | E E E | E3 | E E G | F3 G2 x |]
+[V: S2V1] z B, B, | C3 | B, G, G, | A,3 | G, B, B, | B,3 | B,2 z |]
+[V: S2V2] E,, E, E, | A,,3 | E, E, E, | A,,3 | E, G, E, | B,,3 | E,2 x |]

@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.680000
+%%staffsep	0.0000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 39:12, 2Cor 5:6, Heb 11:13, 1Chr 29:15
+%OHTOPICS {Anticipation}, {Assurance}, {Church in Heaven (Church Victorious/Church Triumphant)}, {Church on Earth (Church Militant)}, {Commitment}, {Consecration}, {Courage in Affliction}, {Eternal Life}, {Example, Of Other People [3]}, {Heaven}, {Patience}, {Trust}
+%OHCATEGORY FUNERAL
+%OHMETRICAL 7 6 7 6 7 6 7 6
+%OHCOMPLEXITY 3
+%OHCOMPOSER Hassler, Hans Leo (1564-1612)
+%OHARRANGER Bach, Johann Sebastian (1685-1750)
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR Borthwick, Jane Laurie (1813-1897)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: A Pilgrim and a Stranger
+C: Words: Paul Gerhardt, 1666. Translated by Jane Borthwick, 1858. 
+C: Music: 'Passion Chorale' or 'Herzlich Tut Mich Verlangen' Hans Leo Hassler, 1601. Adapted by J.S. Bach, 1729.  
+C: Setting: Johann Sebastian Bach, 1729. 
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.
+S: Music source: The Episcopal Hymnal, 1916, Hymn 158.
+S: Lyrics Source: "Hymns From the Land of Luther", 1866 Hymn 60.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] E | A G F E | D2 E B | c c B/A/ B | A3
+w: 1.~A Pil- grim and a stran- ger, I jour- ney here * be- low; 
+w: 2.~I've met with storm and dan- ger, E'en from my ear- * ly years, 
+w: 3.~It is a well worn path- way, Ma- ny have gone * be- fore: 
+w: 4.~Who would share A- br'm's bles- sing, Must A- br'm's path * pur- sue, 
+w: 5.~So I must has- ten for- wards Thank God, the end * will come! 
+[V: S1V2]  C | C C C/D/ D/C/ | (C B,) C D | C/D/ E E3/2 D/ | C3
+[V: S2V1]  G, | F, G, A,/G,/ G, | (A, G,) G, ^G, | A, A, A, ^G, | A,3
+[V: S2V2]  C, | F, E, A,,/B,,/ C, | (F,, G,,) C, B,, | A,,/B,,/ C,/D,/ E, E,, | A,,3
+% 5
+[V: S1V1]  E | A G F E | D2 E B | c c B/A/ B | A3
+w: Far dis- tant is my coun- try The home to which * I go. 
+w: With e- ne- mies and con- flicts, With figh- tings and * with fears. 
+w: The ho- ly saints and pro- phets, The pa- tri- archs * of yore. 
+w: A stran- ger and a pil- grim, Like him, must jour- * ney through. 
+w: This land of my so- jour- ning Is not my des- * tined home. 
+[V: S1V2]  C | C C C/D/ D/C/ | (C B,) C D | C/D/ E E3/2 D/ | C3
+[V: S2V1]  G, | F, G, A,/G,/ G, | (A, G,) G, ^G, | A, A, A, ^G, | A,3
+[V: S2V2]  C, | F, E, A,,/B,,/ C, | (F,, G,,) C, B,, | A,,/B,,/ C,/D,/ E, E,, | A,,3
+% 9
+[V: S1V1]  c | B/A/ G A B | c2 c G | A G F F | E3
+w: Here I * must toil and tra- vel, Oft wea- ry and op- prest, 
+w: There's no- * thing here that tempts me To wish a lon- ger stay, 
+w: They trod * the toil- some jour- ney In pa- tience and in faith; 
+w: The foes * must be en- coun- tered, The dan- gers must be passed; 
+w: That e- * ver more a- bi- deth, Jer- u- sa- lem a- bove, 
+[V: S1V2]  E | D/F/ E/D/ C F | (F E/D/) E E | F E E D | ^C3
+[V: S2V1]  A,/G,/ | F,/A,/ C/B,/ A,/G,/ F,/G,/ | (A, G,/F,/) G, C | C _B, A, A, | A,3
+[V: S2V2]  A,, | D, E, F,/E,/ D, | C,2 C, C, | F,/E,/ D,/^C,/ D,/E,/ F,/G,/ | A,3
+% 13
+[V: S1V1]  =c | B/c/ d c B | A2 B !sintro!E | F E D G | E3 !eintro!|]
+w: But there * my God shall lead me To e- ver- las- ting rest. 
+w: So I * must has- ten for- wards, No hal- ting or de- lay. 
+w: And them * I fain would fol- low, Like them in life and death! 
+w: On- ly * a faith- ful sol- dier Re- ceives the crown at last. 
+w: The e- * ver- las- ting ci- ty, The land of light and love. 
+[V: S1V2]  D | D D E/^F/ G | (G ^F) G C/B,/ | A,/B,/ C C/A,/ B, | C3 |]
+[V: S2V1]  A, | G, A, G,/A,/ B,/G,/ | (E D) D G, | F, G, G, G, | G,3 |]
+[V: S2V2]  ^F, | G, ^F, E, D, | (^C, D,) G,, =C, | D, E,/F,/ G, G,, | C,3 |]
+% 19
+%%multicol start
+%%leftmargin 2cm
+%%rightmargin 11cm
+%%textfont Times-Roman 13.0
+%%begintext obeylines justify
+%% 6.\t\tThere still my thoughts are dwelling, 'Tis there I long to be! 
+%% \t\t\tCome, Lord, and call Thy servant To blessedness with Thee! 
+%% \t\t\tCome, bid my toils be ended, Let all my wanderings cease; 
+%% \t\t\tCall from the wayside lodging, To the sweet home of peace! 
+%%endtext
+%%multicol new
+%%leftmargin 11cm
+%%rightmargin 2cm
+%%textfont Times-Roman 13.0
+%%begintext obeylines justify
+%% 7.\t\tThere I shall dwell forever, No more a stranger guest, 
+%% \t\t\tWith all Thy blood-bought children In everlasting rest. 
+%% \t\t\tThe pilgrim toils forgotten, The pilgrim conflicts o'er, 
+%% \t\t\tAll earthly griefs behind us, Eternal joys before! 
+%%endtext
+%%multicol end
+
+

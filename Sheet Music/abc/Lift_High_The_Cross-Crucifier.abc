@@ -1,0 +1,162 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2006 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.700000
+%%staffsep	0.20000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Is 11:10, Rom 8:38-39, 1Tim 1:14, Jn 3:16
+%OHTOPICS {Baptism [2]}, {Brotherhood [1]}, {Consecration}, {Cross}, {Discipleship [2]}, {Fear of the Lord [4]}, {God, Love of}, {Jesus}, {Joy}, {Love}, {Praise, Son}, {Victory}, {Worship}, {Zeal}
+%OHCATEGORY MISSIONS
+%OHMETRICAL 10 10 10 10
+%OHCOMPLEXITY 4
+%OHCOMPOSER Nicholson, Sydney Hugo (1875-1947)
+%OHARRANGER unknown
+%OHAUTHOR Kitchin, George William (1827-1912);Newbolt, Michael Robert (1874-1956)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Lift High The Cross
+C: Words: George W. Kitchin (1827-1912). Modified by Michael R. Newbolt, 1916. 
+C: Music: 'Crucifier' Sydney H. Nicholson, 1916.  Setting: "Hymns Ancient and Modern", 1922.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision.
+S: Music source: 'Lutheran Worship' Hymnal, 1982 Hymn 311.  From "Hymns Ancient and Modern", Standard Edition Hymn 745, 1922.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] "^Refrain" G2 c3/2 G/ | F3 G | E3/2 F/ G A | D3
+w: Lift high the cross, the love of Christ pro- claim, 
+[V: S1V2]  (C D) E C- | C (B, C) D | C3 C | (C B, A,)
+[V: S2V1]  (E, F,) G,2 | (A, G, F,) D, | G,3/2 F,/ E, D, | G,3
+[V: S2V2]  C,,3 E,, | (D,, G,, A,,) B,, | C, A,, G,, ^F,, | (G,,2 A,,)
+% 5
+[V: S1V1]  !sintro!D | E G c2- | c A G2- | G A F/E/ D | C4 !eintro!|]
+w: Till all the world  * a- dore  * His sac- * red Name. 
+[V: S1V2]  G, | G, B, (C D | E) F (G F | E) D/C/ C B,/A,/ | G,4 |]
+[V: S2V1]  F, | E, F, (G, A, | B,) C (D C | B,) A, A,/G,/ F, | (F, D, E,2) |]
+[V: S2V2]  B,, | C, D, (E, F, | G,) A, (B, A, | G,) F,/E,/ D, G,, | C,4 |]
+% 9
+[V: S1V1]  "^Verse" G2 ^F3/2 E/ | ^F2 D2 | E3/2 ^F/ G A | B2
+w: 1.~Come, breth- ren, fol- low where our Cap- tain trod,
+w: 2.~Led on their way by this tri- um- phant sign, 
+w: 3.~Each new- born ser- vant of the Cru- ci- fied 
+w: 4.~This is the sign which Sa- tan's le- gions fear
+w: 5.~Saved by this Cross where- on their Lord was slain,
+[V: S1V2]  (E D) C3/2 C/ | D2 D2 | G,3/2 B,/ B, E | ^D2
+[V: S2V1]  B,2 A,3/2 A,/ | A,2 (G, ^F,) | E,3/2 ^D,/ E, E, | ^F,2
+[V: S2V2]  E,2 A,,3/2 A,,/ | (D, C,) B,,2 | C,3/2 B,,/ E, C, | B,,2
+% 13
+[V: S1V1]  G2 | c2 (B A) | d2 D2 | E3/2 G/ G ^F | "^To Refrain" G4{=F4 D4 E4} ||
+w: our King vic- * tor- ious, Christ the Son of God.
+w: The hosts of * God in con- quering ranks com- bine. 
+w: Bears on the * brow the seal of Him Who died. 
+w: and an- gels * veil their fa- ces to re- vere.
+w: the sons of * A- dam their lost home re- gain.
+[V: S1V2]  (E =D) | (C E) D2 | D2 D2 | C3/2 E/ D D | D4{[=F4C4A,4] [D4A,4F,4] [E4B,4G,4]} ||
+[V: S2V1]  G,2 | (A, G,) ^F,2 | (G, A,) (G, ^F,) | E,3/2 C/ A, A, | B,4{x4 x4 x4} ||
+[V: S2V2]  E,2 | A,,2 (D, C,) | B,,2 B,,2 | C,3/2 C,/ D, D, | G,,4{x4 x4 x4} ||
+% 18
+%%multicol start
+%%rightmargin 12cm
+%%begintext obeylines justify
+%% 6.\tFrom north and south, from east and west they raise
+%% \t\t\t\tin growing unison their songs of praise. Refrain
+%% 
+%% 7.\tO Lord, once lifted on the glorious tree,
+%% \t\t\t\tas thou hast promised, draw the world to thee. Refrain
+%% 
+%% 8.\tSo shall our song of triumph ever be: 
+%% \t\t\t\tPraise to the Crucified for victory. Refrain
+%%endtext
+%%multicol new
+%%leftmargin 11cm
+%%rightmargin 2cm
+%%begintext obeylines justify
+%% 9.\tLet every race and every language tell
+%% \t\t\t\tof him who saves our souls from death and hell. Refrain
+%% 
+%% 10.From farthest regions let their homage bring,
+%% \t\t\t\tand on his Cross adore their Savior King. Refrain
+%% 
+%% 11.Set up thy throne, that earth's despair may cease
+%% \t\t\t\tbeneath the shadow of its healing peace. Refrain
+%%endtext
+%%multicol end
+%%multicol start
+%%rightmargin 6cm
+%%leftmargin 6cm
+%%begintext obeylines justify
+%% 
+%% 12.For thy blest Cross which doth for all atone
+%% \t\t\t\tcreation's praises rise before thy throne. Refrain 
+%%endtext
+%%multicol end
+

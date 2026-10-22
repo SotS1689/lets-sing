@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2013 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.720000
+%%staffsep	0.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 24:7, 118:19-20, Mt 3:1-3, Is 26:2, 60:4-5, Rev 22:20
+%OHTOPICS {Anticipation}, {Art and Music [1-2]}, {Christian Home/Family [3]}, {Christmas/Advent}, {Consecration [4,5]}, {Crown [2]}, {Father [1]}, {God, As King}, {God, Creator [1]}, {God, Goodness of}, {God, Mercy of [2]}, {Grace}, {Gratitude}, {Holy Spirit [3-5]}, {Inner Life [4,5]}, {Invitation (Faithful's to God) [4,5]}, {Jesus}, {Kindness, God's}, {Light [3]}, {Presence}, {Salvation}, {Second Coming}, {Trinity}, {Worship}
+%OHCATEGORY ADVENT
+%OHMETRICAL 8 8 8 8 8 8 6 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER Lemke, August (1820-1913)
+%OHARRANGER unknown
+%OHAUTHOR Weissel, Georg  (1590-1635)
+%OHTRANSLATOR Winkworth, Catherine (1827-1878)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Lift Up Your Heads, Ye Mighty Gates
+C: Words: Georg Weissel, 1642. Translated by Catherine Winkworth, 1855.
+C: Music: 'Milwaukee' or 'Macht hoch die Tür (Lemke)' August Lemke, 1849. 
+C: Setting: "Concordia Kinderchöre", 1908. 
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2013 Revision.
+S: Music source: "Concordia Kinderchöre", 1908 Hymn 6 page 10.
+S: Lyrics source: The Chorale Book for England, 1865, Hymn 25.  noted Arr. v. S.F.G.
+M: 3/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: A % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] E | c2 A | (A G) A | B2 G | E2 E | (E F) G | A2 F | E2 D |
+w: 1.~Lift up your heads, * ye might- y gates! Be- hold, * the King of glo- ry 
+w: 2.~The Lord is just, * a Help- er tried, Mer- cy * is ev- er at His 
+w: 3.~O blest the land, * the ci- ty blest, Where Christ * the Ru- ler is con- 
+w: 4.~Fling wide the por- * tals of your heart; Make it * a tem- ple, set a- 
+w: 5.~Re- deem- er, come! * I o- pen wide My heart * to Thee; here, Lord, a- 
+[V: S1V2] E | E2 E | E2 E | E2 E | E2 B, | B,2 E | E2 D | C2 B, |
+[V: S2V1] G, | A,2 C | (A, B,) C | B,2 B, | G,2 G, | (G, A,) B, | A,2 A, | A,2 G, |
+[V: S2V2] E, | A,,2 A,, | (C, B,,) A,, | G,,2 B,, | E,2 E, | (E, ^D,) =D, | C,2 D, | E,2 E, |
+% 9
+[V: S1V1] C2 C | (E A) c | (B G) E | (A F) ^D | E2 E | A2 B | c2 A | G2
+w: waits; The King * of kings * is draw- * ing near, The Sa- vior of the world 
+w: side, His king- * ly crown * is ho- * li- ness, His scep- ter, pi- ty in 
+w: fessed! O hap- * py hearts * and hap- * py homes To whom this King in tri- 
+w: part From earth- * ly use * for heav'ns * em- ploy, A- dorned with prayer and love 
+w: bide! Let me * Thy in- * ner pres- * ence feel, Thy grace and love in me 
+[V: S1V2] A,2 A, | (C E) E | E2 B, | C2 B, | B,2 C | C2 E | E2 F | E2
+[V: S2V1] E,2 E, | A,2 A, | B,2 G, | (F, A,) F, | G,2 G, | F,2 G, | A,2 C | B,2
+[V: S2V2] A,,2 A,, | ( A,, C,) A,, | G,,2 G,, | A,,2 B,, | E,2 C, | F,,2 E,, | A,,2 F,, | B,,2
+% 16
+[V: S1V1] F | E2 A | G2 B | A2 c | B2 d | c2 E | (d c) B | (A G) F |
+w: is here; Life and sal- va- tion doth He bring, Where- fore * re- joice * and 
+w: dis- tress, The end of all our woe He brings; Where- fore * the earth * is 
+w: umph comes! The cloud- less Sun of joy He is, Who bring- * eth pure * de- 
+w: and joy; So shall your Sov- ereign en- ter in, and new * and no- * bler 
+w: re- veal. Thy Ho- ly Spi- rit guide us on, Un- til * our glo- * rious 
+[V: S1V2] ^D | B,2 E | E2 E | E2 E | E2 E | E2 E | E2 E | E2 D |
+[V: S2V1] B,/A,/ | G,2 C | B,2 G, | A,2 A, | B,2 B, | A,2 G, | (B, A,) G, | A,2 A, |
+[V: S2V2] B,, | E,2 A,, | E,2 D, | C,2 A,, | G,,2 G,, | A,,2 E, | (G,, A,,) B,, | C,2 D, |
+% 24
+[V: S1V1] E2 E | E2 !sintro!e | e2 c | d2 e | c2 E | (F d) B | A2 G | A2 !eintro!|]
+w: glad- ly sing: We praise Thee, Fa- ther, now! Cre- a- * tor, wise art Thou! 
+w: glad and sings: We praise Thee, Sa- vior, now! Migh- ty * in deed art Thou! 
+w: light and bliss. O Com- fort- er di- vine, What bound- * less grace is Thine! 
+w: life be- gin; To Thee, O God, be praise, For Word, * and deed, and grace! 
+w: goal be won! E- ter- nal praise and fame We of- * fer to Thy Name. 
+[V: S1V2] C2 B, | C2 E | E2 E | F2 E | E2 C | (D F) F | E2 E/D/ | C2 |]
+[V: S2V1] A,2 G, | A,2 C | B,2 A, | A,2 B, | A,2 A, | (A, B,) B, | C2 B, | A,2 |]
+[V: S2V2] E,2 E, | A,,2 A, | G,2 A, | F,2 G, | A,2 A,, | (D, B,,) D, | E,2 E, | A,,2 |]
+

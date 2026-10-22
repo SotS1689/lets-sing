@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7100000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 2:29-32, Gen 49:18, Is 42:6-7, Is 49:6
+%OHTOPICS {Assurance}, {Closing Songs}, {Comfort [1]}, {Darkness, Spiritual [4]}, {Eternal Life [1]}, {Faithfulness}, {God, Faithfulness of}, {God, Goodness of}, {Gratitude}, {Israel [4]}, {Jesus}, {Joy}, {Light [4]}, {Peace}, {Praise, Son}, {Promises (see also Gospel) [1,3]}, {Salvation [3]}, {Trust}, {Worship}
+%OHCATEGORY CLOSING SONGS
+%OHMETRICAL 8 5 8 4 7 7
+%OHCOMPLEXITY 4
+%OHCOMPOSER from Walter's Geistliche Gesangbüchlein, 1524
+%OHARRANGER Praetorius, Michael (1571-1621)
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR Bacon, Leonard Woolsey (1830-1907)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: In Peace and Joy I Now Depart 
+T: (also known as The Song of Simeon: Nunc Dimitis)
+C: Words: Martin Luther, 1524.  Translated by Leonard Woolsey Bacon, 1884, alt.
+C: Music: 'Mit Fried und Freud ich Far Dahin' from Walter's Geistliche Gesangbüchlein, 1524.
+C: Setting: Michael Praetorius, 1610.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] D2 A A | G d c B | A2 c2 | A c (B/A/ B) | A
+w: 1.~In peace and joy I now de- part At God's dis- pos- * * ing; 
+w: 2.~'Tis Christ that wrought this work for me, My faith- ful Sa- * * vior, 
+w: 3.~Him Thou hast un- to all set forth Their great Sal- va- * * tion 
+w: 4.~He is the Hope and sa- ving Light Of lands be- night- * * ed; 
+[V: S1V2]  A,2 A, D | B, B, E E | C2 E2 | F G (F//G// A ^G/) | A
+[V: S2V1]  F,2 E, F, | G, G,3/2 A, ^G,/ | A,2 C2 | C E (D B,) | C
+[V: S2V2]  D,2 ^C, D, | E, B,, C, E, | A,,2 A,2 | F, C, (D,/E,/ E,) | A,
+% 5
+[V: S1V1]  z/ A/ c3/2 B/ | c A/ (G F/) E | D2 A3/2 G/ | (F D) C2 |
+w: For full of com- fort is * my heart, Soft re- pos- * ing. 
+w: Whom Thou hast made mine eyes * to see By Thy fa- * vor. 
+w: And to His king- dom called * the earth, Ev- ery na- * tion, 
+w: By Him are they who dwelt * in night Fed and light- * ed. 
+[V: S1V2]  x/ F/ =G G | G F/ D3/2 ^C | D2 F3/2 E/ | (D/C/ B,) C2 |
+[V: S2V1]  z/ D/ E3/2 D/ | C3/2 B, A, A,/ | A,2 A,2 | A, G, E, z |
+[V: S2V2]  x/ D,/ C,3/2 G,/ | E, F,/ (G, D,/A,/) A,,/ | D,2 D,3/2 E,/ | (F, G,) C, x |
+% 9
+[V: S1V1]  (A3/2 G/) F c- | c/_B/ A G/F/ G | A z/ !sintro!G/ F D | C F (E/D/ E) | D4 !eintro!|]
+w: So * the Lord  * * hath pro- * mised me, And death is but a slum- * * ber. 
+w: Now * I know  * * He is * my Life, My Help in need and dy- * * ing. 
+w: By * Thy dear  * * and whole- * some Word, In ev- ery place re- sound- * * ing.
+w: He * is Is-  * * rael's Praise * and Bliss, Their Joy, Re- ward, and Glor- * * y. 
+[V: S1V2]  C2 D C | D2 D D | ^C x/ B,/ (D/ =C) B,/ | A,/G,/ D (^C/ D ^C/) | A,4 |]
+[V: S2V1]  (F,/G,/ A,2) A, | D, F, G, D, | E, z/ G,/ A, G, | E, A, A,/F,/A,/G,/ | ^F,4 |]
+[V: S2V2]  (F,3/2 E,/) (D, A,,) | G,, D, _B,, _B,, | A,, x/ E,/ F, G, | C, D, (A,,/_B,,/ A,,) | D,4 |]
+% 15

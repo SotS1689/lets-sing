@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 146:1-10 
+%OHTOPICS {Art and Music}, {Fear of the Lord}, {God, Care of}, {God, Faithfulness of}, {God, Goodness of}, {God, Justness of}, {God, Majesty &amp; Power of}, {God, Mercy of}, {God, Providence of}, {Kindness, God's}, {Worship}
+%OHCATEGORY PRAISE
+%OHMETRICAL 8 7 8 7 8 7 8 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Gregorian Chant
+%OHARRANGER Mason, Lowell (1792-1872)
+%OHAUTHOR Psalm 146
+%OHTRANSLATOR United Presbyterian Board of Publication, 1909
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Hallelujah, Praise Jehovah, O My Soul
+T: (also known as Hallelujah, Praise Jehovah [Psalm 146])
+C: Words: Psalm 146.  Translated by United Presbyterian Board of Publication, 1909.
+C: Music: 'Ripley (Gregorian)' from a Gregorian Chant.  Setting: Lowell Mason, 1839.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.
+S: Music source: "The Lutheran Hymnary", 1913 Hymn 578
+S: Lyrics source: "The Psalter with Responsive Readings" 1912 Hymn 400.
+M: 3/2 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] E G | B3 G A c | B2 G2 B E | A G F2 F2 | E4 
+w: 1.~Hal- le- lu- jah, praise Je- ho- vah, O my soul, Je- ho- vah praise;  
+w: 2.~Hap- py is the man that choo- ses Is- rael's God to be his aid; 
+w: 3.~Food He dai- ly gives the hun- gry, Sets the mour- ning pris'n- er free, 
+w: 4.~Hal- le- lu- jah, praise Je- ho- vah, O my soul, Je- ho- vah praise;  
+[V: S1V2]  E E | G3 E E A | G2 E2 E B, | C/D/ E E2 D2 | E4 
+[V: S2V1]  G, B, | E3 B, C E | E2 B,2 B, G, | A, B, C2 (B, A,) | G,4 
+[V: S2V2]  E, E, | E,3 _D, C, A,, | E,2 E,2 G, G, | F, E, A,,2 B,,2 | E,4 
+% 6
+[V: S1V1]  E G | B3 G A c | B2 G2 B E | A G F2 F2 | E4 
+w: I will sing the glo- rious prai- ses Of my God through all my days. 
+w: He is blest whose hope of bles- sing On the Lord his God is stayed. 
+w: Rai- ses those bowed down with an- guish, Makes the sight- less eye to see. 
+w: I will sing the glo- rious prai- ses Of my God through all my days. 
+[V: S1V2]  E E | G3 E E A | G2 E2 E B, | C/D/ E E2 D2 | E4 
+[V: S2V1]  G, B, | E3 B, C E | E2 B,2 B, G, | A, B, C2 (B, A,) | G,4 
+[V: S2V2]  E, E, | E,3 _D, C, A,, | E,2 E,2 G, G, | F, E, A,,2 B,,2 | E,4 
+% 9
+[V: S1V1]  e d | e3 B c c | B2 B2 e d | e3 B c c | B4 
+w: Put no con- fi- dence in prin- ces, Nor for help on man de- pend; 
+w: Heav'n and earth the Lord cre- a- ted, Seas and all that they con- tain; 
+w: Well Je- ho- vah loves the righ- teous, And the stran- ger He be- friends, 
+w: O- ver all God reigns fo- re- ver, Through all a- ges He is King; 
+[V: S1V2]  G A | B3 G A A | G2 G2 G A | B3 G A A | G4 
+[V: S2V1]  B, B, | B,3 E E E | E2 B,2 B, B, | B,3 E E E | E4 
+[V: S2V2]  E, F, | G,3 E, A,, C, | E,2 E,2 E, F, | G,3 E, A,, C, | E,4 
+% 13
+[V: S1V1]  !sintro!E G | B3 G A c | B2 G2 B E | A B F2 F2 | E4!eintro!|]
+w: He shall die, to dust re- tur- ning, And his pur- po- ses shall end. 
+w: He de- li- vers from op- pres- sion, Righ- teous- ness He will main- tain. 
+w: Helps the fa- ther- less and wi- dow, Judg- ment on the wi- cked sends. 
+w: Un- to Him, your God, O Zi- on, Joy- ful hal- le- lu- jahs sing. 
+[V: S1V2]  E E | G3 E E A | G2 E2 E B, | C/D/ E E2 D2 | E4 |]
+[V: S2V1]  G, B, | E3 B, C E | E2 B,2 B, G, | A, B, C2 (B, A,) | G,4 |]
+[V: S2V2]  E, E, | E,3 _D, C, A,, | E,2 E,2 G, G, | F, E, A,,2 B,,2 | E,4 |]
+% 18
+

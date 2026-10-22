@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2010 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%staffsep	2.00000cm
+%%scale		0.750000
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 2:8-15, Col 1:19-20
+%OHTOPICS {Angels}, {Anticipation [4]}, {Christmas/Advent}, {God, Mercy of}, {Joy}, {Love [2]}, {Peace}, {Shepherd/Lamb [1]}, {Worship}
+%OHCATEGORY CHRISTMAS
+%OHMETRICAL 9 9 8 8 7 7
+%OHCOMPLEXITY 3
+%OHCOMPOSER MacFarlane, John Menzies (1833-1892)
+%OHARRANGER MacFarlane, John Menzies (1833-1892)
+%OHAUTHOR MacFarlane, John Menzies (1833-1892)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Far, Far Away On Judea's Plains
+C: Words: John M. MacFarlane, 1869.
+C: Music and Setting: 'Far, Far Away On Judea`s Plains' John M. MacFarlane, 1869.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision.
+S: Music source: 'The Songs of Zion', 1908 Hymn 81.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1]  [Q:1/4=100] F F3/4 G// A A3/4 B// | c c3/4B// A2 | G G3/4 A// B A/ c/ |
+w: 1.~Far, far a- way on Ju- de- a's * plains, Shep- herds of old heard the 
+w: 2.~Sweet are these strains of re- deem- ing * love, Mess- age of mer- cy from 
+w: 3.~Lord, with the an- gels we too would re- joice; Help us to sing with the 
+w: 4.~Has- ten the time when, from e- ve- ry clime, Men shall u- nite in the 
+[V: S1V2]  F F3/4 E// F F3/4 G// | A A3/4G// F2 | E E3/4 F// G F/ A/ |
+[V: S2V1]  F, C, F, C, | A,, C, F,2 | C,3 F, |
+[V: S2V2]  F, C, F, C, | A,, C, F,2 | C,3 F, |
+% 5
+[V: S1V1]  d/c/ B/A/ (A G) | F F3/4 G// A2 | c c3/4 B// A2 | d d3/4 d// c F/ F/ |
+w: joy- * ous * strains: * Glo- ry to God, glo- ry to God, Glo- ry to God in the 
+w: hea- * ven a- bove: *  *  *  *  *  *  *  *  *  *  *  *  *  *  * 
+w: heart * and * voice: *  *  *  *  *  *  *  *  *  *  *  *  *  *  * 
+w: strains * sub- * lime: *  *  *  *  *  *  *  *  *  *  *  *  *  *  * 
+[V: S1V2]  B/A/ G/F/ (F E) | C F3/4 E// F z | E E3/4 E// F z | F F3/4 F// F F/ C/ |
+[V: S2V1]  B,,2 C,2 | A, C3/4 C// C z | G, G,3/4 G,// F, G,/ A,/ | B,2 A, D/ C/ |
+w: * * Glo- ry to God Glo- ry to God in the high- est  in the 
+[V: S2V2]   B,,2 C,2 | F, A,3/4 G,// F, E,/ D,/ | C,2 F, z | B,,3/4C,// D,3/4 E,// F, B,/ A,/ |
+w: * * Glo- ry to God in the high- est  Glo- * ry to God in the 
+% 9
+%%vskip 1.0cm
+[V: S1V1]  (B A) G2 | .F .C .D E | F G A2 | !sintro!c3/2 c/ c3/2 B/ | A G F2 !eintro!|]
+w: high- * est; Peace on earth, good will to men; Peace on earth, good will to men. 
+[V: S1V2]  (D/E/ F) E2 | .C .A, .B, B, | C C C2 | (E/F/G/) E/ F3/2 G/ | F E F2 |]
+[V: S2V1]  (B, C) C2 | .A, .F, .F, G, | F, E, F,2 | G,3/2 G,/ A,/B,/C/ D/ | C C/B,/ A,2 |]
+[V: S2V2]  (G, F,) C,2 | .F,, .F,, .B,, G,, | A,, C, F,3/2 z/ | C,/D,/E,/ C,/ F,/G,/A,/ B,/ | C C, F,2 |]
+% 14

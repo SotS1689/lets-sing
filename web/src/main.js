@@ -32,6 +32,13 @@ const instrumentById = (id) => INSTRUMENTS.find((i) => i.id === id) ?? INSTRUMEN
 let instrument = instrumentById(store.get("instrument", "piano"));
 player.setInstrument(instrument.program);
 
+// Sheet music: the hymnal page, or one line that scrolls along with the music
+const SCORE_VIEWS = [
+    { id: "scroll", name: "Scroll", title: "One line of music that moves along as it plays" },
+    { id: "page", name: "Page", title: "The whole score, as a hymnal prints it" },
+];
+let scoreView = SCORE_VIEWS.some((v) => v.id === store.get("scoreView")) ? store.get("scoreView") : "scroll";
+
 const applyVoice = (i) => player.setVoiceVolume(i, mix.on[i] ? mix.volumes[i] / 100 : 0);
 
 const THEMES = ["system", "light", "dark"];
@@ -79,6 +86,10 @@ const hymnsPromise = fetch("./hymns.json").then((r) => r.json());
 // The ?v= content version lets offline copies of unchanged hymns survive app
 // updates (see sw-template.js)
 const midiUrl = (h) => `./midi/${encodeURIComponent(h.midi)}?v=${h.midiVersion}`;
+// Sheet music (scripts/build-scores.mjs), versioned the same way; its note map
+// is the .json beside it
+const scoreUrl = (h) => `./scores/${encodeURIComponent(h.score)}?v=${h.scoreVersion}`;
+const scoreMapUrl = (h) => scoreUrl(h).replace(/\.abc\?/, ".json?");
 let searchText = "";
 let listScroll = 0;
 
@@ -149,7 +160,8 @@ function setDownloadState(state) {
 
 async function offlineFiles() {
     const hymns = await hymnsPromise;
-    return [...new Set(hymns.filter((h) => h.midi).map(midiUrl))].concat("./soundfont/instruments.sf2");
+    const scores = hymns.filter((h) => h.score).flatMap((h) => [scoreUrl(h), scoreMapUrl(h)]);
+    return [...new Set(hymns.filter((h) => h.midi).map(midiUrl).concat(scores))].concat("./soundfont/instruments.sf2");
 }
 
 async function missingFiles() {
@@ -300,9 +312,22 @@ async function showHymn(id) {
             </div>
         </section>
 
+        ${hymn.score ? `<section class="card score" aria-label="Sheet music">
+            <div class="score-head">
+                <h3>Music</h3>
+                <span class="score-verse" id="score-verse"></span>
+                <div class="view-switch" role="group" aria-label="How the music is shown">
+                    ${SCORE_VIEWS.map(
+                        (v) => `<button data-view="${v.id}" aria-pressed="${v.id === scoreView}" title="${v.title}">${v.name}</button>`
+                    ).join("")}
+                </div>
+            </div>
+            <div class="score-notation" id="score"></div>
+        </section>` : ""}
+
         <section class="lyrics">
             <h3>Lyrics</h3>
-            ${hymn.verses.map((v) => `<p>${esc(v)}</p>`).join("")}
+            ${hymn.verses.map((v, i) => `<p data-verse="${i + 1}">${esc(v)}</p>`).join("")}
             ${hymn.credits ? `<p class="credits">${esc(hymn.credits)}</p>` : ""}
         </section>`;
 
@@ -310,6 +335,41 @@ async function showHymn(id) {
     const seekEl = $("#seek"), playBtn = $("#play"), stopBtn = $("#stop");
     const posEl = $("#pos"), durEl = $("#dur"), statusEl = $("#status"), playIcon = $("#play-icon");
     let dragging = false;
+
+    // Sheet music: lit from the first press of Play until Stop, like the
+    // #doreancon hymnal, so a hymn nobody has played doesn't look mid-phrase
+    let score = null, started = false, shownVerse = null;
+    app.querySelectorAll("[data-view]").forEach((b) =>
+        b.addEventListener("click", () => {
+            scoreView = b.dataset.view;
+            store.set("scoreView", scoreView);
+            app.querySelectorAll("[data-view]").forEach((x) => x.setAttribute("aria-pressed", x === b));
+            score?.setView(scoreView);
+            paintScore();
+        })
+    );
+    const paintScore = (follow = false) => {
+        if (!score) return;
+        if (!started) {
+            score.clear();
+            return showVerse(null);
+        }
+        const now = player.position();
+        score.paint(now, mix.on.map((on, i) => on && mix.volumes[i] > 0), follow);
+        showVerse(score.verseAt(now));
+    };
+    const showVerse = (verse) => {
+        if (verse === shownVerse) return;
+        shownVerse = verse;
+        // Only when the MIDI plays this hymn's verses one per time through the tune
+        if (!hymn.scoreVerses) return;
+        $("#score-verse").textContent =
+            verse === null ? "" : verse === 0 ? "Introduction" : `Verse ${verse} of ${score.verseCount}`;
+        // The lyrics below follow along too
+        app.querySelectorAll(".lyrics [data-verse]").forEach((p) =>
+            p.classList.toggle("is-current", +p.dataset.verse === verse)
+        );
+    };
 
     const setPlayingUi = (playing) => {
         playIcon.setAttribute("d", playing ? "M6 5h4v14H6zm8 0h4v14h-4z" : "M8 5v14l11-7z");
@@ -321,6 +381,7 @@ async function showHymn(id) {
             seekEl.value = player.position();
             posEl.textContent = fmtTime(player.position());
         }
+        paintScore(player.isPlaying());
         if (player.isPlaying()) frame = requestAnimationFrame(tick);
         else setPlayingUi(false);
     };
@@ -332,6 +393,7 @@ async function showHymn(id) {
         } else {
             if (player.position() >= player.duration() - 0.05) player.seek(0);
             await player.play();
+            started = true;
             setPlayingUi(true);
             cancelAnimationFrame(frame);
             frame = requestAnimationFrame(tick);
@@ -339,6 +401,8 @@ async function showHymn(id) {
     });
     stopBtn.addEventListener("click", () => {
         player.stop();
+        started = false;
+        paintScore();
         setPlayingUi(false);
         seekEl.value = 0;
         posEl.textContent = fmtTime(0);
@@ -350,6 +414,7 @@ async function showHymn(id) {
     seekEl.addEventListener("change", () => {
         player.seek(+seekEl.value);
         dragging = false;
+        paintScore(true);
     });
 
     $("#instrument").addEventListener("change", (e) => {
@@ -364,6 +429,7 @@ async function showHymn(id) {
             el.setAttribute("aria-pressed", mix.on[i]);
             $(`#voice-${i}`).classList.toggle("is-off", !mix.on[i]);
             applyVoice(i);
+            paintScore();
         })
     );
     app.querySelectorAll("[data-voice]").forEach((el) =>
@@ -373,6 +439,7 @@ async function showHymn(id) {
             // Moving the slider of a part that's off turns it back on
             if (!mix.on[i]) $(`[data-toggle="${i}"]`).click();
             applyVoice(i);
+            paintScore();
         })
     );
 
@@ -396,6 +463,20 @@ async function showHymn(id) {
     );
     updateSteppers();
 
+    if (hymn.score) {
+        // Loaded only here, so the hymn list doesn't wait for the notation library
+        import("./score.js")
+            .then(({ loadScore }) =>
+                loadScore($("#score"), scoreUrl(hymn), { words: hymn.scoreWords, verses: hymn.scoreVerses, view: scoreView })
+            )
+            .then((s) => {
+                if (location.hash !== `#/hymn/${id}`) return;
+                score = s;
+                paintScore();
+            })
+            .catch(() => app.querySelector(".score")?.remove()); // the player works the same without it
+    }
+
     if (!hymn.midi) {
         statusEl.textContent = "No music file for this hymn yet.";
         return;
@@ -411,9 +492,12 @@ async function showHymn(id) {
         seekEl.disabled = playBtn.disabled = stopBtn.disabled = false;
         statusEl.textContent = "";
     } catch (err) {
-        statusEl.textContent = navigator.onLine
-            ? `Couldn't load the music: ${err.message}`
-            : "You're offline and this hymn hasn't been downloaded yet.";
+        // fetch() throws a TypeError when the site can't be reached at all, which
+        // happens with Wi-Fi "connected" too (no internet, or the server is down)
+        const unreachable = !navigator.onLine || err instanceof TypeError;
+        statusEl.textContent = unreachable
+            ? "Couldn't reach the site to get this hymn's music, and it hasn't been downloaded for offline use yet."
+            : `Couldn't load the music: ${err.message}`;
     }
 }
 

@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7500000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 2:22-38
+%OHTOPICS {Christmas/Advent}, {Church in Heaven (Church Victorious/Church Triumphant)}, {Church on Earth (Church Militant)}, {Faith [2]}, {Faithfulness [1]}, {Fellowship [1]}, {God, As King [4]}, {God, Faithfulness of [1]}, {Gratitude}, {Jesus}, {Joy}, {Praise, Son}, {Presence}, {Priest/Priestly Roles}, {Promises (see also Gospel) [1,3]}, {Saints (all Faithful) [1,2]}, {Salvation [3,4]}, {Worship}
+%OHCATEGORY EPIPHANY
+%OHMETRICAL 8 7 8 7 8 7
+%OHCOMPLEXITY 3
+%OHCOMPOSER Purcell, Henry (1659-1695)
+%OHARRANGER Hawkins, Ernest (1802-1868)
+%OHAUTHOR Pye, Henry John (1825-1903);Cooke, William (1821-1894)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: In His Temple Now Behold Him
+C: Words: verses 1-3, Henry J. Pye, 1851. verse 4, William Cooke, 1853. 
+C: Music: 'Westminster Abbey' Henry Purcell, circa 1692.  Setting: Ernest Hawkins, 1843.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+S: Music source: With One Voice, Hymn 747
+M: 6/8 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] B2 d B2 G | c2 A F2 D | G2 A (B3/2 A/) G | F E2 D3 |
+w: 1.~In His tem- ple now be- hold Him, See the long * ex- pect- ed Lord; 
+w: 2.~In the arms of her who bore Him, Vir- gin pure, * be- hold Him lie, 
+w: 3.~Je- sus, by Thy pres- en- ta- tion, Thou, who didst * for us en- dure, 
+w: 4.~Prince and Au- thor of sal- va- tion, Be Thy bound- * less love our theme! 
+[V: S1V2]  D2 D D2 D | E2 E D2 A, | D2 C (B, D) ^C | D2 ^C D3 |
+[V: S2V1]  G,2 A, B,2 B,/A,/ | G,2 A, A,2 F, | B,2 F, (G,3/2 F,/) E, | F,/G,/ (A, G,) F,3 |
+[V: S2V2]  G,2 F, G,2 G,/F,/ | E,2 C, D,2 D,/C,/ | B,,2 A,, (G,,3/2 D,/) E, | D, A,,2 D,3 |
+% 5
+[V: S1V1]  F2 A F2 D | G2 A B2 G | c2 B (A3/2 B/) G | G/F/ F2 E3 |
+w: An- cient pro- phets had fore- told Him; God has now * ful- filled * His word. 
+w: While his a- gèd saints a- dore Him Ere in faith * and hope * they die. 
+w: Make us see our great sal- va- tion, Seal us with * Thy pro- * mise sure. 
+w: Je- sus, praise to Thee be gi- ven By the world * Thou didst * re- deem. 
+[V: S1V2]  D2 E D2 A, | B,2 C D2 D | (E F/G/) F (E/D/ E) B, | C B,2 B,3 |
+[V: S2V1]  A,2 A, A,2 F, | (D,3/2 G,/) F, G,2 B, | G,2 A,/B,/ (C E,) ^D, | E,2 ^D, E,3 |
+[V: S2V2]  D,2 ^C, D,2 D,/=C,/ | B,,2 A,, G,,2 G, | E,2 D, C,2 B,, | A,, B,,2 E,3 |
+% 9
+[V: S1V1]  ^G2 G A2 A | F2 F =G2 G | !sintro!E2 E F2 G | G2 F G3 !eintro!|]
+w: Now to praise Him, His re- deem- èd Shall break forth with one ac- cord. 
+w: Ha- lle- lu- jah! Ha- lle- lu- jah! Lo, th'in- car- nate God most high. 
+w: And pre- sent us in Thy glo- ry To Thy Fa- ther, cleansed and pure. 
+w: With the Fa- ther and the Spir- it, Lord of ma- jes- ty su- preme! 
+[V: S1V2]  E2 E E2 E | D2 D D2 D | C2 C (D C) B, | A,2 A,/B,//C// B,3 |]
+[V: S2V1]  B,2 B, A,2 A, | A,2 A, G,2 G, | G,2 A, A,2 G, | (F,/E,/ D,) D, D,3 |]
+[V: S2V2]  E,2 D, ^C,2 ^C, | D,2 =C, B,,2 B,, | C,2 A,, D,2 G, | D,2 D, G,,3 |]
+% 14

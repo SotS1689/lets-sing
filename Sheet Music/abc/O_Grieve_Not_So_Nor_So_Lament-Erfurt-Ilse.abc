@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 6:30-34, 1Tim 6:6-10, Lk 3:12-14, Phil 4:11-13
+%OHTOPICS {Anticipation [7,8]}, {Christian Life}, {Father}, {God, Care of}, {God, Creator}, {God, Faithfulness of}, {God, Goodness of}, {God, Providence of}, {Gratitude}, {Heaven [7,8]}, {Inner Life}, {Patience}, {Praise, Father [3]}
+%OHCATEGORY THANKSGIVING
+%OHMETRICAL 8 6 8 6 8 8 
+%OHCOMPLEXITY 2
+%OHCOMPOSER Ilse, Ludwig Herman (1845-1931)
+%OHARRANGER Ilse, Ludwig Herman (1845-1931)
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR Findlater (nee Borthwick), Sarah Laurie (1823-1907)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: O Grieve Not So, Nor So Lament
+T: (also known as Not So Darkly, Not So Deep or Why This Sad and Mournful Guise?)
+C: Words: Paul Gerhardt, 1923.  Translated by Sarah Findlater, 1854, alt. 
+C: Music and Setting: 'Erfurt' or 'Ilse' Ludwig Herman Ilse, 1910. 
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision. 
+S: Music source: "The Evangelical Lutheran Hymn-Book" (LCMS), 1930 Hymn 254 
+S: Lyrics source: "Hymns from the Land of Luther", 1866 edition Hymn 17.  Alterations by Brian Dumont 25 Nov 2025, released into the public domain
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Ab % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] E2 | F G A B | c B A c | e d c A | B2 
+w: 1.~O grieve not so, nor so la- ment, My soul! nor trou- bled sigh, 
+w: 2.~There is no right you can de- mand, No ti- tle you can claim; 
+w: 3.~How thank- less art you, child of man! For fa- vors that a- bound; 
+w: 4.~Num- ber your limbs, your mem- bers tell, And ask your thank- less soul, 
+w: 5.~Now, go and search the depths of mind, Ex- plore its won- drous pow'r, 
+[V: S1V2]  C2 | D D E F | E G E A | G G A E | G2 
+[V: S2V1]  A,2 | A, B, A, A, | A, B, C A, | B, D E C | E2 
+[V: S2V2]  A,,2 | D, B,, C, D, | E, E, A,, F, | E, B,, A,, A, | E,2 
+% 5
+[V: S1V1]  E2 | F G A B | c B A c | e d c A | B2 
+w: Be- cause some joys to o- thers sent Your Fa- ther may de- ny; 
+w: For all are stran- gers in the land Who bear the hu- man name: 
+w: Your God has giv'n you eyes to scan The glo- ry all a- round; 
+w: If to a- no- ther you would sell The small- est of them all. 
+w: New proofs of be- ne- fits to find, That meet you e- v'ry hour; 
+[V: S1V2]  C2 | D D E F | E G E A | G G A E | G2 
+[V: S2V1] A,2 | A, B, A, A, | A, B, C A, | B, D E C | E2 
+[V: S2V2] A,,2 | D, B,, C, D, | E, E, A,, F, | E, B,, A,, A, | E,2 
+% 9
+[V: S1V1] B2 | B G A B | c =d e !sintro!_d | c e G A | B2 B2 | A2!eintro!|]
+w: Take all as love that seems se- vere There is no want if God is near. 
+w: Earth and its trea- sures are the Lord's, And He the lot of each ac- cords. 
+w: Yet sel- dom for this price- less sight, Have you been heard to praise a- right. 
+w: There is not one from which your heart Would will- ing- ly sub- mit to part. 
+w: More than the sand u- pon the shore, And e- ver ri- sing more and more. 
+[V: S1V2] F2 | G E E E | A A G G | A E D E | F2 E2 | C2 |]
+[V: S2V1] =D2 | E B, C B, | A, A, B, B, | A, A, B, A, | A,2 G,2 | A,2 |]
+[V: S2V2] B,,2 | E, E, A, G, | F, F, E, E, | F, C, B,, C, | D,2 E,2 | A,,2 |]
+% 14
+%%multicol start
+%%leftmargin 1.75cm
+%%rightmargin 12.25cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\t\tHe knows, who lives on Zion's hill, 
+%% \t\t\t\t\tWhat we in truth require; 
+%% \t\t\tKnows too how many blessings still 
+%% \t\t\t\t\tThis flesh and blood desire; 
+%% \t\t\tAnd could He safely all bestow, 
+%% \t\t\tHe would not let you sorr'wing go. 
+%%endtext
+%%multicol new
+%%leftmargin 7.5cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 7.\t\tYou were not born that earth should be 
+%% \t\t\t\t\tA portion fondly sought; 
+%% \t\t\tLook up to heav'n, and smiling see 
+%% \t\t\t\t\tYour shining, golden lot! 
+%% \t\t\tHonors and joys, which you shall share, 
+%% \t\t\tUnending and unenvied there! 
+%%endtext
+%%multicol new
+%%leftmargin 13.25cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 8.\t\tThen journey on to life and bliss, 
+%% \t\t\t\t\tGod will protect to heav'n; 
+%% \t\t\tAnd every good that meets you is 
+%% \t\t\t\t\tA blessing wisely given. 
+%% \t\t\tIf losses come, let it be so 
+%% \t\t\tThe God of heav'n remains with you. 
+%%endtext
+%%multicol end
+

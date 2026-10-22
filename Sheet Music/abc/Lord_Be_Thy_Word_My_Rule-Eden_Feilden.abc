@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2025 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 119:9-16, Deut 6:6-9, Jn 17:17
+%OHTOPICS {Aspiration}, {Commitment}, {Discipleship}, {Faithfulness}, {Following Jesus, Sanctification}, {God, Care of}, {Guidance}, {Humility}, {Obedience}, {Promises (see also Gospel)}, {Scripture}
+%OHCATEGORY WORD OF GOD
+%OHMETRICAL 6 6 6 6
+%OHCOMPLEXITY 1
+%OHCOMPOSER Feilden, Oswald Mosley (1837-1924)
+%OHARRANGER Feilden, Oswald Mosley (1837-1924)
+%OHAUTHOR Wordsworth, Christopher (1807-1885)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Lord, Be Thy Word My Rule
+C: Words: Christopher Wordsworth, 1872.
+C: Music and Setting: 'Eden (Feilden)' Oswald Mosley Feilden, 1863.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision.
+S: Music and Lyrics source: Hymns Ancient and Modern, 1924, Hymn 701
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] B | G B e d | c3 B | G E G =A | B3
+w: 1.~Lord, be Thy Word my rule, In it may I re- joice;
+w: 2.~Thy pro- mi- ses my hope; Thy pro- vi- dence my guard;
+[V: S1V2]  E | E D E E | E3 F | E E E E | D3
+[V: S2V1]  G, | B, A, B, G, | A,3 F, | B, B, C C | B,3
+[V: S2V2]  E, | E, F, G, E, | A,3 D, | E, G, C, F, | B,,3 
+% 13
+[V: S1V1] B | c e d c | B3 !sintro!A | G B F F | E3!eintro!|]
+w: Thy glo- ry be my aim, Thy ho- ly will my choice;
+w: Thine arm my strong sup- port; Thy- self my great re- ward.
+[V: S1V2] E | E B, D E | (F D E) F | E E E D | E3 |]
+[V: S2V1] B, | A, B, A, A, | (F, B,2) B, | B, B, C B,/A,/ | G,3 |]
+[V: S2V2] G, | A, G, F, E, | (D, B,, C,) D, | E, G,, A,, B,, | E,3 |]
+% 18
+%%vskip 1in
+%%multicol start
+%%leftmargin 0in
+%%rightmargin 0in
+%%textoption 3
+%%textfont Times-Bold 12.0
+%%EPS unknown_artist_circa1340-1350_St_John_the_Evangelist_Writing.eps
+%%begintext
+%%"Saint John the Evangelist Writing" by unknown artist circa 1340-1350
+%%endtext
+%%multicol end
+
+

@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.700000
+%%staffsep	0.00000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Jn 18:1, Lk 22:39-46, Mk 14:32-42, Mt 26:36-46, 2Sam 15:13-23
+%OHTOPICS {Angels [3]}, {Atonement}, {Blood [4,5]}, {Comfort [6]}, {Darkness, Spiritual [2,4]}, {Easter Week / Passion}, {Father [3]}, {God, Faithfulness of}, {God, Love of}, {God, Mercy of}, {Gospel}, {Grace}, {Gratitude}, {Heaven [5,6]}, {Jesus}, {Judgment}, {Obedience}, {Sacrifice}, {Salvation}, {Submission (see also Following Jesus, God - Providence of, Trust)}
+%OHCATEGORY GOOD THURSDAY
+%OHMETRICAL 8 7 8 7 7 7 8 8
+%OHCOMPLEXITY 4
+%OHCOMPOSER Lindeman, Ludvig Mathias (1812-1887)
+%OHARRANGER unknown
+%OHAUTHOR Kingo, Thomas Hansen (1634-1703)
+%OHTRANSLATOR Jeffrey, J. (19th Century)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Over Kidron Jesus Treadeth
+T: (also known as Over Kedron Jesus Treadeth or Over Cedron Jesus Treadeth)
+C: Words: Thomas Hansen Kingo, 1689.  Translated by J. Jeffrey, before 1866. 
+C: Music: 'Over Kedron Jesus Traeder' Ludvig Mathias Lindeman.  Setting: "The Lutheran Hymnary", 1913.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: "The Lutheran Hymnary", 1913 Hymn 302.  Most sources give translation date of 1880, but translation found in "The Living Age" Fourth Series Vol. 1, Page 746, 1866, referenced as trans. by Rev. J. Jeffrey.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Ab % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] c B A F | A G =E C | F3/2 G/ A G | c B A3/2 z/ |
+w: 1.~O- ver Kid- ron Je- sus tread- eth To His pas- sion for us all; 
+w: 2.~Da- vid once, with heart af- flic- ted, Crossed the Kid- ron's nar- row strand, 
+w: 3.~See how, an- guish struck, He fall- eth Pro- strate, and with strug- gling breath, 
+w: 4.~See how, in that hour of dark- ness, Batt- ling with the e- vil pow'r, 
+w: 5.~But, O flow'rs, so sad- ly wa- tered By this pure and prec- ious dew, 
+[V: S1V2] F =E F F | F D C B, | A,3/2 D/ C E | A G E3/2 x/ |
+[V: S2V1] A, B, C A, | C B, G, =E, | F,3/2 B,/ A, B, | E3/2 D/ C3/2 z/ |
+[V: S2V2] F, G, A, D, | A,, B,, C, C, | D,3/2 B,,/ F, E,/D,/ | C, E, A,3/2 x/ |
+% 5
+[V: S1V1] c B A F | A G =E C | F3/2 G/ A G | c B A3/2 z/ |
+w: Ev- ery hu- man eye be weep- ing, Tears of bit- ter grief let fall! 
+w: Clouds of gloom and grief a- bout him When an ex- ile from his land. 
+w: Three times on His God He call- eth, Pray- ing that the bit- ter death 
+w: A- gon- ies un- told as- sail Him, On His soul the ar- rows show'r; 
+w: In some bless- ed hour your blos- soms 'Neath the ol- ive sha- dows grew! 
+[V: S1V2] F G =E F | D D C C | D3/2 D/ E D | C E/D/ C3/2 x/ |
+[V: S2V1] C D C A, | D B, G, =E, | A,3/2 B,/ C B, | A, G, A,3/2 z/ |
+[V: S2V2] A,, B,, C, D, | B,, B,, C, C, | C,3/2 B,,/ A,, _F, | E, E, A,,3/2 x/ |
+% 9
+[V: S1V1] B B c A | d c B3/2 z/ | c c d B | e d c3/2 z/ | d c
+w: Round His Spi- rit flock the foes, Place their shafts and bend their bows, Aim- ing 
+w: But, O Je- sus, black- er now Bends the cloud a- bove Thy brow, Hast- ing 
+w: And the cup of doom may go, Still He cries, in all His woe: "Not My 
+w: All the gar- den flow'rs are wet With the drops of blood- y sweat, From His 
+w: E- den's gar- den did not bear  Aught that can with you com- pare, For the 
+[V: S1V2] E E A A | G A G3/2 x/ | A B B B | =A B =A3/2 x/ | B G
+[V: S2V1] G, G, E C | D E E3/2 z/ | E E F D | E F F3/2 z/ | F =E
+[V: S2V2] E, D, C, F, | B,, C,/D,/ E,3/2 x/ | A, _G, F, _G, | C, D,/E,/ F,3/2 x/ | B,, C,
+% 12
+[V: S1V1] B c | A G F D | !sintro!C3/2 =E/ F A | c2 (B A) | G4 | F4 !eintro!|]
+w: at the Sav- ior sole- ly, While the world for- sakes Him * whol- ly. 
+w: to death's drea- ry por- tals For the shame and sin of * mor- tals. 
+w: will, but Thine, O Fa- ther!" And the an- gels round Him * ga- ther.
+w: an- guished frame dis- till- ing\- World's re- demp- tion thus ful- * fill- ing! 
+w: blood, thus free- ly giv- en, Makes my soul the heir of * hea- ven. 
+[V: S1V2] F G | F =E C B, | B,3/2 B,/ A, F | A2 (G F) | (F2 =E2) | C4 |]
+[V: S2V1] F =E | C B, A, F, | =E,3/2 G,/ F, F, | D2 D2 | B,4 | A,4 |]
+[V: S2V2] D, C, | F,, G,, A,, B,, | C,3/2 C,/ D, D,/C,/ | B,,2 B,,2 | C,4 | F,4 |]
+W: 6.When as flow'rs themselves I wither, When I droop and fade like grass, 
+W: When the life-streams through my pulses Dull and ever duller pass, 
+W: When at last they cease to roll, Then, to cheer my sinking soul, 
+W: Grace of Jesus, be Thou given- Source of triumph! pledge of heaven! 

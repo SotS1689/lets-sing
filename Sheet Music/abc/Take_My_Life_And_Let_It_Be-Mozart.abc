@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rom 12:1-2, Rom 6:13, 1Cor 6:20, 2Cor 5:15
+%OHTOPICS {Activity [2]}, {Charity (see also Tithing) [4]}, {Commitment}, {Consecration}, {Discipleship}, {Following Jesus, In Action [2-5]}, {Following Jesus, Sanctification}, {Guidance}, {Invitation (Faithful's to God)}, {Love [2]}, {Obedience}, {Stewardship}, {Submission (see also Following Jesus, God - Providence of, Trust)}, {Throne (also see God - As King) [5]}, {Tithing [4]}
+%OHCATEGORY CONSECRATION
+%OHMETRICAL 7 7 7 7
+%OHCOMPLEXITY 3
+%OHCOMPOSER Mozart, Wolfgang Amadeus (1756-1791)
+%OHARRANGER composite
+%OHAUTHOR Havergal, Frances Ridley (1836-1879)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Take My Life And Let It Be
+C: Words: Frances R. Havergal, 1874.  Music: 'Mozart' Wolfgang Amadeus Mozart (1756-1791). 
+C: Setting: composite found in "Hymnal and Liturgies of the Moravian Church", 1920.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: Hymnal and Liturgies of the Moravian Church, 1920 Hymn 471.
+S: setting very similar to "The Coronation Hymnal", American Baptist Publication Society, 1894 Hymn 182.
+M: 3/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] G2 G | F2 D | c2 c | B3 | d2 B | (d c) A | G2 B/A/ | A3 |
+w: 1.~Take my life, and let it be con- se- cra- * ted, Lord, to * Thee. 
+w: 2.~Take my hands, and let them move at the im- * pulse of Thy * love. 
+w: 3.~Take my voice, and let me sing al- ways, on- * ly, for my * King. 
+w: 4.~Take my sil- ver and my gold; not a mite * would I with- * hold. 
+w: 5.~Take my will, and make it Thine; it shall be * no long- er * mine. 
+[V: S1V2]  D2 D | D2 D | D2 F | G3 | G2 G | E2 D | D2 G/F/ | F3 |
+[V: S2V1]  B,2 B, | A,2 F, | (F, A,) D | D3 | D2 D | A,2 D | B,2 D | D3 |
+[V: S2V2]  (G,, B,,) G,, | D,2 D, | (D, F,) D, | G,3 | B,2 G, | A,2 F, | G,2 G, | D,3 |
+% 9
+[V: S1V1]  G2 G | (F3/2 E/) D | c2 c | B3 | !sintro!d2 B | (A c) e | G2 F | G3 !eintro!|]
+w: Take my mo- * ments and my days; let them flow * in cease- less praise. 
+w: Take my feet, * and let them be swift and beau- * ti- ful for Thee. 
+w: Take my lips, * and let them be filled with mess- * a- ges from Thee. 
+w: Take my in- * tell- ect, and use e- very pow'r * as Thou shalt choose. 
+w: Take my heart, * it is Thine own; it shall be * Thy ro- yal throne. 
+[V: S1V2]  G2 G | (F3/2 E/) D | D2 D | D3 | (D G) =F | E2 E | D2 C | B,3 |]
+[V: S2V1]  (B, D) B, | (C3/2 B,/) A,/G,/ | F,/G,/A,/B,/ C/A,/ | G,3 | B,2 D | C2 A, | B,2 A, | G,3 |]
+[V: S2V2]  (G, B,) G, | (A,3/2 G,/) F,/E,/ | D,/E,/F,/G,/ A,/F,/ | G,3 | G,2 ^G, | A,2 C, | D,2 D, | G,,3 |]
+% 18
+W: 6.Take my love, my Lord, I pour at Thy feet its treasure store.
+W: Take myself, and I will be ever, only, all for Thee. 

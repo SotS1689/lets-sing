@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2025 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rev 1:6-7, Mt 21:9, Jer 33:14-16, Rev 19:7
+%OHTOPICS {Anticipation}, {Art and Music}, {Bride/Bridegroom}, {Christmas/Advent}, {Church on Earth (Church Militant)}, {Heaven}, {Jesus}, {Joy}, {Love}, {Peace}, {Presence}, {Salvation}
+%OHCATEGORY ADVENT
+%OHMETRICAL 8 7 8 7 8 7 8 7
+%OHCOMPLEXITY 4
+%OHCOMPOSER Smart, Henry Thomas (1813-1879)
+%OHARRANGER unknown
+%OHAUTHOR Wordsworth, Christopher (1807-1885)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Lo He Comes! Whom Every Nation
+C: Words: Christopher Wordsworth, 1865.  Music: 'Rex Gloriae' (first half) Henry Thomas Smart, 1868. 
+C: Setting: "Appendix to Hymns Ancient and Modern", 1869.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision.
+S: Music source: "Appendix to Hymns Ancient and Modern", 1869 Hymn 293.
+S: Lyrics source: "The Holy Year", 1865 Hymn 4.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: A % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] A E A B | c3/2 d/ c B | e A B c/d/ | c B c2 |
+w: 1.~Lo He comes! whom e- very na- tion, Taught of God, de- * sired to see, 
+w: 2.~See He comes! Whom kings and sa- ges, Pro- phets, pa- tri- * archs of old, 
+w: 3.~$1D$2~See the Lamb of God ap- pea- ring, God of God, from * Heav'n a- bove; 
+[V: S1V2] E B, C E | E E E E | E C F F | E E E2 |
+[V: S2V1] C B, A, G, | A,3/2 B,/ A, G, | A, A, A, A, | A, G, A,2 |
+[V: S2V2] A, G, F, E,/D,/ |C, A,, E, E, | C, F, D, C,/B,,/ | E, E, A,,2 |
+% 5
+[V: S1V1] c B c e | A G G F | B B e G | F F E2 |
+w: Filled with hope and ex- pec- ta- tion That He would their Sa- vior be. 
+w: Dis- ant climes and count- less a- ges, Wai- ted ea- ger to be- hold. 
+w: See the Hea- v'nly Bride- groom chee- ring His dear Bride with words of love! 
+[V: S1V2] E E E E | C/^D/ E E D | F G/F/ E E | E ^D E2 |
+[V: S2V1] A, G, A, B, | C B, B, B, | A, B,/A,/ G, B, | C B,/A,/ G,2 |
+[V: S2V2] A, E, A, G, | F, G,/A,/ B, B,, | ^D, B,, C, B,, | B,, B,, E,2 |
+% 9
+[V: S1V1] E3/2 F/ G B | A G F E | A B c/d/ e | d c B2 |
+w: Sing, o sing with e- xul- ta- tion, Lo! He calls * us to our home; 
+w: Sing, o sing with e- xul- ta- tion, Haste we to * our Fa- ther's home; 
+w: Glo- ry to th'E- ter- nal Fa- ther, Glo- ry to * th'In- car- nate Son 
+[V: S1V2] E3/2 E/ E F | E E D C | C E E E | E E E2 |
+[V: S2V1] G,3/2 A,/ B, =D | C B, A,/B,/ C | A, G, A,/B,/ C | G, A, G,2 |
+[V: S2V2] E,3/2 E,/ E, B,, | C,/D,/ E, F,/G,/ A, | F, E, A, C, | B,, A,, (E, D,) |
+% 13
+[V: S1V1] A E A B | c3/2 d/ c B | !sintro!e A d c | B B A2 !eintro!|]
+w: Peace, re- demp- tion, joy, sal- va- tion, Now from Heav'n to earth are come. 
+w: Peace, re- demp- tion, joy, sal- va- tion, Now from Heav'n to earth are come. 
+w: Glo- ry to the Ho- ly Spi- rit, Glo- ry to the Three in One! 
+[V: S1V2] E E E E | E A E E | E C F E | E3/2 D/ C2 |]
+[V: S2V1] A, G, A, G, | A,3/2 B,/ A, G, | A, A, A, A, | A, G, A,2 |]
+[V: S2V2] C, E,/D,/ C, B,, | A,, F, E,3/2 D,/ | C, F, D, A,, | E, E, A,,2 |]
+

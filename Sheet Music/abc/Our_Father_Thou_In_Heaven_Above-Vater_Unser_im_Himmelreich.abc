@@ -1,0 +1,153 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7300000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 6:9-13, Lk 11:2-4
+%OHTOPICS {Brotherhood [1]}, {Christmas/Advent}, {Comfort [7]}, {Courage in Affliction [7]}, {Faith [7,9]}, {Father [1]}, {Fellowship [1]}, {Forgiveness [6]}, {God, Providence of}, {Guidance}, {Heaven [1]}, {Leadership [7]}, {Obedience [4]}, {Peace [5,8]}, {Prayer}, {Security [2,3,5,7,8]}, {Service [6]}, {Temptation [7]}
+%OHCATEGORY PRAYER
+%OHMETRICAL 8 8 8 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER Luther, Martin (1483-1546)
+%OHARRANGER unknown
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR composite
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Our Father Thou in Heaven Above
+T: (also known as Our Father, Who from Heaven Above or Our Father in the Heaven Who Art)
+C: Words: Martin Luther, 1539. Translation composite. 
+C: Music: 'Vater Unser im Himmelreich' attr. Martin Luther, found in Valentin Schumann's Geistliche Lieder, Leipzig, 1539. 
+C: Setting: "Evangelical Lutheran Hymn-Book", 1931.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+S: Translation is public domain per Project Wittenberg: http://www.iclnet.org/pub/resources/text/wittenberg/hymns/ourfather.txt
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Bb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] G2 G E | F G E D | C2 G2 | G F B G | E F G2 |
+w: 1.~Our Fa- ther, Thou in heav'n a- bove, Who bid- dest us to dwell in love, 
+w: 2.~Thy name be hal- lowed. Help us, Lord, In pur- i- ty to keep Thy Word, 
+w: 3.~Thy king- dom come. Thine let it be In time and in e- ter- ni- ty. 
+w: 4.~Thy gra- cious will on earth be done As 'tis in heav'n be- fore Thy throne; 
+w: 5.~Give us this day our dai- ly bread And let us all be clothed and fed. 
+[V: S1V2]  E2 B, C | D D C =B, | C2 _E2 | D D F E | C C D2 |
+[V: S2V1]  C2 G, G, | B, B, G, G, | =E,2 C2 | B, A, D B, | _A, C =B,2 |
+[V: S2V2]  C,2 E, C, | B,, G,, C, G,, | C,2 C,2 | G,, D, B,, E, | _A,, _A,, G,,2 |
+% 5
+[V: S1V1]  G2 B c | e d c =B | c2 c2 | d c B A | G ^F G2 |
+w: As bre- thren of one fa- mi- ly, To cry in ev- 'ry need to Thee, 
+w: That to the glo- ry of Thy Name We walk be- fore Thee free from blame. 
+w: Let Thy good Spir- it e'er be nigh Our hearts with gra- ces to sup- ply. 
+w: O- be- dience in our weal and woe And pa- tience in all grief be- stow. 
+w: From war and strife be our De- fense, From fa- mine and from pes- ti- lence, 
+[V: S1V2]  E2 D F | G F E D | =E2 F2 | F F F F | D D D2 |
+[V: S2V1]  C2 B, A, | B, B, G, G, | G,2 A,2 | B, C D C | B, A, =B,2 |
+[V: S2V2]  C,2 G, F, | E, B,, C, A,, | C,2 F,2 | B,, A,, B,, F,, | G,, D, G,,2 |
+% 9
+[V: S1V1]  c2 B A | B G G F | E2 !sintro!G2 | _A G E F | E D !fermata!C2 !eintro!|]
+w: Teach us no thought- less word to say, But from our in- most heart to pray. 
+w: Let no false doc- trine us per- vert; All poor, de- lu- ded souls con- vert. 
+w: Break Sa- tan's pow'r, de- feat his rage; Pre- serve Thy Church from age to age. 
+w: Curb flesh and blood and ev- 'ry ill That sets it- self a- gainst Thy will. 
+w: That we may live in god- ly peace, Free from all care and a- va- rice. 
+[V: S1V2]  F2 F F | D E E D | E2 C2 | C =B, C C | C =B, !ferm!C2 |]
+[V: S2V1]  A,2 D C | B, B, B, B, | G,2 E,2 | F, D, C,/E,/ _A, | G,3/2 F,/ !invertedfermata!=E,2 |]
+[V: S2V2]  F,,2 B,, F, | G, E, G,, B,, | E,2 C,2 | F,, G,, _A,, F,, | C, G,, !ferm!C,2 |]
+% 17
+W:6. Forgive our sins, Lord, we implore,
+W:Remove from us their burden sore,
+W:As we their trespasses forgive
+W:Who by offenses us do grieve.
+W:Thus let us dwell in charity
+W:And serve our brother willingly.
+W:
+W:7. Into temptation lead us not.
+W:When evil foes against us plot
+W:And vex our souls on every hand,
+W:Oh, give us strength that we may stand
+W:Firm in the faith, a well-armed host,
+W:Through comfort of the Holy Ghost!
+W:
+W:8. From evil, Lord, deliver us;
+W:The times and days are perilous.
+W:Redeem us from eternal death,
+W:And when we yield our dying breath,
+W:Console us, grant us calm release,
+W:And take our souls to Thee in peace.
+W:
+W:9. Amen, that is, So shall it be.
+W:Confirm our faith and hope in Thee
+W:That we may doubt not, but believe
+W:What here we ask we shall receive.
+W:Thus in Thy name and at Thy word
+W:We say: Amen. Oh, hear us, Lord! Amen.

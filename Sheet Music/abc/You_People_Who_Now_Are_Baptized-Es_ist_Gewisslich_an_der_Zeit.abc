@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7500000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rom 6:3-11, Col 2:11-15, Num 6:27, Mt 28:19-20, Rev 3:12, Ps 51:5-10,		\n1Pt 3:21-22, Gal 3:27, Acts 2:38-39, 22:16, Mt 5:14-16
+%OHTOPICS {Atonement}, {Baptism}, {Blood [2,5]}, {Christian Life}, {Comfort}, {Eternal Life [12]}, {Faith [5]}, {Father [5,8,10]}, {Forgiveness}, {God, Mercy of}, {Gospel}, {Gratitude}, {Jesus}, {Miracles}, {Promises (see also Gospel)}, {Salvation}, {Sinners}
+%OHCATEGORY BAPTISMAL LIFE
+%OHMETRICAL 8 7 8 7 8 8 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Klug's Geistliche Lieder, Wittenberg, 1533
+%OHARRANGER Praetorius, Michael (1571-1621)
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR Dumont, Brian James (1971-)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: You People Who Now Are Baptized
+C: Words: Paul Gerhardt, 1667.  Translated by Brian J. Dumont, March 2011. 
+C: Music: 'Es ist Gewisslich an der Zeit' from Klug's Geistliche Lieder, Wittenberg, 1533. 
+C: Setting: Michael Praetorius, 1610.
+C: copyright: Words: Copyright 2011, Brian J. Dumont. These lyrics may be freely reproduced or published for  
+C: Christian worship, provided they are not altered, and this notice is on each copy. All other rights reserved.
+C: Music and Setting: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: "The Hymns of Martin Luther" by Bacon, 1883.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=130] z G G B | A G A A | B2 G2 | B c d B |
+w: 1.~You peo- ple who now are bap- tized God's gra- cious love sur- 
+w: 2.~Be- fore held in your mo- ther's arm, From your time of con- 
+w: 3.~Your soul and bo- dy turned with- in, Sin filled you like a 
+w: 4.~The ma- jes- ty that ter- ri- fies Was all God's pres- ence 
+w: 5.~Then washed clean in this ho- ly flood, The wa- ter of Bap- 
+[V: S1V2]  x D E D | F E E F | D2 E2 | D E D D |
+[V: S2V1]  z B, C B, | D B, A, A, | G,2 B,2 | B, G, A, G, |
+[V: S2V2]  x G, E, G, | D, E, C, D, | G,2 E,2 | G, E, F, G, |
+% 5
+[V: S1V1]  A2 G2 | z G G B | A G A A | B2 G2 |
+w: rounds you. By Christ's Name you're now re- cog- nized; Pon- 
+w: cep- tion, Quite hos- tile to the Law's al- arms\- Let 
+w: poi- son. Con- cern for neigh- bor pa- per- thin; God's 
+w: brought you. Your fault you could not rect- if- y; An- 
+w: ti- sm; In- stilled faith in Christ's ho- ly blood Brought 
+[V: S1V2]  D2 [B,2D2] | x D E D | F E E F | D2 E2 |
+[V: S2V1]  (G,/F,//E,// F,) (G,/A,/ B,) | z B, C B, | D B, A, A, | G,2 B,2 |
+[V: S2V2]  D,2 [G,,2G,2] | x G, E, G, | D, E, C, D, | G,2 E,2 |
+% 9
+[V: S1V1]  B c d B | A2 G2 | z B B A | G F G E | D2 z D |
+w: der what hap- pened to you: Whose work was it which fash- ioned you, Whose 
+w: there be no de- cep- tion. A sin- ner born of sin- ner's seed; Still 
+w: love was simp- ly for- eign. Then raised by God the Lord of Life To 
+w: xi- et- y con- sumed you. A slave of sin and Sa- tan held Trapped 
+w: to the Fa- ther's King- dom, Your heart re- built with- in your breast, New 
+[V: S1V2]  D E D D | D2 [B,2D2] | x D G F | E D B, C | B,2 x B, |
+[V: S2V1]  B, G, A, G, | (G,/F,//E,// F,) (G,/A,/ B,) | z B, B, C | C A, G, G, | G,2 z G, |
+[V: S2V2]  G, E, F, G, | D,2 [G,,2G,2] | x G, E, A,, | C, D, E, C, | G,2 x G,, |
+% 17
+%%newpage
+%%vskip 0.2in
+[V: S1V1]  G G G F | G A B2 | !sintro!G2 B c | d B A2 | G4 !eintro!|]
+w: in- born na- ture that He slew, When you first gained His pro- mise? 
+w: God Him- self for you would bleed, He took on flesh to save you. 
+w: glow in His e- ter- nal Light Your robe of white is gleam- ing. 
+w: in a pri- son bound for hell Death was your on- ly fu- ture. 
+w: na- ture filled with right- eous- ness, Your ev- ery sin for- giv- en! 
+[V: S1V2]  D E D D | B, E ^D2 | (B, E) D A | A G (F/E/ F) | D4 |]
+[V: S2V1]  B, C B, A, | G, E, F,2 | G, B,2 E | D D D2 | B,4 |]
+[V: S2V2]  G,, C, G,, D, | E, C, B,,2 | E,2 G, A, | F, G, D,2 | G,,4 |]
+% 20
+W: 6.It washes all your sins away
+W: And makes you pure and holy.
+W: Hell's hold on you was lost that day,
+W: God's freedom for the lowly.
+W: You are now truly God's dear child
+W: An heir of heaven undefiled
+W: With crown to cast before Him.
+W: 
+W: 7.Your nature lost in Adam's fall,
+W: Corrupt through generations,
+W: Refreshed now in the waterfall-
+W: A perfect new creation!
+W: The death of death before your eyes:
+W: God's power must be recognized.
+W: Hell's demons lie defeated!
+W: 
+W: 8.Now we can gladly draw to Christ
+W: And boldly ask His blessing
+W: Because of Jesus' sacrifice,
+W: Our sins upon Him pressing.
+W: The Father looks on us and sees
+W: Christ's holiness and His good deeds:
+W: White robes giv'n by His merit.
+W: 
+W: 9.This holy bath ... What pow'r displays!
+W: What wondrous grace-filled cleansing;
+W: None on their own can e'er appraise
+W: The value of their raising.
+W: The Word of God in simple form
+W: Can calm the tempest and the storm.
+W: It brings peace to your spirit.
+W: 
+W: 10.Plain water cannot wash our sin
+W: Nor clean our inward spirit,
+W: But water with God's promise can
+W: Bring all the Father wills it.
+W: The water that floods over you
+W: From God's command has strength imbued.
+W: His Name is placed upon you.
+W: 
+W: 11.Too precious to repay somehow,
+W: Just grateful thanks we offer.
+W: Christ's work has been delivered now
+W: To you through Word and water.
+W: Nothing but Christ's atoning work
+W: In you could kill death's ugly smirk
+W: You're now refreshed and holy.
+W: 
+W: 12.Now gladly live as God's dear child
+W: Proclaim to all His Gospel
+W: Shine to the world; be undefiled...
+W: A beacon to all people.
+W: Till called home to eternal joy
+W: With new song that we'll all employ
+W: To cast our crowns before Him.

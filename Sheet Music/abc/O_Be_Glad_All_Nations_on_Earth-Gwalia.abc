@@ -1,0 +1,132 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.680000
+%%staffsep	0.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 117, Ps 67:2-4, Rev 4:4-11, Rev 7:9-12, Rev 15:3-4
+%OHTOPICS {Angels [1-3]}, {Anticipation}, {Church in Heaven (Church Victorious/Church Triumphant)}, {Crown}, {God, As King}, {God, Eternity of}, {God, Justness of [2]}, {God, Majesty &amp; Power of}, {God's Children - the Faithful (see also Saints, People of the World)}, {Jesus}, {Joy}, {Light [3]}, {Praise, Son}, {Presence}, {Shepherd/Lamb [3]}, {Victory}, {Worship}
+%OHCATEGORY REDEEMER
+%OHMETRICAL 8 7 8 7 8 7 8 7
+%OHCOMPLEXITY 4
+%OHCOMPOSER Welsh
+%OHARRANGER Evans, David (1874-1948)
+%OHAUTHOR Penney, Brian L. (1951-)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: O Be Glad All Nations on Earth
+C: Words: Brian L. Penney, 2009. 
+C: Music: 'Gwalia' Welsh hymn tune, traditional. Setting: David Evans, "Revised Church Hymnary", 1927. 
+S: David Evans, (1874-1948) Setting from the Revised Church Hymnary, 1927, Oxford University Press
+C: copyright: Words: Copyright 2009, Brian L. Penney. These lyrics may be freely reproduced or published for Christian 
+C: worship, provided they are not altered, and this notice is on each copy. All other rights reserved.
+C: Music and Setting: public domain per CCEH.  This score is a part of the Open Hymnal Project, 2009 Revision.
+S: Setting close, but slightly different from "Hymns of the Kingdom" 1923 Hymn 143
+M: 3/2 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=230] A4 B2 |(3::2(c2B  A2) G2 | F4 G2 |(3::2(A2G)  A4 | (B2 A2) G2 |(3::2(c2B  A2) G2 | F4 E2 | F6 |
+w: 1.~O be glad, * * all na- tions on * Earth, Come * let Je- * * sus' Name be praised; 
+w: 2.~Great and mar- * * vel- ous are Your * works, Just * and true * * are all Your ways; 
+w: 3.~When shall Heav'n * * and Earth to- geth- * er, Walk * be- fore * * the Lamb, its Light? 
+w: 4.~Lo, that day * * shall come with glo- * ry, When * Christ comes * * with trum- pet sound; 
+[V: S1V2]  F4 F2 | (G2 F2) E2 | D4 E2 | (3::2(F2E)  F4 | F4 F2 | (F3 E) D2 | C4 C2 | C6 |
+[V: S2V1]  C4 B,2 | (G,2 C2) B,2 | A,4 C2 | C2 C4 | D4 D2 | (C2 F,2) B,2 | (A,2 G,2) (C B,) | A,6 |
+[V: S2V2]  F,4 D,2 | (E,2 F,2) C,2 | D,4 C,2 | F,2 F,4 | B,,4 B,,2 | (A,,2 D,2) B,,2 | C,4 C,2 | F,6 |
+% 9
+[V: S1V1]  A4 B2 |(3::2(c2B  A2) G2 | F4 G2 | (3::2(A2G)  A4 | (B2 A2) G2 |(3::2(c2B  A2) G2 | F4 E2 | F6 |
+w: He is crowned, * * the King of glo- * ry, At * God's right * * hand He is raised. 
+w: All the na- * * tions bow in wor- * ship, King * of kings, * * Your Name they praise. 
+w: When shall all * * the saints be ga- * thered, and * that Day * * shall end the night? 
+w: Then the saints * * will cease their groan- * ing, Nev- * er more * * by death's chains bound. 
+[V: S1V2]  F4 F2 | (G2 F2) E2 | D4 E2 | (3::2(F2E)  F4 | F4 F2 | (F3 E) D2 | C4 C2 | C6 |
+[V: S2V1]  C4 B,2 | (G,2 C2) B,2 | A,4 C2 | C2 C4 | D4 D2 | (C2 F,2) B,2 | (A,2 G,2) (C B,) | A,6 |
+[V: S2V2]  F,4 D,2 | (E,2 F,2) C,2 | D,4 C,2 | F,2 F,4 | B,,4 B,,2 | (A,,2 D,2) B,,2 | C,4 C,2 | F,6 |
+% 17
+[V: S1V1]  c4(3::2c2A  | c4(3cd_e  |(3::2(d2c  B2) A2 | A2 G4 | c4(3::2c2A  | c4(3cd_e  |(3::2(d2c  B2) A2 | G6 |
+w: An- gels * bow- ing * * down * * be- fore Him, Sing- ing * with the * * heav'n- * * ly throng; 
+w: An- gels * bow- ing * * down * * be- fore Him, Sing- ing * with the * * heav'n- * * ly throng; 
+w: An- gels * bow- ing * * down * * be- fore Him, Sing- ing * with the * * heav'n- * * ly throng; 
+w: Let us * all bow * * down * * be- fore Him, Sing, O * sing th'e- * * ter- * * nal song;
+[V: S1V2]  F4 F2 | G4 F2 | F4 F2 | F2 E4 | E4 F2 | G4 F2 | (F3 E) F2 | E6 |
+[V: S2V1]  C4(3::2A,2C  | (C3 B,) A,2 |(3::2(B,2C  D2) D2 | C2 C4 | C4(3::2A,2C  | (C3 B,) A,2 | B,4 C2 | C6 |
+[V: S2V2]  A,4 F,2 | E,4 F,2 | B,,4 =B,,2 | C,2 C,4 | A,4 F,2 | C,4 F,2 |(3::2B,2A,  G,2 F,2 | C,6 |
+% 25
+[V: S1V1]  A4 B2 |(3::2(c2B  A2) G2 | F4 G2 | (3::2(A2G)  A4 | !sintro!(B2 A2) G2 |(3::2(c2B  A2) G2 | F4 E2 | F6 !eintro!|]
+w: El- ders cast- * * ing crowns be- fore * Him, Sing- * ing an * * e- ter- nal song. 
+w: El- ders cast- * * ing crowns be- fore * Him, Sing- * ing an * * e- ter- nal song. 
+w: El- ders cast- * * ing crowns be- fore * Him, Sing- * ing an * * e- ter- nal song. 
+w: Work in hope * * un- til we meet * Him, And * we join * * the heav'n- ly throng. 
+[V: S1V2]  F4 F2 | (G2 F2) E2 | D4 D2 | D2 ^C4 | D4 (D E) | (F3 E) D2 | C4 C2 | C6 |]
+[V: S2V1]  C4 B,2 | (G,2 C2) B,2 | A,4 D,2 | F,2 E,4 | (E,2 F,2) G,2 |(3::2(A,2B,  C2) B,2 | (A,2 G,2) (C B,) | A,6 |]
+[V: S2V2]  F,4 D,2 | (E,2 F,2) C,2 | D,4 B,,2 | A,,2 A,,4 | (G,,2 A,,2) B,,2 | (A,,2 F,,2) B,,2 | C,4 C,2 | [F,,6F,6] |]

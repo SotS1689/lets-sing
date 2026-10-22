@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.6400000
+%%staffsep	0.000cm
+%%sysstaffsep   0.0cm
+%%vocalspace    0.0cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 6:7-13, Ps 31:1-3, Eph 6:10-17, Ps 55:22, Is 46:4
+%OHTOPICS {Aspiration}, {Christian Life}, {Faith}, {Father [1]}, {Following Jesus, In Faith}, {Following Jesus, Sanctification}, {God, Care of}, {Guidance}, {Invitation (Faithful's to God)}, {Jesus [2]}, {Leadership}, {Loyalty}, {Obedience}, {Salvation}, {Security}, {Temptation}, {Trinity}, {Trust}, {Victory}
+%OHCATEGORY TRINITY
+%OHMETRICAL 7 7 7 7 7 7 7 7 7 7 7 7 7 7
+%OHCOMPLEXITY 3
+%OHCOMPOSER from Walter's Geistliche Gesangbüchlein, 1524
+%OHARRANGER Moritz von Hessen, Landgraf (1572-1627);unknown
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR Massie, Richard (1800-1887)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: God the Father Be Our Stay
+T: (also known as God the Father With Us Stay or God the Father With Us Be)
+C: Words: 15th Century Litany, adapted by Martin Luther, 1524.  Translated by Richard Massie, 1854, alt. 
+C: Music: 'Gott Der Vater, Wohn Uns Bei' from Walter's Geistliche Gesangbüchlein, 1524.
+C: Setting: composite from Landgraf Moritz, 1612 and "Evangelical Lutheran Hymn-Book", 1931.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: D % key signature
+M: none
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] A A B c | d d c B | d A F G | (F E) D2 |
+w: 1.~God the Fa- ther, be our Stay, When hell's dread pow'rs as- sail * us; 
+w: 2.~Je- sus Christ be Thou our Stay,  *  *  *  *  * *  *  * 
+w: 3.~Ho- ly Ghost, be Thou our Stay,  *  *  *  *  * *  *  * 
+w: 1(alt).~Tri- une God, be Thou our Stay,  *  *  *  *  * *  *  * 
+[V: S1V2]  F F F A | D B, C E | F F D D | (D C) D2 |
+[V: S2V1]  D D D C | B, F, A, G, | F, F, A, B, | A,2 F,2 |
+[V: S2V2]  D, D, B,, A,, | G,, B,, A,, E, | B,, D, D, G,, | A,,2 D,2 |
+% 5
+[V: S1V1]  A A B c | d d c B | d A F G | (F E) D2 | D E F F |
+w: Cleanse us from our sins, we pray, Nor in our last hour fail * us. Keep us from the 
+[V: S1V2]  F F F A | D B, C E | F F D D | (D C) D2 | A, A, A, B, |
+[V: S2V1]  D D D C | B, F, A, G, | F, F, A, B, | A,2 F,2 | F, E, D, D, |
+[V: S2V2]  D, D, B,, A,, | G,, B,, A,, E, | B,, D, D, G,, | A,,2 D,2 | D, C, D, B,, |
+% 9
+[V: S1V1]  D E F3/2 d/ c d | e3/2 d/ (c B) A3/2 D/ | A d c A | (B3/4A// G) F3/2
+w: E- vil One; Firm in the faith a- bid- * ing, In Christ our Sa- vior hid- * * ing, 
+[V: S1V2]  B, C D3/2 F/ A A | G3/2 D/ E2 C3/2 A,/ | D F F C | E2 ^D3/2
+[V: S2V1]  F, A, A,3/2 D/ E F | B, B, (A, ^G,) A,3/2 F,/ | F, B, A, F, | B,2 B,3/2
+[V: S2V2]  B,, A,, D,3/2 D,/ A, F, | E,3/2 B,,/ (C, E,) A,,3/2 D,/ | D, B,, F, F, | E,2 B,,3/2
+% 13
+[V: S1V1]  E/ F F | A3/2 G/ (F E) | D2 z | D E F F | D E F3/2 d/ c d | e3/2 d/
+w: And heart- i- ly con- fid- * ing. Let us put God's ar- mor on: With all true Christ- ians 
+[V: S1V2]  B,/ =D D | C3/2 E/ (D C) | A,2 x | B, B, D A, | B, B, D3/2 A/ A F | G3/4A// B
+[V: S2V1]  G,/ A, B, | E,3/2 G,/ (B, E,) | F,2 z | F, G, A, F, | F, G, A,3/2 F/ E D | B, B,
+[V: S2V2]  E,/ D, B,, | A,,3/2 E,/ (B,, C,) | D,2 x | B,, E, D, D, | B,, E, D,3/2 D,/ A, B, | E,3/2 G,/
+% 17
+[V: S1V1]  (c B) A3/2 D/ | A d c A | (B3/4A// G) F3/2 E/ F F | A3/2 G/ (F E) | D2
+w: run- * ning Our heav'n- ly race and shun- * * ning The de- vil's wiles and cun- * ning. 
+[V: S1V2]  (A3/2 ^G/) E3/2 D/ | F D A, D | (E C) D3/2 C/ D D | C A, A,2 | A,2
+[V: S2V1]  C2 C3/2 F,/ | A, B, C D | (B, E) A,3/2 A,/ A, B, | A, D2 C | D2
+[V: S2V2]  (A, E,) A,,3/2 D,/ | D, B,, F, F, | E,2 D,3/2 A,,/ D, B,, | F,,3/2 G,,/ A,,2 | D,2
+% 25
+[V: S1V1]  z | D E F F | D E F3/2 !sintro!G/ A3/2 G/ | F G (F E) | D4 !eintro!|]
+w: A- men, A- men, this be done, So sing we, Hal- le- lu- * jah! 
+[V: S1V2]  x | A, A, A, B, | B, C D3/2 B,/ A, A, | A, B, (A, A,) | A,4 |]
+[V: S2V1]  z | F, A, F, D, | F, A, A,3/2 E/ C C | D D (D C) | F,4 |]
+[V: S2V2]  x | D, C, D, B,, | B,, A,, D,3/2 E,/ F,3/2 E,/ | D, G,, (D, A,,) | D,4 |]
+% 28

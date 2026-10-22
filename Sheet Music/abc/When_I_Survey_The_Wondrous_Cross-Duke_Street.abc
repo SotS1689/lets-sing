@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (brian 
+% dot j dot dumont at gmail dot com).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2014 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	0.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Gal 6:14, Rom 7:24
+%OHTOPICS {Atonement}, {Blood [2,4]}, {Conscience}, {Contrition}, {Cross}, {Crown [3]}, {Easter Week / Passion}, {Gratitude}, {Inner Life}, {Jesus}, {Pride (see also Humility) [1]}, {Repentance}, {Reverence}, {Sacrifice}, {Submission (see also Following Jesus, God - Providence of, Trust)}
+%OHCATEGORY LENT
+%OHMETRICAL 8 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER Hatton, John (1710-1793)
+%OHARRANGER unknown
+%OHAUTHOR Watts, Isaac (1674-1748)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X:1
+T: When I Survey the Wondrous Cross
+C: Words: Isaac Watts, 1707.
+C: Music: 'Duke Street' John Hatton, 1793.  Setting: "Finest of the Wheat No. 3" Hymnal, 1904.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2014 Revision.
+S: Music source: "Finest of the Wheat No. 3" Hymnal, 1904 Hymn 257.  ABC file contributed to the Open Hymnal by Tobin Strong, 20 Dec 2013.
+S: composite from "The Anglican hymn Book", 1871 hymn 127 and "Hymns Ancient and Modern", 1869 Hymn 101.
+M: 4/4
+L: 1/4
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=130] E2 G A | B2 (c d) | e2 (d c) | B4 | 
+w: 1.~When I sur- vey the * won- drous * cross 
+w: 2.~For- bid it, Lord, that * I should * boast, 
+w: 3.~See from His head, His * hands, His * feet, 
+w: 4.~His dy- ing crim- son, * like a * robe, 
+w: 5.~Were the whole realm of * na- ture * mine, 
+[V: S1V2] E2 E D | E2 (E F) | G2 (F E) | D4 | 
+[V: S2V1] G,2 B, B, | B,2 A,2 | (G, B,) (B, =A,) | B,4 |
+[V: S2V2] E,2 E, F, | G,2 (A, F,) | E,2 F,2 | B,,4 |
+% 5
+[V: S1V1] B2 B B | c2 B2 | A2 G2 | F4 | 
+w: On which the Prince of Glo- ry died, 
+w: Save in the death of Christ my God! 
+w: Sor- row and love flow min- gled down! 
+w: Spreads o'er His bo- dy on the tree; 
+w: That were a pre- sent far too small; 
+[V: S1V2] E2 E E | E2 (E B,) | (C D) E2 | D4 | 
+[V: S2V1] G,2 G, B, | A,2 (B, G,) | A,2 B,2 | B,4 | 
+[V: S2V2] E,2 E, G, | A,2 G,2 | F,2 E,2 | B,,4 | 
+% 9
+[V: S1V1] G2 G F | (E G) (B e) | (c B) (A G) | F4 | 
+w: My rich-est gain * I * count * but * loss, 
+w: All the vain things * that * charm * me * most, 
+w: Did e'er such love * and * sor- * row * meet, 
+w: Then I am dead * to * all * the * globe, 
+w: Love so a- ma- * zing, * so * di- * vine, 
+[V: S1V2] E2 E B, | (B, E) E2 | E2 (D E) | D4 | 
+[V: S2V1] B,2 B, B, | (G, B,) B,2 | (C E) B,2 | B,4 | 
+[V: S2V2] E,2 E, D, | E,2 G,2 | (A, G,) (F, E,) | B,,4 | 
+% 13
+[V: S1V1] !sintro!B2 cd | e3 A | G2 F2 | E4 !eintro!|]
+w: And pour con- tempt on all my pride.
+w: I sac- ri- fice them to His blood. 
+w: Or thorns com- pose so rich a crown? 
+w: And all the globe is dead to me. 
+w: De- mands my soul, my life, my all. 
+[V: S1V2] E2 E F | (G> F E) F | E2 D2 | E4 |]
+[V: S2V1] B,2 A, A, | (G,> A, B,) C | B,2 A,2 | G,4 |]
+[V: S2V2] G,2 A, F, | (E,> F, G,) A, | B,2 B,,2 | E,4 |]
+

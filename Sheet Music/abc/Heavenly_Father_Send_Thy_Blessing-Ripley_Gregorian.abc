@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 11:13, Mt 19:13-15, Mt 21:15-16, Mt 11:25-26, Mt 18:1-6, 
+%OHTOPICS {Children (see also God's Children - the Faithful)}, {Christian Life}, {Consecration}, {Discipleship}, {Following Jesus, Sanctification}, {God, Care of}, {God's Children - the Faithful (see also Saints, People of the World)}, {Guidance}, {Holiness}, {Invitation (Faithful's to God)}
+%OHCATEGORY CONSECRATION
+%OHMETRICAL 8 7 8 7 8 7 8 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Gregorian Chant
+%OHARRANGER Mason, Lowell (1792-1872)
+%OHAUTHOR Wordsworth, Christopher (1807-1885)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Heavenly Father Send Thy Blessing
+C: Words: Christopher Wordsworth, 1863.
+C: Music: 'Ripley (Gregorian)' from a Gregorian Chant.  Setting: Lowell Mason, 1839.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.
+S: Music and Lyrics source: "The Lutheran Hymnary", 1913 Hymn 578
+M: 3/2 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] E G | B3 G A c | B2 G2 B E | A G F2 F2 | E4 
+w: 1.~Heav'n- ly Fa- ther, send Thy bles- sing On Thy chil- dren ga- thered here, 
+w: 2.~Ho- ly Sa- vior, who in meek- ness Didst vouch- safe a child to be, 
+w: 3.~Spread Thy gol- den pi- nions o'er them, Ho- ly Spi- rit, from a- bove, 
+[V: S1V2]  E E | G3 E E A | G2 E2 E B, | C/D/ E E2 D2 | E4 
+[V: S2V1]  G, B, | E3 B, C E | E2 B,2 B, G, | A, B, C2 (B, A,) | G,4 
+[V: S2V2]  E, E, | E,3 _D, C, A,, | E,2 E,2 G, G, | F, E, A,,2 B,,2 | E,4 
+% 6
+[V: S1V1]  E G | B3 G A c | B2 G2 B E | A G F2 F2 | E4 
+w: May they all, Thy Name con- fes- sing, Be to Thee fo- re- ver dear; 
+w: Guide their steps, and help their weak- ness, Bless and make them like to Thee; 
+w: Guide them, lead them, go be- fore them, Give them peace, and joy, and love; 
+[V: S1V2]  E E | G3 E E A | G2 E2 E B, | C/D/ E E2 D2 | E4 
+[V: S2V1]  G, B, | E3 B, C E | E2 B,2 B, G, | A, B, C2 (B, A,) | G,4 
+[V: S2V2]  E, E, | E,3 _D, C, A,, | E,2 E,2 G, G, | F, E, A,,2 B,,2 | E,4 
+% 9
+[V: S1V1]  e d | e3 B c c | B2 B2 e d | e3 B c c | B4 
+w: May they be, like Jo- seph, lo- ving, Du- ti- ful, and chaste, and pure; 
+w: Bear Thy lambs, when they are wea- ry, In Thine arms and at Thy breast; 
+w: Thy true tem- ples, Ho- ly Spi- rit, May they with Thy glo- ry shine, 
+[V: S1V2]  G A | B3 G A A | G2 G2 G A | B3 G A A | G4 
+[V: S2V1]  B, B, | B,3 E E E | E2 B,2 B, B, | B,3 E E E | E4 
+[V: S2V2]  E, F, | G,3 E, A,, C, | E,2 E,2 E, F, | G,3 E, A,, C, | E,4 
+% 13
+[V: S1V1]  !sintro!E G | B3 G A c | B2 G2 B E | A B F2 F2 | E4!eintro!|]
+w: And their faith, like Da- vid, pro- ving, Stead- fast un- to death en- dure. 
+w: Through life's de- sert, dry and drea- ry, Bring them to Thy heav'n- ly rest. 
+w: And im- mor- tal bliss in- he- rit, And for e- ver- more be Thine. 
+[V: S1V2]  E E | G3 E E A | G2 E2 E B, | C/D/ E E2 D2 | E4 |]
+[V: S2V1]  G, B, | E3 B, C E | E2 B,2 B, G, | A, B, C2 (B, A,) | G,4 |]
+[V: S2V2]  E, E, | E,3 _D, C, A,, | E,2 E,2 G, G, | F, E, A,,2 B,,2 | E,4 |]
+% 18
+

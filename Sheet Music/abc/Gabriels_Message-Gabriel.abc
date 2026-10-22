@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2005 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 1:26-38, 1:42-48
+%OHTOPICS {Angels}, {Christmas/Advent}, {Fire [1]}
+%OHCATEGORY ADVENT
+%OHMETRICAL 10 10 12 7 3
+%OHCOMPLEXITY 1
+%OHCOMPOSER Basque
+%OHARRANGER Pettman, Edgar (1866 - 1943)
+%OHAUTHOR Basque
+%OHTRANSLATOR Gould, Sabine Baring (1834-1924)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Gabriel's Message
+T: (also known as The Angel Gabriel From Heaven Came)
+C: Words: Traditional Basque Carol; Paraphrased by Sabine Baring Gould, (1834-1924). 
+C: Music: 'Gabriel`s Message' Traditional Basque Carol.  Setting: Edgar Pettman, 1922.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2005 Revision.
+S: Music source: Public domain representation in another format by Andrew Crookall at 'http://www.andrewcrookall.com/editions.htm', 24 June 2005.
+M: 3/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=200] E | A2 c | B2 d | c2 B | A3 | B3 | E3- | E2
+w: 1.~The an- gel Ga- bri- el from hea- ven came, * 
+w: 2.~"For know a bless- ed Mo- ther thou shalt be, * 
+w: 3.~Then gen- tle Ma- ry meek- ly bowed her head, * 
+w: 4.~Of her, Em- man- u- el, the Christ was born * 
+[V: S1V2]  E | C2 E | D2 F | E2 D | E3 | F3 | D3- | D2
+[V: S2V1]  E, | E,2 E, | E,2 E, | E,2 E, | C3 | D3 | B,3- | B,2
+[V: S2V2]  E, | A,,2 A,, | A,,2 A,, | A,,2 A,, | A,3 | A,3 | (A,3 | ^G,2)
+% 9
+[V: S1V1]  E | A2 c | B2 d | c2 B | A3- | A2 G | A3- | A2
+w:  his wings as drift- ed snow, his eyes  * as flame;  * 
+w:  all gen- er- a- tions laud and ho-  * nor thee,  * 
+w:  "To me be as it pleas- eth God,"  * she said,  * 
+w:  in Beth- le- hem, all on a Christ-  * mas morn,  * 
+[V: S1V2]  D | C2 E | D2 F | E2 F | E3- | E3 | E3- | E2
+[V: S2V1]  B, | A,2 A, | A,2 A, | A,2 B, | (C3 | B,3) | C3- | C2
+[V: S2V2]  =G, | A,2 A,, | A,,2 A,, | A,,2 D, | (C,3 | E,3) | A,3- | A,2
+% 17
+[V: S1V1]  c | c2 d | c2 B | c2 d | e2 e | (d3 | c3) | (B3 | B2)
+w: "All hail," said he, "thou low- ly mai- den, Ma- * ry, * 
+w: thy Son shall be Em- ma- nu- el, by seers fore- told,  * 
+w: "my soul shall laud and mag- ni- fy His ho- ly Name."  * 
+w: and Christ- ian folk through- out the world will ev- er say  * 
+[V: S1V2]  E | E2 F | E2 F | G2 F | E2 E | (A3 | A3) | (A3 | G2)
+[V: S2V1]  C | C2 G, | G,2 D | C2 B, | C2 C | (A,3 | D3) | D3- | D2
+[V: S2V2]  C, | C,2 B,, | C,2 D, | E,2 D, | C,2 C, | (F,3 | ^F,3) | G,3- | G,2
+% 25
+[V: S1V1]  c | d2 c | B2 A | B3 | E3 | !sintro!(A3 | c B c | A3 | A2) G | A3- | A3 !eintro!|]
+w: most high- ly fa- vored la- dy," Glo- * * * * * ri- a!  * 
+[V: S1V2]  G | D2 D | D2 D | D3 | D3 | (C3 | F3 | E3) | E3 | C3- | C3 |]
+[V: S2V1]  C | A,2 A, | A,2 A, | A,3 | ^G,3 | (A,3- | A,3 | C3) | B,3 | A,3- | A,3 |]
+[V: S2V2]  E, | F,2 F, | F,2 F, | E,3 | E,3 | (F,3 | D,3 | C,3) | E,3 | [A,,3-E,3-] | [A,,3E,3] |]
+% 35

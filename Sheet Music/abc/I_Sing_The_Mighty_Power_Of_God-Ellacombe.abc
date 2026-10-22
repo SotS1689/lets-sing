@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2014 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Jer 10:10-13, Deut 32:3, Ps 96:1-8
+%OHTOPICS {God, Creator}, {God, Goodness of}, {Nature}, {Praise, Father}, {Worship}
+%OHCATEGORY PRAISE
+%OHMETRICAL 8 6 8 6 8 6 8 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Gesangbuch der Herzogl. Hofkapelle, Wurttemberg, 1784
+%OHARRANGER unknown
+%OHAUTHOR Watts, Isaac (1674-1748)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X:1
+T: I Sing the Mighty Power of God
+C: Words: Isaac Watts, 1709.
+C: Music: 'Ellacombe' from Gesangbuch der Herzogl. Hofkapelle, Wurttemberg, 1784. Setting: "Amore Dei", 1897.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2014 Revision.
+S: Music and Lyrics source: Hymnal "Amore Dei" (published 1897)  Hymn 115.  ABC file contributed to the Open Hymnal by Tobin Strong, 09 Jan 2014.
+M: 4/4
+L: 1/4
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Bb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=130] F | B A/G/ F B | D E F F | G/A/ B c c | d3
+w: 1.~I sing the * migh- ty pow'r of God, That made * the moun- tains rise; 
+w: 2.~I sing the * good- ness of the Lord, That filled * the earth with food: 
+w: 3.~There's not a * plant or flow'r be- low, But makes * Thy glo- ries known; 
+[V: S1V2] F | B A/G/ F F | D C/B,/ C D | E F G F | F3
+[V: S2V1] F, | B, A,/G,/ F, B, | B, B, A, B, | B, B, B, A, | B,3
+[V: S2V2] F, | B, A,/G,/ F, D, | G, G, F, B,, | E, D, E, F, | B,,3
+% 5
+[V: S1V1] F | B A/G/ F B | D E F F | G/A/ B B A | B3
+w: That spread the * flow- ing seas a- broad, And built * the lof- ty skies. 
+w: He formed the * crea- tures with His word, And then * pro- nounced them good. 
+w: And clouds a- * rise and tem- pests blow, By or- * der from Thy throne. 
+[V: S1V2] F | B A/G/ F F | D C/B,/ C D | E D/E/ F F | F3
+[V: S2V1] F, | B, A,/G,/ F, B, | B, B, A, B, | B, B, C C | D3
+[V: S2V2] F, | B, A,/G,/ F, D, | G, G, F, B,, | E, G, F, F, | B,,3
+% 9
+[V: S1V1] B/c/ | d c d e | c A/B/ c B/c/ | d c d e | c3
+w: I * sing the wis- dom that or- * dained The * sun to rule the day: 
+w: Lord, * how Thy won- ders are dis- * played, Wher- * e'er I turn my eye; 
+w: Crea- * tures that bor- row life from * Thee Are * sub- ject to Thy care: 
+[V: S1V2] D/E/ | F F F G | F F F D/E/ | F F F G | F3
+[V: S2V1] B, | B, C B, B, | A, F,/G,/ A, B, | B, C B, B, | A,3
+[V: S2V2] B, | B, A, B, E, | F, F, F, B, | B, A, B, E, | F,3
+% 13
+[V: S1V1] F | B A/G/ F B | D E F !sintro!F | G/A/ B B A | B3 !eintro!|]
+w: The moon shines * full at His com- mand, And all * the stars o- bey. 
+w: If I sur- * vey the ground I tread, Or gaze * up- on the sky. 
+w: There's not a * place where we can flee, But God * is pre- sent there. 
+[V: S1V2] F | B A/G/ F F | D C/B,/ C D | E D/E/ F F | F3 |]
+[V: S2V1] F, | B, A,/G,/ F, B, | B, B, A, B, | B, B, C C | D3 |]
+[V: S2V2] F, | B, A,/G,/ F, D, | G, G, F, B,, | E, G, F, F, | B,,3 |]

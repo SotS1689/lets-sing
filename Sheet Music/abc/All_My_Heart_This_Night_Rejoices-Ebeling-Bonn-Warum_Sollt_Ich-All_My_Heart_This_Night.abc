@@ -1,0 +1,145 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2013 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.720000
+%%staffsep	0.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 2:8-15, Is 7:14, 9:2-7, Gal 4:4, Heb 2:14-17
+%OHTOPICS {Angels [1]}, {Christmas/Advent}, {Compassion}, {Father [3]}, {God, Care of}, {God, Goodness of}, {God, Love of}, {God, Mercy of}, {Gospel}, {Grace}, {Healing [7]}, {Jesus}, {Joy}, {Kindness, God's}, {Love}, {People of the World}, {Presence}, {Salvation}, {Sinners [7]}, {Worship}
+%OHCATEGORY CHRISTMAS
+%OHMETRICAL 8 3 3 6 8 3 3 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER Ebeling, Johann Georg (1637-1676)
+%OHARRANGER unknown
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR Winkworth, Catherine (1827-1878)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: All My Heart This Night Rejoices
+T: (also known as All My Heart Again Rejoices)
+C: Words: Paul Gerhardt, 1656. Translated by Catherine Winkworth, 1858.
+C: Music: 'Ebeling' or 'Bonn' or 'Warum Sollt Ich' or 'All My Heart This Night' Johann Georg Ebeling, 1666. 
+C: Setting: "Chorale Book For England", 1863.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2013 Revision.
+S: Music source: "The Chorale book for England" 1863 Hymn 31.  Lyric source: Lyra Germanica, 1872 Hymn I. page 13
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] G2 A2 | B3 A | B d e2 | d4 | d e c2 | c d B2 |
+w: 1.~All my heart this night re- joi- ces, As I hear, Far and near, 
+w: 2.~For it dawns,\- the pro- mised mor- row Of His birth Who the earth 
+w: 3.~Yea, so tru- ly for us car- eth, That His Son All we've done 
+w: 4.~Hark! a voice from yon- der man- ger, Soft and sweet, Doth en- treat, 
+w: 5.~Come then, let us has- ten yon- der; Here let all, Great and small, 
+[V: S1V2] D2 F2 | G3 A | G G G2 | G4 | G B A2 | E A G2 |
+[V: S2V1] B,2 D2 | D3 D | D D C2 | D4 | D B, E2 | C A, D2 |
+[V: S2V2] G,2 D,2 | G,3 F, | G, B, C2 B,4 | B, G, A,2 | A, F, G,2 |
+% 7
+[V: S1V1] B d c B | A2 G2 | d2 c2 | B3 A | G F
+w: Sweet- est an- gel voi- ces; "Christ is born," their choirs are 
+w: Res- cues from her sor- row. God to wear our form de- 
+w: As our off'r- ing bear- eth; As our Lamb who, dy- ing 
+w: "Flee from woe and dan- ger; Breth- ren come, from all doth 
+w: Kneel in awe and won- der. Love Him who with love is 
+[V: S1V2] G G G G | F2 G2 | D2 (E F) | G3 A | D D
+[V: S2V1] D B, C D | D2 B,2 | B,2 C2 | D3 D | B, A,
+[V: S2V2] G, G, E, G, | D,2 G,2 | B,2 A,2 | G,3 F, | G, D,
+% 2
+[V: S1V1] E2 | D4 | !sintro!d e c2 | c d B2 | B A c B | A2 G2 !eintro!|]
+w: sing- ing, Till the air Ev'r- y- where Now with joy is ring- ing. 
+w: scen- deth, Of His grace To our race Here His Son He lend- eth: 
+w: for us, Bears our load, And to God Doth in peace re- store us. 
+w: grieve you You are freed, All you need I will sure- ly give you." 
+w: yearn- ing; Hail the Star That from far Bright with hope is burn- ing! 
+[V: S1V2] (D ^C) | D4 | A B A2 | G A G2 | G F G G | (G F) G2 |]
+[V: S2V1] A,2 | F,4 | D B, E2 | C A, D2 | D D E D | D2 B,2 |]
+[V: S2V2] A,,2 | D,4 | F, G, A,2 | E, F, G,2 | G, D, C, G, | D,2 G,2 |]
+W: 6. Ye who pine in weary sadness, Weep no more, For the door 
+W: Now is found of gladness. Cling to Him for He will guide you 
+W: Where no cross, Pain or loss, Can again betide you. 
+W: 
+W: 7. Hither come, ye heavy\- hearted, Who for sin Deep within, 
+W: Long and sore have smarted; For the poison'd wounds you're feeling 
+W: Help is near, One is here Mighty for their healing! 
+W: 
+W: 8. Hither come, ye poor and wretched; Know His will Is to fill 
+W: Every hand outstretched; Here are riches without measure, 
+W: Here forget All regret, Fill your hearts with treasure. 
+W: 
+W: 9. Blessed Savior, let me find Thee! Keep Thou me Close to Thee, 
+W: Cast me not behind Thee! Life of life, my heart Thou stillest, 
+W: Calm I rest On Thy breast, All this void Thou fillest. 
+W: 
+W: 10. Thee, dear Lord, with heed I'll cherish, Live to Thee, And with Thee 
+W: Dying, shall not perish; But shall dwell with Thee for ever, 
+W: Far on high In the joy That can alter never. 

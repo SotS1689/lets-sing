@@ -1,0 +1,138 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.700000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 53:1-6, Lk 4:17-21, 6:39-49, Ps 14:1-7, Ps 118:4-6
+%OHTOPICS {Anticipation [6]}, {Charity (see also Tithing) [4,5]}, {Duty (see also Law)}, {Following Jesus, In Action}, {Israel [6]}, {Jesus [6]}, {Law}, {Morality (see also Law)}, {Obedience}, {Salvation [6]}, {Service}, {Sinners}, {Social Justice}, {Testimony}
+%OHCATEGORY REFORMATION
+%OHMETRICAL 8 7 8 7 8 8 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Walter's Geistliche Gesangbüchlein, 1524
+%OHARRANGER Praetorius, Michael (1571-1621)
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR Massie, Richard (1800-1887)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: The Mouth of Fools Doth God Confess
+T: (also known as Although the Fools Say with Their Mouth)
+C: Words: Martin Luther, 1524.  Translated by Richard Massie, 1854, alt. 
+C: Music: 'Es spricht der Unweisen Mund' from Walter's Geistliche Gesangbüchlein, 1524.  Setting: Michael Praetorius, 1610.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] G2 G E | D G A B | G2 z G | G A B c | A2 G2 |
+w: 1.~The mouth of fools doth God con- fess, But while their lips draw nigh Him, 
+w: 2.~The Lord looked down from his high tow'r On all man- kind be- low Him, 
+w: 3.~But none there was who walked with God, For all a- side had slid- den, 
+w: 4.~How long, by fol- ly blind- ly led, Will ye op- press the need- y, 
+w: 5.~There- fore their heart is ne- ver still, A fall- ing leaf dis- mays them; 
+[V: S1V2]  B,2 B, A, | B, B, D D | E2 x D | E E D E | D2 B,2 |
+[V: S2V1]  D,2 D, E, | F, G, F, G, | G,2 z B, | B, E, F, A, | F,2 G,2 |
+[V: S2V2]  G,,2 G,, C, | B,, E, D, G,, | C,2 x G, | E, C, B,, A,, | D,2 G,,2 |
+% 5
+[V: S1V1]  G2 G E | D G A B | G2 z G | G A B c | A2 G2 |
+w: Their heart is full of wick- ed- ness, And all their deeds de- ny Him. 
+w: To see if an- y owned His pow'r, And tru- ly sought to know Him; 
+w: De- lu- sive paths of fol- ly trod, And fo- llowed lusts for- bid- den; 
+w: And eat my peo- ple up like bread? So fierce are ye, and greed- y! 
+w: God is with him who doth His will, Who trusts him and o- beys Him; 
+[V: S1V2]  B,2 B, A, | B, B, D D | E2 x D | E E D E | D2 B,2 |
+[V: S2V1]  D,2 D, E, | F, G, F, G, | G,2 z B, | B, E, F, A, | F,2 G,2 |
+[V: S2V2]  G,,2 G,, C, | B,, E, D, G,, | C,2 x G, | E, C, B,, A,, | D,2 G,,2 |
+% 9
+[V: S1V1]  z G E F | G E D ^C | D2 z D | G A B c |
+w: Co- rrupt are they, and ev- ery one A- bom- in- ab- le 
+w: Who all their un- der- stand- ing bent To search His ho- ly 
+w: Not one there was who prac- ticed good, And yet they deemed, in 
+w: In God they put no trust at all, Nor will on Him in 
+w: But ye the poor man's hope des- pise, And laugh at him, e'en 
+[V: S1V2]  x D C A, | E C B, A, | A,2 x B, | E E D E |
+[V: S2V1]  z G, G, F, | B, A, F, E, | F,2 z G, | G, E, F, A, |
+[V: S2V2]  x B,, C, D, | E, A,, B,,//C,//D,/ A,, | D,2 x G, | E, C, B,, A,, |
+% 17
+[V: S1V1]  B A B2 | z !sintro!A B c | d B (A/G/ A) | G4 !eintro!|]
+w: works hath done; There is not one well- do- * * er. 
+w: Word, in- tent To do his will in earn- * * est. 
+w: haugh- ty mood, Their deeds must sure- ly please * * Him. 
+w: trou- ble call, But be their own pro- vi- * * ders. 
+w: when he cries, That God is his sure com- * * fort. 
+[V: S1V2]  E3/2 F/ G2 | x D G E | D D (E F) | D4 |]
+[V: S2V1]  G, C D2 | z A, E C | A, B, (C/B,/ D) | B,4 |]
+[V: S2V2]  E, A, G,2 | x F, E, A, | F, G, (C,/E,/ D,) | G,,4 |]
+% 20
+W: 6.Who shall to Israel's outcast race From Zion bring salvation?
+W: God will himself at length show grace, And loose the captive nation;
+W: That will he do by Christ their King; Let Jacob then be 
+W: glad and sing, And Israel be joyful.

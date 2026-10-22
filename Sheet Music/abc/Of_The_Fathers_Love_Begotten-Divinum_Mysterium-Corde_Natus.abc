@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2014 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Jn 3:16, Acts 13:32-39, Rev 1:8, Jn 1:1-5, Phil 2:5-11, Mt 1:20-23, 13:16-17, Lk 24:27
+%OHTOPICS {Adam (first/second - see also Guidance, Invitation [ours to God], Repentance) [3]}, {Angels [5]}, {Art and Music}, {Atonement [3]}, {Children (see also God's Children - the Faithful) [8]}, {Christmas/Advent}, {God, As King [7]}, {God, Creator [2]}, {God, Eternity of [1]}, {God, Justness of [7]}, {God, Mercy of [3]}, {God's Children - the Faithful (see also Saints, People of the World) [5,8]}, {Jesus}, {People of the World [5,8]}, {Praise, Son}, {Presence}, {Worship}
+%OHCATEGORY CHRISTMAS
+%OHMETRICAL 8 7 8 7 8 7 7
+%OHCOMPLEXITY 4
+%OHCOMPOSER Latin
+%OHARRANGER unknown
+%OHAUTHOR Prudentius, Aurelius Clemens (348-413)
+%OHTRANSLATOR Neale, John Mason (1818-1866);Baker, Henry Williams (1821-1877)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Of The Father's Love Begotten
+C: Words: Aurelius Prudentius Clemens, 5th Century. 
+C: Verses 1, 4-8 translated by John Mason Neale, 1854. Verses 2-3, 9 translated by Henry Williams Baker, 1859.
+C: Music: 'Divinum Mysterium' or 'Corde Natus' Latin Plainsong, 13th Century. 
+C: Setting: "The Church Hymnal, Revised and Enlarged" (Episcopal), 1892, alt.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2014 Revision.
+S: Music source: "The Church Hymnal, Revised and Enlarged" (Episcopal), 1892  Ed. Charles Hutchins Hymn 52 (first tune)
+S: Lyrics source: "Hymns Ancient and Modern", 1904 Hymn 58 except verse 6 kept Neale's original instead of Baker's altered: from "Collected Hymns, Sequences and Carols of John Mason Neale" By John Mason Neale
+M: none % time signature  
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] F3/2 G/ A B A G | (A3/2 G/) F4 | A B c d (c A3/2)
+w: 1.~Of the Fa- ther's love be- got- * ten Ere the worlds be- gan * 
+w: 2.~At His Word they were cre- a- * ted; He com- mand- ed; it * 
+w: 3.~He is found in hu- man fash- * ion, Death and sor- row here * 
+w: 4.~Oh that birth for- ev- er bless- * èd! When the vir- gin, full * 
+w: 5.~O ye heights of heav'n a- dore * Him; An- gel hosts, His prais- * 
+[V: S1V2] C3/2 C/ F F F E | F2 F4 | F F F F (E F3/2)
+[V: S2V1] A,3/2 B,/ C D C C | (C3/2 B,/) A,4 | C B, A, B, (G, F,3/2)
+[V: S2V2] F,3/2 F,/ F, B,, C, C, | F,2 F,4 | F, D, C, B,, (C, F,3/2)
+% 3
+[V: S1V1] B/ | c4 | d3/2 e/ f c c B | (A3/2 G/) F4 | D3/2 E/ F G
+w: to be, He is Al- pha and O- me- * ga, He the source, the 
+w: was done: Heav'n and earth and depths of o- * cean In their three- fold 
+w: to know, That the race of A- dam's child- * ren, Doomed by law to 
+w: of grace, By the Ho- ly Ghost con- ceiv- * ing, Bare the Sa- vior 
+w: es sing; Pow'rs, do- min- ions, bow be- fore * Him, and ex- tol our 
+[V: S1V2] F/ | E4  | G3/2 G/ F F F F  | (F3/2 E/) F4 | A,3/2 A,/ D D
+[V: S2V1] F,/ | G,4 | B,3/2 B,/ C C D D | (C3/2 B,/) A,4 | F,3/2 G,/ A, B,
+[V: S2V2] D,/ | C,4 | G,,3/2 G,,/ A,, A,, B,,B,, C,2 D,4 | D,3/2 D,/ D, G,,
+% 7
+[V: S1V1] (F D3/2) E/ | F4 | F3/2 G/ A B A G | c2 d4 | (c A) B
+w: end- * ing He, Of the things that are, that have been, And * that 
+w: or- * der one; All that grows be- neath the shin- ing Of * the 
+w: end- * less woe, May not hence- forth die and per- ish In * the 
+w: of * our race; And the Babe, the world's Re- deem- er, First * re- 
+w: God * and King: Let no tongue on earth be si- lent, Ev- * ery 
+[V: S1V2] (D A,3/2) C/ | C4 | C3/2 C/ F F F E | F2 F4 | F2 D
+[V: S2V1] (A, F,3/2) G,/ | A,4 | A,3/2 B,/ C D C C | C2 B,4 | (A, C) B,
+[V: S2V2] (D, D,3/2) C,/ | F,4 | F,3/2 F,/ F, B,, C, C, | A,,2 B,,4 | F,2 F,
+% 11
+%%newpage
+[V: S1V1] (c F3/2) E/ D E | (F3/2 D/ C2) z2 | !sintro!F3/2 G/ A c A F | (G2 F4)!eintro! |]
+w: fu- * ture years shall see, * * Ev- er- more and ev- er- more! * 
+w: moon * and burn- ing sun, * * Ev- er- more and ev- er- more! * 
+w: dread- * ful gulf be- low, * * Ev- er- more and ev- er- more! * 
+w: vealed * His sac- red face, * * Ev- er- more and ev- er- more! * 
+w: voice * in con- cert ring, * * Ev- er- more and ev- er- more! * 
+[V: S1V2] C2 C B, B, | (A,3/2 B,/ A,2) x2 | C3/2 E/ F F F F | (E2 F4) |]
+[V: S2V1] A,2 A, B, G, | F,4 x2 | A,3/2 C/ C C C B, | (B,2 A,4) |]
+[V: S2V2] F,2 F, G, C, | (D,3/2 B,,/ F,2) z2 | F,3/2 C,/ F, A, F, D, | (C,2 F,4) |]
+W:6.He is here, Whom seers in old time Chanted of, while ages ran; 
+W:Whom the writings of the prophets Promised since the world began: 
+W:Then foretold, now manifested, to receive the praise of man, 
+W:Evermore and evermore! 
+W:
+W:7.Righteous Judge of souls departed, Righteous King of them that live, 
+W:On the Father's throne exalted None in might with Thee may strive; 
+W:Who at last in vengeance coming Sinners from Thy face shalt drive, 
+W:Evermore and evermore! 
+W:
+W:8.Thee let old men, Thee let young men, Thee let choirs of infants sing; 
+W:Thee the matrons and the virgins, And the children answering: 
+W:Let their guileless songs re-echo, And the heart its music bring, 
+W:Evermore and evermore! 
+W:
+W:9. $1D$2 Christ, to Thee with God the Father, And, O Holy Ghost, to Thee, 
+W:Hymn and chant with high thanksgiving, And unwearied praises be: 
+W:Honor, glory, and dominion, And eternal victory, 
+W:Evermore and evermore! 
+%%vskip 0.2in
+%%multicol start
+%%leftmargin 1.0in
+%%rightmargin 4.2in
+%%textoption 3
+%%textfont Times-Bold 12.0
+%%EPS hairymnstr_nativity.eps
+%%begintext
+%%"Nativity" from openclipart.org
+%%endtext
+%%multicol end

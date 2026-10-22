@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.680000
+%%staffsep	0.10000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%%combinevoices 0
+%OHSCRIP Lv 26:18-19, Job 38:29-30, Ps 147:16-20, Is 59:11-14, 1Kgs 8:27, Lk 2:7-14, Ez 36:25-28, Pr 23:26, Deut 30:6
+%OHTOPICS {Angels [3,4]}, {Christmas/Advent}, {God, As King}, {God, Eternity of}, {God, Love of}, {God, Majesty &amp; Power of}, {Grace}, {Following Jesus, In Faith [5]}, {Following Jesus, Sanctification [5]}, {Humility}, {Jesus}, {Law [1]}, {Praise, Son}, {Presence}, {Sinners [1]}, 
+%OHCATEGORY CHRISTMAS
+%OHMETRICAL Irregular
+%OHCOMPLEXITY 5
+%OHCOMPOSER Holst, Gustav Theodore (1874-1934)
+%OHARRANGER Holst, Gustav Theodore (1874-1934)
+%OHAUTHOR Rossetti, Christina Georgina (1830-1894)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%beginps
+% -- draw parenthesis around a note
+/opnot{		% usage: x y opnot
+	M -11 -3 RM /Times-Roman 36 selectfont(\( \))show}!
+% -- same, but inside a chord (x is not the same)
+/opchnot{	% usage: x y opchnot
+	M -10.5 -3 RM /Times-Roman 24 selectfont(\(   \))show}!
+%%endps
+
+% -- optional note
+%%deco () 1 opnot 0 0 0
+
+X: 1
+T: In The Bleak MidWinter
+C: Words: Christina Georgina Rossetti, 1872, alt. 
+C: Music and Setting: 'Cranham' Gustav Theodore Holst, 1906, alt. 
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: "The English Hymnal, 1906. 
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] !()!A | .(A3/2 B/) c A | G.- G F2 | .(G3/2 A/) G D | G4 |
+w: 1.~ In the bleak mid- win- * ter, frost- y wind made moan,
+w: 2.~Our God, Heav'n can- not hold * Him, nor_ earth sus- tain;
+w: 3.~E- nough for Him, whom cher- u- bim, wor- ship night and day,
+w: 4.~ An- gels and arch- an- * gels may have ga- thered there,
+w: 5.~ What_ can I give * Him, poor_ as I am?
+[V: S1V2] z | .(F3/2 F/) F C | D.- D D2 | .(D D) D C | B,4 |
+[V: S2V1] z | .(C3/2 C/) C F, | A,.- A, A,2 | .(G,3/2 D,/) D, F, | (F,2 E,2) |
+[V: S2V2] x | .(F,3/2 G,/) A, F, | D,.- D, D,2 | .( B,,3/2 C,/) B,, A,, | (G,,2 C,2) |
+% 6
+[V: S1V1] .(A3/2 B/) c A | G.- G F.- F | .(.(G A) G3/2) F/ | F3.- F |
+w: Earth stood hard as i- * ron, * wa- ter like a stone; *
+w: Heav'n and earth shall flee a- way * when He comes to reign. *
+w: Breast- * ful of milk, * and a man- ger- ful of hay; En-
+w: Cher- u- bim and ser- a- phim * thronged__ the air; *
+w: If I were a shep- * herd, * I would bring a lamb; *
+[V: S1V2] .(C3/2 F/) F C | D.- D D.- D | .(.(F F) E3/2) F/ | F3.- F |
+[V: S2V1] .(F,3/2 C/) C F, | A,.- A, A,.- A, | .(.(D D) B,3/2) A,/ | A,3.- A, |
+[V: S2V2] .(F,3/2 G,/) A, F, | D,.- D, D,.- D, | .(.(B,, B,,) C,3/2) F,/ | F,3.- F, |
+% 10
+[V: S1V1] B3/2 A/ B c | d.- d A.- A | .(c A) G F | E4 |
+w: Snow had fall- en, snow on snow, * snow on snow on snow,
+w: In the bleak mid- win- * ter a sta- ble place suf- ficed
+w: ough for Him, whom an- * gels * fall_ down be- fore,
+w: But His mo- ther on- * ly, * in her mai- den bliss,
+w: If I were a Wise * Man, * I would do my part;
+[V: S1V2] F3/2 F/ F _E | D.- D F.- F | .(F E) D2 | C4 |
+[V: S2V1] B,3/2 C/ B, A, | B,.- B, A,.- A, | .(F, C) B, A, | G,4 |
+[V: S2V2] D,3/2 F,/ D, C, | B,,.- B,, D,.- D, | A,,.- A,, B,, B,, | C,4 |
+% 10
+[V: S1V1] A3/2 B/ c A | G2 F2 | !sintro!(G A G3/2) F/ | F3 !eintro!|]
+w: In the bleak mid- win- ter, long * * a- go.	
+w: The Lord God Al- migh- ty, Je- * * sus Christ.
+w: Ox and ass and ca- mel which * * a- dore.
+w: Wor- shiped the be- lov- ed with * * a kiss.
+w: Yet what can I give Him: give * * my heart.
+[V: S1V2] C3/2 F/ F C | D2 D2 | (F2 E3/2) F/ | F3 |]
+[V: S2V1] F,3/2 C/ C F, | A,2 A,2 | D2 (B,3/2 A,/) | A,3 |]
+[V: S2V2] F,3/2 G,/ A, F, | D,2 D,2 | B,,2 (C,3/2 F,/) | F,3 |]
+
+%%begintext align
+These lyrics are rather obscure, though quite beautiful. The earth (which represents all of 
+God's promises to His People, Gen 13:14-15, Rom 4:13-17, Mt 5:5) and the water 
+(which represents Baptism and forgiveness, Jn 3:5, Eph 5:25-27, 1Pt 3:21) are frozen and 
+lifeless as the Law reigns alone (2Cor 3:6b), with no grace flowing before Christ.  
+The Spirit (the wind) works in the world through the condemnation of the Law and the hope for redemption to come
+(frosty wind made moan, Micah 4:10, Ez 21:6-7).  Then Christ humbly comes to melt the icy world in
+grace.  This then inspires those saved, who recognize that they have nothing to give to Him, to 
+finally, through His grace, fulfill the greatest commandment (Mt 22:37).
+%%endtext
+

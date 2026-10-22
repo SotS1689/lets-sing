@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.75000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 21:1-9, Ps 42:1-2
+%OHTOPICS {Anticipation [1,2,10]}, {Assurance}, {Christmas/Advent}, {Comfort [3-10]}, {Compassion [3-8]}, {Consolation}, {Courage in Affliction}, {Faithfulness}, {Fear of the Lord [8]}, {Forgiveness [4,8]}, {God, Mercy of}, {God's Children - the Faithful (see also Saints, People of the World)}, {Gratitude}, {Hope [8-10]}, {Humility}, {Jesus}, {Joy}, {Judgment [10]}, {Kindness, God's}, {Light [10]}, {Love}, {Peace [3,8]}, {Presence}, {Promises (see also Gospel)}, {Salvation [3,5]}, {Second Coming [10]}, {Security [8]}, {Service [2]}, {Sinners [8]}, {Trust}, {Victory [9]}
+%OHCATEGORY ADVENT
+%OHMETRICAL 7 6 7 6 7 6 7 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER Crüger, Johann (1598-1662)
+%OHARRANGER unknown
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR unknown
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: O Lord, How Shall I Meet Thee
+C: Words: Paul Gerhardt, 1653.  translator unknown. 
+C: Music: 'Wie Soll ich Dich Empfange' Johann Crüger, 1653. 
+C: Setting: "Evangelical Lutheran Hymn-Book", 1931.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: Evangelical Lutheran Hymn Book (LCMS), Edition of 1931 Hymn 136.
+S: Translation found in "Hymn book for the use of Evangelical Lutheran schools and congregations" By August Crull, 1884
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] E2 | G A B B | A2 G A | G E F F | E2
+w: 1.~O Lord, how shall I meet Thee, How wel- come Thee a- right? 
+w: 2.~Thy Zi- on palms is strew- ing, And branch- es fresh and fair; 
+w: 3.~What hast Thou left un- grant- ed To give me glad re- lief?
+w: 4.~I lay in fet- ters groan- ing, Thou com'st to set me free; 
+w: 5.~Love caused Thine in- car- na- tion Love brought Thee down to me; 
+[V: S1V2]  B,2 | E E D E | (C D) E E | E B, C D | B,2
+[V: S2V1]  G,2 | B, C F, G, | A,2 C C | B, B, A, F, | G,2
+[V: S2V2]  E,2 | E, C, B,, E, | F,2 C, A,, | E, G,, A,, B,, | E,2
+% 5
+[V: S1V1]  E2 | G A B B | A2 G A | G E F F | E2
+w: All na- tions long to see Thee, My Hope, my heart's De- light! 
+w: My heart, its pow'rs re- new- ing, An an- them shall pre- pare. 
+w: When soul and bo- dy pant- ed In ut- most depth of grief,
+w: I stood, my shame be- moan- ing, Thou com'st to hon- or me. 
+w: Thy thirst for my sal- va- tion Pro- cured my lib- er- ty. 
+[V: S1V2]  B,2 | E E D E | (C D) E E | E B, C D | B,2
+[V: S2V1]  G,2 | B, C F, G, | A,2 C C | B, B, A, F, | G,2
+[V: S2V2]  E,2 | E, C, B,, E, | F,2 C, A,, | E, G,, A,, B,, | E,2
+% 9
+[V: S1V1]  B2 | c d e d | c2 B G | c B A G | F2
+w: O kin- dle, Lord, most ho- ly, Thy lamp with- in my breast, 
+w: My soul puts off her sad- ness Thy glor- ies to pro- claim; 
+w: In deep- est de- gra- da- tion, De- void of joy and peace,
+w: A glor- y Thou dost give me, A trea- sure safe on high, 
+w: O love be- yond all tell- ing, That led Thee to em- brace, 
+[V: S1V2]  E2 | E F G F | F2 D E | E D E E | D2
+[V: S2V1]  G,2 | A, A, B, B, | (B, =A,) B, B, | A, F, C B, | B,2
+[V: S2V2]  E,2 | A, F, E, B,, | F,2 B,, E, | A,, B,, C, E, | B,,2
+% 13
+[V: S1V1]  !sintro!G2 | E F G B | A2 G B | A G F F | !fermata!E2 !eintro!|]
+w: To do in spir- it low- ly All that may please Thee best. 
+w: With all her strength and glad- ness She fain would serve Thy Name. 
+w: Then, Thou, my soul's Sal- va- tion, Didst come to bring re- lease.
+w: That will not fail nor leave me As earth- ly rich- es fly. 
+w: In love all love ex- cel- ling, Our lost and fal- len race! 
+[V: S1V2]  B,2 | C D E E | E2 E G | E E E D | !ferm!E2 |]
+[V: S2V1]  G,2 | G, B, B, B, | C2 B, B, | C B, B,3/2 A,/ | !invertedfermata!G,2 |]
+[V: S2V2]  E,2 | C, B,, E, G,, | A,,2 E, E, | C, E, B,, B,, | !ferm!E,2 |]
+% 19
+%%newpage
+%%multicol start
+%%leftmargin 6cm
+%%begintext obeylines justify
+%% 6.\tRejoice, then, ye sad-hearted, Who sit in deepest gloom,
+%% \t\t\t\tWho mourn o'er joys departed, And tremble at your doom:
+%% \t\t\t\tDespair not, He is near you, Yea, standing at the door;
+%% \t\t\t\tHe brings His pity near you, And bids you weep no more.
+%% 
+%% 7.\tNo care nor effort either Is needed day or night,
+%% \t\t\t\tHow ye may draw Him hither In your own strength and might.
+%% \t\t\t\tHe comes, He comes with gladness, Moved by His love alone,
+%% \t\t\t\tTo calm your fear and sadness, To Him they well are known.
+%% 
+%% 8.\tSin's debt, that fearful burden, Let not your souls distress;
+%% \t\t\t\tYour guilt the Lord will pardon and cover with His grace.
+%% \t\t\t\tHe comes, He comes procuring The peace of sin forgiv'n,
+%% \t\t\t\tTo all God's sons securing Their part and lot in heav'n.
+%% 
+%% 9.\tWhy should the wicked move you?  Heed not their craft and spite!
+%% \t\t\t\tYour Savior who doth love you, Will scatter all their might.
+%% \t\t\t\tHe comes, a King most glorious, and all His earthly foes
+%% \t\t\t\tIn vain His course victorious Endeavor to oppose.
+%% 
+%% 10.He comes to judge the nations, A terror to His foes,
+%% \t\t\t\tA light of consolations And blessed hope to those
+%% \t\t\t\tWho love the Lord's appearing.  O glorious Sun, now come,
+%% \t\t\t\tSend forth Thy beams so cheering, And guide is safely home!
+%%endtext
+%%multicol end
+%%vskip 1in
+%%multicol start
+%%leftmargin 0in
+%%rightmargin 0in
+%%textoption 3
+%%textfont Times-Bold 12.0
+%%EPS Schnorr_von_Carolsfeld_Bibel_in_Bildern_1860_205.eps
+%%begintext
+%%"Palm Sunday" by Julius Schnorr von Carolsfeld (1860)
+%%endtext
+%%multicol end
+
+

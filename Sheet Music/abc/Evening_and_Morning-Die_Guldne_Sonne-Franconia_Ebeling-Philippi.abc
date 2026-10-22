@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.690000
+%%staffsep	0.0000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Is 45:2-8, Gen 1:5, Gen 8:22, Ps 74:12-17 
+%OHTOPICS {Assurance}, {Brevity of Life [5]}, {Christian Life}, {Contrition [4]}, {Evening}, {Faith}, {Faithfulness}, {Father}, {God, Care of}, {God, Eternity of}, {God, Faithfulness of}, {God, Goodness of}, {God, Love of}, {Gratitude}, {Hope}, {Morning}, {Trust}
+%OHCATEGORY MORNING
+%OHMETRICAL 5 5 5 5 10 5 6 5 6 10
+%OHCOMPLEXITY 3
+%OHCOMPOSER Ebeling, Johann Georg (1637-1676)
+%OHARRANGER unknown
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR Massie, Richard (1800-1887)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Evening and Morning
+T: (also known as Golden and Glorious or The Golden Sun or The Golden Morning)
+C: Words: Paul Gerhardt, 1666.  Translated by Richard Massie, 1854.
+C: Music: 'Die Güldne Sonne' or 'Franconia (Ebeling)' or 'Philippi' Johann Georg Ebeling, 1660.
+C: Setting: "The Parish School Hymnal", 1925.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.
+S: Music source: "The Parish School Hymnal", 1925 Hymn 70
+S: Lyrics source: "The Church Psalter and Hymn Book", 1858 Hymn 500 for vs. 1, 5-9
+S: Lyrics source: "The Selah Songbook", 1926 Hymn 153 for vs. 2-4
+M: 3/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] c c d | (c3/2 B/) A | c B G | (A3/2 G/) F | A B c | d2 d | 
+w: 1.~Eve- ning and mor- * ning, Sun- set and daw- * ning, Wealth, peace, and glad- ness, 
+w: 2.~Gol- den and glo- * rious, Strong and vic- to- * rious All joy and glad- ness, 
+w: 3.~Mine eye sur- ve- * yeth What God dis- pla- * yeth Of His great glo- ry 
+w: 4.~Let us all sin- * ging, And to God brin- * ging Our choi- cest trea- sure, 
+w: 5.~All here is dy- * ing, Groa- ning and si- * ghing; God does not al- ter, 
+[V: S1V2]  F F F | F2 F | F F E | F2 C | C D F | F2 D | 
+[V: S2V1]  A, A, B, | (A,3/2 B,/) C | C D C | (C3/2 B,/) A, | F, F, F, | B,2 F, | 
+[V: S2V2]  F, F, B,, | F,2 F, | A,, B,, C, | F,2 F, | F, B,, A,, | B,,2 B,, | 
+% 6
+[V: S1V1] G A B | c2 c | F F G | A3/2 B/ c | G F E  | F3 | 
+w: Com- fort in sad- ness, These are Thy works; all the glo- ry be Thine! 
+w: Scat- te- ring sad- ness, Ri- ses the sun with his life- gi- ving rays; 
+w: Spread out be- fore me, Tea- ching how great are His wis- dom and might; 
+w: To do Him plea- sure, Of- fer a sac- ri- fice swee- ter than lambs. 
+w: Nor His Word fal- ter; Built like His will, on im- mu- ta- ble ground, 
+[V: S1V2] C C D C2 C | F D C | C3/2 D/ F | D C C | C3 | 
+[V: S2V1] E, F, F, | F,2 F, | A, A, G, | F,3/2 F,/ F, | B, A, G, | A,3 | 
+[V: S2V2] C, C, B,, | A,,2 A,, | D, D, E, F,3/2 B,,/ A,, | B,, C, C, | F,,3 | 
+% 9
+[V: S1V1]  c c B | A A G | F3/2 E/ D | E C2 | F F G | A A 
+w: Times wi- thout num- ber, A- wake or in slum- ber, Thine eye ob- serves us, 
+w: Still as the dy- ing, My mem- bers were ly- ing, but now up- spring- ing, 
+w: To His saints sho- wing The home where they're go- ing, Peace- ful- ly quit- ting 
+w: Heart- felt con- tri- tion, And cheer- ful sub- mis- sion, Songs of thanks- gi- ving, 
+w: His love re- mai- neth, His grace ne- ver wa- neth, Soo- thing and hea- ling 
+[V: S1V2]  F F F | F F E | D3/2 C/ =B, | C C2 | C D E | F F 
+[V: S2V1]  A, A, D | C C C | A,3/2 G,/ G, | G, E,2 | F, A, C | C D 
+[V: S2V2]  F, F, B,, | F, F, C, | F,3/2 G,/ G,, | C, C,2 | A,, D, C, | F, D, 
+% 13
+[V: S1V1] G | A A =B | c c2 | !sintro!A F G | A3/2 B/ c | G F E | F3!eintro!|]
+w: From dan- ger pre- serves us, Cau- sing Thy mer- cy u- pon us to shine. 
+w: With joy I am sin- ging, Ga- zing a- round me with won- der and praise. 
+w: When God sees it fit- ting, Earth's clo- sing scenes, as they fade from their sight. 
+w: And fruits of good li- ving Please Him far bet- ter than in- cense of rams. 
+w: The pains we are fee- ling, Kee- ping us now and e- ter- nal- ly sound. 
+[V: S1V2] E | F F G | E E2 | C D E | F3/2 F/ F | D C C | C3 |]
+[V: S2V1] B, | C D D | C G,2 | A, A, C | C3/2 D/ C | B, A, G, | A,3 |]
+[V: S2V2] G, | F, D, G, | C, C,2 | F, D, C, | F,3/2 D,/ A,, | B,, C, C, | F,,3 |]
+% 18
+%%multicol start
+%%leftmargin 1.6cm
+%%rightmargin 11cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\t\tFather, O hear me: Pardon and spare me; Calm all my terrors, 
+%% \t\t\tBlot out my errors, That by Thine eyes they may no more be scanned. 
+%% \t\t\tOrder my goings; Direct all my doings; As it may please Thee, 
+%% \t\t\tRetain or release me; All I Commit to Thy Fatherly hand. 
+%% 
+%% 7.\t\tWilt Thou to try me, With all supply me, Nature requireth, 
+%% \t\t\tOr heart desireth, Whisper this counsel of love in my breast, 
+%% \t\t\t"God is the greatest, The fairest, the sweetest, God is the purest, 
+%% \t\t\tThe truest, the surest, And of all treasures the noblest and best." 
+%%endtext
+%%multicol new
+%%leftmargin 10.2cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 8.\t\tOr should Thou give me, Wormwood to grieve me Griefs to distress me, 
+%% \t\t\tBurdens to press me, Welcome whatever Thy Word hath decreed. 
+%% \t\t\tMy kind Physician Knows well my condition, That which will hurt me, 
+%% \t\t\tOr heal and convert me, God will not chasten us more than we need. 
+%% 
+%% 9.\t\tGriefs of God's sending, All have an ending; Clouds may be pouring, 
+%% \t\t\tWind and wave roaring, Sunshine will come when the tempest has past: 
+%% \t\t\tJoys still increasing, And peace never ceasing, Faith lost in vision, 
+%% \t\t\tHope in fruition, These are the joys which I look for at last.
+%%endtext
+%%multicol end
+

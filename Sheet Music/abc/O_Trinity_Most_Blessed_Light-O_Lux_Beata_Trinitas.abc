@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.75000000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Gen 1:3, 1Jn 1:5-7, 2Cor 4:6, Eph 5:8-14, Ps 113:2-3
+%OHTOPICS {Evening [2]}, {Father [3]}, {God, As King [1]}, {God, Majesty &amp; Power of [1]}, {Jesus [3]}, {Light [1]}, {Morning [2]}, {Praise, Father [3]}, {Praise, Son [3]}, {Praise, Holy Spirit [3]}, {Trinity}, {Worship}
+%OHCATEGORY EVENING
+%OHMETRICAL 8 8 8 8
+%OHCOMPLEXITY 5
+%OHCOMPOSER Latin
+%OHARRANGER unknown
+%OHAUTHOR Ambrose of Milan (340-397)
+%OHTRANSLATOR Neale, John Mason (1818-1866)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: O Trinity of Blessed Light
+T: (also known as Thou Who Art Three in Unity)
+C: Words: Ambrose of Milan, 4th Century.  German version by M. Luther, 1543. 
+C: English translation by John Mason Neale, 1852. 
+C: Music: 'O Lux Beata Trinitas' ancient Latin.  Setting: "A Hymnal" (Episcopal), 1916.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+L: 1/4 % default length
+%%staves S1 | (S2V1 S2V2) | (S3V1 S3V2) 
+V: S1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+V: S3V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S3V2 
+%%MIDI beat 127 125 110 1
+M: none
+K: D % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%%MIDI program 5 0 % Piano 1
+%
+% 1
+[V: S1] [Q:1/4=60] A/B/ A/G/F/G/ E/ F/ G/ A/B/ B/A/ A | A/B/ A/G/F/G/ E/ F/ G/ A/B/ B/A/ A |
+w: 1.~O * Trin- * * * i- ty of bless- * èd * light, O * U- * * * ni- ty of prince- * ly * might, 
+w: 2.~To * Thee * * * our morn- ing song * of * praise, To * Thee * * * our eve- ning prayer * we * raise; 
+w: 3.~$1D$2~All * laud * * * to God the Fa- * ther * be, All * praise, * * * e- ter- nal Son, * to * Thee, 
+[V: S2V1]  A/B/ A/G/F/G/ E/ F/ G/ A/B/ B/A/ A | A/B/ A/G/F/G/ E/ F/ G/ A/B/ B/A/ A |
+[V: S2V2]  D E/ D B, D4 | D E/ D B,/C/ D E F2 |
+[V: S3V1]  F, A,3/2 G, F,2 G, F, | F, A,3/2 G, A,/B,/ C D C |
+[V: S3V2]  D, C,/ D, E, B,, A,, G,, D, | D, C,/ D, E, D, C, B,, F, |
+% 5
+[V: S1]  A/B/ d/ c/d/ B/ A/G/ A/B/ A/G/F/ F | !sintro!G/A/ A/G/F/G/ E/ F/ G/ A/B/ B/A/ !fermata!A !eintro!|]
+w: The * fie- ry * sun now * goes * his * * way; Shed * Thou * * * with- in our hearts * a * ray. 
+w: O * grant us * with Thy * saints * on * * high To * praise * * * Thee through e- ter- * ni- * ty. 
+w: All * glo- ry, * as is * ev- * er * * meet, To * God * * * the ho- ly Par- * a- * clete. 
+[V: S2V1]  A/B/ d/ c/d/ B/ A/G/ A/B/ A/G/F/ F | G/A/ A/G/F/G/ E/ F/ G/ A/B/ B/A/ !fermata!A |]
+[V: S2V2]  D4- D2- D/ C | E3/2 D B, D3- !invertedfermata!D/!invertedfermata!C/ |]
+[V: S3V1]  F,- F,3/2 G,3/2- G, F,/G,/ A,3/2 | B, A,3/2 G, F,2 G,/F,/ !invertedfermata!E, |]
+[V: S3V2]  D, B,,/ A,, G,, B,,/ D,- D,3/2 F, | E, C,/ D, E, B,, A,, G,, !ferm!A,, |]
+% 6

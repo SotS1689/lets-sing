@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.720000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 34:1, Is 12:1-6, 1Tim 2:5-6
+%OHTOPICS {Art and Music}, {Blood [1]}, {Courage in Affliction [2]}, {Eternal Life [3]}, {Following Jesus, In Faith}, {God, Goodness of [2]}, {God, Mercy of [1]}, {Gratitude}, {Heaven [3]}, {Jesus}, {Joy}, {Praise, Son}, {Shepherd/Lamb [1]}, {Testimony}, {Trust}, {Worship}
+%OHCATEGORY CROSS AND COMFORT
+%OHMETRICAL 7 6 7 6 7 6 7 6
+%OHCOMPLEXITY 4
+%OHCOMPOSER Paxton, Kenneth W.
+%OHARRANGER Paxton, Kenneth W.
+%OHAUTHOR Crosby, Fanny Jane (1820-1915);Clarkson, Edith Margaret (1915-2008)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: My Song Shall Be Of Jesus
+C: Words: Fanny J. Crosby, 1875.  Adapted by Margaret Clarkson, 1973. 
+C: Music: 'Sondance' Kenneth W. Paxton, 1998.  Setting: Kenneth W. Paxton, 1998.
+C: copyright: Words, public domain.  Adaptation released into public domain by Hope Publishing Company.
+C: Music and Setting copyright: Copyright 1998 Kenneth W. Paxton.  This tune and setting may be freely reproduced or 
+C: published for Christian worship, provided they are not altered, and this notice is on each copy. All other rights reserved.  
+C: This score is a part of the Open Hymnal Project, 2009 Revision.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=96] !sintro!D/ | G/A/ B/c/ B A | (G E) D !eintro!z/ D/ | G/A/ B/ (B A/) G/B/- | B3 z/
+w: 1.~My song * shall * be of Je- * sus, His Mer- * cy crowns * my days  * 
+w: 2.~My song * shall * be of Je- * sus, while sit- * ting at * His feet  * 
+w: 3.~My song * shall * be of Je- * sus, when press- * ing on * my way  * 
+[V: S1V2]  D/ | G/A/ B/c/ B A | (G E) D x/ D/ | B,/C/ D/ E3/2 E/ D/- | D3 x/
+[V: S2V1]  D,/ | G,/A,/ B,/C/ B, A, | (G, E,) D, z/ D,/ | G,/A,/ B,/ (B, A,/) G,/B,/- | B,3 z/
+[V: S2V2]  D,/ | G,/A,/ B,/C/ B, A, | (G, E,) D, x/ D,/ | G,/A,/ B,/ B, A,/ G,/B,/- | B,3 x/
+% 5
+[V: S1V1]  D/ | G/A/ B/c/ d B/A/ | (B G) E z/ G/ | G F/ B A G/- | G3 z/
+w: He fills * my * cup with * bless- * ings and tunes my heart to praise  * 
+w: He calls * to * mind His * good- * ness, and makes my joy com- plete;  * 
+w: To where * my * home shines * glo- * rious in pure and per- fect day.  * 
+[V: S1V2]  D/ | G/F/ G/A/ B G/F/ | (E D) ^C x/ ^C/ | D D/ E F G/- | G3 x/
+[V: S2V1]  D,/ | G, G, F, D, | (E, G,) A, z/ A,/ | G, F,/ E, F, G,/- | G,3 z/
+[V: S2V2]  D,/ | G, G, F, D, | (E, B,,) A,, x/ A,,/ | C, D,/ C, D, G,/- | G,3 x/
+% 9
+[V: S1V1]  G/ | c c B/A/ G/(B/- | B3/2 A/) A z/ B/ | c c B/A/ G/d/- | d3 z/
+w: My song shall be * of Je- * * sus the pre- cious Lamb * of God  * 
+w: My song shall be * of Je- * * sus, what- ev- er ills * be- fall,  * 
+w: And when my soul * shall en- * * ter the ma- ny man- * sions fair,  * 
+[V: S1V2]  D/ | E F G/F/ E/(D/- | D3/2 E/) D x/ D/ | E E D/E/ D/(G/- | G2 F) x/
+[V: S2V1]  D,/ | E, A, G, E,/(G,/- | G,3/2 F,/) F, z/ F,/ | G, C B,/A,/ G,/(B,/- | B,2 A,) z/
+[V: S2V2]  B,,/ | C, D, B,, B,,/ (D,/- | D,3/2 D,/) D, x/ B,,/ | C, A,, B,, G,,/D,/- | D,3 x/
+% 13
+[V: S1V1]  D/ | G/A/ B/c/ B A | (G E) D z/ !sintro!G/ | G F/ B A G/- | G2 z3/2 !eintro!|]
+w: Who gave * Him- * self my ran- * som and bought me with His blood  * 
+w: I'll sing * the * grace that saves * me, and tri- umphs o- ver all.  * 
+w: A song * of * praise to Je- * sus I'll sing for- ev- er there.  * 
+[V: S1V2]  D/ | G/F/ G/A/ G A | (G E) D x/ G/ | G F/ E F G/- | G2 x3/2 |]
+[V: S2V1]  D,/ | G,/A,/ B,/C/ B, A, | (G, E,) D, z/ C,/ | C, D,/ C, D, G,/- | G,2 z3/2 |]
+[V: S2V2]  D,/ | G, G, E, B,, | (C, E,) D, x/ C,/ | A,, B,,/ C, D, G,,/- | G,,2 x3/2 |]
+% 17

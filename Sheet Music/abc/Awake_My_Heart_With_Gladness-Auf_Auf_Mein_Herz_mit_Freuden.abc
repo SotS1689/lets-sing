@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.67000
+%%staffsep	0.00000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Col 2:13-15, 1Cor 15:42-58, Rom 6:1-11, 1Pt 1:3-9, Is 41:1-20, Rom 8:35-39, Rev 20:1-3
+%OHTOPICS {Assurance}, {Atonement}, {Brevity of Life}, {Comfort}, {Day}, {Easter}, {Eternal Life}, {Following Jesus, In Faith}, {Heaven}, {Jesus}, {Joy}, {Miracles}, {Praise, Son}, {Resurrection}, {Scripture [9]}, {Victory}
+%OHCATEGORY EASTER
+%OHMETRICAL 7 6 7 6 6 6 6 6
+%OHCOMPLEXITY 3
+%OHCOMPOSER Crüger, Johann (1598-1662)
+%OHARRANGER unknown
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR Kelly, John (1833-1890)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Awake, My Heart, With Gladness
+C: Words: Paul Gerhardt, 1648.  Translated by John Kelly, 1867, alt. 
+C: Music: 'Auf, Auf, Mein Herz mit Freuden' Johann Crüger, 1648. Setting: "Mehrstimmiges ChoralBuch", 1906.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: "Mehrstimmiges ChoralBuch", 1906 Hymn #14 Ed. Karl Brauer.
+S: translation blended between "Paul Gerhardt's Spiritual Songs" by John Kelly, 1867 page 71-74 and ELHB, 1931.
+M: 3/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] B G B | A2 G | F3 | E2 B | (c3/2 d/) e | (d3/2 c/) d | c3 |
+w: 1.~A- wake, my heart, with glad- ness, See what * to- day * is done;
+w: 2.~They in the grave did sink Him, The foe * held ju- * bi- lee;
+w: 3.~Up- on the grave is stand- ing The He- * ro look- * ing round;
+w: 4.~A sight it is to glad- den; And fill * the heart * with glee,
+w: 5.~Hell and its prince, the de- vil, Of all * their pow'rs * are shorn;
+[V: S1V2] E E E | C2 B, | B,3 | B,2 E | E2 E/F/ | G2 G | E3 |
+[V: S2V1] G, B, E, | E,2 E, | (D,3/2 C,/ D,) | G,2 G, | A,2 G,/C/ | (=B,3/2 =A,/) B, | G,3 |
+[V: S2V2] E, E, G,, | A,,2 E, | B,,3 | E,,2 E, | (A,,3/2 B,,/) C, | G,,2 G,, | C,3 |
+% 8
+[V: S1V1] B G B | A2 G | F3 | E2 B | (c3/2 d/) e | (d3/2 c/) d | c3 |
+w: How af- ter gloom and sad- ness, Comes forth * the glo- * rious Sun.
+w: Be- fore he can be- think him, Lo! Christ * a- gain * is free.
+w: The foe, no more with- stand- ing, His wea- * pons on * the ground
+w: No more af- fright or sad- den Shall aught, * or take * from me
+w: Now I am safe from e- vil, And sin * I laugh * to scorn.
+[V: S1V2] E E E | C2 B, | B,3 | B,2 E | E2 E/F/ | G2 G | E3 |
+[V: S2V1] G, B, E, | E,2 E, | (D,3/2 C,/ D,) | G,2 G, | A,2 G,/C/ | (=B,3/2 =A,/) B, | G,3 |
+[V: S2V2] E, E, G,, | A,,2 E, | B,,3 | E,,2 E, | (A,,3/2 B,,/) C, | G,,2 G,, | C,3 |
+% 15
+[V: S1V1] G B E | (D3/2 E/) F | E3 | A c F | (=E3/2 F/) G | F2
+w: My Sa- vior there * was laid Where our bed must * be made
+w: And "Vic- to- ry" * He cries, And wav- ing tow'rds * the skies
+w: Throws down, his hell- * ish pow'r To Christ must he * give o'er,
+w: My trust or for- * ti- tude, Or a- ny prec- * ious good
+w: Grim Death with all * his might Can- not my soul * af- fright;
+[V: S1V2] B, B, G, | B,2 B, | B,3 | F E _D | C2 C | C2
+[V: S2V1] G, F, E, | (F,3/2 E,/) D, | G,3 | C C B, | (G,3/2 F,/) =E, | =A,2
+[V: S2V2] E, D, C, | B,,2 B,, | E,,3 | F,, A,, B,, | C,2 C, | F,,2
+% 20
+[V: S1V1] F | (G3/2 A/) B |  (=A3/2 B/) c | B2 !sintro!B | (c3/2 d/) e | (d3/2 c/) d | e3 !eintro!|]
+w: When to * the realms * of light Our spi- * rit wings * its flight.
+w: His ban- * ner, while * the field Is by * the He- * ro held!
+w: And to * the Vic- * tor's bands Must yield * his feet * and hands.
+w: The Sa- * vior bought * for me In sov'r- * eign love * and free.
+w: He is * a pow'r- * less form, How- e'er * he rage * and storm.
+[V: S1V2] D | E2 F | F2 F | D2 E | E2 E | F2 F | G3 |]
+[V: S2V1] B, | B,2 B, | (C3/2 B,/) =A, | B,2 G, | A,2 G, | B,2 B, | B,3 |]
+[V: S2V2] B,, | E,2 D, | F,2 F, | B,,2 E, | (A,,3/2 B,,/) C, | B,,2 B,, | E,,3 |]
+%%multicol start
+%%rightmargin 12cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\tThe world against me rageth, Its fury I disdain;
+%% \t\t\t\tThough bitter war it wageth Its work is all in vain.
+%% \t\t\t\tMy heart from care is free, Misfortune now is play,
+%% \t\t\t\tNo trouble troubles me, And night is bright as day.
+%% 7.\tI cleave now and forever To Christ, a member true,
+%% \t\t\t\tMy Head will leave me never, Whate'er He passeth through.
+%% \t\t\t\tHe treads the world beneath His feet, and conquers death
+%% \t\t\t\tAnd hell, and breaks sin's thrall; I'm with Him through it all.
+%%endtext
+%%multicol new
+%%leftmargin 10.5cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 8.\tTo halls of heavenly splendor With Him I penetrate;
+%% \t\t\t\tAnd trouble ne'er may hinder Nor make me hesitate.
+%% \t\t\t\tNo enemy I fear, Because my Head is near;
+%% \t\t\t\tMy Savior is my Shield, By Him all rage is stilled.
+%% 9.\tHe brings me to the portal That opens into bliss,
+%% \t\t\t\tWhere graved in words immortal This golden scripture is:
+%% \t\t\t\t"Who's there despised with me, Here with me crown'd shall be;
+%% \t\t\t\tWho there with Me shall die, Here's raised with me on high!"
+%%endtext
+%%multicol end

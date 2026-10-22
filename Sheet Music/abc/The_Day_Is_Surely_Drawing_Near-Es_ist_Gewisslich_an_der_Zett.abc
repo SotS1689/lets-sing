@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.740000
+%%staffsep	0.500000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rev 20:11-15, Lk 21:25-36, Mt 25:32-46, 2Tim 4:1, Rev 13:5-9, 1Thess 4:13-18
+%OHTOPICS {Anticipation}, {Assurance [5,6]}, {Atonement [5,6]}, {Blood [6]}, {Brevity of Life}, {Church in Heaven (Church Victorious/Church Triumphant) [6]}, {Conscience}, {Eternal Life}, {Faith [5]}, {Fear of the Lord}, {God, Justness of}, {Judgment}, {Law}, {Presence}, {Saints (all Faithful)}, {Scripture [1]}, {Second Coming}, {Sinners}
+%OHCATEGORY END TIMES
+%OHMETRICAL 8 7 8 7 8 8 7
+%OHCOMPLEXITY 1
+%OHCOMPOSER from Klug's Geistliche Lieder, Wittenberg, 1533
+%OHARRANGER unknown
+%OHAUTHOR Ringwaldt, Bartholomäus (1532-1599)
+%OHTRANSLATOR Peter, Phillip Adam (1832-1919)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: The Day is Surely Drawing Near
+C: Words: Bartholomäus Ringwaldt, 1565.  Translated by Phillip A. Peter, 1872, alt. 
+C: Music: 'Es ist Gewisslich an der Zeit' from Klug's Geistliche Lieder, Wittenberg, 1533. 
+C: Setting: "Evangelical Lutheran Hymn-Book", 1931.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: The Evangelical Lutheran Hymn-book, 1931, Hymn 552.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] z G G B | A G A A | B2 G2 | B c d B | A2 G2 |
+w: 1.~The day is sure- ly draw- ing near, When God's Son, the A- noint- ed, 
+w: 2.~A trum- pet loud shall then re- sound, And all the earth be sha- ken; 
+w: 3.~A book is o- pened then to all, A re- cord tru- ly tell- ing 
+w: 4.~Then woe to those who scorned the Lord, And sought but car- nal plea- sures, 
+w: 5.~O Je- sus, who my debt didst pay And for my sin wast smit- ten 
+[V: S1V2]  x D D G | F E E F | G2 E2 | G G A G | (G F) D2 |
+[V: S2V1]  z B, G, D | D B, C D | D2 C2 | D E D D | D2 B,2 |
+[V: S2V2]  x G,, B,, G,, | D, E, A,, D, | G,,2 C,2 | G, E, F, G, | D,2 G,,2 |
+% 5
+[V: S1V1]  z G G B | A G A A | B2 G2 | B c d B | A2 G2 |
+w: Shall with great maj- es- ty ap- pear, As Judge of all ap- point- ed. 
+w: Then all who in their graves are found Shall from their sleep a- wa- ken. 
+w: What each hath done, both great and small, When he on earth was dwell- ing; 
+w: Who here des- pised His prec- ious Word, And loved their earth- ly trea- sures! 
+w: With- in the Book of Life, oh, may My name be al- so writ- ten! 
+[V: S1V2]  x D D G | F E E F | G2 E2 | G G A G | (G F) D2 |
+[V: S2V1]  z B, G, D | D B, C D | D2 C2 | D E D D | D2 B,2 |
+[V: S2V2]  x G,, B,, G,, | D, E, A,, D, | G,,2 C,2 | G, E, F, G, | D,2 G,,2 |
+% 9
+[V: S1V1]  z B B A | G F G E | D3 D | G G G F |
+w: All mirth and laugh- ter then shall cease When flames on flames will 
+w: But all that live shall in that hour, By the Al- might- y's 
+w: And ev- ery heart be clear- ly seen, And all be known as 
+w: With shame and trem- bling they will stand, And at the Judg- e's 
+w: I will not doubt; I trust in Thee, From Sa- tan Thou hast 
+[V: S1V2]  x D G F | E ^D E ^C | D3 D | D E D D |
+[V: S2V1]  z G, D D | B, B, B, A, | F,3 F, | G, C B, A, |
+[V: S2V2]  x G,, G, D, | E, B,, G,, A,, | D,3 D, | B,, C, G,, D, |
+% 13
+[V: S1V1]  G A B2 | !sintro!G2 B c | d B A2 | G4 !eintro!|]
+w: still in- crease, As Scrip- ture tru- ly teach- eth. 
+w: bound- less pow'r Be changed at His com- mand- ing. 
+w: they have been, In thoughts and words and ac- tions. 
+w: stern com- mand To Sa- tan be de- liv- ered. 
+w: made me free And from all con- dem- na- tion. 
+[V: S1V2]  B, D D2 | E2 D E | F D D2 | B,4 |]
+[V: S2V1]  G, F, G,2 | G,2 G, G, | A, G, (G, F,) | G,4 |]
+[V: S2V2]  E, D, G,,2 | C,2 G, E, | D, G,, D,2 | G,,4 |]
+% 20
+%%multicol start
+%%leftmargin 2.3cm
+%%rightmargin 12cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\tTherefore, my Intercessor be, And for Thy blood and merit
+%% \t\t\t\tDeclare my name from judgment free, With all who life inherit;
+%% \t\t\t\tThat I may see Thee face to face
+%% \t\t\t\tWith all thy saints in that blest place
+%% \t\t\t\tWhich Thou for us hast purchased.
+%%endtext
+%%multicol new
+%%leftmargin 11.5cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 7.\tO Jesus Christ, do not delay, O hasten our salvation!
+%% \t\t\t\tWe often tremble on our way In fear and tribulation.
+%% \t\t\t\tThen hear us when we cry to Thee;
+%% \t\t\t\tCome, mighty Judge, and make us free
+%% \t\t\t\tFrom every evil. Amen!
+%%endtext
+%%multicol end

@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7500000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP 1Jn 5:20, Is 41:9-13, Jn 1:14, 1Jn 4:9-10, 1Cor 12:3, Rom 8:26-27
+%OHTOPICS {Atonement [2]}, {Brotherhood [2]}, {Church in Heaven (Church Victorious/Church Triumphant) [3]}, {Church on Earth (Church Militant) [3]}, {Father [1]}, {God's Children - the Faithful (see also Saints, People of the World) [1]}, {Holy Spirit [3]}, {Jesus [2]}, {Resurrection [3]}, {Testimony}, {Trinity}
+%OHCATEGORY TRINITY
+%OHMETRICAL 8 8 8 8 8 8 8 8 8 8
+%OHCOMPLEXITY 5
+%OHCOMPOSER Medieval;Luther, Martin (1483-1546)
+%OHARRANGER unknown
+%OHAUTHOR Medieval;Luther, Martin (1483-1546)
+%OHTRANSLATOR composite
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: We All Believe in One True God
+T: (also known as In One True God We All Believe)
+C: Words: Medieval text expanded by Martin Luther, 1524.  Translation composite. 
+C: Music: 'Wir Glauben all an Einen Gott, Schoepfer' or 'Apostolic Creed' Medieval tune altered 
+C: by Martin Luther. Found in Walter's Geistliche Gesangbüchlein, 1524. 
+%C: Setting: Bennett and Goldschmidt's "Choral Book for England" 1863 Appendix 6, there ascribed to an ancient source reproduced in 
+C: Setting: "Eisenach Kirchenconserenz", G.v. Tucher et. al. , Stuttgart, 1854.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+S: Translation is public domain per Project Wittenberg: http://www.iclnet.org/pub/resources/text/wittenberg/hymns/believe.txt
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+%%staffsep 0.02cm
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+M: none
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] z2 D2 (A G A) E F2 (E G) (F E) (D ^C) D2 | A2 A2 d c
+w: 1.~We all * * be- lieve in * one * true * God, Who cre- a- ted 
+w: 2.~We all * * be- lieve in * Je- * sus * Christ, His own Son, our 
+w: 3.~We all * * con- fess the * Ho- * ly * Ghost, Who sweet grace and 
+[V: S1V2]  x2 D2 (F G) C2 (A, D) (C D) (D C) (F,/G,/ A,) A,2 | F2 E2 G E
+[V: S2V1]  z2 F,2 (A, C A,) G, (F,3/2 G,/) (A, _B,) A,2 (D, E,) F,2 | D3 C B, C
+[V: S2V2]  x2 [D,,2D,2] ([D,,D,] [E,,E,] [F,,F,]) [C,,C,] ([D,,2D,2] A,,) G,, (D, A,,) (_B,, A,,) [D,,2D,2] | D,2 A,,2 G,, A,,
+% 3
+[V: S1V1]  B A c2 A2 | z B c A A E F F E2 | D E F G
+w: earth and hea- ven, The Fa- ther, who to us in love Hath the right of 
+w: Lord, pos- ses- sing An e- qual God- head, throne, and might, Source of ev- ery 
+w: com- fort giv- eth And with the Fa- ther and the Son In e- ter- nal 
+[V: S1V2]  E C E2 F2 | x F E F F E D D ^C2 | A, E D D
+[V: S2V1]  G, A, (G, C) C2 | z D C C F, A, A, A, A,2 | F, A, D _B,
+[V: S2V2]  E, F, C,2 F,,2 | x [D,,D,] [A,,A,] [F,,F,] [D,,D,] [^C,,^C,] [D,,D,] D, A,,2 | D, =C, _B,, G,,
+% 5
+[V: S1V1]  F E (D ^C) !fermata!D2 | d2 d2 e d e ^c d2 d2 | e B c A
+w: chil- dren gi- * ven. He both soul and bo- dy feed- eth, All we need He 
+w: grace and bless- * ing. Born of Ma- ry, vir- gin mo- ther, By the pow- er 
+w: glor- y liv- * eth; Who the Church, His own cre- a- tion, Keeps in u- ni- 
+[V: S1V2]  C C A,2 !ferm!A,2 | F2 G2 G A G E F2 F2 | G G E F
+[V: S2V1]  A, G, (F, E,) !invertedfermata!F,2 | A,2 =B,2 C A, _B, A, A,2 A,2 | C D C C
+[V: S2V2]  A,,/_B,,/ C, (D, A,,) !ferm![D,,2D,2] | D,2 [G,,2G,2] C, [F,,F,] [G,,G,] A,, [D,,2D,2] [D,,2D,2] | [C,,C,] [G,,G,] [A,,A,] [F,,F,]
+% 6
+[V: S1V1]  A E F2 E2 | A G A B c B (A ^G) A2 |
+w: doth pro- vide us; He through snares and per- ils lead- * eth, 
+w: of the Spir- it, Made true man, our el- der Bro- * ther, 
+w: ty of spi- rit. Here for- give- ness and sal- va- * tion 
+[V: S1V2]  F E D2 ^C2 | =C E F F E E (C/D/ E) E2 |
+[V: S2V1]  F, A, A,2 A,2 | A, C C D C G, (A, B,) C2 |
+[V: S2V2]  [D,,D,] [^C,,^C,] [D,,2D,2] A,,2 | F,, C, F, D, A,, E, (F, E,) A,,2 |
+% 6
+%%newpage
+%%vskip 0.2in
+[V: S1V1]  (B3/2 c/) d2 A G A E F2 E2 | z G (F3/2 E/) (D ^C) (D F) D2 |
+w: Watch- * ing that no harm be- tide us. He car- * eth * for * us 
+w: That * the lost might life in- her- it; Was cru- * ci- * fied * for 
+w: Dai- * ly come through Je- sus' mer- it. All flesh * shall * rise, * and 
+[V: S1V2]  =G2 A2 F E E C (A, B,) C2 | x D C2 A,2 A,2 _B,2 |
+[V: S2V1]  E2 F2 C C C G, F,2 G,2 | z _B, (A, G,) (F, E,) (F, A,) G,2 |
+[V: S2V2]  E,2 (D,3/2 E,/) F, C, A,, C, D,2 C,2 | x G,, (A,, C,) (D, A,,) (F,, D,,) G,,2 |
+% 9
+[V: S1V1]  (F G) (A =B) (c3/2 B/ A3/2 G/ F E) | !sintro!D E F G (F E) D ^C D4 !eintro!|]
+w: day * and * night, * * * * * All things are gov- erned * by His might. 
+w: sin- * ful * men * * * * * And raised by God to * life a- gain. 
+w: we * shall * be * * * * * In bliss with God e- * ter- nal- ly. 
+[V: S1V2]  (D E) F2 (E G F E D ^C) | A, =C D D C2 _B, A, A,4 |]
+[V: S2V1]  (A, C2) D (G, G, C C A,2) | F, G, D _B, A, G,2 E, ^F,4 |]
+[V: S2V2]  (D, C,) (F, D,) (C, E, F, C, D, A,,) | D, =C, _B,, G,, (A,, C,) G,, A,, [D,,4D,4] |]
+% 13
+%%vskip 1in
+%%multicol start
+%%leftmargin 1.5in
+%%rightmargin 1.5in
+%%textoption 3
+%%textfont Times-Bold 12.0
+%%EPS Peter_Paul_Rubens_-_The_Holy_Trinity_-_WGA20179.eps
+%%begintext
+%%"The Holy Trinity" by Peter Paul Rubens (1577-1640)
+%%endtext
+%%multicol end
+

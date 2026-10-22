@@ -1,0 +1,154 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2010 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.680000
+%%staffsep	0.0000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rev 1:7, Jn 20:24-31, Rev 7:9-12, Acts 1:11, 1Thess 4:13-18, Rev 22:20
+%OHTOPICS {Anticipation}, {Bride/Bridegroom [5]}, {Cloud [1]}, {Fear of the Lord}, {God, As King}, {God, Eternity of}, {God, Majesty &amp; Power of}, {Jesus}, {Judgment [3]}, {Praise, Son}, {Presence}, {Saints (all Faithful) [1,4]}, {Second Coming}, {Sinners [1-3]}, {Throne (also see God - As King) [7]}, {Worship}
+%OHCATEGORY ADVENT
+%OHMETRICAL 8 7 8 7 12 7
+%OHCOMPLEXITY 3
+%OHCOMPOSER Olivers, Thomas (1725-1799)
+%OHARRANGER unknown
+%OHAUTHOR Cennick, John (1718-1755);Wesley, Charles (1707-1788)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Lo! He Comes With Clouds Descending
+C: Words: John Cennick, 1752. Altered by Charles Wesley, 1758, alt. 
+C: Music: 'Helmsley' attr. Thomas Olivers, 1765.  Setting: "The English Hymnal", 1906, alt.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision.
+S: Music source: LSB hymn 336.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=150] G2 (B d) | (G F) (E D) | (E3/2 F/ G) F/E/ | (D3/2 C/) B,2 | D3 D | G2 A2 |
+w: 1.~Lo! He * comes * with * clouds * * de- * scend- * ing, Once for ev- 'ry 
+w: 2.~Ev- 'ry * eye * shall * now * * be- * hold * Him Robed in dread- ful 
+w: 3.~Ev- 'ry * is- * land, * sea, * * and * moun- * tain, Heav'n and earth, shall 
+w: 4.~Now re- * demp- * tion, * long * * ex- * pect- * ed, See in sol- emn 
+w: 5.~An- swer * Thine * own * bride * * and * Spi- * rit, Has- ten, Lord, the 
+[V: S1V2]  D2 D2 | (B, D) (C D) | (C3/2 D/ E) D/C/ | A,2 G,2 | A,3 D | D2 (E F) |
+[V: S2V1]  B,2 (B, A,) | (G, B,) (G,/A,/ B,) | G,3 G, | F,2 G,2 | (F, G, F,) F, | G,2 C2 |
+[V: S2V2]  G,2 (G, F,) | (E, B,,) (C, G,,) | C,3 C, | D,2 G,,2 | (D, E, D,) C, | B,,2 A,,2 |
+% 9
+[V: S1V1]  (B d) (c B) | (B2 A2) | G2 (B d) | (G F) (E D) | (E3/2 F/ G) F/E/ | (D3/2 C/) B,2 | D3
+w: sin- * ner * slain; * Thou- sand * thou- * sand * saints * * at- * tend- * ing, Swell 
+w: ma- * jest- * y; * Those who * set * at * naught * * and * sold * Him, Pierced 
+w: flee * a- * way; * All who * hate * Him * must, * * con- * found- * ed, Hear 
+w: pomp * ap- * pear; * All His * saints, * by * man * * re- * ject- * ed, Now 
+w: gen- * 'ral * doom! * The new * Heav'n * and * earth * * in- * her- * it, Take 
+[V: S1V2]  (G B) (A G) | (G2 F2) | D2 D2 | (B, D) (C D) | (C3/2 D/ E) D/C/ | A,2 G,2 | A,3
+[V: S2V1]  B,2 E2 | D4 | B,2 (B, A,) | (G, B,) (G,/A,/ B,) | G,3 G, | F,2 G,2 | (F, G, F,)
+[V: S2V2]  G,,2 C,2 | D,4 | G,2 (G, F,) | (E, B,,) (C, G,,) | C,3 C, | D,2 G,,2 | (D, E, D,)
+% 13
+[V: S1V1]  D | G2 A2 | (B d) (c B) | (B2 A2) | (A3/2 B/ A) B | c2 B2 | (G3/2 A/ G) c |
+w: the tri- umph of * His * train: * Hal- * * le- lu- jah! Hal- * * le- 
+w: and nailed Him to * the * tree, * Deep- * * ly wail- ing, deep- * * ly 
+w: the trump pro- claim * the * day: * Come * * to judg- ment! Come * * to 
+w: shall meet Him in * the * air: * Hal- * * le- lu- jah! Hal- * * le- 
+w: Thy pin- ing ex- * iles * home: * All * * cre- a- tion, all * * cre- 
+[V: S1V2]  D | D2 (E F) | (G B) (A G) | (G2 F2) | (F3/2 G/ F) G | (E F) G2 | (D2 E) E |
+[V: S2V1]  F, | G,2 C2 | B,2 E2 | D4 | D3 D | C2 D2 | (B,3/2 A,/ B,) C |
+[V: S2V2]  C, | B,,2 A,,2 | G,,2 C,2 | D,4 | D,3 B,, | A,,2 G,,2 | (G,3/2 F,/ G,) A,, |
+% 21
+[V: S1V1]  (B A) G2 | (B3/2 c/ B) d | (c B) A2 | !sintro!G2 (A B) | D2 c2 | B2 A2 | G4 !eintro!|]
+w: lu- * jah! Hal- * * le- lu- * jah! God ap- * pears on earth to reign. 
+w: wail- * ing, deep- * * ly wail- * ing, Shall the * true Mes- si- ah see. 
+w: judg- * ment! Come * * to judg- * ment! Come to * judg- ment! Come a- way! 
+w: lu- * jah! Hal- * * le- lu- * jah! See the * day of God ap- pear! 
+w: a- * tion, all * * cre- a- * tion, Tra- vails! * groans! and bids Thee come! 
+[V: S1V2]  (G F) E2 | E3 D | (F G) (G F) | D2 D2 | D2 G2 | G2 F2 | G4 |]
+[V: S2V1]  (D3/2 C/) B,2 | (G,3/2 A,/ G,) G, | (A, B,/C/) D2 | D2 (C B,) | A,2 (G, A,) | (B, C) (D C) | B,4 |]
+[V: S2V2]  (B,,/C,/ D,) E,2 | E,3 B,, | (A,, G,,) D,2 | B,2 (A, G,) | F,2 E,2 | D,2 D,2 | G,,4 |]
+% 28
+%%multicol start
+%%rightmargin 12cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\tThe dear tokens of His passion Still His dazzling body bears;
+%% \t\t\t\tCause of endless exultation To His ransomed worshipers;
+%% \t\t\t\tWith what rapture, with what rapture, with what rapture
+%% \t\t\t\tGaze we on those glorious scars!
+%%endtext
+%%multicol new
+%%leftmargin 10cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 7.\tYea, Amen! let all adore Thee, High on Thine eternal throne;
+%% \t\t\t\tSavior, take the power and glory, Claim the kingdom for Thine own;
+%% \t\t\t\tO come quickly! O come quickly! O come quickly!
+%% \t\t\t\tEverlasting God, come down!
+%%endtext
+%%multicol end

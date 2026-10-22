@@ -37,6 +37,43 @@ unchanged: edit the root JSON / add MIDI files as before, then build.
   change replaces the whole cache — no stale MIDI files.
 - Icons: `python scripts/make_icons.py` redraws them from the Android launcher artwork.
 
+## Sheet music
+
+The player shows the hymn's score and lights each note as it sounds, every part
+in its own colour (the ring around its S/A/T/B button), only for parts that are
+switched on. The design follows the #doreancon hymnal player
+(gitlab.com/svrbc/doreancon.org), used with its developer's permission.
+
+- **Scores** are Open Hymnal's own ABC files, in `../Sheet Music/abc/`, named
+  like the hymn's MIDI file (`<name>.abc` beside `<name>.mid`).
+  `python "../Sheet Music/download_openhymnal_abc.py"` fetches any that are
+  missing; to add a score from elsewhere, drop it in with the matching name.
+- **`scripts/build-scores.mjs`** (run by prepare-content) works out, ahead of
+  time, when every notehead sounds in *our* MIDI file: each part's MIDI notes are
+  matched by pitch against the score line it follows, which handles intros,
+  every verse, repeats, ties, and parts written as chords. A score whose notes
+  don't line up with the MIDI is **left out**, with the reason printed during
+  the build, rather than lighting the wrong notes. So are scores with organ or
+  accompaniment staves. The results go to `public/scores/` (`.abc` + `.json` note map).
+- A score belongs to the tune, so hymns sharing a tune share it. The words under
+  its notes are shown only when they are that hymn's own verse 1 (a psalm sung to
+  a hymn's tune shows the notes alone), and the verse being sung is followed only
+  when the MIDI plays that hymn's verses.
+- **`src/score.js`** draws the score with [abcjs](https://abcjs.net) (MIT)
+  and lights the notes. It loads only on a hymn's page. Two views, switched in
+  the Music card's header and remembered per device:
+  - **Scroll** (the default): the whole tune on one long line, at a size readable
+    on a phone, sliding past so the note being sung stays just short of the middle (passing it
+    halfway through each note), with the notes just sung still in sight on its
+    left and the next ones on its right. The line holds the tune twice, end to
+    end (this verse, then the next with its words), so the end of a verse runs
+    straight on into the next one. It's redrawn a verse along once the old verse
+    has slid out of sight, so the swap doesn't show. Only the current verse's words are under
+    it, swapped in as each verse starts, and the clef and key are pinned at the left edge.
+  - **Page**: the score as a hymnal prints it, reflowed to the screen.
+- Scores are cached like MIDI files: on first view, kept across app updates
+  unless they change, and included in "Download all".
+
 ## Publishing
 
 The live site is **https://sots1689.github.io/lets-sing/**. Every push to

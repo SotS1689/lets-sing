@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2005 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.710000
+%%staffsep	0.0000cm
+%%exprabove	false
+%%measurebox	false
+%%graceslurs false
+%OHSCRIP Lk 2:15-16
+%OHTOPICS {Angels [1,3]}, {Christmas/Advent}, {Discipleship}, {Fellowship}, {God, As King [1,3]}, {God, Love of [6]}, {Jesus}, {Joy}, {Light [2]}, {Love [6]}, {Praise, Son}, {Presence}, {Reverence}, {Sinners [6]}, {Worship}
+%OHCATEGORY CHRISTMAS
+%OHMETRICAL Irregular
+%OHCOMPLEXITY 3
+%OHCOMPOSER Wade, John Francis (circa 1710-1786)
+%OHARRANGER unknown
+%OHAUTHOR Wade, John Francis (circa 1710-1786)
+%OHTRANSLATOR Oakeley, Frederick (1802-1880);Brooke, William Thomas (1848-1917)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%beginps
+% -- draw parenthesis around a note
+/opnot{		% usage: x y opnot
+	M -11 -3 RM /Times-Roman 36 selectfont(\( \))show}!
+% -- same, but inside a chord (x is not the same)
+/opchnot{	% usage: x y opchnot
+	M -10.5 -3 RM /Times-Roman 24 selectfont(\(   \))show}!
+%%endps
+
+% -- optional note
+%%deco () 1 opnot 0 0 0
+
+
+X: 1
+T: O Come, All Ye Faithful
+C: Words:  John F. Wade, circa 1743. v.1-3, 6 Translated by Frederick Oakeley, 1841;
+C: v. 4, 5 Translated by William T. Brooke (1848-1917). 
+C: Music: 'Adeste Fideles' or 'Portuguese Hymn' John F. Wade, 1743.  Setting: "A Hymnal" (Episcopal), 1916.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2007 Revision.
+S: Music source: "A Hymnal" (Episcopal), 1916 Hymn 72, alt.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+%%staffsep 1.2cm
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] !()!G | G2 D G | A2 D2 | B A B c | B2 A !()!G |
+w: 1.~O come, all ye faith- ful, joy- ful and tri- um- phant, O 
+w: 2. True God of true God, Light from Light E- ter- nal, * 
+w: 3. Sing, choirs of an- gels, sing in ex- ul- ta- tion; O 
+w: 4. See how the shep- herds, sum- moned to His cra- dle, * 
+w: 5. Lo! star led chief- tains, Ma- gi, Christ a- dor- ing, * 
+[V: S1V2]  D | D2 D D | D2 D2 | D D D E | D2 D B, |
+[V: S2V1]  B, | B,2 B, B, | A,2 A,2 | G, A, G, G, | G,2 F, G, |
+[V: S2V2]  G, | G,2 B, G, | F,2 F,2 | G, F, G, C, | D,2 D, E, |
+% 5
+[V: S1V1]  G2 .(F E) | .('F G) .(A B) | (F2 E3/2) D/ | D3 z | d2 c B |
+w: come ye, O come * ye, to Beth- * le- hem. Come and be- 
+w: Lo, He * shuns * not the Vir- * gin's womb; Son of the 
+w: sing, all ye cit- i- zens of heav'n * a- bove! Glo- ry to 
+w: Leav- ing their flocks, * draw * nigh * to gaze; We too will 
+w: Of- fer Him in- * cense, * gold, * and myrrh; We to the 
+[V: S1V2]  (B, ^C) .(D ^C) | .(D D) .(D D) | (D2 ^C3/2) D/ | D3 x | D2 E/F/ G |
+[V: S2V1]  G,2 .(A, A,) | .(A, G,) .(F, E,) | (A,2 G,3/2) F,/ | F,3 z | B,2 C D |
+[V: S2V2]  E,2 .(D, A,,) | .(D, B,,) .(F,, G,,) | (A,,2 A,,3/2) D,/ | D,3 x | B,2 A, G, |
+% 9
+[V: S1V1]  .(c2 B2) | A B G A | (F3/2 E/) D G | G F G A |
+w: hold Him, born the King of an- * gels; O come, let us a- 
+w: Fa- ther, be- got- ten, not cre- a- ted; * * * * *
+w: God, * glo- ry in the high- * est; * * * * *
+w: thi- ther bend our joy- ful foot- * steps; * * * * *
+w: Christ Child bring our hearts' ob- la- * tions. * * * * *
+[V: S1V2]  .(G F G2) | D D E E | D2 D D | D4 |
+[V: S2V1]  .(C2 D2) | A, G, B, C | (A,3/2 G,/) F, B, | B, A, B, C |
+[V: S2V2]  .(A,2 G,2) | F, G, E, C, | D,2 D, B, | B, A, B, C |
+% 13
+[V: S1V1]  G2 D B | B A B c | B2 A !sintro!B | c B A G | F2 (G c) | (B2 A3/2) G/ | G3 !eintro!|]
+w: dore Him, O come, let us a- dore Him, O come, let us a- dore Him, * Christ * the Lord. 
+[V: S1V2]  D3 D | D D D D | D2 D G | F G D D/^C/ | D2 (D E) | D2- D3/2 B,/ | B,3 |]
+[V: S2V1]  B,3 G, | G, F, G, A, | G,2 F, D | D D A, A, | A,2 G,2 | (G,2 F,3/2) G,/ | G,3 |]
+[V: S2V2]  B,3 G, | G, F, G, A, | G,2 F, G, | A, G, F, E, | D, C, (B,, C,) | (D,2 D,3/2) G,,/ | G,,3 |]
+% 22
+%%multicol start
+%%rightmargin 12cm
+%%begintext obeylines justify
+%% 6.\tChild, for us sinners poor and in the manger,
+%% \t\t\t\tWe would embrace Thee, with love and awe;
+%% \t\t\t\tWho would not love Thee, loving us so dearly?
+%% \t\t\t\t
+%% 7.\tYea, Lord, we greet Thee, born this happy morning;
+%% \t\t\t\tJesus, to Thee be glory given;
+%% \t\t\t\tWord of the Father, now in flesh appearing.
+%%endtext
+%%multicol new
+%%leftmargin 11cm
+%%rightmargin 2cm
+%%begintext obeylines justify
+%% 8.\tAdeste, fideles, laeti triumphantes;
+%% \t\t\t\tVenite, venite in Bethlehem.
+%% \t\t\t\tNatum videte Regem angelorum.
+%% \t\t\t\tVenite adoremus, venite adoremus,
+%% \t\t\t\tVenite adoremus, Dominum.
+%%endtext
+%%multicol end

@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.650000
+%%staffsep	0.0000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Eph 1:7-10, Job 33:22-28, Rom 5:19, Mt 26:28, Zech 9:11, Heb 9:12-15, 1Pt 1:17-19
+%OHTOPICS {Art and Music [4]}, {Aspiration [5-8]}, {Assurance [8]}, {Atonement [1-3]}, {Blood [1,8]}, {Brevity of Life [8]}, {Christian Life}, {Contrition [1]}, {Example, Christ's [5-8]}, {Following Jesus, In Action [7]}, {Following Jesus, In Faith [6,8]}, {Following Jesus, Sanctification [5]}, {Forgiveness [3]}, {God, Mercy of [2]}, {Gratitude}, {Kindness, God's}, {Kindness, Ours [7]}, {Patience [6]}, {Salvation}, {Sinners}, {Temptation [5]}
+%OHCATEGORY LENT
+%OHMETRICAL 7 6 7 6 8 7 6
+%OHCOMPLEXITY 3
+%OHCOMPOSER Praetorius, Michael (1571-1621)
+%OHARRANGER unknown
+%OHAUTHOR Gesenius, Justus (1601-1673)
+%OHTRANSLATOR Mercer, William (1811-1873)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: O Lord, When Condemnation
+T: (also known as O Lord, When My Sins Grieve Me or When Guilt and Shame Are Raising
+T: or When O'er My Sins and Sorrow or When Sorrow and Remorse)
+C: Words: Justus Gesenius, 1646. Translated by William Mercer, 1857.
+C: Music: 'Wenn Mein Sünd' Michael Praetorius, 1609.  Setting: "Mehrstimmiges Choralbuch", 1906.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.
+S: Music source: "Mehrstimmiges Choralbuch", 1906 Hymn 177 (page 140)
+S: Lyrics source: "The Lutheran Hymnary", 1913 Hymn 281
+M: 6/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 117 115 100 1
+V: S2V1 clef=bass 
+%%MIDI beat 117 115 100 1
+V: S2V2 
+%%MIDI beat 117 115 100 1
+K: FC % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=110] A2 | F2 A A2 c | _B2 !fermata!A2 z E | G2 G D2 E | (F2 !fermata!E2) z 
+w: 1.~O Lord, when con- dem- na- tion And guilt op- press my soul, * 
+w: 2.~O won- der pas- sing mea- sure To faith's en- ligh- tened eye! * 
+w: 3.~My sins rise up to hea- ven, And count- less is their lost; * 
+w: 4.~Hence- forth my heart shall bless Thee Whilst here its pul- ses move; * 
+w: 5.~Lord, let Thy bit- ter pas- sion My soul with strength in- spire * 
+[V: S1V2]  C2 | _B,2 C C2  E | D2 !ferm!^C2 x =C | D2 E B,2 ^C | (D2 !ferm!^C2) x 
+[V: S2V1]  (E, F,) | D,2 F, A,2 G, | G,2 !ferm!E,2 z A, | G,2 G, G,2 G, | A,2- !ferm!A,2 z 
+[V: S2V2]  A,,2 | _B,,2 F,, F,2 C, | G,,2 !invertedfermata!A,,2 x A,, | B,,2 C, G,2 E, | (D,2 !invertedfermata!A,,2) x 
+% 6
+[V: S1V1] A | c2 _B A2 F | G2 !fermata!F2 z A | G2 F G2 G | (E2 !fermata!D2) z2 | 
+w: Then let Thy bit- ter pas- sion The ri- sing storm con- trol: * 
+w: For slaves it was the plea- sure Of their own Lord to die! *
+w: But Christ Him- self hath gi- ven, And paid the migh- ty cost: * 
+w: Its songs of praise add- ress Thee For all Thy dy- ing love: * 
+w: To flee with in- dig- na- tion All sin- ful, low de- sire: * 
+[V: S1V2] F | F2 D C2 A, | C2 !ferm!C2 x C | E2 D D2 D | (^C2 !ferm!D2) x2 | 
+[V: S2V1] C | A,2 G, E,2 F,- | F, E, !ferm!A,2  x A, | C2 A, _B,2 G, | (A,2 !ferm!^F,2) z2 | 
+[V: S2V2] F,, | F,,2 G,, A,,2 D, | C,2 !invertedfermata!F,,2 z F, | C,2 D, G,,2 _B,, | (A,,2 !invertedfermata!D,2) x2 | 
+% 9
+[V: S1V1]  F E F G2 A | F2 G !fermata!A2 z | c B A G2 
+w: Re- mind me that Thy blood was spilt For me, O most 
+w: The migh- ty God stoops from on high For me, lost, ruin- 
+w: Since then on Him my sins were laid, Of hell and all 
+w: Thy wrongs and last deep a- go- ny Shall be my me- 
+w: Ah! ne- ver would I, Lord, for- get The great- ness of 
+[V: S1V2]  A, C C _B,2 C | D2 D !ferm!^C2 x | E E E E2 
+[V: S2V1]  F, G, A, D,2 F, | D,2 D, !ferm!E,2 z | A, B, C B,2 
+[V: S2V2]  D, C, A,, G,,2 F,, | _B,,2 B,, !invertedfermata!A,,2 x | A, ^G, A, E,2 
+% 13
+[V: S1V1] A | (G2 F) !fermata!E2 !sintro!A | F2 G A2 A | (E2 !fermata!D2)!eintro! |] 
+w: un- wor- * thy! To take a- way my guilt. * 
+w: ed cre- * ature, And deigns as man to die. * 
+w: its tor- * ments, I am no more a- fraid. * 
+w: di- ta- * tion Till I am called to Thee. * 
+w: that ran- * som Which paid my end- less debt. *
+[V: S1V2] C | (E2 D) !ferm!^C2 C | D2 _B, D2 ^C | (^C2 !ferm!D2) |] 
+[V: S2V1] A, | (C2 A,) !ferm!A,2 E, | D,2 D, F,2 E, | (E,2 !ferm!^F,2) |] 
+[V: S2V2] F, | (C,2 D,) !invertedfermata!A,,2 A,, | _B,,2 G,, D,2 A,, | (A,,2 !invertedfermata!D,2) |] 
+% 18
+%%vskip 0.125in
+%%multicol start
+%%leftmargin 2.25cm
+%%rightmargin 12cm
+%%textfont Times-Roman 13.0
+%%begintext obeylines justify
+%% 6. Should earthly griefs assail me, 
+%% \t\t\tIf need be, shame and scorn, 
+%% \t\t\tLet patience never fail me 
+%% \t\t\tTo bear as Thou hast borne: 
+%% \t\t\tGrant that the world I may forsake, 
+%% \t\t\tAnd Thee for my example, 
+%% \t\t\tOh! may I daily take. 
+%%endtext
+%%multicol new
+%%leftmargin 8cm
+%%rightmargin 2cm
+%%textfont Times-Roman 13.0
+%%begintext obeylines justify
+%% 7. Still let me do to others 
+%% \t\t\tAs Thou hast done to me, 
+%% \t\t\tAnd look on all as brothers, 
+%% \t\t\tTheir willing servant be: 
+%% \t\t\tO may I never seek my own, 
+%% \t\t\tBut help as Thou hast helped, 
+%% \t\t\tWith purest love alone. 
+%%endtext
+%%multicol new
+%%leftmargin 13.5cm
+%%rightmargin 2cm
+%%textfont Times-Roman 13.0
+%%begintext obeylines justify
+%% 8. At length when I am bidden 
+%% \t\t\tWith all things here to part, 
+%% \t\t\tThe wounds in which I'm bidden 
+%% \t\t\tSpeak peace into my heart; 
+%% \t\t\tRelying then upon Thy blood, 
+%% \t\t\tO give me full assurance 
+%% \t\t\tThat I shall see my God. 
+%%endtext
+%%multicol end
+
+

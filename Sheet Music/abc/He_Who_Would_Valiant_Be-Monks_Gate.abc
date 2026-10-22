@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2006 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Jn 12:26, 1Pt 2:19-24, 3:12-16, Heb 11
+%OHTOPICS {Anticipation [3]}, {Aspiration}, {Christian Life}, {Commitment}, {Courage in Affliction}, {Discipleship}, {Eternal Life [3]}, {Faithfulness}, {Following Jesus, In Faith}, {Following Jesus, In Action}, {Following Jesus, Sanctification}, {Holy Spirit [3]}, {Loyalty}, {Sacrifice}, {Victory [3]}, {Zeal}
+%OHCATEGORY NEW OBEDIENCE
+%OHMETRICAL 11 11 12 11
+%OHCOMPLEXITY 3
+%OHCOMPOSER English
+%OHARRANGER Williams, Ralph Vaughan (1872-1958)
+%OHAUTHOR Bunyan, John (1628-1688);Dearmer, Percy (1867-1936)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: He Who Would Valiant Be
+C: Words: John Bunyan, 1684. Modified by Percy Dearmer, 1906. 
+C: Music: 'Monks Gate' traditional English.  Setting: Ralph Vaughan Williams, 1904.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision.
+S: Music source: 'Lutheran Worship' Hymnal, 1982 Hymn 383.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: D % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] (D3/2 E/) | F D F/G/ A | B2 A2 | A D C D- | D2
+w: 1.~He * who would val- * iant be 'gainst all dis- a- ster, * 
+w: 2.~Who * so be- set * him round with dis- mal stor- ies * 
+w: 3.~Since, * Lord, Thou dost * de- fend us with Thy Spi- rit, * 
+[V: S1V2]  A,2 | D A, D C | B,2 C2 | D A, A, A,- | A,2
+[V: S2V1]  (F,3/2 G,/) | A, F, D, E, | G,2 A,2 | A, A, G, F,- | F,2
+[V: S2V2]  D,2 | D, D, B,, A,, | G,,2 G,2 | F, F, E, D,- | D,2
+% 5
+[V: S1V1]  (D3/2 E/) | F D F/G/ A | B2 A2 | A D C D- | D2
+w:  Let * him in con- * stan- cy fol- low the Mas- ter. * 
+w:  Do * but them- selves * con- found his strength the more is. * 
+w:  We * know we at * the end, shall life in- her- it. * 
+[V: S1V2]  A,2 | D A, D C | B,2 C2 | D A, A, A,- | A,2
+[V: S2V1]  (F,3/2 G,/) | A, F, D, E, | G,2 A,2 | A, A, G, F,- | F,2
+[V: S2V2]  D,2 | D, D, B,, A,, | G,,2 G,2 | F, F, E, D,- | D,2
+% 9
+[V: S1V1]  A2 | d B c d/c/ | B3 A | F/E/ D F G | A3 
+w:  There's no dis- cour- age- * ment shall make * him once re- lent 
+w:  No foes shall stay his * might; though he * with gi- ants fight, 
+w:  Then fan- cies flee a- * way! I'll fear * not what men say, 
+[V: S1V2]  (D3/2 E/) | F F G F/E/ | D3 E | D A, D D | C3
+[V: S2V1]  F,2 | B, B, B, ^A, | (B,2 G,) E, | A, A, F, D, | (E,2 A,)
+[V: S2V2]  (D,3/2 C,/) | B,, D, E, F, | (G,2 B,,) C, | D, F, D, B,, | (A,, A, G,)
+% 13
+[V: S1V1]  !sintro!d | A3/2 A/ B/A/ G/F/ | E B A D | C D2 !eintro!|]
+w: His first a- vowed * in- * tent to be a pil- grim. 
+w: He will make good * his * right to be a pil- grim. 
+w: I'll la- bor night * and * day to be a pil- grim. 
+[V: S1V2]  D | C D D D | E C D B, | A, A,2 |]
+[V: S2V1]  A, | G, F, G, B, | C C A, G, | G, F,2 |]
+[V: S2V2]  F, | E, D, G, E, | A, G, F, E, | A,, D,2 |]
+% 18

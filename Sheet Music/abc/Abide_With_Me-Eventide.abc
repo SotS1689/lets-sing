@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.730000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 24:29, Ps 63:6-8, 73:23-26, 1Cor 10:13
+%OHTOPICS {Brevity of Life}, {Calmness}, {Cloud [6]}, {Contrition [5,6]}, {Cross [8]}, {Darkness, Spiritual [1,2]}, {God, Care of}, {God, Faithfulness of}, {Hope}, {Invitation (Faithful's to God)}, {Presence}
+%OHCATEGORY CROSS AND COMFORT
+%OHMETRICAL 10 10 10 10
+%OHCOMPLEXITY 2
+%OHCOMPOSER Monk, William Henry (1823-1889)
+%OHARRANGER Monk, William Henry (1823-1889)
+%OHAUTHOR Lyte, Henry F. (1793-1847)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Abide With Me
+C: Words: Henry F. Lyte, 1847.  Music: 'Eventide' William H. Monk, 1861.  Setting: William H. Monk, 1861.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: Hymns Ancient and Modern, 1869 hymn 14. (ed. William H. Monk)
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] G2 G F | E2 B2 | c B B A | G4 | G2 A B |
+w: 1.~A- bide with me; fast falls the ev- en- tide; The dark- ness 
+w: 2.~Swift to its close ebbs out life's lit- tle day; Earth's joys grow 
+w: 3.~Not a brief glance I beg, a pass- ing word; But as Thou 
+w: 4.~Come not in ter- rors, as the King of kings, But kind and 
+w: 5.~Thou on my head in ear- ly youth didst smile; And, though re- 
+[V: S1V2]  E2 D D | E2 E2 | E D E F | E4 | E2 E E |
+[V: S2V1]  B,2 B, A, | G,2 E,2 | E, B, B, B, | B,4 | B,2 A, G, |
+[V: S2V2]  E,2 B,, B,, | C,2 G,,2 | A,, B,, C, D, | E,4 | (E, D,) C, B,, |
+% 5
+[V: S1V1]  c2 B2 | A F G =A | B4 | G2 G F | E2 B2 |
+w: deep- ens; Lord with me a- bide. When o- ther help- ers 
+w: dim; its glor- ies pass a- way; Change and de- cay in 
+w: dwell'st with Thy dis- ci- ples, Lord, Fa- mil- iar, con- des- 
+w: good, with heal- ing in Thy wings, Tears for all woes, a 
+w: bell- ious and per- verse mean- while, Thou hast not left me, 
+[V: S1V2]  E2 E2 | E F E E | D4 | E2 D D | E2 E2 |
+[V: S2V1]  A,2 G,2 | C B, B, E, | F,4 | (G, A,) B, A, | G,2 (E D) |
+[V: S2V2]  A,,2 E,2 | F, D, E, C, | B,,4 | E,2 B,, B,, | C,2 G,,2 |
+% 9
+[V: S1V1]  B A A G | F4 | !sintro!F2 G A | G F E A | G2 F2 | E4 !eintro!|]
+w: fail and com- forts flee, Help of the help- less, O a- bide with me. 
+w: all a- round I see; O Thou who chan- gest not, a- bide with me. 
+w: cend- ing, pa- tient, free. Come not to so- journ, but a- bide with me. 
+w: heart for ev- ery plea? Come, Friend of sin- ners, and thus bide with me. 
+w: oft as I left Thee, On to the close, O Lord, a- bide with me. 
+[V: S1V2]  E E =E =E | F4 | D2 E D | E D E F | E2 D2 | E4 |]
+[V: S2V1]  C C C B, | A,4 | B,2 B, B, | B, A, G, C | B,3 A, | G,4 |]
+[V: S2V2]  A,,3/2 B,,/ C, C, | F,4 | A,2 G, F, | E, B,, C, A,, | B,,2 B,,2 | E,4 |]
+% 18
+W: 6.I need Thy presence every passing hour.
+W: What but Thy grace can foil the tempter's power?
+W: Who, like Thyself, my guide and stay can be?
+W: Through cloud and sunshine, Lord, abide with me.
+W: 
+W: 7.I fear no foe, with Thee at hand to bless;
+W: Ills have no weight, and tears no bitterness.
+W: Where is death's sting? Where, grave, thy victory?
+W: I triumph still, if Thou abide with me.
+W: 
+W: 8.Hold Thou Thy cross before my closing eyes;
+W: Shine through the gloom and point me to the skies.
+W: Heaven's morning breaks, and earth's vain shadows flee;
+W: In life, in death, O Lord, abide with me.

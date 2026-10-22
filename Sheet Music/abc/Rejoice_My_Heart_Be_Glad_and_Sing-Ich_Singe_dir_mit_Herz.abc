@@ -1,0 +1,200 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.72000000
+%%staffsep	0.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 8:1-9, Ps 27:1-6, Mic 7:18-19, Ps 73:25-26
+%OHTOPICS {Assurance}, {Christian Life}, {Comfort}, {Courage in Affliction}, {God, Care of}, {God, Creator [10]}, {God, Faithfulness of}, {God, Goodness of}, {God, Love of}, {Gratitude}, {Guidance [4-6]}, {Hope}, {Joy}, {Kindness, God's}, {Light [2]}, {Missions [7]}, {Patience}, {Peace [6,12]}, {Security}, {Submission (see also Following Jesus, God - Providence of, Trust) [6]}, {Testimony [7]}
+%OHCATEGORY CROSS AND COMFORT
+%OHMETRICAL 8 6 8 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER König, Johann Balthasar (1691-1758)
+%OHARRANGER unknown
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR composite
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Rejoice, My Heart, Be Glad and Sing
+T: (also known as O Lord I Sing with Lips and Heart)
+C: Words: Paul Gerhardt, 1653.  Translation composite. 
+C: Music: 'Ich Singe dir mit Herz' Johann Balthasar König, 1738.
+C: Setting: "Evangelical Lutheran Hymn-Book", 1931.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+S: lyrics from ELHB 1931 Hymn 292 as "O Lord, I sing with lips and Heart"
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Bb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=110] F | F F F B | c A B c | G A G G | F3
+w: 1.~Re- joice, my heart, be glad and sing, A cheer- ful trust main- tain; 
+w: 2.~He is thy Trea- sure, He thy Joy, Thy Life and Light and Lord, 
+w: 3.~Why spend the day in blank des- pair, In rest- less thought the night? 
+w: 4.~Did not His love and truth and pow'r Watch o'er thy child- hood day? 
+w: 5.~His wis- dom nev- er plans in vain, Ne'er fal- ters or mis- takes; 
+[V: S1V2]  D | D C B, D | C C D F | =E F F =E | C3
+[V: S2V1]  B, | B, A, F, G, | G, F, F, C | C C D C | A,3
+[V: S2V2]  B,, | B,, F, D, G, | E, F, B,, A,, | C, F, B,, C, | F,,3
+% 5
+[V: S1V1]  F | B c d B | e d c !sintro!B | c d c c | B3 !eintro!|]
+w: For God, the Source of ev- ery- thing, Thy Por- tion shall re- main. 
+w: Thy Coun- se- lor when doubts an- noy, Thy Shield and great Re- ward. 
+w: On thy Cre- a- tor cast thy care; He makes thy bur- dens light. 
+w: Has He not oft in threat- 'ning hour Turned dread- ed ills a- way? 
+w: All that His coun- sels did or- dain A hap- py end- ing makes. 
+[V: S1V2]  F | D F F G | E F F D | F F G F/E/ | D3 |]
+[V: S2V1]  A, | B, A, B, G, | G,/A,/ B, A, G, | A, B, B, A, | B,3 |]
+[V: S2V2]  F, | G, F, B,, E, | C, D,/E,/ F, G, | F, D, E, F, | B,,3 |]
+% 11
+%%multicol start
+%%leftmargin 3cm
+%%rightmargin 12cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.Upon thy lips, then, lay thy hand
+%% \t\t\t\tAnd trust His guiding love;
+%% \t\t\t\tThen like a rock thy peace shall stand
+%% \t\t\t\tHere and in heav'n above. 
+%% 
+%% 7.O Lord I sing with lips and heart, 
+%% \t\t\t\tJoy of my soul, to Thee:
+%% \t\t\t\tTo Earth Thy knowledge I impart,
+%% \t\t\t\tAs it is known to me.
+%% 
+%% 8.Thou art the Fount of grace, I know,
+%% \t\t\t\tAnd Spring so full and free,
+%% \t\t\t\tWhence saving health and goodness flow
+%% \t\t\t\tEach day so bounteously.
+%% 
+%% 9.For what have all that live and move
+%% \t\t\t\tThrough this wide world below
+%% \t\t\t\tThat does not from Thy bounteous love,
+%% \t\t\t\tO Heav'nly Father flow?
+%% 
+%% 10.Who built the lofty firmament?
+%% \t\t\t\tWho spread th'expanse of blue?
+%% \t\t\t\tBy whom are to our pastures sent
+%% \t\t\t\tRefreshing rain and dew?
+%% 
+%% 11.Who warmeth us in cold and frost?
+%% \t\t\t\tWho shields us from the wind?
+%% \t\t\t\tWho orders it that oil and must
+%% \t\t\t\tWe in their season find?
+%%endtext
+%%multicol new
+%%leftmargin 12cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 12.Who is it life and health bestows?
+%% \t\t\t\tWho keeps us with His hand
+%% \t\t\t\tIn golden peace, wards off war's woes
+%% \t\t\t\tFrom our dear native land?
+%% 
+%% 13.O Lord of this and all our store
+%% \t\t\t\tThou art the author blest;
+%% \t\t\t\tThou keepest watch before our door,
+%% \t\t\t\tWhile we securely rest.
+%% 
+%% 14.Thou feedest us from year to year,
+%% \t\t\t\tAnd constant dost abide;
+%% \t\t\t\tWith ready help in time of fear,
+%% \t\t\t\tThou standest at our side.
+%% 
+%% 15.He ever will with patience chide,
+%% \t\t\t\tHis rod falls gently down,
+%% \t\t\t\tAnd all thy sins He casts aside
+%% \t\t\t\tAnd in the sea doth drown.
+%% 
+%% 16.When silent woe thy bosom rends,
+%% \t\t\t\tHis pity sees thy grief,
+%% \t\t\t\tSupplies what to His glory tends
+%% \t\t\t\tAnd to thine own relief.
+%% 
+%% 17.He knows how oft a Christian weeps
+%% \t\t\t\tAnd why his tears now fall;
+%% \t\t\t\tAnd in the book His mercy keeps
+%% \t\t\t\tThese things are noted all. 
+%%endtext
+%%multicol end
+%%multicol start
+%%rightmargin 6cm
+%%leftmargin 8cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 18.Our deepest needs dost Thou supply,
+%% \t\t\t\tThou giv'st what lasts for aye.
+%% \t\t\t\tThou lead'st us to our home on high,
+%% \t\t\t\tWhen hence we pass away.
+%%endtext
+%%multicol end
+
+

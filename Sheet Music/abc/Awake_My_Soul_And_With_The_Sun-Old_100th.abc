@@ -1,0 +1,164 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2006 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.720000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rom 13:11, Ps 17:15, Ps 148:1-2, Eph 1:3, Mt 5:16
+%OHTOPICS {Activity [1,2,5]}, {Aspiration [2-6,8,9]}, {Christian Life [1-5,8,9]}, {Commitment}, {Conscience [4]}, {Day [1,2,8,9]}, {Duty (see also Law) [1]}, {Following Jesus, In Faith [3,8,9]}, {Following Jesus, In Action [1-4]}, {Following Jesus, Sanctification}, {God, As King [5]}, {God, Providence of [3,8]}, {Guidance [3,8,9]}, {Heaven [7,10]}, {Inner Life [2-5,8,9]}, {Invitation (Faithful's to God) [6-9]}, {Light [3,6]}, {Morality (see also Law) [3,4,8]}, {Morning [1-5,8]}, {Obedience [9]}, {Opening Songs}, {Presence [7,10]}, {Sacrifice [1]}, {Security [6]}, {Self Control (see also Law) [1-5,9]}, {Submission (see also Following Jesus, God - Providence of, Trust)}, {Temperance &amp; Moral Reform (see also Law) [1-5,8,9]}, {Zeal [1,2,5]}
+%OHCATEGORY MORNING
+%OHMETRICAL 8 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER Genevan Psalter;Bourgeois, Louis (1510-1561)
+%OHARRANGER Sternhold, Thomas (1500-1549);Hopkins, John (?-1570)
+%OHAUTHOR Ken, Thomas (1637-1711)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 12
+
+X: 1
+T: Awake, My Soul, And With The Sun
+T: (see also 'Praise God, From Whom All Blessings Flow')
+C: Words: Thomas Ken, 1674.  Music: 'Old 100th' Genevan Psalter, attr. Louis Bourgeois, c. 1551.  
+C: Setting: Sternhold and Hopkins' Psalter, 1561.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision.
+S: Music source:ccel from Sternhold and Hopkins' Psalter 1561.
+M: none
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] G2 G F E D | G2 A2 B3 | B2 B B A G | c2 B2 A3 |
+w: 1.~A- wake, my soul, and with the sun Thy dail- y stage of du- ty run; 
+w: 2.~Thy prec- ious time mis- spent, re- deem, Each pre- sent day thy last es- teem, 
+w: 3.~By in- flu- ence of Light di- vine Let thy own light to o- thers shine. 
+w: 4.~In con- ver- sa- tion be sin- cere; Keep con- science as the noon- tide clear; 
+w: 5.~Wake, and lift up thy- self, my heart, And with the an- gels bear thy part, 
+[V: S1V2]  D2 D D B, B, | B,2 D2 D3 | D2 D G F G | G2 G2 F3 |
+[V: S2V1]  B,2 B, A, G, F, | G,2 F,2 G,3 | G,2 B, D C B, | E2 D2 D3 |
+[V: S2V2]  G,2 G, D, E, B,, | E,2 D,2 G,,3 | G,2 G, G, D, E, | C,2 G,,2 D,3 |
+% 5
+[V: S1V1]  G2 A B A G | E2 F2 G3 | !sintro!d2 B G A c | B2 A2 G3 !eintro!|]
+w: Shake off dull sloth, and joy- ful rise, To pay thy morn- ing sac- ri- fice. 
+w: Im- prove thy tal- ent with due care; For the great day thy- self pre- pare. 
+w: Re- flect all Heaven's pro- pit- ious ways In ar- dent love, and cheer- ful praise. 
+w: Think how all see- ing God thy ways And all thy sec- ret thoughts sur- veys. 
+w: Who all night long un- wear- ied sing High praise to the e- ter- nal King. 
+[V: S1V2]  G2 F G F D | E2 D2 D3 | D2 D G F E/F/ | G2 F2 D3 |]
+[V: S2V1]  B,2 D D D D | (C B,) A,2 B,3 | B,2 G, B, D E | D2 (D C) B,3 |]
+[V: S2V2]  E,2 D, G, D, B,, | C,2 D,2 G,,3 | G,2 G, E, D, A,, | (B,, C,) D,2 G,,3 |]
+% 10
+%%multicol start
+%%rightmargin 2.25cm
+%%rightmargin 13.64cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\tAll praise to Thee, Who safe has kept
+%% \t\t\t\tAnd hast refreshed me while I slept
+%% \t\t\t\tGrant, Lord, when I from death shall wake
+%% \t\t\t\tI may of endless light partake.
+%% 
+%% 7.\tHeav'n is, dear Lord, where'er Thou art,
+%% \t\t\t\tO never then from me depart;
+%% \t\t\t\tFor to my soul 'tis hell to be
+%% \t\t\t\tBut for one moment void of Thee.
+%%endtext
+%%multicol new
+%%leftmargin 7.5cm
+%%rightmargin 8.5cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 8.\tLord, I my vows to Thee renew;
+%% \t\t\t\tDisperse my sins as morning dew.
+%% \t\t\t\tGuard my first springs of thought and will,
+%% \t\t\t\tAnd with Thyself my spirit fill.
+%% 
+%% 9.\tDirect, control, suggest, this day,
+%% \t\t\t\tAll I design, or do, or say,
+%% \t\t\t\tThat all my powers, with all their might,
+%% \t\t\t\tIn Thy sole glory may unite.
+%%endtext
+%%multicol new
+%%leftmargin 13.14cm
+%%rightmargin 2.25cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 10.\tI would not wake nor rise again
+%% \t\t\t\tAnd Heaven itself I would disdain,
+%% \t\t\t\tWert Thou not there to be enjoyed,
+%% \t\t\t\tAnd I in hymns to be employed.
+%% 
+%% 11.\t $1D$2 Praise God, from Whom all blessings flow;
+%% \t\t\t\tPraise Him, all creatures here below;
+%% \t\t\t\tPraise Him above, ye heavenly host;
+%% \t\t\t\tPraise Father, Son, and Holy Ghost.
+%%endtext
+%%multicol end
+

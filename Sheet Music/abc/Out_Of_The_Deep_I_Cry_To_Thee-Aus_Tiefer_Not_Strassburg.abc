@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7200000
+%%staffsep	0.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 130, Eph 2:8-9, Rom 5:20-21, 1Tim 1:14
+%OHTOPICS {Contrition [1,2,5]}, {Cornerstone [3]}, {Duty (see also Law) [2]}, {Fear of the Lord [2]}, {God, Love of [2]}, {God, Mercy of}, {Grace [2]}, {Gratitude}, {Holiness [2]}, {Holy Spirit [4]}, {Hope [3]}, {Humility}, {Israel [4]}, {Judgment [2]}, {Kindness, God's}, {Salvation [2]}, {Sinners}, {Testimony [2-5]}, {Trust [4]}
+%OHCATEGORY CONFESSION/ABSOLUTION
+%OHMETRICAL 8 7 8 7 8 8 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Köpfel's Gesangbuch, Strassburg, 1525
+%OHARRANGER Haupt, Karl August (1810-1891)
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR Russell, Arthur Tozel (1806-1874)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Out of the Deep I Cry to Thee
+T: (also known as From Depths of Woe I Cry to Thee)
+C: Words: Martin Luther, 1524. Translated by Arthur Tozer Russell (1806-1874). 
+C: Music: 'Aus Tiefer Not (Strassburg)' or 'Strassburg' from Köpfel's Gesangbuch, Strassburg, 1525. 
+C: Setting: Karl August Haupt, 1869.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+S: Music source: "The Hymns of Martin Luther" by Bacon, 1883.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=110] G | F G A A | G A !fermata!B c | B A G G | A2 !fermata!G
+w: 1.~Out of the deep I cry to Thee; O Lord God, hear my cry- ing: 
+w: 2.~But love and grace with Thee pre- vail, O God, our sins for- giv- ing; 
+w: 3.~For this, my hope in God shall rest, Naught build- ing on my mer- it; 
+w: 4.~And though I wait the live- long night And till the morn re- turn- eth, 
+w: 5.~What though our sins are man- i- fold? Su- preme His mer- cy reign- eth; 
+[V: S1V2]  D | C D E D | B, D !ferm!D E | D D B, D | (E D) !ferm!B,
+[V: S2V1]  B, | A, G, G, F, | G, F, !invertedfermata!G, G, | G, F, G, G, | (G, F,) !invertedfermata!G,
+[V: S2V2]  G,, | A,, B,, C, D, | E, D, !ferm!G,, C, | G, D, E, B,, | (C, D,) !ferm!G,,
+% 5
+[V: S1V1]  G | F G A A | G A !fermata!B c | B A G G | A2 !fermata!G
+w: In- cline Thy gra- cious ear to me, With prayer to Thee ap- ply- ing. 
+w: The ho- liest deeds can naught a- vail Of all be- fore Thee liv- ing. 
+w: My heart con- fides, of Him pos- sest, His good- ness stays my spi- rit. 
+w: My heart un- doubt- ing trusts His might Nor in im- pa- tience mourn- eth. 
+w: No lim- it can His hand with- hold, Where ev- il most ob- tain- eth. 
+[V: S1V2]  D | C D E D | B, D !ferm!D E | D D B, D | (E D) !ferm!B,
+[V: S2V1]  B, | A, G, G, F, | G, F, !invertedfermata!G, G, | G, F, G, G, | (G, F,) !invertedfermata!G,
+[V: S2V2]  G,, | A,, B,, C, D, | E, D, !ferm!G,, C, | G, D, E, B,, | (C, D,) !ferm!G,,
+% 9
+[V: S1V1]  G | A c B G | A F !fermata!E F | D D A
+w: For if Thou fix Thy search- ing eye On all sin and 
+w: Be- fore Thee none can boast him clear; There- fore must each 
+w: His prec- ious word as- sur- eth me; My sol- ace, my 
+w: Born of His Spi- rit, Is- ra- el In the right Way 
+w: He the good Shep- herd is a- lone, Who Is- rael will 
+[V: S1V2]  E | D E F E | E D !ferm!^C ^C | B, D D
+[V: S2V1]  B, | A, G, F, B, | A, A, !invertedfermata!A, A, | F, B, A,
+[V: S2V2]  E, | F, E, ^D, E, | ^C, D, !ferm!A,, A,, | B,, G, F,
+% 13
+[V: S1V1]  B | c A !fermata!G !sintro!d | B A G G | A2 !fermata!G !eintro!|]
+w: in- iq- ui- ty, Who, Lord, can stand be- fore Thee? 
+w: Thy judg- ment fear, And live on Thy com- pas- sion. 
+w: sure Rock is He, Where- on my soul a- bid- eth. 
+w: thus far- eth well, And on his God re- pos- eth 
+w: re- deem and own, For- giv- ing all trans- gres- sion. 
+[V: S1V2]  D | C C !ferm!B, D | D D B, D | (E D) !ferm!B, |]
+[V: S2V1]  ^G, | A, F, !invertedfermata!=G, A, | G, F, G, G, | (G, F,) !invertedfermata!G, |]
+[V: S2V2]  E, | A,, D, !ferm!E, F, | G, D, E, B,, | (C, D,) !ferm!G,, |]
+% 17

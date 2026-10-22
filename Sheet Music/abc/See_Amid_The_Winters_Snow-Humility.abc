@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 2:1-20, Jn 1:29, Phil 2:3-8
+%OHTOPICS {Angels [2,4]}, {Christmas/Advent}, {Humility [1,2,5,6]}, {Jesus}, {Light [4]}, {Love [5]}, {Peace [4]}, {Presence}, {Promises (see also Gospel) [1]}, {Reverence}, {Shepherd/Lamb [3,4]}, {Throne (also see God - As King) [2]}
+%OHCATEGORY CHRISTMAS
+%OHMETRICAL 7 7 7 7 7 7 7 7
+%OHCOMPLEXITY 4
+%OHCOMPOSER Goss, John (1800-1880)
+%OHARRANGER unknown
+%OHAUTHOR Caswall, Edward (1814-1878)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: See Amid the Winter's Snow
+C: Words: Edward Caswall, 1851.  Music: 'Humility' John Goss, 1870. 
+C: Setting: "The Children's Hymnal, with Tunes", 1875.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: "The Children's Hymnal, with Tunes", 1875 Hymn 233.  Ed. John Ireland Tucker, but marked as being an older arrangement.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] G3/2 A/ G F | E3/2 D/ D2 | G A c B | B3/2 A/ A2 |
+w: 1.~See a- mid the win- ter's snow, Born for us on earth be- low, 
+w: 2.~Lo, with- in a man- ger lies He Who built the star- ry skies; 
+w: 3.~Say, you ho- ly shep- herds, say, Tell your joy- ful news to- day. 
+w: 4.~"As we watched at dead of night, Lo, we saw a won- drous light; 
+w: 5.~Sac- red In- fant, all di- vine, What a ten- der love was Thine, 
+[V: S1V2]  B,2 C D | G, A, (B, C) | D2 G2 | G2 F2 |
+[V: S2V1]  G,2 G, D, | E, F, (G, A,) | B,2 E D | D ^C D2 |
+[V: S2V2]  G,,2 A,, B,, | C,2 G,,2 | G, F, E, G, | D,2 (D, C,) |
+% 5
+[V: S1V1]  G3/2 A/ G F | E3/2 D/ D2 | G A B c | A3/2 G/ G2 |
+w: See, the gen- tle Lamb ap- pears, Pro- mised from e- ter- nal years. 
+w: He Who, thronèd in height sub- lime, Sits a- mid the cher- u- bim. 
+w: Why have you now left your sheep On the lone- ly moun- tain steep? 
+w: An- gels sing- ing 'Peace on earth' Told us of the Sa- vior's birth." 
+w: Thus to come from high- est bliss Down to such a world as this.  
+[V: S1V2]  D B, C D | G, A, (B, A,) | B, C D E | C2 B,2 |
+[V: S2V1]  G,2 G, D, | E, F, (G, A,) | G,2 G,2 | G, F, G,2 |
+[V: S2V2]  B,, G,, A,, B,, | C,2 (G, F,) | E,2 D, C, | D,2 G,,2 |
+% 9
+[V: S1V1]  d3/2 d/ c B | A G F2 | d3/2 d/ c B | A G F2 |
+w: Hail that ev- er bles- sèd morn, Hail re- demp- tion's hap- py dawn, 
+[V: S1V2]  G3/2 G/ G G | D D D2 | D3/2 G/ G G | E D D2 |
+[V: S2V1]  B,3/2 B,/ E D | C B, A,2 | G,3/2 G,/ E D | C B, A,2 |
+[V: S2V2]  G,3/2 G,/ G, G, | F, G, D,2 | B,,3/2 B,,/ C, G,, | A,, B,,/C,/ D,2 |
+% 13
+[V: S1V1]  !sintro!G3/2 A/ G F | E3/2 D/ D2 | d3/2 B/ G c | B A G2 !eintro!|]
+w: Sing through all Jer- u- sa- lem: Christ is born in Beth- le- hem. 
+[V: S1V2]  B,3/2 B,/ ^C D | D ^C D2 | D3/2 D/ E G | F F G2 |]
+[V: S2V1]  G,3/2 G,/ E, D, | B, A,/G,/ F,2 | G,3/2 G,/ G, E | D C B,2 |]
+[V: S2V2]  E,3/2 E,/ A,, B,, | G,, A,, (D, C,) | B,,3/2 B,,/ C, A,, | D, D, G,,2 |]
+% 18
+W: 6.Teach, O teach us, holy Child,
+W: By Thy face so meek and mild,
+W: Teach us to resemble Thee,
+W: In Thy sweet humility.

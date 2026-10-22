@@ -15,6 +15,7 @@ web/dist/
 # generated from the root hymns_data.json + Android MIDI assets by prepare-content
 web/public/hymns.json
 web/public/midi/
+web/public/scores/
 
 # Python
 __pycache__/

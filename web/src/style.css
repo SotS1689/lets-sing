@@ -11,6 +11,11 @@
     --line: #E1E3E0;
     --brand: #B71C1C;
     --on-brand: #FFFFFF;
+    /* One colour per part, shared by the S A T B buttons and the lit notes */
+    --part-0: #C62828;
+    --part-1: #2E7D32;
+    --part-2: #1565C0;
+    --part-3: #7B3FA0;
     color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -25,6 +30,10 @@
         --text-2: #C5C7BE;
         --line: #2E3238;
         --brand: #7F1414;
+        --part-0: #FF8A80;
+        --part-1: #81C784;
+        --part-2: #82B1FF;
+        --part-3: #CE93D8;
         color-scheme: dark;
     }
 }
@@ -39,6 +48,10 @@
     --text-2: #C5C7BE;
     --line: #2E3238;
     --brand: #7F1414;
+    --part-0: #FF8A80;
+    --part-1: #81C784;
+    --part-2: #82B1FF;
+    --part-3: #CE93D8;
     color-scheme: dark;
 }
 
@@ -246,6 +259,52 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--primary); }
     text-decoration: line-through;
 }
 .part.is-off input[type="range"] { opacity: 0.35; }
+.part:nth-child(1) .part-toggle[aria-pressed="true"] { --part: var(--part-0); }
+.part:nth-child(2) .part-toggle[aria-pressed="true"] { --part: var(--part-1); }
+.part:nth-child(3) .part-toggle[aria-pressed="true"] { --part: var(--part-2); }
+.part:nth-child(4) .part-toggle[aria-pressed="true"] { --part: var(--part-3); }
+.part-toggle[aria-pressed="true"] { box-shadow: 0 0 0 3px var(--surface), 0 0 0 5px var(--part); }
+
+/* Sheet music (src/score.js): the part being sung lights in its colour */
+.score { padding: 12px 8px; }
+.score-head { display: flex; align-items: center; gap: 8px; padding: 0 8px 4px; }
+.score-head h3 { margin: 0; }
+.score-verse { flex: 1; font-size: 0.8rem; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.view-switch { display: flex; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.view-switch button {
+    padding: 4px 10px;
+    border: 0;
+    background: transparent;
+    color: var(--text-2);
+    font: inherit;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+.view-switch button[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); }
+/* Scrolling view (src/score.js): one long line sliding past, the note being sung near the left */
+/* contain: the long line must not widen the page around it */
+.score-notation.is-scrolling { position: relative; overflow: hidden; width: 100%; min-width: 0; contain: inline-size; }
+.score-strip { width: max-content; will-change: transform; }
+/* The clefs and key, pinned at the left edge while the line slides under them */
+.score-pin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: var(--surface);
+    box-shadow: 6px 0 6px -4px rgb(0 0 0 / 0.15);
+}
+.score-notation { color: var(--text); }
+.score-notation svg { display: block; }
+.score-notation .is-sounding { transition: fill 90ms linear; }
+.score-notation .is-sounding.part-0 { fill: var(--part-0); stroke: var(--part-0); }
+.score-notation .is-sounding.part-1 { fill: var(--part-1); stroke: var(--part-1); }
+.score-notation .is-sounding.part-2 { fill: var(--part-2); stroke: var(--part-2); }
+.score-notation .is-sounding.part-3 { fill: var(--part-3); stroke: var(--part-3); }
+/* The words sit inside the note: keep them unlit except the verse being sung */
+.score-notation .is-sounding .abcjs-lyric { fill: var(--text); stroke: none; }
+.score-notation .abcjs-lyric tspan.is-sounding[class*="part-"] { stroke: none; font-weight: 700; }
 
 /* Instrument, tempo, pitch on one line (wraps on narrow phones) */
 .settings { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
@@ -279,6 +338,7 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--primary); }
 
 .lyrics { padding: 8px 4px; }
 .lyrics p { margin: 0 0 16px; white-space: pre-line; }
+.lyrics p.is-current { margin-left: -12px; padding-left: 9px; border-left: 3px solid var(--primary); }
 .lyrics .credits { font-size: 0.8rem; color: var(--text-2); }
 
 .btn {

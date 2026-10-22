@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.700000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 119:5-10, 2Jn 1:9, Jn 8:31, Eph 4:3-6
+%OHTOPICS {Discipleship}, {God, As King [1,2]}, {God, Care of}, {God, Faithfulness of}, {God, Majesty &amp; Power of [1,2]}, {God's Children - the Faithful (see also Saints, People of the World)}, {Guidance}, {Invitation (Faithful's to God)}, {Peace [3]}, {Saints (all Faithful)}, {Scripture}, {Security}, {Social Justice}, {Terrorism}, {Trust}
+%OHCATEGORY REFORMATION
+%OHMETRICAL 8 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Klug's Geistliche Lieder auffs new gebessert, Wittenberg, 1543
+%OHARRANGER Hassler, Hans Leo (1564-1612)
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR Winkworth, Catherine (1827-1878)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Lord, Keep Us Steadfast in Thy Word
+C: Words: Martin Luther, 1541.  Translated by Catherine Winkworth, 1863. 
+C: Music: 'Erhalt Uns, Herr, bei deinem Wort' from Klug's "Geistliche Lieder auffs new gebessert", 1543. 
+C: Setting: Hans Leo Hassler, unknown date.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: Evangelical Lutheran Hymn Book (LCMS), Edition of 1931 Hymn 274.
+M: none % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1]  [Q:1/4=120] E2 | G E D E G F | E2 G2 | A A B G A A | B2
+w: 1.~Lord, keep us stead- fast in Thy Word; Curb those who fain by craft and sword 
+w: 2.~Lord Je- sus Christ, Thy pow'r make known, For Thou art Lord of lords a- lone; 
+w: 3.~O Com- fort- er of price- less worth, Send peace and u- ni- ty on earth. 
+[V: S1V2]  B,2 | B, A, B, C E ^D | B,2 E2 | E F G E E F | G2
+[V: S2V1]  G,2 | E, E, F, A, B, B, | G,2 C2 | C D D C C D | D2
+[V: S2V2]  E,2 | E, C, B,, A,, G,,/A,,/ B,, | E,,2 C,2 | A,, D, G,, C, A,, D, | G,,2
+% 6
+[V: S1V1]  B2 | c B d B A A | G2 !sintro!B2 | G A G F E ^D | E2 !eintro!|]
+w: Would wrest the king- dom from Thy Son And set at naught all He hath done. 
+w: De- fend Thy Christ- en- dom that we May ev- er- more sing praise to Thee. 
+w: Sup- port us in our fi- nal strife And lead us out of death to life. 
+[V: S1V2]  D2 | E D F G E F | D2 D2 | E E D D B, B, | B,2 |]
+[V: S2V1]  G,2 | G, G, A, G, C A, | B,2 G,2 | G, C B, A, G, F, | G,2 |]
+[V: S2V2]  G,,2 | C, G,, D, E, C, D, | G,,2 G,,2 | C, A,, B,, D, E, B,, | E,,2 |]
+% 11
+%%vskip 1in
+%%multicol start
+%%leftmargin 1.5in
+%%rightmargin 1.5in
+%%textoption 3
+%%textfont Times-Bold 12.0
+%%EPS vanGogh_Still-Life-with-Open-Bible_1885.eps
+%%begintext
+%%"Still Life with Open Bible" by Vincent Willem van Gogh (1853-1890)
+%%endtext
+%%multicol end
+

@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.710000
+%%staffsep	0.20000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rom 8:31-39, 8:1-11, Ps 27:1-3, Is 50:7-9, Jn 10:28-30, Gal 6:14, Jn 15:20, Ps 46:1-11, Lk 6:47-49
+%OHTOPICS {Angels [14]}, {Assurance}, {Atonement}, {Blood [3]}, {Bread (of Life/Daily Bread) [11]}, {Calmness}, {Christian Life}, {Comfort}, {Courage in Affliction}, {Crown [7]}, {Faith [5,9]}, {Father [2,7]}, {God, As King [15]}, {God, Love of}, {God, Majesty &amp; Power of}, {Grace [6]}, {Heaven [10]}, {Holy Spirit [7-9]}, {Hope}, {Jesus}, {Joy}, {Judgment [5]}, {Light [4,10]}, {Love [1-3,6,14]}, {Peace [6]}, {Throne (also see God - As King) [4]}, {Trust}
+%OHCATEGORY TRUST
+%OHMETRICAL 7 6 7 6 7 6 7 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER German
+%OHARRANGER Woodward, George Ratcliffe (1848-1934)
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR Massie, Richard (1800-1887)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: If God Himself Be For Me
+C: Words: Paul Gerhardt, 1656.  Verses 1-3, 7-9, 11-15 Translated by Richard Massie, 1856, alt. 
+C: Verses 4-6,10 Translated for Evangelical Lutheran Hymn-Book (Pittsburgh), 1907, alt.
+C: Music: 'Woodbird' or 'Es Flog Ein Kleins Waldvögelein' traditional German found in 
+C: "Memminger Tabulaturbuche", 17th Century. Setting: George Ratcliffe Woodward, 1904.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music can be found in "AltDeutsches Liederbuch", 1877 page 232 song 134. (no arrangement, melody only)
+S: Music source: Episcopal Hymnal, 1940, Hymn 474.   arrangement is from George Ratcliffe Woodward's "Songs of Syon", 1904 or 1910 per CCEH and other sites
+S: translation (from TLH 1941) is very close to that in the Evangelical Hymn Book of 1931.
+S: Original Massie translation found in "The Church Psalter and Hymn Book" (UK), 1863.
+S: Translation is public domain per Project Wittenberg: : http://www.iclnet.org/pub/resources/text/wittenberg/hymns/ifgodbe.txt
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+%%staffsep 0.62cm
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=130] G | G d B G | (F3/2 G/) A D | E G G F | G3
+w: 1.~If God Him- self be for * me, I may a host de- fy;
+w: 2.~This I be- lieve, yea, ra- * ther, Of this I make my boast,
+w: 3.~I build on this foun- da- * tion, That Je- sus and His blood
+w: 4.~My Je- sus is my Splen- * dor, My Sun, my Light, a- lone;
+w: 5.~He can- celed my of- fen- * ses, De- liv- ered me from death;
+[V: S1V2]  D | E D D G | D2 D D | D C/B,/ A, D | D3
+[V: S2V1]  B, | B, A, B, D | (A,3/2 G,/) F, G,/F,/ | E, E D A, | (C B,2)
+[V: S2V2]  G, | E, F, G, B,, | D,2 D, B,, | C, A,, D, D, | [G,,3D,3]
+% 5
+[V: S1V1]  G | G d B G | (F3/2 G/) A D | E G G F | G3
+w: For when I pray, be- fore * me My foes, con- found- ed, fly.
+w: That God is my dear Fa- * ther, The Friend who loves me most,
+w: A- lone are my sal- va- * tion, The true, e- ter- nal good.
+w: Were He not my De- fen- * der Be- fore God's awe\- full throne,
+w: He is the Lord who clean- * ses My soul from sin through faith.
+[V: S1V2]  D | E D D G | D2 D D | D C/B,/ A, D | D3
+[V: S2V1]  B, | B, A, B, D | (A,3/2 G,/) F, G,/F,/ | E, E D A, | B,3
+[V: S2V2]  G, | E, F, G, B,, | D,2 D, B,, | C, A,, D, D, | G,3
+% 9
+[V: S1V1]  B | G d d/c/ B | A2 A c | B A B G | A3
+w: If Christ, my Head * and Mas- ter, Be- friend me from a- bove,
+w: And that, what- e'er * be- tide me, My Sa- vior is at hand
+w: With- out Him all * that plea- ses Is val- ue- less on earth;
+w: I nev- er should * find fa- vor And mer- cy in His sight,
+w: In Him I can * be cheer- ful, Bold, and un- daun- ted aye;
+[V: S1V2]  D | D A G G | E2 F E | D D D B, | (^C D2)
+[V: S2V1]  G, | B, D E3/2 D/ | (D ^C) D G, | G, F, F, G, | (E, F,2)
+[V: S2V2]  G, | G, F, E, E, | A,2 D, =C,/E,/ | G, D, B,, E, | (A,, D,2)
+% 13
+[V: S1V1]  d | c B A G | (F3/2 G/) A !sintro!D | E G G F | G3 !eintro!|]
+w: What foe or what dis- as- * ter Can drive me from His love?
+w: Through storm- y seas to guide * me And bring me safe to land.
+w: The gifts I owe to Je- * sus A- lone my love are worth.
+w: But be de- stroyed for- ev- * er As dark- ness by the light.
+w: In Him I am not fear- * ful Of God's great Judg- ment Day.
+[V: S1V2]  D | E D C D | D2 D D | D C/B,/ A, D | D3 |]
+[V: S2V1]  G, | G, G, E,/F,/ G, | (A,3/2 G,/) F, G,/F,/ | E, E D A, | B,3 |]
+[V: S2V2]  B,, | C, G,, A,, B,, | D,2 D, B,, | C, A,, D, D, | G,,3 |]
+% 19
+%%newpage
+W: 6. Naught, naught, can now condemn me Nor set my hope aside;
+W: Now hell no more can claim me, Its fury I deride.
+W: No sentence e'er reproves me, No ill destroys my peace;
+W: For Christ, my Savior, loves me And shields me with His grace.
+W: 
+W: 7. His Spirit in me dwelleth, And o'er my mind He reigns.
+W: All sorrow He dispelleth And soothes away all pains.
+W: He crowns His work with blessing And helpeth me to cry,
+W: "My Father!" without ceasing, To Him who dwells on high.
+W: 
+W: 8. And when my soul is lying Weak, trembling, and opprest,
+W: He pleads with groans and sighing That cannot be exprest;
+W: But God's quick eye discerns them, Although they give no sound,
+W: And into language turns them E'en in the heart's deep ground.
+W: 
+W: 9. To mine His Spirit speaketh Sweet word of holy cheer,
+W: How God to him that seeketh For rest is always near
+W: And how He hath erected A city fair and new,
+W: Where what our faith expected We evermore shall view.
+W: 
+W: 10. In yonder home doth flourish My heritage, my lot;
+W: Though here I die and perish, My heaven shall fail me not.
+W: Though care my life oft saddens And causeth tears to flow,
+W: The light of Jesus gladdens And sweetens every woe.
+W: 
+W: 11. Who clings with resolution To Him whom Satan hates
+W: Must look for persecution; For him the burden waits
+W: Of mockery, shame, and losses, Heaped on his blameless head;
+W: A thousand plagues and crosses Will be his daily bread.
+W: 
+W: 12. From me this is not hidden, Yet I am not afraid;
+W: I leave my cares, as bidden, To whom my vows were paid.
+W: Though life and limb it cost me And everything I won,
+W: Unshaken shall I trust Thee And cleave to Thee alone.
+W: 
+W: 13. Though earth be rent asunder, Thou'rt mine eternally;
+W: Not fire nor sword nor thunder Shall sever me from Thee;
+W: Not hunger, thirst, nor danger, Not pain nor poverty
+W: Nor mighty princes' anger Shall ever hinder me.
+W: 
+W: 14. No angel and no gladness, No throne, no pomp, no show,
+W: No love, no hate, no sadness, No pain, no depth of woe,
+W: No scheme of man's contrivance, However small or great,
+W: Shall draw me from Thy guidance Nor from Thee separate.
+W: 
+W: 15. My heart for joy is springing And can no more be sad,
+W: 'Tis full of mirth and singing, Sees naught but sunshine glad.
+W: The Sun that cheers my spirit Is Jesus Christ, my King;
+W: That which I shall inherit Makes me rejoice and sing.

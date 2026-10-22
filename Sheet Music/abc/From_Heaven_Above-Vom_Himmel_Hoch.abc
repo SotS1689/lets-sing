@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2006 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.690000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 2:6-20, Jn 3:16-18, Rom 5:8
+%OHTOPICS {Angels}, {Assurance [3,4]}, {Atonement [3,4,8]}, {Christmas/Advent}, {Commitment [13,14]}, {Eternal Life [4]}, {God, As King [10-12]}, {God, Care of [3,4]}, {God, Goodness of [3-4]}, {God, Majesty &amp; Power of [10-12]}, {Gospel [3]}, {Gratitude [8]}, {Invitation (Faithful's to God) [13]}, {Jesus}, {Joy}, {Presence}, {Salvation [3]}, {Sinners [8]}
+%OHCATEGORY CHRISTMAS
+%OHMETRICAL 8 8 8 8
+%OHCOMPLEXITY 1
+%OHCOMPOSER from Schumann's Geistliche Lieder, Leipzig, 1539
+%OHARRANGER unknown
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR Winkworth, Catherine (1827-1878)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: From Heaven Above To Earth I Come
+C: Words: Martin Luther, 1535. translated by Catherine Winkworth, 1855.  
+C: Music: 'Vom Himmel Hoch' traditional German from Schumann's Geistliche Lieder, Leipzig, 1539. 
+C: Setting: "Common Service Book" (ULCA), 1917.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision.
+S: Music source: 'Common Service Book with Hymnal', ULCA 1918 Hymn 19.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: D % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] d/ | c B c A | B c d z/ d/ | d A A F | A G F z/
+w: 1.~From Heaven a- bove to earth I come, To bear good news to ev- ery home; 
+w: 2.~To you, this night, is born a Child Of Ma- ry, cho- sen mo- ther mild; 
+w: 3.~'Tis Christ our God, Who far on high Had heard your sad and bit- ter cry; 
+w: 4.~He brings those bless- ings long a- go Pre- pared by God for all be- low; 
+w: 5.~These are the to- kens ye shall mark, The swadd- ling clothes and man- ger dark; 
+[V: S1V2]  F/ | E E E F | D G F x/ F/ | F F E D | D B, D x/
+[V: S2V1]  A,/ | A, ^G, A, A, | G, G, A, z/ A,/ | B, C A, A, | F, G, A, z/
+[V: S2V2]  D,/ | A,, E, A,, D, | G, E, D, x/ D,/ | B,, F, C, D, | D, E, B,, x/
+% 5
+[V: S1V1]  F/ | B B A c | d B A z/ !sintro!d/ | c B A A | G/F/ E !fermata!D z/ !eintro!|]
+w: Glad ti- dings of great joy I bring, Where- of I now will say * and sing. 
+w: This ten- der Child of low- ly birth, Shall be the joy of all * your earth. 
+w: Him- self will your Sal- va- tion be, Him- self from sin will make * you free. 
+w: That in His heaven- ly king- dom blest You may with us for- ev- * er rest. 
+w: There shall ye find the young Child laid, By Whom the heav'ns and earth * were made. 
+[V: S1V2]  D/ | F G E E | D E C x/ D/ | A G F E | D3/2 C/ !ferm!D x/ |]
+[V: S2V1]  B,/ | D D C A, | F, ^G, A, z/ F,/ | A, D D A, | B,/A,/ A, !invertedfermata!F, z/ |]
+[V: S2V2]  B,,/ | B,, G,, A,, A,, | B,, E, A,, x/ B,,/ | F, G, D, C, | B,,/D,/ A,, !ferm!D, x/ |]
+% 11
+W:  6.Now let us all, with gladsome cheer,
+W:  Follow the shepherds, and draw near
+W:  To see this wondrous Gift of God,
+W:  Who hath His own dear Son bestowed.
+W:  
+W:  7.Give heed, my heart, lift up thine eyes!
+W:  What is it in yon manger lies?
+W:  Who is this Child, so young and fair?
+W:  The blessèd Christ Child lieth there!
+W:  
+W:  8.Welcome to earth, Thou noble Guest,
+W:  Through Whom e'en wicked men are blest!
+W:  Thou com'st to share our misery,
+W:  What can we render, Lord, to Thee!
+W:  
+W:  9.Ah, Lord, Who hast created all,
+W:  How hast Thou made Thee weak and small,
+W:  To lie upon the coarse dry grass,
+W:  The food of humble ox and ass.
+W:  
+W:  10.Were earth a thousand times as fair,
+W:  Beset with gold and jewels rare,
+W:  She yet were far too poor to be
+W:  A narrow cradle, Lord, for Thee.
+W:  
+W:  11.For velvets soft and silken stuff
+W:  Thou hast but hay and straw so rough,
+W:  Whereon Thou King, so rich and great,
+W:  As 'twere Thy heaven, art throned in state.
+W:  
+W:  12.Thus hath it pleased Thee to make plain
+W:  The truth to us, poor fools and vain,
+W:  That this world's honor, wealth and might
+W:  Are naught and worthless in Thy sight.
+W:  
+W:  13.Ah, dearest Jesus, holy Child,
+W:  Make Thee a bed, soft, undefiled,
+W:  Here in my poor heart's inmost shrine,
+W:  That I may evermore be Thine.
+W:  
+W:  14.My heart for very joy doth leap,
+W:  My lips no more can silence keep,
+W:  I too must sing, with joyful tongue,
+W:  That sweetest ancient cradle song.
+W:  
+W:  15.Glory to God in highest Heaven,
+W:  Who unto man His Son hath given,
+W:  While angels sing, with pious mirth,
+W:  A glad New Year to all the earth.
+
+%%vskip 0.75in
+%%begintext align
+This hymn was written by Martin Luther to teach his 3 year old son about 
+Christmas, and became a part of the Luther family Christmas tradition.
+One of the adults would dress up as an angel and sing the first 5 verses
+to the family.  The rest of the family would sing verses 6 through 15.
+%%endtext
+

@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2005 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.730000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 2:13-14, Ps 95:6
+%OHTOPICS {Angels [1,3,4]}, {Christmas/Advent}, {God, As King [3]}, {Jesus [3,4]}, {Joy}, {Praise, Son [3,4]}, {Worship}
+%OHCATEGORY CHRISTMAS
+%OHMETRICAL 7 7 7 7 Gloria18
+%OHCOMPLEXITY 2
+%OHCOMPOSER French
+%OHARRANGER Barnes, Edward (or Edwin) S. (1887-1958)
+%OHAUTHOR French
+%OHTRANSLATOR Chadwick, James (1813-1882)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Angels We Have Heard On High
+C: Words: French Carol; Translated by James Chadwick, 1862. 
+C: Music: 'Gloria' French carol melody.  Setting: Edward (or Edwin) S. Barnes, before 1916.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2005 Revision.
+S: Music source: 'Lutheran Worship' Hymnal, 1982 Hymn 55. "Carols Old And Carols New", 1916 Carol 181.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=130] A A A c | c3/2 B/ A2 | A G A c | A3/2 G/ F2 |
+w: 1.~An- gels we have heard on high Sweet- ly sing- ing o'er the plains, 
+w: 2.~Shep- herds, why this ju- bi- lee? Why your joy- ous strains pro- long? 
+w: 3.~Come to Beth- le- hem and see Christ Whose birth the an- gels sing; 
+w: 4.~See Him in a man- ger laid, Whom the choirs of an- gels praise; 
+[V: S1V2]  F F E E | G E F2 | F E F F | F E F2 |
+[V: S2V1]  C C C C | D C C2 | C C C C | C3/2 B,/ A,2 |
+[V: S2V2]  F, F, A, A, | G, C, F,2 | F, C, F, A, | C C, F,2 |
+% 5
+[V: S1V1]  A A A c | c3/2 B/ A2 | A G A c | A3/2 G/ F2 |
+w: And the moun- tains in re- ply E- cho- ing their joy- ous strains. 
+w: What the glad- some ti- dings be Which in- spire your heav'n- ly song? 
+w: Come, a- dore on bend- ed knee, Christ the Lord, the new- born King. 
+w: Ma- ry, Jo- seph, lend your aid, While our hearts in love we raise. 
+[V: S1V2]  F F E E | G E F2 | F E F F | F E F2 |
+[V: S2V1]  C C C C | D C C2 | C C C C | C3/2 B,/ A,2 |
+[V: S2V2]  F, F, A, A, | D, E, F,2 | F, C, F, A,, | C, C, F,2 |
+% 9
+[V: S1V1]  (c2 d/c/B/A/ | B2 c/B/A/G/ | A2 B/A/G/F/ | G3/2) C/ C2 | F G A B | A2 G z |
+w: Glo- * * * * * * * * * * * * * * * ri- a, in ex- cel- sis De- o!
+[V: S1V2]  (F A/G/ F2 | F G/F/ E2 | E F/E/ D2 | C3/2) C/ C2 | C E F F | F2 E x |
+[V: S2V1]  (A,2 D2 | D2 C2 | C2 B,2 | G,) F, E,2 | F, C C D | C2 C z |
+[V: S2V2]  (F,2 D, F, | G,2 C, E, | F,2 B,, D, | E,) D, (C, B,,) | A,, C, F, B,, | C,2 C, x |
+% 13
+[V: S1V1]  (c2 d/c/B/A/ | B2 c/B/A/G/ | A2 B/A/G/F/ | G3/2) C/ C2 | !sintro!F G A B | (A2 G2) | F4 !eintro!|]
+w:  Glo- * * * * * * * * * * * * * * * ri- a, in ex- cel- sis De- * o! 
+[V: S1V2]  (F A/G/ F2 | F G/F/ E2 | E F/E/ D2 | C3/2) C/ C2 | C E F F | (F2 E2) | C4 |]
+[V: S2V1]  (A,2 D2 | D2 C2 | C2 B,2 | G,) F, E,2 | F, C C D | (C3 B,) | A,4 |]
+[V: S2V2]  (F,2 D, F, | G,2 C, E, | F,2 B,, D, | E,) D, (C, B,,) | A,, C, F, B,, | C,4 | F,4 |]
+% 23

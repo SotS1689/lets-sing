@@ -1,0 +1,477 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org)).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2025 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.720000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Heb 12:1-2, Heb 6:11-12, Heb 13:7, Rev 7:9-17
+%OHTOPICS {Activity}, {Anticipation}, {Aspiration}, {Assurance}, {Atonement}, {Brotherhood}, {Christian Life}, {Church in Heaven (Church Victorious/Church Triumphant)}, {Church on Earth (Church Militant)}, {Courage in Affliction}, {Discipleship}, {Eternal Life}, {Example, Of Other People}, {Faithfulness}, {Fellowship}, {Following Jesus, In Action}, {Following Jesus, In Faith}, {Gratitude}, {Heaven}, {Martyrs}, {Praise, Father}, {Praise, Holy Spirit}, {Praise, Son}, {Saints (all Faithful)}, {Worship}
+%OHCATEGORY COMMUNION OF SAINTS
+%OHMETRICAL 7 6 7 6 7 6 7 6
+%OHCOMPLEXITY 3
+%OHCOMPOSER English
+%OHARRANGER Williams, Ralph Vaughan (1872-1958)
+%OHAUTHOR Nelson, Horatio Bolton (1823-1913)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: From All Thy Saints in Warfare
+T: (also known as By All Your Saints in Warfare)
+C: Words: Horatio Nelson, 1864. 
+C: Music: 'Kings Lynn' Traditional English.  Setting: "The English Hymnal", 1906.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision.
+S: Music source: "The English Hymnal", 1906 Hymn 562
+S: Lyrics Source: "A Hymnal" (Episcopal), 1916 Hymn 267
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] A | G A D E | (F G) c B/A/ | G3/2 F/ D C | D3
+w: 1.~From all Thy saints in war- * fare, for * all Thy saints at rest
+w: 2\-18.~Insert appropriate verse * * * * * * * * * * * *
+w: 19.~Ap- ost- les, pro- phets, mar- * tyrs, and * all the sac- red throng,
+w: 20.~$1D$2~Then praise we God the Fa- * ther, and * praise we God the Son,
+[V: S1V2]  D | D [DF] D2 | (C D) [CG] [CF] | D3/2 C/ B, A, | A,3
+[V: S2V1]  F, | B, A, B, G, | (C B,) C F, | B,3/2 A,/ F,2 | F,3
+[V: S2V2]  D, | G,, D, B,,2 | (A,, G,,/F,,/) E,, F,, | G,,3/2 A,,/ B,, F,, | D,,3
+% 6
+[V: S1V1] D/E/ | F G A c/A/ | d2 d c | A c A G | A3
+w: To * Thee O bless- ed * Je- sus, all prais- es be ad- dressed.
+w: ~ * * * * * * * * * * * * * *
+w: Who * wear the spot- less * raim- ent, who raise the cease- less song;
+w: And * God the Ho- ly * Spir- it, e- ter- nal Three in One;
+[V: S1V2] D | D E F E | (F G) F C | C [CF] D E | F3
+[V: S2V1] F,/G,/ | A, C C2 | (A, B,) A, G, | F, F,2 C | C3
+[V: S2V2] D, | D, C, F,/G,/ A, | D,2 D, E, | F, A,, B,, C, | F,,3
+% 9
+[V: S1V1]  D/E/ | F G A c/A/ | d2 c A | c c A G | A3
+w: Thou, * Lord didst win the * bat- tle that they might con- querors be;
+w: ~ * * * * * * * * * * * * * * 
+w: For * these, passed on be- * fore us, Sa- vior, we Thee a- dore,
+w: Till * all the ran- somed * num- ber fall down be- fore the throne,
+[V: S1V2]  D | D E F F | F2 F E | F [FA] F E | E3
+[V: S2V1]  F,/G,/ | A, C C C | B,2 A, C | A, C C C | C3
+[V: S2V2]  D, | D, C, F, A,, | (B,, D,) F, A, | F, F,,/G,,/ A,, C, | (A,,3/2 =B,,/ C,)
+% 13
+[V: S1V1]  !sintro!A | G A D E | (F G) c B/A/ | G3/2 F/ D C | D3 !eintro!|]
+w: Their crowns of liv- ing glo- * ry are * lit with rays from Thee.
+w: ~ * * * * * * * * * * * * * * 
+w: And, walk- ing in their foot- * steps, would * serve Thee more and more.
+w: And hon- or, pow'r, and glo- * ry a- * scribe to God a- lone.
+[V: S1V2]  F | E2 A, C | (C D) [CG] [CF] | D3/2 C/ B, A, | A,3 |]
+[V: S2V1]  =B, | =B, C F, G, | (C B,) C F, | B,3/2 A,/ F,2 | F,3 |]
+[V: S2V2]  D, | E, A,, D, C, | (A,, G,,/F,,/) E,, F,, | G,,3/2 A,,/ B,, F,, | D,,3 |]
+% 18
+%%newpage
+%%vskip 0.125in
+%%multicol start
+%%leftmargin 2.25cm
+%%rightmargin 12cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Andrew the Apostle [Nov 30]
+%% 
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 2.\t\tPraise, Lord, for Thine apostle,
+%% \t\t\t\t\tThe first to welcome Thee,
+%% \t\t\tThe first to lead his brother
+%% \t\t\t\t\tThe very Christ to see.
+%% \t\t\tWith hearts for Thee made ready,
+%% \t\t\t\t\tWatch we throughout the year,
+%% \t\t\tForward to lead our brethren
+%% \t\t\t\t\tTo own Thine advent near.
+%%endtext
+%%multicol new
+%%leftmargin 8cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Matthias the Apostle [Feb 24]
+%% 
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 8.\t\tLord, Thine abiding presence
+%% \t\t\t\t\tDirects the wondrous choice
+%% \t\t\tFor one in place of Judas
+%% \t\t\t\t\tThe faithful now rejoice.
+%% \t\t\tThy Church from false apostles
+%% \t\t\t\t\tForevermore defend,
+%% \t\t\tAnd by Thy parting promise
+%% \t\t\t\t\tBe with her to the end.
+%%endtext
+%%multicol new
+%%leftmargin 13.5cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. James the Elder (son of Zebedee,
+%% son of Thunder, brother of John) the
+%% Apostle [July 25]
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 14.\t\tFor him, O Lord, we praise Thee,
+%% \t\t\t\t\tWho, slain by Herod's sword
+%% \t\t\tDrank of Thy cup of suffering,
+%% \t\t\t\t\tFulfilling thus Thy word.
+%% \t\t\tCurb we all vain impatience
+%% \t\t\t\t\tTo read Thy veiled decree,
+%% \t\t\tAnd count it joy to suffer,
+%% \t\t\t\t\tIf so brought nearer Thee.
+%%endtext
+%%multicol end
+%%vskip 0.25in
+%%multicol start
+%%leftmargin 2.25cm
+%%rightmargin 12cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Thomas the Apostle
+%% (Didymus) [Dec 21]
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 3.\t\t\tAll praise for Thine apostle,
+%% \t\t\t\t\tWhose short-lived doubtings prove
+%% \t\t\tThy perfect twofold nature,
+%% \t\t\t\t\tThe fullness of Thy love.
+%% \t\t\tOn all who wait Thy coming
+%% \t\t\t\t\tShed forth Thy peace, O Lord,
+%% \t\t\tAnd grant us faith to know Thee,
+%% \t\t\t\t\tTrue man, true God, adored.
+%%endtext
+%%multicol new
+%%leftmargin 8cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Mark the Evangelist [April 25]
+%% 
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 9.\t\t\tFor him, O Lord, we praise Thee,
+%% \t\t\t\t\tThe weak by grace made strong,
+%% \t\t\tWhose labors and whose Gospel
+%% \t\t\t\t\tEnrich our triumph song.
+%% \t\t\tMay we in all our weakness
+%% \t\t\t\t\tFind strength from Thee supplied,
+%% \t\t\tAnd all, as fruitful branches,
+%% \t\t\t\t\tIn Thee, the Vine, abide.
+%%endtext
+%%multicol new
+%%leftmargin 13.5cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Bartholomew (Nathanael)
+%% the Apostle [Aug 24]
+%% 
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 15.\t\t\tAll praise for Thine apostle,
+%% \t\t\t\t\tThe faithful, pure, and true,
+%% \t\t\tWhom underneath the fig tree
+%% \t\t\t\t\tThine eye all seeing knew.
+%% \t\t\tLike him may we be guileless,
+%% \t\t\t\t\tTrue Israelites indeed,
+%% \t\t\tThat Thy abiding presence
+%% \t\t\t\t\tOur longing souls may feed.
+%%endtext
+%%multicol end
+%%vskip 0.25in
+%%multicol start
+%%leftmargin 2.25cm
+%%rightmargin 12cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Stephen the Martyr [Dec 26]
+%% 
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 4.\t\t\tPraise for the first of martyrs,
+%% \t\t\t\t\tWho saw Thee ready stand
+%% \t\t\tTo aid in midst of torments,
+%% \t\t\t\t\tTo plead at God's right hand.
+%% \t\t\tShare we with him, if summoned
+%% \t\t\t\t\tBy death our Lord to own,
+%% \t\t\tOn earth the faithful witness,
+%% \t\t\t\t\tIn heaven the martyr's crown.
+%%endtext
+%%multicol new
+%%leftmargin 8cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Philip and St. James (the Younger,
+%% son of Alphaeus) the Apostles [May 1]
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 10.\t\t\tAll praise for Thine apostle,
+%% \t\t\t\t\tBlest guide to Greek and Jew,
+%% \t\t\tAnd him surnamed Thy brother
+%% \t\t\t\t\tKeep us Thy brethren true,
+%% \t\t\tAnd grant us grace to know Thee,
+%% \t\t\t\t\tThe Way, the Truth, the Life;
+%% \t\t\tTo wrestle with temptations
+%% \t\t\t\t\tTill victors in the strife.
+%%endtext
+%%multicol new
+%%leftmargin 13.5cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Matthew (Levi) the Apostle 
+%% and Evangelist [Sep 21]
+%% 
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 16.\t\t\tPraise, Lord, for Him whose Gospel
+%% \t\t\t\t\tThy human life declared,
+%% \t\t\tWho, worldly gains forsaking,
+%% \t\t\t\t\tThy path of suffering shared.
+%% \t\t\tFrom all unrighteous Mammon
+%% \t\t\t\t\tO give us hearts set free,
+%% \t\t\tThat we, whate'er our calling,
+%% \t\t\t\t\tMay rise and follow Thee.
+%%endtext
+%%multicol end
+%%vskip 0.25in
+%%multicol start
+%%leftmargin 2.25cm
+%%rightmargin 12cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. John the Apostle and
+%% Evangelist [Dec 27]
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 5.\t\tPraise for the loved disciple,
+%% \t\t\t\t\tExile on Patmos' shore;
+%% \t\t\tPraise for the faithful record
+%% \t\t\t\t\tHe to Thy Godhead bore,
+%% \t\t\tPraise for the mystic vision
+%% \t\t\t\t\tThrough him to us revealed.
+%% \t\t\tMay we, in patience waiting,
+%% \t\t\t\t\tWith Thine elect be sealed.
+%%endtext
+%%multicol new
+%%leftmargin 8cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Barnabas the Son of 
+%% Encouragement [June 11]
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 11.\t\tThe Son of Consolation,
+%% \t\t\t\t\tMoved by Thy law of love,
+%% \t\t\tForsaking earthly treasures,
+%% \t\t\t\t\tSought riches from above.
+%% \t\t\tAs earth now teems with increase,
+%% \t\t\t\t\tLet gifts of grace descend,
+%% \t\t\tThat Thy true consolations
+%% \t\t\t\t\tMay through the world extend.
+%%endtext
+%%multicol new
+%%leftmargin 13.5cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Luke the Evangelist [Oct 18]
+%% 
+%% 
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 17.\t\tFor that "beloved physician,"
+%% \t\t\t\t\tAll praise, whose Gospel shows
+%% \t\t\tThe healer of the nations,
+%% \t\t\t\t\tThe sharer of our woes.
+%% \t\t\tThy wine and oil, O Savior,
+%% \t\t\t\t\tAnd bruised hearts deign to pour,
+%% \t\t\tAnd with true balm of Gilead
+%% \t\t\t\t\tAnoint us evermore.
+%%endtext
+%%multicol end
+%%vskip 0.25in
+%%multicol start
+%%leftmargin 2.25cm
+%%rightmargin 12cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% The Holy Innocents [Dec 28]
+%% 
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\t\t\tPraise for Thine infant martyrs,
+%% \t\t\t\t\tBy Thee with tenderest love
+%% \t\t\tCalled early from the warfare
+%% \t\t\t\t\tTo share the rest above.
+%% \t\t\tO Rachel! cease thy weeping:
+%% \t\t\t\t\tThey rest from pains and cares.
+%% \t\t\tLord, grant us hearts as guileless
+%% \t\t\t\t\tAnd crowns as bright as theirs.
+%%endtext
+%%multicol new
+%%leftmargin 8cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% Nativity of St. John the
+%% Baptist [Jun 24]
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 12.\t\t\tWe praise Thee for the Baptist,
+%% \t\t\t\t\tForerunner of the Word,
+%% \t\t\tOur true Elias, making
+%% \t\t\t\t\tA highway for the Lord.
+%% \t\t\tOf prophets last and greatest,
+%% \t\t\t\t\tWe saw Thy dawning ray:
+%% \t\t\tMake us the rather blessed
+%% \t\t\t\t\tWho love Thy glorious day.
+%%endtext
+%%multicol new
+%%leftmargin 13.5cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. Simon (the Canaanite, the Zealot)
+%% and St. Jude (Thaddeus, Judas not
+%% Iscariot) the Apostles [Oct 28]
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 18.\t\t\tPraise, Lord, for Thine apostles,
+%% \t\t\t\t\tWho sealed their faith today:
+%% \t\t\tOne love, one zeal impelled them
+%% \t\t\t\t\tTo tread the sacred way.
+%% \t\t\tMay we with zeal as earnest
+%% \t\t\t\t\tThe faith of Christ maintain,
+%% \t\t\tAnd, bound in love as brethren,
+%% \t\t\t\t\tAt length Thy rest attain.
+%%endtext
+%%multicol end
+%%vskip 0.25in
+%%multicol start
+%%leftmargin 2.25cm
+%%rightmargin 12cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% Conversion of St. Paul the Apostle [Jan 25]
+%% 
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 7.\t\t\tPraise for the light from Heaven,
+%% \t\t\t\t\tPraise for the voice of awe,
+%% \t\t\tPraise for the glorious vision
+%% \t\t\t\t\tThe persecutor saw.
+%% \t\t\tThee, Lord, for his conversion,
+%% \t\t\t\t\tWe glorify today;
+%% \t\t\tSo lighten all our darkness
+%% \t\t\t\t\tWith Thy true Spirit's ray.
+%%endtext
+%%multicol new
+%%leftmargin 8cm
+%%rightmargin 2cm
+%%textfont Times-Bold 12.0
+%%begintext
+%% St. (Simon) Peter the Apostle [Jun 29]
+%% 
+%%endtext
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 13.\t\t\tPraise for Thy great apostle,
+%% \t\t\t\t\tThe eager and the bold;
+%% \t\t\tThrice falling, yet repentant,
+%% \t\t\t\t\tThrice charged to keep Thy fold.
+%% \t\t\tLord, make Thy pastors faithful
+%% \t\t\t\t\tTo guard their flocks from ill,
+%% \t\t\tAnd grant them dauntless courage,
+%% \t\t\t\t\tWith humble, earnest will.
+%%endtext
+%%multicol end
+
+

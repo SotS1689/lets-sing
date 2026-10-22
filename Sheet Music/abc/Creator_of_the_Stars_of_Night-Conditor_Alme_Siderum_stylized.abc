@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Eph 5:7-10, Jn 1:1-4, Gen 1:16-18, 1Th 4:15-17
+%OHTOPICS {Anticipation [5]}, {Bride/Bridegroom [3]}, {Christmas/Advent}, {God, As King}, {God, Majesty &amp; Power of}, {Invitation (Faithful's to God)}, {Jesus}, {Judgment}
+%OHCATEGORY ADVENT
+%OHMETRICAL 8 8 8 8
+%OHCOMPLEXITY 1
+%OHCOMPOSER Proper Sarum Melody
+%OHARRANGER unknown
+%OHAUTHOR anonymous
+%OHTRANSLATOR Neale, John Mason (1818-1866)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Creator of the Stars of Night
+C: Words: anonymous, 7th Century.  Translated by John Mason Neale, 1852.
+C: Music: 'Conditor Alme Siderum (stylized)' Proper Sarum Melody.
+C: Setting: "The English Hymnal", 1906.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.
+S: Music and Lyrics source: "The English Hymnal", 1906 Hymn 1
+S: change to syncopation by Brian Dumont 13 Mar 2026 and released into the public domain
+M: 6/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] G | E2 G B2 c | c2 A B2 B | c2 A B2 A | G2 F G2 
+w: 1.~Cre- a- tor of the stars of night, Thy peo- ple's ev- er- las- ting light, 
+w: 2.~Thou, grie- ving that the an- cient curse Should doom to death a u- ni- verse,
+w: 3.~Thou cam'st the Bride- groom of the bride, As drew the world to e- v'ning tide; 
+w: 4.~At whose dread name, ma- jes- tic now, All knees must bend, all hearts must bow; 
+w: 5.~O Thou whose co- ming is with dread To judge and doom the quick and dead,
+[V: S1V2]  D | C2 C D2 E | E2 E D2 E | E2 C D2 E | E2 D E2  
+[V: S2V1]  B, | G,2 E, F,2 A, | A,2 A, F,2 G, | G,2 A, F,2 C  | B,2 B, B,2  
+[V: S2V2]  G,, | C,2 C, B,,2 A,, | A,,2 C, B,,2 E, | C,2 F, B,,2 C, | E,2 B,, E,2 
+% 13
+[V: S1V1] B | A2 F G2 A | G2 F E2 !sintro!E | G2 A B2 A | G2 F G2 !eintro!|]
+w: Je- su, Re- dee- mer, save us all, And hear Thy ser- vants when they call. 
+w: Hast found the med'- cine, full of grace, To save and heal a ru- ined race.
+w: Pro- cee- ding from a vir- gin shrine, The spot- less Vic- tim all di- vine.
+w: All things ce- les- tial Thee shall own, And things ter- res- trial, Lord a- lone. 
+w: Pre- serve us while we dwell be- low, From e- very in- sult of the foe. 
+[V: S1V2] E | E2 B, E2 E | E2 D C2 E | D2 C B,2 E | E2 D D2 |]
+[V: S2V1] G, | A,2 B, B,2 C | B,2 B, G,2 G, | G,2 E, E,2 C | B,2 B, B,2 |]
+[V: S2V2] E, | C,2 D, E,2 A,, | E,2 B,, C,2 C, | B,,2 A,, G,,2 A,, | E,2 B,, G,,2 |]
+% 18
+W: 6. $1D$2 To God the Father, God the Son,
+W: And God the Spirit, Three in One,
+W: Laud, honor, might, and glory be,
+W: From age to age eternally.
+%%vskip 1.0in
+%%multicol start
+%%leftmargin 1.5in
+%%rightmargin 1.5in
+%%textoption 3
+%%textfont Times-Bold 12.0
+%%EPS Schnorr_von_Carolsfeld_Bibel_in_Bildern_1860_001.eps
+%%begintext
+%%"The Creation of Light" by Julius Schnorr von Carolsfeld (1860)
+%%endtext
+%%multicol end
+

@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2025 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.6800000
+%%staffsep	0.20000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Gal 4:4-7, Jn 1:14, Phil 2:5-11, Lk 2:7
+%OHTOPICS {Assurance}, {Atonement}, {Christmas/Advent}, {Comfort}, {Courage in Affliction [5-7]}, {Crown [8]}, {God, Love of}, {God, Mercy of}, {Gospel}, {Gratitude}, {Jesus}, {Kindness, God's}, {Salvation}
+%OHCATEGORY CHRISTMAS
+%OHMETRICAL 6 6 10 6 6 10
+%OHCOMPLEXITY 2
+%OHCOMPOSER Williams, Ralph Vaughan (1872-1958)
+%OHARRANGER Williams, Ralph Vaughan (1872-1958)
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR Winkworth, Catherine (1827-1878)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: O Blessed Jesus This
+T: (also known as O Jesus Christ, Thy Manger Is)
+C: Words: Paul Gerhardt, 1656.  Translated by Catherine Winkworth, 1863. 
+C: Music: 'Down Ampney' Ralph Vaughan Williams, 1906.  Setting: Ralph Vaughan Williams, 1906.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision.
+S: Music source: The English Hymnal, 1906 Hymn 152
+S: Lyrics Source: Lyra Germanica, Second Series, 1863 Hymn 56
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 110 108 100 1
+V: S2V1 clef=bass 
+%%MIDI beat 110 108 100 1
+V: S2V2 
+%%MIDI beat 110 108 100 1
+K: D % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] D2 E F | A2 B2 | A4 | A2 B A | (d c) B2 |
+w: 1.~O bless- ed Je- sus, This Thy low- ly man- * ger
+w: 2.~For He whose migh- ty sway The winds and seas * o- 
+w: 3.~For thus, O Good Su- preme, Wilt Thou our flesh * re- 
+w: 4.~Thy glo- ry and Thy joy All woe and grief * de- 
+w: 5.~Then come, who- e'er thou art, O poor des- pon- * ding 
+[V: S1V2]  A,2 A, D | (D C) (B, C) | D4 | F2 F E | (D E) D2 |
+[V: S2V1]  F,2 A, D, | E,2 (G, E,) | F,4 | A,2 D, E, | (F, A,) (A, ^G,) |
+[V: S2V2]  D,2 C, D, | A,,2 G,,2 | D,4 | D,2 D, C, | (B,, C,) E,2 |
+% 5
+[V: S1V1]  A2 A2 | B A G F | E D E F/G/ | (E2 !fermata!D2) |
+w: is The Pa- ra- dise where oft my soul would * feed: *
+w: bey, Sub- mits to serve, and stoops to those who * sin; *
+w: deem, And raise it to Thy throne o'er e- very * height: *
+w: stroy; Thou, Hea- v'nly Trea- sure, dost all wealth re- * store! *
+w: heart, Take cou- rage now, let this thy fears dis- * pel, *
+[V: S1V2]  C2 D2 | D C D D | B, D D D | (D C) !ferm!D2 |
+[V: S2V1]  A,2 F,2 | G, E, G, A, | G, A, B, B, | (A,3/2 G,/) !invertedfermata!F,2 |
+[V: S2V2]  A,,2 D,2 | G,, A,, B,, D, | G, F, G, E, | A,,2 !ferm!D,2 |
+% 13
+[V: S1V1]  d2 c B | A2 B2 | A4 | =c2 B A | G2 F2 | !fermata!E2
+w: Here is the place, my Lord, Where lies th'E- ter- nal Word
+w: The glo- rious Son of God Doth bear the mor- tal load 
+w: E- ter- nal Strength, here Thou To bro- ther- hood dost bow
+w: Thou deep and li- ving Well! Thou great Im- man- u- el
+w: That since His Son most dear Thy God hath giv'n thee here,
+[V: S1V2]  F2 F D | F2 (E D) | C4 | E2 D D | (B, C) D2 | !ferm!A,2
+[V: S2V1]  B,2 A, B, | (D C) B,2 | C4 | (G, A,) B, F, | G,2 (A, B,) | !invertedfermata!C2
+[V: S2V2]  B,2 F, G, | (D, F,) ^G,2 | A,4 | (E, F,) G, D, | E,2 (F, G,) | !ferm!A,2
+% 17
+[V: S1V1]  !sintro!E2 | A B A G | F D E F/G/ | (E2 !fermata!D2) !eintro!|]
+w: Clothed with our flesh, made like to us in- * deed. * 
+w: Of earth and dust, like us and all our * kin. * 
+w: With tran- sient things that pass like mists of * night. *
+w: Dost con- quer sin and death for e- ver- * more! * 
+w: It can- not be but God doth love thee * well. * 
+[V: S1V2]  C2 | D D C D/E/ | A, D D D | (D C) !ferm!D2 |]
+[V: S2V1]  A,2 | A, G, E, B, | A, A, B, G, | (A,3/2 G,/) !invertedfermata!F,2 |]
+[V: S2V2]  (A,, G,,) | F,, G,, A,, B,,/C,/ | D, F, G, E, | A,,2 !ferm!D,2 |]
+% 20
+%%multicol start
+%%leftmargin 1.75cm
+%%rightmargin 12.25cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\t\tHow often dost thou think
+%% \t\t\tThat thou must surely sink,
+%% \t\t\t\t\tThat hope and comfort are no more for thee;
+%% \t\t\tCome hither then and gaze
+%% \t\t\tUpon this Infant's face,
+%% \t\t\t\t\tAnd here the love of God incarnate see.
+%%endtext
+%%multicol new
+%%leftmargin 7.5cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 7.\t\tAh now the blessed door
+%% \t\t\tStands open evermore
+%% \t\t\t\t\tTo all the joys of this world and the next:
+%% \t\t\tThis Babe will be our Friend,
+%% \t\t\tAnd quickly make an end
+%% \t\t\t\t\tOf all that faithful hearts long time hath vex'd.
+%%endtext
+%%multicol new
+%%leftmargin 13.25cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 8.\t\tThen, earth, we care no more
+%% \t\t\tTo seek thy richest store,
+%% \t\t\t\t\tIf but this treasure will be still our own;
+%% \t\t\tAnd he who holds it fast,
+%% \t\t\tTill all this life is past,
+%% \t\t\t\t\tOur Lord will crown with joy before His throne.
+%%endtext
+%%multicol end
+
+
+
+
+
+
+
+
+
+
+

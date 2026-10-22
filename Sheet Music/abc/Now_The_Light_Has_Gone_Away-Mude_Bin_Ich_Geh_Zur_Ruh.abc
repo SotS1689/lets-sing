@@ -1,0 +1,114 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.720000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 4:8, Ps 16:7, 1Jn 1:7-9, 4:10, Jn 14:1-3
+%OHTOPICS {Anticipation [3]}, {Evening}, {Father [1]}, {Friendship [5]}, {Heaven [3]}, {Jesus [2]}, {Light [1]}, {Presence [3]}, {Trust}
+%OHCATEGORY EVENING
+%OHMETRICAL 7 7 7 7
+%OHCOMPLEXITY 1
+%OHCOMPOSER from Liederbuch für Kleinkinder-Schulen, 1842
+%OHARRANGER unknown
+%OHAUTHOR Havergal, Frances Ridley (1836-1879)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Now the Light Has Gone Away
+C: Words: Frances Ridley Havergal, 1869. 
+C: Music: 'Müde bin ich, geh zur Ruh' from Liederbuch für Kleinkinder-Schulen, 1842. 
+C: Setting: "Common Service Book" (ULCA), 1917, alt.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100]  F3/2 F/ F F | E F G2 | G G G G | F G A2 |
+w: 1.~Now the light has gone a- way; Fa- ther, lis- ten while I pray, 
+w: 2.~Je- sus, Sa- vior, wash a- way All that has been wrong to- day; 
+w: 3.~Let my near and dear ones be Al- ways near and dear to Thee. 
+w: 4.~Now my eve- ning praise I give; Thou didst die that I might live. 
+w: 5.~Thou, my best and kind- est Friend, Thou wilt love me to the end. 
+[V: S1V2]  C3/2 C/ C C | C C E2 | E E E E | F E F2 |
+[V: S2V1]  A,3/2 A,/ A, C | B, A, C2 | C C C C | C C C2 |
+[V: S2V2]  F,3/2 F,/ F, A, | G, F, C,2 | C, C, C, B, | A, G, F,2 |
+% 5
+[V: S1V1]  A3/2 A/ A A | G F d2 | !sintro!c A c B | D E F2 !eintro!|]
+w: Ask- ing Thee to watch and keep And to send me qui- et sleep. 
+w: Help me ev- ery day to be Good and gen- tle, more like Thee. 
+w: Oh, bring me and all I love To Thy ha- ppy home a- bove. 
+w: All my bless- ings come from Thee; Oh, how good Thou art to me! 
+w: Let me love Thee more and more, Al- ways bet- ter than be- fore. 
+[V: S1V2]  F F F F | E _E D2 | F F F F | D C C2 |]
+[V: S2V1]  C C C C | B, A, [F,2B,2] | A, C A, D | B, B, A,2 |]
+[V: S2V2]  F, F, F, F, | F, F, B,,2 | C, C, C, C, | C, C, F,,2 |]
+% 10

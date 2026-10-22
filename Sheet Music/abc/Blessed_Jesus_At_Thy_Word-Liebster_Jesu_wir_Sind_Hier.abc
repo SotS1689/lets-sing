@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2012 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Jn 6:67-68, 8:31-32, Heb 4:12, Jn 1:1-5, 8:12, 1Cor 2:14
+%OHTOPICS {Church on Earth (Church Militant)}, {Consolation [4]}, {Darkness, Spiritual [2]}, {Education [2]}, {Father [4]}, {Guidance}, {Holiness}, {Holy Spirit [2-4]}, {Invitation (Faithful's to God)}, {Invitation (God's to Us)}, {Jesus [1,4]}, {Knowledge [2]}, {Light [2,3]}, {Love}, {Opening Songs}, {Presence}, {Trinity}
+%OHCATEGORY OPENING SONGS
+%OHMETRICAL 7 8 7 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER Ahle, Johann Rudolph (1625-1673)
+%OHARRANGER Layriz, Fridrich (1808-1859)
+%OHAUTHOR Clausnitzer, Tobias (1619-1684)
+%OHTRANSLATOR Winkworth, Catherine (1827-1878)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Blessed Jesus at Thy Word
+C: Words: verses 1-3, Tobias Clausnitzer, 1663. verse 4, unknown author.  Translated by Catherine Winkworth, 1858.
+C: Music: 'Liebster Jesu wir Sind Hier' Johann Rudolph Ahle, 1664.  Setting: Fridrich Layriz, 1854.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2012 Revision.
+S: Music source: "Kern des Deutschen Kirchengesangs zum Gebrauch Evangelisch-Lutherischer Gemeinden und Familien", 1854 by Fridrich Layriz Hymn 75 page 46
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] B G A d | B G A2 | G G G G | A B A2 | G4 |
+w: 1.~Bles- sed Je- sus, at Thy Word We are ga- thered all to hear Thee; 
+w: 2.~All our know- ledge, sense, and sight Lie in deep- est dark- ness shroud- ed, 
+w: 3.~Glor- ious Lord, Thy- self im- part! Light of light, from God pro- ceed- ing, 
+w: 4.~Fa- ther, Son, and Ho- ly Ghost, Praise to Thee and a- do- ra- tion! 
+[V: S1V2] D D D F | D E F2 | D D E D | F G2 F | G4 |
+[V: S2V1] G, B, A, A, | G, B, D2 | G, B, C G, | C D D2 | B,4 |
+[V: S2V2] G, G, F, D, | G, E, D,2 | B,, G,, C, B,, | A,, G,, D,2 | G,,4 |
+% 6
+[V: S1V1] B G A d | B G A2 | G G G G | A B A2 | G4 |
+w: Let our hearts and souls be stirred Now to seek and love and fear Thee, 
+w: Til Thy Spir- it breaks our night With the beams of truth un- cloud- ed; 
+w: O- pen Thou our ears and heart; Help us by Thy Spir- it's plead- ing; 
+w: Grant that we Thy Word may trust And ob- tain true con- so- la- tion, 
+[V: S1V2] D D D F | D E F2 | D D E D | F G2 F | G4 |
+[V: S2V1] G, B, A, A, | G, B, D2 | G, B, C G, | C D D2 | B,4 |
+[V: S2V2] G, G, F, D, | G, E, D,2 | B,, G,, C, B,, | A,, G,, D,2 | G,,4 |
+% 11
+[V: S1V1] D D E F | G A F D | !sintro!G G A B | c B A2 | G4 !eintro!|]
+w: By Thy teach- ings sweet and ho- ly, Drawn from earth to love Thee sole- ly. 
+w: Thou a- lone to God canst win us; Thou must work all good with- in us. 
+w: Hear the cry Thy peo- ple rais- es; Hear and bless our prayers and prais- es. 
+w: While we here be- low must wan- der, Till we sing Thy prais- es yon- der. 
+[V: S1V2] D D ^C D | D E D D | D B, D D | E D D2 | B,4 |]
+[V: S2V1] B, A, G, A, | B, A, A, F, | G, G, F, G, | G, G,2 F, | G,4 |]
+[V: S2V2] G, F, E, D, | B,, ^C, D, D, | B,, E, D, G,, | C, G,, D,2 | G,,4 |]

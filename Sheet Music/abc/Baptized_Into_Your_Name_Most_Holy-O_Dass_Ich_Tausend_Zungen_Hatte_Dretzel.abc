@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.730000
+%%staffsep	0.00000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 28:19, Rom 6:2-4, Gal 3:26-27, Ps 51:10-12, Rom 14:8-9
+%OHTOPICS {Atonement [2]}, {Baptism}, {Blood [6]}, {Christian Life [4-7]}, {Commitment}, {Conversion}, {Discipleship}, {Faithfulness}, {Father [1,2,7]}, {Following Jesus, In Faith}, {Following Jesus, Sanctification}, {Forgiveness}, {God, Faithfulness of}, {God, Mercy of}, {Guidance}, {Holiness}, {Holy Spirit [1-3,7]}, {Invitation (Faithful's to God)}, {Invitation (God's to Us)}, {Jesus}, {Joy}, {Obedience}, {Promises (see also Gospel)}, {Salvation}, {Security [6]}, {Submission (see also Following Jesus, God - Providence of, Trust)}, {Trinity [1,2,7]}, {Trust}
+%OHCATEGORY BAPTISMAL LIFE
+%OHMETRICAL 9 8 9 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER Dretzel, Kornelius Heinrich (1697-1775)
+%OHARRANGER unknown
+%OHAUTHOR Rambach, Johann Jakob (1693-1735)
+%OHTRANSLATOR Winkworth, Catherine (1827-1878);Crull, August (1845-1923)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Baptized Into Thy Name Most Holy
+C: Words: Johann Jakob Rambach, 1734.  Translated by Catherine Winkworth, 1863 and August Crull, 1884. 
+C: Music: 'O Dass Ich Tausend Zungen Hätte (Dretzel)' Kornelius Heinrich Dretzel, 1731. 
+C: Setting: "Mehrstimmiges ChoralBuch", 1906.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: "Mehrstimmiges ChoralBuch", 1906, Hymn 142.
+S: Translation composite from "Chorale Book for England", 1863 and "Hymn book for the use of Evangelical Lutheran schools and congregations", 1884 Hymn 59 by August Crull.
+M: 3/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] F A F | G2 c | B2 A | G F2 | G G G | A2 c |
+w: 1.~Bap- tized in- to Thy Name most ho- ly, O Fa- ther, Son, and 
+w: 2.~My lov- ing Fa- ther, here doth take me To be hence- forth His 
+w: 3.~And I have vowed to fear and love Thee And to o- bey Thee, 
+w: 4.~My faith- ful God, Thou fail- est nev- er, Thy cov- 'nant sure- ly 
+w: 5.~Yes, all I am and love most dear- ly, To Thee I of- fer 
+[V: S1V2] C C C | E2 F | D2 C | C C2 | E D E | F2 C |
+[V: S2V1] A, F, A, | C2 C | F,2 F, | E, A,2 | G, G, C | C2 G, |
+[V: S2V2] F, F,, F, | C,2 A,, | B,,2 F,, | C, F,,2 | C, =B,, C, | F,2 E, |
+% 1
+[V: S1V1] c2 =B | c3 | F A F | G2 c | B2 A | G F2 |
+w: Ho- ly Ghost, I claim a place, though weak and low- ly, 
+w: child and heir; My faith- ful Sa- vior, now doth make me 
+w: Lord, a- lone; I felt Thy Ho- ly Spi- rit move me, 
+w: will a- bide; Oh, cast me not a- way for- ev- er 
+w: now the whole; O let me make my vows sin- cere- ly, 
+[V: S1V2] D2 D | E3 | C C C | E2 F | D2 C | C C2 |
+[V: S2V1] A,2 G, | G,3 | A, F, A, | C2 C | F,2 F, | E, A,2 |
+[V: S2V2] F,2 G, | C,3 | F, F,, F, | C,2 A,, | B,,2 F,, | C, F,,2 |
+% 9
+[V: S1V1] G G G | A2 c | c2 =B | c3 | G G G | A2
+w: A- mong Thy seed, Thy cho- sen host. Bur- ied with Christ 
+w: The fruit of all His sor- rows share; My Com- fort- er 
+w: I dared to pledge my- self Thine own, Re- noun- cing sin 
+w: Should I trans- gress it on my side! But if I fall 
+w: Take full pos- ses- sion of my soul! Let naught with- in 
+[V: S1V2] E D E | F2 C | D2 D | E3 | C =B, C | C2
+[V: S2V1] G, G, C | C2 G, | A,2 G, | G,3 | E, F, G, | F,2
+[V: S2V2] C, =B,, C, | F,2 E, | F,2 G, | C,3 | C, D, E, | F,2
+% 17
+[V: S1V1] F | B2 A | G3 | !sintro!c c c | B2 A | G G2 | !fermata!F3 !eintro!|]
+w: and dead to sin, Thy Spi- rit now shall live with- in. 
+w: will com- fort me When dark- est clouds a- round I see. 
+w: to keep the faith And war with e- vil un- to death. 
+w: hide not Thy face, Re- store Thy child, Lord, by Thy Grace. 
+w: me, naught I own, Serve a- ny will save Thine a- lone.
+[V: S1V2] D | (D E) F E3 | E E F | D2 F | F E2 | !ferm!F3 |]
+[V: S2V1] A, | B,2 C | C3 | G, G, A, | B,2 C | D C2 | !ferm!A,3 |]
+[V: S2V2] D, | G,2 F, | C,3 | C, C, F,, | G,,2 A,, | B,, C,2 | !invertedfermata!F,,3 |]
+%%multicol start
+%%rightmargin 12cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\tHence, Prince of darkness, hence forever, 
+%% \t\t\t\tFor I belong now to my God!
+%% \t\t\t\t'Tis true, I sinned; but my dear Savior Hath 
+%% \t\t\t\tcleansed me with His holy blood.
+%% \t\t\t\tAway, vain world, sin, leave me now, 
+%% \t\t\t\tI turn from you; God hears my vow.
+%%endtext
+%%multicol new
+%%leftmargin 10.6cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 7.\tAnd never let my purpose falter, 
+%% \t\t\t\tO Father, Son, and Holy Ghost, 
+%% \t\t\t\tBut keep me faithful to Thine altar, 
+%% \t\t\t\tTill Thou shalt call me from my post;
+%% \t\t\t\tSo unto Thee I live and die, 
+%% \t\t\t\tAnd praise Thee evermore on high.
+%%endtext
+%%multicol end

@@ -1,0 +1,171 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2025 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.68000
+%%staffsep	0.20000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rom 8:35-39, Jn 3:16, Eph 2:4-10, Jn 16:20, Josh 24:16
+%OHTOPICS {Anticipation}, {Assurance}, {Christian Life}, {Comfort}, {Consecration}, {Courage in Affliction}, {Discipleship}, {Faithfulness}, {God, Care of}, {God, Faithfulness of}, {God, Goodness of}, {God, Love of}, {Inner Life}, {Patience}, {Promises (see also Gospel)}, {Security}, {Trust}
+%OHCATEGORY TRUST
+%OHMETRICAL 7 6 7 6 6 7 7 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER French
+%OHARRANGER unknown
+%OHAUTHOR Helmbold, Ludwig (1532-1598)
+%OHTRANSLATOR Winkworth, Catherine (1827-1878)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+%%setfont-3 Times-Roman 12
+
+X: 1
+T: From God Shall Naught Divide Me
+T: (also known as From God Can Nothing Move Me)
+C: Words: Ludwig Helmbold, 1563.  Translated by Catherine Winkworth, 1863.
+C: Music: 'Von Gott Will Ich Nicht Lassen' from Recueil de plusieurs chansons, 1557. Sometimes mislabeled as German, 1571.
+C: Setting: "The Lutheran Hymnary", 1913.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision. 
+S: Music and Lyrics source: "The Lutheran Hymnary", 1913 Hymn 349
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 107 105 90 1
+V: S2V1 clef=bass 
+%%MIDI beat 107 105 90 1
+V: S2V2 
+%%MIDI beat 107 105 90 1
+K: Bb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] G | G A B c | A2 F F | G G A A | D2 z 
+w: 1.~From God shall naught di- vide me, For He is true for aye, 
+w: 2.~If sor- row comes, He sent it In Him I put my trust; 
+w: 3.~What- e'er shall be His plea- sure Is sure- ly best for me; 
+w: 4.~O praise Him, for He ne- ver For- gets our dai- ly need; 
+w: 5.~For when the world is pas- sing With all its pomp and pride, 
+[V: S1V2]  B, | D E D C | E2 E D | C C C ^C | D2 x 
+[V: S2V1]  G, | G, G, G, G, | C2 A, B, | B, B, A, G, | F,2 z 
+[V: S2V2]  G,, | B,, C, D, E, | C,2 F, B,, | E, =E, F, A,, | B,,2 x 
+% 6
+[V: S1V1] G | G A B c | A2 F F | G G A A | D2 z  
+w: And on my path will guide me, Who else should of- ten stray; 
+w: I ne- ver shall re- pent it, For He is true and just, 
+w: He gave His dea- rest trea- sure, That our weak hearts might see 
+w: O blest the hour when- ev- er To Him our thoughts can speed; 
+w: All we were here a- mas- sing No lon- ger may a- bide; 
+[V: S1V2] D | =E F F =E | F2 D D | D ^C/D/ =E C | D2 x 
+[V: S2V1] B, | C C D/C/ B, | C2 D A, | B, B, A, G, | F,2 z 
+[V: S2V2] B,, | B,, A,, G,, G, | F,2 B,, F, | F, =E,/D,/ ^C, A,, | D,2 x 
+% 9
+[V: S1V1]  d | c B A G | A2 z A | B c d d | c2 A  
+w: His e- ver boun- teous hand By night and day is heed- ful 
+w: And loves to bless us still; My life and soul I owe them 
+w: How good His will toward us; And in His Son He gave us 
+w: Yea, all the time we spend With- out Him is but was- ted, 
+w: But in our earth- ly bed, Where soft- ly we are slee- ping, 
+[V: S1V2]  D | E D E D | =E2 x ^F | G F F F | G2 F 
+[V: S2V1]  F, | A, B, C D | ^C2 z D | D C C B, | G,2 C
+[V: S2V2]  B,, | F, G, C, B,, | A,,2 x D, | G,, A,, B,, D, | =E,2 F,
+% 13
+[V: S1V1]  !sintro!c | B A G G | A2 F _E | D G G ^F | G2 z!eintro!|] 
+w: And gives me what is need- ful, Wher- e'er I go or stand.  
+w: To Him who doth be- stow them, Let Him do as He will. 
+w: What- e'er could bless and save us; Praise Him who lo- veth thus! 
+w: Till we His joy have tas- ted, The joy that hath no end. 
+w: God hath us in His kee- ping, To wake us from the dead. 
+[V: S1V2]  E | D ^F G =E | =E2 D =C | C B, C D | D2 x |] 
+[V: S2V1]  A, | B, D D/C/ B, | A,2 A, A, | F, G, G, A, | B,2 z |] 
+[V: S2V2]  ^F, | G, D, B,, C, | ^C,2 D, F, | B,, E, E, D, | G,,2 z |] 
+% 18
+%%multicol start
+%%leftmargin 4.75cm
+%%rightmargin 12.25cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\t\tThen, though on earth I suffer 
+%% \t\t\t\t\tMuch trial, well I know 
+%% \t\t\tI merit ways still rougher; 
+%% \t\t\t\t\tAnd 'tis to heav'n I go; 
+%% \t\t\t\t\tFor Christ I know and love, 
+%% \t\t\tTo Him I now am hasting, 
+%% \t\t\tAnd gladness everlasting 
+%% \t\t\t\t\tWith Him my heart shall prove. 
+%%endtext
+%%multicol new
+%%leftmargin 10.5cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 7.\t\t$1D$3 For such His will who made us; 
+%% \t\t\t\t\tThe Father seeks our good; 
+%% \t\t\tThe Son hath grace to aid us, 
+%% \t\t\t\t\tAnd save us by His blood; 
+%% \t\t\t\t\tHis Spirit rules our ways, 
+%% \t\t\tBy faith in us abiding, 
+%% \t\t\tTo heav'n our footsteps guiding; 
+%% \t\t\t\t\tTo Him be thanks and praise. 
+%%endtext
+%%multicol end
+%%textfont Times-Roman 13.0
+

@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7400000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Jn 14:16, Acts 2:1-4, 1Cor 12:7-11
+%OHTOPICS {Aspiration}, {Conversion}, {Education [6]}, {Fire [2-4]}, {Following Jesus, Sanctification}, {God, Majesty &amp; Power of [3]}, {Guidance}, {Holiness}, {Holy Spirit}, {Inner Life [5]}, {Invitation (Faithful's to God)}, {Peace [5]}, {Presence}, {Submission (see also Following Jesus, God - Providence of, Trust)}, {Trinity}
+%OHCATEGORY PENTECOST
+%OHMETRICAL 8 8 8 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER Latin
+%OHARRANGER Bach, Johann Sebastian (1685-1750)
+%OHAUTHOR Charlemagne (742-814);Maurus, Rhabanus (776-856);Gregory the Great (c. 540-604);Ambrose of Milan (340-397)
+%OHTRANSLATOR Luther, Martin (1483-1546);Bacon, Leonard Woolsey (1830-1907)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Come, God Creator, Holy Ghost
+T: (also known as Creator, Spirit, Holy Dove or Come Holy Ghost, Creator Blest)
+C: Words: variously ascribed to Ambrose, Gregory the Great, Charlemagne, or Rhabanus Maurus. 
+C: Translated by Martin Luther, 1524. Translated from German to English by Leonard Woolsey Bacon, 1883. 
+C: Music: 'Komm, Gott Schoepfer Heiliger Geist' ancient Latin found in Erfurt Enchiridion, 1524. 
+C: Setting: Johann Sebastian Bach, alt.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=130] G2 A G | F G c d | !fermata!c2 z c | G A c d | e e !fermata!d2 |
+w: 1.~Come, God Cre- a- tor, Ho- ly Ghost, And vis- it Thou these souls of men; 
+w: 2.~For Com- fort- er Thy name we call. Sweet gift of God most high a- bove, 
+w: 3.~Our minds il- lu- mine and re- fresh, Deep  in our hearts let love burn bright; 
+w: 4.~Thou with Thy won- drous sev'n- fold gifts The fin- ger art of God's right hand; 
+w: 5.~Drive far from us our wi- ly foe; Grant us Thy bless- éd peace with- in, 
+[V: S1V2]  E2 F E | D E E G | !ferm!G2 x G | G F G G | G G !ferm!G2 |
+[V: S2V1]  C2 C C | A, C C B, | !invertedfermata!E2 z E | C C C B, | C C !invertedfermata!B,2 |
+[V: S2V2]  C,2 F, C, | D, C, A,, G,, | !ferm!C,2 x C, | E, F, E, D, | C, C, !ferm!G,2 |
+% 5
+[V: S1V1]  z d e c | A G B c | !fermata!d2 z !sintro!G | c A F (A- | A G) G2- | G2 !fermata!G2 !eintro!|]
+w: Fill them with gra- ces, as Thou dost, Thy crea- tures make pure  * * a-  * gain. 
+w: A ho- ly unc- tion to us all O Fount of life, Fire  * * of  * love. 
+w: Thou know'st the weak- ness of our flesh; And strength- en us with  * * Thy  * might. 
+w: The Fa- ther's Word Thou send- est swift On tongues of fire to  * * each  * land. 
+w: That in Thy foot- steps we may go, And shun the dark ways  * * of  * sin. 
+[V: S1V2]  x G G G | F G F G | !ferm!G2 x D | C C C (F- | F E) (D E | D2) !ferm!E2 |]
+[V: S2V1]  z B, C C | C C D E | !invertedfermata!B,2 z B, | C C C C- | C2 (D C- | C B,) !invertedfermata!C2 |]
+[V: S2V2]  x G, C, E, | F, E, D, C, | !ferm!G,2 x G, | E, F, A, (F,- | F, C,) (B,, C, | G,,2) !ferm!C,2 |]
+% 13
+W: 6.Teach us the Father well to know,
+W: Likewise His only Son our Lord,
+W: Thyself to us believing show,
+W: Spirit of both, aye adored
+W: 
+W: 7.Praise to the Father, and the Son
+W: Who from the dead is risen again;
+W: Praise to the Comforter be done
+W: Both now and ever. Amen.

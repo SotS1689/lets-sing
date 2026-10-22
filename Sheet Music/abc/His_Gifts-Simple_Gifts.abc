@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Eph 2:8-10, 4:4-8, 1Jn 5:10-12, Titus 3:4-7, Jas 1:17-18, Jn 10:27-30, 4:10, Rom 6:23, 5:15-17, 3:21-26
+%OHTOPICS {Atonement}, {Baptism [8]}, {Blood [3]}, {Comfort}, {Eternal Life}, {Father [10]}, {Forgiveness}, {God, Goodness of}, {God, Mercy of}, {Gospel}, {Grace}, {Gratitude}, {Heaven}, {Holy Spirit [6,7,10]}, {Jesus}, {Kindness, God's}, {Lord's Supper [9]}, {Presence}, {Promises (see also Gospel) [6]}, {Repentance [7]}, {Resurrection [4]}
+%OHCATEGORY THANKSGIVING
+%OHMETRICAL 7 6 11 11 11 8 11 9 10
+%OHCOMPLEXITY 2
+%OHCOMPOSER Brackett, Joseph (1797-1882)
+%OHARRANGER Dumont, Brian James (1971-)
+%OHAUTHOR Dumont, Brian James (1971-)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: His Gifts
+C: Words: Brian J. Dumont, 2011.  Music: 'Simple Gifts' (Shaker dance) Joseph Brackett, 1848, alt.
+C: Setting: Brian J. Dumont, 2011.
+C: copyright: Melody, public domain.  Words and Setting: Copyright 2011 Brian J. Dumont. These lyrics and setting 
+C: may be freely reproduced or published for Christian worship, provided they are not altered, and this notice is 
+C: on each copy. All other rights reserved.   This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: Photograph of the original manuscript in a book I borrowed from the library.
+S: Setting started in November 2011 and completed 29 Dec 2011.  Lyrics begun in early 2011, completed on 30 Dec 2011.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2)
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] D/ D/ | G G/ A/ B/ G/ B/ c/       | d d/ d/ B A/ G/    | A
+w: 1.~It's His gift, this cre- a- tion, all the glo- ry we see, It's the gift 
+w: 2.~It's His gift, in- car- na- tion, He be- came us to be All the things 
+w: 3.~It's His gift, our re- demp- tion, bought and paid in His blood All God's wrath
+w: 4.~It's His gift, res- ur- rec- tion Raised to life so that we May al- so
+w: 5.~It's His gift, His as- cen- sion we a- wait His re- turn. Not a- lone,
+[V: S1V2]  A,/ A,/          | B, B,/ D/ G/ G/ D/ E/     | F A/ F/ D F/ E/ | D
+[V: S2V1]  F,/ F,/          | D, G,/ F,/ D,/ E,/ G,/ C/ | A, F,/ A,/ G, A,/ G,/ | F,
+[V: S2V2]  D,/ D,/          | D, B,,/ A,,/ B,,/ C,/ D,/ C,/ | D, D,/ D,/ B,, D,/ C,/ | D,
+% 5
+[V: S1V1] A A A      | A/ B/ A/ F/ D D | G/ F/ G/ A/ B A/ A/ |
+w: laid out for A- dam and for Eve, But as they turned a- way from His
+w: our fal- len race could nev- er be. Our na- ture He would take and then
+w: poured out in one tre- mend- ous flood.  The ran- som paid for all in His
+w: with Him in glo- ry al- ways be.  His new life is God's pro- mise and 
+w: yet for His near- er pres- ence yearn. Christ leads us to the Fa- ther and
+[V: S1V2] F D D      | F/ G/ F/ D/ A, B, | C/ D/ E/ F/ G F/ F/ |
+[V: S2V1] D, A, F,   | A,/ B,/ A,/ F,/ F, G, | G,/ A,/ G,/ A,/ G, F,/ A,/ |
+[V: S2V2] D, A,, A,, | D,/ D,/ D,/ F,/ D, D, | E,/ F,/ C,/ D,/ D, D,/ D,/ |
+% 9
+[V: S1V1]  B c d c/ B/ | A A/B/ A G/ G/ | A G/ F/ G2 |
+w: world so bright, It would plunge us * deep in- to fear of the Light.
+w: jus- ti- fy, To the Law's de- * mands Christ would ful- ly com- ply. 
+w: act of Grace meant to bring you * in- to His lov- ing em- brace.
+w: guar- an- tee of the gift He * pre- pares for you and for me.
+w: makes our home Where we'll sing to- * ge- ther a- round His_ Throne.
+[V: S1V2]  G E F G/ G/ | F F D E/ D/ | D E/ D/ D2 |
+[V: S2V1]  B, G, A, G,/ D,/ | D, F, F, G,/ G,/ | F, G,/ F,/ G,2 |
+[V: S2V2]  D, C, D, C,/ B,,/ | A,, A,,/B,,/ D, C,/ B,,/ | A,, C,/ D,/ B,,2 |
+% 13
+[V: S1V1]  d2 B3/2 A/       | B/ c/ B/ A/ G3/2 A/         | B B/ c/ d c/ B/ | A A/ B/ A
+w: Life, life poured out on you and me He calls us to live and His Glo- ry to see 
+[V: S1V2]  F2 G3/2 F/       | G/ E/ G/ F/ E3/2 D/         | D G/ G/ A G/ D/ | F D/ D/ D
+[V: S2V1]  A,2 D,3/2 D,/    | D,/ E,/ D,/ F,/ E,3/2 F,/   | G, D,/ E,/ F, E,/ G,/ | F, F,/ B,/ A,
+[V: S2V2]  A,,2 B,,3/2 A,,/ | B,,/ C,/ B,,/ D,/ C,3/2 D,/ | B,, B,,/ C,/ D, C,/ D,/ | D, F,/ G,/ F,
+% 17
+%%newpage
+%%vskip 0.4in
+[V: S1V1]  D  | G2 G3/2 A/    | B/ A/ B/ c/ d !sintro!c/ B/ | A A B B/ A/ | G G G !eintro!|]
+w: Our Lord calls us home with Him to be in His pres- ence liv- ing e- ter- nal- ly! 
+[V: S1V2]  B, | C2 B,3/2 D/   | D/ D/ B,/ G/ F E/ D/        | D F G G/ F/ | E D D |]
+[V: S2V1]  B, | G,2 G,3/2 A,/ | G,/ A,/ G,/ E,/ F, G,/ G,/  | F, F, D, D,/ F,/ | G, G, G, |]
+[V: S2V2]  D, | E,2 D,3/2 F,/ | D,/ D,/ D,/ C,/ D, C,/ B,,/ | A,, A,, B,, B,,/ A,,/ | C, B,, B,, |]
+% 19
+W: 6.It's His gift, of His Spirit poured on us in His Word 
+W: Who reminds us of all Jesus taught and did.  
+W: His Peace was sent to Comfort and be with us 
+W: and sustain our faith in the Lord's promises. 
+W:
+W: 7.It's His gift, our repentance even this is from Him! 
+W: When His Law and Spirit move our hearts within, 
+W: They crush our vain ambition and very thoughts, 
+W: drive us each to God's mercy\- His Kingdom is wrought! 
+W:
+W: 8.It's His gift of Baptism washed us clean in His Son 
+W: placed us in His Name and took us as His own 
+W: What comfort giv'n to us in this life-long trust 
+W: Given faith that Christ's work is applied now to us. 
+W:
+W: 9.It's His Gift of His Table where He feeds us His sheep;
+W: Blest communion with our God forever sweet.
+W: His Body and His Blood poured out for us all
+W: Giv'n to heal our wounds and restore our_ soul.
+W: 
+W: 10. $1D$2 It's His Gift of eternal life spent in His embrace,
+W: To be with the Father and to sing His praise
+W: And so with God the Son who redeemed our souls
+W: With the Spirit together forever extolled.

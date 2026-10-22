@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2006 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	0.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ex 15:13, Ex 13:21-22, Jn 6:32-35, Jn 4:14
+%OHTOPICS {Anticipation [5]}, {Atonement [3]}, {Bread (of Life/Daily Bread) [1]}, {Cloud [2]}, {Discipleship}, {Eternal Life [5]}, {Fire [2]}, {Following Jesus, Sanctification [4]}, {God, Care of}, {God, Goodness of}, {God, Majesty &amp; Power of}, {Guidance}, {Heaven}, {Invitation (Faithful's to God)}, {Leadership}, {Presence [5]}, {Salvation [5]}, {Submission (see also Following Jesus, God - Providence of, Trust)}, {Trust}, {Worship [4]}
+%OHCATEGORY CONSECRATION
+%OHMETRICAL 8 7 8 7 8 7 7
+%OHCOMPLEXITY 3
+%OHCOMPOSER Hughes, John (1873-1932)
+%OHARRANGER unknown
+%OHAUTHOR Williams, William (1717-1791)
+%OHTRANSLATOR Williams, Peter (1723-1796)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Guide Me, O Thou Great Jehovah
+C: Words: William Williams, 1745.  Translated by Peter Williams, 1771.  
+C: Music: 'Cwm Rhondda' John Hughes, 1907.  Setting: "The Methodist Hymnbook" (UK), 1933.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2007 Revision.
+S: Music source: http://www.MutopiaProject.org/ placed by Peter Chubb, 2005/01/18
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] D E D3/2 G/ | G/F/ G/A/ B A | B G E c |
+w: 1.~Guide me, O Thou great * Je- * ho- vah, Pil- grim through this 
+w: 2.~O- pen now the crys- * tal * foun- tain, Whence the heal- ing 
+w: 3.~Lord, I trust Thy migh- * ty * po- wer, Won- drous are Thy 
+w: 4.~When I tread the verge * of * Jor- dan, Bid my an- xious 
+w: 5.~Mu- sing on my ha- * bi- * ta- tion, Mu- sing on my 
+[V: S1V2]  B, C D3/2 D/ | D D/E/ D D | D C E E |
+[V: S2V1]  G, G, G,3/2 B,/ | B,/A,/ G, G, F, | G, G, G, G, |
+[V: S2V2]  G,, C, B,, A,, | G,,/A,,/ B,,/C,/ D, D, | G, E, C, A,, |
+% 5
+[V: S1V1]  B A G2 | D E D3/2 G/ | G/F/ G/A/ B A | B c d c/A/ |
+w: bar- ren land. I am weak, but Thou * art * might- y; Hold me with Thy * 
+w: stream doth flow; Let the fire and clou- * dy * pil- lar Lead me all my * 
+w: works of old; Thou de- liv- er'st Thine * from * thrall- dom, Who for naught them- * 
+w: fears sub- side; Death of deaths, and hell's * de- * struc- tion, Land me safe on * 
+w: heav'n- ly home, Fills my soul with ho- * ly * long- ings: Come, my Je- sus, * 
+[V: S1V2]  D C B,2 | B, C D3/2 D/ | D D/E/ D D | D E D E |
+[V: S2V1]  G, F, G,2 | G, G, G,3/2 B,/ | B,/A,/ G, G, F, | G, G, G, G,/C/ |
+[V: S2V2]  D, D, G,,2 | G,, C, B,, A,, | G,,/A,,/ B,,/C,/ D, D, | G, E, B,, C, |
+% 9
+[V: S1V1]  G F G2 | A3/2 B/ c A | B3/2 c/ .(d B) | d3/2 d/
+w: pow'r- ful hand. Bread of Hea- ven, Bread of Hea- ven, Feed me 
+w: jour- ney through. Strong De- liv'r- er, strong De- liv'r- er, Be Thou 
+w: selves had sold: Thou didst con- quer, Thou didst con- quer, Sin, and 
+w: Ca- naan's side. Songs of prai- ses, songs of prai- ses, I will 
+w: quick- ly come; Va- ni- ty is all I see; * Lord, I 
+[V: S1V2]  D D D2 | F3/2 G/ A D | G3/2 A/ .(B/A/ G) | G3/2 G/
+[V: S2V1]  B, A, B,2 | C3/2 B,/ A,/G,/ F,/A,/ | D3/2 C/ .(B, D) | D3/2 D/
+[V: S2V2]  D, D, G,,2 | D,3/2 D,/ D,/E,/ F, | G,3/2 D,/ .(G,/A,/ B,) | B,3/2 B,/
+% 13
+[V: S1V1]  d/d/ d/d/ | d4 | !sintro!d3/2 c/ B/d/ c/A/ | G F G2 !eintro!|]
+w: till I want no more; Feed me till * I * want no more. 
+w: still my Strength and Shield; Be Thou still * my * Strength and Shield. 
+w: Sa- tan and the grave, Sin, and Sa- * tan * and the grave. 
+w: ev- er give to Thee; I will ev- * er * give to Thee. 
+w: long to be with Thee! Lord, I long * to * be with Thee! 
+[V: S1V2]  F/G/ D/G/ | (F D/F/ A2) | G3/2 F/ G E | D D D2 |]
+[V: S2V1]  C/B,/ A,/G,/ | D4 | D3/2 D/ D/B,/ A,/C/ | B, A,/C/ B,2 |]
+[V: S2V2]  A,/G,/ F,/E,/ | (D, F,/A,/ C2) | B,3/2 A,/ G, C, | D, D, G,2 |]
+% 16

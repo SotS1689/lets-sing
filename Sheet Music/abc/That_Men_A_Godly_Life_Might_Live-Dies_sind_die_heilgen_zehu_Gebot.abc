@@ -1,0 +1,175 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7300000
+%%staffsep	0.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ex 20:1-17, Deut 5:6-21, 1Tim 2:5-6, Ps 60:11-12
+%OHTOPICS {Charity (see also Tithing) [8]}, {Christian Home/Family [5]}, {Christmas/Advent}, {God, Justness of}, {Guidance}, {Jesus [12]}, {Law}, {Morality (see also Law)}, {Obedience}, {Priest/Priestly Roles [12]}, {Rest [4]}, {Social Justice [6-10]}, {Speech [9]}, {Submission (see also Following Jesus, God - Providence of, Trust)}, {Temperance &amp; Moral Reform (see also Law)}
+%OHCATEGORY WORD OF GOD
+%OHMETRICAL 8 8 8 7 4
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Erfurt Enchiridion, 1524
+%OHARRANGER Praetorius, Michael (1571-1621)
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR Massie, Richard (1800-1887)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: That Men a godly Life Might Live
+T: (also known as These Are the Holy Ten Commands)
+C: Words: Martin Luther, 1524.  Translated by Richard Massie, 1854, alt. 
+C: Music: 'Dies sind die heil`gen zehu Gebot' or 'In Gottes Namen fahren wir' circa
+C: 1200s found in Erfurt Enchiridion, 1524.  Setting: Michael Praetorius, 1609.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] z G G G | G G G/A/ B | c2 z c | d d c G |
+w: 1.~That man a god- ly life * might live, God did these ten com- 
+w: 2.~I am thy God and Lord * a- lone, No o- ther God be- 
+w: 3.~By id- le word and speech * pro- fane Take not My ho- ly 
+w: 4.~Hal- low the day which God * hath blest, That thou and all thy 
+w: 5.~Give to thy par- ents hon- * or due, Be dut- i- ful and 
+[V: S1V2]  x D E E | D E D/C/ D | E2 x E | D F E E |
+[V: S2V1]  z B, B, C | B, C G, G, | G,2 z G, | B, A, C B, |
+[V: S2V2]  x G, E, C, | G, C, B,,/A,,/ G,, | C,2 x C, | G, D, A, E, |
+% 5
+[V: S1V1]  A B c2 | z c d d | c G A G | F2 
+w: mand- ments give By His true ser- vant Mo- ses, high
+w: sides Me own; On My great mer- cy ven- ture thee,
+w: Name in vain; And praise not aught as good and true
+w: house may rest; Keep hand and heart from la- bor free,
+w: lov- ing too; And help them when their strength de- cays
+[V: S1V2]  D G G2 | x F F F | E E C E | D2 
+[V: S2V1]  A, D E2 | z A, A,3/2 B,/ | C B, A, C | A,2 
+[V: S2V2]  F, G, C,2 | x F, D, D, | A, E, F, C, | D,2 
+% 5
+[V: S1V1]  z F | A B c2 | _B G B2 | !sintro!_B3/2 A/ G2 | G4 !eintro!|]
+w: Up- on the mount Si- na- i. Have mer- cy, Lord. 
+w: With all thy heart love thou Me.  *  *  *  * 
+w: But what God doth say and do.  *  *  *  * 
+w: That God may so work in thee.  *  *  *  * 
+w: So shalt thou have length of days.  *  *  *  * 
+[V: S1V2]  x D | A, D E2 | D D G2 | G3/2 F/ (E D) | D4 |]
+[V: S2V1]  z A, | D B, G,2 | _B, B, D2 | D3/2 D (C =B,//A,//) | B,4 |]
+[V: S2V2]  x D, | F, G, C,2 | G,, G,, G,,2 | G,3/2 D,/ (E,/F,/ G,) | G,,4 |]
+% 14
+%%multicol start
+%%rightmargin 12cm
+%%textfont Times-Roman 13.0
+%%begintext obeylines justify
+%% 6.\tKill thou not out of evil will,
+%% \t\t\t\tNor hate, nor render ill for ill;
+%% \t\t\t\tBe patient and of gentle mood,
+%% \t\t\t\tAnd to thy foe do thou good.
+%% 
+%% 7.\tBe faithful to thy marriage vows,
+%% \t\t\t\tThy heart give only to thy spouse
+%% \t\t\t\tKeep thy life pure, and lest thou sin
+%% \t\t\t\tKeep thyself with discipline.	
+%% 
+%% 8.\tSteal not; oppressive acts abhor;
+%% \t\t\t\tNor wring their life-blood from the poor;
+%% \t\t\t\tBut open wide thy loving hand
+%% \t\t\t\tTo all the poor in the land.
+%%endtext
+%%multicol new
+%%leftmargin 11cm
+%%rightmargin 2cm
+%%textfont Times-Roman 13.0
+%%begintext obeylines justify
+%% 9.\tBear not false witness, nor belie
+%% \t\t\t\tThy neighbor by foul calumny;
+%% \t\t\t\tDefend his innocence from blame,
+%% \t\t\t\tWith charity hide his shame.
+%% 
+%% 10.Thy neighbor's wife desire thou not,
+%% \t\t\t\tHis house, nor aught that he hath got
+%% \t\t\t\tBut wish that his such good may be
+%% \t\t\t\tAs thy heart doth wish for thee.
+%% 
+%% 11.God these commandments gave, therein
+%% \t\t\t\tTo show thee, son of man, thy sin,
+%% \t\t\t\tAnd make thee also well perceive
+%% \t\t\t\tHow man for God ought to live.	
+%%endtext
+%%multicol end
+%%multicol start
+%%rightmargin 6cm
+%%leftmargin 6cm
+%%textfont Times-Roman 13.0
+%%begintext obeylines justify
+%% 
+%% 12.Help us, Lord Jesus Christ, for we A Mediator have in Thee;
+%% \t\t\t\tWithout Thy help our works so vain Merit naught but endless pain.
+%%endtext
+%%multicol end

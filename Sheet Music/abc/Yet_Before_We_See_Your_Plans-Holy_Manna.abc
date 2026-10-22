@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2013 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.700000
+%%staffsep	0.200000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Josh 6:1-27, 2Chr 20:21, Mt 26:30, Mk 14:26, 1Sam 17:47, Mt 12:18-21, 1Cor 15:55, Jn 1:43-51
+%OHTOPICS {Anticipation}, {Art and Music [2-4]}, {Assurance}, {Atonement [5]}, {Christian Life}, {Church on Earth (Church Militant)}, {Courage in Affliction}, {Darkness, Spiritual [6]}, {Faith}, {Faithfulness}, {Following Jesus, In Faith}, {God, Eternity of}, {God, Majesty &amp; Power of}, {God, Providence of}, {God's Children - the Faithful (see also Saints, People of the World)}, {Guidance}, {Holiness}, {Invitation (Faithful's to God)}, {Jesus [4,5]}, {Knowledge}, {Leadership}, {Miracles [2]}, {Obedience}, {Patience}, {Praise, Father}, {Salvation [5]}, {Sinners [5-7]}, {Trust}, {Victory}
+%OHCATEGORY CONSECRATION
+%OHMETRICAL 8 7 8 7 8 7 8 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER Moore, William (19th Century);from Columbian Harmony, 1825
+%OHARRANGER Paul, Gregory Lee (1960-)
+%OHAUTHOR Dumont, Brian James (1971-)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Yet Before We See Your Plans
+C: Words: Brian J. Dumont, 2012. Music: 'Holy Manna' attr. William Moore, 1825.  Setting: Gregory L. Paul, 2013.
+C: copyright: Words: Copyright 2012, Brian J. Dumont. These lyrics may be freely reproduced or published for  
+C: Christian worship, provided they are not altered, and this notice is on each copy. All other rights reserved.
+C: Setting: Copyright 2013, Gregory L. Paul. This  setting may be freely reproduced or published for Christian 
+C: worship, provided it is not altered, and this notice is on each copy. All other rights reserved. Tune public domain.
+C: This score is a part of the Open Hymnal Project, 2013 Revision.
+S: Music source: Greg Paul email directly to Brian Dumont for this hymn, 07 Jan 2013.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 117 115 100 1
+V: S2V1 clef=bass 
+%%MIDI beat 117 115 100 1
+V: S2V2 
+%%MIDI beat 117 115 100 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=95] C C/D/ F F | G G/F/ A/G/ F/D/ | C C/D/ F F | A G F2 |
+w: 1.~Yet be- * fore we see Your * plans, * Lord; * While the * path is still un- known 
+w: 2.~March- ing * round the walls of * Jer'- * cho * Went Your * trum- pet- ed par- ade. 
+w: 3.~With four * arm- ies bear- ing * on * them * King Je- * ho- sha- phat would send 
+w: 4.~On that * night be- fore He * died * The * Lord to * You would raise a hymn 
+w: 5.~And we * low- ly help- less * few * ha- * rassed and * fet- tered by our sin 
+[V: S1V2] C C/D/ D D | D D E C | C C/D/ D C | F E F2 |
+[V: S2V1] A, A, A, A, | G, B, A, B, | G, A, B, A, | D C A,2 |
+[V: S2V2] F, E, D, C, | B,, G,, C, D, | E, F, G, A, | B, C F,2 |
+% 5
+[V: S1V1] C C/D/ F F | G G/F/ A/G/ F/D/ | C C/D/ F F | A G F2 |
+w: Bless us * Lord to shout Your * prai- * ses, * May Your * work through us be shown. 
+w: Cel- e- * bra- ting Your great * tri- * umph * E'en be- * fore it was dis- played. 
+w: First the * band to sing your * prai- * ses, * Thus Your * glo- ry to ex- tend. 
+w: He would * sing Your praise and * mer- * cy * E'en be- * fore the bat- tle grim. 
+w: More than * con- quer- ors in * Christ * for * He did * our sal- va- tion win. 
+[V: S1V2] C C/D/ D D | D D E C | C C/D/ D C | F E F2 |
+[V: S2V1] A, A, A, A, | G, B, A, B, | G, A, B, A, | D C A,2 |
+[V: S2V2] F, E, D, C, | B,, G,, C, D, | E, F, G, A, | B, C F,2 |
+% 9
+[V: S1V1] A c c c | A A/F/ G F | A c c c | A A/F/ G2 |
+w: Give us faith to trust Your * mer- cy, Make us con- fi- dent to * be 
+[V: S1V2] F G F E | F D E D | E G F E | F D E2 |
+[V: S2V1] C A, A, A, | D/C/ B,/A,/ B, A,/B,/ | C A, A, A, | D/C/ B,/A,/ (B, C) | 
+[V: S2V2] F, E, D, C, | B,, G,, C, D, | F, E, D, C, | B,, G,, C,2 |
+% 2
+[V: S1V1] C C/D/ F F | G G/F/ A/G/ F/D/ | !sintro!C C/D/ F F | A G F2 !eintro!|]
+w: Called and * ho- ly as Your * Church * who * Shout and * sing Your vic- to- ry. 
+[V: S1V2] C C/D/ D D | D D E C | C C/D/ D C | F E F2 |]
+[V: S2V1] A, A, A, A, | G, B, A, B, | G, A, B, A, | D C A,2 |]
+[V: S2V2] F, E, D, C, | B,, G,, C, D, | E, F, G, A, | B, C F,2 |]
+%%vspace 0.0325in
+W: 6. All around us Lord we see a  
+W: World that spins and spirals down.
+W: While our hindered human eyes can't
+W: See You turning us around.
+W: Give us faith to trust Your mercy, 
+W: Make us confident to be
+W: Called and holy as Your Church who 
+W: Shout and sing Your victory. 
+W:
+W: 7. In our lives and times so broken
+W: By our sin and willful pride
+W: Or just with uncertainty, Your
+W: Plans You often seem to hide,
+W: Give us faith to trust Your mercy,
+W: Make us confident to be
+W: Called and holy as Your Church who
+W: Shout and sing Your victory.
+%%begintext align
+Special thanks for this text goes to Pastor Todd Liefer, whose sermon inspired it.
+%%endtext

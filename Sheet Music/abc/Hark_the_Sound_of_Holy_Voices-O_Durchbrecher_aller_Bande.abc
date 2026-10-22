@@ -1,0 +1,147 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.740000
+%%staffsep	1.20000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rev 7:9-12, Rev 4:2-11, Rev 22:1-5, Jn 14:1-4
+%OHTOPICS {Art and Music}, {Blood [3]}, {Church in Heaven (Church Victorious/Church Triumphant)}, {Cross [4]}, {Eternal Life}, {God's Children - the Faithful (see also Saints, People of the World)}, {Heaven}, {Jesus}, {Martyrs}, {Praise, Son}, {Presence}, {Saints (all Faithful)}, {Salvation [4]}, {Trinity [5,6]}, {Victory [1,3]}, {Worship}
+%OHCATEGORY COMMUNION OF SAINTS
+%OHMETRICAL 8 7 8 7 8 7 8 7
+%OHCOMPLEXITY 1
+%OHCOMPOSER Freylinghausen, Johann Anastasius (1670-1739)
+%OHARRANGER unknown
+%OHAUTHOR Wordsworth, Christopher (1807-1885)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Hark the Sound of Holy Voices
+C: Words: Christopher Wordsworth, 1862.
+C: Music: 'O Durchbrecher'  Johann Anastasius Freylinghausen,  1704. 
+C: Setting: The Evangelical Lutheran Hymn Book, 1931.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.
+S: Music source: The Evangelical Lutheran Hymn Book, 1931. Hymn 182
+S: Lyrics source: "The Holy Year" by Christopher Wordsworth, 1865.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: D % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] D E F E | F ^G A A | d d c d | c B A2 |
+w: 1.~Hark the sound of ho- ly voi- ces, chan- ting at the crys- tal sea 
+w: 2.~Pa- tri- arch and ho- ly pro- phet, who pre- pared the way for Christ, 
+w: 3.~They have come from tri- bu- la- tion, and have washed their robes in Blood, 
+w: 4.~Mar- ching with Thy Cross their ban- ner they have tri- umphed fol- lo- wing 
+w: 5.~Now they reign in hea- v'nly glo- ry, now they walk in gol- den light, 
+[V: S1V2]  A, C D E | D D E E | D F E D/F/ | E E C2 |
+[V: S2V1]  F, A, A, A, | A, D D C | A, A, A, F, | A, ^G, A,2 |
+[V: S2V2]  D, A,, D, C, | D, B,, A,, A,, | F, D, A,, B,, | C, E, A,,2 | 
+% 6
+[V: S1V1]  D E F E | F ^G A A | d d c d | c B A2 |
+w: Hal- le- lu- ia! Hal- le- lu- ia! Hal- le- lu- ia! Lord to Thee. 
+w: King, A- pos- tle, Saint, and Mar- tyr Con- fes- sor, E- van- ge- list, 
+w: Washed them in the Blood of Je- sus; tried they were, and firm they stood; 
+w: Thee the Cap- tain of Sal- va- tion, Thee their Sa- vior and their King; 
+w: Now they drink, as from a ri- ver, ho- ly bliss and in- fi- nite; 
+[V: S1V2]  A, C D E | D D E E | D F E D/F/ | E E C2 |
+[V: S2V1]  F, A, A, A, | A, D D C | A, A, A, F, | A, ^G, A,2 |
+[V: S2V2]  D, A,, D, C, | D, B,, A,, A,, | F, D, A,, B,, | C, E, A,,2 | 
+% 9
+[V: S1V1]  d A B B |  A3/2 G/ F D | F F A A | G F E2 |
+w: Mul- ti- tude which none can num- ber, like the stars in glo- ry stand 
+w: Saint- ly Mai- den, god- ly Ma- tron, Wi- dows who have watched to prayer, 
+w: Mocked, im- pri- soned, stoned, tor- men- ted, sawn a- sun- der, slain with sword, 
+w: Glad- ly, Lord, with Thee they suf- fered; glad- ly, Lord, with Thee they died; 
+w: Love and Peace they taste fo- re- ver, and all Truth and Know- ledge see 
+[V: S1V2]  D F G G | E C D D | D D E F | D D C2 |
+[V: S2V1]  A, D D E | A, A, A, F, | A, B, A, D  | B, A,  A,2 |
+[V: S2V2]  F, D, G, E, | C, A,, D, D, | D, B,, C, D, | G,, D, A,,2 |
+% 13
+[V: S1V1]  !sintro!A A G F | G3/2 A/ F D | E F G A | F E D2!eintro! |]
+w: Clothed in white ap- pa- rel, hol- ding palms of vic- t'ry in their hand. 
+w: Joined in ho- ly con- cert sing- ing to the Lord of all are there. 
+w: They have con- quered Death and Sa- tan, by the might of Christ the Lord. 
+w: And by death to Life im- mor- tal they were born, and glo- ri- fied. 
+w: In the be- a- ti- fic vi- sion of the Bles- sèd Tri- ni- ty. 
+[V: S1V2]  E F E ^D | E3/2 E/ D D | B, ^D E E | =D C A,2 |]
+[V: S2V1]  A, D B, B, | B,3/2 C/ A, A, | B, A, B, A, | A, A, F,2 |]
+[V: S2V2]  C, D,  E, B,, | E,3/2 A,,/ D, F, | G, F, E, C, | D, A,, D,2 |]
+% 18
+W: 6. $1D$2 God of God, the One-begotten, Light of Light, Emmanuel, 
+W: In whose Body joined together all the saints forever dwell, 
+W: Pour upon us of Thy fullness, that we may forevermore 
+W: God the Father, God the Son, and God the Holy Ghost adore. 
+
+
+
+

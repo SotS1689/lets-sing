@@ -1,0 +1,131 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2012 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mk 10:46-52, Lk 18:35-43, Phil 4:5-7, 1Pt 2:24
+%OHTOPICS {Compassion}, {Darkness, Spiritual}, {Faith}, {God, Care of}, {God, Mercy of}, {Healing}, {Invitation (Faithful's to God)}, {Jesus}, {Kindness, God's}, {Miracles}, {Prayer}, {Trust}
+%OHCATEGORY CROSS AND COMFORT
+%OHMETRICAL 8 8 8 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER Ingalls, Jeremiah (1764-1828)
+%OHARRANGER unknown
+%OHAUTHOR Longfellow, Henry Wadsworth (1807-1882)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Blind Bartimaeus
+C: Words: Henry Wadsworth Longfellow, alt, 1842.
+C: Music: 'Fillmore' Jeremiah Ingalls (1764-1828).  Setting: "The Methodist Hymnal", 1905.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2012 Revision.
+S: Music source: The Methodist Hymnal, 1905.  Hymn 310.  Lyrics found in "Hymns of the Church Universal", J. and E.A. Rylands, 1885, Hymn 84, page 282.
+S: the original lyrics by Longfellow retained the Greek quotes of the New Testament for the "three voices".  Published in "Ballads and other poems, 1842.  English translations of the Greek were added later by an unknown translator before the above lyric source.
+M: 3/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] F | (A3/2 G/) F | G2 A | G2 F | G2 A | c2 c | (c d) c |
+w: 1.~Blind Bar- * ti- mae- us at the gates Of Jer- i- cho * in 
+w: 2.~The throng- * ing mul- ti- tudes in-crease "Blind Bar- ti- mae- * us, 
+w: 3.~Then saith * the Christ, as si- lent stands The crowd, "What wilt * thou 
+w: 4.~Ye that * hath eyes and can- not see, In dark- ness and * in 
+[V: S1V2]  F | F2 F | E2 E | E2 D | E2 F | F2 F | F2 F |
+[V: S2V1]  A, | (C3/2 B,/) A, | B,2 C | B,2 A, | C2 C | A,2 A, | (A, B,) A, |
+[V: S2V2]  F, | F,2 F, | C,2 C, | C,2 D, | C,2 F, | F,2 F, | F,2 F, |
+% 9
+[V: S1V1]  A2 G | F2 c | d2 d | (d3/2 e/) f | c2 c | A2
+w: dark- ness waits: He hears the crowd; * he hears a breath 
+w: hold thy peace!" But still, a- bove * the nois- y crowd, 
+w: at My hands?" And he re- plies, * "O give me light! 
+w: mis- er- y, Re- call those migh- * ty voi- ces three\- 
+[V: S1V2]  F2 E | F2 F | F2 F | F2 F | A2 A | F2
+[V: S2V1]  C2 B, | A,2 A, | B,2 B, | (B,3/2 C/) D | F2 F | C2
+[V: S2V2]  C,2 C, | F,2 F, | B,2 B, | B,2 B,, | F,2 F, | F,2
+% 13
+[V: S1V1]  c | d2 d | (d3/2 e/) f | c2 c | (A !fermata!G) F | (A3/2 G/) F | G2
+w: say "It is Christ * of Naz- a- reth!" * And calls * in tones 
+w: The blind man's cry * is shrill and loud: * Un- til * they say, 
+w: Ra- bbi, re- store * the blind man's sight." * And Je- * sus an- 
+w: "O Je- sus, Je- * sus pi- ty me!" * "Cou- rage! * a- rise! 
+[V: S1V2]  F | F2 F | F2 F | F2 F | (F !ferm!E) F | F2 F | E2
+[V: S2V1]  A, | B,2 B, | (B,3/2 C/) D | A,2 A, | C- !invertedfermata!C A, | (C3/2 B,/) A, | B,2
+[V: S2V2]  F, | B,2 B, | B,2 B,, | F,2 F, | (F, !ferm!C,) F, | F,2 F, | C,2
+% 21
+[V: S1V1]  A | G2 F | G2 !sintro!A | c2 c | (c d) c | A2 G | F2 !eintro!|]
+w: of a- go- ny, "O Je- sus, Je- * sus pi- ty me!" 
+w: "He call- eth thee; Cour- age! a- rise! * He call- eth thee!" 
+w: swers, "Go thy way, Thy faith, thy faith * hath sa- vèd thee." 
+w: He call- eth thee!" "Thy faith, thy faith * hath sa- vèd thee." 
+[V: S1V2]  E | E2 D | E2 F | F2 F | F2 F | F2 E | F2 |]
+[V: S2V1]  C | B,2 A, | C2 C | A,2 A, | (A, B,) A, | C2 B, | A,2 |]
+[V: S2V2]  C, | C,2 D, | C,2 F, | F,2 F, | F,2 F, | C,2 C, | F,2 |]
+% 27

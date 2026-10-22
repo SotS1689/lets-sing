@@ -1,0 +1,114 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2005 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP 1Thess 6:17, Ps 5:3,12, Mk 11:24-25
+%OHTOPICS {Christian Life}, {Comfort}, {Conscience}, {Darkness, Spiritual [2,3,4]}, {Holy Spirit [2]}, {Inner Life}, {Judging [3]}, {Prayer}, {Rest}, {Self Control (see also Law) [2,3]}, {Submission (see also Following Jesus, God - Providence of, Trust) [2,3]}, {Temperance &amp; Moral Reform (see also Law)}, {Temptation [2,3]}
+%OHCATEGORY PRAYER
+%OHMETRICAL 8 5 8 8 5 8 7 8 5
+%OHCOMPLEXITY 1
+%OHCOMPOSER Perkins, William Oscar (1831-1902)
+%OHARRANGER Perkins, William Oscar (1831-1902)
+%OHAUTHOR Kidder, Mary Ann Pepper (1820-1905)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Did You Think To Pray?
+C: Words: Mary A. Pepper Kidder, 1876. 
+C: Music: 'Stockbridge' or 'Did You Think To Pray' William Oscar Perkins, 1876. 
+C: Setting: William Oscar Perkins, 1876.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision.
+S: Music source: "Gospel Echoes" by R.G. Staples, 1877 hymn 27.  There referenced from "Shining River" by William Oscar Perkins; O. Ditson & Co.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves S1 | S2 
+V: S1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S2 clef=bass 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%
+% 1
+[V: S1] [Q:1/4=120] [F3/2A3/2] [F/A/] [F/B/][F/A/] [C/G/][C/F/] | C2 [C2F2] | [E3/2G3/2] [E/G/] [GB] [FA] | [E4G4] |
+w: 1.~Ere you left your room this morn- ing, Did you think to pray? 
+w: 2.~When you met with great temp- ta- tion, Did you think to pray? 
+w: 3.~When your heart was filled with an- ger, Did you think to pray? 
+w: 4.~When sore tri- als came up- on you, Did you think to pray? 
+[V: S2]  [F,3/2C3/2] [F,/C/] [F,/D/][F,/C/] [F,/B,/][F,/A,/] | [F,2A,2] [F,2A,2] | [C,3/2C3/2] [C,/C/] [E,C] [F,C] | [C,4C4] |
+% 5
+[V: S1]  [E3/2G3/2] [E/G/] [E/G/][E/G/] F/[E/G/] | [F2A2] [F2c2] | [F3/2A3/2] [F/A/] [F/B/][F/A/] [C/G/][C/F/] | D2 [D2F2] |
+w: In the name of Christ our Sa- vior, Did you sue for lov- ing fa- vor, 
+w: By His dy- ing love and mer- it, Did you claim the Ho- ly Spir- it 
+w: Did you plead for grace, my bro- ther, That you might for- give a- no- ther 
+w: When your soul was bowed in sor- row, Balm of Gil- ead did you bor- row 
+[V: S2]  [C,3/2C3/2] [C,/C/] [C,/C/][C,/C/] [A,,/C/][C,/C/] | [F,2C2] [F,2A,2] | [F,3/2C3/2] [F,/C/] [F,/D/][F,/C/] [F,/B,/][F,/A,/] | [B,,2B,2] [B,,2B,2] |
+% 9
+[V: S1]  [C3/2E3/2] [C/F/] [E3/2G3/2] [E/A/] | F4 | [A3/2c3/2] [A/c/] [B/d/][A/c/] [^G/=B/][A/c/] | [A2f2] [A2c2] | [F3/2A3/2] [A/c/]
+w: As a shield to- day? O how pray- ing rests the wea- ry! Prayer will 
+w: As your guide and stay?  *  *  *  *  *  * *  *  *  * 
+w: Who had crossed your way?  *  *  *  *  *  * *  *  *  * 
+w: At the gates of day?  *  *  *  *  *  * *  *  *  * 
+[V: S2]  [C,3/2G,3/2] [C,/A,/] [C,3/2B,3/2] [C,/C/] | [F,4A,4] | [F,3/2C3/2] [F,/F/] [F,/F/][F,/F/] [F,/F/][F,/F/] | [F,2C2] [F,2F2] | [F,3/2C3/2] [F,/F/]
+% 13
+[V: S1]  [B/d/][A/c/] [G/B/][F/A/] | [E4G4] | [F3/2A3/2] [F/A/] [F/B/][F/A/] [C/G/][C/F/] | D2 [D2F2] | !sintro![C3/2E3/2] [C/F/] [E3/2G3/2] [F/A/] | F4 !eintro!|]
+w: change the night to day; So when life seems dark and drea- ry, Don't for- get to pray. 
+[V: S2]  [F,/F/][F,/F/] [F,/C/][F,/C/] | [C,4C4] | [F,3/2C3/2] [F,/C/] [F,/D/][F,/C/] [F,/B,/][F,/A,/] | [B,,2B,2] [B,,2B,2] | [C,3/2G,3/2] [C,/A,/] [C,3/2B,3/2] [C,/C/] | [F,4A,4] |]
+% 20

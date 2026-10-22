@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2006 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 21:9, Ps 148, 1Tim 1:17, Rev 4:8-11
+%OHTOPICS {Children (see also God's Children - the Faithful)}, {Easter Week / Passion}, {God, As King}, {God, Majesty &amp; Power of}, {Israel [1]}, {Jesus}, {Praise, Son}, {Worship}
+%OHCATEGORY PALM SUNDAY
+%OHMETRICAL 7 6 7 6 7 6 7 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER Teschner, Melchior (1584-1635)
+%OHARRANGER unknown
+%OHAUTHOR Theodulf of Orleans (760-821)
+%OHTRANSLATOR Neale, John Mason (1818-1866)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: All Glory, Laud, and Honor
+C: Words: Theodulf of Orleans, circa 820. Translated by John Mason Neale, 1851.  
+C: Music: 'Valet Will Ich Dir Geben' or 'St. Theodulph' Melchior Teschner, 1615. 
+C: Setting: Presbyterian Hymnal, 1911.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision.
+S: Music source: Presbyterian Hymnal, Revised, 1911 Hymn 216.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 1 % Piano 2
+%%MIDI program 2 1 % Piano 2
+%%MIDI program 3 1 % Piano 2
+%%MIDI program 4 1 % Piano 2
+%
+% 1
+[V: S1V1] [Q:1/4=140] "^Refrain" C | G G A B | c2 c e | d c A B | c3
+w: All glo- ry, laud and hon- or, To Thee, Re- deem- er, King, 
+[V: S1V2]  C | C/D/ E C F | (F E/D/) E G | G G F D | E3
+[V: S2V1]  E, | E,/F,/ G, F, G, | G,2 G, C | B, C A, G, | G,3
+[V: S2V2]  C, | C, C, F, D, | C,2 C, C, | G, E, F, G, | C,3
+% 5
+[V: S1V1]  C | G G A B | c2 c e | d c A B | c3 |]
+w: To Whom the lips of child- ren Made sweet ho- san- nas ring. 
+[V: S1V2]  C | C/D/ E C F | (F E/D/) E G | G G F D | E3 |]
+[V: S2V1]  E, | E,/F,/ G, F, G, | G,2 G, C | B, C A, G, | G,3 |]
+[V: S2V2]  C, | C, C, F, D, | C,2 C, C, | G, E, F, G, | C,3 |]
+% 9
+[V: S1V1]  "^Verse" c | e e d c | B2 B B | c B A A | G3
+w: 1.~Thou art the King of Is- rael, Thou Da- vid's ro- yal Son, 
+w: 2.~The com- pa- ny of an- gels Are prais- ing Thee on High, 
+w: 3.~The peo- ple of the He- brews With palms be- fore Thee went; 
+w: 4.~To Thee, be- fore Thy pa- ssion, They sang their hymns of praise; 
+w: 5.~Thou didst ac- cept their prais- es; Ac- cept the prayers we bring, 
+[V: S1V2]  F | E E G G | (^F A) G G | E G E ^F | G3
+[V: S2V1]  A, | C C D G, | (A, D) D E | E D A,/B,/ C | B,3
+[V: S2V2]  F, | C, A,, B,, E, | (D, ^F,) G, E, | A,, B,, C, D, | G,,3
+% 13
+[V: S1V1]  G | E G A G | (G F) E !sintro!G | F E D D | "^To Refrain" C3 !eintro!||
+w: Who in the Lord's Name com-  * est, The King and Bless- ed One. 
+w: And mor- tal men and all  * things Cre- at- ed make re- ply. 
+w: Our prayer and praise and an- * thems Be- fore Thee we pre- sent. 
+w: To Thee, now high ex- alt-  * ed, Our me- lo- dy we raise. 
+w: Who in all good de- light-  * est, Thou good and gra- cious King.
+[V: S1V2]  D | C B, A, C | (D B,) C C | C C C B, | C3 ||
+[V: S2V1]  G, | G, G, C G, | G,2 G, G, | A, G, G,3/2 F,/ | E,3 ||
+[V: S2V2]  B,, | C, E, F, E, | (B,, G,,) C, E, | F, C, G,, G,, | C,3 ||
+% 18

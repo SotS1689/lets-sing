@@ -1,6 +1,6 @@
 // After `vite build`: writes dist/sw.js from sw-template.js, filling in
 // VERSION (a hash of every published file) and SHELL (the files cached at
-// install -- everything except the per-hymn MIDI files and source maps).
+// install -- everything except the per-hymn MIDI files and scores, and source maps).
 import { readFileSync, writeFileSync, readdirSync, statSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { join, relative, sep } from "node:path";
@@ -26,7 +26,7 @@ for (const f of files) {
 }
 const version = hash.digest("hex").slice(0, 16);
 
-const shell = ["./", ...files.filter((f) => !f.startsWith("midi/") && !f.endsWith(".map")).map((f) => `./${f}`)];
+const shell = ["./", ...files.filter((f) => !f.startsWith("midi/") && !f.startsWith("scores/") && !f.endsWith(".map")).map((f) => `./${f}`)];
 
 const sw = template
     .replace("__VERSION__", version)

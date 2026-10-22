@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2010 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rev 21:18-23, 2Cor 4:17-18, Rev 7:9-17, Is 60:19-20
+%OHTOPICS {Angels [2]}, {Anticipation}, {Brevity of Life [5]}, {Church in Heaven (Church Victorious/Church Triumphant)}, {Church on Earth (Church Militant)}, {Consecration}, {Cross [9]}, {Eternal Life}, {God, Care of}, {Heaven}, {Hope}, {Israel}, {Jesus [2-4]}, {Joy}, {Martyrs [2]}, {Presence}, {Security [12]}, {Victory}
+%OHCATEGORY HEAVEN
+%OHMETRICAL 7 6 7 6 7 6 7 6
+%OHCOMPLEXITY 1
+%OHCOMPOSER Ewing, Alexander C. (1830-1895)
+%OHARRANGER unknown
+%OHAUTHOR Bernard of Cluny aka. Bernard of Morlaix (12th Century)
+%OHTRANSLATOR Neale, John Mason (1818-1866)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Jerusalem the Golden
+C: Words: Bernard of Cluny, 1146.  Translated by John Mason Neale, 1858. 
+C: Music: 'Ewing' Alexander C. Ewing, 1853.  Setting: "Hymns Ancient and Modern", 1861.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision.
+S: Music source: Lutheran Service Book, 2006 Hymn 672.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=110] C | D C F E | D2 C E | G c B ^G | A3
+w: 1.~Jer- u- sa- lem the gol- den, with milk and hon- ey blest, 
+w: 2.~They stand, those halls of Zi- on, all ju- bi- lant with song, 
+w: 3.~There is the throne of Da- vid, and there, from care re- leased, 
+w: 4.~O sweet and bless- èd coun- try, the home of God's e- lect! 
+w: 5.~Brief life is here our por- tion, brief sor- row, short lived care; 
+[V: S1V2]  G, | G, G, C C | (C B,) C C | D E E D | C3
+[V: S2V1]  E, | F, E, A, G, | G,2 E, G, | G, G, ^G, B, | A,3
+[V: S2V2]  C, | C, C, C, C, | G,,2 C, C, | B,, C, E, E, | A,,3
+% 5
+[V: S1V1]  A | G E E D | C2 D E | E E D C | D3
+w: Be- neath thy con- tem- pla- tion sink heart and voice op- pressed. 
+w: And bright with man- y'an an- gel, and all the mar- tyr throng; 
+w: The shout of them that tri- umph, the song of them that feast; 
+w: O sweet and bless- èd coun- try, that ea- ger hearts ex- pect! 
+w: The life that knows no end- ing, the tear- less life, is there. 
+[V: S1V2]  F | E C B, B, | A,2 B, C | C C A, A, | B,3
+[V: S2V1]  C | C G, ^G, E, | E,2 G, G, | G, G, F, E, | G,3
+[V: S2V2]  F,, | C, C, E, ^G,, | A,,2 G,, C, | C, E,, F,, A,, | G,,3
+% 9
+[V: S1V1]  D | F E A B | c2 d G | e3/2 e/ d c | B3
+w: I know not, O I know not, what joys a- wait us there, 
+w: The Prince is ev- er in them, the day- light is ser- ene. 
+w: And they are with their Lea- der, who con- quered in the fight, 
+w: Je- sus, in mer- cy bring us to that dear land of rest, 
+w: O ha- ppy ret- ri- bu- tion! Short toil, e- ter- nal rest; 
+[V: S1V2]  B, | C C C E | E2 G G | G3/2 G/ A F | G3
+[V: S2V1]  G, | A, G, A, ^G, | A,2 B, B, | C3/2 C/ A, C | D3
+[V: S2V2]  G, | F, C, F, E, | A,2 G, G, | C,3/2 C,/ F, A, | G,3
+% 13
+[V: S1V1]  A | G E E D | C2 D !sintro!E | E E D3/2 C/ | C3 !eintro!|]
+w: What ra- dian- cy of glo- ry, what bliss be- yond com- pare. 
+w: The pas- tures of the bless- èd are decked in glor- ious sheen. 
+w: And won for them for- ev- er their gleam- ing robes of white. 
+w: Who art, with God the Fa- ther, and Spir- it, ev- er blessed. 
+w: For mor- tals and for sin- ners, a man- sion with the blest. 
+[V: S1V2]  D | C C B, B, | A,2 B, C | C C B,3/2 C/ | C3 |]
+[V: S2V1]  B, | C G, ^G, E, | E,2 G, G, | G, G, F,3/2 E,/ | E,3 |]
+[V: S2V2]  F, | E, C, E, ^G,, | A,,2 G,, C, | C, E,, G,,3/2 C,/ | C,3 |]
+% 17
+%%newpage
+%%vskip 0.2in
+W: 6. That we should look, poor wanderers, to have our home on high!
+W: That worms should seek for dwellings beyond the starry sky!
+W: And now we fight the battle, but then shall wear the crown
+W: Of full and everlasting, and passionless renown.
+W: 
+W: 7. And how we watch and struggle, and now we live in hope,
+W: And Zion in her anguish with Babylon must cope;
+W: But he whom now we trust in shall then be seen and known,
+W: And they that know and see Him shall have Him for their own.
+W: 
+W: 8. For thee, O dear, dear country, mine eyes their vigils keep;
+W: For very love, beholding, thy happy name, they weep:
+W: The mention of thy glory is unction to the breast,
+W: And medicine in sickness, and love, and life, and rest.
+W: 
+W: 9. O one, O only mansion! O paradise of joy!
+W: Where tears are ever banished, and smiles have no alloy;
+W: The cross is all thy splendor, the Crucified thy praise,
+W: His laud and benediction thy ransomed people raise.
+W: 
+W: 10. Jerusalem the glorious! Glory of the elect!
+W: O dear and future vision that eager hearts expect!
+W: E'en now by faith I see thee, e'en here thy walls discern;
+W: To thee my thoughts are kindled, and strive, and pant, and yearn.
+W: 
+W: 11. Jerusalem, the only, that look'st from heaven below,
+W: In thee is all my glory, in me is all my woe!
+W: And though my body may not, my spirit seeks thee fain,
+W: Till flesh and earth return me to earth and flesh again.
+W: 
+W: 12. Jerusalem, exulting on that securest shore,
+W: I hope thee, wish thee, sing thee, and love thee evermore!
+W: I ask not for my merit: I seek not to deny
+W: My merit is destruction, a child of wrath am I.
+W: 
+W: 13. But yet with faith I venture and hope upon the way,
+W: For those perennial guerdons I labor night and day.
+W: The best and dearest Father Who made me, and Who saved,
+W: Bore with me in defilement, and from defilement laved.
+W: 
+W: 14. When in His strength I struggle, for very joy I leap;
+W: When in my sin I totter, I weep, or try to weep:
+W: And grace, sweet grace celestial, shall all its love display,
+W: And David's royal fountain purge every stain away.
+W: 
+W: 15. O sweet and blessèd country, shall I e'er see thy face?
+W: O sweet and blessèd country, shall I e'er win thy grace?
+W: I have the hope within me to comfort and to bless!
+W: O shall I e'er win the prize? O tell me, tell me, Yes!

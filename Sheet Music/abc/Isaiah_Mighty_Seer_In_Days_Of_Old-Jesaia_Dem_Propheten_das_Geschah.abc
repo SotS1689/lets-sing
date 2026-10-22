@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7300000
+%%staffsep	1.20000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Is 6:1-4, Rev 4:8
+%OHTOPICS {Angels}, {Cloud}, {Father}, {God, As King}, {God, Majesty &amp; Power of}, {Heaven}, {Holiness}, {Praise, Father}, {Presence}, {Reverence}, {Throne (also see God - As King)}, {Trinity}, {Worship}
+%OHCATEGORY TRINITY
+%OHMETRICAL 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+%OHCOMPLEXITY 2
+%OHCOMPOSER Luther, Martin (1483-1546)
+%OHARRANGER Erythraeus
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR composite
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Isaiah, Mighty Seer, In Days of Old
+T: (also known as These Things the Seer Isaiah did Befall or Isaiah 'twas the Prophet)
+C: Words: Martin Luther, 1526 as the Sanctus of the German Mass, after Is 6:1-4.  Translation composite. 
+C: Music: 'Jesaia Dem Propheten das Geschah' Martin Luther, 1526 in the German Mass.  Setting: Erythraeus, 1608.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+S: Translation is public domain per Project Wittenberg: http://www.iclnet.org/pub/resources/text/wittenberg/hymns/isaiah.txt
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] B2 B G | E G B B | c c !fermata!B2 | B2 B A | B E A G | F F !fermata!E2 |
+w: 1.~Is- ai- ah, might- y seer, in days of old The Lord of all in Spir- it did be- hold 
+[V: S1V2]  E2 D B, | C B, F E | E E !ferm!E2 | G2 G F | D C F E | E D !ferm!E2 |
+[V: S2V1]  G,2 F, E, | G, E, F, G, | A, A, !invertedfermata!G,2 | D2 E C | B, G, F, B, | C B, !invertedfermata!G,2 |
+[V: S2V2]  E,2 B,, E, | C, E, D, E, | A,, A,, !ferm!E,2 | G,2 E, F, | B,, C, D, E, | A,, B,, !ferm!E,2 |
+% 5
+[V: S1V1]  B2 B B | e e e B | c B !fermata!G2 | G2 A B | G A G E | F F !fermata!E2 |
+w: High on a loft- y throne, in splen- dor bright, With flow- ing train that filled the Tem- ple quite. 
+[V: S1V2]  G2 G F | A A G G | A F !ferm!E2 | E2 C F | E C E B, | C B, !ferm!B,2 |
+[V: S2V1]  E2 D D | C C C B, | E D !invertedfermata!C2 | B,2 A, F, | B, A, C G, | E, D, !invertedfermata!G,2 |
+[V: S2V2]  E,2 G, B, | A, A,, C, E, | A,, B,, !ferm!C,2 | E,2 F, D, | E, F, C, E, | A,, B,, !ferm!E,2 |
+% 13
+[V: S1V1]  E2 G F | G =A B B | G =A !fermata!B2 | e2 e d | c B B A | B A !fermata!G2 |
+w: A- bove the throne were state- ly ser- a- phim, Six wings had they, these mess- en- gers of Him. 
+[V: S1V2]  C2 D F | E E F F | E E !ferm!D2 | G2 A F | E F G F | E E !ferm!E2 |
+[V: S2V1]  C2 B, B, | B, C D B, | B, C !invertedfermata!F,2 | C2 C B, | G, B, E C | B, C !invertedfermata!B,2 |
+[V: S2V2]  C,2 G, D, | E, C, B,, D, | E, C, !ferm!B,,2 | B,,2 A,, B,, | C, D, E, F, | G, A, !ferm!E,2 |
+% 17
+[V: S1V1]  F2 G A | B B c B | c d !fermata!e2 | B2 B A | G A B E | G F !fermata!E2 |
+w: With twain they veiled their fa- ces, as was meet, With twain in rev- erent awe they hid their feet, 
+[V: S1V2]  D2 E C | G F A E | C F !ferm!G2 | G2 G E | B, F F C | B, D !ferm!C2 |
+[V: S2V1]  B,2 B, F | E D E B, | E B, !invertedfermata!B,2 | E2 E C | E C D G, | E, B, !invertedfermata!G,2 |
+[V: S2V2]  B,,2 E, F, | G, B, A, G, | A, B, !ferm!E,2 | E,2 E, A,, | E, F, B,, C, | E, B,, !ferm!C,2 |
+% 25
+[V: S1V1]  G2 A B | c B B c | d c !fermata!B2 | e2 d c | f f d B | c d !fermata!e2 |
+w: And with the o- ther twain a- loft they soared, One to the o- ther called and praised the Lord: 
+[V: S1V2]  E2 F G | A G F G | B =A !ferm!B2 | G2 B A | A B B B | A F !ferm!G2 |
+[V: S2V1]  C2 C E | E E B, E | F3/2 E/ !invertedfermata!D2 | C2 B, E | F D F E | E B, !invertedfermata!B,2 |
+[V: S2V2]  C,2 F, E, | A,, E, D, C, | B,, F, !ferm!B,,2 | C,2 G, A, | F, B,, B, G, | A, B, !ferm!E,2 |
+% 29
+%%newpage
+[V: S1V1]  e2 d c | B c d B | A B !fermata!G2 | e2 d c | B c d B | A B !fermata!G2 |
+w: "Ho- ly is God, the Lord of Sa- ba- oth! Ho- ly is God, the Lord of Sa- ba- oth! 
+[V: S1V2]  G2 G E | E E D G | F D !ferm!E2 | G2 G E | E E D G | F D !ferm!E2 |
+[V: S2V1]  C2 =B, C | G, A, B, G, | C B, !invertedfermata!B,2 | C2 =B, C | G, A, B, G, | C B, !invertedfermata!B,2 |
+[V: S2V2]  C,2 G, A, | E, C, B,, E, | F, B,, !ferm!E,2 | C,2 G, A, | E, C, B,, E, | F, B,, !ferm!E,2 |
+% 37
+[V: S1V1]  e2 d c | B c d B | A B !fermata!G2 | c2 B A | B E A G | F F !fermata!E2 |
+w: Ho- ly is God, the Lord of Sa- ba- oth! Be- hold, His glo- ry fill- eth all the earth!" 
+[V: S1V2]  G2 G E | E E D G | F D !ferm!E2 | E2 E E | D C F E | E D !ferm!E2 |
+[V: S2V1]  C2 =B, C | G, A, B, G, | C B, !invertedfermata!B,2 | A,2 G, A, | F, A, _D B, | C B, !invertedfermata!G,2 |
+[V: S2V2]  C,2 G, A, | E, C, B,, E, | F, B,, !ferm!E,2 | A,,2 E, C, | B,, C, _D, E, | A,, B,, !ferm!E,2 |
+% 41
+[V: S1V1]  E2 B B | G A B c | c B !fermata!B2 | !sintro!B2 A G | A F G F | E D !fermata!E2 !eintro!|]
+w: The beams and lin- tels trem- bled at the cry, And clouds of smoke en- wrapped the throne on high. 
+[V: S1V2]  C2 D F | E C D G | F3/2 E/ !ferm!D2 | E2 E E | C D E C | B, B, !ferm!B,2 |]
+[V: S2V1]  G,2 B, B, | B, A, F, G, | =A, B, !invertedfermata!F,2 | G,2 C B, | A, A, B, A, | G, F, !invertedfermata!G,2 |]
+[V: S2V2]  C,2 B,, D, | E, F, D, E, | F, B,, !ferm!B,,2 | E,2 A,, E, | F, F, E, A,, | B,, B,, !ferm!E,2 |]
+% 49
+%%vskip 0.6in
+%%multicol start
+%%leftmargin 1.5in
+%%rightmargin 1.5in
+%%textoption 3
+%%textfont Times-Bold 12.0
+%%EPS dore_23_isa06_the_prophet_isaiah.eps
+%%begintext
+%%"The Prophet Isaiah" by Gustave Dore (1865)
+%%endtext
+%%multicol end
+

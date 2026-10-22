@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2010 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.730000
+%%staffsep	0.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rom 5:8-10, Eph 3:8-12, Acts 12:7, 1Kgs 19:11-12
+%OHTOPICS {Angels [2]}, {Atonement}, {Blood [1]}, {Christian Life [4-6]}, {Comfort}, {Contrition [1]}, {Fear of the Lord [1,2]}, {Following Jesus, In Faith [4]}, {Forgiveness}, {God, Goodness of}, {God, Love of}, {God, Mercy of}, {Gospel}, {Grace}, {Gratitude}, {Humility}, {Jesus [1-3]}, {Love}, {Reverence}, {Salvation}, {Throne (also see God - As King) [3]}
+%OHCATEGORY THANKSGIVING
+%OHMETRICAL 8 8 8 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER Ingalls, Jeremiah (1764-1828)
+%OHARRANGER unknown
+%OHAUTHOR Wesley, Charles (1707-1788)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: And Can It Be
+C: Words: Charles Wesley, 1738. 
+C: Music: 'Fillmore' Jeremiah Ingalls (1764-1828).  Setting: "The Methodist Hymnal", 1905.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision.
+S: Music source: The Methodist Hymnal, 1905.  Hymn 310.
+M: 3/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] F | (A3/2 G/) F | G2 A | G2 F | G2 A | c2 c | (c d) c |
+w: 1.~And can * it be that I should gain An in- terest in * the 
+w: 2.~'Tis mys- * tery all: th'Im- mor- tal dies: Who can ex- plore * His 
+w: 3.~He left * His Fa- ther's throne a- bove So free, so in- * fi- 
+w: 4.~Long my * im- pris- oned spir- it lay, Fast bound in sin * and 
+w: 5.~Still the * small in- ward voice I hear, That whis- pers all * my 
+[V: S1V2]  F | F2 F | E2 E | E2 D | E2 F | F2 F | F2 F |
+[V: S2V1]  A, | (C3/2 B,/) A, | B,2 C | B,2 A, | C2 C | A,2 A, | (A, B,) A, |
+[V: S2V2]  F, | F,2 F, | C,2 C, | C,2 D, | C,2 F, | F,2 F, | F,2 F, |
+% 9
+[V: S1V1]  A2 G | F2 c | d2 d | (d3/2 e/) f | c2 c | A2
+w: Sa- vior's blood? Died He for me, * who caused His pain? 
+w: strange de- sign? In vain the first- * born ser- aph tries 
+w: nite His grace? Emp- tied Him- self * of all but love, 
+w: na- ture's night; Thine eye diff- used * a quick'- ning ray? 
+w: sins for- giv'n; Still the a- ton- * ing blood is near, 
+[V: S1V2]  F2 E | F2 F | F2 F | F2 F | A2 A | F2
+[V: S2V1]  C2 B, | A,2 A, | B,2 B, | (B,3/2 C/) D | F2 F | C2
+[V: S2V2]  C,2 C, | F,2 F, | B,2 B, | B,2 B,, | F,2 F, | F,2
+% 13
+[V: S1V1]  c | d2 d | (d3/2 e/) f | c2 c | (A !fermata!G) F | (A3/2 G/) F | G2
+w: For me, who Him * to death pur- sued? * A- ma- * zing love! 
+w: To sound the depths * of love di- vine. * 'Tis mer- * cy all! 
+w: And bled for A- * dam's help- less race: * 'Tis mer- * cy all, 
+w: I woke, the dun- * geon flamed with light; * My chains * fell off, 
+w: That quenched the wrath * of hos- tile Heav'n. * I feel * the life 
+[V: S1V2]  F | F2 F | F2 F | F2 F | (F !ferm!E) F | F2 F | E2
+[V: S2V1]  A, | B,2 B, | (B,3/2 C/) D | A,2 A, | C- !invertedfermata!C A, | (C3/2 B,/) A, | B,2
+[V: S2V2]  F, | B,2 B, | B,2 B,, | F,2 F, | (F, !ferm!C,) F, | F,2 F, | C,2
+% 21
+[V: S1V1]  !sintro!A | G2 F | G2 A | c2 c | (c d) c | A2 G | F2 !eintro!|]
+w: How can it be, That Thou, my God, * shouldst die for me? 
+w: Let earth a- dore, Let an- gel minds * in- quire no more. 
+w: im- mense and free, For O my God, * it found out me! 
+w: my heart was free, I rose, went forth, * and fol- lowed Thee. 
+w: His wounds im- part; I feel the Sa- * vior in my heart. 
+[V: S1V2]  E | E2 D | E2 F | F2 F | F2 F | F2 E | F2 |]
+[V: S2V1]  C | B,2 A, | C2 C | A,2 A, | (A, B,) A, | C2 B, | A,2 |]
+[V: S2V2]  C, | C,2 D, | C,2 F, | F,2 F, | F,2 F, | C,2 C, | F,2 |]
+% 27
+W: 6.No condemnation now I dread; Jesus, and all in Him, is mine;
+W: Alive in Him, my living Head, And clothed in righteousness divine,
+W: Bold I approach th'eternal throne, And claim the crown, through Christ my own.

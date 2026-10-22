@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.70000
+%%staffsep	0.20000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP 1Pt 5:8, Jas 1:12, Jn 8:12, Jn 10:27-29, Ps 91:11-12
+%OHTOPICS {Angels [4]}, {Brevity of Life}, {Calmness [4,5]}, {Christian Life}, {Courage in Affliction}, {Cross [2]}, {Guidance [5]}, {Heaven [6]}, {Jesus [5]}, {Obedience [1]}, {Patience [2]}, {Presence}
+%OHCATEGORY LENT
+%OHMETRICAL 8 7 8 7 6 6 8 8 
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Freylinghausen's Geistreiches Gesangbuch, Halle, 1704
+%OHARRANGER unknown
+%OHAUTHOR Brorson, Hans Adolf (1694-1764)
+%OHTRANSLATOR Ristad, Ditlef Georgson, 1863-1938
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: I Walk In Danger All The Way
+C: Words: Hans Adolf Brorson, 1734.  Translated by Ditlef Georgson Ristad, 1909, alt.
+C: Music: 'Der Lieben Sonne Lich Und Pracht' or 'Ristad' from Freylinghausen's Geistreiches Gesangbuch, Halle, 1704.
+C: Setting: The Lutheran Hymnary, 1913.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.
+S: Music and Lyrics source: "The Lutheran Hymnary", 1913 Hymn 269
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 117 115 100 1
+V: S2V1 clef=bass 
+%%MIDI beat 117 115 100 1
+V: S2V2 
+%%MIDI beat 117 115 100 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] C | F A G B | A F E c | B A B c | A2 G 
+w: 1.~I walk in dan- ger all the way; The thought shall ne- ver leave me 
+w: 2.~I pass through tri- als all the way, With sin and ills con- ten- ding; 
+w: 3.~Death doth pur- sue me all the way, No- where I rest se- cure- ly, 
+w: 4.~I walk 'mongst an- gels all the way They shield me and be- friend me; 
+w: 5.~I walk with Je- sus all the way, His gui- dance ne- ver fails me, 
+[V: S1V2]  A, | A, C D D/E/ | F D C F | E F G G | (G F) E 
+[V: S2V1]  F, | F, E, D, G,/B,/ | C G, G, C | C C D G, | (A,3/2 =B,/) C 
+[V: S2V2]  F, | D, C, B,, G,, | A,, =B,, C, A, | G, F, F, E, | F,2 C, 
+% 6
+[V: S1V1] C | F A G B | A F E c | B A B c | A2 G 
+w: That Sa- tan, who has marked his prey, Is plot- ting to de- ceive me. 
+w: In pa- tience I must bear each day The cross of God's own sen- ding; 
+w: He comes by night, he comes by day, He takes his prey most sure- ly; 
+w: All Sa- tan's pow'r is held at bay When heav'n- ly hosts at- tend me; 
+w: With- in His wounds I find a stay, When Sa- tan's pow'r as- sails me; 
+[V: S1V2] C | D F F F | E D ^C =C | D _E D C | (C3/2 D/) E 
+[V: S2V1] G, | A, C D D | ^C A, A, F, | F, F, F, G, | (A,3/2 =B,/) C 
+[V: S2V2] E, | D, C, B,, G,, | A,, D, A,, A,, | B,, C, D, =E, | F,2 C, 
+% 9
+[V: S1V1]  G | G A B A | G2 x c | c d c B | A2 x 
+w: This foe with hid- den snares May seize me un- a- wares 
+w: Oft in ad- ver- si- ty I know not where to flee; 
+w: A fai- ling breath and I In death's strong grasp may lie 
+w: They are my sure de- fense, All fear and sor- row, hence! 
+w: And by His foot- steps led, My path I safe- ly tread, 
+[V: S1V2]  E | D ^F G/E/ =F | E2 z G | F F G E | F2 z 
+[V: S2V1]  C | D C D C | C2 x G, | A, B, G, C | C2 x 
+[V: S2V2]  C, | B,, A,, G,, A,,/=B,,/ | C,2 z E, | F, D, E, C, | F,2 z 
+% 13
+[V: S1V1] A | D D G F | E D C !sintro!c | c B B A | G G !fermata!F !eintro!|]
+w: If e'er I fail to watch and pray: I walk in dan- ger all the way. 
+w: When storms of woe my soul dis- may, I pass through tri- als all the way. 
+w: To face e- ter- ni- ty for aye: Death doth pur- sue me all the way. 
+w: Un- harmed by foes, do what they may, I walk 'mongst an- gels all the way. 
+w: In spite of ills that threa- ten may, I walk with Je- sus all the way. 
+[V: S1V2] C | C =B, C C/D/ | C =B, C F | F F G F | F E !ferm!C |]
+[V: S2V1] F, | A, G, G, A, |G, F, E, C | D D C C | C B, !ferm!A, |]
+[V: S2V2] F, | F, F, E, A,,/=B,,/ | C, G,, C, A,, | B,, D, E, F, | C, C, !invertedfermata!F, |]
+% 18
+%%multicol start
+%%leftmargin 2cm
+%%rightmargin 11cm
+%%textfont Times-Roman 13.0
+%%begintext obeylines justify
+%% 6.\t\tMy walk is heav'nward all the way, 
+%% \t\t\tAwait, my soul, the morrow, 
+%% \t\tWhen thou shalt find release for aye 
+%% \t\t\tFrom all thy sin and sorrow; 
+%%endtext
+%%multicol new
+%%leftmargin 11cm
+%%rightmargin 2cm
+%%textfont Times-Roman 13.0
+%%begintext obeylines justify
+%% \t\tAll worldly pomp, begone, 
+%% \t\t\tTo heav'n I now press on; 
+%% \t\tFor all the world I would not stay, 
+%% \t\t\tMy walk is heav'nward all the way. 
+%%endtext
+%%multicol end
+

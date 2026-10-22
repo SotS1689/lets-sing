@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP 1Cor 11:23-26, Rom 3:23-25, Mt 26:26-28, Mk 14:22-25, Lk 22:14-20, 1Jn 4:10
+%OHTOPICS {Atonement}, {Blood [3,5]}, {Bread (of Life/Daily Bread) [2,3]}, {Easter Week / Passion}, {God, Love of [2]}, {Grace [2]}, {Jesus}, {Lord's Supper}, {Presence}, {Sacrifice}, {Sinners [4,5]}
+%OHCATEGORY GOOD THURSDAY
+%OHMETRICAL 8 8 8 8
+%OHCOMPLEXITY 3
+%OHCOMPOSER Dykes, John Bacchus (1823-1876)
+%OHARRANGER unknown
+%OHAUTHOR Watts, Isaac (1674-1748)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: 'Twas On That Dark, That Doleful Night
+C: Words: Isaac Watts, 1709.  
+C: Music: 'St. Cross' John Bacchus Dykes, 1861. Setting: "Hymns Ancient and Modern", 1869.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source:  "Hymns Ancient and Modern", 1869 Hymn 100, composed for this hymnal.  Words found in "An arrangement of the Psalms, Hymns and spiritual songs of Issac Watts", 1820
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] F2 F G | A3 d | c2 B2 | A4 | A2 A B |
+w: 1.~'Twas on that dark, that dole- ful night When pow'rs of 
+w: 2.~Be- fore the mourn- ful scene be- gan, He took the 
+w: 3.~"This is My bo- dy, broke for sin; Re- ceive and 
+w: 4.~For us His flesh with nails was torn, He bore the 
+w: 5.~For us His vi- tal blood was spilt, To buy the 
+[V: S1V2] D2 D E | F3 F | (F C) (D E) | F4 | F2 E D |
+[V: S2V1] A,2 A, C | C3 B, | A,3 G, | A,4 | F,2 F, F, |
+[V: S2V2] D,2 D, C, | F,3 B,, | C,2 C,2 | F,4 | D,2 C, B,, |
+% 1
+[V: S1V1] c2 F2 | A2 G2 | F3 A | F3 A | G2 A2 |
+w: earth and hell a- rose A- gainst the Son of 
+w: bread, and blessed, and brake: What love through all His 
+w: eat the liv- ing food:" Then took the cup, and 
+w: scourge, He felt the thorn; And jus- tice poured up- 
+w: par- don of our guilt, When, for black crimes of 
+[V: S1V2] C2 F2 | F2 E2 | F3 C | C3 D | D2 ^C2 |
+[V: S2V1] (F, G,) (A, B,) | C3 B, | A,3 A, | A,3 A, | B,2 A,2 |
+[V: S2V2] A,,2 D,2 | C,2 C,2 | F,3 F, | F,3 F, | E,2 A,,2 |
+% 1
+[V: S1V1] F2 G2 | E4 | !sintro!D2 D D |  A3 G | F2 ^E2 | D4 !eintro!|]
+w: God's de- light, And friends be- trayed Him to His foes: 
+w: ac- tions ran! What won- drous words of grace He spake! 
+w: blessed the wine; "'Tis the new cov- 'nant in My blood." 
+w: on His head Its hea- vy ven- geance in our stead. 
+w: big- gest size, He gave His soul a sac- ri- fice. 
+[V: S1V2] D2 (E D) | ^C4 | D2 D D | A3 D | D2 C2 | D4 |]
+[V: S2V1] A,2 B,2 | A,4 | D,2 D, D, | A,3 B, | A,2 G,2 | F,4 |]
+[V: S2V2] D,2 G,,2 | A,,4 | D,2 D, D, | A,3 G,, | A,,2 A,,2 D,4 |]
+W: 6."Do this," He cried, "till time shall end,
+W: In memory of your dying friend;
+W: Meet at My table, and record
+W: The love of your departed Lord."
+W: 
+W: 7.Jesus, Thy feast we celebrate,
+W: We show Thy death, we sing Thy name,
+W: Till Thou return, and we shall eat
+W: The marriage supper of the Lamb.

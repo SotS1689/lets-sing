@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2005 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 4:16, Mt 10:26-27, Jn 1:4-5, Jn 8:12, Jn 15:26-27, Mt 11:4-6, Lk 7:18-22
+%OHTOPICS {Darkness, Spiritual}, {Father}, {God, Creator [1]}, {God, Eternity of [1]}, {God, Majesty &amp; Power of [1]}, {God's Children - the Faithful (see also Saints, People of the World)}, {Gospel}, {Healing [2]}, {Holiness [4]}, {Holy Spirit [2]}, {Jesus [2]}, {Light}, {People of the World}, {Pride (see also Humility) [4]}, {Speech}, {Trinity}, {Truth [3]}, {Wisdom [4]}
+%OHCATEGORY MISSIONS
+%OHMETRICAL 6 6 4 6 6 6 4
+%OHCOMPLEXITY 1
+%OHCOMPOSER Giardini, Felice de (1716-1796)
+%OHARRANGER unknown
+%OHAUTHOR Marriott, John (1780-1825)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: God, Whose Almighty Word
+C: Words: John Marriott, 1813.  
+C: Music: 'Italian Hymn' Felice de Giardini, 1769.  Setting: "The Methodist Sunday School Hymnal", 1911.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2005 Revision.
+S: Music source: 'The Methodist Sunday School Hymnal', 1911 Hymn 1.
+M: 3/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] d B G | (A G) F | G3 | G A B | (c/d/ c) B | A3 |
+w: 1.~God, whose al- might- * y word Cha- os and dark- * * ness heard 
+w: 2.~Lord, who once came * to bring, On your re- deem- * * ing wing, 
+w: 3.~Spir- it of truth * and love, Life giv- ing, ho- * * ly dove, 
+w: 4.~$1D$2~Ho- ly and bless- * ed three, Glo- ri- ous Tri- * * ni- ty, 
+[V: S1V2]  G D D | (E D) D | D3 | D D G | (F A) G | F3 |
+[V: S2V1]  B, D D | (C B,) A, | B,3 | B, D D | D2 D | D3 |
+[V: S2V2]  G, G, B,, | (C, D,) D, | G,,3 | G, F, G, | (A, F,) G, | D,3 |
+% 9
+[V: S1V1]  d B G | D3 | A B c | B3/2 A/ G | A B c |
+w: And took their flight: Hear us, we hum- ble pray, And where the 
+w: Heal- ing and sight, Health to the sick in mind, Sight to the 
+w: Speed forth your flight; Move on the wa- ter's face, Bear- ing the 
+w: Wis- dom, love, might! Bound- less as o- cean's tide, Rol- ling in 
+[V: S1V2]  d B G | D3 | F G A | G3/2 F/ G | F G A |
+[V: S2V1]  D B, G, | D,3 | D D D | D3/2 C/ B, | D D D |
+[V: S2V2]  D B, G, | D,3 | D, D, D, | G,3/2 G,/ G, | D, D, D, |
+% 13
+[V: S1V1]  B3/2 A/ G | !sintro!G B d | d3/2 e/ d | c B A | G3 !eintro!|]
+w: Gos- pel day Sheds not its glor- ious ray, Let there be light! 
+w: in- ly blind: Oh, now to hu- man- kind Let there be light! 
+w: lamp of grace, And in earth's dark- est place Let there be light! 
+w: full- est pride, Through the earth, far and wide, Let there be light! 
+[V: S1V2]  G3/2 F/ G | G B d | G3/2 G/ G | A G F | G3 |]
+[V: S2V1]  D3/2 C/ B, | G, B, D | B,3/2 C/ B, | E D C | B,3 |]
+[V: S2V2]  G,3/2 G,/ G, | G, B, D | G,3/2 G,/ G, | C, D, D, | [G,,3G,3] |]
+% 18

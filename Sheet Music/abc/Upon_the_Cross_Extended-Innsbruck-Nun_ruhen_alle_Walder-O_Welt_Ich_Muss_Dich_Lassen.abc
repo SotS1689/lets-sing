@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2025 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.650000
+%%staffsep	0.0000cm
+%%lineskipfac 0.85
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Heb 9:28, Is 53:4-6, 1Pt 2:24, Mt 26:28, Rom 5:15
+%OHTOPICS {Atonement}, {Blood [2]}, {Commitment}, {Cross}, {Eternal Life [16]}, {Following Jesus, Sanctification}, {God, Love of}, {God, Mercy of}, {Grace}, {Gratitude}, {Humility}, {Jesus}, {Repentance}, {Salvation}, {Sinners}, {Submission (see also Following Jesus, God - Providence of, Trust)}
+%OHCATEGORY GOOD FRIDAY
+%OHMETRICAL 7 7 6 7 7 8
+%OHCOMPLEXITY 3
+%OHCOMPOSER Isaac, Heinrich (1450-1517)
+%OHARRANGER Bach, Johann Sebastian (1685-1750)
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR Kelly, John (1833-1890)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Upon The Cross Extended
+T: (also known as See, World! Thy Life Assailed or Oh, World! Behold upon the Tree or 
+T: Extended on a Cursed Tree or Behold, O World, Thy Life, Thy Lord or See, World, upon the Bloody Tree)
+C: Words: Paul Gerhardt, 1648.  Translation composite before 1941. 
+C: Music: 'Innsbruck' or 'Nun ruhen alle Wälder' or 'O Welt, Ich Muss Dich Lassen' Heinrich Isaac, 1490. 
+C: Setting: Johann Sebastian Bach, 1734.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision.
+S: Music source: The English Hymnal, 1906, Hymn 278.  This setting is the final Chorale from BWV 97.
+S: Lyrics source: most verses from The Handbook to the Lutheran Hymnal, 1942  https://www.projectwittenberg.org/etext/gerhardt_p/extended.txt  Note that the text of this hymn from the Handbook to the Lutheran Hymnal is available on Project Wittenberg, operated by the Walther Library of Concordia Theological Seminary Fort Wayne and the text is listed as public domain.  Remaining verses from Paul Gerhardt's Spiritual Songs, 1867.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1]  [Q:1/4=84] B | G A B/c/ d | c2 !fermata!B B/c/ | d d A B | G2 !fermata!F
+w: 1.~U- pon the cross * ex- ten- ded, See, * world, thy Lord su- spen- ded,
+w: 2.~Come hi- ther now * and pon- der, 'Twill * fill thy soul with won- der,
+w: 3.~Who is it that * hath bruised Thee? Who * hath so sore a- bused Thee
+w: 4.~I caused Thy grief * and sigh- ing By * e- vils mul- ti- ply- ing
+w: 5.~'Tis I who should * be smit- ten My * doom should here be writ- ten:
+[V: S1V2]   G | E F G/A/ B | (B A) !ferm!G G | G/F/ G/E/ F/E/ D | (D ^C) !ferm!D
+[V: S2V1]   D | C C D/C/ B,/A,/ | (G, D) !invertedfermata!D E | D D D F, | (G,/F,/ G,) !invertedfermata!A,
+[V: S2V2]   G, | C/B,/ A, G,3/2 F,/ | (E, F,) !ferm!G, E, | B,,/A,,/ B,,/C,/ D,/C,/ B,, | E,2 !ferm!D,
+%
+[V: S1V1]  D | G A B B | !fermata!A3 B | G A B/c/ d | c2 !fermata!B
+w: Thy Sa- vior yields His breath. The Prince of Life * from hea- ven
+w: Blood streams from e- very pore. Through grief whose depth * none know- eth,
+w: And caused Thee all Thy woe? While we must make * con- fes- sion
+w: As count- less as the sands. I caused the woes * un- num- bered
+w: Bound hand and foot in hell. The fet- ters and * the scour- ging,
+[V: S1V2]  A, | D C B,/C/ D | !ferm!D3 F | E D D E | E/D/E/F/ !ferm!^G
+[V: S2V1]  F,/E,/ | D, E,/F,/ G, G, | !invertedfermata!F,3 B, | B,/C/ B,/A,/ G,/A,/ B, | A,/B,/C/D/ !invertedfermata!E
+[V: S2V2]  C, | B,, A,, G,,/A,,/ B,,/C,/ | !ferm!D,3 ^D, | E, F, G, ^G, | (A, A,,) !ferm!E,
+%
+[V: S1V1]  B/c/ | d y d A y B | G2 !fermata!F !sintro!=D | G A B c | B A !fermata!G !eintro!|]
+w: Him- * self hath free- ly gi- ven To shame and blows and bit- ter death.
+w: From * His great heart there flo- weth Sigh af- ter sigh of an- guish o'er.
+w: Of * sin and dire trans- gres- sion, Thou deeds of e- vil dost not know.
+w: With * which Thy soul is cum- bered, Thy sor- rows raised by wi- cked hands.
+w: The * floods a- round Thee sur- ging, 'Tis I who have de- served them well.
+[V: S1V2]  =G | A G/F/ E F | (F E) !ferm!^D =D | D/E/ D/C/ B,/D/ E/F/ | G F !ferm!D |]
+[V: S2V1]  E | D/C/ B, ^C F, | B,2 !invertedfermata!B, B, | B,/C/ B,/A,/ G, G, | E A,/B,//C// !invertedfermata!B, |]
+[V: S2V2]  E, | F, G, G,/F,/ E,/^D,/ | E,/F,/G,/A,/ !ferm!B, B,, | E, F, G,/F,/ E,/D,/ | C, D, !ferm!G,, |]
+%%vskip 0.0325in
+%%multicol start
+%%leftmargin 2.25cm
+%%rightmargin 12cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\t\tThe load Thou takest on Thee,
+%% \t\t\tThat pressed so sorely on me,
+%% \t\t\t\t\tit crushed me to the ground.
+%% \t\t\tThe cross for me enduring,
+%% \t\t\tThe crown for me securing,
+%% \t\t\t\t\tMy healing in Thy wounds is found.
+%% 
+%% 7.\t\tA crown of thorns Thou wearest,
+%% \t\t\t\t\tMy shame and scorn Thou bearest,
+%% \t\t\t\t\tThat I might ransomed be.
+%% \t\t\tMy Bondsman, ever willing,
+%% \t\t\tMy place with patience filling,
+%% \t\t\t\t\tFrom sin and guilt hast made me free.
+%% 
+%% 8.\t\tInto death's jaws Thou springest,
+%% \t\t\tDeliv'rance to me bringest
+%% \t\t\t\t\tFrom such a monster dire.
+%% \t\t\tMy death away Thou takest,
+%% \t\t\tThy grave its grave Thou makest;
+%% \t\t\t\t\tOf love, O unexampled fire!
+%% 
+%% 9.\t\tThy cords of love, my Savior,
+%% \t\t\tBind me to Thee forever,
+%% \t\t\t\t\tI am no longer mine.
+%% \t\t\tTo Thee I gladly tender
+%% \t\t\tAll that my life can render
+%% \t\t\t\t\tAnd all I have to Thee resign.
+%%endtext
+%%multicol new
+%%leftmargin 8cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 10.\t\tNot much can I be giving
+%% \t\t\tIn this poor life I'm living,
+%% \t\t\t\t\tBut one thing do I say:
+%% \t\t\tThy death and sorrows ever,
+%% \t\t\tTill soul from body sever,
+%% \t\t\t\t\tMy heart remember shall for aye.
+%% 
+%% 11.\t\tThy cross I'll place before me,
+%% \t\t\tIts saving power be o'er me,
+%% \t\t\t\t\tWherever I may be;
+%% \t\t\tThine innocence revealing,
+%% \t\t\tThy love and mercy sealing,
+%% \t\t\t\t\tThe pledge of truth and constancy.
+%% 
+%% 12.\t\tHow God at our transgression
+%% \t\t\tTo anger gives expression,
+%% \t\t\t\t\tHow loud His thunder rolls,
+%% \t\t\tHow fearfully He smiteth,
+%% \t\t\tHow sorely He requiteth,-
+%% \t\t\t\t\tAll this Thy sufferings teach my soul.
+%% 
+%% 13.\t\tFrom them shall I be learning,
+%% \t\t\tHow I may be adorning,
+%% \t\t\t\t\tMy heart with quietness,
+%% \t\t\tAnd how I still should love them
+%% \t\t\tWhose malice aye doth move them
+%% \t\t\t\t\tTo grieve me by their wickedness.
+%%endtext
+%%multicol new
+%%leftmargin 13.5cm
+%%rightmargin 2cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 14.\t\tWhen evil men revile me,
+%% \t\t\tWith wicked tongues defile me,
+%% \t\t\t\t\tI'll curb my vengeful heart.
+%% \t\t\tThe unjust wrong I'll suffer,
+%% \t\t\tUnto my neighbor offer
+%% \t\t\t\t\tForgiveness for each bitter smart.
+%% 
+%% 15.\t\tI'll on the cross unite me
+%% \t\t\tTo Thee, what doth delight me
+%% \t\t\t\t\tI'll there renounce for aye.
+%% \t\t\tWhate'er Thy Spirit's grieving,
+%% \t\t\tThere I'll for aye be leaving,
+%% \t\t\t\t\tAs much as in my strength doth lay.
+%% 
+%% 16.\t\tThy groaning and thy sighing,
+%% \t\t\tThy bitter tears and dying,
+%% \t\t\t\t\tWith which Thou wast opprest,-
+%% \t\t\tThey shall, when life is ending,
+%% \t\t\tBe guiding and attending
+%% \t\t\t\t\tMy way to Thine eternal rest.
+%%endtext
+%%multicol end
+

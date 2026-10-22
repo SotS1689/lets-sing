@@ -1,10 +1,12 @@
 // Copies the hymn content into the web app:
+//   ../Sheet Music/abc/<file>.abc             -> public/scores/ (see build-scores.mjs)
 //   ../hymns_data.json (root working master)  -> public/hymns.json (slimmed)
 //   Android assets/midi/<file>.mid            -> public/midi/<file>.mid
 // Runs automatically before `npm run dev` and `npm run build`, so the root
 // hymns_data.json stays the one master copy, as it is for the Android build.
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync, rmSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { buildScores, plainWords } from "./build-scores.mjs";
 
 const MASTER = "../hymns_data.json";
 const MIDI_SRC = "../LetsSing_Android_Project/app/src/main/assets/midi";
@@ -17,6 +19,41 @@ const midiFile = (h) => decodeURIComponent((h.midi_url || "").split("/").pop() |
 
 rmSync(`${OUT}/midi`, { recursive: true, force: true });
 mkdirSync(`${OUT}/midi`, { recursive: true });
+
+// Sheet music, for the hymns that have a score (see build-scores.mjs)
+const scores = buildScores(Object.fromEntries(hymns.map((h) => [midiFile(h), (h.verses || []).length])), MIDI_SRC);
+
+// A score is the tune's: hymns sharing a tune share its MIDI file and score.
+// The words set under its notes are shown only when they are this hymn's own,
+// and the verse being sung is followed only when the MIDI plays this hymn's verses.
+function scoreFields(h, score) {
+    if (!score) return { score: null };
+    return {
+        score: score.abc,
+        scoreVersion: score.version,
+        scoreWords: sameWords(score.words, plainWords((h.verses || [])[0] || "")),
+        scoreVerses: score.verses === (h.verses || []).length,
+    };
+}
+
+// The opening of verse 1, compared letter by letter: syllable breaks ("si- lent")
+// and old spellings ("bless'd") differ by a letter or two, another hymn's words
+// or another translation by most of them.
+const WORDS_COMPARED = 40; // letters
+function sameWords(scoreWords, hymnWords) {
+    const a = scoreWords.join("").slice(0, WORDS_COMPARED), b = hymnWords.join("").slice(0, WORDS_COMPARED);
+    if (a.length < WORDS_COMPARED / 2 || b.length < WORDS_COMPARED / 2) return false;
+    // Edit distance between the two openings
+    let row = Array.from({ length: b.length + 1 }, (_, j) => j);
+    for (let i = 1; i <= a.length; i++) {
+        const next = [i];
+        for (let j = 1; j <= b.length; j++) {
+            next[j] = Math.min(row[j] + 1, next[j - 1] + 1, row[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        }
+        row = next;
+    }
+    return row[b.length] <= WORDS_COMPARED * 0.15;
+}
 
 const missing = [];
 const slim = [];
@@ -41,10 +78,11 @@ for (const h of hymns) {
         credits: h.credits || "",
         midi: hasMidi ? file : null,
         midiVersion,
+        ...scoreFields(h, hasMidi && scores[file]),
     });
 }
 slim.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
 writeFileSync(`${OUT}/hymns.json`, JSON.stringify(slim));
 
-console.log(`prepare-content: ${slim.length} hymns, ${readdirSync(`${OUT}/midi`).length} MIDI files`);
+console.log(`prepare-content: ${slim.length} hymns, ${readdirSync(`${OUT}/midi`).length} MIDI files, ${Object.keys(scores).length} with sheet music`);
 if (missing.length) console.warn(`  ${missing.length} without a MIDI file:\n  ` + missing.join("\n  "));

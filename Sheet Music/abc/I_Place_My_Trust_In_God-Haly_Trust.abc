@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 25:1-9, Ps 9:9-10
+%OHTOPICS {Assurance}, {Calmness}, {Christian Life}, {Commitment}, {Following Jesus, In Faith}, {God, Care of}, {God, Goodness of}, {Guidance}, {Humility}, {Obedience}, {Submission (see also Following Jesus, God - Providence of, Trust)}, {Trust}
+%OHCATEGORY TRUST
+%OHMETRICAL 8 8 8 8 8 9 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER Kropf, Loren J. (1989-)
+%OHARRANGER Kropf, Loren J. (1989-)
+%OHAUTHOR Amstutz, Dorothy;Kropf, Loren J. (1989-)
+%OHTRANSLATOR none 
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: I Place My Trust In God
+C: Words: verses by Dorothy Amstutz, 2007. Refrain by Loren J. Kropf, 2010. 
+C: Music and Setting: 'Haly - Trust' Loren J. Kropf, 2010. 
+C: copyright: public domain.  Hymn text verified as public domain by Dorothy Amstutz on July 30, 2011. 
+C: Music, Setting, and refrain verified as public domain by Loren Kropf August 19, 2011. 
+C: This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: image sent via email by Loren Kropf
+M: 2/2 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Bb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] F | G A B B | B3/2 G/ F F/G/ | B B d d | B3/2 G/ F
+w: 1.~I placed my trust in God to- day, For * it is He who knows the way,
+w: 2.~I placed my trust in God to- day, A- * lone I could not find my way.
+w: 3.~I place my trust in God each day, Co- * mmitt- ed, yield- ed to His way.
+w: 4.~I'll place my trust in God each day, And * while I walk the nar- row way,
+w: 5.~I'll place my trust in God each day, Yes, * ev- en though the skies are gray.
+[V: S1V2] D | E E F F | F3/2 E/ D F/E/ | D D F F | F3/2 E/ D
+[V: S2V1] B, | B, C D D | D3/2 B,/ B, B,/G,/ | F, F, B, B, | D3/2 B,/ B,
+[V: S2V2] B,, | B,, F, B,, B,, | B,,3/2 B,,/ B,, D,/C,/ | B,, B,, B,, B,, | B,,3/2 B,,/ B,,
+% 5
+[V: S1V1] F | G G G d | B3/2 B/ B F | G G A A | c3/2 c/ B
+w: And when un- cer- tain- ties a- rise, I trust His judg- ment, true and wise.
+w: Led by His gui- dance, safe and sure, I then can rest in peace, se- cure.
+w: Naught can o'er- throw me when I'm there Be- neath His ev- er- last- ing care.
+w: Each bur- den God will help me bear; He hears my cry, my ev'- ry prayer.
+w: Led by His hand, I will not fear; I know that God is al- ways near.
+[V: S1V2] F | E E E F | D3/2 D/ D D | E E E E | E3/2 E/ D
+[V: S2V1] B, | G, G, G, B, | F,3/2 F,/ F, B, | B, B, C C | C3/2 G,/ F,
+[V: S2V2] D, | C, C, C, F, | B,,3/2 B,,/ B,, B,, | E, E, C, C, | F,3/2 C,/ B,,
+% 9
+[V: S1V1] F/G/ | B B B d | B3/2 G/ F  F/G/ | B B d d | c3/2 d/ c
+w: I'll * place my trust in God to- day, Ev- en when I can- not see the way,
+[V: S1V2] F | F F F F | F3/2 E/ D F/E/ | D D F F | F3/2 F/ F
+[V: S2V1] B,/C/ | D D D D | D3/2 B,/ B, B,/G,/ | F, F, B, B, | A,3/2 B,/ A,
+[V: S2V2] D,/C,/ | B,, B,, B,, B,, | B,,3/2 B,,/ B,, D,/C,/ | B,, B,, B,, B,, | F,3/2 F,/ F,
+% 13
+[V: S1V1] !sintro!d/c/ | B B B c | c3/2 d/ e e | d d d B | c A B !eintro!|]
+w: He'll * lead me on with His strong hand, Un- til I reach the pro- mised land.
+[V: S1V2] F/E/ | F F F F | G3/2 F/ G G | F F F D | E E D |]
+[V: S2V1] B,/C/ | D D D C | C3/2 B,/ C B, | B, B, B, B, | A, A, F, |]
+[V: S2V2] D,/C,/ | B,, B,, B,, F, | E,3/2 D,/ C, E, | B,, B,, B,, B,, | C, F, B,, |]
+

@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2010 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	0.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP 2Tim 1:12, Phil 3:8-11, Jn 14:5-11, Jn 17:3
+%OHTOPICS {Assurance}, {Calmness}, {Discipleship}, {Faith}, {God, Goodness of}, {Gospel}, {Gratitude}, {Humility}, {Knowledge}, {Peace [2]}, {Salvation}
+%OHCATEGORY TRUST
+%OHMETRICAL 8 6 8 6 9 10 8 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER McGranahan, James (1840-1907)
+%OHARRANGER McGranahan, James (1840-1907)
+%OHAUTHOR Whittle, Daniel Webster (1840-1901);Nathan, Elias (1840-1901)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: I Know Whom I Have Believed
+C: Words: Daniel Webster Whittle (a.k.a. Elias Nathan), 1883. 
+C: Music and Setting: 'I Know Whom I Have Believed' James McGranahan, 1892.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision.
+S: Music source: Gospel Hymns, nos. 5 and 6 combined, 1892, Hymn 5.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] E | G3/2 G/ A/G/ F/E/ | c B B G | B3/2 B/ c/B/ A/G/ | F3
+w: 1.~I know not why * God's * won- drous grace To me He hath * made * known, 
+w: 2.~I know not how * this * sa- ving faith To me He did * im- * part, 
+w: 3.~I know not how * the * Spi- rit moves, Con- vin- cing us * of * sin, 
+w: 4.~I know not what * of * good or ill May be re- served * for * me, 
+w: 5.~I know not when * my * Lord may come, At night or noon- * day * fair, 
+[V: S1V2]  E | E3/2 E/ E B, | E E E E | G3/2 G/ A/G/ F/E/ | D3
+[V: S2V1]  G, | B,3/2 B,/ C/B,/ A,/G,/ | A, G, G, B, | E3/2 E/ E B, | B,3
+[V: S2V2]  E, | E,3/2 E,/ E, E, | E, E, E, E, | E,3/2 E,/ E, D,/E,/ | B,,3
+% 5
+[V: S1V1]  A | G3/2 G/ A/G/ F/E/ | c B B G | B3/2 B/ c/B/ A/F/ | E3
+w: Nor why, un- wor- * thy, * Christ in love Re- deemed me for * His * own. 
+w: Nor how be- liev- * ing * in His Word Wrought peace with- in * my * heart. 
+w: Re- veal- ing Je- * sus * through the Word, Cre- a- ting faith * in * Him. 
+w: Of wea- ry ways * or * gol- den days, Be- fore His face * I * see. 
+w: Nor if I walk * the * vale with Him, Or meet Him in * the * air. 
+[V: S1V2]  F | E3/2 E/ E B, | E E E E | D3/2 D/ D D | E3
+[V: S2V1]  B, | B,3/2 B,/ C/B,/ A,/G,/ | A, G, G, B, | B,3/2 F,/ F, F,/A,/ | G,3
+[V: S2V2]  B,, | E,3/2 E,/ E, E, | E, E, E, E, | B,,3/2 B,,/ B,, B,, | E,3
+% 9
+[V: S1V1]  E/ E/ | e !accent!e3/2 e/ d/ c/ | c !accent!B3/2 B/ c/ B/ | B !accent!A3/2 A/ B/ A/ | A !accent!G2
+w: But I know Whom I have be- liev- èd, And am per- sua- ded that He is ab- le 
+[V: S1V2]  E/ E/ | c !accent!c3/2 c/ B/ A/ | A !accent!G3/2 G/ A/ G/ | G !accent!F3/2 F/ G/ F/ | F !accent!E2
+[V: S2V1]  E,/ E,/ | E !accent!E3/2 E/ E/ E/ | E !accent!E3/2 E/ E/ E/ | D !accent!D3/2 D/ D/ D/ | E !accent!B,2
+[V: S2V2]  E,/ E,/ | A,, !accent!A,3/2 A,/ A,/ A,/ | E, !accent!E,3/2 E,/ E,/ E,/ | B,, !accent!B,,3/2 B,,/ B,,/ B,,/ | E, !accent!E,2
+% 13
+[V: S1V1]  E | e !accent!e3/2 e/ d/ c/ | c !accent!B2 !sintro!B/ B/ | d3/2 c/ d B | e3 !eintro!|]
+w: To keep that which I've com- mit- ted Un- to Him a- gainst that day. 
+[V: S1V2]  E | c !accent!c3/2 c/ B/ A/ | A !accent!G2 G/ G/ | F3/2 A/ A A | G3 |]
+[V: S2V1]  E, | E !accent!E3/2 E/ E/ E/ | E !accent!E2 B,/ B,/ | B,3/2 B,/ B, B, | B,3 |]
+[V: S2V2]  E, | A,, !accent!A,3/2 A,/ A,/ A,/ | E, !accent!E,2 E,/ E,/ | B,,3/2 B,,/ B,,/C,/ D, | E,3 |]
+% 19

@@ -1,0 +1,210 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.730000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Is 53:1-12, Ex 12:5, Jn 1:29
+%OHTOPICS {Anticipation [10]}, {Aspiration [7-8]}, {Assurance}, {Atonement [1-4]}, {Blood [4,7,10]}, {Calmness [9-10]}, {Christian Life [5-8]}, {Comfort [9-10]}, {Commitment [5-8]}, {Compassion [1-3]}, {Cross [4,9]}, {Crown [10]}, {Darkness, Spiritual [5]}, {Discipleship [5-7]}, {Easter Week / Passion}, {Eternal Life [9-10]}, {Faithfulness [1-4]}, {Father [2-3]}, {Following Jesus, In Faith [5-8]}, {Following Jesus, Sanctification [5-8]}, {God, Goodness of}, {God, Love of}, {God, Mercy of}, {Gospel}, {Grace [1-4]}, {Gratitude}, {Heaven [10]}, {Jesus}, {Joy [8,10]}, {Light [5]}, {Love}, {Obedience [1-3]}, {Priest/Priestly Roles [1-4]}, {Reverence}, {Sacrifice}, {Salvation [2,10]}, {Shepherd/Lamb}, {Throne (also see God - As King) [10]}
+%OHCATEGORY LENT
+%OHMETRICAL 8 7 8 7 8 8 7 8 8 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER Dachstein, Wolfgang Egenolf (circa 1487-1553)
+%OHARRANGER unknown
+%OHAUTHOR Gerhardt, Paul (1607-1676)
+%OHTRANSLATOR composite
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: A Lamb Goes Uncomplaining Forth
+C: Words: Paul Gerhardt, 1648.  Translation composite. 
+C: Music: 'An Wasserflüssen Babylon' Wolfgang Dachstein, 1525.  Setting: "Evangelical Lutheran Hymn-Book", 1931.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: Evangelical Lutheran Hymnal, 1931 Hymn 191.
+S: Translation is public domain per Project Wittenberg: http://www.iclnet.org/pub/resources/text/wittenberg/hymns/lambgoes.txt
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] c2 d c | A2 c2 | B B A2 | G2 A B | c2 (B A) | G2 F2 |
+w: 1.~A Lamb goes un- com- plain- ing forth, The guilt of all men * bear- ing; 
+w: 2.~This Lamb is Christ, the soul's great Friend, The Lamb of God, our * Sa- vior; 
+w: 3.~"Yea, Fa- ther, yea, most will- ing- ly I'll bear what Thou com- * man- dest; 
+w: 4.~Thou lay'st Him, Love, u- pon the cross, With nails and spear Him * bruis- ing;  
+w: 5.~Lord, all my life I'll cleave to Thee, Thy love for- e'er be- * hold- ing, 
+[V: S1V2]  F2 F E | F2 F2 | F E F2 | E2 F F | F2 F2 | (F E) F2 |
+[V: S2V1]  A,2 B, G, | F,2 C2 | D B, C2 | C2 C D | C2 (D C) | C2 A,2 |
+[V: S2V2]  F,2 B,, C, | D,2 A,,2 | B,, G,, F,,2 | C,2 F, D, | A,,2 (B,, F,) | C,2 F,,2 |
+% 5
+[V: S1V1]  c2 d c | A2 c2 | B B A2 | G2 A B | c2 (B A) | G2 F2 |
+w: And la- den with the sins of earth, None else the bur- den * shar- ing!  
+w: Him God the Fa- ther chose to send To gain for us His * fa- vor. 
+w: My will con- forms to Thy de- cree, I do what Thou de- * man- dest." 
+w: Thou slay'st Him as a lamb, His loss from soul and bod- y * ooz- ing; 
+w: Thee ev- er, as Thou ev- er me, With lo- ving arms en- * fold- ing. 
+[V: S1V2]  F2 F E | F2 F2 | F E F2 | E2 F F | F2 F2 | (F E) F2 |
+[V: S2V1]  A,2 B, G, | F,2 C2 | D B, C2 | C2 C D | C2 (D C) | C2 A,2 |
+[V: S2V2]  F,2 B,, C, | D,2 A,,2 | B,, G,, F,,2 | C,2 F, D, | A,,2 (B,, F,) | C,2 F,,2 |
+% 13
+[V: S1V1]  F2 G A | B2 G2 | A G F2 | F2 A B | c2 d2 |
+w: Goes pa- tient on, grow weak and faint, To slaugh- ter led with- 
+w: "Go forth, My Son," the Fa- ther saith, "And free men from the 
+w: O won- drous Love, what hast Thou done! The Fa- ther o- ffers 
+w: From bo- dy 'tis the crim- son flood Of pre- cious sac- ri- 
+w: Yea, Thou shalt be my Bea- con- light, To guide me safe through 
+[V: S1V2]  C2 E F | F2 E2 | F E C2 | D2 F F | E2 F2 |
+[V: S2V1]  A,2 C C | D2 C2 | C C A,2 | B,2 C F, | G,2 B,2 |
+[V: S2V2]  F,2 C, F, | B,,2 C,2 | F, C, F,,2 | B,,2 F, D, | C,2 B,,2 |
+% 17
+[V: S1V1]  A =B c2 | z2 A2 | c d c A | B2 A2 | d2 d d |
+w: out com- plaint, That spot- less life to o- ffer; Bears shame and 
+w: fear of death, From guilt and con- dem- na- tion. The wrath and 
+w: up His Son! The Son, con- tent, de- scend- eth! O Love, how 
+w: fi- cial blood From soul, the strength of an- guish: My gain it 
+w: death's dark night. And cheer my heart in sor- row; Hence- forth my- 
+[V: S1V2]  F F E2 | x2 F2 | F F E D | D2 D2 | F2 F F |
+[V: S2V1]  A, F, G,2 | z2 F,2 | F, B, G, F, | G,2 ^F,2 | F,2 B, B, |
+[V: S2V2]  D, D, C,2 | x2 D,2 | A,, B,, C, D, | G,,2 D,2 | B,,2 D, B,, |
+% 25
+%%newpage
+[V: S1V1]  G2 c2 | B2 A2 | G4 | B2 A G | F2 G2 |
+w: stripes, and wounds and death, An- guish and mock- er- 
+w: stripes are hard to bear, But by Thy Pa- ssion 
+w: strong Thou art to save! Thou bed- dest Him with- 
+w: is; sweet Lamb to Thee What can I give, whose 
+w: self and all that's mine To Thee, my Sa- vior, 
+[V: S1V2]  _E2 G2 | G2 (G ^F) | D4 | D2 F E | D2 D2 |
+[V: S2V1]  B,2 _E2 | D2 D2 | B,4 | G,2 C C | A,2 B,2 |
+[V: S2V2]  _E,2 C,2 | G,,2 D,2 | G,,4 | G,,2 A,, C, | D,2 G,,2 |
+% 29
+[V: S1V1]  (E F) D2 | C2 !sintro!C2 | F G A B | (c3/2 B/ A B | G2) F2 !eintro!|]
+w: y, * and saith, "Will- ing all this I suf- * * * * fer." 
+w: men * shall share The fruit of Thy sal- va- * * * * tion." 
+w: in * the grave Whose word the moun- tains ren- * * * * deth. 
+w: love * to me For me doth make Thee lan- * * * * guish? 
+w: I * con- sign, From whom all things I bor- * * * * row. 
+[V: S1V2]  C3 =B, | C2 C2 | D E F F | (E2 F2- | F E) F2 |]
+[V: S2V1]  A,2 G,2 | E,2 A,2 | A, C C D | (G, C2 D | C2) A,2 |]
+[V: S2V2]  (A,, F,,) G,,2 | C,2 F,2 | D, C, F, D, | (C,2 F, B,, | C,2) F,,2 |]
+% 34
+W: 6.From morn till eve my theme shall be
+W: Thy mercy's wondrous measure;
+W: To sacrifice myself for Thee
+W: Shall be my aim and pleasure.
+W: My stream of life shall ever be
+W: A current flowing ceaselessly,
+W: Thy constant praise outpouring.
+W: I'll treasure in my memory,
+W: O Lord, all Thou hast done for me,
+W: Thy gracious love adoring.
+W: 
+W: 7.Enlarge, my heart's own shrine, and swell,
+W: To thee shall now be given
+W: A treasure that doth far excel
+W: The worth of earth and heaven.
+W: Away with the Arabian gold,
+W: With treasures of an earthly mold!
+W: I've found a better jewel.
+W: My priceless treasure, Lord my God,
+W: Is Thy most holy, precious blood,
+W: Which flowed from wounds so cruel.
+W: 
+W: 8.This treasure ever I'll employ,
+W: This every aid shall yield me; 
+W: In sorrow it shall be my joy,
+W: In conflict it shall shield me;
+W: In joy, the music of my feast,
+W: And when all else has lost its zest,
+W: This manna still shall feed me;
+W: In thirst my drink; in want my food;
+W: My company in solitude,
+W: To comfort and to lead me.
+W: 
+W: 9.Of death I am no more afraid,
+W: New life from Thee is flowing;
+W: Thy cross affords me cooling shade
+W: When noonday's sun is glowing.
+W: When by my grief I am oppressed,
+W: On Thee my weary soul shall rest
+W: Serenely as on pillows.
+W: Thou art my Anchor when by woe
+W: My bark is driven to and fro
+W: On trouble's surging billows.
+W: 
+W: 10.And when Thy glory I shall see
+W: And taste Thy kingdom's pleasure,
+W: Thy blood my royal robe shall be,
+W: My joy beyond all measure.
+W: When I appear before Thy throne,
+W: Thy righteousness shall be my crown-
+W: With these I need not hide me.
+W: And there, in garments richly wrought
+W: As Thine own bride, I shall be brought
+W: To stand in joy beside Thee.

@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Heb 13:14, 2Cor 4:16-18, Jn 14:1-4
+%OHTOPICS {Assurance}, {Brevity of Life}, {Church in Heaven (Church Victorious/Church Triumphant)}, {Comfort}, {Consolation}, {Heaven}, {Jesus}, {Rest [4]}
+%OHCATEGORY FUNERAL
+%OHMETRICAL 8 8 8 4 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER Lindeman, Ludvig Mathias (1812-1887)
+%OHARRANGER unknown
+%OHAUTHOR Sachse, Christian Friedrich Heinrich (1785-1860)
+%OHTRANSLATOR Borthwick, Jane Laurie (1813-1897)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Come Forth! Come On, with Solemn Song!
+C: Words: Christian Friedrich Heinrich Sachse, 1849.  Translated by Jane Borthwick, 1855.
+C: Music: 'Jeg Har Min Sag Til Gud Hjemstilt' or 'My All I To My God Commend' 
+C: Ludvig Mathias Lindeman, unknown date.
+C: Setting: The Lutheran Hymnary, 1913.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.
+S: Music source: "The Lutheran Hymnary", 1913 Hymn 481 
+S: Lyrics source: "Hymns from the Land of Luther", 1858 Hymn 54
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] D | A A F D | d d ^c A | d3/2 c/ B A | 
+w: 1.~Come forth! come on, with sol- emn song! The road is short, the 
+w: 2.~Here in an inn a stran- ger dwelt, Here joy and grief by 
+w: 3.~Now of a las- ting home pos- sest, He goes to seek a 
+w: 4.~Chime on, ye bells! a- gain be- gin, And ring the Sab- bath 
+w: 5.~Now o- pen to us, gates of peace! Here let the pil- grim's 
+[V: S1V2]  D | D E D D | D E E ^C | D3/2 E/ F F/E/ | 
+[V: S2V1]  F, | F, E, F, A, | E, G, A, A, | A,3/2 G,/ F,/G,/ A, | 
+[V: S2V2]  D, | F, ^C, D, F, | B,, B,, A,, G, | F,3/2 E,/ D, C, | 
+% 6
+[V: S1V1] G G A A | c B A G | F3/2 G/ A 
+w: rest is long! The Lord brought here, He calls a- way: 
+w: turns he felt; Poor dwel- ling, now we close thy door! 
+w: dee- per rest Good- night! the day was sul- try here, 
+w: mor- ning in, The la- b'rer's week- day work is done, 
+w: jour- ney cease. Ye qui- et slum- be- rers, make room 
+[V: S1V2] D D ^C D | =C D F E | F3/2 C/ C 
+[V: S2V1] B, D, E, F, | F, F, C B, | A,3/2 G,/ F, 
+[V: S2V2] B,, B,, A,, D, | A,, B,, C, C, | D,3/2 E,/ F, 
+% 13
+[V: S1V1] G | F3/2 G/ A !sintro!B | A G F G | F2 E2 | D2 z!eintro!|] 
+w: Make no de- lay, This home was for a pas- sing day.
+w: The task is o'er, The so- jour- ner re- turns no more, 
+w: In toil and fear; Good- night! the night is cool and clear. 
+w: The rest be- gun, Which Christ hath for His peo- ple won! 
+w: In your still home, For the new stran- ger who has come! 
+[V: S1V2] E | D3/2 D/ E E | F E D D | D2 ^C2 D2 x |] 
+[V: S2V1] B, | A,3/2 D/ ^C ^C | D B, A, G, | A,2 G,2 | F,2 z |] 
+[V: S2V2] ^C, | D,3/2 B,,/ A,, G,, | F,, G,, A,, B,, | A,,2 A,,2 | D,2 x |] 
+% 18
+W: 6. How many graves around us lie! 
+W: How many homes are in the sky! 
+W: Yes, for each saint doth Christ prepare 
+W: A place with care: 
+W: Thy home is waiting, brother, there! 
+W: 
+W: 7. Jesus, Thou reignest, Lord alone, 
+W: Thou wilt return and claim Thine own, 
+W: Come quickly, Lord! return again! 
+W: Amen! Amen! 
+W: Thine seal us ever, now and then! 
+

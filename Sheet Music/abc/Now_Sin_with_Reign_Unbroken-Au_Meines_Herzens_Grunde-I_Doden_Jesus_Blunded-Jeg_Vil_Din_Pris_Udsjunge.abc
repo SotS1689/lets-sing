@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2025 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rom 6:1-14, Eph 4:20-24, 1Jn 2:4-6
+%OHTOPICS {Adam (first/second - see also Guidance, Invitation [ours to God], Repentance) [4]}, {Atonement [3]}, {Baptism [1]}, {Christian Life}, {Conscience}, {Contrition}, {Crown [4]}, {Discipleship}, {Fear of the Lord}, {Following Jesus, In Action}, {Following Jesus, In Faith}, {Following Jesus, Sanctification}, {Obedience}, {Repentance}, {Submission (see also Following Jesus, God - Providence of, Trust)}
+%OHCATEGORY NEW OBEDIENCE
+%OHMETRICAL 7 6 7 6 6 7 7 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER Wolder, David (?-1604)
+%OHARRANGER unknown
+%OHAUTHOR Kingo, Thomas Hansen (1634-1703)
+%OHTRANSLATOR Paulsen, Paul Christian (1881-1948)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Now Sin, With Reign Unbroken
+C: Words: Thomas Hansen Kingo, 1699. Translated by Paul Christian Paulsen, 1927.
+C: Music: 'Au Meines Herzens Grunde' or 'I Døden Jesus Blunded' or 'Jeg Vil Din Pris Udsjunge', David Wolder, 1598.
+C: Setting: "Hymnal for Church and Home" (Danish Evangelical Lutheran Synods), 1927.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision.
+S: Music and Lyrics source: "Hymnal for Church and Home", Danish Evangelical Lutheran Synods, 1927 Hymn 157.
+S: Tune first published in David Wolder's Neu Catechismus Gesangbüchlein, Hamburg, 1598
+S: Note that this arrangement actually tweaks the original melody here and there, but without changing the meter.  Thus the soprano line does not fully match the same tune for different texts in different hymnals.  I assume that both those changes and the arrangement are probably the work of the hymnal team of 1927. 
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] F | F c A F/G/ | A2 G A | c B A G | F2 x
+w: 1.~Now sin with reign un- * bro- ken, no more can rule my life,
+w: 2.~How can I right- * ly trea- sure My Sa- vior's death for me,
+w: 3.~What pro- fits Ea- ster * mor- ning, The tem- ple cur- tain rent,
+w: 4.~My Je- sus and my * Sa- vior, My Friend, my soul's de- light
+[V: S1V2]  C | F G F F | F2 E F | F G F E | F2 z
+[V: S2V1]  A, | C C C D | C2 C C | C D C B, | A,2 x
+[V: S2V2]  F, | A, E, F, B,, | C,2 C, F, | A,, B,, C, C, | [F,2F,,2] z
+% 1
+[V: S1V1] F | F c A F/G/ | A2 G A | c B A G | F2 x
+w: Since God the Word hath * spo- ken, That wins for me the strife;
+w: When seek- ing world- ly * plea- sure, I turn to that in glee?
+w: When I ne- glect God's * war- ning To pray and to re- pent,
+w: Oh help me not to * wa- ver, Though A- dam of- fers fight!
+[V: S1V2]  C | F G F F | F2 E F | F G F E | F2 z
+[V: S2V1]  A, | C C C D | C2 C C | C D C B, | A,2 x
+[V: S2V2]  F, | A, E, F, B,, | C,2 C, F, | A,, B,, C, C, | [F,2F,,2] z
+% 6
+[V: S1V1] A | A c c A | G2 x F/G/ | A B c G | A2 !fermata!F
+w: Bap- tized, re- born by grace I * am re- deem'd from e- vil,
+w: Oh, lest I go a- stray And * un- to sin sur- ren- der,
+w: When wan- der- ing a- broad And * yeil- ding to temp- ta- tion,
+w: Help me to hate all sin, And * with the ut- most can- dor
+[V: S1V2] E | D G F F | E2 z D | E D C C | C2 !ferm!A,
+[V: S2V1] A,/G,/ | F, C/B,/ A, C | C2 x A, | A,/G,/  F, G, E, | F,2 !invertedfermata!F,
+[V: S2V2] ^C, | D, E, F, A,,/B,,/ | C,2 z D, | ^C, D, E, =C, | F,2 !ferm!F,,
+% 9
+[V: S1V1] !sintro!A | c c A F | A2 G A | c B A G | F2 !eintro!x |]
+w: And have re- nounced the de- vil and all his works and ways.
+w: Dear Lord, be my De- fen- der, My Life, my Light, my Way.
+w: I lose my soul's sal- va- tion, My home, my hope, my God.
+w: My heart to Thee Sur- ren- der, The crown of life to win.
+[V: S1V2]  F | F C C F | F2 E F | F F F =E | F2 z |]
+[V: S2V1]  C | C G, A, =B, | C2 C C | _E D C B, | A,2 z |]
+[V: S2V2]  F, | A, E, F, D, | C,2 C, F, | A,, B,, C, C, | [F,2C,2F,,2] x |]
+

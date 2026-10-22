@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2012 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.670000
+%%staffsep	0.100000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rev 5:6, 7:14-17, 21:3-7, 22:17-20
+%OHTOPICS {Angels [1]}, {Anticipation}, {Art and Music}, {Atonement[3]}, {Church in Heaven (Church Victorious/Church Triumphant)}, {Consecration}, {Eternal Life}, {God, As King}, {God, Love of}, {God, Majesty &amp; Power of}, {Healing}, {Heaven}, {Holiness}, {Jesus}, {Joy}, {Love}, {Peace}, {Presence}, {Saints (all Faithful)}, {Shepherd/Lamb}, {Victory}, {Worship}
+%OHCATEGORY END TIMES
+%OHMETRICAL 8 8 8 8 8 8 8 8
+%OHCOMPLEXITY 3
+%OHCOMPOSER Sheeles, John (1688-1761)
+%OHARRANGER unknown
+%OHAUTHOR Robertson, Anthony (1932-)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: The Apostle Looked and Heard a Voice
+C: Words: Anthony Robertson, 2005. Music: 'Addison`s' or 'London (Addisons)' John Sheeles, 1720. 
+C: Setting: composite from "A Hymnal" (Episcopal), 1916 and "Hymns Ancient and Modern", 1922.
+C: copyright: music and setting public domain.  Words: Copyright 2005, Anthony Robertson. These lyrics may be
+C: freely reproduced or published for Christian worship, provided they are not altered, and this notice is 
+C: on each copy. All other rights reserved.  This score is a part of the Open Hymnal Project, 2012 Revision.
+S: Music source: Episcopal New Hymnal Hymn 252
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] G | B B A d | c/B/ A/G/ A D | G/A/ B A G/F/ | G F/E/ F
+w: 1.~Th'A- pos- tle looked and heard * a * voice, He saw * a Lamb as * had been * slain; 
+w: 2.~They sigh no more, gone are * their * fears, No cry- * ing make, shed * no more * tears; 
+w: 3.~These words are spo- ken faith- * ful- * ly, Al- pha, * O- me- ga, * Lord is * He; 
+[V: S1V2] D | G G A F | D D D D | D G A D | B, ^C D
+[V: S2V1] B, | D D D A, | G, B, F, F, | G, D D A, | G, A, A, 
+[V: S2V2] G, | G, G, F, D, | G, G,, D, C, | B,, G, F, D, | E, A,, D,
+% 5
+[V: S1V1] A | B e A d | G A/G/ F A | B ^c d G | F E D
+w: As an- gels bowed and saints gave * praise These words were heard in their re- frain. 
+w: They grow not old, sense no more * loss, Gone are their doubts and all their dross. 
+w: For all is done and done for * all, For all who come, for all who call. 
+[V: S1V2] D | D G A F  | E/D/ ^C D D | D G A E | D ^C D
+[V: S2V1] D | D C/B,/ A, B,/A,/ | G,/B,/ A, A, A, | G, E D B, | A, A,/G,/ F,
+[V: S2V2] F, | G, E, F, D, | E, A,, D, F, | G, E, F, G, | A, A,, D,
+% 9
+[V: S1V1] D | A A F E/D/ | G A B B |d d c/B/ A/G/ | c d e 
+w: "There'll be no war or * foe to fight, No sear- ing sun, * no * dread of night; 
+w: There'll be no sin and * no more stain, Un- known is sick- * ness, * gone is pain; 
+w: Come see His face, His * hands, His feet, Come quench your thirst, * par- * take the Feast, 
+[V: S1V2] D | D ^C D A, | D D D G | A F G D | G G G
+[V: S2V1] B, | A, G, A, F, | G, F, G, D | D D E/D/ B, | C B, C
+[V: S2V2] G, | F, E, D, =C, | B,, D, G, G, | F, D, G, =F, | E, G, C,
+% 13
+[V: S1V1] d | e d/c/ d G | c B/A/ B G | A G F
+w: No more dis- * tress, no more re- * straint, No more be weak, 
+w: The death of * death, no more the * hearse, The end of grief, 
+w: Come en- ter * in while still you * may, Then Je- sus bring 
+[V: S1V2] G | G F F G | E F G D | E D D
+[V: S2V1] B, | C C B, B, | A, D D D | C D C
+[V: S2V2] G, | C A, B, E, | A, D, G, B, | C B, A,
+% 13
+%%vskip 0.1in
+[V: S1V1]  G | c B !fermata!A !sintro!d | e d F G/A/ | B A/G/ !fermata!G !eintro!|]
+w: no more feel faint. No more be weak, no * more feel * faint. 
+w: the end of curse. The end of grief, the * end of * curse." 
+w: E- ter- nal Day. Then Je- sus bring E- * ter- nal * Day. 
+[V: S1V2] G | A G !ferm!F G/F/ | E/F/ G D/C/ B,/C/ | D C !ferm!B, |]
+[V: S2V1] B, | D D !invertedfermata!D B,/A,/ | G,/A,/ B, A, G, | G, F, !invertedfermata!G, |]
+[V: S2V2] G, | F, G, !ferm!D, B,, | C, B,,/C,/ D, E, | D, D, !ferm!G,, |]

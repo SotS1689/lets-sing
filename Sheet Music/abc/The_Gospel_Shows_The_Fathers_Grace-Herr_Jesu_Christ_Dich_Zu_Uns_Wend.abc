@@ -1,0 +1,131 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.710000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Jn 3:16, Rom 1:16-17, 1Jn 4:9-10, Heb 9:28
+%OHTOPICS {Assurance}, {Atonement [2,3]}, {Consolation [2,3,5]}, {Faith [4,6]}, {Father [1]}, {Fear of the Lord [5]}, {Gospel}, {Grace}, {Jesus [1]}, {Sacrifice [2]}, {Salvation}, {Shepherd/Lamb [2]}
+%OHCATEGORY WORD OF GOD
+%OHMETRICAL 8 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Cantionale Germanicum, Dresden, 1628
+%OHARRANGER unknown
+%OHAUTHOR Loy, Matthias (1828-1915)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: The Gospel Shows The Father's Grace
+C: Words: Matthias Loy, 1863. 
+C: Music: 'Herr Jesu Christ, Dict Zu Uns Wend' from Cantionale Germanicum, Dresden, 1628. 
+C: Setting: "Mehrstimmiges ChoralBuch", 1906, alt.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: "Mehrstimmiges ChoralBuch", 1906 Hymn #74, page 57 Ed. Karl Brauer. slightly altered.
+M: 6/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=140] F2 | A2 c A2 G | A =B c2 d2 | c2 A G2 F | F E F2
+w: 1.~The Gos- pel shows the Fa- ther's grace, Who sent his Son to save our race, 
+w: 2.~It sets the Lamb be- fore our eyes, Who made th'a- ton- ing sac- ri- fice, 
+w: 3.~It brings the Sa- vior's right- eous- ness Our souls to robe in ro- yal dress; 
+w: 4.~It is the pow'r of God to save From sin and Sa- tan and the grave; 
+w: 5.~It bears to all the ti- dings glad And bids their hearts no more be sad; 
+[V: S1V2]  C2 | F2 G F2 E | F F E2 F2 | F2 F E2 C | D C C2 
+[V: S2V1]  A,2 | C2 C C2 C | C F, G,2 B,2 | A,2 C C2 F, | B, G, A,2
+[V: S2V2]  F,2 | F,2 E, F,2 C, | F, D, C,2 B,,2 | F,2 F, C,2 A,, | B,, C, F,,2
+% 5
+[V: S1V1]  G2 | A2 A G2 c | c =B c2 !sintro!A2 | B2 A G2 F | F E F2 !eintro!|]
+w: Pro- claims how Je- sus lived and died That man might thus be jus- ti- fied. 
+w: And calls the souls with guilt opp- ressed To come and find e- ter- nal rest. 
+w: From all our guilt it brings re- lease And gives the trou- bled con- science peace. 
+w: It works the faith, which firm- ly clings To all the trea- sures which it brings. 
+w: The hea- vy la- den souls it cheers And ba- nish- es their guilt- y fears. 
+[V: S1V2]  E2 | F2 F E2 E | D D E2 C2 | D2 F E2 D | D C C2 |]
+[V: S2V1]  C2 | C2 C C2 G, | G, G, G,2 F,2 | F,2 C C2 A, | B, G, A,2 |]
+[V: S2V2]  C,2 | F,2 F, C,2 C, | G, G,, C,2 F,2 | B,,2 F,, C,2 D, | B,, C, F,,2 |]
+% 11
+W: 6.May we in faith its tidings learn
+W: Nor thanklessly its blessings spurn;
+W: May we in faith its truth confess
+W: And praise the Lord our Righteousness!
+%%vskip 0.0in
+%%multicol start
+%%leftmargin 1.5in
+%%rightmargin 1.5in
+%%textoption 3
+%%textfont Times-Bold 12.0
+%%EPS liftarn_Foregiveness_2.eps
+%%begintext
+%%"Forgiveness" from openclipart.org
+%%endtext
+%%multicol end
+

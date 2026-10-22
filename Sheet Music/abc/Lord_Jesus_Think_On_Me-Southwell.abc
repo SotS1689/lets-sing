@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 51:6-12, Heb 4:15-16, Ps 119:133, Lk 23:42-43, Mt 5:21-37
+%OHTOPICS {Anticipation [6]}, {Aspiration [6]}, {Christian Life}, {Comfort [2-5]}, {Commitment}, {Consecration}, {Contrition}, {Courage in Affliction}, {Darkness, Spiritual}, {Discipleship}, {Easter Week / Passion}, {Eternal Life [6]}, {Example, Christ's [4]}, {Following Jesus, In Faith}, {Following Jesus, Sanctification}, {God, Care of}, {Guidance [4]}, {Healing [1,3]}, {Humility}, {Invitation (Faithful's to God)}, {Jesus}, {Kindness, God's}, {Leadership}, {Praise, Father [7]}, {Praise, Son [7]}, {Praise, Holy Spirit [7]}, {Repentance}, {Rest [2]}, {Service}, {Submission (see also Following Jesus, God - Providence of, Trust) [1-4]}, {Temperance &amp; Moral Reform (see also Law) [1-4]}, {Temptation [1]}, {Trinity [7]}
+%OHCATEGORY CONFESSION/ABSOLUTION
+%OHMETRICAL 6 6 8 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER from William Daman's Psalter, 1579
+%OHARRANGER unknown
+%OHAUTHOR Synesius of Cyrene (375-430)
+%OHTRANSLATOR Chatfield, Allen William (1808-1896)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: Lord Jesus Think On Me
+C: Words: Synesius of Cyrene, circa 430.  Translated by Allen W. Chatfield, 1876.  
+C: Music: 'Southwell' William Daman's Psalter, 1579.  Setting: "Common Service Book" (ULCA), 1917.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: Common Service Book (ULCA), 1917.  Hymn 320.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Ab % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=110] F | A A G G | F3 A | A A B B | c3
+w: 1.~Lord Je- sus, think on me And purge a- way my sin; 
+w: 2.~Lord Je- sus, think on me, With ma- ny'a care op- pressed; 
+w: 3.~Lord Je- sus, think on me A- mid the bat- tle's strife; 
+w: 4.~Lord Je- sus, think on me Nor let me go a- stray; 
+w: 5.~Lord Je- sus, think on me When floods the tem- pest high; 
+[V: S1V2]  C | C F F =E | F3 C | C C F E | E3
+[V: S2V1]  A, | A, A, D C | A,3 A, | A, A, A, G, | A,3
+[V: S2V2]  F, | F, D, B,, C, | F,3 F, | F, E, D, E, | A,,3
+% 5
+[V: S1V1]  c | e e d d | c c B !sintro!c | B A G G | F3 !eintro!|]
+w: From earth- born pas- sions set me free And make me pure with- in. 
+w: Let me Thy lo- ving ser- vant be And taste Thy pro- mised rest. 
+w: In all my pain and mi- se- ry Be Thou my Health and Life. 
+w: Through dark- ness and per- plex- it- y Point Thou the heav'n- ly way. 
+w: When on doth rush the e- ne- my, O Sa- vior, be Thou nigh! 
+[V: S1V2]  E | A G F E | E E E =E | F F F =E | F3 |]
+[V: S2V1]  A, | C B, A, B, | A, A, G, G, | B, C D C/B,/ | A,3 |]
+[V: S2V2]  A, | A, E, F, G, | A, C, E, C, | D, C, B,, C, | F,,3 |]
+% 11
+W:6.Lord Jesus, think on me
+W:That, when the flood is past,
+W:I may th'eternal brightness see
+W:And share Thy joy at last.
+W:
+W:7. $1D$2 Lord Jesus, think on me
+W:That I may sing above
+W:To Father, Spirit, and to Thee
+W:The strains of praise and love.

@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2012 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Lk 10:41-42, Mk 4:19-20, Phil 4:5-7, 3:7-11, Mt 6:25-34, 5:16, Col 2:13-14, Heb 9:13-14, Ps 23:1-6
+%OHTOPICS {Aspiration [4]}, {Assurance}, {Atonement [6-8,10]}, {Blood [6,8]}, {Calmness [9]}, {Christian Life}, {Commitment}, {Consecration [7]}, {Courage in Affliction}, {Darkness, Spiritual [8]}, {Discipleship}, {Eternal Life [3,6,8]}, {Faith [6,9]}, {Father [8]}, {Following Jesus, In Faith}, {God, Goodness of}, {Grace [8]}, {Gratitude}, {Guidance}, {Heaven [4,5,7,8]}, {Humility}, {Inner Life}, {Invitation (Faithful's to God)}, {Jesus}, {Joy}, {Love}, {Loyalty}, {Peace}, {Praise, Son}, {Presence}, {Rest [2,4]}, {Salvation}, {Sinners [6,10]}, {Trust}
+%OHCATEGORY REDEEMER
+%OHMETRICAL 8 7 8 7 12 12 11 11
+%OHCOMPLEXITY 3
+%OHCOMPOSER Krieger, Adam (1634-1666)
+%OHARRANGER Layriz, Fridrich (1808-1859)
+%OHAUTHOR Schröder, Johann Heinrich (1667-1699)
+%OHTRANSLATOR Cox, Frances Elizabeth (1812-1897)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: One Thing's Needful
+C: Words: Johann H. Schröder, 1697.  Translated by Frances E. Cox, 1841, alt.
+C: Music: 'Eins ist Not' Adam Krieger (1634-1666).  Setting: Fridrich Layriz, 1853, alt.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2012 Revision.
+S: Music source: "Kern des Deutschen Kirchengesangs zum Gebrauch Evangelisch-Lutherischer Gemeinden und Familien", 1853 by Fridrich Layriz Hymn 603 page 138  
+S: Lyrics source: Original Lyrics from Sacred Hymns from the German (London: 1841); very minor alterations as in ELHB 1931
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] B B c d | e e d d | c c B G | A F E2 |
+w: 1.~One thing's need- ful: then, Lord Je- sus, Keep this one thing in my mind; 
+w: 2.~Soul, wilt thou this one thing find thee? Seek not midst cre- a- ted things; 
+w: 3.~How were Mar- y's thoughts de- vot- ed, Her e- ter- nal joy to find, 
+w: 4.~Thus my long- ings, heav'n- ward tend- ing, Je- sus, rest a- lone on Thee; 
+w: 5.~Wis- dom's high- est nob- lest trea- sure, Je- sus, lies con- ceal'd in Thee; 
+[V: S1V2] E B, E F | G G G G | E E F E | E D E2 |
+[V: S2V1] G, F, G, B, | B, C C =B, | C G, F, B, | C B, G,2 |
+[V: S2V2] E, D, C, B,, | E, C, G, G,, | A,, C, D, E, | A,, B,, E,2 |
+% 5
+[V: S1V1] B B c d | e e d d | c c B G | A F E2 |
+w: All be- side, though first it please us, Soon a griev- ous yoke we find: 
+w: What is earth- ly, leave be- hind thee, ov- er na- ture stretch thy wings; 
+w: As in- tent each word she not- ed, At her Sa- vior's feet re- clined: 
+w: Help me, thus on Thee de- pend- ing, Sa- vior! come and dwell in me: 
+w: Grant that this may still the meas- ure Of my will and ac- tions be: 
+[V: S1V2] E B, E F | G G G G | E E F E | E D E2 |
+[V: S2V1] G, F, G, B, | B, C C =B, | C G, F, B, | C B, G,2 |
+[V: S2V2] E, D, C, B,, | E, C, G, G,, | A,, C, D, E, | A,, B,, E,2 |
+% 9
+[V: S1V1] E/F/ G G G | [M:3/4] F F F/G/ | A A A | G G G | c c c |
+w: Be- * neath it the heart is still * fret- ting and stri- ving, No true, last- ing 
+w: For * where God and man both in * One are u- ni- ted, With God's per- fect 
+w: How * kind- led her heart, how de- * vout was its feel- ing, While hear- ing the 
+w: Al- * though all the world should for- * sake and for- get Thee, In love I will 
+w: Hu- * mil- i- ty there and sim- * pli- ci- ty reign- ing, My steps shall in 
+[V: S1V2] E/D/ E D E | E E D/E/ | F E F | F E E | E E F |
+[V: S2V1] G,/A,/ B, B, B, | [M:3/4] B, C B, | C C B, | B, B, B, | A, G, A, |
+[V: S2V2] E, E, G, E, | B,, =A,, B,, | F, C, D, | E, E, E, | A,, C, F, |
+% 13
+[V: S1V1] B3/2 A/ G | A G F | E !fermata!E E/F/ | G G G | F F F/G/ |
+w: happ- i- ness ev- er de- riv- ing. The * gain of this one thing all * 
+w: full- ness the heart is de- light- ed; There, * there is the wor- thi- est * 
+w: les- sons that Christ was re- veal- ing; For * Je- sus all earth- ly con- * 
+w: fol- low Thee, ne'er will I quit Thee; For * Je- sus, both Spi- rit and * 
+w: wis- dom for ev- er be train- ing; Oh! * if I of Christ have this * 
+[V: S1V2] F D E | F E D | B, !ferm!B, E/D/ | E D E | E E D/E/ |
+[V: S2V1] F, B, B, | C B, A, | G, !invertedfermata!G, G,/A,/ | B, B, B, | B, C B, |
+[V: S2V2] D, B,, E, | A,, B,, B,, | E, !ferm!E, E, | E, G, E, | B,, =A,, B,, |
+%%newpage
+% 9
+[V: S1V1] A A A | G2 !sintro!G | c c c | B3/2 A/ G | A G F | E3 !eintro!|]
+w: loss can re- quite And teach me in all things to find true de- light.
+w: lot and the best, My One and my All, and my Joy, and my Rest. 
+w: cerns she for- got, And all was re- paid in that one hap- py lot. 
+w: life is Thy Word, And is there a joy which Thou dost not af- ford? 
+w: know- ledge di- vine, The full- ness of heav- en- ly wis- dom is mine. 
+[V: S1V2] F E F | E2 E | E E F | F D E | F E D | E3 |]
+[V: S2V1] C C B, | B,2 B, | A, G, A, | F, B, B, | C B, A, | G,3 |]
+[V: S2V2] F, C, D, | E,2 E, | A,, C, F, | D, B,, E, | A,, B,, B,, | E,,3|]
+W: 6. Christ, Thou art the sole oblation
+W: That I'll bring before my God;
+W: In his sight I've acceptation
+W: Only through Thy streaming blood:
+W: Immaculate righteousness now I've acquired,
+W: Since Thou on the tree of the cross hast expired;
+W: The robe of salvation for ever is mine,
+W: In this shall my faith through eternity shine.
+W: 
+W: 7. Let my soul, in full exemption,
+W: Wake up in Thy likeness now;
+W: Thou art made to me redemption,
+W: My sanctification Thou.
+W: Whatever I need for my Journey to Heaven
+W: In Thee, I my Savior, is unto me given.
+W: Oh! let me all perishing pleasures forgo,
+W: And Thy life, O Jesus! alone let me know.
+W: 
+W: 8. Where should else my hopes be centered?
+W: Grace o'erwhelms me with its flood;
+W: Thou, my Savior, once hast enter'd
+W: Holiest heaven through Thy blood:
+W: Eternal redemption for sinners there finding,
+W: From hell's dark dominion my spirit unbinding,
+W: To me perfect freedom Thy entrance has brought,
+W: And childlike to cry, "Abba, Father," I'm taught.
+W: 
+W: 9. Christ Himself, my Shepherd, feeds me,
+W: Peace and joy my spirit fill;
+W: In a pasture green He leads me
+W: Forth beside the waters still:
+W: Oh! naught to my soul is so sweet and reviving,
+W: As thus unto Jesus alone to be living;
+W: True happiness this, and this only supplies,
+W: Through faith on my Savior to fasten my eyes.
+W: 
+W: 10. Therefore, Jesus, my Salvation,
+W: Thou my One, my All shalt be;
+W: Prove my fix'd determination,
+W: Root out all hypocrisy:
+W: Look well if on sin's slippery paths I am hasting,
+W: And lead me, O Lord, in the way everlasting;
+W: This one thing is needful, all others are vain,
+W: I count all but loss that I Christ may obtain.

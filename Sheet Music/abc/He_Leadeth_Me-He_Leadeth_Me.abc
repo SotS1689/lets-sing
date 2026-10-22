@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2006 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.730000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 23:1-3, 31:3, Jn 16:13, Mt 6:13, Mk 1:16-20, Jn 1:43-51
+%OHTOPICS {Anticipation [4]}, {Calmness}, {Christian Life}, {Comfort}, {Consecration}, {Courage in Affliction [1-2]}, {Discipleship}, {Eternal Life [4]}, {Faithfulness}, {Following Jesus, In Faith}, {Following Jesus, Sanctification}, {God, Care of}, {God, Faithfulness of}, {God, Providence of}, {Guidance}, {Leadership}, {Submission (see also Following Jesus, God - Providence of, Trust)}, {Trust}
+%OHCATEGORY CONSECRATION
+%OHMETRICAL 8 8 8 8 8 8 8 8
+%OHCOMPLEXITY 1
+%OHCOMPOSER Bradbury, William Batchelder (1816-1868)
+%OHARRANGER Bradbury, William Batchelder (1816-1868)
+%OHAUTHOR Gilmore, Joseph Henry (1834-1918)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: He Leadeth Me
+C: Words: Joseph H. Gilmore, 1862.
+C: Music and Setting: 'He Leadeth Me' William B. Bradbury, 1864.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2007 Revision.
+S: Music source: "The Golden Censer", 1864 Hymn 105.  Ed. William B. Bradbury
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: D % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] A | F3/2 E/ D A | B G G B | A3/2 F/ F E/D/ | F F E
+w: 1.~He lead- eth me, O bless- èd thought! O words with heav'n- ly * com- fort fraught! 
+w: 2.~Some- times mid scenes of deep- est gloom, Some- times where E- den's * bow- ers bloom, 
+w: 3.~Lord, I would place my hand in Thine, Nor e- ver mur- mur * nor re- pine; 
+w: 4.~And when my task on earth is done, When by Thy grace the * vic- t'ry's won, 
+[V: S1V2]  F | D3/2 A,/ A, D | D D D G | F3/2 D/ D D | D D C
+[V: S2V1]  A, | A,3/2 G,/ F, F, | G, B, B, D | D3/2 A,/ A, G,/F,/ | A, A, A,
+[V: S2V2]  D, | D,3/2 D,/ D, D, | G, G, G, G, | D,3/2 D,/ D, D, | A,, A,, A,,
+% 5
+[V: S1V1]  A | F3/2 E/ D A | B G d c/B/ | A F F/E/ D/E/ | F3/2 E/ !fermata!D
+w: What- e'er I do, wher- e'er I be Still * 'tis God's hand * that * lead- eth me. 
+w: By wa- ters still, ov'r troub- led sea, Still * 'tis His hand * that * lead- eth me. 
+w: Con- tent, what- e- ver lot I see, Since * 'tis my God * that * lead- eth me. 
+w: E'en death's cold wave I will not flee, Since * God through Jor- * dan * lead- eth me. 
+[V: S1V2]  C | D3/2 A,/ A, D | D G G G | F D D/C/ B,/C/ | D3/2 C/ !ferm!D
+[V: S2V1]  A, | A,3/2 G,/ F, F, | G, B, B, D | D A, B, F, | A,3/2 G,/ !invertedfermata!F,
+[V: S2V2]  A,, | D,3/2 D,/ D, D, | G, G, G, G, | D, D, B,, B,, | A,,3/2 A,,/ !ferm!D,
+% 9
+[V: S1V1]  A | A d c d | d c/B/ A B | A F F/E/ D/E/ | F F E
+w: He lead- eth me, He lead- eth * me, By His own hand * He * lead- eth me; 
+[V: S1V2]  F | F F E A | A G F G | F D D/C/ B,/C/ | D D C
+[V: S2V1]  A, | D A, A, C | D D D D | D A, B, F, | A, A, A,
+[V: S2V2]  D, | D, F, A, G, | F, G, D, D, | D, D, B,, B,, | A,, A,, A,,
+% 13
+[V: S1V1]  A | A d c e | d c/B/ A !sintro!B | A F F/E/ D/E/ | F3/2 E/ !fermata!D !eintro!|]
+w: His faith- ful fol- low'r I would * be, For by His hand * He * lead- eth me. 
+[V: S1V2]  C | D D E A | A G F G | F D D/C/ B,/C/ | D3/2 C/ !ferm!D |]
+[V: S2V1]  G, | F, A, A, C | D D D D | D A, B, F, | A,3/2 G,/ !invertedfermata!F, |]
+[V: S2V2]  A,, | D, F, A, G, | F, G, D, D, | D, D, B,, B,, | A,,3/2 A,,/ !ferm!D, |]
+% 19

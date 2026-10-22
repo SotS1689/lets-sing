@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2011 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.600000cm
+%%sysstaffsep	0.00000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 17:7-9, Mt 11:28
+%OHTOPICS {Assurance}, {Calmness}, {Courage in Affliction}, {God, Care of}, {Peace}, {Rest}, {Trust}
+%OHCATEGORY TRUST
+%OHMETRICAL 11 10 11 10 8 7 9 7
+%OHCOMPLEXITY 1
+%OHCOMPOSER Sankey, Ira David (1840-1908)
+%OHARRANGER Sankey, Ira David (1840-1908)
+%OHAUTHOR Cushing, William Orcutt (1823-1902)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Under His Wings
+C: Words: William Orcutt Cushing, 1896.
+C: Music and Setting: 'Under His Wings' Ira David Sankey, 1898. 
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
+S: Music source: "Church Hymns and Gospel Songs, 1898 Hymn 265.  Ed. Ira D. Sankey.
+M: 6/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Db % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=110] F G =G A2 A/ A/ | A B F A G2 | E F
+w: 1.~Un- der His wings I am safe- ly a- bid- ing, Though the  
+w: 2.~Un- der His wings, what a re- fuge in sor- row! How the  
+w: 3.~Un- der His wings, oh, what pre- cious en- joy- ment! There will 
+[V: S1V2] D E =E F2 F/ F/ | F G D C C2 | C D
+[V: S2V1] A, A, B, D2 D/ D/ | D D A, A, A,2 | A, A,
+[V: S2V2] D, D, D, D,2 D,/ D,/ | D, D, D, E, E,2 | A,, A,,
+% 4
+[V: S1V1] G B A A | A E =E F3 | F G =G A A d |
+w: night deep- ens and temp- ests are wild, Still I can trust Him; I 
+w: heart yearn- ing- ly turns to His rest! Of- ten when earth has no 
+w: I hide till life's tri- als are o'er; Shel- tered, pro- tec- ted, no 
+[V: S1V2] E G F F | F C C D3 | D E =E F F A |
+[V: S2V1] A, A, A, A, | A, A, A, A,3 | A, A, B, D D D |
+[V: S2V2] A,, A,, A,, A,, | A,, A,, A,, D,3 | D, D, D, D, D, F, |
+% 4
+[V: S1V1] e d B B A2 | B c d d A F | A G E D3 |
+w: know He will keep me, He has re- deemed me, and I am His child. 
+w: balm for my heal- ing, There I find com- fort, and there I am blessed.
+w: e- vil can harm me, Rest- ing in Je- sus, I'm safe ev- er- more.
+[V: S1V2] B B G G F2 | G G F F F D | F E C D3 |
+[V: S2V1] D D D D D2 | D C B, A, D A, | A, A, G, F,3 |
+[V: S2V2] G, G, G, D, D,2 | G, G, G, D, D, D, | A,, A,, A,, D,3 |
+% 9
+[V: S1V1] A F A d3 | c B c d3 | d A F (B A) F | F E4 z |
+w: Un- der His wings, un- der His wings, Who from His love * can sev- er? 
+[V: S1V2] F D F F3 | G G G F3 | F F F (G F) D | D C4 x |
+[V: S2V1] D D D A,3 | A, E E A,3 | A, D D D2 A, | A, A,4 z |
+[V: S2V2] D, D, D, D,3 | A, A, A,, D,3 | D, D, D, D,2 F, | A, A,4 x |
+% 14
+[V: S1V1] D F A d2 c | e d B A3 | !sintro!B c d (A F) D | E3 D2 z !eintro!|]
+w: Un- der His wings my soul shall a- bide, Safe- ly a- bide * for- ev- er. 
+[V: S1V2] D D F F2 A | G G G F3 | G G F (F D) A, | C3 D2 x |]
+[V: S2V1] F, A, D A,2 D | B, B, D D3 | D A, A, (D A,) F, | G,3 F,2 z |]
+[V: S2V2] D, D, D, D,2 F, | G, G, G,, D,3 | G, E, D, D,2 D, | A,,3 D,2 x |]

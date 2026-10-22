@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2010 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.6600000
+%%staffsep	0.0000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rev 6:12-17, Rev 20:11-15,  Mt 24:15-28, Mt 25:31-46, Ps 49:1-20
+%OHTOPICS {Anticipation}, {Atonement [8-11]}, {Brevity of Life}, {Conscience}, {Contrition}, {Cross [10]}, {Fear of the Lord}, {Forgiveness}, {God, Justness of}, {God, Majesty &amp; Power of}, {Grace [7-17]}, {Humility}, {Jesus [9]}, {Judgment}, {Law}, {Presence}, {Repentance}, {Shepherd/Lamb [15]}
+%OHCATEGORY END TIMES
+%OHMETRICAL 8 8 8 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER Dykes, John Bacchus (1823-1876)
+%OHARRANGER unknown
+%OHAUTHOR Thomas of Celano (13th Century)
+%OHTRANSLATOR Irons, William Josiah (1812-1883)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Day of Wrath, O Day of Mourning
+C: Words: Thomas of Celano, 13th Century. Translated by William J. Irons, 1848. 
+C: Music: 'Dies Irae (Dykes)' John Bacchus Dykes, 1861.  Setting: "Hymns Ancient and Modern", 1869.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision.
+S: Music source: Hymns Ancient and Modern, 1869 hymn 221.  Tune from Hymns Ancient and Modern, 1861. 
+S: %OHARRANGER unknown assumed Dykes, John Bacchus (1823-1876)
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] F3/2 E/ D E | F G A D | B B A D |
+w: 1.~Day of wrath, O day of mourn- ing! See ful- filled the 
+w: 3.~Won- drous sound the trum- pet fling- eth, Through earth's sep- ul- 
+w: 5.~Lo, the book, ex- act- ly word- ed, Where- in all hath 
+w: 7.~What shall I, frail man, be plead- ing? Who for me be 
+w: 9.~Think, good Je- sus, my sal- va- tion Caused Thy won- drous 
+[V: S1V2]  D3/2 D/ D D | D D D D | D E A, D |
+[V: S2V1]  A,3/2 G,/ F, G, | A, B, A, A, | B, B, D A, |
+[V: S2V2]  D,3/2 D,/ D, D, | D, D, F, F, | G, G, F, F, |
+% 6
+[V: S1V1]  G F E ^F | G G G F | E F E !fermata!D |
+w: pro- phet's warn- ing, Heav'n and earth in ash- es burn- ing. 
+w: chers it ring- eth, All be- fore the throne it bring- eth. 
+w: been re- cord- ed; Thence shall judg- ment be a- ward- ed. 
+w: in- ter- ced- ing When the just are mer- cy need- ing? 
+w: in- car- na- tion; Leave me not to re- pro- ba- tion! 
+[V: S1V2]  D/^C/ D ^C D | D E/D/ ^C D | ^C D D/^C/ !ferm!D |
+[V: S2V1]  B, A, A, A, | B, G,/F,/ E, F,/G,/ | A, A, G,/E,/ !invertedfermata!F, |
+[V: S2V2]  E, F,/G,/ A, D, | G, G,, A,, A,, | A,, F,,/G,,/ A,, !ferm!D, |
+% 6
+[V: S1V1]  F3/2 B/ B3/2 A/ | G A B F | F B B3/2 A/ |
+w: 2.~Oh, what fear man's bo- som rend- eth When from Heav'n the 
+w: 4.~Death is struck and na- ture qua- king; All cre- a- tion 
+w: 6.~When the Judge His seat at- tain- eth And each hid- den 
+w: 8.~King of ma- jest- y tre- men- dous, Who dost free sal- 
+w: 10.~Faint and wear- y Thou hast sought me, On the cross of 
+[V: S1V2]  D D _E3/2 _E/ | _E _E _E D | B, D _E3/2 _E/ |
+[V: S2V1]  A, B, C3/2 C/ | B, C B, B, | D B, C3/2 C/ |
+[V: S2V2]  D, B,, F,,3/2 F,/ | F, F, B,, B,, | F, F, F,,3/2 F,/ |
+% 10
+[V: S1V1]  G A B F | !sintro!d d d3/2 D/ | E G (F2- | F E) D2 !eintro!|]
+w: Judge de- scend- eth On whose sen- tence all de- pend-  * * eth! 
+w: is a- wa- king, To its Judge an an- swer ma-  * * king. 
+w: deed ar- raign- eth, No- thing un- a- venged re- main-  * * eth. 
+w: va- tion send us, Fount of pit- y, then be- friend  * * us. 
+w: suff- 'ring bought me; Shall such grace be vain- ly brought  * * me? 
+[V: S1V2]  _E _E D F | F E D3/2 D/ | D D (D2 | ^C2) D2 |]
+[V: S2V1]  B, C B, D | D B, A,3/2 A,/ | B, B, (A, F, | G,2) F,2 |]
+[V: S2V2]  F, F, B,, B,, | B, G, F,3/2 F,/ | G, G,, A,,2- | A,,2 D,2 |]
+% 15
+%%multicol start
+%%rightmargin 13.6cm
+%%textfont Times-Roman 11.0
+%%begintext obeylines justify
+%% 11.\tRighteous Judge, for sin's pollution
+%% \t\t\t\tGrant Thy gift of absolution
+%% \t\t\t\tEre that day of retribution!
+%% 12.\tGuilty, now I pour my moaning,
+%% \t\t\t\tAll my shame with anguish owning:
+%% \t\t\t\tSpare, O God, Thy suppliant groaning!
+%%endtext
+%%multicol new
+%%leftmargin 8cm
+%%rightmargin 5.6cm
+%%textfont Times-Roman 11.0
+%%begintext obeylines justify
+%% 13.\tFrom that sinful woman shriven,
+%% \t\t\t\tFrom the dying thief forgiven,
+%% \t\t\t\tThou to me a hope hast given.
+%% 14.\tWorthless are my prayers and sighing;
+%% \t\t\t\tYet, good Lord, in grace complying,
+%% \t\t\t\tRescue me from fires undying.
+%%endtext
+%%multicol new
+%%leftmargin 14cm
+%%rightmargin 2cm
+%%textfont Times-Roman 11.0
+%%begintext obeylines justify
+%% 15.\tWith Thy favored sheep, oh, place me!
+%% \t\t\t\tNor among the goats abase me,
+%% \t\t\t\tBut to Thy right hand upraise me.
+%% 16.\tWhile the wicked are confounded,
+%% \t\t\t\tDoomed to flames of woe unbounded,
+%% \t\t\t\tCall me, with Thy saints surrounded.
+%%endtext
+%%multicol end
+%%multicol start
+%%rightmargin 13.6cm
+%%textfont Times-Roman 11.0
+%%begintext obeylines justify
+%% \t
+%% 17.\tLow I kneel with heart submission, See, like ashes,
+%% \t\t\t\tmy contrition; Help me in my last condition!
+%%endtext
+%%multicol new
+%%leftmargin 12cm
+%%rightmargin 5.6cm
+%%textfont Times-Roman 11.0
+%%begintext obeylines justify
+%% \t
+%% 18.\tDay of sorrow, day of weeping, When, in dust no
+%% \t\t\t\tlonger sleeping, Man awakes in Thy dread keeping!
+%%endtext
+%%multicol end

@@ -1,0 +1,115 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.73000000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 146:5, Job 28:28, Acts 9:31
+%OHTOPICS {Adam (first/second - see also Guidance, Invitation [ours to God], Repentance)}, {Children (see also God's Children - the Faithful) [2]}, {Christian Home/Family}, {Christian Life}, {Discipleship}, {Fear of the Lord}, {God, Care of}, {Israel [5]}, {Obedience}
+%OHCATEGORY NEW OBEDIENCE
+%OHMETRICAL 8 8 8 8
+%OHCOMPLEXITY 1
+%OHCOMPOSER from Klug's Geistliche Lieder, Wittenberg, 1533
+%OHARRANGER unknown
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR Massie, Richard (1800-1887)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Happy the Man Who Feareth God
+T: (also known as Happy Who in God's Fear Doth Stay)
+C: Words: Martin Luther, 1524.  Translated by Richard Massie, 1854. 
+C: Music: 'Wo Gott Zum Haus' Klug's Geistliche Lieder, Wittenberg, 1533. 
+C: Setting: "Evangelical Lutheran Hymn-Book", 1931.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] E2 B B | G F G =A | B3/2 B/ G B | A B G F | E3/2
+w: 1.~Hap- py the man who fear- eth God, Whose feet His ho- ly ways have trod; 
+w: 2.~Thy wife shall, like a fruit- ful vine, Fill all thy house with clus- ters fine; 
+w: 3.~Lo! to the man these bless- ings cleave Who in God's ho- ly fear doth live; 
+w: 4.~Out of Mount Zi- on God shall send, And crown with joy thy lat- ter end; 
+w: 5.~He shall be with thee in thy ways, And give thee health and length of days 
+[V: S1V2]  B,2 E F | E D B, C | D3/2 E/ E F | F F E D | E3/2
+[V: S2V1]  G,2 G, F, | B, B, G, E, | F,3/2 G,/ B, D | C B, B, B, | G,3/2
+[V: S2V2]  E,2 E, D, | E, B,, E, C, | B,,3/2 E,/ E, B,, | F, D, E, B,, | E,3/2
+% 5
+[V: S1V1]  B/ c c | G B A A | G3/2 !sintro!_e/ d c | B c A/G/ F | E4 !eintro!|]
+w: Thine own good hand shall nour- ish thee, And well and hap- py shalt * thou be. 
+w: Thy child- ren all be fresh and sound, Like ol- ive\- plants thy ta- * ble round. 
+w: From him the an- cient curse hath fled By A- dam's race in- her- * it- ed. 
+w: That thou Je- ru- sa- lem mayst see, In fa- vor and pros- per- * it- y. 
+w: Yea, thou shalt child- ren's child- ren see, And peace on Is- ra- el * shall be. 
+[V: S1V2]  E/ E E | E F F F | =E3/2 _E/ G E | E E C D | E4 |]
+[V: S2V1]  G,/ A, A, | B, D C C | C3/2 G,/ B, A, | G, G, A, B, | G,4 |]
+[V: S2V2]  E,/ A,, C, | E, B,, F, F,, | C,3/2 C,/ G,, A,, | E, C, F, B,, | E,4 |]
+% 11

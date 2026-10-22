@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2009 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.7400000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP 1Pt 1:6-9, 1Jn 4:14, Ps 98:1-3, 2Tim 1:9-10, Gal 4:4-5, Rom 3:28
+%OHTOPICS {Assurance}, {Atonement}, {Blood [8]}, {Brotherhood [6]}, {Christian Life}, {Comfort}, {Compassion [4,5]}, {Crown [5]}, {Father [4]}, {God, As King [5,10]}, {God, Mercy of [4-8]}, {Gospel}, {Grace [4]}, {Gratitude}, {Healing [4]}, {Holy Spirit [9]}, {Jesus [4-9]}, {Joy}, {Judgment [2,3]}, {Kindness, God's [4-8]}, {Praise, Father [1,10]}, {Praise, Son [1,10]}, {Praise, Holy Spirit [1,10]}, {Presence [6-8]}, {Sinners [2,3]}
+%OHCATEGORY JUSTIFICATION
+%OHMETRICAL 8 7 8 7 8 8 7
+%OHCOMPLEXITY 2
+%OHCOMPOSER from Klug's Geistliche Lieder, Wittenberg, 1533
+%OHARRANGER Praetorius, Michael (1571-1621)
+%OHAUTHOR Luther, Martin (1483-1546)
+%OHTRANSLATOR Massie, Richard (1800-1887)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Dear Christians, One and All Rejoice
+C: Words: Martin Luther, 1523.  Translated by Richard Massie, 1854, alt. 
+C: Music: 'Es ist Gewisslich an der Zeit' from Klug's Geistliche Lieder, Wittenberg, 1533. 
+C: Setting: Michael Praetorius, 1610.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
+S: Music source: "The Hymns of Martin Luther" by Bacon, 1883.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=110] z G G B | A G A A | B2 G2 | B c d B | A2 G2 |
+w: 1.~Dear Christ- ians, one and all re- joice, With ex- ul- ta- tion spring- ing, 
+w: 2.~Fast bound in Sa- tan's chains I lay. Death brood- ed dark- ly o'er me; 
+w: 3.~My good works could a- vail me naught, For they with sin were stain- éd; 
+w: 4.~God saw, in his e- ter- nal grace, My sor- row out of mea- sure; 
+w: 5.~He spake to his be- lov- ed Son: 'Tis time to take com- pass- ion; 
+[V: S1V2]  x D E D | F E E F | D2 E2 | D E D D | D2 [B,2D2] |
+[V: S2V1]  z B, C B, | D B, A, A, | G,2 B,2 | B, G, A, G, | (G,/F,//E,// F,) (G,/A,/ B,) |
+[V: S2V2]  x G, E, G, | D, E, C, D, | G,2 E,2 | G, E, F, G, | D,2 [G,,2G,2] |
+% 5
+[V: S1V1]  z G G B | A G A A | B2 G2 | B c d B | A2 G2 |
+w: And with u- ni- ted heart and voice And ho- ly rap- ture sing- ing, 
+w: Sin was my tor- ment night and day, There- in my mo- ther bore me. 
+w: Free- will a- gainst God's judg- ment fought, And dead to good re- main- éd. 
+w: He thought u- pon his ten- der- ness To save was his good pleas- ure. 
+w: Then go, bright je- wel of my crown, And bring to man sal- va- tion; 
+[V: S1V2]  x D E D | F E E F | D2 E2 | D E D D | D2 [B,2D2] |
+[V: S2V1]  z B, C B, | D B, A, A, | G,2 B,2 | B, G, A, G, | (G,/F,//E,// F,) (G,/A,/ B,) |
+[V: S2V2]  x G, E, G, | D, E, C, D, | G,2 E,2 | G, E, F, G, | D,2 [G,,2G,2] |
+% 9
+[V: S1V1]  z B B A | G F G E | D2 z D | G G G F |
+w: Pro- claim the won- ders God hath done, How his right arm the 
+w: Deep- er and deep- er still I fell, Life was be- come a 
+w: Grief drove me to des- pair, and I Had no- thing left me 
+w: He turn'd to me a Fa- ther's heart\- Not small the cost to 
+w: From sin and sor- row set him free, Slay bit- ter death for 
+[V: S1V2]  x D G F | E D B, C | B,2 x B, | D E D D |
+[V: S2V1]  z B, B, C | C A, G, G, | G,2 z G, | B, C B, A, |
+[V: S2V2]  x G, E, A,, | C, D, E, C, | G,2 x G,, | G,, C, G,, D, |
+% 17
+[V: S1V1]  G A B2 | !sintro!G2 B c | d B A2 | G4 !eintro!|]
+w: vic- t'ry won; Right dear- ly it hath cost him. 
+w: li- ving hell, So firm- ly sin po- ssessed me. 
+w: but to die, To hell I fast was sink- ing. 
+w: heal my smart He gave his best and dear- est. 
+w: him, that he May live with thee for- ev- er. 
+[V: S1V2]  B, E ^D2 | (B, E) D A | A G (F/E/ F) | D4 |]
+[V: S2V1]  G, E, F,2 | G, B,2 E | D D D2 | B,4 |]
+[V: S2V2]  E, C, B,,2 | E,2 G, A, | F, G, D,2 | G,,4 |]
+% 20
+%%newpage
+%%multicol start
+%%leftmargin 6cm
+%%begintext obeylines justify
+%% 6.\tThe Son delighted to obey, And born of Virgin mother,
+%% \t\t\t\tAwhile on this low earth did stay That he might be my brother.
+%% \t\t\t\tHis mighty power he hidden bore, 
+%% \t\t\t\tA servant's form like mine he wore, To bind the devil captive.
+%% 
+%% 7.\tTo me he spake : cling fast to me, Thou'lt win a triumph worthy:
+%% \t\t\t\tI wholly give myself for thee, I strive and wrestle for thee;
+%% \t\t\t\tFor I am thine, thou mine also; 
+%% \t\t\t\tAnd where I am thou art. The foe Shall never more divide us.
+%% 
+%% 8.\tFor he shall shed my precious blood, Me of my life bereaving;
+%% \t\t\t\tAll this I suffer for thy good; Be steadfast and believing.
+%% \t\t\t\tMy life from death the day shall win, 
+%% \t\t\t\tMy righteousness shall bear thy sin, So art thou blest forever.
+%% 
+%% 9.\tNow to my Father I depart, From earth to heaven ascending;
+%% \t\t\t\tThence heavenly wisdom to impart, The Holy Spirit sending.
+%% \t\t\t\tHe shall in trouble comfort thee, 
+%% \t\t\t\tTeach thee to know and follow me, And to the truth conduct thee.
+%%
+%% 10. What I have done and taught, do thou To do and teach endeavor;
+%% \t\t\t\tSo shall my kingdom flourish now, And God be praised forever.
+%% \t\t\t\tTake heed lest men with base alloy 
+%% \t\t\t\tThe heavenly treasure should destroy. This counsel I bequeath thee.
+%%endtext
+%%multicol end
+%%vskip 1.0in
+%%multicol start
+%%leftmargin 1.5in
+%%rightmargin 1.5in
+%%textoption 3
+%%textfont Times-Bold 12.0
+%%EPS Happy_family.eps
+%%begintext
+%%"Happy Family" from openclipart.org
+%%endtext
+%%multicol end
+

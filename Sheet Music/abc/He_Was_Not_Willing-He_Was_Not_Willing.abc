@@ -1,0 +1,138 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2010 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.70000
+%%staffsep	1.30000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP 2Pt 3:9-18, Ps 22:14-18, Rom 10:14-15
+%OHTOPICS {Activity}, {Atonement [1,2]}, {Brevity of Life}, {Christian Life}, {Church on Earth (Church Militant)}, {Conversion [3,4]}, {Discipleship}, {Education [3]}, {Example, Christ's}, {Following Jesus, In Faith}, {Following Jesus, In Action}, {Following Jesus, Sanctification [4]}, {God, Love of}, {God, Mercy of}, {Gospel}, {Harvest [3]}, {Invitation (God's to Us)}, {Jesus}, {Love [1]}, {People of the World}, {Sacrifice [1]}, {Submission (see also Following Jesus, God - Providence of, Trust)}, {Testimony}, {Zeal}
+%OHCATEGORY MISSIONS
+%OHMETRICAL 11 10 11 10 11 10 11 10
+%OHCOMPLEXITY 2
+%OHCOMPOSER Meyer, Lucy Jane Rider (1849-1922)
+%OHARRANGER Meyer, Lucy Jane Rider (1849-1922)
+%OHAUTHOR Meyer, Lucy Jane Rider (1849-1922)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: He Was Not Willing
+C: Words: Lucy R. Meyer, 1885.  Music and Setting: 'He Was Not Willing' Lucy R. Meyer, 1885.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision.
+S: Music source: The Epworth Hymnal No. 2 (second part of combined hymnal) Hymn 133.
+M: 6/8 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=80] G3/4 G// G/ G/ G/ G/ | A3/4 A// A/ G E/ | B3/4 B// B/ B/ B/ B/ |
+w: 1.~"He was not will- ing that a- ny should per- ish"; Je- sus en- throned in the 
+w: 2.~"He was not will- ing that a- ny should per- ish"; Clothed in our flesh with its 
+w: 3.~Plen- ty for plea- sure, but lit- tle for Je- sus; Time for the world with its 
+w: 4.~"He was not will- ing that a- ny should per- ish"; Am I His fol- low- er, 
+[V: S1V2]  E3/4 E// E/ E/ E/ E/ | E3/4 E// E/ E E/ | G3/4 G// G/ G/ G/ G/ |
+[V: S2V1]  B,3/4 B,// B,/ B,/ B,/ B,/ | C3/4 C// C/ B, G,/ | E3/4 E// E/ E/ E/ E/ |
+[V: S2V2]  E,3/4 E,// E,/ E,/ E,/ E,/ | E,3/4 E,// E,/ E, E,/ | E,3/4 E,// E,/ E,/ E,/ E,/ |
+% 5
+[V: S1V1]  c/ B/ G/ F3/2 | G3/4 G// G/ G/ G/ G/ | A3/4 A// A/ G E/ | B3/4 B//
+w: glo- ry a- bove, Saw our poor fal- len world, pi- tied our sor- rows, Poured out 
+w: sor- row and pain, Came He to seek the lost, com- fort the mour- ner, Heal the 
+w: troub- les and toys, No time for Je- sus' work, feed- ing the hun- gry, Lift- ing 
+w: and can I live Long- er at ease with a soul go- ing down- ward, Lost for 
+[V: S1V2]  A/ G/ E/ D3/2 | E3/4 E// E/ E/ E/ E/ | E3/4 E// E/ E E/ | G3/4 G//
+[V: S2V1]  E/ E/ B,/ B,3/2 | B,3/4 B,// B,/ B,/ B,/ B,/ | C3/4 C// C/ B, G,/ | E3/4 E//
+[V: S2V2]  E,/ E,/ E,/ B,,3/2 | E,3/4 E,// E,/ E,/ E,/ E,/ | E,3/4 E,// E,/ E, E,/ | E,3/4 E,//
+% 9
+[V: S1V1]  B/ c/ B/ G/ | E/ G/ F/ E3/2 | G3/4 G// G/ G/ G/ G/ | A3/4 A// A/ G E/ |
+w: His life for us, won- der- ful love! Per- ish- ing, per- ish- ing! Throng- ing our path- way, 
+w: heart bro- ken by sor- row and shame. Per- ish- ing, per- ish- ing! Har- vest is pass- ing, 
+w: lost souls to e- ter- ni- ty's joys. Per- ish- ing, per- ish- ing! Hark, how they call us; 
+w: the lack of the help I might give! Per- ish- ing, per- ish- ing! Thou wast not will- ing; 
+[V: S1V2]  G/ A/ G/ E/ | E/ E/ D/ E3/2 | E3/4 E// E/ E/ E/ E/ | E3/4 E// E/ E E/ |
+[V: S2V1]  E/ E/ E/ B,/ | B,/ B,/ A,/ G,3/2 | B,3/4 B,// B,/ B,/ B,/ B,/ | C3/4 C// C/ B, G,/ |
+[V: S2V2]  E,/ E,/ E,/ E,/ | G,/ B,/ B,,/ E,3/2 | E,3/4 E,// E,/ E,/ E,/ E,/ | E,3/4 E,// E,/ E, E,/ |
+% 13
+[V: S1V1]  B3/4 B// B/ c/ B/ G/ | E/ G/ F/ E3/2 | c3/4 c// c/ c/ c/ c/ |
+w: Hearts break with bur- dens too hea- vy to bear: Je- sus would save, but there's 
+w: Reap- ers are few and the night draw- eth near: Je- sus is call- ing thee, 
+w: Bring us your Sa- vior, oh, tell us of Him! We are so wear- y, so 
+w: Mas- ter, for- give, and in- spire us a- new; Ban- ish our world- li- ness, 
+[V: S1V2]  G3/4 G// G/ A/ G/ E/ | E/ E/ D/ E3/2 | E3/4 E// E/ E/ E/ E/ |
+[V: S2V1]  E3/4 E// E/ E/ E/ B,/ | B,/ B,/ A,/ G,3/2 | G,3/4 G,// G,/ G,/ G,/ G,/ |
+[V: S2V2]  E,3/4 E,// E,/ E,/ E,/ E,/ | G,/ B,/ B,,/ E,3/2 | C,3/4 C,// C,/ C,/ C,/ C,/ |
+% 17
+[V: S1V1]  G3/4 G// G/ G G/ | !sintro!B3/4 B// B/ B/ B/ B/ | F3/4 G// =A/ B3/2 !eintro!|]
+w: no one to tell them, No one to lift them from sin and des- pair. 
+w: haste to the reap- ing, Thou shalt have souls, prec- ious souls for thy hire. 
+w: hea- vi- ly la- den, And with long weep- ing our eyes have grown dim. 
+w: help us to ev- er Live with e- ter- ni- ty's val- ues in view. 
+[V: S1V2]  E3/4 E// E/ E E/ | D3/4 D// D/ D/ D/ D/ | E3/4 E// E/ D3/2 |]
+[V: S2V1]  C3/4 C// C/ C C/ | B,3/4 B,// B,/ B,/ B,/ B,/ | =A,3/4 B,// C/ B,3/2 |]
+[V: S2V2]  G,3/4 G,// G,/ G, G,/ | B,,3/4 B,,// B,,/ B,,/ B,,/ B,,/ | F,3/4 F,// F,/ B,,3/2 |]
+% 18

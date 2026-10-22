@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2010 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.710000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Rev 19:6-10, Jn 19:34, Ex 12:21-27, Mt 26:26-28, Jn 6:32-35, 1Cor 15:53-57
+%OHTOPICS {Angels [3]}, {Atonement}, {Blood [1-4]}, {Bread (of Life/Daily Bread) [4]}, {Church in Heaven (Church Victorious/Church Triumphant)}, {Easter}, {Forgiveness}, {God, As King [1]}, {God, Love of [2,4]}, {God, Mercy of}, {Gratitude}, {Israel [3]}, {Jesus}, {Joy}, {Kindness, God's}, {Light [5]}, {Lord's Supper}, {Love [2,4]}, {Praise, Son}, {Presence}, {Priest/Priestly Roles [2]}, {Resurrection [6]}, {Sacrifice}, {Saints (all Faithful) [6]}, {Salvation}, {Second Coming}, {Shepherd/Lamb}, {Victory}
+%OHCATEGORY LORD'S SUPPER
+%OHMETRICAL 7 7 7 7 Alleluia4
+%OHCOMPLEXITY 3
+%OHCOMPOSER Czech, Kirchengeseng, 1566
+%OHARRANGER Dumont, Brian James (1971-)
+%OHAUTHOR Latin
+%OHTRANSLATOR Campbell, Robert (1814-1868)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: At The Lamb's High Feast
+C: Words: Latin, circa 6th Century. Translated by Robert Campbell, 1849. 
+C: Music: 'Sonne der Gerechtigkeit' Czech, Kirchengeseng, 1566.  Setting: Brian J. Dumont, 31 Dec 2009.
+C: copyright: Words and Music, public domain.  Setting: Copyright 2009 Brian J. Dumont. This setting 
+C: may be freely reproduced or published for Christian worship, provided it is not altered, and this notice is 
+C: on each copy. All other rights reserved.   This score is a part of the Open Hymnal Project, 2010 Revision.
+S: Music source: tune found in many places, arrangement by BJD
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves S0 | {(S1V1 S1V2) | (S2V1 S2V2)}
+V: S0 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 1 % Piano 2
+%%MIDI program 3 1 % Piano 2
+%%MIDI program 4 1 % Piano 2
+%%MIDI program 5 1 % Piano 2
+%
+% 1
+[V: S0] [Q:1/4=110] C C | G c B/A//G//A/ A/ | G2 A A | B A G/A/G/ =F/ | E2
+w: 1.~At the Lamb's high feast * * * we sing, Praise to our vic- tor- * * ious King, 
+w: 2.~Praise we Him, whose love * * * di- vine Gives His sac- red blood * * for wine, 
+w: 3.~Where the Pas- chal blood * * * is poured, Death's dark an- gel sheathes * * his sword; 
+w: 4.~Praise we Christ, whose blood * * * was shed, Pas- chal Vic- tim, Pas- * * chal Bread; 
+w: 5.~Might- y Vic- tim from * * * the sky, Hell's fierce pow'rs be- neath * * Thee lie; 
+[V: S1V1]  C2 | G c B/A//G//A/ A/ | G2 A A | B A G/A/G/ =F/ | E2
+[V: S1V2]  C2 | E C F3/2 E/ | E2 F C | E F E2 | C2
+[V: S2V1]  E,2 | G, G, D2 | C, D,/E,/ F,2 | A, F, G,3/2 G,/ | C, D,/E,/
+[V: S2V2]  C,2 | C, E, D,2 | C,2 C,2 | B,, C, E,3/2 E,/ | G,,2
+% 5
+[V: S0]  E/ D/ E/ F/ | G/ G/ C E/ D/ E/ C/ | B,/ C/ D/ !sintro!F/ E D | C2 !eintro!|]
+w: Who has washed us in the tide Flow- ing from his pierc- èd side; A- lle- lu- ia! 
+w: Gives His bo- dy for the feast, Christ the Vic- tim, Christ the Priest. A- lle- lu- ia! 
+w: Is- rael's hosts tri- um- phant go Through the wave that drowns the foe. A- lle- lu- ia! 
+w: With sin- cer- i- ty and love Eat we Ma- nna from a- bove. A- lle- lu- ia! 
+w: Thou hast con- quered in the fight, Thou hast brought us life and light; A- lle- lu- ia! 
+[V: S1V1]  E/ D/ E/ F/ | G/ G/ C E/ D/ E/ C/ | B,/ C/ D/ F/ E D | C2 |]
+[V: S1V2]  C2 | E/ E/ C C/ B,/ C/ C/ | G,/ G,/ B,/ C/ C3/2 A,/ | C2 |]
+[V: S2V1]  E, G, | G,/ G,/ E, G,/ G,/ G, | D,/ E,/ G,/ A,/ G, F, | G,2 |]
+[V: S2V2]  C, E, | E,/ G,/ C, E,/ D,/ E, | B,,/ C,/ D,/ F,/ C,3/2 D,/ | C,2 |]
+% 10
+W: 6.Now no more can death appall,
+W: Now no more the grave enthrall;
+W: Thou hast opened Paradise,
+W: And in Thee Thy saints shall rise.
+W: 
+W: 7.Paschal triumph, Easter joy,
+W: This alone can sin destroy;
+W: From sin's death do Thou set free
+W: Souls reborn, O Lord, in Thee.
+W: 
+W: 8. $1D$2 Hymns of glory and of praise,
+W: Father, to Thee we raise;
+W: Risen Lord, all praise to Thee,
+W: Ever with the Spirit be.

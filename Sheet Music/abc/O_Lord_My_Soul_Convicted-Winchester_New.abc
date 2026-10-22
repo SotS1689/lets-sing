@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 22:34-46, Eph 5:15-21
+%OHTOPICS {Atonement [3,4]}, {Conscience}, {Contrition}, {Faith [5]}, {Forgiveness [3-5]}, {God, Majesty &amp; Power of [5]}, {God, Mercy of [3-5]}, {Gospel [3,5]}, {Grace [3,5]}, {Gratitude [3-5]}, {Hope [3]}, {Judgment [1]}, {Law}, {Repentance}, {Reverence}, {Sinners}
+%OHCATEGORY CONFESSION/ABSOLUTION
+%OHMETRICAL 8 8 8 8
+%OHCOMPLEXITY 2
+%OHCOMPOSER from "Musikalisches Handbuch", Hamburg, 1690
+%OHARRANGER Hutchins, Charles Lewis (1838-1920)
+%OHAUTHOR Maxwell, James
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: O Lord My Soul Convicted 
+T: (also known as Here Lord My Soul Convicted)
+C: Words: James Maxwell, 1759. 
+S: sometimes wrongly attr. to John Rippon (1751-1836) because it is in a book "Selection of Hymns, from the best authors" by Rippon, hymn 50, (original in 1787, I found the 1850 reprint).
+C: Music: 'Winchester New' from "Musikalisches Handbuch", Hamburg, 1690.  Setting: Charles Lewis Hutchins, 1896.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: The Church Hymnal, 1896 Hymn 197. Ed. Charles Lewis Hutchins
+S: Setting somewhat diff from "hymns ancient and modern", 1869
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: C % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] G | c G A A | G F E E |
+w: 1.~O Lord, my soul con- vic- ted stands Of 
+w: 2.~But thanks to God, its loud a- larms Have 
+w: 3.~I know my fig leaf right- eous- ness Can 
+w: 4.~There, I be- hold with won- der, Lord! That 
+w: 5.~A- maz- ing wis- dom, pow'r and love, Dis- 
+[V: S1V2]  E | G E F F/E/ | D B, C C |
+[V: S2V1]  C | C C C C | G, G, G, G, |
+[V: S2V2]  C, | E, C, F, A,, | B,, G,, C, C, |
+%4
+[V: S1V1]  F E D G | G ^F G G | c d e c |
+w: break- ing all Thy ten com- mands: And on me just- ly 
+w: warn'd me of ap- proach- ing harms; And now, O Lord, my 
+w: ne'er Thy bro- ken law re- dress; Yet in the gos- pel  
+w: Christ hath to Thy law re- stor'd Those ho- nors on th'a- 
+w: play'd to re- bels from a- bove! Do Thou, O Lord, my 
+[V: S1V2]  C C B, B, | E D/C/ B, D | G F E G |
+[V: S2V1]  F, G, G, B, | A, A, G, B, | C B, C G, |
+[V: S2V2]  A,, C, G,, E, | C, D, G,, G,/F,/ | E, D, C, E, |
+% 6
+[V: S1V1]  f e d !sintro!e | c A G c | c B c !eintro!|]
+w: might'st Thou pour Thy wrath in one e- ter- nal show'r. 
+w: wants I see, Lost and un- done, I come to Thee. 
+w: plan I see, There's hope of par- don e'en for me. 
+w: ton- ing day, Which guil- ty sin- ners took a- way. 
+w: faith in- crease To love and trust Thy plan of grace. 
+[V: S1V2]  F G G G | G F/E/ D C | D F E |]
+[V: S2V1]  A,/B,/ C B, C | C C B, A, | A, G, G, |]
+[V: S2V2]  D, C, G, C, | E, F, G, A, | F, G, C, |]
+% 11

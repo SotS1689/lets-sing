@@ -1,0 +1,143 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2006 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.6800000
+%%staffsep	0.0000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ex 20:10, Gen 2:2-3, Mk 2:23-28
+%OHTOPICS {Anticipation [3,4]}, {Calmness [1,3,5]}, {Church on Earth (Church Militant) [6]}, {Day}, {Gratitude}, {Heaven [4]}, {Law}, {Light [1,2,5]}, {Opening Songs}, {Praise, Father [2,6]}, {Praise, Son [2,6]}, {Praise, Holy Spirit [2,6]}, {Rest}, {Sabbath}, {Trinity [2,6]}
+%OHCATEGORY THANKSGIVING
+%OHMETRICAL 7 6 7 6 7 6 7 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER German
+%OHARRANGER Woodward, George Ratcliffe (1848-1934)
+%OHAUTHOR Wordsworth, Christopher (1807-1885)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: O Day of Rest And Gladness
+C: Words: Christopher Wordsworth, 1862. 
+C: Music: 'Woodbird' or 'Es Flog Ein Kleins Waldvögelein' traditional German found in 
+C: "Memminger Tabulaturbuche", 17th Century. Setting: George Ratcliffe Woodward, 1904.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision.
+S: Music can be found in "AltDeutsches Liederbuch", 1877 page 232 song 134. (no arrangement, melody only)
+S: Music source: Episcopal Hymnal, 1940, Hymn 474.   arrangement is from George Ratcliffe Woodward's "Songs of Syon", 1904 or 1910 per CCEH and other sites
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+%%staffsep 0.62cm
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=125] G | G d B G | (F3/2 G/) A D | E G G F | G3
+w: 1.~O day of rest and glad- * ness, o day of joy and light, 
+w: 2.~On thee, at the cre- a- * tion, the light first had its birth; 
+w: 3.~Thou art a port, pro- tec- * ted from storms that round us rise; 
+w: 4.~Thou art a ho- ly lad- * der, where an- gels go and come; 
+w: 5.~To- day on wear- y na- * tions the heaven- ly man- na falls; 
+[V: S1V2]  D | E D D G | D2 D D | D C/B,/ A, D | D3
+[V: S2V1]  B, | B, A, B, D | (A,3/2 G,/) F, G,/F,/ | E, E D A, | (C B,2)
+[V: S2V2]  G, | E, F, G, B,, | D,2 D, B,, | C, A,, D, D, | [G,,3D,3]
+% 5
+[V: S1V1]  G | G d B G | (F3/2 G/) A D | E G G F | G3
+w: O balm of care and sad- * ness, most beau- ti- ful, most bright: 
+w: On thee, for our sal- va- * tion, Christ rose from depths of earth; 
+w: A gar- den, int- er- sec- * ted with streams of par- a- dise; 
+w: Each Sun- day finds us glad- * der, near- er to heaven, our home; 
+w: To ho- ly con- vo- ca- * tions the sil- ver trum- pet calls, 
+[V: S1V2]  D | E D D G | D2 D D | D C/B,/ A, D | D3
+[V: S2V1]  B, | B, A, B, D | (A,3/2 G,/) F, G,/F,/ | E, E D A, | B,3
+[V: S2V2]  G, | E, F, G, B,, | D,2 D, B,, | C, A,, D, D, | G,3
+% 9
+[V: S1V1]  B | G d d/c/ B | A2 A c | B A B G | A3
+w: On thee, the high * and low- ly, through a- ges joined in tune, 
+w: On thee, our Lord, * vic- tor- ious, the Spi- rit sent from heaven, 
+w: Thou art a cool- * ing foun- tain in life's dry, drea- ry sand; 
+w: A day of sweet * re- fec- tion, thou art a day of love, 
+w: Where Gos- pel light * is glow- ing with pure and ra- diant beams, 
+[V: S1V2]  D | D A G G | E2 F E | D D D B, | (^C D2)
+[V: S2V1]  G, | B, D E3/2 D/ | (D ^C) D G, | G, F, F, G, | (E, F,2)
+[V: S2V2]  G, | G, F, E, E, | A,2 D, =C,/E,/ | G, D, B,, E, | (A,, D,2)
+% 13
+[V: S1V1]  d | c B A G | (F3/2 G/) A !sintro!D | E G G F | G3 !eintro!|]
+w: Sing ho- ly, ho- ly, h- * oly, to the great God Tri- une. 
+w: And thus on thee, most glor- * ious, a tri- ple light was given. 
+w: From thee, like Pis- gah's moun- * tain, we view our pro- mised land. 
+w: A day of res- ur- rec- * tion from earth to things a- bove. 
+w: And liv- ing wa- ter flow- * ing, with soul re- fresh- ing streams. 
+[V: S1V2]  D | E D C D | D2 D D | D C/B,/ A, D | D3 |]
+[V: S2V1]  G, | G, G, E,/F,/ G, | (A,3/2 G,/) F, G,/F,/ | E, E D A, | B,3 |]
+[V: S2V2]  B,, | C, G,, A,, B,, | D,2 D, B,, | C, A,, D, D, | G,,3 |]
+% 19
+W: 6. $1D$2 New graces ever gaining from this our day of rest,
+W: We reach the rest remaining to spirits of the blessed.
+W: To Holy Ghost be praises, to Father, and to Son;
+W: The church her voice upraises to Thee, blessed Three in One.

@@ -1,0 +1,162 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor 
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2026 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.650000
+%%staffsep	1.60000cm
+%%lineskipfac 1.0
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 19:4-6, Gen 2:21-24, Eph 5:25-33
+%OHTOPICS {Angels [2-4,6]}, {Art and Music [2-4,6]}, {Brevity of Life [9]}, {Bride/Bridegroom}, {Christian Home/Family}, {Consecration}, {Eternal Life [9]}, {God, Care of}, {Holiness}, {Love}
+%OHCATEGORY CHRISTIAN HOME
+%OHMETRICAL 8 8 6 8 8 6
+%OHCOMPLEXITY 2 
+%OHCOMPOSER Baker, Henry Williams (1821-1877)
+%OHARRANGER Baker, Henry Williams (1821-1877)
+%OHAUTHOR Wordsworth, Christopher (1807-1885)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+%%setfont-1 Symbol 13
+%%setfont-2 Times-Roman 13
+
+X: 1
+T: How Blest the Hearts
+T: (also known as How Blest Are Hearts)
+C: Words: Christopher Wordsworth, 1865, alt.
+C: Music and Setting: 'Holy Matrimony' Henry Williams Baker, 1865. 
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.
+S: Music and Lyrics source: "The Holy Year, with Tunes", 1865 Hymn 113
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: G % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] D | G3/2 G/ B G | A A B E | E E D G | F G A 
+w: 1.~How blest are hearts, which Christ the Lord Cou- ples as with a sil- ver cord, 
+w: 2.~When an- gels sang Cre- a- tion's birth, Man, fa- shioned from the dust of earth. 
+w: 3.~O ho- ly wed- lock ra- ti- fied In Heav'n a knot for life is tied 
+w: 4.~An- thems an- gel- i- cal were heard, When Christ, the e- ver- las- ting Word 
+w: 5.~At Ca- na's feast that Hea- v'nly Guest Did first His God- head ma- ni- fest, 
+[V: S1V2]  B, | D3/2 D/ D D/G/ | G F G C | C C D D | D3/2 ^C/ D 
+[V: S2V1]  G, | B,3/2 B,/ G, D | D D D G, | G, G, G, G, | A, G, F,  
+[V: S2V2]  G,, | G,,3/2 G,,/ G,, B,, | D, D, G,, C, | C, C, B,, G,, | D, E, D, 
+% 5
+[V: S1V1] A | A G F E | D3 D | F3/2 G/ A c | B G A 
+w: In nu- ptial u- ni- ty: That a- ni- ma- ted are by love 
+w: In E- den was a- lone; But God made Eve from A- dam's side 
+w: By God in Pa- ra- dise! O hap- pi- ness be- yond com- pare! 
+w: To wed His Bride did come, And take that con- se- cra- ted Bride, 
+w: And wa- ter change to wine; In wed- lock tears of sor- r'wring earth 
+[V: S1V2] D | D D D ^C | D3 D | D3/2 D/ D D | D D D 
+[V: S2V1] F, | A, B, A,3/2 G,/ | F,3 F, | A,3/2 B,/ A, F, | G, B, F, 
+[V: S2V2] D, | F,, G,, A,, A,, | D,3 D, | D,3/2 G,/ F, D, | G, G, D, 
+% 9
+[V: S1V1]  !sintro!E | F3/2 A/ c B | G B A c | B E F F | G3!eintro!|] 
+w: And a- spi- ra- tions from a- bove, O Ho- ly Ghost, by Thee! 
+w: And brought her to him as a Bride, And willed them to be one. 
+w: What tongues of An- gels to de- clare The bles- sed- ness su- fice? 
+w: Cleansed by the life- blood from His side, Un- to Her hea- v'nly home. 
+w: Are changed to wine of hea- v'nly mirth, By pow'r and love di- vine. 
+[V: S1V2]  E | D3/2 D/ E D | D D D E | D C C C | B,3 |] 
+[V: S2V1]  A, | A,3/2 F,/ G, G, | G, G, F, G, | G, G, A, A, | G,3 |] 
+[V: S2V2]  ^C, | D,3/2 D,/ C, G,, | B,, G,, D, C, | G,, C, A,, D, | G,,3 |] 
+W: 6. Mirrored in nuptial purity 
+W: The marriage of the Church we see 
+W: And Christ the Bridegroom's Love; 
+W: Angels look down, and anthems sing, 
+W: The Holy Dove, the golden wing, 
+W: Sheds blessings from above. 
+W: 
+W: 7. Bless these Thy servants, gracious Lord, 
+W: Whom Thou dost join in sweet accord, 
+W: The bridegroom and the bride; 
+W: In sorrow, sickness, and in health 
+W: In tribulation and in wealth, 
+W: Be Thou their Help and Guide! 
+W: 
+W: 8. Be with them, Lord, as day by day 
+W: They with one heart together pray, 
+W: Thy Word together read, 
+W: Together at Thine altar kneel, 
+W: And with Thy Blood their union seal, 
+W: On Thee together feed. 
+W: 
+W: 9. May they forever have Thee near, 
+W: Making them to Thyself more dear, 
+W: And each to each in Thee; 
+W: So, when from earthly cares released, 
+W: May they at Thine own marriage feast 
+W: Be blest eternally! 
+W: 
+W: 10. $1D$2 To Father, whose paternal Love 
+W: Sends benedictions from above, 
+W: Eternal praises be; 
+W: And God the Son, Incarnate Word, 
+W: With Holy Spirit be adored; 
+W: One God and Persons Three! 
+

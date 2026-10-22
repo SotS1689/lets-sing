@@ -1,0 +1,174 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.66000000
+%%staffsep	0.0000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 28:5-6, Lk 24:4-7, 1Cor 15:55-57, 1Pt 1:18-21, Rev 5:9-13
+%OHTOPICS {Angels [1,9]}, {Atonement}, {Blood [2]}, {Cross [5,8,10]}, {Easter}, {Eternal Life [7]}, {God, As King [4,7-9]}, {God, Majesty &amp; Power of}, {Gospel}, {Jesus}, {Joy}, {Praise, Son}, {Salvation}, {Victory}
+%OHCATEGORY EASTER
+%OHMETRICAL 7 7 7 7 with Alleluias
+%OHCOMPLEXITY 3
+%OHCOMPOSER Williams, Robert (1782-1818)
+%OHARRANGER Roberts, John (1822-1877)
+%OHAUTHOR Wesley, Charles (1707-1788);unknown
+%OHTRANSLATOR unknown
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Christ The Lord Is Risen Today (Lyra)
+C: Words: Stanzas 1-7, Charles Wesley, 1739. Stanzas 8-10, 14th Century; translated in Lyra Davidica. 
+C: Music: 'Llanfair' Robert Williams, 1817.  Setting: John Roberts, 1837.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: Lutheran Worship, 1982, Hymn 137 (later modified to more closely match John Robert's original setting).
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+%%staffsep 0.62cm
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=120] F F A A | c B/A/ G2 | (c3/2 B/ A) B/A/ | G2 F2 |
+w: 1.~Christ, the Lord, is risen to- * day, Al- * * le- * lu- ia! 
+w: 2.~Love's re- deem- ing work is * done, Al- * * le- * lu- ia! 
+w: 3.~Vain the stone, the watch, the * seal, Al- * * le- * lu- ia! 
+w: 4.~Lives a- gain our glor- ious * King, Al- * * le- * lu- ia! 
+w: 5.~Soar we now where Christ hath * led, Al- * * le- * lu- ia! 
+[V: S1V2]  C C F F | F G/F/ E2 | (C D/E/ F) F | (F E) F2 |
+[V: S2V1]  A, A, F, F, | C D G,2 | (A,3/2 B,/ C) B,/C/ | (D C) A,2 |
+[V: S2V2]  F, F, D, D, | A,, B,, C,2 | (A,3/2 G,/ F,) D,/C,/ | (B,, C,) F,2 |
+% 5
+[V: S1V1]  F F A A | c B/A/ G2 | (c3/2 B/ A) B/A/ | G2 F2 |
+w: Sons of men and an- gels * say, Al- * * le- * lu- ia! 
+w: Fought the fight, the ba- ttle * won, Al- * * le- * lu- ia! 
+w: Christ hath burst the gates of * hell, Al- * * le- * lu- ia! 
+w: Where, O death, is now thy * sting? Al- * * le- * lu- ia! 
+w: Follow- ing our ex- al- ted * Head, Al- * * le- * lu- ia! 
+[V: S1V2]  C C F F | F G/F/ E2 | (C D/E/ F) F | (F E) F2 |
+[V: S2V1]  A, A, F, F, | C D G,2 | (A,3/2 B,/ C) B,/C/ | (D C) A,2 |
+[V: S2V2]  F, F, D, D, | A,, B,, C,2 | (A,3/2 G,/ F,) D,/C,/ | (B,, C,) F,2 |
+% 9
+[V: S1V1]  A A c c | d/c/ B/A/ G2 | (A3/2 G/ A) =B | c2 c2 |
+w: Raise your joys and tri- * umphs * high, Al- * * le- lu- ia! 
+w: Lo! the Sun's ec- lipse * is * o'er, Al- * * le- lu- ia! 
+w: Death in vain for- bids * His * rise, Al- * * le- lu- ia! 
+w: Once He died our souls * to * save, Al- * * le- lu- ia! 
+w: Made like Him, like Him * we * rise, Al- * * le- lu- ia! 
+[V: S1V2]  F F _E _E | D D E2 | (F3/2 G/ F) F | (E3/2 F/) E2 |
+[V: S2V1]  F, F, G, A, | B, B, C2 | C3 F, | (G,3/2 A,/) C2 |
+[V: S2V2]  D, D, C, C, | B,, G,, C,2 | (F,3/2 E,/ F,) D, | C,2 (C _B,) |
+% 13
+[V: S1V1]  F F A A | c B/A/ G2 | !sintro!(c3/2 B/ A) B/A/ | G2 F2 !eintro!|]
+w: Sing, ye heavens, and earth, re- * ply, Al- * * le- * lu- ia! 
+w: Lo! He sets in blood no * more, Al- * * le- * lu- ia! 
+w: Christ hath o- pened par- a- * dise, Al- * * le- * lu- ia! 
+w: Where thy vic- to- ry, O * grave? Al- * * le- * lu- ia! 
+w: Ours the cross, the grave, the * skies, Al- * * le- * lu- ia! 
+[V: S1V2]  F C C F | F G/F/ E2 | (C D/E/ C) F | (F E) C2 |]
+[V: S2V1]  C C/B,/ A, F, | C D G,2 | (F,3/2 G,/ A,) F, | G,2 A,2 |]
+[V: S2V2]  A, A,/G,/ F, D, | A,, B,, C,2 | (A,,3/2 G,,/ F,,) G,,/A,,/ | (B,, C,) F,,2 |]
+% 18
+%%multicol start
+%%rightmargin 9cm
+%%textfont Times-Roman 12.0
+%%begintext obeylines justify
+%% 6.\tHail, the Lord of earth and Heaven, Alleluia!
+%% \t\t\t\tPraise to Thee by both be given, Alleluia!
+%% \t\t\t\tThee we greet triumphant now, Alleluia!
+%% \t\t\t\tHail, the resurrection, thou, Alleluia!
+%%
+%% 7.\tKing of glory, Soul of bliss, Alleluia!
+%% \t\t\t\tEverlasting life is this, Alleluia!
+%% \t\t\t\tThee to know, Thy power to prove, Alleluia!
+%% \t\t\t\tThus to sing and thus to love, Alleluia!
+%%endtext
+%%multicol new
+%%leftmargin 8cm
+%%rightmargin 9cm
+%%begintext obeylines justify
+%% 8.\tHymns of praise then let us sing, Alleluia!
+%% \t\t\t\tUnto Christ, our heavenly King, Alleluia!
+%% \t\t\t\tWho endured the cross and grave, Alleluia!
+%% \t\t\t\tSinners to redeem and save. Alleluia!
+%%
+%% 9.\tBut the pains that He endured, Alleluia!
+%% \t\t\t\tOur salvation have procured, Alleluia!
+%% \t\t\t\tNow above the sky He's King, Alleluia!
+%% \t\t\t\tWhere the angels ever sing. Alleluia!
+%%endtext
+%%multicol new
+%%leftmargin 14cm
+%%rightmargin 9cm
+%%begintext obeylines justify
+%% 10.Jesus Christ is risen today, Alleluia!
+%% \t\t\t\tOur triumphant holy day, Alleluia!
+%% \t\t\t\tWho did once upon the cross, Alleluia!
+%% \t\t\t\tSuffer to redeem our loss. Alleluia!
+%%endtext
+%%multicol end
+

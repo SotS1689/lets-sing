@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2005 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Jn 14:16-17, Jn 4:24, Acts 2:2-4
+%OHTOPICS {Adam (first/second - see also Guidance, Invitation [ours to God], Repentance)}, {Calmness [9,11]}, {Christian Life}, {Comfort [1,2,4]}, {Compassion}, {Conscience}, {Consecration [5-13]}, {Contrition [3,5]}, {Darkness, Spiritual [1,2,7,8]}, {Discipleship}, {Education [2]}, {Fire [8]}, {God, As King [10]}, {God, Care of}, {God, Mercy of [3]}, {God, Providence of}, {Guidance}, {Holiness [3,5,6,8]}, {Holy Spirit}, {Inner Life}, {Invitation (Faithful's to God)}, {Joy [4,12]}, {Knowledge [2]}, {Light [1,7]}, {Morality (see also Law) [3,5,6,8,10,13]}, {Obedience [5,6,8,10,13]}, {Presence}, {Repentance [3,5,10,13]}, {Sacrifice [6]}, {Self Control (see also Law) [3,5,6,8-10,13]}, {Sinners [1,3,5,13]}, {Submission (see also Following Jesus, God - Providence of, Trust) [5,6,10]}, {Temperance &amp; Moral Reform (see also Law) [3,5,7-13]}, {Throne (also see God - As King) [5,10]}, {Truth [2,7]}
+%OHCATEGORY PENTECOST
+%OHMETRICAL 7 7 7 7
+%OHCOMPLEXITY 1
+%OHCOMPOSER Gibbons, Orlando (1583-1625)
+%OHARRANGER unknown
+%OHAUTHOR Reed, Andrew (1787-1862);Longfellow, Samuel (1819-1892)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Holy Ghost, with Light Divine
+C: Words: verses 1-6 Andrew Reed, 1817.  verses 7-13 Samuel Longfellow, 1864.  
+C: Music: 'Canterbury' or 'Song 13' Orlando Gibbons, 1623.  Setting: "Common Service Book" (ULCA), 1917.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision.
+S: Music source: 'Common Service Book With Hymnal' ULCA, 1917 Hymn 156.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] G A B c | F F G2 | B c d e | c c B2 |
+w: 1.~Ho- ly Ghost, with light di- vine Shine up- on this heart of mine; 
+w: 2.~Let me see my Sa- vior's face, Let me all His beau- ties trace; 
+w: 3.~Ho- ly Ghost, with pow'r di- vine Cleanse this guil- ty heart of mine; 
+w: 4.~Ho- ly Ghost, with joy di- vine Cheer this sad- dened heart of mine; 
+w: 5.~Ho- ly Spir- it, all di- vine, Dwell with- in this heart of mine; 
+[V: S1V2]  E E E E | E D E2 | F F F E | G F/E/ D2 |
+[V: S2V1]  B, C B, A,/G,/ | F, B, B,2 | B, =A, B, B, | B, =A, B,2 |
+[V: S2V2]  E, C, G,, A,, | B,, B,, E,2 | D, F, B, G, | E, F, B,,2 |
+% 5
+[V: S1V1]  G A B c | A G F2 | !sintro!B A/G/ F E | F F E2 !eintro!|]
+w: Chase the shades of night a- way, Turn the * dark- ness in- to day. 
+w: Show those glo- rious truths to me Which are * on- ly known to Thee. 
+w: In Thy mer- cy pit- y me, From sin's * bon- dage set me free. 
+w: Yield a sac- red, set- tled peace, Let it * grow and still in- crease. 
+w: Cast down ev- ery i- dol\- throne, Reign su- * preme, and reign a- lone. 
+[V: S1V2]  E E E E | F =E F2 | F3/2 E/ D E | E D E2 |]
+[V: S2V1]  B, A, G, E, | C C/B,/ A,2 | B, B, A, G, | C B,/A,/ G,2 |]
+[V: S2V2]  E, C, B,, A,, | C, C, F,2 | D,3/2 E,/ B,, C, | A,, B,, E,2 |]
+% 9
+W: 6. See, to Thee I yield my heart,
+W: Shed Thy life through every part;
+W: A pure temple I would be,
+W: Wholly dedicate to Thee.
+W: 	
+W: 7.Holy Spirit, Truth divine,
+W: Dawn upon this soul of mine;
+W: Word of God and inward light
+W: Wake my spirit, clear my sight.
+W: 
+W: 8.Holy Spirit, Love divine,
+W: Glow within this heart of mine;
+W: Kindle every high desire;
+W: Perish self in Thy pure fire.
+W: 
+W: 9.Holy Spirit, Power divine
+W: Fill and nerve this will of mine;
+W: Grant that I may strongly live,
+W: Bravely bear, and nobly strive.
+W: 
+W: 10.Holy Spirit, Right divine,
+W: King within my conscience reign;
+W: Be my Lord, and I shall be
+W: Firmly bound, forever free.
+W: 
+W: 11.Holy Spirit, Peace divine,
+W: Still this restless heart of mine;
+W: Speak to calm this tossing sea,
+W: Stayed in Thy tranquility.
+W: 
+W: 12.Holy Spirit, Joy divine,
+W: Gladden Thou this heart of mine;
+W: In the desert ways I sing,
+W: "Spring, O Well, forever spring."
+W: 
+W: 13.Now incline me to repent,
+W: Let me now my sins lament,
+W: Now my foul revolt deplore,
+W: Weep, believe, and sin no more.
+
+

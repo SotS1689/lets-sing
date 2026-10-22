@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2010 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.750000
+%%staffsep	1.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Mt 6:10, Ps 40:8, Jn 6:40, Acts 22:14-16
+%OHTOPICS {Assurance}, {Bread (of Life/Daily Bread)}, {Christian Life}, {Commitment}, {Faith}, {Following Jesus, In Faith}, {God, Care of}, {Guidance}, {Jesus}, {Obedience}, {Patience}
+%OHCATEGORY NEW OBEDIENCE
+%OHMETRICAL 6 6 6 6 6 6 6 6
+%OHCOMPLEXITY 2
+%OHCOMPOSER von Weber, Carl Maria Friedrich Ernst (1786-1826)
+%OHARRANGER unknown
+%OHAUTHOR Schmolck, Benjamin (1672-1737)
+%OHTRANSLATOR Borthwick, Jane Laurie (1813-1897)
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: My Jesus, As Thou Wilt
+C: Words: Benjamin Schmolck, circa 1704.  Translated by Jane L. Borthwick, 1854. 
+C: Music: 'Jewett' or 'Weber' Carl M. von Weber, 1821.  Setting: "Evangelical Lutheran Hymn-Book", 1931.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision.
+S: Music source: The Evangelical Lutheran Hymnal, 1931.
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: Eb % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100]  B2 G E/G/ | F3/2 A//G// F2 | G2 E G/B/ | B3/2 A/ G2 |
+w: 1.~My Je- sus, * as Thou * wilt! Oh, may Thy * will be mine! 
+w: 2.~My Je- sus, * as Thou * wilt! If need- y * here and poor, 
+w: 3.~My Je- sus, * as Thou * wilt! Though seen through * man- y'a tear, 
+w: 4.~My Je- sus, * as Thou * wilt! All shall be * well for me; 
+[V: S1V2]   G2 E E | D3/2 F//E// D2 | E2 E E/G/ | G3/2 F/ E2 |
+[V: S2V1]   B,2 E/B,/ G,/B,/ | B,3/2 B,/ B,2 | B,2 G, B, | E3/2 B,/ B,2 |
+[V: S2V2]   E,2 E, E, | B,,3/2 B,,/ B,,2 | E,2 E, E, | B,,3/2 B,,/ E,2 |
+% 5
+[V: S1V1]  e2 c A/c/ | B3/2 B/ G E/G/ | B/A/ F A/G/ E | (F2 B) z |
+w: In- to Thy * hand of love I * would * my all * re- sign; * 
+w: Give me Thy * peo- ple's bread, their * por- * tion rich * and sure. * 
+w: Let not my * star of hope grow * dim * or dis- * ap- pear; * 
+w: Each chang- ing * fu- ture scene I * glad- * ly trust * with Thee: * 
+[V: S1V2]  A2 A/E/ E/A/ | G3/2 G/ E E | G/F/ D F/E/ E | D3 x |
+[V: S2V1]  C2 A, C | E3/2 B,/ B, G,/B,/ | B, B, B, B, | B,3 z |
+[V: S2V2]  E,2 E, E, | E,3/2 E,/ E, E, | B,, B,, E, G, | (B,2 B,,) x |
+% 9
+[V: S1V1]  B2 G E/G/ | F3/2 A//G// F2 | G2 E G/B/ | B3/2 =B/ c2 |
+w: Through sor- row, * or through * joy, con- duct me * as Thine own, 
+w: The man- na * of Thy * Word Let my soul * feed up- on; 
+w: Since Thou on * earth hast * wept, and sor- rowed * oft a- lone, 
+w: Straight to my * home a- * bove I trav- el * calm- ly on, 
+[V: S1V2]  G2 E E | D3/2 F//E// D2 | E2 B, E | E3/2 E/ E2 |
+[V: S2V1]  B,2 E/B,/ G,/B,/ | B,3/2 B,/ B,2 | B,2 G, B,/_D/ | _D3/2 D/ C2 |
+[V: S2V2]  E,2 E, E, | B,,3/2 B,,/ B,,2 | E,2 E, E, | G,3/2 G,/ A,2 |
+% 13
+[V: S1V1]  e2 c A/c/ | B3/2 B/ G !sintro!E/G/ | B3/4 E// G2 F | E4 !eintro!|]
+w: And help me * still to say, my * Lord, Thy will be done! 
+w: And if all * else should fail, my * Lord, thy will be done! 
+w: If I must * weep with Thee, my * Lord, Thy will be done! 
+w: And sing, in * life or death, my * Lord, Thy will be done! 
+[V: S1V2]  A2 A/E/ E/A/ | G3/2 G/ E E | G3/4 E// E2 D | E4 |]
+[V: S2V1]  C2 A, C/E/ | E3/2 B,/ B, G,/B,/ | E3/4 G,// B,2 A, | G,4 |]
+[V: S2V2]  A,,2 A,, A, | E,3/2 E,/ E, E, | B,,3/4 B,,// B,,2 B,, | E,4 |]
+% 18
