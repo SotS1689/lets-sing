@@ -78,6 +78,8 @@ a { color: inherit; }
     background: var(--brand);
     color: var(--on-brand);
 }
+/* The app icon's eighth note, without its red square */
+.topbar .logo { flex: none; width: 24px; height: 30px; margin-right: 6px; fill: currentColor; }
 .topbar h1 {
     flex: 1;
     margin: 0;

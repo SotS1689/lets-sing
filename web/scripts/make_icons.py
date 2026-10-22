@@ -64,11 +64,14 @@ def polygon(start, curves, size, steps=24):
     return pts
 
 
-def render(size, rounded):
+def render(size, shape):
+    """shape: "circle", "rounded" (square with rounded corners) or "square"."""
     big = size * 4  # supersample for smooth edges
     img = Image.new("RGBA", (big, big), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    if rounded:
+    if shape == "circle":
+        d.ellipse([0, 0, big - 1, big - 1], fill=RED)
+    elif shape == "rounded":
         d.rounded_rectangle([0, 0, big - 1, big - 1], radius=big * 0.22, fill=RED)
     else:
         d.rectangle([0, 0, big, big], fill=RED)
@@ -88,9 +91,11 @@ def svg():
 
 out = Path("public/icons")
 out.mkdir(parents=True, exist_ok=True)
-render(192, True).save(out / "icon-192.png")
-render(512, True).save(out / "icon-512.png")
-render(512, False).save(out / "maskable-512.png")
-render(180, False).save(out / "apple-touch-icon.png")
+# The "any" icons are what Android shows on the launch screen: round there.
+# The maskable one fills its square, for the launcher to cut to its own shape
+render(192, "circle").save(out / "icon-192.png")
+render(512, "circle").save(out / "icon-512.png")
+render(512, "square").save(out / "maskable-512.png")
+render(180, "square").save(out / "apple-touch-icon.png")
 (out / "icon.svg").write_text(svg(), encoding="utf-8")
 print("icons written to", out)
