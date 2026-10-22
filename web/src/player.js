@@ -38,16 +38,16 @@ function init() {
     return initPromise;
 }
 
-/** Loads a hymn's MIDI file, paused at the start. */
-export async function load(midiFile) {
+/** Loads a hymn's MIDI file (its URL from midiUrl() in main.js), paused at the start. */
+export async function load(url) {
     await init();
-    const res = await fetch(`./midi/${encodeURIComponent(midiFile)}`);
+    const res = await fetch(url);
     if (!res.ok) throw new Error(`Couldn't load the music (${res.status})`);
     const binary = await res.arrayBuffer();
     const loaded = new Promise((resolve) =>
         seq.eventHandler.addEvent("songChange", "load", () => resolve())
     );
-    seq.loadNewSongList([{ binary, fileName: midiFile }]);
+    seq.loadNewSongList([{ binary, fileName: url }]);
     await loaded;
     seq.pause();
     seq.currentTime = 0;

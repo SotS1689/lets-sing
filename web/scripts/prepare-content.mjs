@@ -4,6 +4,7 @@
 // Runs automatically before `npm run dev` and `npm run build`, so the root
 // hymns_data.json stays the one master copy, as it is for the Android build.
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync, rmSync } from "node:fs";
+import { createHash } from "node:crypto";
 
 const MASTER = "../hymns_data.json";
 const MIDI_SRC = "../LetsSing_Android_Project/app/src/main/assets/midi";
@@ -22,8 +23,14 @@ const slim = [];
 for (const h of hymns) {
     const file = midiFile(h);
     const hasMidi = file.endsWith(".mid") && existsSync(`${MIDI_SRC}/${file}`);
-    if (hasMidi) copyFileSync(`${MIDI_SRC}/${file}`, `${OUT}/midi/${file}`);
-    else missing.push(`${h.id} ${h.title} (${file || "no midi_url"})`);
+    let midiVersion = null;
+    if (hasMidi) {
+        copyFileSync(`${MIDI_SRC}/${file}`, `${OUT}/midi/${file}`);
+        // Changes only when this file's content changes; the app requests
+        // midi/<file>?v=<version>, so offline copies of unchanged hymns
+        // survive app updates and changed ones are fetched fresh.
+        midiVersion = createHash("sha1").update(readFileSync(`${MIDI_SRC}/${file}`)).digest("hex").slice(0, 10);
+    } else missing.push(`${h.id} ${h.title} (${file || "no midi_url"})`);
     slim.push({
         id: h.id,
         title: h.title,
@@ -33,6 +40,7 @@ for (const h of hymns) {
         verses: h.verses || [],
         credits: h.credits || "",
         midi: hasMidi ? file : null,
+        midiVersion,
     });
 }
 slim.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));

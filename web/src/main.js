@@ -75,6 +75,10 @@ function toast(message, ms = 1800) {
 // ---- Data -------------------------------------------------------------------
 
 const hymnsPromise = fetch("./hymns.json").then((r) => r.json());
+
+// The ?v= content version lets offline copies of unchanged hymns survive app
+// updates (see sw-template.js)
+const midiUrl = (h) => `./midi/${encodeURIComponent(h.midi)}?v=${h.midiVersion}`;
 let searchText = "";
 let listScroll = 0;
 
@@ -145,21 +149,37 @@ function setDownloadState(state) {
 
 async function offlineFiles() {
     const hymns = await hymnsPromise;
-    return [...new Set(hymns.map((h) => h.midi).filter(Boolean))]
-        .map((f) => `./midi/${encodeURIComponent(f)}`)
-        .concat("./soundfont/instruments.sf2");
+    return [...new Set(hymns.filter((h) => h.midi).map(midiUrl))].concat("./soundfont/instruments.sf2");
 }
 
 async function missingFiles() {
     const missing = [];
     for (const url of await offlineFiles()) {
-        if (!(await caches.match(url, { ignoreSearch: true, ignoreVary: true }))) missing.push(url);
+        if (!(await caches.match(url, { ignoreVary: true }))) missing.push(url);
     }
     return missing;
 }
 
+// Drops saved copies of hymns no current hymn uses (an older version of a
+// changed MIDI file, or a removed hymn), so the saved store doesn't grow.
+async function pruneOldHymns() {
+    const current = new Set((await offlineFiles()).map((u) => new URL(u, location.href).href));
+    const cache = await caches.open("lets-sing-content");
+    for (const req of await cache.keys()) {
+        if (!current.has(req.url)) await cache.delete(req);
+    }
+}
+
+// Asks the browser not to clear the saved hymns when the device runs low on
+// space. Chrome decides by itself (installed apps are normally granted) and
+// shows no prompt; when it's refused, everything still works, just unprotected.
+function protectStorage() {
+    navigator.storage?.persist?.().catch(() => {});
+}
+
 async function downloadAll() {
     if (!navigator.onLine) return toast("Connect to the internet to download the hymns.", 3000);
+    protectStorage();
     setDownloadState("busy");
     const files = await missingFiles();
     const total = files.length;
@@ -191,6 +211,8 @@ downloadBtn.addEventListener("click", () => {
 // on a first visit it takes over a moment after the page loads.
 async function showDownloadButton() {
     downloadBtn.hidden = false;
+    protectStorage();
+    await pruneOldHymns();
     setDownloadState((await missingFiles()).length ? "todo" : "done");
 }
 if (navigator.serviceWorker?.controller) showDownloadButton();
@@ -379,7 +401,7 @@ async function showHymn(id) {
         return;
     }
     try {
-        await player.load(hymn.midi);
+        await player.load(midiUrl(hymn));
         if (location.hash !== `#/hymn/${id}`) return; // navigated away while loading
         VOICES.forEach((_, i) => applyVoice(i));
         player.setTempo(mix.tempo / 100);
