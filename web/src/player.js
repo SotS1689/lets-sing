@@ -24,6 +24,9 @@ let program = INSTRUMENTS[0].program;
 // and the soundfont download is skipped entirely for people who only browse.
 function init() {
     initPromise ??= (async () => {
+        // iPhones otherwise treat web audio like a ringtone: silent whenever
+        // the ring/silent switch is on silent (Safari 17+ understands this)
+        if (navigator.audioSession) navigator.audioSession.type = "playback";
         ctx = new AudioContext();
         await ctx.audioWorklet.addModule(processorUrl);
         synth = new WorkletSynthesizer(ctx);
@@ -38,20 +41,34 @@ function init() {
     return initPromise;
 }
 
-/** Loads a hymn's MIDI file (its URL from midiUrl() in main.js), paused at the start. */
-export async function load(url) {
-    await init();
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`Couldn't load the music (${res.status})`);
-    const binary = await res.arrayBuffer();
-    const loaded = new Promise((resolve) =>
-        seq.eventHandler.addEvent("songChange", "load", () => resolve())
-    );
-    seq.loadNewSongList([{ binary, fileName: url }]);
-    await loaded;
-    seq.pause();
-    seq.currentTime = 0;
-    applyInstrument();
+let loading = Promise.resolve();
+let latestLoad = 0;
+
+/** Loads a hymn's MIDI file (its URL from midiUrl() in main.js), paused at the start.
+ *  Resolves false when another hymn was opened before this one got its turn. */
+export function load(url) {
+    // One at a time: two songs loading at once would answer each other's
+    // "loaded" event, and a hymn could show the other one's length.
+    const ticket = ++latestLoad;
+    const run = loading.then(async () => {
+        if (ticket !== latestLoad) return false;
+        await init();
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`Couldn't load the music (${res.status})`);
+        const binary = await res.arrayBuffer();
+        if (ticket !== latestLoad) return false;
+        const loaded = new Promise((resolve) =>
+            seq.eventHandler.addEvent("songChange", "load", () => resolve())
+        );
+        seq.loadNewSongList([{ binary, fileName: url }]);
+        await loaded;
+        seq.pause();
+        seq.currentTime = 0;
+        applyInstrument();
+        return true;
+    });
+    loading = run.catch(() => {});
+    return run;
 }
 
 /** Plays every part on one instrument (a GM program from INSTRUMENTS). */

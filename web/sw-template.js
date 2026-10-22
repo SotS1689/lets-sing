@@ -19,7 +19,12 @@ const SHELL = __SHELL__;
 
 self.addEventListener("install", (event) => {
     event.waitUntil(
-        caches.open(CACHE).then((cache) => cache.addAll(SHELL)).then(() => self.skipWaiting())
+        // cache: "reload" skips the browser's own HTTP cache (GitHub Pages lets it
+        // keep files 10 minutes), so a release right after a visit can't lock
+        // last release's page or hymn list into this release's cache.
+        caches.open(CACHE)
+            .then((cache) => cache.addAll(SHELL.map((url) => new Request(url, { cache: "reload" }))))
+            .then(() => self.skipWaiting())
     );
 });
 

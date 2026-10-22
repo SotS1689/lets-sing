@@ -482,8 +482,8 @@ async function showHymn(id) {
         return;
     }
     try {
-        await player.load(midiUrl(hymn));
-        if (location.hash !== `#/hymn/${id}`) return; // navigated away while loading
+        const loaded = await player.load(midiUrl(hymn));
+        if (!loaded || location.hash !== `#/hymn/${id}`) return; // navigated away while loading
         VOICES.forEach((_, i) => applyVoice(i));
         player.setTempo(mix.tempo / 100);
         player.setTranspose(mix.pitch);
@@ -578,15 +578,20 @@ function route() {
     if (m) showHymn(+m[1]);
     else showList();
 }
+// Whether the previous history entry is a screen of this app. Opening a shared
+// hymn link starts with it false, so Back goes to the list instead of
+// leaving for the site the link came from.
+let backStaysInApp = false;
 window.addEventListener("hashchange", () => {
+    backStaysInApp = true;
     if (!location.hash.startsWith("#/hymn/")) return route();
     listScroll = window.scrollY;
     route();
     window.scrollTo(0, 0);
 });
 backBtn.addEventListener("click", () => {
-    if (history.length > 1) history.back();
-    else location.hash = "#/";
+    if (backStaysInApp) history.back();
+    else location.replace("#/");
 });
 route();
 
