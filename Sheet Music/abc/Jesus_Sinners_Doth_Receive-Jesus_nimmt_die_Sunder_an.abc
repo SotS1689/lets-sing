@@ -1,0 +1,16 @@
+% Source: transcribed from the app's own MIDI (Jesus_Sinners_Doth_Receive-Jesus_nimmt_die_Sunder_an.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:JESUS NIMMT DIE SUNDER AN
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Bb
+[V:S] F D | G A B B | A2 G B | F D E D | C2 B,2 | F D G A | B B A2 | G B F D | E D C2 | B,2- B,1/4 D =E3/4- | =E1/4 _G =G G _G3/4- | _G1/4 =G2 A B3/4- | B1/4 c d c c3/4- | c1/4 B3- B3/4 |]
+[V:A] D/ C/ B, | B, E D D | D2 B, B, | C B,/ A,/ G,/ A,/ B, | B, A, B,2 | D/ C/ B, B, E | D D D2 | B, B, C B,/ A,/ | G,/ A,/ B, B, A, | B,2- B,1/4 B, C3/4- | C1/4 C D E D/ C1/4- | C1/4 B,2 D D3/4- | D1/4 F F G F/ E1/4- | E1/4 D3- D3/4 |]
+[V:T] B, F, | E, C B, G, | G, _G, =G, F, | F, F, E, F, | G, F, D,2 | B, F, E, C | B, G, G, _G, | G, F, F, F, | E, F, G, F, | D,2- D,1/4 G, G,3/4- | G,1/4 A, B, A, A,3/4- | A,1/4 G,2 _G, =G,3/4- | G,1/4 A, B, B, A,3/4- | A,1/4 B,3- B,3/4 |]
+[V:B] B,, B,, | E,/ D,/ C, G,,/ A,,/ B,,/ C,/ | D,2 E, D, | A,, B,, C, D, | E, F, B,,2 | B,, B,, E,/ D,/ C, | G,,/ A,,/ B,,/ C,/ D,2 | E, D, A,, B,, | C, D, E, F, | B,,2- B,,1/4 G,, C,/ B,,1/4- | B,,1/4 A,, G,, C, D,3/4- | D,1/4 E,2 D, G,3/4- | G,1/4 F,/ E,/ D, E, F,3/4- | F,1/4 B,,3- B,,3/4 |]

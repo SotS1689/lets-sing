@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (Let_Children_Hear_The_Mighty_Deeds-Dundee.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:DUNDEE
+C:Scottish Psalter (1615)
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] D | F G A D | E F G F | E D D C | D3 A | d c B A | A ^G A F | E D D C | D4 |]
+[V:A] A, | D D C D | C D D D | C B, B, A, | A,3 D | D E D C | B, B, C D | B, B, A, A, | A,4 |]
+[V:T] F, | A, D, E, A, | G, A, B, A, | A, F, G, E, | F,3 F, | F, E, G, E, | F, E, E, D, | G, F, E, E, | F,4 |]
+[V:B] D, | D, B,, A,, F, | E, D, G,, D, | A,, B,, G,, A,, | D,3 D, | D, A,, B,, C, | D, E, A,, D, | G,, G,, A,, A,, | D,4 |]

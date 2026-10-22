@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (My_Hope_Is_Build_on_Nothing_Less.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:SOLID ROCK
+C:William B. Bradbury
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] C F/ A/ | c A A/ G/ | G A B/ B/ | B G F/ E/ | F C F/ A/ | c A A/ G/ | G A B/ B/ | B G F/ E/ | F2- F1/4 c3/4- | c1/4 c/ c/ c c3/4- | c1/4 d/ d/ d d3/4- | d1/4 c/ A/ A F3/4- | F1/4 A/ A/ G C3/4- | C1/4 F/ F/ F A3/4- | A1/4 G/ G/ F3/2- F1/4 |]
+[V:A] C C/ C/ | F F F/ E/ | E F F/ F/ | F D C/ C/ | C C C/ C/ | F F F/ E/ | E F F/ F/ | F D C/ C/ | C2- C1/4 F3/4- | F1/4 F/ E/ F F3/4- | F1/4 F/ F/ F F3/4- | F1/4 F/ F/ F F3/4- | F1/4 F/ F/ E C3/4- | C1/4 C/ C/ D C3/4- | C1/4 F/ E/ C3/2- C1/4 |]
+[V:T] A, A,/ A,/ | A, C C/ C/ | C C D/ D/ | D B, A,/ G,/ | A, A, A,/ A,/ | A, C C/ C/ | C C D/ D/ | D B, A,/ G,/ | A,2- A,1/4 A,3/4- | A,1/4 A,/ B,/ C A,3/4- | A,1/4 B,/ B,/ B, B,3/4- | B,1/4 A,/ C/ C A,3/4- | A,1/4 C/ C/ C B,3/4- | B,1/4 A,/ A,/ B, F,/ A,1/4- | A,1/4 C/ B,/ A,3/2- A,1/4 |]
+[V:B] F, F,/ F,/ | F, F, C,/ C,/ | C, F, B,,/ B,,/ | B,, B,, C,/ C,/ | F, F, F,/ F,/ | F, F, C,/ C,/ | C, F, B,,/ B,,/ | B,, B,, C,/ C,/ | F,2- F,1/4 F,3/4- | F,1/4 F,/ G,/ A, F,3/4- | F,1/4 B,/ B,/ B, B,3/4- | B,1/4 F,/ F,/ F, F,3/4- | F,1/4 F,/ A,,/ C, B,3/4- | B,1/4 A,/ F,/ B,, F,3/4- | F,1/4 C,/ C,/ F,3/2- F,1/4 |]

@@ -82,10 +82,37 @@ def read_voices(path: Path):
     return mid.ticks_per_beat, voices, sorted(keys), sorted(times)
 
 
-def quantize(notes, tpb, origin):
-    """(start, length, [pitches]) in quarter notes from origin; chords merged,
-    small gaps (early note-offs) closed, overlaps cut."""
-    q = lambda ticks: Fraction(round(Fraction((ticks - origin) * GRID, tpb)), GRID)
+def beat_map(voices, tpb, origin):
+    """Ticks -> quarter notes from origin. Some files (piano reductions played
+    in) take a little breath at the end of each line, which would put every
+    later note off the beat; so each step from one chord to the next is
+    rounded on its own, to the nearest eighth unless it's plainly a sixteenth
+    off one, and times in between are spaced proportionally."""
+    onsets = sorted({s for v in voices.values() for s, _, _ in v if s >= origin} | {origin})
+    anchors = [(origin, Fraction(0))]
+    for t in onsets[1:]:
+        if t - anchors[-1][0] < tpb / 8:  # the same chord, a little ragged
+            continue
+        step = Fraction(t - anchors[-1][0], tpb)
+        best = min((Fraction(k, GRID) for k in range(1, int(step * GRID) + 2)),
+                   key=lambda c: abs(step - c) + (Fraction(1, 12) if c * 2 % 1 else 0))
+        anchors.append((t, anchors[-1][1] + best))
+
+    def at(ticks):
+        i = max(0, next((j for j, (t, _) in enumerate(anchors) if t > ticks), len(anchors)) - 1)
+        t0, b0 = anchors[i]
+        if i + 1 < len(anchors):
+            t1, b1 = anchors[i + 1]
+            beats = b0 + (b1 - b0) * Fraction(ticks - t0, t1 - t0)
+        else:
+            beats = b0 + Fraction(ticks - t0, tpb)
+        return Fraction(round(beats * GRID), GRID)
+    return at
+
+
+def quantize(notes, q):
+    """(start, length, [pitches]) in quarter notes (`q`: ticks -> beats);
+    chords merged, small gaps (early note-offs) closed, overlaps cut."""
     out = []
     for s, e, p in notes:
         s, e = q(s), q(e)
@@ -344,9 +371,10 @@ def best_pickup(q, num, bar_len):
     return max(range(int(bar_len)), key=lambda p: (weight(p), -p))
 
 
-def fit_key(q):
-    """No key signature in the file: the signature that leaves the fewest
-    note-lengths needing an accidental."""
+def fit_key(q, given=None):
+    """The signature that leaves the fewest note-lengths needing an
+    accidental; or the file's own (`given`) unless that leaves far more (a
+    few are wrong; a tune that wanders out of its key is not)."""
     used = {}
     for v in q.values():
         for _, d, ps in v:
@@ -357,15 +385,60 @@ def fit_key(q):
         tonic = (7 * n) % 12
         scale = {(tonic + i) % 12 for i in (0, 2, 4, 5, 7, 9, 11)}
         return sum(d for pc, d in used.items() if pc not in scale), abs(n)
-    return min(KEY_COUNT, key=outside)
+    best = min(KEY_COUNT, key=outside)
+    if given and outside(given)[0] <= outside(best)[0] * 2 + sum(used.values()) / 40:
+        return given
+    return best
 
 
 def key_label(key, final_bass_pc):
     """K: field: the minor name when the tune ends on the relative minor."""
     tonic = (7 * KEY_COUNT[key]) % 12
     if final_bass_pc == (tonic + 9) % 12:
-        return next(m for m, maj in MINOR_OF.items() if maj == key)
+        return next((m for m, maj in MINOR_OF.items() if maj == key), key)
     return key
+
+
+def plays(sop):
+    """(start, end) ticks of each play of the tune. Where the melody repeats
+    (each verse, or each play of a file that plays fewer times than there are
+    verses), that's its shortest period that holds across the whole file,
+    starting where it first repeats (after any intro). Otherwise the file
+    plays the tune once."""
+    # failing that, with notes repeated on the same pitch left out: some
+    # verses split a note in two for an extra syllable
+    for at in (range(len(sop)), [i for i, n in enumerate(sop) if i == 0 or n[2] != sop[i - 1][2]]):
+        pitches = [sop[i][2] for i in at]
+        n = len(pitches)
+        for k in range(8, n // 2 + 1):
+            if sum(pitches[j] == pitches[j + k] for j in range(n - k)) >= 0.9 * (n - k):
+                # the earliest start whose next play matches it note for note
+                start = max(range(min(k, n - 2 * k + 1)),
+                            key=lambda o: (sum(pitches[o + j] == pitches[o + k + j] for j in range(k)), -o))
+                cuts = [sop[at[j]][0] for j in range(start, n, k)] + [sop[-1][1] + 1]
+                return list(zip(cuts, cuts[1:]))
+    return [(sop[0][0], sop[-1][1] + 1)]
+
+
+def verse_span(voices, tpb):
+    """The play of the tune most of the others agree with in every part: not
+    an intro with the lower parts left out, nor a last verse's Amen."""
+    spans = plays(voices[0])
+    early = tpb // 8  # a chord a little ragged
+    sig = [tuple(tuple(p for s, _, p in v if lo - early <= s < hi - early) for v in voices.values())
+           for lo, hi in spans]
+    return spans[max(range(len(spans)), key=lambda i: (sig.count(sig[i]), -i))]
+
+
+def time_signature(times, start, end):
+    """The time signature in force over most of the verse."""
+    if not times:
+        return 4, 4
+    spans = {}
+    for i, (t, num, den) in enumerate(times):
+        hi = times[i + 1][0] if i + 1 < len(times) else end
+        spans[(num, den)] = spans.get((num, den), 0) + max(min(hi, end) - max(t, start), 0)
+    return max(spans, key=spans.get)
 
 
 def transcribe(hymn, force=False):
@@ -375,19 +448,14 @@ def transcribe(hymn, force=False):
     if dest.exists() and not force:
         return f"{hymn['id']}: {dest.name} exists, skipped"
     tpb, voices, keys, times = read_voices(src)
-    verses = len(hymn["verses"])
-    sop = voices[0]
-    # verse 1: the verses repeat back to back, so it ends at the soprano onset
-    # nearest 1/verses of the way through
-    origin = min(v[0][0] for v in voices.values() if v)
-    finish = max(n[1] for v in voices.values() for n in v)
-    guess = origin + (finish - origin) / verses
-    later = [n[0] for n in sop if n[0] > origin]
-    end = min(later, key=lambda t: abs(t - guess)) if verses > 1 and later else finish
-    cut = {c: [n for n in v if n[0] < end] for c, v in voices.items()}
-    q = {c: quantize(v, tpb, origin) for c, v in cut.items()}
+    origin, end = verse_span(voices, tpb)
+    # the lower voices may come in just before the melody
+    origin = min([origin] + [n[0] for v in voices.values() for n in v if origin - tpb // 8 <= n[0] < origin])
+    cut = {c: [n for n in v if origin <= n[0] < end] for c, v in voices.items()}
+    beats = beat_map(cut, tpb, origin)
+    q = {c: quantize(v, beats) for c, v in cut.items()}
 
-    num, den = (times[0][1], times[0][2]) if times else (4, 4)
+    num, den = time_signature(times, origin, end)
     bar_len = Fraction(num * 4, den)
     q, pickup = drop_holds(q, num, bar_len)
     s, d, ps = q[0][-1]  # the last note fills its bar, not the pause before verse 2
@@ -396,11 +464,10 @@ def transcribe(hymn, force=False):
         if v and v[-1][0] + v[-1][1] >= s:
             v[-1] = (v[-1][0], s + room - v[-1][0], v[-1][2])
     # the file's key signatures, unless the notes say otherwise (a few are wrong)
-    marks = [(Fraction(round(Fraction(max(t - origin, 0) * GRID, tpb)), GRID), key_name(k))
-             for t, k in keys if t < end]
+    marks = [(beats(max(t, origin)), key_name(k)) for t, k in keys if t < end]
     bounds = [m[0] for m in marks[1:]] + [Fraction(10 ** 6)]
     fits = marks and all(
-        fit_key({c: [n for n in v if lo <= n[0] < hi] for c, v in q.items()}) == k
+        fit_key({c: [n for n in v if lo <= n[0] < hi] for c, v in q.items()}, k) == k
         for (lo, k), hi in zip(marks, bounds))
     key = marks[0][1] if fits else fit_key(q)
     # A later key signature is written as accidentals: abcjs plays an inline

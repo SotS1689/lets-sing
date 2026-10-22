@@ -1,127 +1,17 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% This file is a part of the Open Hymnal Project to create a freely 
-% distributable, downloadable database of Christian hymns, spiritual 
-% songs, and prelude/postlude music.  This music is to be distributed 
-% as complete scores (words and music), using all accompaniment parts, 
-% in formats that are easily accessible on most computer OS's and which
-% can be freely modified by anyone.  The current format of choice is the 
-% "ABC Plus" format, favored by folk music distributors on the internet.
-% All scores will also be converted into pdf, MIDI, and mp3 formats.
-% Some advanced features of ABC Plus are used, and for accurate 
-% translation to a printed score, please consider using "abcm2ps" 
-% version 4.10 or later.  I am doing my best to create a final product
-% that is "Hymnal-quality", and could feasibly be used as the basis for
-% a printed church hymnal.
-%
-% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
-% at openhymnal dot org).  I have gone through serious efforts 
-% to make sure that no copyright mistakes make it into this database.
-% If I am in error, please inform me as soon as possible.
-%
-% This entire effort has used only free software, and I am indebted to 
-% the efforts of many other individuals, including the authors of
-% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
-% to all of the great Christians who wrote these hymns.
-%
-% This database comes with no guarantees whatsoever.
-%
-% I would love to get email from anyone who uses the Open Hymnal, and
-% I will take requests for hymns to add.  My decision of whether to 
-% add a hymn will be based on these criteria (in the following order):
-% 1) It must be in the public domain or freely distributable
-% 2) It must be a Christian piece
-% 3) Whether I have access to a printed copy of the music (surprisingly,
-%    a MIDI file is usually a terrible source)
-% 4) Whether I like the hymn :)
-%
-% If you would like to contribute to the Open Hymnal Project, please 
-% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
-% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
-% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
-% that there must be mistakes right now.
-%
-% Open Hymnal Project, 2013 Edition
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% PAGE LAYOUT
-%
-%%pagewidth	21.6000cm
-%%pageheight	27.9000cm
-%%scale		0.750000
-%%staffsep	1.600000cm
-%%sysstaffsep	0.00000cm
-%%exprabove	false
-%%measurebox	false
-%OHSCRIP Jn 6:33-59, 7:37, Mt 11:28-30, Is 55:1-3, 53:5, Hos 14:4, Jn 14:16-17, 14:26, Rev 22:1
-%OHTOPICS {Assurance}, {Atonement}, {Bread (of Life/Daily Bread) [3]}, {Comfort}, {Compassion}, {Contrition}, {Forgiveness}, {God, As King}, {God, Mercy of}, {Grace}, {Healing}, {Heaven}, {Humility}, {Invitation (God's to Us)}, {Kindness, God's}, {Light [2]}, {Lord's Supper [3]}, {Peace}, {Presence}, {Repentance}
-%OHCATEGORY CROSS AND COMFORT
-%OHMETRICAL 11 10 11 10
-%OHCOMPLEXITY 2
-%OHCOMPOSER Webbe, Samuel (1740-1816)
-%OHARRANGER unknown
-%OHAUTHOR Moore, Thomas (1779-1852);Hastings, Thomas (1784-1872)
-%OHTRANSLATOR none
-%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
-%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
-%%deco sintro 6 st 6 0 0 
-%%deco eintro 6 nd 6 0 0 
-
-X: 1
-T: Come, Ye Disconsolate
-C: Words: verses 1-2 Thomas Moore, 1816.  Verse 3 Thomas Hastings, 1831. 
-C: Music: 'Consolator (Webbe)' Samuel Webbe, 1792. 
-C: Setting: "The Church Hymnal, Revised and Enlarged" (Episcopal), 1896.
-C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2013 Revision.
-S: Music and lyrics source: "The Church Hymnal, Revised and Enlarged" (Episcopal), 1896  Ed. Charles Hutchins Hymn 637. 
-M: 4/4 % time signature
-L: 1/4 % default length
-%%staves (S1V1 S1V2) | (S2V1 S2V2) 
-V: S1V1 clef=treble 
-%%MIDI beat 127 125 110 1
-V: S1V2 
-%%MIDI beat 127 125 110 1
-V: S2V1 clef=bass 
-%%MIDI beat 127 125 110 1
-V: S2V2 
-%%MIDI beat 127 125 110 1
-K: C % key signature
-%
-%%MIDI program 1 0 % Piano 1
-%%MIDI program 2 0 % Piano 1
-%%MIDI program 3 0 % Piano 1
-%%MIDI program 4 0 % Piano 1
-%
-% 1
-[V: S1V1] [Q:1/4=120] G2 E C | A3/2 G/ G2 | (F3/2 G/) A B | c2 G z |
-w: 1.~Come, ye dis- con- so- late, wher- * 'er ye lan- guish; 
-w: 2.~Joy of the des- o- late, light * of the stray- ing, 
-w: 3.~Here see the Bread of Life; see * wa- ters flow- ing 
-[V: S1V2] C2 C C | C3/2 C/ C2 | C2 C F | E2 C x |
-[V: S2V1] E,2 G, E, | F,3/2 E,/ E,2 | (A,3/2 E,/) F, D, | G,2 E, z |
-[V: S2V2] C,2 C, C, | C,3/2 C,/ C,2 | C,2 C, C, | C,2 C, x |
-% 4
-[V: S1V1] E2 E E | F3/2 F/ A2 | G2 ^F ^F | G2 z2 |
-w: Come to the mer- cy seat, fer- vent- ly kneel. 
-w: Hope of the pen- i- tent, fade- less and pure, 
-w: Forth from the throne of God, pure from a- bove; 
-[V: S1V2] C2 C C | C3/2 C/ C2 | B,2 C C | B,2 x2 |
-[V: S2V1] G,2 G, G, | F,3/2 F,/ F,2 | D,2 A, A, | G,2 z2 |
-[V: S2V2] C,2 C, _B,, | A,,3/2 A,,/ F,,2 | D,2 D, D, | G,,2 x2 |
-% 9
-[V: S1V1] c2 B A | G3/2 F/ E2 | c2 d/c/ B/A/ | G2 E z |
-w: Here bring your woun- ded hearts, here tell * your * an- guish; 
-w: Here speaks the Com- fort- er, ten- der- * ly * say- ing, 
-w: Come to the feast of love; come, ev- * er * know- ing 
-[V: S1V2] E2 ^D ^D | E3/2 C/ C2 | E2 F C | C2 C x |
-[V: S2V1] G,2 ^F, ^F, | G,3/2 A,/ G,2 | G,2 A, F, | E,2 G, x |
-[V: S2V2] C,2 C, C, | C,3/2 C,/ C,2 | C,2 F,, A,, | C,2 C, z |
-% 13
-[V: S1V1] !sintro!(G e) e c | c A2 F | E2 D3/2 C/ | C4 !eintro!|]
-w: Earth * has no sor- row that Heav'n can- not heal. 
-w: "Earth * has no sor- row that Heav'n can- not cure." 
-w: Earth * has no sor- row but Heav'n can re- move. 
-[V: S1V2] E2 C C | C F2 D | C2 B,3/2 C/ | C4 |]
-[V: S2V1] G,2 ^G, ^G, | A, C2 A, | G,2 F,3/2 E,/ | E,4 |]
-[V: S2V2] C,2 E, E, | F, F,2 F,, | G,,2 G,,3/2 C,/ | C,4 |]
+% Source: transcribed from the app's own MIDI (Come_Ye_Disconsolate-Consolator_Webbe.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:CONSOLATOR (WEBBE)
+C:Webbe, S.
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:C
+[V:S] G e e c | c A2 F | E2 D3/2 C/ | C2 z/ G3/2- | G/ E C A3/2 | G/ G2 F3/2 | G/ A B c3/2- | c/ G z E3/2- | E/ E E F3/2 | F/ A2 G3/2- | G/ F F G3/2- | G/ z2 c3/2- | c/ B A G3/2 | F/ E2 c3/2- | c/ d/ c/ B/ A/ G3/2- | G/ E3- E/ |]
+[V:A] E2 C C | C F2 D | C2 B,3/2 C/ | C2 z/ C3/2- | C/ C C C3/2 | C/ C2 C3/2- | C/ C F E3/2- | E/ C z C3/2- | C/ C C C3/2 | C/ C2 B,3/2- | B,/ C C B,3/2- | B,/ z2 E3/2- | E/ D D E3/2 | C/ C2 E3/2- | E/ F C C3/2- | C/ C3- C/ |]
+[V:T] G,2 G, G, | A, C2 A, | G,2 F,3/2 E,/ | E,2 z/ E,3/2- | E,/ G, E, F,3/2 | E,/ E,2 A,3/2 | E,/ F, D, G,3/2- | G,/ E, z G,3/2- | G,/ G, G, F,3/2 | F,/ F,2 D,3/2- | D,/ A, A, G,3/2- | G,/ z2 G,3/2- | G,/ F, F, G,3/2 | A,/ G,2 G,3/2- | G,/ A, F, E,3/2- | E,/ G,3- G,/ |]
+[V:B] C,2 E, E, | F, F,2 F,, | G,,2 G,,3/2 C,/ | C,2 z/ C,3/2- | C,/ C, C, C,3/2 | C,/ C,2 C,3/2- | C,/ C, C, C,3/2- | C,/ C, z C,3/2- | C,/ C, ^A,, =A,,3/2 | A,,/ F,,2 D,3/2- | D,/ D, D, G,,3/2- | G,,/ z2 C,3/2- | C,/ C, C, C,3/2 | C,/ C,2 C,3/2- | C,/ F,, A,, C,3/2- | C,/ C,3- C,/ |]

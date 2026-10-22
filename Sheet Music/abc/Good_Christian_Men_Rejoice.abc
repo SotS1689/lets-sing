@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (Good_Christian_Men_Rejoice.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:IN DULCI JUBILO
+C:14th-Century German Melody
+M:6/8
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] F/ F F/ | A B/ c d/ | c c/ F F/ | A B/ c d/ | c z/ c d/ | c B/ A G/ | F3/2 G G/ | A G/ F G/ | A z/ c d/ | c B/ A G/ | F F/ G G/ | A G/ F G/ | A z/ D D/ | E E/ F3/2 | c3/2 A A/ | G G/ F3/2 |]
+[V:A] C/ D C/ | F/ E/ D/ C F/ | E F/ D C/ | F/ E/ D/ C F/ | E z/ F F/ | E E/ F E/ | F3/2 F F/ | F E/ F F/ | F z/ F F/ | F E/ F E/ | D F/ F F/ | F E/ F F/ | F z/ D D/ | D _D/ =D3/2 | E3/2 F F/ | F E/ F3/2 |]
+[V:T] A,/ B, A,/ | C B,/ A, B,/ | G, A,/ B, A,/ | C B,/ A, B,/ | G, z/ C B,/ | G, C/ C B,/ | A,3/2 D D/ | C B,/ A, B,/ | C z/ C B,/ | C C/ C B,/ | A, C/ D D/ | C B,/ A, B,/ | C z/ A, A,/ | G, G,/ A, B,/ | G,3/2 F, A,/ | D C/ A,3/2 |]
+[V:B] F,/ F, F,/ | F, F,/ F,3/2- | F, F,/ F, F,/ | F, F,/ F,3/2 | C, z/ A,, B,,/ | C, C,/ F, C,/ | F,3/2 B,, B,,/ | C, C,/ F, F,/ | F, z/ A, B,/ | A, G,/ F, C,/ | D, A,,/ B,, B,,/ | C, C,/ F, F,/ | F, z/ F, F,/ | E, E,/ D,3/2 | C,3/2 F, D,/ | B,, C,/ F,3/2 |]

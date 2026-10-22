@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (Grace_Greater_Than_Our_Sin.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:MOODY
+C:Daniel B. Towner
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] G3/2 F/ G | A G A | B2 A | G3 | F F G | A2 F | G G A | B3 | G3/2 F/ G | A G A | B2 A | G3 | A3/2 A/ B | c B A | G2 F | G3 | B3 | G3 | c3 | B3 | A3/2 A/ A | A B A | G2 c | B3 | B3 | G3 | c3 | B3 | A3/2 A/ B | c B A | G2 F | G3 |]
+[V:A] D3/2 D/ D | F E D | D2 D | D3 | D D D | F2 D | D D D | G3 | D3/2 D/ D | F E D | D2 F | E3 | E3/2 E/ G | G G E | D2 D | D3 | G3/2 G/ G | D3 | G3/2 G/ G | G3 | F3/2 F/ F | F F D | D2 G | G3 | G3/2 G/ G | D3 | G3/2 G/ G | G3 | E3/2 E/ G | G G E | D2 D | D3 |]
+[V:T] B,3/2 A,/ B, | C B, A, | G,2 C | B,3 | A, A, B, | C2 A, | B, B, C | D3 | B,3/2 A,/ B, | C B, A, | G,2 C | B,3 | C3/2 C/ D | E D C | B,2 A, | B,3 | D3 | B,3 | E3 | D3 | C3/2 C/ C | C D C | B,2 E | D3 | D3 | B,3 | E3 | D3 | C3/2 C/ D | E D C | B,2 A, | B,3 |]
+[V:B] G,3/2 G,/ G, | D, E, F, | G,2 D, | G,3 | D, D, D, | D,2 D, | G, G, G, | G,3 | G,3/2 G,/ G, | D, E, F, | G,2 D, | E,3 | C,3/2 C,/ B,, | A,, B,, C, | D,2 D, | G,3 | G,3/2 G,/ G, | G,3 | G,3/2 G,/ G, | G,3 | D,3/2 D,/ D, | D, D, D, | G,2 G, | G,3 | G,3/2 G,/ G, | G,3 | G,3/2 G,/ G, | G,3 | C,3/2 C,/ B,, | A,, B,, C, | D,2 D, | G,3 |]

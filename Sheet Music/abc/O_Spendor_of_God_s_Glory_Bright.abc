@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (O_Spendor_of_God_s_Glory_Bright.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:WAREHAM / GONFALON ROYAL
+C:William Knapp / Percy C. Buck
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Bb
+[V:S] F B F G | G F E D | D E D C | F F =E F- | F F B c | d B e d | c d B G | F B B A | B4 |]
+[V:A] D D F E | E C C B, | B, B, B, A, | C D C C- | C F D F | F G G F | F F F E | F D G F | F4 |]
+[V:T] B, F, B, B, | C A, F, F, | F, G, F, F, | F, B, G, A,- | A, B, B, A, | B, B, B, B, | A, B, B, B, | A, B, C C | D4 |]
+[V:B] B,, B,, D, E, | C, F,, A,, B,, | B,, G,, B,, F,, | A,, B,, C, F,- | F, D, G, F, | B,, E, C, D, | F, B,, D, E, | F, G, E, F, | B,,4 |]

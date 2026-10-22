@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (Trust_and_Obey-TRUST_AND_OBEY.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:TRUST AND OBEY
+C:Daniel B. Towner
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] F/ G/ | A A G | F2 F/ A/ | c c B | A2 A/ A/ | B d B | A c A | G2 F/ G/ | A A G | F2 F/ A/ | c c B | A2 A/ A/ | B d B | A F G | F3 | c G c | A2 A/ A/ | d A c | B2 B/ B/ | B A G | A c F/ G/ | A F G | F3 |]
+[V:A] C/ C/ | F F E | F2 F/ F/ | E E E | F2 F/ F/ | F F F | F F F | E2 C/ C/ | F F E | F2 F/ F/ | E E E | F2 F/ F/ | F F F | F C C | C3 | E E E | F2 F/ F/ | _G G G | G2 G/ G/ | G F E | F F F/ F/ | F C C | C3 |]
+[V:T] A,/ B,/ | C C B, | A,2 A,/ C/ | C G, C | C2 C/ C/ | B, B, B, | C A, C | C2 A,/ B,/ | C C B, | A,2 A,/ C/ | C G, C | C2 C/ C/ | B, B, B, | C A, B, | A,3 | G, C C | C2 C/ C/ | A, D D | D2 C/ C/ | C C C | C A, C/ D/ | C A, B, | A,3 |]
+[V:B] F,/ F,/ | F, F, C, | F,2 F,/ F,/ | C, C, C, | F,2 F,/ F,/ | D, B,, D, | F, A, F, | C,2 F,/ F,/ | F, F, C, | F,2 F,/ F,/ | C, C, C, | F,2 F,/ F,/ | D, B,, D, | C, C, C, | [F,F,,]3 | C, C, C, | F,2 F,/ _E,/ | D, D, D, | G,2 E,/ D,/ | C, C, C, | F, F, A,,/ B,,/ | C, C, C, | [F,F,,]3 |]

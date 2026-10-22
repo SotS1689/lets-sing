@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (I_Surrender_All.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:SURRENDER
+C:Winfield S. Weeden
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:C
+[V:S] E3/2 E/ F E | D3/2 D/ E D | C3/2 C/ F E | D E C2 | E3/2 E/ F E | D3/2 D/ E D | C3/2 C/ F E | D E C2- | C1/4 c3/2 B/ A G3/4- | G1/4 F3- F3/4- | F1/4 B3/2 A/ G F3/4- | F1/4 E3- E3/4- | E1/4 E3/2 F/ A G3/4- | G1/4 c3/2 B/ B A3/4- | A1/4 G3/2 F/ E D3/4- | D1/4 C3- C3/4 |]
+[V:A] C3/2 C/ C C | B,3/2 B,/ B, B, | C3/2 C/ C C | B, B, C2 | C3/2 C/ C C | B,3/2 B,/ B, B, | C3/2 C/ C C | B, B, C2- | C1/4 E3/2 G/ F E3/4- | E1/4 D3- D3/4- | D1/4 G3/2 F/ E D3/4- | D1/4 C3- C3/4- | C1/4 C3/2 D/ F E3/4- | E1/4 E3/2 G/ G F3/4- | F1/4 E3/2 D/ C B,3/4- | B,1/4 C3- C3/4 |]
+[V:T] G,3/2 G,/ A, G, | F,3/2 F,/ G, F, | E,3/2 E,/ A, G, | F, G, E,2 | G,3/2 G,/ A, G, | F,3/2 F,/ G, F, | E,3/2 E,/ A, G, | F, G, E,2- | E,1/4 G,3/2 G,/ C C3/4- | C1/4 B,/ B,/ B,/ B,/ B,3/2- B,1/4- | B,1/4 G,3/2 G,/ G, G,3/4- | G,1/4 G,/ G,/ G,/ G,/ G,3/2- G,1/4- | G,1/4 G,3/2 G,/ C C3/4- | C1/4 G,3/2 C/ C C3/4- | C1/4 C3/2 G,/ G, F,3/4- | F,1/4 E,3- E,3/4 |]
+[V:B] C,3/2 C,/ C, C, | G,,3/2 G,,/ G,, G,, | C,3/2 C,/ C, C, | G,, G,, C,2 | C,3/2 C,/ C, C, | G,,3/2 G,,/ G,, G,, | C,3/2 C,/ C, C, | G,, G,, C,2- | C,1/4 C,3/2 C,/ C, C,3/4- | C,1/4 G,,/ G,,/ B,,/ D,/ G,,3/2- G,,1/4- | G,,1/4 G,,3/2 G,,/ G,, G,,3/4- | G,,1/4 C,/ C,/ E,/ G,/ C,3/2- C,1/4- | C,1/4 C,3/2 C,/ C, C,3/4- | C,1/4 C,3/2 E,/ F, F,3/4- | F,1/4 G,3/2 G,/ G,, G,,3/4- | G,,1/4 C,3- C,3/4 |]

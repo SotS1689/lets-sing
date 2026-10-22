@@ -1,134 +1,17 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% This file is a part of the Open Hymnal Project to create a freely 
-% distributable, downloadable database of Christian hymns, spiritual 
-% songs, and prelude/postlude music.  This music is to be distributed 
-% as complete scores (words and music), using all accompaniment parts, 
-% in formats that are easily accessible on most computer OS's and which
-% can be freely modified by anyone.  The current format of choice is the 
-% "ABC Plus" format, favored by folk music distributors on the internet.
-% All scores will also be converted into pdf, MIDI, and mp3 formats.
-% Some advanced features of ABC Plus are used, and for accurate 
-% translation to a printed score, please consider using "abcm2ps" 
-% version 4.10 or later.  I am doing my best to create a final product
-% that is "Hymnal-quality", and could feasibly be used as the basis for
-% a printed church hymnal.
-%
-% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
-% at openhymnal dot org).  I have gone through serious efforts 
-% to make sure that no copyright mistakes make it into this database.
-% If I am in error, please inform me as soon as possible.
-%
-% This entire effort has used only free software, and I am indebted to 
-% the efforts of many other individuals, including the authors of
-% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
-% to all of the great Christians who wrote these hymns.
-%
-% This database comes with no guarantees whatsoever.
-%
-% I would love to get email from anyone who uses the Open Hymnal, and
-% I will take requests for hymns to add.  My decision of whether to 
-% add a hymn will be based on these criteria (in the following order):
-% 1) It must be in the public domain or freely distributable
-% 2) It must be a Christian piece
-% 3) Whether I have access to a printed copy of the music (surprisingly,
-%    a MIDI file is usually a terrible source)
-% 4) Whether I like the hymn :)
-%
-% If you would like to contribute to the Open Hymnal Project, please 
-% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
-% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
-% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
-% that there must be mistakes right now.
-%
-% Open Hymnal Project, 2014 Edition
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% PAGE LAYOUT
-%
-%%pagewidth	21.6000cm
-%%pageheight	27.9000cm
-%%scale		0.750000
-%%staffsep	1.60000cm
-%%exprabove	false
-%%measurebox	false
-%OHSCRIP Gal 6:14, Rom 7:24
-%OHTOPICS {Atonement}, {Blood [2,4]}, {Conscience}, {Contrition}, {Cross}, {Crown [3]}, {Easter Week / Passion}, {Gratitude}, {Inner Life}, {Jesus}, {Pride (see also Humility) [1]}, {Repentance}, {Reverence}, {Sacrifice}, {Submission (see also Following Jesus, God - Providence of, Trust)}
-%OHCATEGORY LENT
-%OHMETRICAL 8 8 8 8
-%OHCOMPLEXITY 2
-%OHCOMPOSER English
-%OHARRANGER Strong, Tobin (1975-)
-%OHAUTHOR Watts, Isaac (1674-1748)
-%OHTRANSLATOR none
-%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
-%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
-%%deco sintro 6 st 6 0 0 
-%%deco eintro 6 nd 6 0 0 
-
+% Source: transcribed from the app's own MIDI (When_I_Survey_The_Wondrous_Cross-O_Waly_Waly.mid) by Sheet Music/transcribe_midi.py
 X:1
-T: When I Survey the Wondrous Cross
-C: Words: Isaac Watts, 1707.
-C: Music: 'O Waly Waly' or 'The Water Is Wide', traditional English.  Setting: Tobin Strong, 2013.
-C: copyright: public domain.  All portions of the setting that were not already public domain were 
-C: released to the public domain by the arranger on 08 January 2014.
-C: All other rights reserved.     This score is a part of the Open Hymnal Project, 2014 Revision.
-S: Music source: Tobin Strong, 20 Dec 2013 via email.  ABC file contributed to the Open Hymnal by Tobin Strong, 20 Dec 2013.
-S: composite from "The Anglican hymn Book", 1871 hymn 127 and "Hymns Ancient and Modern", 1869 Hymn 101.
-M: 4/4
-L: 1/4
-%%staves S1V1 | (S2V1 S2V2) | (S3V1 S3V2) 
-%%staffsep 0.62cm
-V: S1V1 clef=treble 
-%%MIDI beat 127 125 110 1
-V: S1V2 
-%%MIDI beat 127 125 110 1
-V: S2V1 clef=treble 
-%%MIDI beat 127 125 110 1
-V: S2V2 
-%%MIDI beat 127 125 110 1
-V: S3V1 clef=bass 
-%%MIDI beat 127 125 110 1
-V: S3V2 
-%%MIDI beat 127 125 110 1
-K: G % key signature
-%
-%%MIDI program 1 0 % Piano 1
-%%MIDI program 2 0 % Piano 1
-%%MIDI program 3 0 % Piano 1
-%%MIDI program 4 0 % Piano 1
-%
-% 1
-[V: S1V1] [Q:1/4=130] D G A | B4- | B A G E | D4- | D D G F |
-w: 1.~When I sur- vey * the won- drous cross * On which the 
-w: 2.~For- bid it, Lord, * that I should boast, * Save in the 
-w: 3.~See from His head, * His hands, His feet, * Sor- row and 
-w: 4.~His dy- ing crim- * son, like a robe, * Spreads o'er His 
-w: 5.~Were the whole realm * of na- ture mine, * That were a 
-[V: S2V1] D G A | B4- | B A G E | D4- | D D G F |
-[V: S2V2] D G F | G4- | G F E E | D4- | D D E D |
-[V: S3V1] z3 | G,2 B,2 | D4 | B,2 B,2 | B,4 |
-[V: S3V2] x3 | D,2 G,2 | G,4 | G,2 G,2 | G,4 |
-% 6
-[V: S1V1] G4- | G A B c/B/ | A4- | A A B c | d4- | d c/B/ A G |
-w: Prince * of Glo- ry * died, * My rich- est gain * I * count but 
-w: death * of Christ my * God! * All the vain things * that * charm me 
-w: love * flow min- gled * down! * Did e'er such love * and * sor- row 
-w: bo- * dy on the * tree; * Then I am dead * to * all the 
-w: pre- * sent far too * small; * Love so a- ma- * zing, * so di- 
-[V: S2V1] G4- | G A B c/B/ | A4- | A A B c | d4- | d c/B/ A G |
-[V: S2V2] E4- | E F G G | A4- | A F G A | B4- | B F F E |
-[V: S3V1] B,2 B,2 | C4 | A,2 A, C | D4 | B,2 B,2 | G,4 |
-[V: S3V2] G,2 E,2 | C,4 | F,2 F, C, | G,4 | G,2 D,2 | D,4 |
-% 12
-[V: S1V1] B4- | B !sintro!A G E | D4- | D D E G | G4 !eintro!|]
-w: loss, * And pour con- tempt * on all my pride. 
-w: most, * I sac- ri- fice * them to His blood. 
-w: meet, * Or thorns com- pose * so rich a crown? 
-w: globe, * And all the globe * is dead to me. 
-w: vine, * De- mands my soul, * my life, my all. 
-[V: S2V1] B4- | B A G E | D4- | D D E G | G4 |]
-[V: S2V2] G4- | G F E E | D4- | D D E G | G4 |]
-[V: S3V1] B,2 G, G, | G,4 | D,4- | D, D, E, G, | G,4 |]
-[V: S3V2] G,2 E,B,, | D,4 | D,4- | D, D, E, G, | G,4 |]
+T:O WALY WALY OR THE WATER IS WIDE
+C:English &Strong
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] A G E | D4- | D D E G | G4 | z/ D G A B/- | B4- | B/ A G E D/- | D4- | D/ D G F G/- | G3/2 A B c/ | B/ A3- A/- | A3/2 A B c/- | c/ d3 c/ | B/ A G B3/2 |]
+[V:A] F E E | D4- | D D E G | G4 | z/ D G F G/- | G4- | G/ F E E D/- | D4- | D/ D E D E/- | E3/2 F G G/- | G/ A3- A/- | A3/2 F G A/- | A/ B3 F/- | F/ F E G3/2 |]
+[V:T] z3 | D,4- | D, D, E, G, | G,4 | z7/2 G,/- | G,3/2 B,2 D/- | D3- D/ B,/- | B,3/2 B,2 B,/- | B,3- B,/ B,/- | B,3/2 B,2 C/- | C/ A,2 A, C/- | C/ D3- D/- | D/ B,2 B,3/2- | B,/ G,2 B,3/2- | B,/ G, G, |]
+[V:B] z3 | D,4- | D, D, E, G, | G,4 | z7/2 D,/- | D,3/2 G,2 G,/- | G,3- G,/ G,/- | G,3/2 G,2 G,/- | G,3- G,/ G,/- | G,3/2 E,2 C,/- | C,/ F,2 F, C,/- | C,/ G,3- G,/- | G,/ G,2 D,3/2- | D,/ D,2 G,3/2- | G,/ E, B,, |]

@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (I_Am_Thine_O_Lord-DRAW_ME_NEARER.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:DRAW ME NEARER
+C:William H. Doane
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Ab
+[V:S] A z2 c3/4 d1/4 | c B B B3/4 c1/4 | B A A A3/4 G1/4 | F F F A3/4 F1/4 | E2 z c3/4 d1/4 | c B B B3/4 c1/4 | B A A B/ c/ | d d G G | A2 z c3/4 d1/4 | e2 c2 | B/ A/ G/ F/ E A/ G/ | F A d c | B2 z c3/4 d1/4 | e e c c | B/ A/ G/ F/ d c3/4 B1/4 | A A c3/2 B/ |]
+[V:A] C z2 E3/4 F1/4 | E D D D3/4 E1/4 | D C C E3/4 E1/4 | D D D D | C2 z E3/4 F1/4 | E D D D3/4 E1/4 | D C C D/ E/ | F F E E | E2 z E3/4 E1/4 | A2 E2 | F/ F/ E/ D/ C E/ E/ | D E E E | E2 z E3/4 E1/4 | A A E E | F/ F/ E/ D/ F F3/4 F1/4 | E E E3/2 D/ |]
+[V:T] A, z2 A,3/4 A,1/4 | A, G, G, G,3/4 G,1/4 | G, A, A, A,3/4 A,1/4 | A, A, A, F,3/4 A,1/4 | A,2 z A,3/4 A,1/4 | A, G, G, G,3/4 G,1/4 | G, A, A, A,/ A,/ | A, B, B, D | C2 z A,3/4 B,1/4 | C C A, A, | A,/ A,/ A,/ A,/ A, A,/ A,/ | A, A, G, A, | G,2 z A,3/4 B,1/4 | C C A, A, | A,/ A,/ A,/ A,/ A, E3/4 D1/4 | C C A,3/2 G,/ |]
+[V:B] A,, z2 A,,3/4 A,,1/4 | A,, E, E, E,3/4 E,1/4 | E, A,, A,, C,3/4 C,1/4 | D, D, D, D, | A,,2 z A,,3/4 A,,1/4 | A,, E, E, E,3/4 E,1/4 | E, A,, A,, A,,/ A,,/ | D, B,, E, E, | A,,2 z A,3/4 A,1/4 | A, A, A,, A,, | D,/ D,/ D,/ D,/ A,, C,/ C,/ | D, C, B,, A,, | E,2 z A,3/4 A,1/4 | A, A, A,, A,, | D,/ D,/ D,/ D,/ D, D,3/4 D,1/4 | E, E, E,3/2 E,/ |]

@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (Praise_Him_Praise_Him-JOYFUL_SONG.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:JOYFUL SONG
+C:Chester G. Allen
+M:6/8
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Ab
+[V:S] c3/2 e3/2 | A3/2 c3/2 | B/ c/ B/ A/ G/ F/ | E3/2 A3/2 | c3/2 e3/2 | A3/2 c3/2 | c/ B/ A/ B c/ | B2- B/ z/ | c3/2 e3/2 | A3/2 c3/2 | B/ c/ B/ A/ G/ F/ | E3/2 A3/2 | c3/2 e3/2 | d3/2 B3/2 | A/ G/ A/ c B/ | A2- A/ z/ | B3/2 c3/2 | B G/ E3/2 | d/ c/ B/ c d/ | c3/2 B3/2 | c3/2 e3/2 | A3/2 c3/2 | c/ B/ A/ B c/ | B2- B/ z/ | c3/2 e3/2 | A3/2 c3/2 | B/ c/ B/ A/ G/ F/ | E3/2 A3/2 | c3/2 e3/2 | d3/2 B3/2 | A/ G/ A/ c B/ | A3 |]
+[V:A] E3/2 E3/2 | E3/2 E3/2 | F/ F/ F/ F/ E/ D/ | C3/2 C3/2 | E3/2 E3/2 | C3/2 C3/2 | =D/ D/ D/ D D/ | E2- E/ z/ | E3/2 E3/2 | E3/2 E3/2 | F/ F/ F/ F/ E/ D/ | C3/2 C3/2 | E3/2 _G3/2 | F3/2 F3/2 | E/ E/ E/ A G/ | A2- A/ z/ | E3/2 E3/2 | E3/2 E3/2 | E/ E/ E/ E E/ | E3/2 E3/2 | E3/2 E3/2 | C3/2 C3/2 | =D/ D/ D/ D D/ | E2- E/ z/ | E3/2 E3/2 | E3/2 E3/2 | F/ F/ F/ F/ E/ D/ | C3/2 C3/2 | E3/2 _G3/2 | F3/2 F3/2 | E/ E/ E/ A G/ | A3 |]
+[V:T] A,3/2 A,3/2 | C3/2 A,3/2 | D/ D/ D/ A,/ A,/ A,/ | A,3/2 A,3/2 | A,3/2 A,3/2 | A,3/2 A,3/2 | A,/ A,/ A,/ F, A,/ | G,2- G,/ z/ | A,3/2 A,3/2 | C3/2 A,3/2 | D/ D/ D/ A,/ A,/ A,/ | A,3/2 A,3/2 | A,3/2 A,3/2 | A,3/2 D3/2 | C/ B,/ C/ E D/ | C2- C/ z/ | G,3/2 A,3/2 | G, B,/ G,3/2 | B,/ A,/ G,/ A, B,/ | A,3/2 G,3/2 | A,3/2 A,3/2 | A,3/2 A,3/2 | A,/ A,/ A,/ F, A,/ | G,2- G,/ z/ | A,3/2 C3/2 | C3/2 A,3/2 | D/ D/ D/ A,/ A,/ A,/ | A,3/2 A,3/2 | A,3/2 A,3/2 | A,3/2 D3/2 | C/ B,/ C/ E D/ | C3 |]
+[V:B] A,3/2 A,3/2 | A,3/2 A,3/2 | D,/ D,/ D,/ D,/ D,/ D,/ | A,,3/2 A,,3/2 | A,,3/2 C,3/2 | F,3/2 F,3/2 | B,,/ B,,/ B,,/ B,, B,,/ | E,2- E,/ z/ | A,3/2 A,3/2 | A,3/2 A,3/2 | D,/ D,/ D,/ D,/ D,/ D,/ | A,,3/2 A,,3/2 | A,,3/2 C,3/2 | D,3/2 D,3/2 | E,/ E,/ E,/ E, E,/ | A,,2- A,,/ z/ | E,3/2 E,3/2 | E,3/2 E,3/2 | E,/ E,/ E,/ E, E,/ | E,3/2 E,3/2 | A,,3/2 C,3/2 | F,3/2 F,3/2 | B,,/ B,,/ B,,/ B,, B,,/ | E,2- E,/ z/ | A,3/2 A,3/2 | A,3/2 A,3/2 | D,/ D,/ D,/ D,/ D,/ D,/ | A,,3/2 A,,3/2 | A,,3/2 C,3/2 | D,3/2 D,3/2 | E,/ E,/ E,/ E, E,/ | [A,A,,]3 |]

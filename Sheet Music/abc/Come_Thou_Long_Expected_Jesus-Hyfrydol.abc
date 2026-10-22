@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (Come_Thou_Long_Expected_Jesus-Hyfrydol.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:HYFRYDOL
+C:Prichard, R.
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] F2 G | F3/2 G/ A | B2 A | G F G | c2 B | A2 A | G F G | F3 | F2 G | F3/2 G/ A | B2 A | G F G | c2 B | A2 A | G F G | F3 | c2 c | c B A | B2 B | B A G | A2 A | A B c | c B A | G3 | c A c | B G B | A F A | G/ A/ B/ A/ G | c2 c | d c B | A2 G | F3 |]
+[V:A] C2 E | F2 F | D G F | E D E | F C D/ E/ | F E D | D2 E | F3 | C2 E | F2 F | D G F | E D E | F C D/ E/ | F2 E | D2 E | F3 | E2 E | F2 F | F E D | E2 E | F2 F | F G A | A G F | F2 E | F2 E | G2 G | F C C | C2 C | C F E | D F F | F2 E | F3 |]
+[V:T] A,2 G, | A,3/2 B,/ C | G, C C | C A, C | C A, B, | C2 A, | B, A, C | A,3 | A,2 G, | A,3/2 B,/ C | G, C C | C A, C | C A, B, | C2 C | B, A, C | A,3 | A,2 A, | F, G, A, | G,2 G, | G, A, B, | A, C C | D2 C | D2 D | G,3 | A, C C | D2 C | C A, F, | E,/ F,/ G,/ F,/ E, | F, A, C | B, C D | C2 B, | A,3 |]
+[V:B] F,2 C, | F,2 F, | F, E, F, | C, D, C, | A,, A, G, | F,2 F, | D,2 C, | F,3 | F,, A,, C, | F,2 F, | F, E, F, | C, D, C, | A,, A, G, | F,2 A,, | B,, D, C, | F,3 | A,2 A, | D,2 D, | G,2 G, | C,2 C, | F,2 E, | D, B,, A,, | G,,2 B,, | C,3 | A, F, A, | G,3/2 F,/ E, | F,2 A,, | C,2 C,/ B,,/ | A,,2 A,, | B,, A,, B,, | C,2 C, | F,3 |]

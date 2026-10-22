@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (Thine_Is_the_Glory_Risen_Conquering_Son.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:MACCABAEUS
+C:George Frideric Handel
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] A2 F3/2 G/ | A2 D2 | E/ F/ G/ A/ G F | E4 | F/ G/ A/ B/ A A | d2 A2 | G F E3/2 E/ | D4 | F/ E/ F/ G/ F F | E2 D2 | G F E D | C2 D/ C/ D/ E/ | D D B2 | ^G2- G1/4 A B/ A1/4- | A1/4 ^G3/2 A/ A3/2- A1/4- | A/ A2 F3/2 | G/ A2 D3/2- | D/ E/ F/ G/ A/ G F/- | F/ E3- E/- | E3/4 F/ G/ A/ B/ A A1/4- | A3/4 d2 A- A1/4- | A3/4 G F E- E1/4- | E1/4 E/ D3- D1/4 |]
+[V:A] D2 D3/2 E/ | F2 D2 | C/ D/ E/ F/ E D | C4 | D D D D | D2 D2 | B,/ C/ D D C | D4 | D/ C/ D/ E/ D D | C2 B,2 | E D C B, | ^A,2 B,/ A,/ B,/ C/ | B, B, D2 | D2 ^G1/4 C D/ C1/4- | C1/4 B, D C3/2- C1/4- | C/ D2 D3/2 | E/ F2 D3/2- | D/ C/ D/ E/ F/ E D/- | D/ C3- C/- | C3/4 D D D D1/4- | D3/4 D2 D- D1/4- | D3/4 B,/ C/ D D C1/4- | C3/4 A,3- A,1/4 |]
+[V:T] F,2 A,3/2 G,/ | F,2 A,2 | A, A, A, A, | A,4 | A, A,/ G,/ A, A, | A,2 F,2 | G, A, A, G, | F,4 | A, A, A, A, | G,2 F,2 | ^A, B, G, F, | F,2 F, F, | F, F, ^G,2 | B,2- B,1/4 A, F,3/4- | F,1/4 E, E, E,3/2- E,1/4- | E,/ F,2 A,3/2 | G,/ F,2 A,3/2- | A,/ A, A, A, A,/- | A,/ A,3- A,/- | A,/ A,,1/4 A, A,/ G,/ A, A,1/4- | A,3/4 A,2 F,- F,1/4- | F,3/4 G, A, A, G,1/4- | G,3/4 F,3- F,1/4 |]
+[V:B] D,2 F,3/2 E,/ | D,2 F,2 | A, A,, C, D, | A,,4 | D,/ E,/ F,/ G,/ F, F, | F,2 D,2 | E, F,/ G,/ A, A,, | D,4 | D, D, D, D, | A,,2 B,,2 | C, D, E, B,, | F,2 B,, B,, | B,, B,, E,2 | E,2- E,1/4 F, D,3/4- | D,1/4 E, E,, A,,3/2- A,,1/4- | A,,/ D,2 F,3/2 | E,/ D,2 F,3/2- | F,/ A, A,, C, D,/- | D,/ A,,3- A,,/- | A,,3/4 D,/ E,/ F,/ G,/ F, F,1/4- | F,3/4 F,2 D,- D,1/4- | D,3/4 E, F,/ G,/ A, A,,1/4- | A,,3/4 D,3- D,1/4 |]

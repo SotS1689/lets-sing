@@ -1,0 +1,16 @@
+% Source: transcribed from the app's own MIDI (Shepherd_of_Tender_Youth-Braun.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:BRAUN
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] G F G | A3/2 G/ F | B A G | F3/2 G/ A | G G A | B3 | _d d d | c B A | =B B B | B3/2 A/ _G | E F _G | A3/2 _G/ F | B G F | E3 |]
+[V:A] E C E | F3/2 E/ _D | F F E | C3/2 E/ E | E D F | F3 | _G G F | A A F | _G G G | _G F _D | =B, E E | E E E | E C D | E3 |]
+[V:T] B, A, B, | _D B, A, | B, C C | A, C C | B, B, C | _D3 | B, B, B, | E E _D | E E =B, | _D =B, _B, | _G, =B, _B, | =B, B, B, | B, A, A, | G,3 |]
+[V:B] E, F, E, | _D, D, D, | D, F, C, | F, C, A,, | E, G, F, | B,,3 | _G,, G,, G,, | A,, C, _D, | =B,, B,, E, | _G, G, G, | =B,, A,, _G,, | F,, _G,, A,, | G,, A,, B,, | E,3 |]

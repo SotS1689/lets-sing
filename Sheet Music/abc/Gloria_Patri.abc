@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (Gloria_Patri.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:GREATOREX
+C:Henry W. Greatorex
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] E3/2 E/ E E/ E/ | E D z E | F2 B2 | B B B c | d2 c2 | B3- B1/4 B/ B1/4- | B1/4 B G c B3/4- | B1/4 B A- A1/4 z3/4 A3/4- | A1/4 A F B A3/4- | A1/4 A G- G1/4 z3/2 | z1/4 d2 d d3/4- | d1/4 e2- e1/4 E F/- | F/ G2- G1/4 G F1/4- | F3/4 E3- E1/4 |]
+[V:A] B,3/2 B,/ B, B,/ B,/ | B, B, z B, | B,2 D2 | E G F G | F2 F E | D3- D1/4 D/ D1/4- | D1/4 E E E E3/4- | E1/4 D D- D1/4 z3/4 D3/4- | D1/4 D D D F3/4- | F1/4 F E- E1/4 z3/2 | z1/4 F2 G F3/4- | F1/4 E2- E1/4 B, C/- | C/ B,2- B,1/4 D- D1/4- | D3/4 E3- E1/4 |]
+[V:T] G,3/2 G,/ G, G,/ G,/ | A, A, z G, | F,2 F,2 | G, B, B, B, | B,2 =A,2 | B,3- B,1/4 B,/ A,1/4- | A,1/4 G, E, A, G,3/4- | G,1/4 F, F,- F,1/4 z3/4 F,3/4- | F,1/4 F, B, F, B,3/4- | B,1/4 B, B,- B,1/4 z3/2 | z1/4 B,2 B, B,3/4- | B,1/4 B,2- B,1/4 E,3/2- | E,/ E,2- E,1/4 A,- A,1/4- | A,3/4 G,3- G,1/4 |]
+[V:B] E,3/2 E,/ E, E,/ E,/ | F, F, z E, | D,2 B,,2 | E, E, D, E, | F,2 F,2 | B,,3- B,,1/4 B,,/ B,,1/4- | B,,1/4 E, E, E, E,3/4- | E,1/4 B,, B,,- B,,1/4 z3/4 B,,3/4- | B,,1/4 B,, B,, B,, B,,3/4- | B,,1/4 E, E,- E,1/4 z3/2 | z1/4 A,2 A, A,3/4- | A,1/4 G,2- G,1/4 G,, A,,/- | A,,/ B,,2- B,,1/4 B,,- B,,1/4- | B,,3/4 E,3- E,1/4 |]

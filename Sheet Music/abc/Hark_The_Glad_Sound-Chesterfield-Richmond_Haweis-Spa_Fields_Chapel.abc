@@ -1,130 +1,17 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% This file is a part of the Open Hymnal Project to create a freely 
-% distributable, downloadable database of Christian hymns, spiritual 
-% songs, and prelude/postlude music.  This music is to be distributed 
-% as complete scores (words and music), using all accompaniment parts, 
-% in formats that are easily accessible on most computer OS's and which
-% can be freely modified by anyone.  The current format of choice is the 
-% "ABC Plus" format, favored by folk music distributors on the internet.
-% All scores will also be converted into pdf, MIDI, and mp3 formats.
-% Some advanced features of ABC Plus are used, and for accurate 
-% translation to a printed score, please consider using "abcm2ps" 
-% version 4.10 or later.  I am doing my best to create a final product
-% that is "Hymnal-quality", and could feasibly be used as the basis for
-% a printed church hymnal.
-%
-% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
-% at openhymnal dot org).  I have gone through serious efforts 
-% to make sure that no copyright mistakes make it into this database.
-% If I am in error, please inform me as soon as possible.
-%
-% This entire effort has used only free software, and I am indebted to 
-% the efforts of many other individuals, including the authors of
-% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
-% to all of the great Christians who wrote these hymns.
-%
-% This database comes with no guarantees whatsoever.
-%
-% I would love to get email from anyone who uses the Open Hymnal, and
-% I will take requests for hymns to add.  My decision of whether to 
-% add a hymn will be based on these criteria (in the following order):
-% 1) It must be in the public domain or freely distributable
-% 2) It must be a Christian piece
-% 3) Whether I have access to a printed copy of the music (surprisingly,
-%    a MIDI file is usually a terrible source)
-% 4) Whether I like the hymn :)
-%
-% If you would like to contribute to the Open Hymnal Project, please 
-% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
-% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
-% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
-% that there must be mistakes right now.
-%
-% Open Hymnal Project, 2011 Edition
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% PAGE LAYOUT
-%
-%%pagewidth	21.6000cm
-%%pageheight	27.9000cm
-%%scale		0.750000
-%%staffsep	1.600000cm
-%%sysstaffsep	0.00000cm
-%%exprabove	false
-%%measurebox	false
-%OHSCRIP Lk 4:18-19, Is 61:1-2, Rev 5:11-12, Ps 107:13-14, Acts 16:25-34, Lv 25:9-10, Mk 2:18-22
-%OHTOPICS {Art and Music}, {Atonement}, {Christmas/Advent}, {Fire [2]}, {God, As King [1]}, {God, Care of [3-6]}, {God, Goodness of}, {God, Love of}, {Holy Spirit[2]}, {Jesus}, {Joy}, {Praise, Son}, {Presence}, {Salvation}, {Throne (also see God - As King) [1]}, {Victory}, {Worship}
-%OHCATEGORY ADVENT
-%OHMETRICAL 8 6 8 6
-%OHCOMPLEXITY 3
-%OHCOMPOSER Haweis, Thomas (1734-1820)
-%OHARRANGER unknown
-%OHAUTHOR Doddridge, Philip (1702-1751)
-%OHTRANSLATOR none
-%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
-%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
-%%deco sintro 6 st 6 0 0 
-%%deco eintro 6 nd 6 0 0 
-
-X: 1
-T: Hark the Glad Sound
-C: Words: Philip Doddridge, 1735.
-C: Music: 'Chesterfield' or 'Richmond (Haweis)' or 'Spa Fields Chapel' Thomas Haweis, 1792. 
-C: Setting: "The Church Hymnal, Revised and Enlarged" (Episcopal), 1896.
-C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2011 Revision.
-S: Music source: "The Church Hymnal, Revised and Enlarged" (Episcopal), 1896  Ed. Charles Hutchins Hymn 31 first tune.
-S: text from "Hymns founded on various texts in the Holy Scriptures" Philip Doddridge, 1766 Hymn 203 p.180
-M: 3/4 % time signature
-L: 1/4 % default length
-%%staves (S1V1 S1V2) | (S2V1 S2V2 S2V3) 
-V: S1V1 clef=treble 
-%%MIDI beat 127 125 110 1
-V: S1V2 
-%%MIDI beat 127 125 110 1
-V: S2V1 clef=bass 
-%%MIDI beat 127 125 110 1
-V: S2V2 stem=down
-%%MIDI beat 127 125 110 1
-V: S2V3 
-%%MIDI beat 127 125 110 1
-K: G % key signature
-%
-%%MIDI program 1 0 % Piano 1
-%%MIDI program 2 0 % Piano 1
-%%MIDI program 3 0 % Piano 1
-%%MIDI program 4 0 % Piano 1
-%%MIDI program 5 0 % Piano 1
-%
-% 1
-[V: S1V1] [Q:1/4=130] D G B | d2 c | (B c) A | G2 B | (A d) G | (F G) E | D2
-w: 1.~Hark, the glad sound! the Sa- * vior comes! The Sa-*  vior pro- * mised long;
-w: 2.~On Him the Spi- rit, large- * ly poured, Ex- erts*  its sac- * red Fire;
-w: 3.~He comes the pris- 'ners to * re- lease, In Sa-*  tan's bon- * dage held;
-w: 4.~He comes from thick- est films * of vice To clear*  the men- * tal ray,
-w: 5.~He comes the bro- ken heart * to bind, The bleed-*  ing soul * to cure;
-[V: S1V2] B, D D | D2 F | (G E) D/C/ | B,2 D | D2 E | (D E) ^C | D2
-[V: S2V1] G, B, G, | A,2 A, | (G, A,) F, | G,2 G, | A,2 A, | (A, B,) G, | F,2
-[V: S2V2] G,, G, G, | F,2 D, | (E, C,) D, | G,,2 G, | (F, B,,) ^C, | (D, G,,) A,, | D,2
-[V: S2V3] x3 | x3 | x3 | x3 | x3 | x3 | x2
-% 2
-[V: S1V1] A | (B A) G | (c B) A | (d c) B | e2 !sintro!G | (E c) B | (A G) F | G3 !eintro!|]
-w: Let ev- * ery heart * pre- pare * a throne, And ev- * ery voice * a song.
-w: Wis- dom * and might, * and zeal * and love, His ho- * ly Breast * in- spire.
-w: The gates * of brass * be- fore * Him burst, The ir- * on fet- * ters yield.
-w: And on * the eye- * balls of * the blind To pour * ce- les- * tial day.
-w: And with * the trea- * sures of * His grace T'en- rich * the hum- * ble poor.
-[V: S1V2] D | (D E) D | (E/F/ G) F | G/D/E/F/ G/=F/ | E2 D | (E ^F) G | (E D) C | B,3 |]
-[V: S2V1] F, | (G, C) B, | (A, D) D | D2 D | C2 G | (C/B,/ A,) G, | (C B,) A, | G,3 |]
-[V: S2V2] D, | D,2 D, | D,2 C | (B, A,) G, | C,2 B,, | (C, D,) E, | (C, D,) D, | G,,3 |]
-[V: S2V3] x | D,,3- | D,,3- | D,,2 G,, | C,,2 x | x3 | x3 | x3 |]
-W: 6. His silver trumpets publish loud 
-W: The jub'lee of the Lord
-W: Our debts are all remitted now 
-W: Our heritage restored.
-W: 
-W: 7. Our glad hosannas, Prince of Peace,
-W: Thy welcome shall proclaim;
-W: And Heav'n's eternal arches ring
-W: With Thy belovèd name.
+% Source: transcribed from the app's own MIDI (Hark_The_Glad_Sound-Chesterfield-Richmond_Haweis-Spa_Fields_Chapel.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:CHESTERFIELD OR RICHMOND (HAWEIS) OR SPA FIELDS CHAPEL
+C:Haweis, T.
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] G | E c B | A G F | G3 | z/ D G B/- | B/ d2 c/- | c/ B c A/- | A/ G2 B/- | B/ A d G/- | G/ F G E/- | E/ D2 A/- | A/ B A G/- | G/ c B A/- | A/ d c B/- | B/ e2- e/ |]
+[V:A] D | E F G | E D C | B,3 | z/ B, D D/- | D/ D2 F/- | F/ G E D/ | C/ B,2 D/- | D/ D2 E/- | E/ D E ^C/- | ^C/ D2 D/- | D/ D E D/- | D/ E/ F/ G F/- | F/ G/ D/ E/ F/ G/ | =F/ E2- E/ |]
+[V:T] G | C/ B,/ A, G, | C B, A, | G,3 | z/ G, B, G,/- | G,/ A,2 A,/- | A,/ G, A, F,/- | F,/ G,2 G,/- | G,/ A,2 A,/- | A,/ A, B, G,/- | G,/ F,2 F,/- | F,/ G, C B,/- | B,/ A, D D/- | D/ D2 D/- | D/ C2- C/ |]
+[V:B] B,, | C, D, E, | C, D, D, | G,,3 | z/ G,, G, G,/- | G,/ F,2 D,/- | D,/ E, C, D,/- | D,/ G,,2 G,/- | G,/ F, B,, ^C,/- | ^C,/ D, G,, A,,/- | A,,/ D,2 D,/- | D,/ D,2 D,/- | D,/ D,2 C/- | C/ B, A, G,/- | G,/ C,2- C,/ |]

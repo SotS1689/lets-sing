@@ -1,0 +1,16 @@
+% Source: transcribed from the app's own MIDI (Lo_He_Comes_With_Clouds_Descending-Holywood.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:HOLYWOOD
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] D E | F D E F | G F B A | G F E E | D2 d c | d A B A | G F B c | d c B B | A2 A A | F D- D1/4 E F3/4- | F1/4 G F- F1/4 A F/- | F/ B A/ G/ F E/- | E/ D3- D/ |]
+[V:A] A, C | D D A, D | C D D D | D/ C/ D D C | D2 F G | A F G D | C D F3/2 E/ | D E E3/2 D/ | C2 D E | D D- D1/4 C D3/4- | D1/4 D/ C/ D- D1/4 D3/2 | C/ B,/ C/ D D C/- | C/ D3- D/ |]
+[V:T] F, A, | A, A, A, A, | A, A, G, A, | B,/ G,/ A, A,3/2 G,/ | F,2 A, A, | A, D D A, | A, A, D C | B, A, A, ^G, | A,2 A, A, | A, A,- A,1/4 A, A,3/4- | A,1/4 G, A,- A,1/4 A, A,/- | A,/ G, A,/ B,/ A,3/2 | G,/ F,3- F,/ |]
+[V:B] D, A,, | D, F, C, D, | E, D, G, F, | E, D, A,, A,, | D,2 D, E, | F, D, G, F, | E, D, B,, ^A,, | B,, C,/ D,/ E, E,, | A,,2 F, C, | D, F,- F,1/4 G, F,3/4- | F,1/4 E, D,- D,1/4 F, D,/- | D,/ G, F,/ G,/ A,, A,,/- | A,,/ D,3- D,/ |]

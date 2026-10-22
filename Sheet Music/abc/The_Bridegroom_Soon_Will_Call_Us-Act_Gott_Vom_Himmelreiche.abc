@@ -1,158 +1,17 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% This file is a part of the Open Hymnal Project to create a freely 
-% distributable, downloadable database of Christian hymns, spiritual 
-% songs, and prelude/postlude music.  This music is to be distributed 
-% as complete scores (words and music), using all accompaniment parts, 
-% in formats that are easily accessible on most computer OS's and which
-% can be freely modified by anyone.  The current format of choice is the 
-% "ABC Plus" format, favored by folk music distributors on the internet.
-% All scores will also be converted into pdf, MIDI, and mp3 formats.
-% Some advanced features of ABC Plus are used, and for accurate 
-% translation to a printed score, please consider using "abcm2ps" 
-% version 4.10 or later.  I am doing my best to create a final product
-% that is "Hymnal-quality", and could feasibly be used as the basis for
-% a printed church hymnal.
-%
-% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
-% at openhymnal dot org).  I have gone through serious efforts 
-% to make sure that no copyright mistakes make it into this database.
-% If I am in error, please inform me as soon as possible.
-%
-% This entire effort has used only free software, and I am indebted to 
-% the efforts of many other individuals, including the authors of
-% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
-% to all of the great Christians who wrote these hymns.
-%
-% This database comes with no guarantees whatsoever.
-%
-% I would love to get email from anyone who uses the Open Hymnal, and
-% I will take requests for hymns to add.  My decision of whether to 
-% add a hymn will be based on these criteria (in the following order):
-% 1) It must be in the public domain or freely distributable
-% 2) It must be a Christian piece
-% 3) Whether I have access to a printed copy of the music (surprisingly,
-%    a MIDI file is usually a terrible source)
-% 4) Whether I like the hymn :)
-%
-% If you would like to contribute to the Open Hymnal Project, please 
-% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
-% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
-% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
-% that there must be mistakes right now.
-%
-% Open Hymnal Project, 2006 Edition
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% PAGE LAYOUT
-%
-%%pagewidth	21.6000cm
-%%pageheight	27.9000cm
-%%scale		0.70000
-%%staffsep	1.0000cm
-%%exprabove	false
-%%measurebox	false
-%OHSCRIP Mt 25:6, Rev 21:2
-%OHTOPICS {Angels [5]}, {Anticipation [2-7]}, {Art and Music [5]}, {Brevity of Life [1]}, {Brotherhood [2,3]}, {Bride/Bridegroom [1]}, {Crown [4]}, {Eternal Life}, {Fire [1]}, {Following Jesus, In Faith [1]}, {Following Jesus, In Action [1]}, {Heaven [2-7]}, {Hope}, {Jesus [1]}, {Joy [2-7]}, {Martyrs [2]}, {Parables [1: The 10 Virgins, Mt 25:1-13]}, {Patience [1]}, {Preparedness}, {Presence}, {Promises (see also Gospel)}, {Saints (all Faithful) [5]}, {Second Coming}, {Worship [5]}
-%OHCATEGORY END TIMES
-%OHMETRICAL 7 6 7 6 7 6 7 6
-%OHCOMPLEXITY 2
-%OHCOMPOSER Praetorius, Michael (1571-1621)
-%OHARRANGER unknown
-%OHAUTHOR Walther, Johann (1496-1570)
-%OHTRANSLATOR Loy, Matthias (1828-1915)
-%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
-%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
-%%deco sintro 6 st 6 0 0 
-%%deco eintro 6 nd 6 0 0 
-
-X: 1
-T: The Bridegroom Soon Will Call Us
-C: Words: Johann Walther, 1552. Translated by Matthias Loy, 1880. 
-C: Music: 'Act Gott Vom Himmelreiche' or 'Ich will ein Neues Singen' or 'Praetorius 7' from Musae Sionae 
-C: XII (or VII), Michael Praetorius, 1609.  Setting: "Kern des Deutschen Kirchengesangs", 1855.
-C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2006 Revision.
-S: Music source: "Mehrstimmiges ChoralBuch", 1906 Hymn 5 (LCMS).  Ed. Karl Brauer.
-S: Music source: "Kern des Deutschen Kirchengesangs", 1855 ed. Dr. Fridrich Layriz hymn 231; pdf 159 page 54; pdf 401 is index 
-M: 3/4 % time signature
-L: 1/4 % default length
-%%staves (S1V1 S1V2) | (S2V1 S2V2) 
-%%staffsep 0.62cm
-V: S1V1 clef=treble 
-%%MIDI beat 127 125 110 1
-V: S1V2 
-%%MIDI beat 127 125 110 1
-V: S2V1 clef=bass 
-%%MIDI beat 127 125 110 1
-V: S2V2 
-%%MIDI beat 127 125 110 1
-K: G % key signature
-%
-%%MIDI program 1 0 % Piano 1
-%%MIDI program 2 0 % Piano 1
-%%MIDI program 3 0 % Piano 1
-%%MIDI program 4 0 % Piano 1
-%
-% 1
-[V: S1V1] [Q:1/4=160] D | G2 G | A2 c | (B3/2 A/ B) | A2 A | G2 G | c2 B | !fermata!A2
-w: 1.~The Bride- groom soon will call * * us, Come, all ye wed- ding guests! 
-w: 2.~There shall we see de- light- * * ed Our dear Re- deem- er's face, 
-w: 3.~They will not blush to own * * us As bro- thers, sis- ters dear, 
-w: 4.~Our Fa- ther, rich in bless- * * ing, Will give us crowns of gold 
-w: 5.~In yon- der home shall ne- * * ver Be si- lent mu- sic's voice; 
-[V: S1V2]  B, | D2 B, | D2 E | E3 | ^C2 D | D2 C | C2 D | !ferm!D2
-[V: S2V1] G, | G,2 G, | F,2 A, | (^G,3/2 F,/ ^G,) | A,2 F, | G,2 E, | E,2 G, | !invertedfermata!F,2
-[V: S2V2]  G, | B,,2 E, | D,2 A,, | E,3 | A,,2 D, | B,,2 C, | A,,2 G,, | !ferm!D,2
-% 9
-[V: S1V1]  B | E2 F | G2 A | (F3/2 E/ F) | D2 B | B2 d | c2 c | !fermata!B2
-w: May not His voice ap- pall * * us, While slum- ber binds our breasts; 
-w: Who leads our souls be- night- * * ed To glo- ry by His grace; 
-w: Love ev- er will be shown * * us When we with them ap- pear; 
-w: And, to His bo- som press- * * ing, Im- part a bliss un- told, 
-w: With hearts and lips for- ev- * * er We shall in God re- joice; 
-[V: S1V2]  D | B,2 D | E2 E | D3 | D2 D | D2 D | E2 C | !ferm!D2
-[V: S2V1]  F, | G,2 A, | C2 C | (A,3/2 G,/ A,) | F,2 G, | G,2 F, | (A, E,) F, | !invertedfermata!G,2
-[V: S2V2]  D, | E,2 D, | C,2 A,, | D,3 | D,2 G,, | G,,2 B,, | A,,2 A,, | !ferm!G,,2
-[V: S2V2] 
-% 17
-[V: S1V1]  B | B2 d | A2 B | (c3/2 d/ c) | B2 B | B2 d | c2 B | !fermata!A2
-w: May all our lamps be burn- * * ing, And oil be found in store, 
-w: The pa- tri- archs shall meet * * us, The pro- phets' ho- ly band, 
-w: We all shall come be- fore * * Him, Who for us Man be- came, 
-w: Will wel- come with em- bra- * * ces Of nev- er end- ing love, 
-w: The an- gels shall a- dore * * Him, All saints shall sing His praise, 
-[V: S1V2]  D | D2 F | D2 D | (E3/2 D/ E) | D2 D | D2 F | G2 G | !ferm!F2
-[V: S2V1]  B, | B,2 A, | F,2 G, | G,3 | G,2 G, | B,2 A, | E2 D | !invertedfermata!D2
-[V: S2V2]  G, | G,2 D, | D,2 G, | C,3 | G,,2 G, | G,2 D, | E,2 G, | !ferm!D,2
-% 21
-[V: S1V1]  !sintro!B | A2 G | A2 F | (G3/2 F/ G) | A2 B | d2 B | c A2 | !fermata!G2 !eintro!|]
-w: That we, with Him re- turn- * * ing, May o- pen find the door. 
-w: A- pos- tles, mar- tyrs, greet * * us In that ce- les- tial land. 
-w: As Lord and God a- dore * * Him, And ev- er bless His Name. 
-w: And deck us with His gra- * * ces In bliss- ful realms a- bove. 
-w: And bring with  joy be- fore * * Him Their sweet- est heav'n- ly lays. 
-[V: S1V2]  G | F2 E | E2 D | (D2 E) | F2 D | D2 D | E D2 | !ferm!B,2 |]
-[V: S2V1]  D | D2 B, | C2 A, | (G,3/2 A,/ B,) | A,2 G, | A,2 G, | G, F,2 | !invertedfermata!G,2 |]
-[V: S2V2]  G,, | D,2 E, | A,,2 D, | (B,,3/2 A,,/ G,,) | D,2 G, | F,2 G, | C, D,2 | !ferm!G,,2 |]
-% 31
-%%multicol start
-%%rightmargin 12cm
-%%textfont Times-Roman 12.0
-%%begintext obeylines justify
-%% 6.\tIn mansions fair and spacious Will God the feast prepare,
-%% \t\t\t\tAnd ever kind and gracious, Bid us its riches share;
-%% \t\t\t\tThere bliss that knows no measure From springs of love shall flow,
-%% \t\t\t\tAnd never changing pleasure His bounty will bestow.
-%%endtext
-%%multicol new
-%%leftmargin 10.6cm
-%%rightmargin 2cm
-%%textfont Times-Roman 12.0
-%%begintext obeylines justify
-%% 7.\tThus God shall from all evil Forever make us free,
-%% \t\t\t\tFrom sin, and from the devil, From all adversity,
-%% \t\t\t\tFrom sickness, pain, and sadness, From troubles, cares, and fears,
-%% \t\t\t\tAnd grant us heavenly gladness And wipe away our tears.
-%%endtext
-%%multicol end
+% Source: transcribed from the app's own MIDI (The_Bridegroom_Soon_Will_Call_Us-Act_Gott_Vom_Himmelreiche.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:ACT GOTT VOM HIMMELREICHE OR ICH WILL EIN NEUES SINGEN OR PRAETORIUS 7
+C:Praetorius, M.
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] B | A2 G | A2 F | G3/2 F/ G | A2 B | d2 B | c A2 | G3 | z/ D G3/2- | G/ G A3/2- | A/ c B3/2 | A/ B A3/2- | A/ A G3/2- | G/ G c3/2- | c/ B A3/2- | A/ B E3/2- | E/ F G3/2- | G/ A F3/2 | E/ F D3/2- | D/ B B3/2- | B/ d c3/2- | c/ c B3/2- | B/ B B3/2- | B/ d A3/2- | A/ B c3/2 | d/ c B3/2- | B/ B B3/2- | B/ d c3/2- | c/ B A3/2 |]
+[V:A] G | F2 E | E2 D | D2 E | F2 D | D2 D | E D2 | B,3 | z/ B, D3/2- | D/ B, D3/2- | D/ E E3/2- | E3/2 ^C3/2- | ^C/ D D3/2- | D/ C C3/2- | C/ D D3/2- | D/ D B,3/2- | B,/ D E3/2- | E/ E D3/2- | D3/2 D3/2- | D/ D D3/2- | D/ D E3/2- | E/ C D3/2- | D/ D D3/2- | D/ F D3/2- | D/ D E3/2 | D/ E D3/2- | D/ D D3/2- | D/ F G3/2- | G/ G F3/2 |]
+[V:T] D | D2 B, | C2 A, | G,3/2 A,/ B, | A,2 G, | A,2 G, | G, F,2 | G,3 | z/ G, G,3/2- | G,/ G, F,3/2- | F,/ A, ^G,3/2 | F,/ ^G, A,3/2- | A,/ F, G,3/2- | G,/ E, E,3/2- | E,/ G, F,3/2- | F,/ F, G,3/2- | G,/ A, C3/2- | C/ C A,3/2 | G,/ A, F,3/2- | F,/ G, G,3/2- | G,/ F, A, E,/- | E,/ F, G,3/2- | G,/ B, B,3/2- | B,/ A, F,3/2- | F,/ G, G,3/2- | G,3/2 G,3/2- | G,/ G, B,3/2- | B,/ A, E3/2- | E/ D D3/2 |]
+[V:B] G,, | D,2 E, | A,,2 D, | B,,3/2 A,,/ G,, | D,2 G, | F,2 G, | C, D,2 | G,,3 | z/ G, B,,3/2- | B,,/ E, D,3/2- | D,/ A,, E,3/2- | E,3/2 A,,3/2- | A,,/ D, B,,3/2- | B,,/ C, A,,3/2- | A,,/ G,, D,3/2- | D,/ D, E,3/2- | E,/ D, C,3/2- | C,/ A,, D,3/2- | D,3/2 D,3/2- | D,/ G,, G,,3/2- | G,,/ B,, A,,3/2- | A,,/ A,, G,,3/2- | G,,/ G, G,3/2- | G,/ D, D,3/2- | D,/ G, C,3/2- | C,3/2 G,,3/2- | G,,/ G, G,3/2- | G,/ D, E,3/2- | E,/ G, D,3/2 |]
