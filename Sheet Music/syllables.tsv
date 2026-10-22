@@ -51,6 +51,7 @@ according	ac-cor-ding	ac-cording
 accords	ac-cords
 accursed	ac-cursed
 accuse	ac-cuse
+accuses	ac-cu-ses
 ache	ache
 acknowledge	ack-now-ledge
 acquaintance	ac-quain-tance
@@ -90,6 +91,7 @@ adversity	ad-ver-si-ty
 advocate	ad-vo-cate
 afar	a-far
 afeeding	a-fee-ding	a-feeding	a-fe-e-ding
+affection	af-fec-tion
 afflict	af-flict
 afflicted	af-flic-ted
 affliction	af-flic-tion
@@ -378,6 +380,7 @@ bars	bars
 bartimaeus	bar-ti-maeus	bar-timaeus	bar-ti-ma-eus
 base	base
 based	based
+bated	ba-ted
 bath	bath
 battered	bat-tered
 battle	batt-le
@@ -437,6 +440,7 @@ beguiled	be-guiled	be-gu-iled
 begun	be-gun
 behavior	be-ha-vior
 beheld	be-held
+behest	be-hest
 behind	be-hind
 behold	be-hold
 beholder	be-hol-der
@@ -451,6 +455,7 @@ believd	be-lievd	believd	be-li-evd
 believe	be-lieve	believe
 believed	be-lieved	believed	be-li-eved
 believer	be-lie-ver	be-liever
+believers	be-lie-vers	be-lievers
 believes	be-lieves	believes
 believing	be-lie-ving	be-lieving
 bells	bells
@@ -716,6 +721,7 @@ calling	cal-ling	calling
 calls	calls
 calm	calm
 calmly	calm-ly
+calms	calms
 calumnies	ca-lum-nies	ca-lumnies	ca-lum-ni-es
 calumny	ca-lum-ny
 calvary	cal-va-ry	cal-vary
@@ -789,6 +795,7 @@ celestial	ce-le-stial	ce-lestial
 cells	cells
 center	cen-ter
 centered	cen-tered
+central	cen-tral
 certain	cer-tain
 certainly	cer-tain-ly
 chafe	chafe
@@ -799,6 +806,7 @@ challenge	chal-lenge
 chamber	cham-ber
 change	change
 changed	changed
+changeful	chang-e-ful	chang-eful
 changeless	chang-e-less	chang-eless
 changes	chang-es
 changest	chang-est
@@ -1062,6 +1070,7 @@ contended	con-ten-ded
 contending	con-ten-ding	con-tending
 content	con-tent
 contented	con-ten-ted
+continent	con-ti-nent
 continually	con-ti-nual-ly	con-ti-nu-al-ly
 continued	con-ti-nued
 continueth	con-ti-nu-eth
@@ -1199,6 +1208,7 @@ dared	dared
 dark	dark
 darkened	dar-kened
 darkest	dar-kest
+darkling	dark-ling	darkling
 darkly	dark-ly
 darkness	dar-kness
 darksome	dark-some	darksome	dark-so-me
@@ -1287,6 +1297,7 @@ defender	de-fen-der
 defendest	de-fen-dest
 defending	de-fen-ding	de-fending
 defense	de-fense
+defenseless	de-fen-seless
 defiance	de-fi-ance
 defied	de-fied
 defile	de-file	defile	de-fi-le
@@ -1339,6 +1350,7 @@ deplore	de-plore
 depth	depth
 depths	depths
 deride	de-ride
+derided	de-ri-ded
 derision	de-ri-sion
 derive	de-rive
 deriving	de-ri-ving	de-riving
@@ -1351,6 +1363,7 @@ desert	de-sert
 deserts	de-serts
 deserve	de-serve
 deserved	de-served
+deserving	de-ser-ving	de-serving
 design	de-sign
 designed	de-signed
 designs	de-signs
@@ -1540,6 +1553,7 @@ drifted	drif-ted
 drink	drink
 drive	drive
 driven	dri-ven	driven
+drives	drives
 droop	droop
 drooping	droo-ping	drooping
 drops	drops
@@ -1633,6 +1647,8 @@ embraces	em-bra-ces
 embracing	em-bra-cing	em-bracing
 emmanuel	em-ma-nu-el
 emotion	e-mo-tion
+empire	em-pi-re	em-pire
+empires	em-pires
 employ	em-ploy
 employed	em-ployed
 emptied	emp-tied
@@ -1886,6 +1902,7 @@ fearless	fear-less
 fears	fears
 feast	feast
 feasting	fea-sting	feasting
+feasts	feasts
 feathered	fea-thered	fe-a-thered
 feathers	fea-thers
 fed	fed
@@ -1897,6 +1914,7 @@ feedeth	fee-deth
 feeding	fee-ding	feeding
 feeds	feeds
 feel	feel
+feeleth	fee-leth
 feeling	fee-ling	feeling
 feelings	fee-lings	feelings
 feels	feels
@@ -1959,6 +1977,7 @@ firstborn	first-born
 firstfruits	first-fruits	firstfruits	first-fru-its
 fishers	fi-shers
 fit	fit
+fitness	fit-ness
 fitting	fit-ting	fitting
 fix	fix
 fixed	fixed
@@ -2009,6 +2028,7 @@ fly	fly
 flying	fly-ing	flying
 foaming	foa-ming	foaming
 foe	foe
+foeman	foe-man	foeman	fo-e-man
 foes	foes
 foil	foil
 foiled	foiled	fo-iled
@@ -2096,6 +2116,7 @@ foundations	foun-da-tions
 founded	foun-ded
 fount	fount	fo-unt
 fountain	foun-tain
+fountainhead	foun-tain-head	foun-tainhead	foun-tain-he-ad
 fountains	foun-tains
 four	four
 fourfold	four-fold
@@ -2176,6 +2197,7 @@ garden	gar-den
 garlands	gar-lands	garlands
 garment	gar-ment
 garments	gar-ments
+garner	gar-ner
 garners	gar-ners
 gate	gate
 gates	gates
@@ -2241,6 +2263,7 @@ gleams	gleams
 glee	glee
 gliding	gli-ding	gliding
 glistening	gli-stening	gli-ste-ning
+glittering	glit-te-ring	glit-tering
 globe	globe
 gloom	gloom
 gloomy	gloo-my
@@ -2387,6 +2410,7 @@ hammers	ham-mers
 hand	hand
 handiwork	han-di-work
 hands	hands
+hangs	hangs
 happened	hap-pened
 happily	hap-pi-ly
 happiness	hap-pi-ness
@@ -2405,6 +2429,7 @@ harsh	harsh
 harshness	harsh-ness
 hart	hart
 harvest	har-vest
+harvesthome	har-vest-home
 harvests	har-vests
 has	has
 hast	hast
@@ -2471,6 +2496,7 @@ heavnward	heavn-ward	heavnward	he-avn-ward
 heavy	hea-vy
 hebrews	he-brews
 heed	heed
+heedeth	hee-deth
 heedful	heed-ful	heedful	he-ed-ful
 heeding	hee-ding	heeding
 heedless	heed-less	heedless	he-ed-less
@@ -2560,6 +2586,7 @@ hope	hope
 hopeful	ho-peful
 hopeless	ho-peless
 hopes	hopes
+hoping	ho-ping	hoping
 horn	horn
 horns	horns
 horrid	hor-rid
@@ -2600,6 +2627,7 @@ hurl	hurl
 hurling	hur-ling	hurling
 hurt	hurt
 hurtful	hurt-ful
+husband	hus-band
 hush	hush
 hushd	hushd
 hymn	hymn
@@ -2622,6 +2650,7 @@ illuminator	il-lu-mi-na-tor
 illumine	il-lu-mine	il-lumine	il-lu-mi-ne
 illuming	il-lu-ming	il-luming
 illumining	il-lu-mi-ning	il-lu-mining
+illustrious	il-lus-tri-ous	il-lus-trious
 im	im
 image	i-mage
 imaged	i-maged	imaged
@@ -2720,6 +2749,7 @@ interposed	in-ter-posed	in-terposed
 interpreter	in-ter-pre-ter
 intersected	in-ter-sec-ted
 into	in-to
+intrude	in-trude
 invent	in-vent
 invisible	in-vi-si-ble
 invitation	in-vi-ta-tion
@@ -2735,6 +2765,7 @@ is	is
 isaiah	i-sai-ah
 ishmelites	ish-me-lites	ish-melites
 island	i-sland
+islands	i-slands
 isles	isles
 israel	is-rael	is-ra-el
 israelites	is-rae-lites
@@ -2878,6 +2909,7 @@ land	land
 lands	lands
 language	lang-uage
 languish	lang-uish
+lantern	lan-tern
 lap	lap
 large	large
 largely	lar-gely
@@ -2930,6 +2962,7 @@ left	left
 legal	le-gal
 legions	le-gions
 lend	lend
+lendest	len-dest
 lendeth	len-deth
 length	length
 lengthen	leng-then
@@ -3029,6 +3062,7 @@ looking	loo-king	looking
 looks	looks
 lookst	lookst
 loose	loose
+loosed	loosed	lo-osed
 loosened	loo-sened	lo-o-sened
 lord	lord
 lords	lords
@@ -3365,6 +3399,7 @@ neighbors	neigh-bors
 neither	nei-ther
 nerve	nerve
 nest	nest
+nestling	nest-ling	nestling
 net	net
 never	ne-ver	never
 neverfailing	ne-ver-fai-ling
@@ -3422,6 +3457,7 @@ obey	o-bey
 obeyed	o-beyed
 obeys	o-beys
 object	ob-ject
+oblation	o-bla-tion	o-blation	o-bla-ti-on
 oblations	o-bla-tions	o-blations	o-bla-ti-ons
 observe	ob-serve
 observes	ob-serves
@@ -3547,6 +3583,7 @@ owns	owns
 ownst	ownst
 ox	ox
 oxen	o-xen
+page	page
 paid	paid
 pain	pain
 pained	pained	pa-ined
@@ -3673,9 +3710,11 @@ pervert	per-vert
 pestilence	pe-sti-lence
 petition	pe-ti-tion
 pharaoh	pha-raoh
+pharaohs	pha-raohs
 philistines	phi-li-stines
 physician	phy-si-cian	phy-sician
 physicians	phy-si-cians	phy-sicians
+picture	pic-ture
 pieces	pie-ces
 piercd	piercd	pi-ercd
 pierce	pierce
@@ -3826,6 +3865,7 @@ pressed	pressed
 presses	pres-ses
 pressing	pres-sing	pressing
 pretend	pre-tend
+pretended	pre-ten-ded
 prevail	pre-vail
 prevailed	pre-vailed	pre-va-iled
 prevaileth	pre-vai-leth
@@ -3890,6 +3930,7 @@ protect	pro-tect
 protected	pro-tec-ted
 protecting	pro-tec-ting	pro-tecting
 protection	pro-tec-tion
+protector	pro-tec-tor
 proud	proud
 proudly	proud-ly
 prove	prove
@@ -3950,6 +3991,7 @@ quicken	quick-en
 quickening	quick-e-ning	quick-ening
 quickly	quick-ly
 quickning	quick-ning	quickning	qu-ick-ning
+quicksands	quick-sands
 quiet	qu-iet
 quietness	qu-iet-ness
 quill	quill
@@ -4348,6 +4390,7 @@ sages	sa-ges
 said	said
 saidst	saidst
 sail	sail
+sailed	sailed	sa-iled
 saint	saint
 saintly	saint-ly
 saints	saints
@@ -4529,6 +4572,7 @@ share	share
 shared	shared
 sharer	sha-rer
 shares	shares
+shareth	sha-reth
 sharing	sha-ring	sharing
 sharp	sharp
 shatter	shat-ter
@@ -4584,6 +4628,7 @@ showed	showed
 shower	sho-wer	shower
 showers	sho-wers	showers
 showest	sho-west
+showeth	sho-weth
 showing	sho-wing	showing
 shown	shown
 showr	showr
@@ -4841,6 +4886,7 @@ stain	stain
 stained	stained	sta-ined
 stains	stains
 stalk	stalk
+stall	stall
 stalwart	stal-wart
 stamp	stamp
 stand	stand
@@ -4979,6 +5025,7 @@ suffered	suf-fered
 suffering	suf-fering	suf-fe-ring
 sufferings	suf-ferings	suf-fe-rings
 suffers	suf-fers
+suffice	suf-fice
 sufficed	suf-ficed
 sufficient	suf-fi-cient
 suffrer	suf-frer	suffrer
@@ -5011,6 +5058,7 @@ supplies	sup-plies
 supply	sup-ply
 supplying	sup-ply-ing	sup-plying
 support	sup-port
+supported	sup-por-ted
 suppose	sup-pose
 suppressed	sup-pressed
 supreme	su-preme
@@ -5085,6 +5133,7 @@ talent	ta-lent
 tales	tales
 talk	talk
 tames	tames
+tares	tares
 tarry	tar-ry
 tars	tars
 task	task
@@ -5294,6 +5343,7 @@ tokens	to-kens
 told	told
 toll	toll
 tomb	tomb
+tombs	tombs
 tomorrow	to-mor-row
 tone	tone
 tones	tones
@@ -5352,9 +5402,12 @@ treachery	trea-che-ry	trea-chery
 treachrous	treach-rous	treachrous	tre-ach-rous
 tread	tread
 treadeth	trea-deth
+treading	trea-ding	treading
+treason	trea-son
 treasure	trea-sure
 treasured	trea-sured	tre-a-sured
 treasures	trea-sures
+treasury	trea-su-ry
 treat	treat
 treats	treats
 tree	tree
@@ -5398,6 +5451,7 @@ trumpet	trum-pet
 trumpeted	trum-pe-ted
 trumpets	trum-pets
 trust	trust
+trusted	tru-sted
 trusting	tru-sting	trusting
 trusts	trusts
 trusty	tru-sty
@@ -5419,6 +5473,7 @@ turning	tur-ning	turning
 turns	turns
 twain	twain
 twas	twas
+twelve	twelve
 twere	twere	twe-re
 twilight	twi-light
 twill	twill
@@ -5447,6 +5502,7 @@ unceasing	un-cea-sing	un-ceasing
 uncertainties	un-cer-tain-ties
 uncertainty	un-cer-tain-ty
 unchangeable	un-chang-ea-ble	un-chang-eable	un-chang-e-a-ble
+unchanged	un-changed
 unchanging	un-chang-ing	un-changing
 unclean	un-clean
 unclouded	un-clou-ded	un-clouded	un-clo-u-ded
@@ -5479,6 +5535,7 @@ unfathomable	un-fa-tho-ma-ble
 unfathomed	un-fa-thomed	un-fathomed
 unfearing	un-fea-ring	un-fearing	un-fe-a-ring
 unfeigned	un-feigned	un-fe-igned	unfeigned
+unfilled	un-filled
 unfold	un-fold
 unfoldest	un-fol-dest
 unfolding	un-fol-ding	un-folding
@@ -5504,6 +5561,7 @@ unless	un-less
 unlike	un-like
 unloose	un-loose	unloose	un-lo-ose
 unmeasured	un-mea-sured	un-me-a-sured	un-measured
+unmoistened	un-moi-stened	un-mo-i-stened	un-moistened
 unmourned	un-mourned	un-mo-urned	unmourned
 unmoved	un-moved
 unnumbered	un-num-bered	un-numbered
@@ -5512,14 +5570,17 @@ unprotected	un-pro-tec-ted
 unprovoked	un-pro-voked
 unresting	un-re-sting	un-resting
 unrighteous	un-righ-teous	un-righteous	un-righ-te-ous
+unrighteousness	un-righ-teou-sness	un-righ-teousness	un-righ-te-ou-sness
 unseal	un-seal
 unsearchable	un-sear-cha-ble	un-sear-chable	un-se-ar-cha-ble
 unseen	un-seen
 unshadowed	un-sha-dowed	un-shadowed
 unshaken	un-sha-ken
+unsleeping	un-slee-ping	un-sleeping	un-sle-e-ping
 unslumbring	un-slum-bring	un-slumbring
 unsparing	un-spa-ring	un-sparing
 unsteadfast	un-stead-fast	un-steadfast	un-ste-ad-fast
+unswerving	un-swer-ving	un-swerving
 until	un-til
 untimely	un-ti-mely
 unto	un-to
@@ -5600,6 +5661,7 @@ verily	ve-ri-ly	ve-rily
 vernal	ver-nal
 verse	verse
 very	ve-ry	very
+vessel	ves-sel
 vesture	ve-sture	vesture	ve-stu-re
 vex	vex
 vexd	vexd
@@ -5651,6 +5713,7 @@ vouchsafed	vouch-safed	vo-uch-safed	vouchsafed
 vow	vow
 vowed	vowed
 vows	vows
+waft	waft
 wafting	waf-ting	wafting
 wage	wage
 wageth	wa-geth
@@ -5694,6 +5757,7 @@ wards	wards
 warfare	war-fare
 warm	warm
 warmed	warmed
+warmest	war-mest
 warmeth	war-meth
 warms	warms
 warmth	warmth
@@ -5714,6 +5778,7 @@ wasted	wa-sted
 wasting	wa-sting	wasting
 watch	watch
 watched	watched
+watchers	wat-chers
 watches	wat-ches
 watcheth	wat-cheth
 watchful	watch-ful
@@ -5749,6 +5814,7 @@ weareth	wea-reth
 wearied	wea-ried
 wearies	wea-ries	wearies	we-a-ries
 weariness	wea-ri-ness
+wearing	wea-ring	wearing
 weary	wea-ry	weary
 wed	wed
 wedding	wed-ding	wedding
@@ -5762,6 +5828,7 @@ weigh	weigh
 weighed	weighed	we-ighed
 weight	weight
 welcome	wel-come
+welcomes	wel-comes
 welfare	wel-fare
 well	well
 wellarmed	well-armed
@@ -5776,6 +5843,7 @@ wept	wept
 were	were
 wert	wert
 west	west
+western	we-stern
 wet	wet
 weve	weve
 what	what
@@ -5943,6 +6011,7 @@ wounds	wounds
 wraps	wraps
 wrath	wrath
 wraths	wraths
+wreaths	wreaths
 wrecked	wrecked
 wrecks	wrecks
 wrest	wrest

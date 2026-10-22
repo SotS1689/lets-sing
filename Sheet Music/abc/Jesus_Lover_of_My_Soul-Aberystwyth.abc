@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This file is a part of the Open Hymnal Project to create a freely 
+% distributable, downloadable database of Christian hymns, spiritual 
+% songs, and prelude/postlude music.  This music is to be distributed 
+% as complete scores (words and music), using all accompaniment parts, 
+% in formats that are easily accessible on most computer OS's and which
+% can be freely modified by anyone.  The current format of choice is the 
+% "ABC Plus" format, favored by folk music distributors on the internet.
+% All scores will also be converted into pdf, MIDI, and mp3 formats.
+% Some advanced features of ABC Plus are used, and for accurate 
+% translation to a printed score, please consider using "abcm2ps" 
+% version 4.10 or later.  I am doing my best to create a final product
+% that is "Hymnal-quality", and could feasibly be used as the basis for
+% a printed church hymnal.
+%
+% The maintainer of the Open Hymnal Project is Brian J. Dumont (editor
+% at openhymnal dot org).  I have gone through serious efforts 
+% to make sure that no copyright mistakes make it into this database.
+% If I am in error, please inform me as soon as possible.
+%
+% This entire effort has used only free software, and I am indebted to 
+% the efforts of many other individuals, including the authors of
+% the various ABC and ABC Plus software.  Undoubtedly, I am also indebted 
+% to all of the great Christians who wrote these hymns.
+%
+% This database comes with no guarantees whatsoever.
+%
+% I would love to get email from anyone who uses the Open Hymnal, and
+% I will take requests for hymns to add.  My decision of whether to 
+% add a hymn will be based on these criteria (in the following order):
+% 1) It must be in the public domain or freely distributable
+% 2) It must be a Christian piece
+% 3) Whether I have access to a printed copy of the music (surprisingly,
+%    a MIDI file is usually a terrible source)
+% 4) Whether I like the hymn :)
+%
+% If you would like to contribute to the Open Hymnal Project, please 
+% send an email to me, I would love the help!  PLEASE EMAIL ME IF YOU 
+% FIND ANY MISTAKES, no matter how small.  I want to ensure that every 
+% slur, stem, hyphenation, and punctuation mark is correct; and I'm sure 
+% that there must be mistakes right now.
+%
+% Open Hymnal Project, 2008 Edition
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAGE LAYOUT
+%
+%%pagewidth	21.6000cm
+%%pageheight	27.9000cm
+%%scale		0.730000
+%%staffsep	0.60000cm
+%%exprabove	false
+%%measurebox	false
+%OHSCRIP Ps 39:12, Ez 18:30-32, Lk 18:13, Ps 86:3, Job 42:6
+%OHTOPICS {Atonement}, {Conscience}, {Contrition}, {Cross}, {Easter Week / Passion}, {God, As King [1]}, {Humility}, {Jesus}, {Repentance}, {Reverence}, {Sacrifice [4]}
+%OHCATEGORY LENT
+%OHMETRICAL 7 7 7 7 7 7 7 7
+%OHCOMPLEXITY 3
+%OHCOMPOSER Parry, Joseph (1841-1903)
+%OHARRANGER unknown
+%OHAUTHOR Grant, Robert (1778-1838)
+%OHTRANSLATOR none
+%%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
+%%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
+%%deco sintro 6 st 6 0 0 
+%%deco eintro 6 nd 6 0 0 
+
+X: 1
+T: Savior When In Dust To Thee
+C: Words: Robert Grant, 1815, alt. 
+C: Music: 'Aberystwyth (Parry)' Joseph Parry, 1879.  Setting: "The English Hymnal", 1906.
+C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision.
+S: Music source: "The English Hymnal", 1906 Hymn 87
+M: 4/4 % time signature
+L: 1/4 % default length
+%%staves (S1V1 S1V2) | (S2V1 S2V2) 
+V: S1V1 clef=treble 
+%%MIDI beat 127 125 110 1
+V: S1V2 
+%%MIDI beat 127 125 110 1
+V: S2V1 clef=bass 
+%%MIDI beat 127 125 110 1
+V: S2V2 
+%%MIDI beat 127 125 110 1
+K: F % key signature
+%
+%%MIDI program 1 0 % Piano 1
+%%MIDI program 2 0 % Piano 1
+%%MIDI program 3 0 % Piano 1
+%%MIDI program 4 0 % Piano 1
+%
+% 1
+[V: S1V1] [Q:1/4=100] D D/E/ F/G/ A | F E D2 | F E D ^C | D/E/ F E2 |
+w: 1.~Sa- vior, * when * in dust to Thee Low we bow th'a- dor- * ing knee, 
+w: 2.~By Thy * help- * less in- fant years, By Thy life of want * and tears, 
+w: 3.~By the * sac- * red griefs that wept O'er the grave where La- * z'rus slept, 
+w: 4.~By Thine * hour * of dire de- spair, By Thine a- go- ny * of prayer, 
+w: 5.~By Thy * deep * ex- pir- ing groan, By the sad sep- ul- * chral stone, 
+[V: S1V2]  A, D/^C/ D/E/ F | D ^C A,2 | D ^C D A, | A, D ^C2 |
+[V: S2V1]  F, A, A, A, | A, A,/G,/ F,2 | A, A, A, A, | A, A, A,2 |
+[V: S2V2]  D, F,,/A,,/ D, F,,/G,,/ | A,, A,, D,2 | D, E, F, G, | F,/E,/ D, A,,2 |
+% 6
+[V: S1V1]  D D/E/ F/G/ A | F E D2 | E F/G/ A G | F E D2 |
+w: When, re- * pent- * ant, to the skies Scarce we * lift our weep- ing eyes, 
+w: By Thy * days * of sore dis- tress In the * sa- vage wild- er- ness, 
+w: By the * bod- * ing tears that flowed O- ver * Sa- lem's loved a- bode, 
+w: By the * cross, * the nail, the thorn, Pier- cing * spear, and tor- turing scorn, 
+w: By the * vault * whose dark a- bode Held in * vain the ri- sing God, 
+[V: S1V2]  A, A,/^C/ D/E/ F | D ^C A,2 | ^C D/E/ F E | D ^C A,2 |
+[V: S2V1]  F,/G,/ A, A, A, | A, E,/G,/ F,2 | A, A,/=C/ C B, | A, A,/G,/ F,2 |
+[V: S2V2]  D,/E,/ F,/E,/ D, F,,/G,,/ | A,, A,, D,2 | A,, D,/=C,/ F, G, | A, A,, D,2 |
+% 9
+[V: S1V1]  D C D E | F A/G/ F2 | F E F G | A c/=B/ A2 |
+w: O by all the pains and * woes Suff- ered once for man be- * low, 
+w: By the dread mys- ter- ious * hour Of th'in- sult- ing temp- ter's * pow'r, 
+w: By the an- guished sigh that * told Treach- er- y lurked with- in Thy fold, 
+w: By the gloom that veiled the * skies O'er the dread- ful sac- ri- * fice, 
+w: O from earth to heaven re- * stored, Might- y, re- as- cend- ed * Lord, 
+[V: S1V2]  B, A, B, B, | C E C2 | D ^C D E/=C/ | C E/D/ C2 |
+[V: S2V1]  F, F, F, G, | A, C/B,/ A,2 | A, A, A, C | F,/ (A, ^G,/) A,2 |
+[V: S2V2]  B,, F,, B,,/A,,/ G,, | F,, C, F,,2 | D, A,, D, C,/E,/ | F, E, A,,2 |
+% 13
+[V: S1V1]  d d c A | F G A2 | !sintro!D D/E/ F/G/ A | F E D2 !eintro!|]
+w: Bend- ing from Thy throne on high, Hear our * pen- * i- ten- tial cry! 
+w: Turn, O turn a fav'r- ing eye, Hear our * pen- * i- ten- tial cry! 
+w: From Thy seat a- bove the sky, Hear our * pen- * i- ten- tial cry! 
+w: Lis- ten to our hum- ble cry, Hear our * pen- * i- ten- tial cry! 
+w: Lis- ten, lis- ten to the sigh Of our * pen- * i- ten- tial cry! 
+[V: S1V2]  D F/E/ F C | D D E2 | D D/^C/ D/E/ F | D ^C A,2 |]
+[V: S2V1]  F, B, C F, | A, D ^C2 | A,/B,/ A,/G,/ A, A, | A, E,//F,//G,/ F,2 |]
+[V: S2V2]  B,, B, A, F, | D, B,, A,,2 | F,/G,/ F,/E,/ D, F,,/G,,/ | A,, A,, D,2 |]
+% 18

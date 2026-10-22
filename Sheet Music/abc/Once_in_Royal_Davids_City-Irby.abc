@@ -1,0 +1,29 @@
+% Source: Cyber Hymnal Irby.nwc
+% Slur added on G-A in line 3 ("laid her BA-by" / "was a STA-ble"), as in line 1: one syllable on the two eighths, so every 8.7.8.7.7.7 verse fits.
+X:1
+T:Irby
+M:4/4
+L:1/8
+Q:1/4=105
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] D2 F2 | G3 G (G F) (G A) | A2 G2 G2 B2 | d3 B (B A) (G F) |
+[V:A] D2 C2 | D3 D D2 (D F) | F2 G2 D2 G2 | G3 G E2 D2 |
+[V:T] B,2 A,2 | G,3 B, (B, A,) (B, C) | C2 B,2 B,2 G,2 | G,3 D (D C) (B, A,) |
+[V:B] G,,2 A,,2 | B,,3 G,, D,2 D,2 | D,2 G,2 G,2 E,2 | B,,3 G,, C,2 D,2 |
+[V:S] G4 D2 F2 | G3 G (G F) (G A) | A2 G2 G2 B2 | d3 B (B A) (G F) |
+[V:A] D4 D2 C2 | D3 D ^C2 ^C2 | (D C) B,2 D2 G2 | G3 G E2 D2 |
+[V:T] B,4 B,2 A,2 | G,3 B, G,2 G,2 | F,2 G,2 B,2 G,2 | G,3 D (D C) (B, A,) |
+[V:B] G,,4 G,,2 A,,2 | B,,3 G,, E,2 A,,2 | D,2 G,2 G,2 E,2 | B,,3 G,, C,2 D,2 |
+[V:S] G4 e2 e2 | d3 G c2 c2 | B4 e2 e2 | d3 B (B A) (G F) |
+[V:A] D4 G2 G2 | (G F G) G G2 F2 | G4 (E F) (G A) | (D F G) D E2 D2 |
+[V:T] B,4 C2 C2 | (B, C D) B, A,2 D2 | D4 C2 C2 | (C A, B,) D (D C) (B, A,) |
+[V:B] G,,4 (C, D,) E, F, | (G, A, B,) G, D,2 D,2 | G,4 (C, D,) (E, F,) | G,3 G, C,2 D,2 |
+[V:S] G4 |]
+[V:A] D4 |]
+[V:T] B,4 |]
+[V:B] G,,4 |]

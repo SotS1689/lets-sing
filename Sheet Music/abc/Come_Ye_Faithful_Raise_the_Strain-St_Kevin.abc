@@ -1,0 +1,28 @@
+% Source: Cyber Hymnal StKevin.nwc
+X:1
+T:St. Kevin
+M:4/4
+L:1/8
+Q:1/4=113
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:G
+[V:S] B2 B2 (B A) G2 | B2 c2 d4 | G2 A2 B2 c2 | B4 A4 |
+[V:A] G2 G2 (G F) G2 | G2 F2 G4 | E2 F2 G2 A2 | G4 F4 |
+[V:T] D2 D2 (D C) B,2 | D2 D2 D4 | B,2 D2 D2 E2 | D4 D4 |
+[V:B] G,2 G,2 G,2 G,2 | G,2 A,2 B,4 | E,2 D,2 G,2 C,2 | D,4 D,4 |
+[V:S] A2 A2 (^c B) A2 | d2 d2 F4 | A2 A2 B2 (A G) | F4 D4 |
+[V:A] G2 G2 E2 E2 | D2 D2 D4 | F2 F2 G2 (F E) | D4 D4 |
+[V:T] ^C2 ^C2 (A, B,) ^C2 | D2 A,2 D4 | D2 D2 ^C2 ^C2 | D4 D,4 |
+[V:B] E,2 E,2 G,2 G,2 | F,2 F,2 B,4 | A,2 A,2 A,,2 A,,2 | D,4 D,4 |
+[V:S] A2 A2 (A G) A2 | B2 A2 B4 | B2 B2 (c d) e2 | G4 F4 |
+[V:A] F2 F2 (F E) D2 | D2 F2 G4 | ^G2 ^G2 A2 E2 | D4 D4 |
+[V:T] C2 C2 (C B,) A,2 | G,2 D2 D4 | E2 E2 (E D) C2 | B,4 A,4 |
+[V:B] D,2 D,2 (D, E,) F,2 | G,2 D,2 G,4 | E,2 E,2 A,2 C,2 | D,4 D,4 |
+[V:S] B2 B2 (B A) G2 | B2 c2 d4 | G2 A2 B2 c2 | A4 G4 |]
+[V:A] G2 G2 (G F) G2 | G2 G2 G4 | G2 G2 G2 G2 | F4 G4 |]
+[V:T] D2 D2 (D C) B,2 | D2 D2 =F4 | E2 E2 D2 C2 | C4 B,4 |]
+[V:B] G,2 G,2 G,2 G,2 | G,2 A,2 B,4 | C2 C2 B,2 A,2 | D,4 G,4 |]

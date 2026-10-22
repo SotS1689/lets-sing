@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (Come_Ye_Sinners_Poor_and_Needy-Restoration.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:RESTORATION
+C:William Walker
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Gm
+[V:S] G B | G (F/ G/) B B | (G/ F/) D F F | G (F/ G/) B c | d2 d f | (d/ c/) B c d | (B/ G/) F G3/2 (B/ | G/) (F/ D/) C/ D ^F | G2 G B/ B/ | G (F/ G/) B B | (G/ F/) D F F/ F/ | G (F/ G/) B c | d2 d f | (d/ c/) B c d | (B/ G/) F G3/2 (B/ | G/) (F/ D/) C/ D ^F | G4 |]
+[V:A] G B | G F/ G/ B B | G/ F/ D D D | E D/ E/ F F | F2 F B | A G F F | D D D3/2 D/ | E/ D/ B,/ A,/ B, C | D2 G B/ B/ | G F/ G/ B B | G/ F/ D D D/ D/ | E D/ E/ F F | F2 F B | A G F F | D D D3/2 D/ | E/ D/ B,/ A,/ B, D | D4 |]
+[V:T] G, B, | G, F,/ G,/ B, B, | G,/ F,/ D, B, B, | B, B, B, A, | B,2 B, D | D D C B, | B, B, B,3/2 B,/ | B, B,/ G,/ G, G, | B,2 G, B,/ B,/ | G, F,/ G,/ B, B, | G,/ F,/ D, B, B,/ B,/ | B, B, B, A, | B,2 B, D | D D C B, | B, B, B,3/2 B,/ | B, B,/ G,/ G, A, | B,4 |]
+[V:B] G, B, | G, F,/ G,/ B, B, | G,/ F,/ D, B,, B,, | B,, B,, D, F, | B,2 B, B, | ^F, G, A, B, | G,/ D,/ B, G,3/2 G,/ | E,/ F,/ G, D, D, | G,2 G, B,/ B,/ | G, F,/ G,/ B, B, | G,/ F,/ D, B,, B,,/ B,,/ | B,, B,, D, F, | B,2 B, B, | ^F, G, A, B, | G,/ D,/ B, G,3/2 G,/ | E,/ F,/ G, D, D, | G,4 |]

@@ -1,0 +1,32 @@
+% Source: Cyber Hymnal Munich.nwc
+X:1
+T:Munich
+M:4/4
+L:1/8
+Q:1/4=110
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Eb
+[V:S] (E F) | G2 c2 B2 A2 | G4 G2 G2 | B2 (A G) F2 F2 |
+[V:A] E2 | E2 E2 D2 F2 | E4 E2 E2 | E2 E2 E2 D2 |
+[V:T] (G, A,) | B,2 (A, G,) F,2 B,2 | B,4 B,2 B,2 | B,2 C2 (F, G,) A,2 |
+[V:B] E,2 | E,2 A,,2 B,,2 D,2 | E,4 E,2 E,2 | G,,2 A,,2 B,,2 B,,2 |
+[V:S] E6 (E F) | G2 c2 B2 A2 | G4 G2 G2 | B2 (A G) F2 F2 |
+[V:A] E6 (B, D) | E2 G2 F2 (F E) | D4 D2 E2 | E2 E2 E2 D2 |
+[V:T] G,6 (G, F,) | B,2 E2 D2 C2 | =B,4 =B,2 C2 | B,2 C2 (F, G,) A,2 |
+[V:B] E,6 (G, F,) | E,2 C,2 (D, E,) F,2 | G,4 G,2 C,2 | G,,2 A,,2 B,,2 B,,2 |
+[V:S] E6 F2 | F2 G2 A2 A2 | G4 G2 c2 | e2 c2 G2 =A2 |
+[V:A] E6 D2 | D2 =E2 F2 F2 | E4 E2 F2 | E2 G2 G2 (F E) |
+[V:T] G,6 B,2 | B,2 B,2 C2 C2 | C4 C2 A,2 | G,2 (E D) C2 C2 |
+[V:B] E,6 B,2 | A,2 G,2 F,2 F,2 | C,4 C,2 C,2 | C,2 (C, D,) E,2 F,2 |
+[V:S] B6 B2 | B2 G2 A2 B2 | c4 c2 B2 | A2 G2 F2 F2 |
+[V:A] D6 F2 | E2 E2 E2 (F G) | A4 A2 E2 | E2 E2 E2 D2 |
+[V:T] B,6 A,2 | G,2 B,2 E2 _D2 | C4 E2 E2 | A,2 C2 (F, G,) A,2 |
+[V:B] B,,6 D,2 | E,2 _D,2 C,2 B,,2 | A,,4 A,,2 G,,2 | C,2 A,,2 B,,2 B,,2 |
+[V:S] E6 |]
+[V:A] E6 |]
+[V:T] G,6 |]
+[V:B] E,6 |]

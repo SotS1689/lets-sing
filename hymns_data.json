@@ -216,6 +216,24 @@
     "credits": "Words: Joshua Stegmann, 1628.  Translated by August Crull circa 1892. Music: 'Christus der ist mein Leben' Melchior Vulpius, 1609. Setting: \"Mehrstimmiges ChoralBuch\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2013 Revision."
   },
   {
+    "id": 555,
+    "title": "Ah, Holy Jesus",
+    "tune": "Herzliebster Jesu",
+    "Author": "Johann Heermann",
+    "Composer": "Johann Crüger",
+    "midi_url": "assets/midi/Ah_Holy_Jesus-Herzliebster_Jesu.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Ah, holy Jesus, how hast Thou offended,\nThat man to judge Thee hath in hate pretended?\nBy foes derided, by Thine own rejected,\nO most afflicted.",
+      "2. Who was the guilty? Who brought this upon Thee?\nAlas, my treason, Jesus, hath undone Thee.\n’Twas I, Lord, Jesus, I it was denied Thee!\nI crucified Thee.",
+      "3. Lo, the Good Shepherd for the sheep is offered;\nThe slave hath sinned, and the Son hath suffered;\nFor man’s atonement, while he nothing heedeth,\nGod intercedeth.",
+      "4. For me, kind Jesus, was Thy incarnation,\nThy mortal sorrow, and Thy life’s oblation;\nThy death of anguish and Thy bitter passion,\nFor my salvation.",
+      "5. Therefore, kind Jesus, since I cannot pay Thee,\nI do adore Thee, and will ever pray Thee,\nThink on Thy pity and Thy love unswerving,\nNot my deserving."
+    ],
+    "credits": "Words: Johann Heermann, Devoti Musica Cordis, 1630 (Herzliebster Jesu). Translated from German to English by Robert S. Bridges, 1899. Music: 'HERZLIEBSTER JESU' Johann Crüger, 1640. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/a/h/h/o/ahholyje.htm). copyright: public domain.",
+    "meter": "11.11.11.5"
+  },
+  {
     "id": 486,
     "title": "Alas! And Did My Savior Bleed",
     "tune": "MARTYRDOM",
@@ -471,6 +489,24 @@
     "credits": "Words: John Cawood, 1816. Music: 'St. Anne' William Croft, 1708. Setting: composite found in \"The Lutheran Hymnary\", 1913. copyright: public domain.  This score is a part of the Open Hymnal Project, 2007 Revision."
   },
   {
+    "id": 556,
+    "title": "Am I a Soldier of the Cross?",
+    "tune": "Arlington",
+    "Author": "Isaac Watts",
+    "Composer": "Thomas A. Arne",
+    "midi_url": "assets/midi/Am_I_a_Soldier_of_the_Cross-Arlington.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Am I a soldier of the cross,\nA follower of the Lamb,\nAnd shall I fear to own His cause,\nOr blush to speak His name?",
+      "2. Must I be carried to the skies\nOn flowery beds of ease,\nWhile others fought to win the prize,\nAnd sailed through bloody seas?",
+      "3. Are there no foes for me to face?\nMust I not stem the flood?\nIs this vile world a friend to grace,\nTo help me on to God?",
+      "4. Sure I must fight if I would reign;\nIncrease my courage, Lord.\nI’ll bear the toil, endure the pain,\nSupported by Thy Word.",
+      "5. Thy saints in all this glorious war\nShall conquer, though they die;\nThey see the triumph from afar,\nBy faith’s discerning eye.",
+      "6. When that illustrious day shall rise,\nAnd all Thy armies shine\nIn robes of victory through the skies,\nThe glory shall be Thine."
+    ],
+    "credits": "Words: Isaac Watts, appended to his Sermons, published 1721–24. Music: 'ARLINGTON' Thomas A. Arne, 1762. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/a/m/i/a/amiasold.htm). copyright: public domain."
+  },
+  {
     "id": 22,
     "title": "Amazing Grace",
     "tune": "New Britain",
@@ -641,6 +677,27 @@
       "8. Δ Hymns of glory and of praise,\nFather, to Thee we raise;\nRisen Lord, all praise to Thee,\nEver with the Spirit be."
     ],
     "credits": "Words: Latin, circa 6th Century. Translated by Robert Campbell, 1849. Music: 'Sonne der Gerechtigkeit' Czech, Kirchengeseng, 1566. Setting: Brian J. Dumont, 31 Dec 2009. copyright: Words and Music, public domain.  Setting: Copyright 2009 Brian J. Dumont. This setting may be freely reproduced or published for Christian worship, provided it is not altered, and this notice is on each copy. All other rights reserved.   This score is a part of the Open Hymnal Project, 2010 Revision."
+  },
+  {
+    "id": 557,
+    "title": "At the Name of Jesus (Noel)",
+    "tune": "Wye Valley (short)",
+    "Author": "Caroline M. Noel",
+    "Composer": "James Mountain",
+    "midi_url": "assets/midi/At_the_Name_of_Jesus-Wye_Valley.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. At the name of Jesus,\nEvery knee shall bow,\nEvery tongue confess Him\nKing of glory now;\n’Tis the Father’s pleasure\nWe should call Him Lord,\nWho from the beginning\nWas the mighty Word.",
+      "2. Mighty and mysterious\nIn the highest height,\nGod from everlasting,\nVery light of light:\nIn the Father’s bosom\nWith the Spirit blest,\nLove, in love eternal,\nRest, in perfect rest.",
+      "3. At His voice creation\nSprang at once to sight,\nAll the angel faces,\nAll the hosts of light,\nThrones and wide dominions,\nStars upon their way,\nAll the heav’nly orders,\nIn their great array.",
+      "4. Humbled for a season,\nTo receive a name\nFrom the lips of sinners\nUnto whom He came,\nFaithfully He bore it,\nSpotless to the last,\nBrought it back victorious\nWhen from death He passed.",
+      "5. Bore it up triumphant\nWith its human light,\nThrough all ranks of creatures,\nTo the central height,\nTo the throne of Godhead,\nTo the Father’s breast;\nFilled it with the glory\nOf that perfect rest.",
+      "6. Name Him, brothers, name Him,\nWith love strong as death\nBut with awe and wonder,\nAnd with bated breath!\nHe is God the Savior,\nHe is Christ the Lord,\nEver to be worshiped,\nTrusted and adored.",
+      "7. In your hearts enthrone Him;\nThere let Him subdue\nAll that is not holy,\nAll that is not true;\nCrown Him as your captain\nIn temptation’s hour;\nLet His will enfold you\nIn its light and power.",
+      "8. Brothers, this Lord Jesus\nShall return again,\nWith His Father’s glory,\nWith His angel train;\nFor all wreaths of empire\nMeet upon His brow,\nAnd our hearts confess Him\nKing of glory now."
+    ],
+    "credits": "Words: Caroline M. Noel, The Name of Jesus, and Other Verses for the Sick and Lonely 1870, alt. Music: 'WYE VALLEY (SHORT)' James Mountain, 1876. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/a/t/t/h/atthenam.htm). copyright: public domain.",
+    "meter": "6.5.6.5.6.5.6.5"
   },
   {
     "id": 409,
@@ -1233,6 +1290,23 @@
     "credits": "Words: Christian L. Scheidt, 1742. Translated by Matthias Loy, (1828-1915). Music: 'O Dass Ich Tansend Zungen' Johann Balthasar König, 1738. Setting: \"The Evangelical Lutheran Hymnal\" (Ohio Synod), 1908. copyright: public domain.  This score is a part of the Open Hymnal Project, 2007 Revision. Words as given by the Cyber Hymnal in stanzas 1, 2, 3, 5."
   },
   {
+    "id": 558,
+    "title": "Children of the Heavenly Father",
+    "tune": "Tryggare Kan Ingen Vara",
+    "Author": "Karolina W. Sandell-Berg",
+    "Composer": "Oskar Ahnfelt",
+    "midi_url": "assets/midi/Children_of_the_Heavenly_Father-Tryggare_Kan_Ingen_Vara.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Children of the heav’nly Father\nSafely in His bosom gather;\nNestling bird nor star in Heaven\nSuch a refuge e’er was given.",
+      "2. God His own doth tend and nourish;\nIn His holy courts they flourish;\nFrom all evil things He spares them;\nIn His mighty arms He bears them.",
+      "3. Neither life nor death shall ever\nFrom the Lord His children sever;\nUnto them His grace He showeth,\nAnd their sorrows all He knoweth.",
+      "4. Praise the Lord in joyful numbers:\nYour protector never slumbers;\nAt the will of your defender\nEvery foeman must surrender.",
+      "5. Though He giveth or He taketh,\nGod His children ne’er forsaketh;\nHis the loving purpose solely\nTo preserve them pure and holy."
+    ],
+    "credits": "Words: Karolina W. Sandell-Berg, Andeliga Daggdroppar 1855 (Tryggare Kan Ingen Vara). Translated from Swedish to English by Ernst W. Olson, 1925. Music: 'TRYGGARE KAN INGEN VARA' Oskar Ahnfelt. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/c/h/i/l/d/childohf.htm). copyright: public domain."
+  },
+  {
     "id": 49,
     "title": "Christ Arose",
     "tune": "Christ Arose",
@@ -1498,6 +1572,58 @@
       "3. Here see the Bread of Life; see waters flowing\nForth from the throne of God, pure from above;\nCome to the feast of love; come, ever knowing\nEarth has no sorrow but Heav'n can remove."
     ],
     "credits": "Words: verses 1-2 Thomas Moore, 1816.  Verse 3 Thomas Hastings, 1831. Music: 'Consolator (Webbe)' Samuel Webbe, 1792. Setting: \"The Church Hymnal, Revised and Enlarged\" (Episcopal), 1896. copyright: public domain.  This score is a part of the Open Hymnal Project, 2013 Revision."
+  },
+  {
+    "id": 559,
+    "title": "Come, Ye Faithful, Raise the Strain",
+    "tune": "St. Kevin",
+    "Author": "John of Damascus",
+    "Composer": "Arthur S. Sullivan",
+    "midi_url": "assets/midi/Come_Ye_Faithful_Raise_the_Strain-St_Kevin.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Come, ye faithful, raise the strain\nOf triumphant gladness;\nGod hath brought forth Israel\nInto joy from sadness;\nLoosed from Pharaoh’s bitter yoke\nJacob’s sons and daughters,\nLed them with unmoistened foot\nThrough the Red Sea waters.",
+      "2. ’Tis the spring of souls today;\nChrist has burst His prison,\nAnd from three days’ sleep in death\nAs a sun hath risen;\nAll the winter of our sins,\nLong and dark, is flying\nFrom His light, to whom we give\nLaud and praise undying.",
+      "3. Now the queen of seasons, bright\nWith the day of splendor,\nWith the royal feast of feasts,\nComes its joy to render;\nComes to glad Jerusalem,\nWho with true affection\nWelcomes in unwearied strains\nJesus’ resurrection.",
+      "4. Neither might the gates of death,\nNor the tomb’s dark portal,\nNor the watchers, nor the seal\nHold Thee as a mortal;\nBut today amidst the twelve\nThou didst stand, bestowing\nThat Thy peace which evermore\nPasseth human knowing.",
+      "5. Alleluia! now we cry\nTo our king immortal,\nWho, triumphant, burst the bars\nOf the tomb’s dark portal;\nAlleluia! with the Son,\nGod the Father praising,\nAlleluia! yet again\nTo the Spirit raising."
+    ],
+    "credits": "Words: John of Damascus (675–749) (Αισωμεν πάντες Λαοί). Translated from Greek to English by John M. Neale, 1859. Music: 'ST. KEVIN' Arthur S. Sullivan, 1872. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/c/o/m/y/comyfait.htm). copyright: public domain."
+  },
+  {
+    "id": 560,
+    "title": "Come, Ye Sinners, Poor and Needy",
+    "tune": "Restoration",
+    "Author": "Joseph Hart",
+    "Composer": "William Walker",
+    "midi_url": "assets/midi/Come_Ye_Sinners_Poor_and_Needy-Restoration.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Come, ye sinners, poor and needy,\nWeak and wounded, sick and sore;\nJesus ready stands to save you,\nFull of pity, love and power.\nI will arise and go to Jesus,\nHe will embrace me in His arms;\nIn the arms of my dear Savior,\nO there are ten thousand charms.",
+      "2. Come, ye thirsty, come, and welcome,\nGod’s free bounty glorify;\nTrue belief and true repentance,\nEvery grace that brings you nigh.\nI will arise and go to Jesus,\nHe will embrace me in His arms;\nIn the arms of my dear Savior,\nO there are ten thousand charms.",
+      "3. Come, ye weary, heavy laden,\nLost and ruined by the fall;\nIf you tarry till you’re better,\nYou will never come at all.\nI will arise and go to Jesus,\nHe will embrace me in His arms;\nIn the arms of my dear Savior,\nO there are ten thousand charms.",
+      "4. View Him prostrate in the garden;\nOn the ground your maker lies.\nOn the bloody tree behold Him;\nSinner, will this not suffice?\nI will arise and go to Jesus,\nHe will embrace me in His arms;\nIn the arms of my dear Savior,\nO there are ten thousand charms.",
+      "5. Lo! th’incarnate God ascended,\nPleads the merit of His blood:\nVenture on Him, venture wholly,\nLet no other trust intrude.\nI will arise and go to Jesus,\nHe will embrace me in His arms;\nIn the arms of my dear Savior,\nO there are ten thousand charms.",
+      "6. Let not conscience make you linger,\nNot of fitness fondly dream;\nAll the fitness He requireth\nIs to feel your need of Him.\nI will arise and go to Jesus,\nHe will embrace me in His arms;\nIn the arms of my dear Savior,\nO there are ten thousand charms."
+    ],
+    "credits": "Words: Joseph Hart, Hymns Composed on Various Subjects 1759, number 100, alt.; refrain anonymous. Music: 'RESTORATION' William Walker, 1835. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/c/o/m/e/y/comeyspn.htm). copyright: public domain.",
+    "meter": "8.7.8.7.9.8.8.7"
+  },
+  {
+    "id": 561,
+    "title": "Come, Ye Thankful People, Come",
+    "tune": "St. George’s Windsor",
+    "Author": "Henry Alford",
+    "Composer": "George J. Elvey",
+    "midi_url": "assets/midi/Come_Ye_Thankful_People_Come-St_Georges_Windsor.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Come, ye thankful people, come,\nRaise the song of harvest-home!\nAll is safely gathered in,\nEre the winter storms begin:\nGod our Maker doth provide\nFor our wants to be supplied;\nCome to God’s own temple, come,\nRaise the song of harvest-home!",
+      "2. We ourselves are God’s own field,\nFruit unto His praise to yield;\nWheat and tares together sown\nUnto joy or sorrow grown.\nFirst the blade and then the ear,\nThen the full corn shall appear;\nGrant, O Harvest Lord, that we\nWholesome grain and pure may be.",
+      "3. For the Lord our God shall come,\nAnd shall take His harvest home;\nFrom His field shall purge away\nAll that doth offend that day:\nGive His angels charge at last\nIn the fire the tares to cast;\nBut the fruitful ears to store\nIn His garner evermore.",
+      "4. Then, thou Church triumphant, come,\nBring the song of harvest-home;\nAll are safely gathered in,\nFree from sorrow, free from sin,\nThere, for ever purified,\nIn God’s garner to abide;\nCome, ten thousand angels, come,\nRaise the glorious harvest-home!"
+    ],
+    "credits": "Words: Henry Alford, Psalms and Hymns Adapted to the Sundays and Holydays Throughout the Year (London: Francis & John Rivington, 1844), number 116. Music: 'ST. GEORGE’S WINDSOR' George J. Elvey, 1858. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/c/o/m/e/y/comeytpc.htm). copyright: public domain."
   },
   {
     "id": 62,
@@ -2228,6 +2354,162 @@
       "3. Guard us waking, guard us sleeping,\nand when we die,\nMay we in Thy mighty keeping\nall peaceful lie;\nWhen the last dread call shall wake us,\nDo not Thou, our God, forsake us,\nBut to reign in glory take us\nwith Thee on high."
     ],
     "credits": "Words: verse 1, Reginald Heber, 1827. verse 2, William Mercer, 1864. verse 3, Richard Whately, 1838. Music: 'Ar Hyd Y Nos' traditional Welsh. Setting: \"The English Hymnal\", 1906. copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision."
+  },
+  {
+    "id": 562,
+    "title": "How Sweet the Name of Jesus Sounds",
+    "tune": "St. Peter (Reinagle)",
+    "Author": "John Newton",
+    "Composer": "Alexander R. Reinagle",
+    "midi_url": "assets/midi/How_Sweet_the_Name_of_Jesus_Sounds-St_Peter.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. How sweet the name of Jesus sounds\nIn a believer’s ear!\nIt soothes his sorrows, heals his wounds,\nAnd drives away his fear.",
+      "2. It makes the wounded spirit whole,\nAnd calms the troubled breast;\n’Tis manna to the hungry soul,\nAnd to the weary rest.",
+      "3. Dear name! the rock on which I build,\nMy shield and hiding place,\nMy never failing treasury filled\nWith boundless stores of grace!",
+      "4. By Thee my prayers acceptance gain,\nAlthough with sin defiled;\nSatan accuses me in vain,\nAnd I am owned a child.",
+      "5. Jesus! my shepherd, husband, friend,\nO prophet, priest and king,\nMy Lord, my life, my way, my end,\nAccept the praise I bring.",
+      "6. Weak is the effort of my heart,\nAnd cold my warmest thought;\nBut when I see Thee as Thou art,\nI’ll praise Thee as I ought.",
+      "7. Till then I would Thy love proclaim\nWith every fleeting breath,\nAnd may the music of Thy name\nRefresh my soul in death!"
+    ],
+    "credits": "Words: John Newton, Olney Hymns (London: W. Oliver, 1779), Book 1, number 57. Music: 'ST. PETER (REINAGLE)' Alexander R. Reinagle, 1836. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/h/s/w/e/hsweetnj.htm). copyright: public domain."
+  },
+  {
+    "id": 570,
+    "title": "Jesus Saves (Owens)",
+    "tune": "Salvation (Kirkpatrick)",
+    "Author": "Priscilla J. Owens",
+    "Composer": "William J. Kirkpatrick",
+    "midi_url": "assets/midi/Jesus_Saves-Salvation.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. We have heard the joyful sound:\nJesus saves! Jesus saves!\nSpread the tidings all around:\nJesus saves! Jesus saves!\nBear the news to every land,\nClimb the mountains, cross the waves;\nOnward! ’tis our Lord’s command;\nJesus saves! Jesus saves!",
+      "2. Waft it on the rolling tide:\nJesus saves! Jesus saves!\nTell to sinners far and wide:\nJesus saves! Jesus saves!\nSing, you islands of the sea;\nEcho back, you ocean caves;\nEarth shall keep her jubilee:\nJesus saves! Jesus saves!",
+      "3. Sing above the battle strife:\nJesus saves! Jesus saves!\nBy His death and endless life\nJesus saves! Jesus saves!\nShout it brightly through the gloom,\nWhen the heart for mercy craves;\nSing in triumph o’er the tomb:\nJesus saves! Jesus saves!",
+      "4. Give the winds a mighty voice:\nJesus saves! Jesus saves!\nLet the nations now rejoice:\nJesus saves! Jesus saves!\nShout salvation full and free;\nHighest hills and deepest caves;\nThis our song of victory:\nJesus saves! Jesus saves!"
+    ],
+    "credits": "Words: Priscilla J. Owens, in Songs of Redeeming Love, by John R. Sweney, Charles C. McCabe, Tullius C. O’Kane, & William Kirkpatrick (Philadelphia, Pennsylvania: 1882). Music: 'SALVATION (KIRKPATRICK)' William J. Kirkpatrick. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/j/e/s/u/s/a/jesusavo.htm). copyright: public domain."
+  },
+  {
+    "id": 563,
+    "title": "Jesus, Lover of My Soul",
+    "tune": "Aberystwyth (Parry)",
+    "Author": "Charles Wesley",
+    "Composer": "Joseph Parry",
+    "midi_url": "assets/midi/Jesus_Lover_of_My_Soul-Aberystwyth.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Jesus, lover of my soul,\nLet me to Thy bosom fly,\nWhile the nearer waters roll,\nWhile the tempest still is high.\nHide me, O my Savior, hide,\nTill the storm of life is past;\nSafe into the haven guide;\nO receive my soul at last.",
+      "2. Other refuge have I none,\nHangs my helpless soul on Thee;\nLeave, ah! leave me not alone,\nStill support and comfort me.\nAll my trust on Thee is stayed,\nAll my help from Thee I bring;\nCover my defenseless head\nWith the shadow of Thy wing.",
+      "3. Wilt Thou not regard my call?\nWilt Thou not accept my prayer?\nLo! I sink, I faint, I fall—\nLo! on Thee I cast my care;\nReach me out Thy gracious hand!\nWhile I of Thy strength receive,\nHoping against hope I stand,\nDying, and behold, I live.",
+      "4. Thou, O Christ, art all I want,\nMore than all in Thee I find;\nRaise the fallen, cheer the faint,\nHeal the sick, and lead the blind.\nJust and holy is Thy name,\nI am all unrighteousness;\nFalse and full of sin I am;\nThou art full of truth and grace.",
+      "5. Plenteous grace with Thee is found,\nGrace to cover all my sin;\nLet the healing streams abound;\nMake and keep me pure within.\nThou of life the fountain art,\nFreely let me take of Thee;\nSpring Thou up within my heart;\nRise to all eternity."
+    ],
+    "credits": "Words: Charles Wesley, Hymns and Sacred Poems 1740. Music: 'ABERYSTWYTH (PARRY)' Joseph Parry, 1876. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/j/l/m/y/jlmysoul.htm). copyright: public domain."
+  },
+  {
+    "id": 564,
+    "title": "Jesus, Thou Joy of Loving Hearts",
+    "tune": "Hesperus",
+    "Author": "Bernard of Clairvaux",
+    "Composer": "Henry Baker",
+    "midi_url": "assets/midi/Jesus_Thou_Joy_of_Loving_Hearts-Hesperus.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Jesus, Thou Joy of loving hearts,\nThou Fount of life, Thou Light of men,\nFrom the best bliss that earth imparts,\nWe turn unfilled to Thee again.",
+      "2. Thy truth unchanged hath ever stood;\nThou savest those that on Thee call;\nTo them that seek Thee Thou art good,\nTo them that find Thee all in all.",
+      "3. We taste Thee, O Thou living Bread,\nAnd long to feast upon Thee still;\nWe drink of Thee, the Fountainhead,\nAnd thirst our souls from Thee to fill.",
+      "4. Our restless spirits yearn for Thee,\nWherever our changeful lot is cast;\nGlad when Thy gracious smile we see,\nBlessed when our faith can hold Thee fast.",
+      "5. O Jesus, ever with us stay,\nMake all our moments calm and bright;\nChase the dark night of sin away,\nShed over the world Thy holy light."
+    ],
+    "credits": "Words: Bernard of Clairvaux, 12th Century (Jesu dulcis memoria). Translated from Latin to English by Ray Palmer, 1858. Music: 'HESPERUS' Henry Baker, 1854. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/j/t/h/o/jthoujoy.htm). copyright: public domain."
+  },
+  {
+    "id": 565,
+    "title": "My Jesus, I Love Thee",
+    "tune": "Gordon",
+    "Author": "William R. Featherston",
+    "Composer": "Adoniram J. Gordon",
+    "midi_url": "assets/midi/My_Jesus_I_Love_Thee-Gordon.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. My Jesus, I love Thee, I know Thou art mine;\nFor Thee all the follies of sin I resign.\nMy gracious Redeemer, my Savior art Thou;\nIf ever I loved Thee, my Jesus, ’tis now.",
+      "2. I love Thee because Thou has first lovèd me,\nAnd purchased my pardon on Calvary’s tree.\nI love Thee for wearing the thorns on Thy brow;\nIf ever I loved Thee, my Jesus, ’tis now.",
+      "3. I’ll love Thee in life, I will love Thee in death,\nAnd praise Thee as long as Thou lendest me breath;\nAnd say when the death dew lies cold on my brow,\nIf ever I loved Thee, my Jesus, ’tis now.",
+      "4. In mansions of glory and endless delight,\nI’ll ever adore Thee in Heaven so bright;\nI’ll sing with the glittering crown on my brow;\nIf ever I loved Thee, my Jesus, ’tis now."
+    ],
+    "credits": "Words: William R. Featherston, 1864. Music: 'GORDON' Adoniram J. Gordon, 1876. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/m/j/e/s/mjesusil.htm). copyright: public domain."
+  },
+  {
+    "id": 566,
+    "title": "O Word of God Incarnate",
+    "tune": "Munich",
+    "Author": "William W. How",
+    "Composer": "Neuvermehrtes Gesangbuch, 1693 / harm. Felix Mendelssohn",
+    "midi_url": "assets/midi/O_Word_of_God_Incarnate-Munich.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. O Word of God incarnate,\nO wisdom from on high,\nO truth unchanged, unchanging,\nO light of our dark sky:\nWe praise You for the radiance\nThat from the hallowed page,\nA lantern to our footsteps,\nShines on from age to age.",
+      "2. The Church from You, our Savior,\nReceived the gift divine,\nAnd still that light is lifted\nO’er all the earth to shine.\nIt is the sacred vessel\nWhere gems of truth are stored;\nIt is the Heav’n drawn picture\nOf Christ, the living Word.",
+      "3. The Scripture is a banner\nBefore God’s host unfurled;\nIt is a shining beacon\nAbove the darkling world.\nIt is the chart and compass\nThat over life’s surging tide,\nMid mists and rocks and quicksands,\nTo You, O Christ, will guide.",
+      "4. O make your Church, dear Savior,\nA lamp of purest gold,\nTo bear before the nations\nYour true light as of old.\nO teach your wandering pilgrims\nBy this their path to trace,\nTill, clouds and darkness ended,\nThey see You face to face."
+    ],
+    "credits": "Words: William W. How, 1867. Music: 'MUNICH' Neuvermehrtes Gesangbuch (Meiningen, 1693); harmony by Felix Mendelssohn, 1847. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/o/w/o/r/owordgod.htm). copyright: public domain."
+  },
+  {
+    "id": 567,
+    "title": "Once in Royal David’s City",
+    "tune": "Irby",
+    "Author": "Cecil F. Alexander",
+    "Composer": "Henry J. Gauntlett",
+    "midi_url": "assets/midi/Once_in_Royal_Davids_City-Irby.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Once in royal David’s city\nStood a lowly cattle shed,\nWhere a mother laid her baby\nIn a manger for His bed:\nMary was that mother mild,\nJesus Christ her little child.",
+      "2. He came down to earth from Heaven,\nWho is God and Lord of all,\nAnd His shelter was a stable,\nAnd His cradle was a stall;\nWith the poor, and mean, and lowly,\nLived on earth our Savior holy.",
+      "3. And, through all His wondrous childhood,\nHe would honor and obey,\nLove and watch the lowly maiden,\nIn whose gentle arms He lay:\nChristian children all must be\nMild, obedient, good as He.",
+      "4. For He is our childhood’s pattern;\nDay by day, like us He grew;\nHe was little, weak and helpless,\nTears and smiles like us He knew;\nAnd He feeleth for our sadness,\nAnd He shareth in our gladness.",
+      "5. And our eyes at last shall see Him,\nThrough His own redeeming love,\nFor that Child so dear and gentle\nIs our Lord in Heav’n above,\nAnd He leads His children on\nTo the place where He is gone.",
+      "6. Not in that poor lowly stable,\nWith the oxen standing by,\nWe shall see Him; but in Heaven,\nSet at God’s right hand on high;\nWhere like stars His children crowned\nAll in white shall wait around."
+    ],
+    "credits": "Words: Cecil F. Alexander, Hymns for Little Children 1848. Music: 'IRBY' Henry J. Gauntlett, 1849. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/o/n/c/e/onceirdc.htm). copyright: public domain.",
+    "meter": "8.7.8.7.7.7"
+  },
+  {
+    "id": 568,
+    "title": "Onward, Christian Soldiers (Baring-Gould)",
+    "tune": "St. Gertrude",
+    "Author": "Sabine Baring-Gould",
+    "Composer": "Arthur S. Sullivan",
+    "midi_url": "assets/midi/Onward_Christian_Soldiers-St_Gertrude.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Onward, Christian soldiers,\nMarching as to war,\nWith the cross of Jesus\nGoing on before.\nChrist, the royal Master,\nLeads against the foe;\nForward into battle\nSee His banners go!\nOnward, Christian soldiers,\nMarching as to war,\nWith the cross of Jesus\nGoing on before.",
+      "2. At the sign of triumph,\nSatan’s host doth flee;\nOn then, Christian soldiers,\nOn to victory!\nHell’s foundations quiver\nAt the shout of praise;\nBrothers, lift your voices,\nLoud your anthems raise.\nOnward, Christian soldiers,\nMarching as to war,\nWith the cross of Jesus\nGoing on before.",
+      "3. Like a mighty army\nMoves the Church of God;\nBrothers, we are treading\nWhere the saints have trod.\nWe are not divided,\nAll one body we,\nOne in hope, in doctrine,\nOne in charity.\nOnward, Christian soldiers,\nMarching as to war,\nWith the cross of Jesus\nGoing on before.",
+      "4. What the saints established\nThat I hold for true.\nWhat the saints believèd,\nThat I believe too.\nLong as earth endureth,\nMen the faith will hold—\nKingdoms, nations, empires,\nIn destruction rolled.\nOnward, Christian soldiers,\nMarching as to war,\nWith the cross of Jesus\nGoing on before.",
+      "5. Crowns and thrones may perish,\nKingdoms rise and wane,\nBut the Church of Jesus\nConstant will remain.\nGates of hell can never\n’Gainst that church prevail;\nWe have Christ’s own promise,\nAnd that cannot fail.\nOnward, Christian soldiers,\nMarching as to war,\nWith the cross of Jesus\nGoing on before.",
+      "6. Onward then, ye people,\nJoin our happy throng,\nBlend with ours your voices\nIn the triumph song.\nGlory, laud and honor\nUnto Christ the King,\nThis through countless ages\nMen and angels sing.\nOnward, Christian soldiers,\nMarching as to war,\nWith the cross of Jesus\nGoing on before."
+    ],
+    "credits": "Words: Sabine Baring-Gould. First published in The Church Times, volume 2, number 89 (London: October 15, 1864), page 331. Music: 'ST. GERTRUDE' Arthur S. Sullivan, 1871. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/o/n/w/a/onwardcs.htm). copyright: public domain."
+  },
+  {
+    "id": 569,
+    "title": "The Day Thou Gavest, Lord, Is Ended",
+    "tune": "St. Clement",
+    "Author": "John Ellerton",
+    "Composer": "Clement C. Scholefield",
+    "midi_url": "assets/midi/The_Day_Thou_Gavest_Lord_Is_Ended-St_Clement.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. The day Thou gavest, Lord, is ended,\nThe darkness falls at Thy behest;\nTo Thee our morning hymns ascended,\nThy praise shall sanctify our rest.",
+      "2. We thank Thee that Thy church, unsleeping,\nWhile earth rolls onward into light,\nThrough all the world her watch is keeping,\nAnd rests not now by day or night.",
+      "3. As o’er each continent and island\nThe dawn leads on another day,\nThe voice of prayer is never silent,\nNor dies the strain of praise away.",
+      "4. The sun that bids us rest is waking\nOur brethren ’neath the western sky,\nAnd hour by hour fresh lips are making\nThy wondrous doings heard on high.",
+      "5. So be it, Lord; Thy throne shall never,\nLike earth’s proud empires, pass away:\nThy kingdom stands, and grows forever,\nTill all Thy creatures own Thy sway."
+    ],
+    "credits": "Words: John Ellerton, A Liturgy for Missionary Meetings 1870. Music: 'ST. CLEMENT' Clement C. Scholefield, 1874. Text and tune as given in the Cyber Hymnal (www.hymntime.com/tch/htm/d/a/y/t/daythoug.htm). copyright: public domain.",
+    "meter": "9.8.9.8"
   },
   {
     "id": 92,

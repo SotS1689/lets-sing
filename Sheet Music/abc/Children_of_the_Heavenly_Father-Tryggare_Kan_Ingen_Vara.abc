@@ -1,0 +1,24 @@
+% Source: Cyber Hymnal TryggareKanIngenVara.nwc
+X:1
+T:Tryggare Kan Ingen Vara
+M:3/4
+L:1/8
+Q:1/4=95
+%%score (S A) (T B)
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] D E | F2 F2 A F | F2 E2 E F | G2 B2 A G |
+[V:A] D D | D2 D2 D D | D2 C2 C D | C2 C2 D E |
+[V:T] F, G, | A,2 A,2 A, A, | A,2 A,2 A, A, | A,2 G,2 F, A, |
+[V:B] D, D, | D,2 D,2 F, D, | A,,2 A,,2 G, F, | E,2 A,,2 B,, C, |
+[V:S] G2 F2 D D | B2 B2 d B | B2 A2 F A | A2 G2 C E |
+[V:A] E2 D2 D D | D2 G2 G G | G2 F2 D ^D | E2 E2 C C |
+[V:T] A,2 A,2 D =C | B,2 D2 D D | D2 D2 A, B, | B,2 B,2 A, G, |
+[V:B] D,2 D,2 D, D, | G,2 G,2 B, G, | D,2 D,2 D, B,, | E,2 E,2 A, A,, |
+[V:S] E2 D2 |]
+[V:A] C2 D2 |]
+[V:T] G,2 F,2 |]
+[V:B] A,,2 D,2 |]
