@@ -1,5 +1,6 @@
 % Source: Cyber Hymnal Irby.nwc
 % Slur added on G-A in line 3 ("laid her BA-by" / "was a STA-ble"), as in line 1: one syllable on the two eighths, so every 8.7.8.7.7.7 verse fits.
+% Verses 2 and 4 have 8 syllables in lines 5-6, as hymnals sing them: line 5's half note B ("mild") is split by a dotted tie ("low-ly", "sad-ness"), and line 6 takes a syllable on each note of the slurred B-A ("Sa-vior", "shar-eth"). Each verse is written out below for that.
 X:1
 T:Irby
 M:4/4
@@ -12,18 +13,42 @@ V:T clef=bass
 V:B clef=bass
 K:G
 [V:S] D2 F2 | G3 G (G F) (G A) | A2 G2 G2 B2 | d3 B (B A) (G F) |
+w: 1.~Once in ro- yal Da- _ vid’s _ ci- ty Stood a low- ly cat- _ tle _
+w: 2.~He came down to earth _ from _ Heav- en, Who is God and Lord _ of _
+w: 3.~And, through all His won- _ drous _ child- hood, He would hon- or and _ o- _
+w: 4.~For He is our child- _ hood’s _ pat- tern; Day by day, like us _ He _
+w: 5.~And our eyes at last _ shall _ see Him, Through His own re- deem- _ ing _
+w: 6.~Not in that poor low- _ ly _ sta- ble, With the o- xen stand- _ ing _
 [V:A] D2 C2 | D3 D D2 (D F) | F2 G2 D2 G2 | G3 G E2 D2 |
 [V:T] B,2 A,2 | G,3 B, (B, A,) (B, C) | C2 B,2 B,2 G,2 | G,3 D (D C) (B, A,) |
 [V:B] G,,2 A,,2 | B,,3 G,, D,2 D,2 | D,2 G,2 G,2 E,2 | B,,3 G,, C,2 D,2 |
 [V:S] G4 D2 F2 | G3 G (G F) (G A) | A2 G2 G2 B2 | d3 B (B A) (G F) |
+w: shed, Where a mo- ther laid _ her _ ba- by In a man- ger for _ His _
+w: all, And His shel- ter was _ a _ sta- ble, And His cra- dle was _ a _
+w: bey, Love and watch the low- _ ly _ mai- den, In whose gen- tle arms _ He _
+w: grew; He was lit- tle, weak _ and _ help- less, Tears and smiles like us _ He _
+w: love, For that Child so dear _ and _ gen- tle Is our Lord in Heav’n _ a- _
+w: by, We shall see Him; but _ in _ Hea- ven, Set at God’s right hand _ on _
 [V:A] D4 D2 C2 | D3 D ^C2 ^C2 | (D C) B,2 D2 G2 | G3 G E2 D2 |
 [V:T] B,4 B,2 A,2 | G,3 B, G,2 G,2 | F,2 G,2 B,2 G,2 | G,3 D (D C) (B, A,) |
 [V:B] G,,4 G,,2 A,,2 | B,,3 G,, E,2 A,,2 | D,2 G,2 G,2 E,2 | B,,3 G,, C,2 D,2 |
-[V:S] G4 e2 e2 | d3 G c2 c2 | B4 e2 e2 | d3 B (B A) (G F) |
+[V:S] G4 e2 e2 | d3 G c2 c2 | B2.-B2 e2 e2 | d3 B (B A) (G F) |
+w: bed: Ma- ry was that mo- ther mild, _ Je- sus Christ her lit- _ tle _
+w: stall; With the poor, and mean, and low- ly, Lived on earth our Sa- vior ho- _
+w: lay: Christ- ian child- ren all must be _ Mild, o- be- dient, good _ as _
+w: knew; And He feel- eth for our sad- ness, And He shar- eth in our glad- _
+w: bove, And He leads His child- ren on _ To the place where He _ is _
+w: high; Where like stars His child- ren crowned _ All in white shall wait _ a- _
 [V:A] D4 G2 G2 | (G F G) G G2 F2 | G4 (E F) (G A) | (D F G) D E2 D2 |
 [V:T] B,4 C2 C2 | (B, C D) B, A,2 D2 | D4 C2 C2 | (C A, B,) D (D C) (B, A,) |
 [V:B] G,,4 (C, D,) E, F, | (G, A, B,) G, D,2 D,2 | G,4 (C, D,) (E, F,) | G,3 G, C,2 D,2 |
 [V:S] G4 |]
+w: child.
+w: ly.
+w: He.
+w: ness.
+w: gone.
+w: round.
 [V:A] D4 |]
 [V:T] B,4 |]
 [V:B] G,,4 |]

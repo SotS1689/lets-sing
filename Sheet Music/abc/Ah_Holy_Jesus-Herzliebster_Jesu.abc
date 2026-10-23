@@ -1,4 +1,5 @@
 % Source: Cyber Hymnal HerzliebsterJesu.nwc
+% Verses written out below: verse 3 sings "sin-nèd" (two syllables, as Bridges wrote it), so its line 2 has the tune's 11.
 X:1
 T:Herzliebster Jesu
 M:4/4
@@ -11,18 +12,38 @@ V:T clef=bass
 V:B clef=bass
 K:Bb
 [V:S] G4 G2 G2 | F4 D4 | G2 A2 B2 B2 | c4 A4 |
+w: 1.~Ah, ho- ly Je- sus, how hast Thou of- fen- ded,
+w: 2.~Who was the guil- ty? Who brought this up- on Thee?
+w: 3.~Lo, the Good Shep- herd for the sheep is of- fered;
+w: 4.~For me, kind Je- sus, was Thy in- car- na- tion,
+w: 5.~There- fore, kind Je- sus, since I can- not pay Thee,
 [V:A] D4 E2 E2 | C4 D4 | D2 D2 G2 F2 | E4 D4 |
 [V:T] B,4 B,2 C2 | A,4 F,4 | B,2 A,2 G,2 B,2 | G,4 ^F,4 |
 [V:B] G,4 E,2 C,2 | F,4 B,,4 | G,2 F,2 E,2 D,2 | C,4 D,4 |
 [V:S] A4 B2 c2 | d4 B4 | e2 e2 d2 d2 | c4 B4 |
+w: That man to judge Thee hath in hate pre- ten- ded?
+w: A- las, my trea- son, Je- sus, hath un- done Thee.
+w: The slave hath sin- nèd, and the Son hath suf- fered;
+w: Thy mor- tal sor- row, and Thy life’s o- bla- tion;
+w: I do a- dore Thee, and will ev- er pray Thee,
 [V:A] D4 D2 F2 | F4 G4 | G2 G2 F2 F2 | F4 D4 |
 [V:T] ^F,4 G,2 A,2 | B,4 G,4 | C2 (G, A,) B,2 B,2 | (B,2 A,2) B,4 |
 [V:B] D,4 G,2 F,2 | B,,4 E,4 | C,2 C,2 D,3 E, | F,4 B,,4 |
 [V:S] B4 A2 G2 | F4 D4 | F2 F2 G2 F2 | E4 D4 |
+w: By foes de- ri- ded, by Thine own re- ject- ed,
+w: ’Twas I, Lord, Je- sus, I it was de- nied Thee!
+w: For man’s a- tone- ment, while he no- thing heed- eth,
+w: Thy death of an- guish and Thy bit- ter pas- sion,
+w: Think on Thy pi- ty and Thy love un- swer- ving,
 [V:A] G4 F2 E2 | D4 B,4 | D2 C2 D2 D2 | C4 B,4 |
 [V:T] D4 D2 B,2 | B,4 F,4 | F,2 A,2 B,2 B,2 | G,4 G,4 |
 [V:B] G,,4 D,2 E,2 | B,,4 B,,4 | B,,2 A,,2 G,,2 B,,2 | C,4 G,,4 |
 [V:S] d4 c2 B2 | A4 G4 |]
+w: O most af- flic- ted.
+w: I cru- ci- fied Thee.
+w: God in- ter- ce- deth.
+w: For my sal- va- tion.
+w: Not my de- ser- ving.
 [V:A] D4 E2 D2 | D3 C B,4 |]
 [V:T] (F,2 B,2) G,2 G,2 | G,2 ^F,2 G,4 |]
 [V:B] B,,4 C,2 G,,2 | D,4 G,,4 |]
