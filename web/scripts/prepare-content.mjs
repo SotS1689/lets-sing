@@ -83,7 +83,10 @@ for (const h of hymns) {
         ...scoreFields(h, hasMidi && scores[file]),
     });
 }
-slim.sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }));
+// Leading punctuation (the apostrophe in "'Tis So Sweet") is skipped, as
+// HymnJsonLoader.kt's sortKey does, so those hymns file under T, not first.
+const sortKey = (title) => title.trim().replace(/^[^\p{L}\p{N}]+/u, "");
+slim.sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title), "en", { sensitivity: "base" }));
 writeFileSync(`${OUT}/hymns.json`, JSON.stringify(slim));
 
 console.log(`prepare-content: ${slim.length} hymns, ${readdirSync(`${OUT}/midi`).length} MIDI files, ${Object.keys(scores).length} with sheet music`);
