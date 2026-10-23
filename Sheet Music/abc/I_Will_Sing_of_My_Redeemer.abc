@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (I_Will_Sing_of_My_Redeemer.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred as the Cyber Hymnal's MyRedeemer.pdf sets the words: the first syllable of every line is slurred over the two-note pickup (I, And, Sing, With, Paid...) and one mid-line syllable over two notes (my, love, set, pur-, sealed)
 X:1
 T:MY REDEEMER
 C:James McGranahan
@@ -11,7 +12,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:G
-[V:S] D/ G/ A/ B3/2 | B3/2 B/ A/ G/ A3/2 A3/2 | D/ F/ A/ c2- c/ c/ c/ B/ A/ | B3 D/ G/ A/ B3/2 | B3/2 B/ A/ G/ A3/2 A3/2 | D/ F/ G/ A2- A/ A/ A/ G/ F/ | G3- G1/4 G/ A/ B/ c- c1/4- | c2- c3/4 c/ E/ G/ c/ B- B1/4- | B1/4 B3 D/ G/ B/ A- A1/4- | A2- A3/4 A/ A/ G/ A/ B- B1/4- | B3- B1/4 G/ A/ B/ c- c1/4- | c2- c3/4 c/ E/ G/ c/ B- B1/4- | B1/4 B3 D/ G/ B/ d- d1/4- | d2- d3/4 c/ B A/ G- G1/4 |]
+[V:S] (D/ G/) A/ B3/2 | B3/2 (B/ A/) G/ A3/2 A3/2 | (D/ F/) A/ c2- c/ c/ (c/ B/) A/ | B3 (D/ G/) A/ B3/2 | B3/2 (B/ A/) G/ A3/2 A3/2 | (D/ F/) G/ A2- A/ A/ (A/ G/) F/ | G3- G1/4 (G/ A/) B/ c- c1/4- | c2- c3/4 c/ (E/ G/) c/ B- B1/4- | B1/4 B3 (D/ G/) B/ A- A1/4- | A2- A3/4 A/ (A/ G/) A/ B- B1/4- | B3- B1/4 (G/ A/) B/ c- c1/4- | c2- c3/4 c/ (E/ G/) c/ B- B1/4- | B1/4 B3 (D/ G/) B/ d- d1/4- | d2- d3/4 c/ B A/ G- G1/4 |]
 [V:A] B, C/ D3/2 | D3/2 D/ C/ B,/ D3/2 D3/2 | D/ D/ D/ D2- D/ D/ D D/ | D3 B, C/ D3/2 | D3/2 D/ C/ B,/ D3/2 D3/2 | D/ D/ D/ D2- D/ D/ D D/ | D3- D1/4 B,/ C/ D/ E- E1/4- | E2- E3/4 E/ C/ E/ E/ D- D1/4- | D1/4 D3 B,/ D/ D/ D D1/4- | D1/4 D D/ D D/ D D/ D- D1/4- | D3- D1/4 B,/ C/ D/ E- E1/4- | E2- E3/4 E/ C/ E/ E/ D- D1/4- | D1/4 D3 B,/ D/ G/ B- B1/4- | B2- B3/4 A/ G F/ G D1/4- | D1/4 E E/ |]
 [V:T] G, G,/ G,3/2 | G,3/2 G, G,/ F,3/2 F,3/2 | F, F,/ A,2- A,/ A,/ A,/ G,/ F,/ | G,3 G, G,/ G,3/2 | G,3/2 G, G,/ F,3/2 F,3/2 | F,/ A,/ B,/ C2- C/ C/ C/ B,/ A,/ | B,3- B,1/4 G, G,/ G, G,1/4- | G,1/4 G, G,/ G, G,/ G, G,/ G, G,1/4- | G,1/4 G, G,/ G, G,/ G,/ B,/ D/ C- C1/4- | C2- C3/4 C/ C/ B,/ A,/ G, G,1/4- | G,1/4 G, G,/ G,3/2 G, G,/ G, G,1/4- | G,1/4 G, G,/ G, G,/ G, G,/ G, G,1/4- | G,1/4 G, G,/ G, G,/ G,/ B,/ D/ D D1/4- | D1/4 D D/ D D/ D D/ B, B,1/4- | B,1/4 C C/ |]
 [V:B] G, G,/ G,3/2 | G,3/2 G, G,/ D,3/2 D,3/2 | D, D,/ D,2- D,/ D,/ D, D,/ | G,,3 G,, G,,/ G,,3/2 | G,,3/2 G,, G,,/ D,3/2 D,3/2 | D, D,/ D,2- D,/ D,/ D, D,/ | G,,3- G,,1/4 G, G,/ C, C,1/4- | C,1/4 C, C,/ C, C,/ C, C,/ G,, G,,1/4- | G,,1/4 G,, G,,/ G,, G,,/ G,, G,,/ D, D,1/4- | D,1/4 D, D,/ D,3/2 D,/ E,/ F,/ G, G,1/4- | G,1/4 G, G,/ G,3/2 G, G,/ C, C,1/4- | C,1/4 C, C,/ C, C,/ C, C,/ G,, G,,1/4- | G,,1/4 G,, G,,/ G,, G,,/ G,/ G,/ G,/ D, D,1/4- | D,1/4 D, D,/ D, D,/ D, D,/ G,,- G,,1/4 |]

@@ -70,8 +70,9 @@ def vowel_groups(word):
     return groups
 
 
-def split_word(word, n):
-    """`word` cut into `n` syllables, or None."""
+def split_word(word, n, dictionary=False):
+    """`word` cut into `n` syllables, or None. `dictionary`: the dictionary counts
+    `n`, so a final -ed / -es may be sung as a syllable of its own."""
     if n <= 1:
         return [word]
     groups = vowel_groups(word)
@@ -92,6 +93,9 @@ def split_word(word, n):
                 long_run[1] = long_run[0] + 1
             elif word.endswith("e") and groups[-1][1] < len(word) - 1:
                 groups.append([len(word) - 1, len(word)])
+            elif dictionary and re.search(r"e[ds]$", word) and groups[-1][1] < len(word) - 1:
+                # The e of -ed / -es taken as silent, sung after all: "in-spi-red", "mir-a-cles"
+                groups.append([len(word) - 2, len(word) - 1])
             else:
                 return None
     # Too many: sing the last ones together ("heav'n" = "heaven" as one)
@@ -159,8 +163,8 @@ def splits(surface, cmu):
     if not known:
         extra += [c for c in (guess(letters) - 1, guess(letters) + 1) if c >= 1]
     out = []
-    for n in counts + extra:
-        s = split_word(letters, n)
+    for i, n in enumerate(counts + extra):
+        s = split_word(letters, n, dictionary=known and i < len(counts))
         if s:
             out.append("-".join(s))
     return list(dict.fromkeys(out))

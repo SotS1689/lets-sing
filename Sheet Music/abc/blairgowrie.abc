@@ -1,4 +1,5 @@
 % Source: Cyber Hymnal nwc/b/l/a/i/Blairgowrie.nwc
+% Melody slurred as the Cyber Hymnal's Blairgowrie.pdf sets the words: line 6 ends on "A G" as one syllable (the PDF prints no words; inferred because every other line of the tune starts on beat 4, so the F there begins line 7)
 X:1
 T:Blairgowrie
 M:4/4
@@ -22,7 +23,7 @@ K:D
 [V:A] C6 D2 | C3 C C2 C2 | C4 D2 G2 | F3 F F2 F2 |
 [V:T] A,6 F,2 | G,3 G, G,2 A,2 | G,4 F,2 B,2 | =C3 =C =C2 D2 |
 [V:B] A,,6 A,,2 | A,,3 A,, A,,2 A,,2 | A,,4 D,2 D,2 | D,3 D, D,2 D,2 |
-[V:S] A4 G2 F2 | F2 E2 F2 G2 | (A2 B2) c2 d2 | F3 G E2 A2 |
+[V:S] (A4 G2) F2 | F2 E2 F2 G2 | (A2 B2) c2 d2 | F3 G E2 A2 |
 [V:A] F4 E2 D2 | D2 D2 C2 C2 | D4 D2 D2 | D3 D D2 C2 |
 [V:T] =C4 B,2 A,2 | B,2 B,2 A,2 A,2 | A,4 ^G,2 ^G,2 | A,3 A, G,2 G,2 |
 [V:B] D,4 E,2 F,2 | G,2 G,2 G,2 G,2 | F,4 B,,2 B,,2 | A,,3 G,, A,,2 A,,2 |

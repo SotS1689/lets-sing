@@ -1,4 +1,5 @@
 % Source: Cyber Hymnal nwc/e/l/l/a/Ella.nwc
+% Melody slurred as the Cyber Hymnal's Ella.pdf sets the words: last line "A G" share one syllable (tenor and bass hold a half note there, keeping the half-quarter rhythm of every other bar)
 X:1
 T:Ella
 M:6/4
@@ -13,7 +14,7 @@ K:Eb
 [V:A] E2 | E4 E2 E4 E2 | G4 G2 G4 (E G) | G4 G2 F4 E2 |
 [V:T] G,2 | B,4 B,2 B,4 (G, B,) | E4 E2 E4 B,2 | B,4 B,2 B,4 =A,2 |
 [V:B] E,2 | E,4 E,2 E,4 E,2 | E,4 E,2 E,4 E,2 | E,4 E,2 F,4 F,2 |
-[V:S] B6- B4 B2 | e4 B2 c4 B2 | e4 B2 c4 B2 | (B2 c2) B2 A2 G2 F2 |
+[V:S] B6- B4 B2 | e4 B2 c4 B2 | e4 B2 c4 B2 | (B2 c2) B2 (A2 G2) F2 |
 [V:A] D6- D4 G2 | G4 G2 A4 G2 | G4 G2 A4 G2 | (G2 A2) G2 F2 E2 D2 |
 [V:T] B,6- B,4 E2 | B,4 B,2 E4 E2 | B,4 B,2 E4 E2 | (B,2 E2) B,2 B,4 B,2 |
 [V:B] B,,6- B,,4 E,2 | E,4 E,2 E,4 E,2 | E,4 E,2 E,4 E,2 | E,4 G,2 B,4 B,,2 |

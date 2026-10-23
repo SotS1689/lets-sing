@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (We_Praise_You_O_God_Our_Redeemer_Creator.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred where the words need it: 2 slurs as in the Cyber Hymnal's Kremser.nwc (Kremser.nwc)
 X:1
 T:KREMSER
 C:Dutch Folk Song / arr. Eduard Kremser
@@ -11,7 +12,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:D
-[V:S] A | A3/2 B/ A | F G A | G3/2 F/ E | F D A | A3/2 B/ c | d3/2 e/ c | B3/2 A/ B | A2 A | A3/2 B/ c | d A A | A3/2 B/ G/ A/ | F D D | G3/2 A/ B/ G/ | A3/2 G/ F | G E3/2 D/ | D3 |]
+[V:S] A | A3/2 B/ A | F G A | G3/2 F/ E | F D A | A3/2 B/ c | d3/2 e/ c | B3/2 A/ B | A2 A | A3/2 B/ c | d A A | (A3/2 B/) G/ A/ | F D D | G3/2 A/ B/ G/ | (A3/2 G/) F | G E3/2 D/ | D3 |]
 [V:A] D | D3/2 D/ D | D D D | D3/2 D/ C | D D F | E3/2 E/ E | F E E | F3/2 F/ ^G | E2 E | E3/2 E/ E | D D D | D2 C/ C/ | D D D | D3/2 D/ D/ D/ | E2 D | B, C3/2 D/ | D3 |]
 [V:T] F, | F,3/2 G,/ F, | A, A, A, | B,3/2 B,/ C | A, F, A, | A,3/2 A,/ A, | A, ^G, A, | A,3/2 A,/ D | C2 C | C3/2 B,/ A, | A, A, A, | B,2 A,/ A,/ | A, F, F, | G,3/2 F,/ G,/ G,/ | E, A, A, | G, G,3/2 F,/ | F,3 |]
 [V:B] D, | D,3/2 D,/ D, | D, E, F, | E,3/2 E,/ A, | D, D, D, | C,3/2 C,/ C, | B,, E, A, | D,3/2 D,/ E, | A,2 A, | G,3/2 G,/ G, | F, F, F, | E,2 A,/ A,/ | D, D, D, | B,,3/2 A,,/ G,,/ B,,/ | C,2 D, | E, A,,3/2 D,/ | D,3 |]

@@ -1,4 +1,5 @@
 % Source: Cyber Hymnal nwc/o/l/i/v/Oliva.nwc
+% Melody slurred as the Cyber Hymnal's Oliva.pdf sets the words: line 7's dotted pair G-B carries one syllable like the slurred dotted pairs of lines 1, 3 and 5 (the PDF beams it without a slur, but its 76.76 D needs 7 there)
 X:1
 T:Oliva
 M:3/4
@@ -22,7 +23,7 @@ K:F
 [V:A] C4 E2 | E3 C C E | F2 F2 F2 | F3 E D D |
 [V:T] E,4 G,2 | G,3 B, A, G, | (F,3/2 G,1/2) A,2 F,2 | F,3 A, D D |
 [V:B] C,4 C,2 | C,3 C, C, C, | F,2 F,2 F,2 | D,3 ^C, D, B,, |
-[V:S] A4 c2 | f3 c B A | G3/2 B1/2 d2 d2 | c3 F G A |
+[V:S] A4 c2 | f3 c B A | (G3/2 B1/2) d2 d2 | c3 F G A |
 [V:A] E4 E2 | F3 F F F | F2 F2 F2 | F3 C C E |
 [V:T] ^C4 B,2 | A,3 A, B, C | D2 B,2 ^G,2 | A,3 A, B, C |
 [V:B] A,,4 G,2 | F,3 _E, D, C, | B,,2 B,,2 =B,,2 | C,3 C, C, C, |

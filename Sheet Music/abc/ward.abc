@@ -1,4 +1,5 @@
 % Source: Cyber Hymnal nwc/w/a/r/d/Ward.nwc
+% Melody slurred as the Cyber Hymnal's Ward.pdf sets the words: line 2 "c B" eighths share one syllable (the bass slurs its eighths there)
 X:1
 T:Ward
 M:4/4
@@ -14,7 +15,7 @@ K:Bb
 [V:A] D2 D F | E2 D2 | F2 E2 | D3 D |
 [V:T] B,2 B, D | C2 B,2 | B,2 B,2 | B,3 B, |
 [V:B] B,,2 B,, B,, | F,2 G,2 | D,2 E,2 | B,,3 B,, |
-[V:S] F2 F2 | (F B2) c | d2 c B | c4 |
+[V:S] F2 F2 | (F B2) c | d2 (c B) | c4 |
 [V:A] C2 C2 | F3 F | F2 F =E | F4 |
 [V:T] A,2 A,2 | B,3 A, | B,2 C2 | A,4 |
 [V:B] F,2 (F, E,) | D,3 F, | B,2 (A, G,) | F,4 |

@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (In_the_Cross_of_Christ_I_Glory.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred where the words need it: 3 slurs as in the Cyber Hymnal's InTheCrossOfChristIGlory.nwc (In the Cross of Christ I Glory)
 X:1
 T:RATHBUN
 C:Ithamar Conkey
@@ -11,7 +12,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:Bb
-[V:S] F2 B | d2 B | A G F | B F2 | F2 G | D2 C | D2 =E | F3 | F2 B | d2 B | c B/ A/ G/ F/ | B F2 | F2 G | F2 B | D2 C | B,3 |]
+[V:S] F2 B | d2 B | (A G) F | B F2 | F2 G | D2 C | D2 =E | F3 | F2 B | d2 B | (c B/ A/) (G/ F/) | B F2 | F2 G | F2 B | D2 C | B,3 |]
 [V:A] D2 D | F2 F | E2 E | D D2 | B,2 B, | B,2 A, | B, D C | C3 | D2 D | F2 F | E2 E | D D2 | B,2 E | D2 D | B,2 A, | B,3 |]
 [V:T] F,2 F, | B,2 B, | C B, A, | F, B,2 | B,2 G, | F,2 F, | F, B, B, | A,3 | B,2 F, | F, B, B, | A, C A, | F, B,2 | B,2 B, | B,2 F, | F,2 E, | D,3 |]
 [V:B] B,,2 B,, | B,,2 D, | F,2 F, | B,, B,,2 | D,2 E, | F,2 F,, | B,, G,, C, | F,3 | B,,2 B,, | B,,2 D, | F,2 F, | B,, B,,2 | D,2 E, | B,,2 B,,/ D,/ | F,2 F,, | B,,3 |]

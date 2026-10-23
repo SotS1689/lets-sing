@@ -59,6 +59,11 @@ switched on. The design follows the #doreancon hymnal player
   `python "../Sheet Music/transcribe_midi.py" <hymn ids>` (after the svrbc
   psalter's `tools/midi_to_abc.py`), slurring the melody only where it's plain
   which notes share a syllable; otherwise the score shows the notes alone.
+  Where that leaves a hymn's verses without words (a syllable sung over two
+  notes counted as two), `node "../Sheet Music/slurs_from_cyber_hymnal.mjs"`
+  slurs the melody as the Cyber Hymnal's own score of the hymn or tune does,
+  keeping the change only when more verses fit; the rest are slurred by hand
+  from the Cyber Hymnal's PDF.
   To add a score from elsewhere, drop it in with the matching name.
 - **Words under the notes** for every verse, not only those the score sets:
   `scripts/underlay.mjs` sets the hymn's own words under the notes, following a

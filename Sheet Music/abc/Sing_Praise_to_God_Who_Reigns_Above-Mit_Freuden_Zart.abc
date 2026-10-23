@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (Sing_Praise_to_God_Who_Reigns_Above-Mit_Freuden_Zart.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred as the Cyber Hymnal's MitFreudenZart.pdf sets the words: "The" over B-A in lines 2 and 4, "cre-" / "sal-" (line 2, 4) and "and" (line 7) over F-G
 X:1
 T:MIT FREUDEN ZART
 C:Bohemian Brethren (Kirchengesäng)
@@ -11,7 +12,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:D
-[V:S] D2 F G A2 | d2 c B A2 | B3/2 A/ G F E2 | F G E2 D2- | D D2 F G A- | A d2 c B A- | A B3/2 A/ G F E- | E F G E2 D- | D2 d2 c B | A2 d2 c B | A2 A2 D E | F2 D2 F ^G | A2 A2 B G | E2 F G E2 | D4- D2 |]
+[V:S] D2 F G A2 | d2 c B A2 | (B3/2 A/) G F E2 | (F G) E2 D2- | D D2 F G A- | A d2 c B A- | A (B3/2 A/) G F E- | E (F G) E2 D- | D2 d2 c B | A2 d2 c B | A2 A2 D E | F2 D2 F ^G | A2 A2 B G | E2 (F G) E2 | D4- D2 |]
 [V:A] A,2 D C D2 | D2 D D D2 | ^D2 E =D C2 | D2 D C D2- | D A,2 D C D- | D D2 D D D- | D ^D2 E =D C- | C D2 D C D- | D2 F2 F =F | C2 D2 E E | E2 C2 D C | D2 A,2 D D | C2 D2 D D | C2 D2 D C | D4- D2 |]
 [V:T] F,2 A, A, F,2 | A,2 A, G, F,2 | F, B, B, A, A, G, | A, B, A, A,,/ G,/ F,2- | F, F,2 A, A, F,- | F, A,2 A, G, G,- | G, F, B, B, A, A, | G, A, B, A, A,,/ G,/ F,- | F,2 B,2 A, ^G, | F,2 F,2 A, ^G, | C2 A, G, A, G, | A,2 F,2 B, B, | A, G, D =C B,2 | A, G, A, B, A, A,,/ G,/ | F,4- F,2 |]
 [V:B] D,2 D, E, F,2 | F,,2 G,, B,, D, =C, | B,,2 E, F,/ G,/ A, G, | F, E, A, A,,/ G,/ D,2- | D, D,2 D, E, F,- | F, F,,2 G,, B,, D, | =C, B,,2 E, F,/ G,/ A, | G, F, E, A, A,,/ G,/ D,- | D,2 B,,2 C, C, | F,2 B,,2 C, E, | A,2 A, G, F, E, | D,2 D, C, B,, E, | A, G, F,2 G, F, | A, G, F, E, A, A,,/ G,/ | D,4- D,2 |]

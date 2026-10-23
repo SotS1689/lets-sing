@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (This_Is_My_Father_s_World-TERRA_BEATA.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred as the Cyber Hymnal's TerraBeata.pdf sets the words: its nine slurred eighth pairs (E-F, F-G, F-E, e-d); the c-c pair it slurs in line 7 is left as two notes for verses 2-3 ("In the rustling grass", "Jesus who died")
 X:1
 T:TERRA BEATA
 C:Franklin L. Sheppard
@@ -11,7 +12,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:Eb
-[V:S] E/ F/ | G B G F | E3 F/ G/ | A c B G | F3 c | B G G F/ E/ | G F E B, | E/ F/ G B F/ G/ | E3 B | e B c d | e3 e/ d/ | c e d c | B3 c/ c/ | B G G F/ E/ | G F E B, | E/ F/ G B F/ G/ | E4 |]
+[V:S] (E/ F/) | G B G F | E3 (F/ G/) | A c B G | F3 c | B G G (F/ E/) | G F E B, | (E/ F/) G B (F/ G/) | E3 B | e B c d | e3 (e/ d/) | c e d c | B3 c/ c/ | B G G (F/ E/) | G F E B, | (E/ F/) G B (F/ G/) | E4 |]
 [V:A] B, | E E D D | E3 E | E E E E | D3 D | E E D D/ E/ | D D E B, | E E D D | E3 D | E G A A | G3 E | E E E E | E3 D/ D/ | E E D D/ D/ | D D E B, | E E D D/ D/ | E4 |]
 [V:T] G,/ A,/ | B, G, B, A, | G,3 A,/ B,/ | C A, G, B, | B,3 A, | G, B, B, A, | B, A, G, G, | G,/ A,/ B, B, A, | G,3 B,/ A,/ | G, B, A, B, | B,3 B, | A, C B, A, | G,3 A,/ A,/ | G, B, B, B,/ B,/ | B, A, G, B, | G,/ A,/ B, B, A,/ A,/ | G,4 |]
 [V:B] E, | E, E, B,, B,, | E,3 E, | E, E, E, E, | B,,3 B,, | E, E, B,, B,, | B,, B,, E, E, | E, E, B,, B,, | E,3 B,, | E, E, A, F, | E,3 G, | A, A, A, A, | E,3 B,,/ B,,/ | E, E, B,, B,,/ B,,/ | B,, B,, E, B,, | E, E, B,, B,,/ B,,/ | E,4 |]

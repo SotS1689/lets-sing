@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (Come_We_that_Love_the_Lord.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred as the Cyber Hymnal's StThomas(Williams).pdf sets the words: the eighth pairs G-F, A-B, B-A (bars 1-3) and c-B (bar 7) one syllable each; the MIDI's short E before the c in bar 6 sung with that c
 X:1
 T:ST. THOMAS
 C:Aaron Williams
@@ -11,7 +12,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:F
-[V:S] C | F F A G/ F/ | G3 A/ B/ | c B/ A/ B A | G3 c | A F G C | F A c E1/4 c3/4- | c1/4 d c/ B/ A G3/4- | G1/4 F3- F3/4 |]
+[V:S] C | F F A (G/ F/) | G3 (A/ B/) | c (B/ A/) B A | G3 c | A F G C | F A c (E1/4 c3/4-) | c1/4 d (c/ B/) A G3/4- | G1/4 F3- F3/4 |]
 [V:A] A, | C C C C/ =B,/ | C3 F | F E/ F/ D/ E/ F | E3 C | C C C C | C D E- E1/4 F3/4- | F1/4 F F F E3/4- | E1/4 F3- F3/4 |]
 [V:T] F, | F, A, F, G, | E,3 C | C C B,/ C/ C | C3 G, | F, F, E, G, | A, F, G,- G,1/4 C3/4- | C1/4 B, C/ D/ C B,3/4- | B,1/4 A,3- A,3/4 |]
 [V:B] F,, | A,, F,, F, E,/ D,/ | C,3 F,/ G,/ | A, G,/ F,/ G, F, | C,3 E, | F, A,, C, E, | F, D, C, G,1/4 A,,3/4- | A,,1/4 B,, A,,/ B,,/ C, C,3/4- | C,1/4 F,,3- F,,3/4 |]

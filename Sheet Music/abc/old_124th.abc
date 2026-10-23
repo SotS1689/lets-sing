@@ -1,4 +1,5 @@
 % Source: Cyber Hymnal nwc/o/l/d/1/Old124th.nwc
+% Melody slurred as the Cyber Hymnal's Old124th.pdf sets the words: no slurs in the melody (one note per syllable, 10.10.10.10.10), so the slurs on c-c and G-F are removed
 X:1
 T:Old 124th
 M:4/4
@@ -22,11 +23,11 @@ K:F
 [V:A] C4 A,2 =B,2 | C4 F4 | D2 D2 F2 D2 | E8 |
 [V:T] F,4) F,2 F,2 | (G,2 C2) B,2 A,2 | G,2 G,2 C2 D2 | (D4 ^C4) |
 [V:B] A,,4 D,2 D,2 | C,4 D,4 | B,,2 G,,2 A,,2 B,,2 | A,,8 |
-[V:S] c4 c2 B2 | A4 G4 | A2 (c2 c2) =B2 | c8 |
+[V:S] c4 c2 B2 | A4 G4 | A2 c2 c2 =B2 | c8 |
 [V:A] F4 F2 G2 | F4 (D2 E2) | F3 E D2 D2 | E8 |
 [V:T] C4 A,2 G,2 | C4 B,4 | C3 =B, A,2 G,2 | (G,8 |
 [V:B] A,,4 D,2 E,2 | F,4 B,4 | A,3 G, F,2 G,2 | x2 (B,,2 A,,2 G,,2) |
-[V:S] A4 G2 F2 | E4 F4 G2 B2 | A4 (G4 | F8) |]
+[V:S] A4 G2 F2 | E4 F4 G2 B2 | A4 G4 | F8 |]
 [V:A] (F2 E2) D2 D2 | C4 F4 D2 G2 | F6 E2 | F8 |]
 [V:T] F,4) B,3 A, | G,4 C4 D2 B,2 | C2 D2 G,4 | A,8 |]
 [V:B] F,,4 B,,2 (G,,2 | C,4) A,,4 B,,2 A,,2 | A,,2 B,,2 C,4 | F,,8 |]

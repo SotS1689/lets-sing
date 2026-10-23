@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (May_the_Mind_of_Christ_My_Savior.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred where the words need it: 2 slurs as in the Cyber Hymnal's StLeonards.nwc (StLeonards.nwc)
 X:1
 T:ST. LEONARDS
 C:A. Cyril Barham-Gould
@@ -11,7 +12,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:D
-[V:S] F A G F | E D D C | D D E F | F ^G A2 | d A B A | G F E D | D/ E/ F E/ B,/ C | D4 |]
+[V:S] F A G F | E D D C | D D E F | F ^G A2 | d A B A | G F E D | (D/ E/) F (E/ B,/) C | D4 |]
 [V:A] D D D/ C/ D | B, B, A, A, | A, A, A, A, | D D C2 | D D D D | D/ C/ D B, B, | A, D B,/ B,/ A, | A,4 |]
 [V:T] A, A, A, A, | G, G, F, E, | F, F, E, D, | F, E, E,2 | A, A, G, A, | A, A, G, G, | F, A, G, G, | G,2 F,2 |]
 [V:B] D, F, E, D, | G,, E,, A,, A,, | D, D, C, D, | B,, E,, A,,2 | F,, F, G, F, | E, D, G,, E,, | A,, F,, G,, A,, | D,4 |]

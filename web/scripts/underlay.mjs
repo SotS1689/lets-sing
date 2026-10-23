@@ -350,6 +350,24 @@ const escapeWord = (syl) => syl.replace(/[_*|~\\]/g, "").replace(/-/g, "\\-");
 
 /** Writes the new rows under each line of the voice's music, after the rows
  *  there, and the rows set afresh (`replaced`, by row; null clears one) in place. */
+/** Where the rests are in the voice whose sung notes are `notes`. */
+function restsOf(abc, notes) {
+    const [tune] = ABCJS.parseOnly(abc);
+    const voices = {};
+    for (const line of tune.lines)
+        (line.staff || []).forEach((staff, s) =>
+            (staff?.voices || []).forEach((elements, v) => {
+                const list = (voices[`${s}.${v}`] ??= { notes: [], rests: [] });
+                for (const el of elements) {
+                    if (el.el_type !== "note") continue;
+                    if (el.rest || !el.pitches?.length) list.rests.push(el.startChar);
+                    else list.notes.push(el.startChar);
+                }
+            })
+        );
+    return Object.values(voices).find((v) => v.notes[0] === notes[0]?.start)?.rests || [];
+}
+
 function writeRows(abc, notes, newRows, replaced = new Map()) {
     const rowCount = rowsOf(notes);
     const src = abc.split("\n");
@@ -375,12 +393,16 @@ function writeRows(abc, notes, newRows, replaced = new Map()) {
         if (!byLine.has(l)) byLine.set(l, []);
         byLine.get(l).push(j);
     });
+    const rests = restsOf(abc, notes);
     const out = [];
     for (let l = 0; l < src.length; l++) {
         out.push(src[l]);
         if (!byLine.has(l)) continue;
-        // A verse that doesn't fit keeps its place with "*" (a note with no word)
-        const words = (row) => "w: " + byLine.get(l).map((j) => (row ? row.tokens[j] : "*")).join(" ");
+        // A verse that doesn't fit keeps its place with "*" (a note with no word).
+        // abcjs spends a "*" on a rest as well, so a rest among this line's notes takes one too
+        const first = notes[byLine.get(l)[0]].start, last = notes[byLine.get(l).at(-1)].start;
+        const skips = byLine.get(l).length + rests.filter((r) => r > first && r < last).length;
+        const words = (row) => "w: " + (row ? byLine.get(l).map((j) => row.tokens[j]) : Array(skips).fill("*")).join(" ");
         // The rows of words already under this line; a line with fewer than the
         // score's other lines (a refrain set once) gets blank ones, so that every
         // verse written here lands in its own row

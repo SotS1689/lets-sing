@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (Love_Divine_All_Loves_Excelling.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred where the words need it: 8 slurs as in the Cyber Hymnal's LoveDivineAllLovesExcelling.nwc (Love Divine, All Loves Excelling)
 X:1
 T:BEECHER / HYFRYDOL
 C:John Zundel / Rowland H. Prichard
@@ -11,7 +12,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:Bb
-[V:S] F F | G F d c/ d/ | c B A G | B G F E/ F/ | D2 F F | G F d c/ d/ | c B G e | d B A G/ A/ | B2 B B | B A G A/ G/ | _G D d d | e d c c/ d/ | c2 F F | G F d c/ d/ | c B G e | d B A G/ A/ | B4 |]
+[V:S] F F | G F d (c/ d/) | c B A G | B G F (E/ F/) | D2 F F | G F d (c/ d/) | c B G e | d B A (G/ A/) | B2 B B | B A G (A/ G/) | _G D d d | e d c (c/ d/) | c2 F F | G F d (c/ d/) | c B G e | d B A (G/ A/) | B4 |]
 [V:A] D F | E E E E | E D F E | G E D C | B,2 D F | E E E E | E D E G | F F E E | D2 D G | G _G =G D | D D F F | G F F =E | F E D F | E E E E | E D E G | F F E E | D4 |]
 [V:T] B, B, | B, A, G, A, | A, B, B, B, | E B, B, A, | F,2 B, B, | B, A, G, A, | A, B, B, B, | B, D C F, | F,2 G, D | D C B, C/ B,/ | A, D, B, B, | B, B, A, B, | A,2 B, B, | B, A, G, A, | A, B, B, B, | B, D C F, | F,4 |]
 [V:B] B,, D, | E, F, F, F, | F, B,, E, E, | E, E, F, F, | B,,2 B,, D, | E, F, F, F, | _G, =G, E, E, | F, F, F, F, | B,,2 G,, B,, | D, D, D, D, | D, D, B,, F, | E, B,, C, C, | F,2 B,, D, | E, F, F, F, | F, B,, E, E, | F, F, F, F, | B,,4 |]

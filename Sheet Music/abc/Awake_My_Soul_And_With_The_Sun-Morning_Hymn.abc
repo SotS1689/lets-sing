@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (Awake_My_Soul_And_With_The_Sun-Morning_Hymn.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred where the words need it: 6 slurs as in the Cyber Hymnal's MorningHymn(Barthélémon).nwc (MorningHymn(Barthélémon).nwc)
 X:1
 T:MORNING HYMN
 M:4/4
@@ -10,7 +11,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:G
-[V:S] G B B B | c/ B/ A A A | d ^c d c/ B/ | A/ G/ F E D- | D D F G | A F/ G/ A B | c B E F | G/ B/ d/ c/ B A | G4 |]
+[V:S] G B B B | (c/ B/) A A A | d ^c d (c/ B/) | (A/ G/) F E D- | D D F G | A (F/ G/) A B | c B E F | (G/ B/) (d/ c/) B A | G4 |]
 [V:A] D G G G | A/ G/ F G F | D E F A/ G/ | F/ E/ D ^C D- | D D D D | D D E E | E/ F/ G E D | D D/ E/ D D/ C/ | B,4 |]
 [V:T] B, D D D | E A, ^C D | A, G, A,/ D/ D | B, A, G, F,- | F, F, A, B, | F, C/ B,/ A, ^G, | A, D C A, | G, G, G, F, | G,4 |]
 [V:B] G, G, D, G,, | C, D, E, D, | F, E, D, G, | G, A, A,, D,- | D, D, D, D, | D, D, C, B,, | A,, B,, C, C, | B,, B,,/ C,/ D, D, | G,,4 |]

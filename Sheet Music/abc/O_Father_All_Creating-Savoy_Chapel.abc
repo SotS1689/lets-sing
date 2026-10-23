@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (O_Father_All_Creating-Savoy_Chapel.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred as the Cyber Hymnal's SavoyChapel.pdf sets the words: E-B in line 3 and B-f in line 7 each carry one syllable
 X:1
 T:SAVOY CHAPEL
 M:4/4
@@ -10,7 +11,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:F
-[V:S] C | C A A G | G2 F F | F B B A | G3 G | G d d c | E B B- B1/4 A3/4- | A1/4 A G D G3/4- | G1/4 G3 C3/4- | C1/4 C A A G3/4- | G1/4 G2 F A3/4- | A1/4 A A B A3/4- | A1/4 d3 G3/4- | G1/4 G d d c3/4- | c1/4 =B f e d3/4- | d1/4 c A A G3/4- | G1/4 F3- F3/4 |]
+[V:S] C | C A A G | G2 F F | F B B A | G3 G | G d d c | (E B) B- B1/4 A3/4- | A1/4 A G D G3/4- | G1/4 G3 C3/4- | C1/4 C A A G3/4- | G1/4 G2 F A3/4- | A1/4 A A B A3/4- | A1/4 d3 G3/4- | G1/4 G d d c3/4- | c1/4 (=B f) e d3/4- | d1/4 c A A G3/4- | G1/4 F3- F3/4 |]
 [V:A] C | C C D E | E2 F C | F F _G G | G3 G | E E F F | E2 F- F1/4 F3/4- | F1/4 F F D F3/4- | F1/4 F2 E C3/4- | C1/4 C A, =B, _D3/4- | _D1/4 E2 =D F3/4- | F1/4 _G G G G3/4- | _G1/4 =G3 F3/4- | F1/4 E E F F3/4- | F1/4 F2 F F3/4- | F1/4 F F F E3/4- | E1/4 F3- F3/4 |]
 [V:T] A, | A, C B, B, | B,2 A, A, | B, B, _E E | D3 D | C C C C | G,2 F, D,1/4 C3/4- | C1/4 C =B, C B,3/4- | =B,1/4 _B,3 B,3/4- | B,1/4 A, F, E, A,3/4- | A,1/4 A,2 A, D3/4- | D1/4 _E E D D3/4- | D1/4 D3 D3/4- | D1/4 C C C C3/4- | C1/4 D =B, A, B,3/4- | =B,1/4 C D C _B,3/4- | B,1/4 A,3- A,3/4 |]
 [V:B] F, | F, F, F, F, | F,2 F, _E, | D, D, C, C, | B,,3 B,, | B, B, A, A,, | C, _D, =D,- D,1/4 D,3/4- | D,1/4 G,, G,, G, G,3/4- | G,1/4 C,3 E,3/4- | E,1/4 F, F, A,, A,,3/4- | A,,1/4 D,2 D, D,3/4- | D,1/4 C, C, C C3/4- | C1/4 B,3 B,3/4- | B,1/4 B, B, A, A,3/4- | A,1/4 G,2 G, G,,3/4- | G,,1/4 A,, B,, C, C,3/4- | C,1/4 F,,3- F,,3/4 |]

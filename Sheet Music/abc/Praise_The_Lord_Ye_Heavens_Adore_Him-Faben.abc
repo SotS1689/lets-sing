@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (Praise_The_Lord_Ye_Heavens_Adore_Him-Faben.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred as the Cyber Hymnal's Faben.pdf sets the words: lines 2 and 6 end on a two-note slur ("E D", "G Gb")
 X:1
 T:FABEN
 M:3/4
@@ -10,7 +11,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:Bb
-[V:S] F/ F/ | F3/2 d/ c/ d/ | B F F/ F/ | E3/2 G/ F/ E/ | E D E/ E/ | F3/2 d/ c/ d/ | B F B/ B/ | A3/2 G/ F/ =E/ | F2 F/ F/ | G3/2 G/ A/ A/ | B B G/ G/ | G3/2 B/ A/ G/ | G _G F/ F/ | F3/2 d/ c/ d/ | B F _G/ G/ | G/ c/ B A | B3 |]
+[V:S] F/ F/ | F3/2 d/ c/ d/ | B F F/ F/ | E3/2 G/ F/ E/ | (E D) E/ E/ | F3/2 d/ c/ d/ | B F B/ B/ | A3/2 G/ F/ =E/ | F2 F/ F/ | G3/2 G/ A/ A/ | B B G/ G/ | G3/2 B/ A/ G/ | (G _G) F/ F/ | F3/2 d/ c/ d/ | B F _G/ G/ | G/ c/ B A | B3 |]
 [V:A] D/ D/ | D3/2 F/ E/ E/ | D D B,/ B,/ | C3/2 E/ D/ C/ | C B, A,/ C/ | B,3/2 F/ E/ E/ | D D D/ G/ | F3/2 C/ C/ B,/ | A,2 C/ C/ | D3/2 D/ E/ E/ | D D D/ D/ | _D3/2 D/ D/ D/ | D2 E/ E/ | D3/2 F/ E/ D/ | D D C/ C/ | B,/ E/ D C | D3 |]
 [V:T] B,/ B,/ | B,3/2 F,/ G,/ A,/ | B, B, B,/ B,/ | B,3/4 F,1/4 A,/ F,/ G,/ A,/ | A, B, F,/ F,/ | F,3/2 F,/ G,/ A,/ | B, B, B,/ D/ | C3/2 B,/ A,/ G,/ | F,2 A,/ A,/ | B,3/2 B,/ C/ C/ | B, B, B,/ B,/ | B,3/2 G,/ A,/ B,/ | B, A, A,/ A,/ | B,3/2 B,/ A,/ A,/ | G, B, A,/ A,/ | G,/ G,/ F, F, | F,3 |]
 [V:B] B,,/ B,,/ | B,,3/2 B,,/ B,,/ B,,/ | B,, B,, D,/ D,/ | F,3/2 F,/ F,/ F,/ | B,,2 C,/ C,/ | D,3/2 B,,/ B,,/ B,,/ | B,, B,, G,,/ G,,/ | C,3/2 C,/ C,/ C,/ | F,,2 F,/ F,/ | F,3/2 F,/ F,/ F,/ | G, G, G,/ G,/ | E,3/2 E,/ E,/ E,/ | D,2 F,/ F,/ | B,,3/2 B,,/ F,/ _G,/ | G, D, D,/ D,/ | E,/ C,/ F, F,, | B,,3 |]

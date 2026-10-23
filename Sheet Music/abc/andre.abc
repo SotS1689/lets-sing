@@ -1,4 +1,5 @@
 % Source: Cyber Hymnal nwc/a/n/d/r/Andre.nwc
+% Melody slurred as the Cyber Hymnal's André.pdf sets the words: the eighth pairs B-A, G-F in bar 2 each carry one syllable ("of", "the"), as the PDF slurs the tenor there
 X:1
 T:AndrÃ©, LM repeat
 M:4/4
@@ -10,7 +11,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:G
-[V:S] G2 | G2 B2 G2 B2 | B A G F G2 G2 | B2 d2 B2 d2 |
+[V:S] G2 | G2 B2 G2 B2 | (B A) (G F) G2 G2 | B2 d2 B2 d2 |
 [V:A] D2 | D2 D2 E2 G2 | E2 D2 D2 D2 | G2 F2 G2 G2 |
 [V:T] B,2 | B,2 G,2 B,2 D2 | (G, C) (B, A,) B,2 B,2 | B,2 B,2 B,2 B,2 |
 [V:B] G,2 | F,2 E,2 D,2 B,,2 | C,2 D,2 G,2 (G, F,) | E,2 D,2 E,2 G,,2 |

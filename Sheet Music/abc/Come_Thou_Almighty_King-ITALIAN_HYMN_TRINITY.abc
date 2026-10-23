@@ -1,4 +1,5 @@
 % Source: transcribed from the app's own MIDI (Come_Thou_Almighty_King-ITALIAN_HYMN_TRINITY.mid) by Sheet Music/transcribe_midi.py
+% Melody slurred where the words need it: 2 slurs as in the Cyber Hymnal's ComeThouAlmightyKing.nwc (Come, Thou Almighty King)
 X:1
 T:ITALIAN HYMN (TRINITY)
 C:Felice de Giardini
@@ -11,7 +12,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:G
-[V:S] G z2 | d B G | A G F | G3 | G A B | c/ d/ c B | A3 | d B G | D3 | A B c | B3/2 A/ G | A B c | B3/2 A/ G | G B d | d3/2 e/ d | c B A |]
+[V:S] G z2 | d B G | (A G) F | G3 | G A B | (c/ d/ c) B | A3 | d B G | D3 | A B c | B3/2 A/ G | A B c | B3/2 A/ G | G B d | d3/2 e/ d | c B A |]
 [V:A] D z2 | G G D | E D D | D3 | D D G | F A G | F3 | d B G | D3 | F G A | G3/2 D/ D | F G A | G3/2 D/ D | G B d | G3/2 G/ G | A G F |]
 [V:T] B, z2 | B, D D | C B, A, | B,3 | B, D D | D2 D | D3 | D B, G, | D,3 | D D D | D3/2 C/ B, | D D D | D3/2 C/ B, | G, B, D | B,3/2 C/ B, | E D C |]
 [V:B] [G,G,,] z2 | G, B, B,, | C, D, D, | G,,3 | G, F, G, | A, F, G, | D,3 | D B, G, | D,3 | D, D, D, | G,3/2 G,/ G, | D, D, D, | G,3/2 G,/ G, | G, B, D | G,3/2 G,/ G, | C, D, D, |]
