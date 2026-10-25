@@ -267,6 +267,12 @@ export function fillVerses(abc, verses, dict) {
         // Words of another of this hymn's verses (the score numbers them differently) stay
         const elsewhere = like === "other" && verses.some((v, i) => i !== r && likeness(words, verseLines(v)) !== "other");
         if (like === "near" || (like === "other" && !elsewhere)) redo.push({ r, slots, near: like === "near" });
+        // A refrain set only under the first verse: this verse's words take the
+        // notes it leaves bare, as the first verse's do (kept as set if they don't fit)
+        else if (r > 0 && like === "part" && lines.flat().length > words.length) {
+            const refrain = notes.map((n, j) => slots[j] || (!!n.lyric[0]?.syllable && !n.lyric[r]?.syllable));
+            if (refrain.some((s, j) => s !== slots[j])) redo.push({ r, slots: refrain, near: true, refrain: true });
+        }
         if (r === 0 && (like === "part" || elsewhere)) extend = false;
     }
     // Syllables in each line of most verses: the tune's lines
@@ -303,11 +309,70 @@ export function fillVerses(abc, verses, dict) {
         return null;
     };
 
+    /** Verse r as the score sets it, with the words it leaves out (a refrain set
+     *  only under the first verse) on the notes the first verse sings there and
+     *  this one leaves bare; null unless every word the score sets is the verse's
+     *  and each run of bare notes takes exactly the words left out at that point. */
+    const fillBare = (r) => {
+        const own = verseLines(verses[r]).flat();
+        // The words the row sets, and the runs of notes it leaves bare that the
+        // first verse sings, each after so many of its words
+        const set = [], runs = [];
+        let open = false, run = null;
+        notes.forEach((n, j) => {
+            const l = n.lyric[r];
+            if (l?.syllable) {
+                run = null;
+                if (open) set[set.length - 1].push(l.syllable);
+                else set.push([l.syllable]);
+                open = l.divider === "-";
+            } else if (n.lyric[0]?.syllable) {
+                if (!run) runs.push((run = { at: set.length, notes: [] }));
+                run.notes.push(j);
+            }
+        });
+        // Which of the verse's words the row's are, in order
+        const a = set.map((w) => key(w.join("").replace(/^\d+\.\s*/, ""))), b = own.map(key);
+        const lcs = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+        for (let i = a.length - 1; i >= 0; i--)
+            for (let j = b.length - 1; j >= 0; j--)
+                lcs[i][j] = sameWord(a[i], b[j]) ? lcs[i + 1][j + 1] + 1 : Math.max(lcs[i + 1][j], lcs[i][j + 1]);
+        // (a verse number standing alone is no word)
+        if (lcs[0][0] !== a.filter(Boolean).length) return null;
+        // The verse's words left out before each of the row's words (and after the last)
+        const between = [[]];
+        for (let i = 0, j = 0; j < b.length; j++) {
+            for (; i < a.length && !a[i]; i++) between.push([]);
+            if (i < a.length && sameWord(a[i], b[j]) && lcs[i][j] === lcs[i + 1][j + 1] + 1) {
+                i++;
+                between.push([]);
+            } else between[i].push(own[j]);
+        }
+        // A note the first verse sings where this one holds a note on stays held
+        const wanted = between.map((words, at) => ({ at, words, run: runs.find((x) => x.at === at) })).filter((g) => g.words.length);
+        if (wanted.some((g) => !g.run)) return null;
+        const tokens = notes.map((n) => {
+            const l = n.lyric[r];
+            if (!l?.syllable) return "_";
+            const number = l.syllable.match(/^\d+\.\s*/)?.[0];
+            const syl = escapeWord(l.syllable.slice(number?.length || 0)).replace(/\s+/g, "~");
+            return (number ? `${r + 1}.~` : "") + syl + (l.divider === "-" ? "-" : "");
+        });
+        for (const { at, words, run } of wanted) {
+            const fitted = fitLine(words, run.notes.length, dict);
+            if (!fitted) return null;
+            const sung = fitted.flatMap((word) => word.map((syl, k) => escapeWord(syl) + (k < word.length - 1 ? "-" : "")));
+            if (at === 0) sung[0] = `${r + 1}.~${sung[0]}`;
+            run.notes.forEach((j, k) => (tokens[j] = sung[k]));
+        }
+        return { tokens, count: notes.filter((n) => n.lyric[r]?.syllable).length + wanted.reduce((s, g) => s + g.run.notes.length, 0) };
+    };
+
     const added = [], missed = [];
     // Verses the score sets with other words, each in its own rhythm first
     const replaced = new Map();
-    for (const { r, slots, near } of redo) {
-        const row = setVerse(r, [{ perLine: null, slots }]);
+    for (const { r, slots, near, refrain } of redo) {
+        const row = setVerse(r, [{ perLine: null, slots }]) || (refrain && fillBare(r)) || null;
         if (row) {
             replaced.set(r, row);
             added.push(r + 1);

@@ -76,7 +76,10 @@ switched on. The design follows the #doreancon hymnal player
   without words; the build lists those. Where a score sets other words than the
   hymn's (another translation, an older wording), those verses are set again with
   the hymn's words in the score's rhythm for that verse, so the words under the
-  notes always match the lyrics shown, or are left out.
+  notes always match the lyrics shown, or are left out. A refrain the score
+  prints once, under verse 1, is set under every verse from that verse's own
+  words, so the hymn's lyrics need each refrain written out in every verse
+  (never "[Refrain]" or the refrain as a verse of its own).
 - **`scripts/build-scores.mjs`** (run by prepare-content) works out, ahead of
   time, when every notehead sounds in *our* MIDI file: each part's MIDI notes are
   matched by pitch against the score line it follows, which handles intros,
