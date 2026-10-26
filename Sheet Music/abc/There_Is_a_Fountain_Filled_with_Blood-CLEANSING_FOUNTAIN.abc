@@ -1,4 +1,4 @@
-% Source: transcribed from the app's own MIDI (There_Is_a_Fountain_Filled_with_Blood-CLEANSING_FOUNTAIN.mid) by Sheet Music/transcribe_midi.py
+% Source: transcribed from the app's own MIDI (There_Is_a_Fountain_Filled_with_Blood-CLEANSING_FOUNTAIN.mid) by Sheet Music/transcribe_midi.py; slurs as Trinity Hymnal (1990) no. 253 sets the words
 X:1
 T:CLEANSING FOUNTAIN
 C:Early American Melody / Lowell Mason
@@ -11,7 +11,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:Bb
-[V:S] B,/ D/ | F3/2 G/ F B | B3/2 G/ F B,/ D/ | F3/2 F/ G/ F/ D/ B,/ | C3 B,/ D/ | F3/2 G/ F B | B3/2 G/ F B/ c/ | d3/2 B/ c d | B3 B/ c/ | d3/2 B/ c d | B3/2 G/ B G | F3/2 F/ G/ F/ D/ B,/ | C3 B,/ D/ | F3/2 G/ F B | B3/2 G/ F B/ c/ | d3/2 B/ c d | B4 |]
+[V:S] (B,/ D/) | F3/2 G/ F B | B3/2 G/ F (B,/ D/) | F3/2 F/ (G/ F/) (D/ B,/) | C3 (B,/ D/) | F3/2 G/ F B | B3/2 G/ F (B/ c/) | d3/2 B/ c d | B3 (B/ c/) | d3/2 B/ c d | (B3/2 G/ B) G | F3/2 F/ (G/ F/) (D/ B,/) | C3 (B,/ D/) | F3/2 G/ F B | B3/2 G/ F (B/ c/) | d3/2 B/ c d | B4 |]
 [V:A] B, | D3/2 E/ D F | E3/2 E/ D B, | D3/2 D/ E/ D/ B, | A,3 B, | D3/2 E/ D F | E3/2 E/ D D/ E/ | F3/2 F/ F F | D3 D/ E/ | F3/2 D/ F F | E3 E | D3/2 D/ E/ D/ B, | A,3 B, | D3/2 E/ D F | E3/2 E/ D F | F3/2 F/ F F | D4 |]
 [V:T] D,/ F,/ | B,3/2 B,/ B, B, | G,3/2 B,/ B, D,/ F,/ | B,3/2 B,/ B, F, | F,3 D,/ F,/ | B,3/2 B,/ B, B, | G,3/2 B,/ B, B, | B,3/2 B,/ A, F, | F,3 F, | B,3/2 B,/ A, B, | G,3/2 B,/ G, B, | B,3/2 B,/ B, F, | F,3 D,/ F,/ | B,3/2 B,/ B, B, | G,3/2 B,/ B, B,/ A,/ | B,3/2 B,/ A, A, | F,4 |]
 [V:B] B,, | B,,3/2 E,/ B,, D, | E,3/2 E,/ B,, B,, | B,,3/2 B,,/ B,, B,,/ D,/ | F,3 B,, | B,,3/2 E,/ B,, D, | E,3/2 E,/ B,, B,, | B,,3/2 D,/ F, F, | B,,3 B,, | B,,3/2 B,,/ F, D, | E,3 E, | B,,3/2 B,,/ B,, B,,/ D,/ | F,3 B,, | B,,3/2 E,/ B,, D, | E,3/2 E,/ B,, D,/ F,/ | B,,3/2 D,/ F, F,, | B,,4 |]

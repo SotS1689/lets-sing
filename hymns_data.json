@@ -5215,7 +5215,7 @@
       "4. Now Redemption, long expected,\nsee in solemn pomp appear!\nAll his saints, by man rejected,\nnow shall meet him in the air.\nAlleluia! Alleluia!\nSee the day of God appear!"
     ],
     "credits": "Words: John Cennick, 1752. Altered by Charles Wesley, 1758, alt., as in Trinity Hymnal (1990), no. 318. Music: 'Holywood'. Alternate tune per Trinity Hymnal (Orthodox Presbyterian Church / Great Commission Publications). copyright: public domain (tune).",
-    "meter": "8.7.8.7.4.4.7"
+    "meter": "8.7.8.7.8.7"
   },
   {
     "id": 170,
@@ -8841,16 +8841,17 @@
     "title": "There Is a Fountain Filled with Blood",
     "tune": "CLEANSING FOUNTAIN",
     "verses": [
-      "1. There is a fountain filled with blood,\nDrawn from Immanuel's veins;\nAnd sinners, plunged beneath that flood,\nLose all their guilty stains.",
-      "2. The dying thief rejoiced to see\nThat fountain in his day;\nAnd there have I, as vile as he,\nWashed all my sins away.",
-      "3. E'er since by faith I saw the stream\nThy flowing wounds supply,\nRedeeming love has been my theme,\nAnd shall be till I die.",
-      "4. Dear dying Lamb, thy precious blood\nShall never lose its power,\nTill all the ransomed church of God\nBe saved, to sin no more."
+      "1. There is a fountain filled with blood\ndrawn from Immanuel's veins;\nand sinners, plunged beneath that flood,\nlose all their guilty stains:\nlose all their guilty stains,\nlose all their guilty stains;\nand sinners, plunged beneath that flood,\nlose all their guilty stains.",
+      "2. The dying thief rejoiced to see\nthat fountain in his day;\nand there have I, as vile as he,\nwashed all my sins away:\nwashed all my sins away,\nwashed all my sins away;\nand there have I, as vile as he,\nwashed all my sins away.",
+      "3. E'er since by faith I saw the stream\nyour flowing wounds supply,\nredeeming love has been my theme,\nand shall be till I die:\nand shall be till I die,\nand shall be till I die;\nredeeming love has been my theme,\nand shall be till I die.",
+      "4. Then in a nobler, sweeter song\nI'll sing your pow'r to save,\nwhen this poor lisping, stamm'ring tongue\nlies silent in the grave:\nlies silent in the grave,\nlies silent in the grave;\nwhen this poor lisping, stamm'ring tongue\nlies silent in the grave.",
+      "5. Dear dying Lamb, your precious blood\nshall never lose its pow'r,\ntill all the ransomed church of God\nbe saved to sin no more:\nbe saved to sin no more,\nbe saved to sin no more;\ntill all the ransomed church of God\nbe saved to sin no more."
     ],
     "Author": "William Cowper",
     "Composer": "Early American Melody / Lowell Mason",
     "midi_url": "assets/midi/There_Is_a_Fountain_Filled_with_Blood-CLEANSING_FOUNTAIN.mid",
     "mp3_url": "",
-    "credits": "Words: William Cowper. Music: 'CLEANSING FOUNTAIN' Early American Melody / Lowell Mason. copyright: public domain.",
+    "credits": "Words: William Cowper, 1771, mod., as in Trinity Hymnal (1990), no. 253. Music: 'CLEANSING FOUNTAIN' Early American Melody / Lowell Mason. copyright: public domain.",
     "meter": "8.6.8.6"
   },
   {
