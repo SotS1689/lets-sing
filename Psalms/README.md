@@ -79,6 +79,25 @@ can never silently create a duplicate.
 - **`source_midi.py`, `apply_midi_sourcing.py`, `psalm_midi_sourcing.json`,
   `psalm_midi_remaining.json`, `psalm_midi/`** — the MIDI-sourcing pipeline
   (see "MIDI" below).
+- **`psalm_from_svrbc.py`** — sets a psalm to the svrbc psalter's words (the
+  1650 Scottish Psalter as kept at gitlab.com/svrbc/psalter.svrbc.org, used
+  with its developer's permission) and one of its four-part tunes, which
+  becomes both the sheet music and the MIDI. Needs a clone of that repo:
+  `python Psalms/psalm_from_svrbc.py <clone> <psalm> <tune> [--second]`.
+
+## svrbc psalter settings (2026-10-26)
+
+30 psalms whose 1912 Psalter (or other) words never fitted under their notes
+were switched to the svrbc psalter's text and tunes: 4 Evan, 12 York, 17
+Stracathro, 24 Arlington, 36 Crimond, 38 St. Flavian, 41 St. Agnes, 48 St.
+Anne, 50 Southwell (SM), 56 Martyrdom, 58 York, 63 St. Agnes, 68 Azmon, 70
+Aylesbury (SM), 74 Dundee, 77 Martyrdom, 80 York, 81 Detroit, 85 Evan, 91
+Stracathro, 95 Azmon, 102 St. Flavian, 105 Arlington, 106 St. Anne, 111 St.
+Anne, 114 Azmon, 125 St. Agnes, 134 Evan, 140 Dundee, 148 Darwall's 148th
+(second setting, 6.6.6.6.4.4.4.4). svrbc's Belmont and Irish slur fewer notes
+than common metre needs, and its New Britain doesn't match the MIDI abcjs
+writes from it, so those three aren't used. A stanza with a feminine ending
+("the poor man's case consider") still can't go under a common-metre tune.
 
 ## Adding Psalms
 

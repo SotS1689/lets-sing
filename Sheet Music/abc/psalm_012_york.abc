@@ -1,0 +1,20 @@
+% Source: svrbc psalter tunes/york.abc
+X:1
+T:YORK
+C:Scottish Psalter, 1615; harm. after Thomas Ravenscroft
+S:Cyber Hymnal NWC score (hymntime.com) - Source: The English Hymnal (London: Oxford University Press, 1906), # 472. Melody is from the Scottish Psalter, 1650; harmonized by John Milton (1562â1647), father of poet John Milton (1608â1674).
+%%psalter-meter CM
+%%psalter-capo 3
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] F2 A c | B d A c | G2 G2 | A c c =B | c2 F2 | A c B d | A c G2 | A2 B A | G G F2 |]
+[V:A] C2 F _E | _E D D C | C2 E2 | F (E/ F/) G G | E2 F2 | F _E E D | D C C2 | C2 D F | F E F2 |]
+[V:T] A,2 C C | G, F, F, =E, | E,2 C2 | C C D D | C2 A,2 | C C G, B, | F, A, E,2 | F,2 F, (A,/ B,/) | C C A,2 |]
+[V:B] F,2 F, C, | _E, B,, D, A,, | C,2 C,2 | F, A, G, G, | C,2 F,2 | F, C, _E, B,, | D, A,, C,2 | F,2 B,, F, | C, C, F,,2 |]

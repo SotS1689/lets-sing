@@ -1,0 +1,20 @@
+% Source: svrbc psalter tunes/crimond.abc
+X:1
+T:CRIMOND
+C:Jessie Seymour Irvine, 1872; harm. David Grant
+S:Cyber Hymnal NWC score (hymntime.com) - Source: The Hymnbook (Richmond, Virginia: Presbyterian Church in the United States, 1955), # 104.
+%%psalter-meter CM
+%%psalter-capo 3
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] C | A2 (B3/4 G1/4) | c2 (B/ G/) | F2 E | F2 A | (A G) G | =B2 B | c2 A | (A B) A | G2 A | (B c) B | A2 A | (G B) d | F2 E | F2 |]
+[V:A] C | F2 E | F2 D | C2 C | C2 F | C2 C | (D G) F | E2 F | (F G) F | E2 F | (G E) G | F2 (F/ E/) | D2 D | C2 C | C2 |]
+[V:T] A, | C2 C | C2 (G,/ B,/) | A,2 G, | A,2 C | F, G, G, | G,2 G, | C2 C | C2 C | C2 C | (D C) C | C2 C | (B, G,) G, | A,2 G, | A,2 |]
+[V:B] F, | F,2 (G,3/4 B,1/4) | (A, A,,) B,, | C,2 C, | F,2 F, | (F, E,) E, | G,2 G,, | C,2 F, | (F, E,) F, | (C, B,) A, | (G, C,) (D,/ E,/) | F,2 F, | B,,2 B,, | C,2 C, | F,2 |]

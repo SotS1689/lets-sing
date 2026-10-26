@@ -1,4 +1,4 @@
-% Source: transcribed from the app's own MIDI (Lift_High_The_Cross-Crucifier.mid) by Sheet Music/transcribe_midi.py
+% Source: transcribed from the app's own MIDI (Lift_High_The_Cross-Crucifier.mid) by Sheet Music/transcribe_midi.py; slurs added by hand where the Open Hymnal score sets one syllable over two notes, and over the lead back into the refrain
 X:1
 T:CRUCIFIER
 C:Nicholson, S.
@@ -11,7 +11,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:C
-[V:S] G2 c3/2 G/ | F3 G | E3/2 F/ G A | D3 D | E G c2- | c A G2- | G A F/ E/ D | C4 | G2 ^F3/2 E/ | ^F2 D2 | E3/2 ^F/ G A | B2 G2 | c2 B A | d2 D2 | E3/2 G/ G ^F | G F D E |]
+[V:S] G2 c3/2 G/ | F3 G | E3/2 F/ G A | D3 D | E G c2- | c A G2- | G A (F/ E/) D | C4 | G2 ^F3/2 E/ | ^F2 D2 | E3/2 ^F/ G A | B2 G2 | c2 (B A) | d2 D2 | E3/2 G/ G ^F | (G F D E) |]
 [V:A] C D E C- | C B, C D | C3 C | C B, A, G, | G, B, C D | E F G F | E D/ C/ C B,/ A,/ | G,4 | E D C3/2 C/ | D2 D2 | G,3/2 B,/ B, E | ^D2 E =D | C E D2 | D2 D2 | C3/2 E/ D D | D [FCA,] [DA,F,] [EB,G,] |]
 [V:T] E, F, G,2 | A, G, F, D, | G,3/2 F,/ E, D, | G,3 F, | E, F, G, A, | B, C D C | B, A, A,/ G,/ F, | F, D, E,2 | B,2 A,3/2 A,/ | A,2 G, ^F, | E,3/2 ^D,/ E, E, | ^F,2 G,2 | A, G, ^F,2 | G, A, G, ^F, | E,3/2 C/ A, A, | B,4 |]
 [V:B] C,,3 E,, | D,, G,, A,, B,, | C, A,, G,, ^F,, | G,,2 A,, B,, | C, D, E, F, | G, A, B, A, | G, F,/ E,/ D, G,, | C,4 | E,2 A,,3/2 A,,/ | D, C, B,,2 | C,3/2 B,,/ E, C, | B,,2 E,2 | A,,2 D, C, | B,,2 B,,2 | C,3/2 C,/ D, D, | G,,4 |]

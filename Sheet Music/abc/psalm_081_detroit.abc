@@ -1,0 +1,20 @@
+% Source: svrbc psalter tunes/detroit.abc
+X:1
+T:DETROIT
+C:William Bradshaw, Supplement to the Kentucky Harmony, 1820
+S:The Sacred Harp 39t (), via shapenote.net MusicXML. Transposed from E dorian down a tone, the Sacred Harp tenor taken as the melody, and the printed repeat of the second strain omitted for congregational use.
+%%psalter-meter CM
+%%psalter-capo 0
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Dm
+[V:S] D2 F G | A2 F2 | (G/ F/) (D/ C/) D2 | D2 F G | A c d2- | d2 A2 | d (d/ c/) A2 | G2 (F/ G/) A/ =B/ | c2 A2 | (G3/2 F/) D C | D4 |]
+[V:A] D2 D C | D2 D2 | C C D2 | D2 C C | D/ E/ C D2- | D2 D2 | D D D2 | C2 F/ E/ D | C2 F2 | D3/2 C/ D D | D4 |]
+[V:T] A,2 A, =B, | A,2 D2 | C C D2 | D2 C D | A, G, A,2- | A,2 F,3/2 E,/ | D, D,/ E,/ F,2 | G,2 A, D | C2 C2 | D3/2 C/ A, A, | A,4 |]
+[V:B] D,2 F, E, | D,2 F,2 | C, A,, D,2 | A,2 F, D, | A, G,/ F,/ D,2- | D,2 F,3/2 G,/ | A, A, D,2 | E,2 F, D, | C,2 F,2 | D,3/2 C,/ A,, A,, | D,4 |]

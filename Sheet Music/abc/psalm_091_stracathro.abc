@@ -1,0 +1,20 @@
+% Source: svrbc psalter tunes/stracathro.abc
+X:1
+T:STRACATHRO
+C:Charles Hutcheson (1792-1860)
+S:Cyber Hymnal NWC score (hymntime.com) - Source: The Methodist Hymnal (New York: Methodist Publishing House, 1932), # 340.
+%%psalter-meter CM
+%%psalter-capo 0
+M:3/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] D | F2 E | D2 E | (F d) c | B2 d | (A G) D | F2 E | D2 F | F2 E | F A | (B e) d | c2 c | (d A) B | F2 E | D2 |]
+[V:A] A, | D2 C | B,2 A, | (A, F) E | D2 D | (E E) D | D2 C | D2 D | (D C) B, | F D | (D G) F | E2 E | (D F) E | D2 C | D2 |]
+[V:T] F, | A,2 (A,/ G,/) | F,2 A, | (F,3/2 ^G,/) ^A, | B,2 F, | (E, A,) B, | A,3/2 B,/ G, | F,2 A, | A,2 B, | A,2 A, | E, (A,/ B,/) | C2 A, | (A, D) B, | A,2 (A,/ G,/) | F,2 |]
+[V:B] D, | D,2 A,, | B,,2 C, | (D,3/2 E,/) F, | B,,2 B,, | (C, D,) B,, | F,,3/2 G,,/ A,, | D,2 D, | (D, A,) G, | (F, D,) F, | E, (F,/ G,/) | A,2 (A,/ G,/) | (F, D,) G, | A,2 A,, | D,2 |]

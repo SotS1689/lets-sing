@@ -55,12 +55,40 @@ function position(p) {
 }
 
 /**
- * Converts one Cyber Hymnal score. Returns { abc, title } or throws when the
- * score is laid out in a way this doesn't read (more or fewer than two staves,
- * triplets, a part dividing where the two parts are out of step).
- * `transpose` moves it that many semitones, into the key a hymn's MIDI is in.
+ * A |LyricN| line's words as syllables: [{ text, hyphen }], hyphen when the
+ * word goes on into the next syllable. The file's text is UTF-8 read as
+ * latin1; "_" joins two words sung on one note ("Je-sus,_is"), shown as a space.
  */
-export function nwcToAbc(text, { transpose = 0 } = {}) {
+function syllables(field) {
+    const raw = Buffer.from(field.replace(/^"|"$/g, ""), "latin1").toString("utf8")
+        .replace(/\\n/g, "\n").replace(/\\r/g, "").replace(/\\(["'\\])/g, "$1");
+    const out = [];
+    for (const m of raw.matchAll(/[^\s-]+(-?)|-/g)) {
+        if (m[0] === "-") {
+            if (out.length) out[out.length - 1].hyphen = true;
+            continue;
+        }
+        const text = m[0].replace(/-$/, "").replace(/_+/g, "~").replace(/^~|~$/g, "");
+        out.push({ text, hyphen: m[1] === "-" });
+    }
+    return out;
+}
+
+/** One verse's syllable in ABC's w: line: the dash, underscore, star and bar
+ *  are ABC's own marks, so they can't be in the words. */
+const wText = (s) => s.text.replace(/[*|\\]/g, "") + (s.hyphen ? "-" : "");
+
+/**
+ * Converts one Cyber Hymnal score. Returns { abc, title, verses, lyricsDropped }
+ * (how many verses it sets under the notes, and why none when it had some) or
+ * throws when the score is laid out in a way this doesn't read (more or fewer
+ * than two staves, triplets, a part dividing where the two parts are out of step).
+ * `transpose` moves it that many semitones, into the key a hymn's MIDI is in.
+ * `lyrics` sets the score's own verses under the melody too, a syllable where
+ * NoteWorthy puts one: on each note or chord of the top staff, except one a
+ * tie or a slur carries on from the note before (or marked Lyric=Never).
+ */
+export function nwcToAbc(text, { transpose = 0, lyrics = false } = {}) {
     const staves = [];
     let info = {};
     for (const line of text.split(/\r?\n/)) {
@@ -75,7 +103,13 @@ export function nwcToAbc(text, { transpose = 0 } = {}) {
 
     let key = null, meter = null, tempo = null;
     const voices = []; // S, A, T, B: lists of bars, each a list of { notes|rest, l, slur }
+    // The top staff's verses, each a list of syllables; `next` is the one the next note takes
+    const verses = lyrics
+        ? sung[0].items.filter((i) => /^Lyric\d+$/.test(i.kind) && i.Text).map((i) => syllables(i.Text)).filter((v) => v.length)
+        : [];
+    let next = 0, lyricsDropped = null;
     for (const staff of sung) {
+        const top = staff === sung[0];
         const clef = staff.items.find((i) => i.kind === "Clef")?.Type;
         if (!(clef in MIDDLE_LINE)) throw new Error(`clef ${clef}`);
         const middle = MIDDLE_LINE[clef];
@@ -105,7 +139,9 @@ export function nwcToAbc(text, { transpose = 0 } = {}) {
             v.bars[v.bars.length - 1].push(entry);
             v.end = now + entry.l;
             if (!entry.rest) v.last = entry.pitches[0];
+            v.placed = entry;
         };
+        let slurred = false; // the item before ends in a slur on to this one
         const group = (dur, pos, rest = false, hidden = false) => {
             const { l, slur } = length(dur);
             return { l, slur, rest, hidden, pitches: rest ? [] : pos.split(",").map(position).map(pitch) };
@@ -155,6 +191,11 @@ export function nwcToAbc(text, { transpose = 0 } = {}) {
                     const second = it.Dur2 ? group(it.Dur2, it.Pos2 || "") : null;
                     const up = free(upper), down = free(lower);
                     if (!up && !down) throw new Error("no part is free for the next note");
+                    const opts = it.Opts || "";
+                    const tiedOn = !rest && main.pitches.every((p) => tiedFrom.has(p.step));
+                    const sings = top && verses.length && !rest && !/Lyric=Never/.test(opts)
+                        && (/Lyric=Always/.test(opts) || !(slurred || tiedOn));
+                    upper.placed = null;
                     if (second) {
                         // Two layers: the stem says which part the main one is
                         const stem = /Stem=(Up|Down)/.exec(it.Opts || "")?.[1];
@@ -184,6 +225,19 @@ export function nwcToAbc(text, { transpose = 0 } = {}) {
                         const v = up ? upper : lower;
                         place(v, pick(main, v));
                     }
+                    if (sings) {
+                        // The syllable goes under the melody's note this item starts; one
+                        // under a lower part's note alone can't be set, so the words are dropped
+                        const at = upper.placed && !upper.placed.rest ? upper.placed : null;
+                        if (!at) {
+                            lyricsDropped = `a syllable under the alto's note alone (bar ${upper.bars.length})`;
+                            verses.length = 0;
+                        } else {
+                            at.syllables = verses.map((v) => v[next] || null);
+                            next++;
+                        }
+                    }
+                    if (!rest) slurred = main.slur || Boolean(second?.slur);
                     tiedFrom = new Set([main, second].filter(Boolean).flatMap((g) => g.pitches.filter((p) => p.tie).map((p) => p.step)));
                     now += Math.min(main.l, second ? second.l : Infinity);
                     break;
@@ -230,9 +284,10 @@ export function nwcToAbc(text, { transpose = 0 } = {}) {
             const chunk = written[v].slice(b, b + BARS_PER_LINE);
             const last = b + BARS_PER_LINE >= bars;
             lines.push(`[V:${name}] ` + chunk.join(" | ") + (last ? " |]" : " |"));
+            if (v === 0) lines.push(...wordLines(voices[0].slice(b, b + BARS_PER_LINE), verses.length));
         });
     }
-    return { abc: lines.join("\n") + "\n", title };
+    return { abc: lines.join("\n") + "\n", title, lyricsDropped, verses: verses.length };
 }
 
 const NATURAL = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 };
@@ -285,6 +340,26 @@ const lengthText = (l) => {
     for (const d of [2, 4, 8]) if (Number.isInteger(l * d)) return `${l * d}/${d}`;
     throw new Error(`note length ${l}`);
 };
+
+/** The w: lines under some bars of the melody, one per verse: each note its
+ *  syllable, "_" where the verse's last word is held on, "*" where it has none. */
+function wordLines(bars, count) {
+    const out = [];
+    for (let k = 0; k < count; k++) {
+        const tokens = [];
+        let held = false;
+        for (const n of bars.flat()) {
+            if (n.rest) continue;
+            const s = n.syllables?.[k];
+            if (s?.text) tokens.push(wText(s));
+            else tokens.push(held && !n.syllables ? "_" : "*");
+            if (s?.text) held = true;
+            else if (n.syllables) held = false;
+        }
+        if (tokens.length) out.push("w: " + tokens.join(" "));
+    }
+    return out;
+}
 
 /** One part's bars as ABC: accidentals written wherever the key or the bar so far
  *  wouldn't give the right note, slurs and ties as the score has them. */

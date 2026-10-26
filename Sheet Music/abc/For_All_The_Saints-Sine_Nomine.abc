@@ -1,4 +1,4 @@
-% Source: transcribed from the app's own MIDI (For_All_The_Saints-Sine_Nomine.mid) by Sheet Music/transcribe_midi.py
+% Source: transcribed from the app's own MIDI (For_All_The_Saints-Sine_Nomine.mid) by Sheet Music/transcribe_midi.py; slurs as the words go in For_All_The_Saints-Sine_Nomine.abc
 X:1
 T:SINE NOMINE
 C:Williams, R.
@@ -11,7 +11,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:G
-[V:S] d B A | G3 D | E G A D | B4 | A2 A G | F2 F2 | G A F E | D3 D | G2 G2 | d3 d | c d c/ B/ A/ G/ | A2 d2 | e d/ c/ d2 | G3 A/ B/ | c B A2 | G4 |]
+[V:S] d B A | G3 D | E G A D | B4 | A2 A G | F2 F2 | G A F E | D3 D | G2 G2 | d3 d | c d (c/ B/) (A/ G/) | A2 (d2 | e) (d/ c/) d2 | G3 (A/ B/ | c) B A2 | G4 |]
 [V:A] G G F | E3 D | C D C D | D4 | D2 D E | A,2 D2 | D D D ^C | D3 A, | D2 D C | B,2 G2 | G A G D | F2 G =F | E G G F | E2 G =F | E D C D | B,4 |]
 [V:T] D E C | B,3 G, | G, G, G, F, | G,4 | A,2 B, ^C | D2 A,2 | B, A, B, G, | F,3 F, | G,2 G,2 | G,2 B,2 | C A, D D | D2 D2 | C E D2 | D C B, A,/ G,/ | C G, G, F, | G,4 |]
 [V:B] B,, C, D, | E,3 B,, | C, B,, A,, D, | G,,4 | F,2 F, E, | D,2 ^C,2 | B,, F,, G,, A,, | D,3 C, | B,, C, B,, A,, | G,,2 G, F, | E, F, G, B,, | D, C, B,,2 | C, A,, B,,2 | E,2 D,2 | C, D, E, D, | G,,4 |]

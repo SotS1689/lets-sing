@@ -31,6 +31,26 @@ site. The reviewer's checks are in `.claude/skills/add-cyber-hymnal/REVIEW.md`;
 `node "Sheet Music/check_words.mjs" <hymn id>` shows why a verse's words don't
 fit under the notes, and `--page-text` prints the page's words to compare.
 
+## Words that don't fit a hymn the app already has
+
+When a hymn's words don't line up under its notes, its Cyber Hymnal page can
+put them back:
+
+```
+python "Missing Hymns/refit_from_cyber_hymnal.py" <hymn id> "<page url>"
+```
+
+It takes the page's words, and the page's NoteWorthy score with the words it
+sets under the melody when it has one (`Sheet Music/nwc.mjs` reads them). Many
+of the Cyber Hymnal's scores are the tune alone; then only the words change,
+unless `--score` asks for the score anyway (its slurs still say which notes
+share a syllable). The app's MIDI is kept when the new score matches it,
+otherwise the Cyber Hymnal's takes its place (`--keep-midi` stops that).
+`--tune NAME` picks the page's tune, `--keep-words` keeps the app's words,
+`--dry-run` writes nothing. A tune the Cyber Hymnal doesn't have can be slurred
+from an older score of it that sets words, such as the Open Hymnal's own:
+`node "Sheet Music/slurs_from_abc.mjs" <midi file stem> <other score.abc>`.
+
 ## From the spreadsheet
 
 > Only the ongoing intake tool lives here now. The one-off research and MIDI

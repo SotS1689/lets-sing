@@ -1,0 +1,20 @@
+% Source: svrbc psalter tunes/darwall.abc
+X:1
+T:DARWALL'S 148TH
+C:Setting:  (ULCA), 1917.
+S:Open Hymnal Project, 2014.06 (On What Has Now Been Sown)
+%%psalter-meter 6.6.6.6.4.4.4.4
+%%psalter-capo 0
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:D
+[V:S] D | F D A F | d3 c | B A G F | E3 E | F D B A | ^G E e d | c2 B2 | A3 A | B2 c2 | d3 D | E F G A | B c d e | d2 c2 | d3 |]
+[V:A] A, | D D E F | F3 F | G D C D | C3 C | D D F E | E E E F | E3 D | C3 D | D2 G2 | F3 D | C D D D | D G F E | F2 G2 | F3 |]
+[V:T] F, | A, F, A, A, | D3 D | D A, A, A, | A,3 A, | A, F, D C | B, ^G, A, A, | A,2 ^G,2 | A,3 F, | G,2 G,2 | A,3 A, | G, A, G, F, | G, G, A, B, | A,2 A,2 | A,3 |]
+[V:B] D, | D, D, C, D, | B,3 A, | G, F, E, D, | A,,3 A,, | D, D, B,, C,/D,/ | E, D, C, D, | E,2 E,2 | A,,3 D, | G,2 E,2 | D,3 F, | E, D, B,, D, | G, E, F, G, | A,2 A,,2 | D,3 |]

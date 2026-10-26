@@ -11,7 +11,7 @@ V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:G
-[V:S] A G E | D4- | D D E G | G4 | z/ D G A B/- | B4- | B/ A G E D/- | D4- | D/ D G F G/- | G3/2 A B c/ | B/ A3- A/- | A3/2 A B c/- | c/ d3 c/ | B/ A G B3/2 |]
+[V:S] A G E | D4- | D D E G | G4 | z/ D G A B/- | B4- | B/ A G E D/- | D4- | D/ D G F G/- | G3/2 A B (c/ | B/) A3- A/- | A3/2 A B c/- | c/ d3 (c/ | B/) A G B3/2 |]
 [V:A] F E E | D4- | D D E G | G4 | z/ D G F G/- | G4- | G/ F E E D/- | D4- | D/ D E D E/- | E3/2 F G G/- | G/ A3- A/- | A3/2 F G A/- | A/ B3 F/- | F/ F E G3/2 |]
 [V:T] z3 | D,4- | D, D, E, G, | G,4 | z7/2 G,/- | G,3/2 B,2 D/- | D3- D/ B,/- | B,3/2 B,2 B,/- | B,3- B,/ B,/- | B,3/2 B,2 C/- | C/ A,2 A, C/- | C/ D3- D/- | D/ B,2 B,3/2- | B,/ G,2 B,3/2- | B,/ G, G, |]
 [V:B] z3 | D,4- | D, D, E, G, | G,4 | z7/2 D,/- | D,3/2 G,2 G,/- | G,3- G,/ G,/- | G,3/2 G,2 G,/- | G,3- G,/ G,/- | G,3/2 E,2 C,/- | C,/ F,2 F, C,/- | C,/ G,3- G,/- | G,/ G,2 D,3/2- | D,/ D,2 G,3/2- | G,/ E, B,, |]

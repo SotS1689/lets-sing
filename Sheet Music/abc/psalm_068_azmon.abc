@@ -1,0 +1,19 @@
+% Source: svrbc psalter tunes/azmon.abc
+X:1
+T:AZMON
+S:Open Hymnal Project, 2014.06 (O For A Thousand Tongues)
+%%psalter-meter CM
+%%psalter-capo 1
+M:3/2
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:Ab
+[V:S] E2 | A A B2 B2 | c B A2 B2 | c c d2 c2 | B4 e2 | e c c2 A2 | A F F2 ((A F)) | E A A2 B2 | A4 |]
+[V:A] E2 | E C E2 E2 | E D C2 E2 | E E E2 E2 | E4 G2 | A E E2 E2 | F D D2 (F D) | C C C2 D2 | C4 |]
+[V:T] E,2 | E, A, G,2 G,2 | A, G, A,2 G,2 | A, A, B,2 A,2 | G,4 B,2 | C A, A,2 A,2 | A, A, A,2 A,2 | A, A, A,2 G,2 | A,4 |]
+[V:B] E,2 | C, A,, E,2 E,2 | A, E, F,2 E,2 | A, A, G,2 A,2 | E,4 E,2 | A, A, A,2 C,2 | D, D, D,2 D,2 | E, E, E,2 E,2 | A,,4 |]

@@ -117,6 +117,8 @@ const verseLines = (verse) =>
         .split("\n")
         // A dash between words ("cross—the grave") parts them as a space would
         .map((line) => line.split(/\s+|(?<=[a-z][—–])(?=[a-z])/i).filter((w) => key(w)))
+        // "th' earth" is sung as one syllable: the clipped word goes with the next
+        .map((line) => line.reduce((out, w) => (out.length && /^[^aeiouy]+['’]$/i.test(out[out.length - 1]) ? [...out.slice(0, -1), out[out.length - 1] + w] : [...out, w]), []))
         .filter((line) => line.length);
 
 const isLetter = (c) => /[a-z]/i.test(c.normalize("NFD")[0]);
@@ -125,8 +127,30 @@ const isLetter = (c) => /[a-z]/i.test(c.normalize("NFD")[0]);
  *  capitals and punctuation kept), cut where the dictionary cuts it. */
 function ways(word, dict) {
     const k = key(word);
-    const splits = (dict.get(k) || []).map((s) => s.split("-"));
+    let splits = (dict.get(k) || []).map((s) => s.split("-"));
     if (!splits.length && oneSyllable(k)) splits.push([k]);
+    // "th'enemy": the clipped "the" is sung with the word's first syllable
+    const clipped = /^(th|t)['’]/i.exec(word);
+    if (!splits.length && clipped) {
+        const lead = clipped[1].toLowerCase();
+        splits = ways(word.slice(clipped[0].length), dict).map((parts) => [lead + key(parts[0]), ...parts.slice(1).map(key)]);
+    }
+    // "crownèd": the accent says the -ed is sung as a syllable of its own
+    if (/[èé]d\W*$/i.test(word) && k.endsWith("ed")) {
+        if (!splits.length) {
+            const stem = k.slice(0, -2);
+            const of = (dict.get(stem) || []).map((s) => s.split("-"));
+            if (!of.length && oneSyllable(stem)) of.push([stem]);
+            splits = of.map((parts) => [...parts, "ed"]);
+        }
+        const sounded = (parts) => (parts[parts.length - 1] === "ed" ? parts : [...parts.slice(0, -1), parts[parts.length - 1].slice(0, -2), "ed"]);
+        splits = splits.map(sounded).filter((parts) => parts.every(Boolean));
+    }
+    // The old psalters sing "na-ti-on", "gra-ci-ous": a last resort, after the usual ways
+    for (const parts of [...splits]) {
+        const m = /^(.*?[tcsxg]i)([aeiou][a-z]*)$/.exec(parts[parts.length - 1]);
+        if (m) splits.push([...parts.slice(0, -1), m[1], m[2]]);
+    }
     return splits.map((parts) => {
         const out = [];
         let i = 0;
