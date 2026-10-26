@@ -5000,24 +5000,6 @@
     "credits": "Words: Charlotte Elliott, 1835. Music: 'Woodworth'  William B. Bradbury, 1849. Setting: \"The New Hymnal (Episcopal)\", 1916. copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision."
   },
   {
-    "id": 535,
-    "title": "Just As I Am Without One Plea",
-    "tune": "Gwyneth",
-    "composer_arranger": "",
-    "midi_url": "assets/midi/Just_As_I_Am_Without_One_Plea-Gwyneth.mid",
-    "mp3_url": "",
-    "verses": [
-      "1. Just as I am, without one plea,\nBut that Thy blood was shed for me,\nAnd that Thou biddest me come to Thee,\nO Lamb of God, I come, I come.",
-      "2. Just as I am, and waiting not\nTo rid my soul of one dark blot,\nTo Thee, Whose blood can cleanse each spot,\nO Lamb of God, I come, I come.",
-      "3. Just as I am, though tossed about\nWith many'a conflict, many'a doubt,\nFightings and fears within, without,\nO Lamb of God, I come, I come.",
-      "4. Just as I am, poor, wretched, blind;\nSight riches healing of the mind,\nYea, all I need, in Thee to find,\nO Lamb of God, I come, I come.",
-      "5. Just as I am, Thou wilt receive,\nWilt welcome, pardon, cleanse, relieve,\nBecause Thy promise I believe,\nO Lamb of God, I come, I come.",
-      "6. Just as I am, Thy love unknown\nHas broken every barrier down;\nNow to be Thine, yea Thine alone,\nO Lamb of God, I come, I come."
-    ],
-    "credits": "Words: Charlotte Elliott, 1835. Music: 'Gwyneth'. Alternate tune per Trinity Hymnal (Orthodox Presbyterian Church / Great Commission Publications). copyright: public domain (tune).",
-    "meter": "8.8.8.8"
-  },
-  {
     "id": 412,
     "psalm_number": 83,
     "title": "Keep Not, O God, We Thee Entreat (Psalm 83)",
@@ -5225,15 +5207,13 @@
     "midi_url": "assets/midi/Lo_He_Comes_With_Clouds_Descending-Holywood.mid",
     "mp3_url": "",
     "verses": [
-      "1. Lo! He comes with clouds descending,\nOnce for ev'ry sinner slain;\nThousand thousand saints attending,\nSwell the triumph of His train:\nHallelujah! Hallelujah! Hallelujah!\nGod appears on earth to reign.",
-      "2. Ev'ry eye shall now behold Him\nRobed in dreadful majesty;\nThose who set at naught and sold Him,\nPierced and nailed Him to the tree,\nDeeply wailing, deeply wailing, deeply wailing,\nShall the true Messiah see.",
-      "3. Ev'ry island, sea, and mountain,\nHeav'n and earth, shall flee away;\nAll who hate Him must, confounded,\nHear the trump proclaim the day:\nCome to judgment! Come to judgment! Come to judgment! Come to judgment!\nCome away!",
-      "4. Now redemption, long expected,\nSee in solemn pomp appear;\nAll His saints, by man rejected,\nNow shall meet Him in the air:\nHallelujah! Hallelujah! Hallelujah!\nSee the day of God appear!",
-      "5. Answer Thine own bride and Spirit,\nHasten, Lord, the gen'ral doom!\nThe new Heav'n and earth inherit,\nTake Thy pining exiles home:\nAll creation, all creation, all creation,\nTravails! groans! and bids Thee come!",
-      "6. The dear tokens of His passion\nStill His dazzling body bears;\nCause of endless exultation\nTo His ransomed worshipers;\nWith what rapture, with what rapture, with what rapture\nGaze we on those glorious scars!",
-      "7. Yea, Amen! let all adore Thee,\nHigh on Thine eternal throne;\nSavior, take the power and glory,\nClaim the kingdom for Thine own;\nO come quickly! O come quickly! O come quickly!\nEverlasting God, come down!"
+      "1. Lo! he comes with clouds descending,\nonce for favored sinners slain;\nthousand thousand saints attending\nswell the triumph of his train.\nAlleluia! Alleluia!\nGod appears on earth to reign.",
+      "2. Ev'ry eye shall now behold him,\nrobed in dreadful majesty;\nthose who set at naught and sold him,\npierced, and nailed him to the tree,\ndeeply wailing, deeply wailing,\nshall the true Messiah see.",
+      "3. Ev'ry island, sea, and mountain,\nheav'n and earth, shall flee away;\nall who hate him must, confounded,\nhear the trump proclaim the day:\nCome to judgment! Come to judgment!\nCome to judgment, come away!",
+      "4. Now Redemption, long expected,\nsee in solemn pomp appear!\nAll his saints, by man rejected,\nnow shall meet him in the air.\nAlleluia! Alleluia!\nSee the day of God appear!"
     ],
-    "credits": "Words: John Cennick, 1752. Altered by Charles Wesley, 1758, alt. Music: 'Holywood'. Alternate tune per Trinity Hymnal (Orthodox Presbyterian Church / Great Commission Publications). copyright: public domain (tune)."
+    "credits": "Words: John Cennick, 1752. Altered by Charles Wesley, 1758, alt., as in Trinity Hymnal (1990), no. 318. Music: 'Holywood'. Alternate tune per Trinity Hymnal (Orthodox Presbyterian Church / Great Commission Publications). copyright: public domain (tune).",
+    "meter": "8.7.8.7.4.4.7"
   },
   {
     "id": 170,
@@ -7295,27 +7275,6 @@
       "9. Δ Christ, to Thee with God the Father,\nAnd, O Holy Ghost, to Thee,\nHymn and chant with high thanksgiving,\nAnd unwearied praises be:\nHonor, glory, and dominion,\nAnd eternal victory,\nEvermore and evermore!"
     ],
     "credits": "Words: Aurelius Prudentius Clemens, 5th Century.  Verses 1, 4-8 translated by John Mason Neale, 1854. Verses 2-3, 9 translated by Henry Williams Baker, 1859. Music: 'Divinum Mysterium (Isorythmic)' or 'Corde Natus (Isorythmic)' or 'Corde Natus No. 2'Latin Plainsong, 13th Century. Setting: Henry Thomas Smart, 1872. copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision."
-  },
-  {
-    "id": 235,
-    "title": "Of The Father's Love Begotten",
-    "tune": "Divinum Mysterium (Isorythmic) or Corde Natus (Isorythmic) or Corde Natus No. 2",
-    "composer_arranger": "Latin &Smart",
-    "midi_url": "http://openhymnal.org/Midi/Of_The_Fathers_Love_Begotten-Divinum_Mysterium_Isorhythmic-Corde_Natus_Isorhythmic-Corde_Natus_No._2.mid",
-    "mp3_url": "http://openhymnal.org/Mp3/Of_The_Fathers_Love_Begotten-Divinum_Mysterium_Isorhythmic-Corde_Natus_Isorhythmic-Corde_Natus_No._2.mp3",
-    "verses": [
-      "1. Of the Father's love begotten\nEre the worlds began to be,\nHe is Alpha and Omega,\nHe the source, the ending He,\nOf the things that are, that have been,\nAnd that future years shall see,\nEvermore and evermore!",
-      "2. At His Word they were created;\nHe commanded; it was done:\nHeav'n and earth and depths of ocean\nIn their threefold order one;\nAll that grows beneath the shining\nOf the moon and burning sun,\nEvermore and evermore!",
-      "3. He is found in human fashion,\nDeath and sorrow here to know,\nThat the race of Adam's children,\nDoomed by law to endless woe,\nMay not henceforth die and perish\nIn the dreadful gulf below,\nEvermore and evermore!",
-      "4. Oh that birth forever blessèd!\nWhen the virgin, full of grace,\nBy the Holy Ghost conceiving,\nBare the Savior of our race;\nAnd the Babe, the world's Redeemer,\nFirst revealed His sacred face,\nEvermore and evermore!",
-      "5. O ye heights of heav'n adore Him;\nAngel hosts, His praises sing;\nPow'rs, dominions, bow before Him,\nand extol our God and King:\nLet no tongue on earth be silent,\nEvery voice in concert ring,\nEvermore and evermore!",
-      "6. He is here, Whom seers in old time\nChanted of, while ages ran;\nWhom the writings of the prophets\nPromised since the world began:\nThen foretold, now manifested,\nto receive the praise of man,\nEvermore and evermore!",
-      "7. Righteous Judge of souls departed,\nRighteous King of them that live,\nOn the Father's throne exalted\nNone in might with Thee may strive;\nWho at last in vengeance coming\nSinners from Thy face shalt drive,\nEvermore and evermore!",
-      "8. Thee let old men, Thee let young men,\nThee let choirs of infants sing;\nThee the matrons and the virgins,\nAnd the children answering:\nLet their guileless songs re-echo,\nAnd the heart its music bring,\nEvermore and evermore!",
-      "9. Δ Christ, to Thee with God the Father,\nAnd, O Holy Ghost, to Thee,\nHymn and chant with high thanksgiving,\nAnd unwearied praises be:\nHonor, glory, and dominion,\nAnd eternal victory,\nEvermore and evermore!"
-    ],
-    "credits": "Words: Aurelius Prudentius Clemens, 5th Century.  Verses 1, 4-8 translated by John Mason Neale, 1854. Verses 2-3, 9 translated by Henry Williams Baker, 1859. Music: 'Divinum Mysterium (Isorythmic)' or 'Corde Natus (Isorythmic)' or 'Corde Natus No. 2'Latin Plainsong, 13th Century. Setting: Henry Thomas Smart, 1872. copyright: public domain.  This score is a part of the Open Hymnal Project, 2026 Revision.",
-    "meter": "8.7.8.7.8.7.7"
   },
   {
     "id": 236,
