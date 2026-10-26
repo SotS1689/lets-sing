@@ -108,6 +108,7 @@ async function showList() {
             <input id="search" type="search" placeholder="Search title, tune, or composer"
                    autocomplete="off" aria-label="Search hymns" value="${esc(searchText)}">
         </div>
+        <div id="install-slot"></div>
         <p class="count" id="count"></p>
         <ul class="hymn-list" id="list"></ul>`;
 
@@ -132,6 +133,7 @@ async function showList() {
         searchText = search.value;
         render();
     });
+    renderInstallBanner();
     window.scrollTo(0, listScroll);
 }
 
@@ -229,6 +231,53 @@ async function showDownloadButton() {
 }
 if (navigator.serviceWorker?.controller) showDownloadButton();
 else navigator.serviceWorker?.addEventListener("controllerchange", showDownloadButton, { once: true });
+
+// ---- Install the app (Android) -----------------------------------------------
+// Chrome, Edge and Samsung Internet on Android announce when the site can be
+// installed (beforeinstallprompt). We hold on to that and show a big Install
+// button on the list screen, so nobody has to find "Install app" in the
+// browser's menu. It never fires once the app is installed, or on iPhones.
+
+let installPrompt = null;
+const INSTALL_SNOOZE_DAYS = 14;
+
+function renderInstallBanner() {
+    const slot = document.getElementById("install-slot");
+    if (!slot) return;
+    const snoozed = Date.now() - store.get("installSnoozed", 0) < INSTALL_SNOOZE_DAYS * 864e5;
+    if (!installPrompt || snoozed) return (slot.innerHTML = "");
+    slot.innerHTML = `
+        <div class="install-banner">
+            <p class="install-title">Put Let's Sing on your phone</p>
+            <p class="install-body">Install it like any other app, with its own icon on your home screen.</p>
+            <div class="install-actions">
+                <button type="button" class="install-btn" id="install-app">Install app</button>
+                <button type="button" class="install-later" id="install-later">Not now</button>
+            </div>
+        </div>`;
+    document.getElementById("install-app").addEventListener("click", async () => {
+        const prompt = installPrompt;
+        installPrompt = null; // each prompt can only be shown once
+        prompt.prompt();
+        await prompt.userChoice;
+        renderInstallBanner();
+    });
+    document.getElementById("install-later").addEventListener("click", () => {
+        store.set("installSnoozed", Date.now());
+        renderInstallBanner();
+    });
+}
+
+window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault(); // we show our own button instead of Chrome's mini bar
+    installPrompt = event;
+    renderInstallBanner();
+});
+window.addEventListener("appinstalled", () => {
+    installPrompt = null;
+    renderInstallBanner();
+    toast("Let's Sing is installed. Look for its icon on your home screen.", 4000);
+});
 
 // ---- Player screen ----------------------------------------------------------
 

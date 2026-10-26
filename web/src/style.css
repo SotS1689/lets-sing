@@ -177,6 +177,38 @@ main {
     font: inherit;
 }
 .search input:focus { outline: 2px solid var(--primary); outline-offset: 0; }
+/* "Install app" card (Android only -- see the install section of main.js) */
+.install-banner {
+    margin: 8px 0 4px;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+}
+.install-title { margin: 0 0 2px; font-size: 1.05rem; font-weight: 700; }
+.install-body { margin: 0 0 12px; color: var(--text-2); }
+.install-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.install-btn {
+    min-height: 48px;
+    padding: 10px 24px;
+    border: 0;
+    border-radius: 24px;
+    background: var(--brand);
+    color: var(--on-brand);
+    font: inherit;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.install-later {
+    min-height: 48px;
+    padding: 0 4px;
+    border: 0;
+    background: none;
+    color: var(--text-2);
+    font: inherit;
+    cursor: pointer;
+}
 .count { margin: 4px 4px 0; font-size: 0.85rem; color: var(--text-2); }
 .hymn-list { list-style: none; margin: 0; padding: 0; }
 .hymn-list a {
