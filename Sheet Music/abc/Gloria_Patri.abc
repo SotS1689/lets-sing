@@ -1,17 +1,17 @@
-% Source: transcribed from the app's own MIDI (Gloria_Patri.mid) by Sheet Music/transcribe_midi.py
+% Source: Baptist Hymnal (1991) no. 252, GLORIA PATRI (Greatorex), written out by hand; Gloria_Patri.mid is played from it
 X:1
 T:GREATOREX
 C:Henry W. Greatorex
 M:4/4
 L:1/4
-Q:1/4=100
+Q:1/4=94
 %%score (S A) (T B)
 V:S clef=treble name=""
 V:A clef=treble
 V:T clef=bass
 V:B clef=bass
 K:Eb
-[V:S] E3/2 E/ E E/ E/ | E D z E | F2 B2 | B B B c | d2 c2 | B3- B1/4 B/ B1/4- | B1/4 B G c B3/4- | B1/4 B A- A1/4 z3/4 A3/4- | A1/4 A F B A3/4- | A1/4 A G- G1/4 z3/2 | z1/4 d2 d d3/4- | d1/4 e2- e1/4 E F/- | F/ G2- G1/4 G F1/4- | F3/4 E3- E1/4 |]
-[V:A] B,3/2 B,/ B, B,/ B,/ | B, B, z B, | B,2 D2 | E G F G | F2 F E | D3- D1/4 D/ D1/4- | D1/4 E E E E3/4- | E1/4 D D- D1/4 z3/4 D3/4- | D1/4 D D D F3/4- | F1/4 F E- E1/4 z3/2 | z1/4 F2 G F3/4- | F1/4 E2- E1/4 B, C/- | C/ B,2- B,1/4 D- D1/4- | D3/4 E3- E1/4 |]
-[V:T] G,3/2 G,/ G, G,/ G,/ | A, A, z G, | F,2 F,2 | G, B, B, B, | B,2 =A,2 | B,3- B,1/4 B,/ A,1/4- | A,1/4 G, E, A, G,3/4- | G,1/4 F, F,- F,1/4 z3/4 F,3/4- | F,1/4 F, B, F, B,3/4- | B,1/4 B, B,- B,1/4 z3/2 | z1/4 B,2 B, B,3/4- | B,1/4 B,2- B,1/4 E,3/2- | E,/ E,2- E,1/4 A,- A,1/4- | A,3/4 G,3- G,1/4 |]
-[V:B] E,3/2 E,/ E, E,/ E,/ | F, F, z E, | D,2 B,,2 | E, E, D, E, | F,2 F,2 | B,,3- B,,1/4 B,,/ B,,1/4- | B,,1/4 E, E, E, E,3/4- | E,1/4 B,, B,,- B,,1/4 z3/4 B,,3/4- | B,,1/4 B,, B,, B,, B,,3/4- | B,,1/4 E, E,- E,1/4 z3/2 | z1/4 A,2 A, A,3/4- | A,1/4 G,2- G,1/4 G,, A,,/- | A,,/ B,,2- B,,1/4 B,,- B,,1/4- | B,,3/4 E,3- E,1/4 |]
+[V:S] E3/2 E/ E E/ E/ | E D z E | F2 B2 | B B B c | d2 c2 | B2 z B/ B/ | B G c B | B A z A | A F B A | A G z2 | d2 d d | e2 (E F) | G2 (G F) | E4 |]
+[V:A] B,3/2 B,/ B, B,/ B,/ | B, B, z B, | B,2 D2 | E G F G | F2 (F E) | D2 z D/ D/ | E E E E | D D z D | D D D F | F E z2 | F2 F F | E2 E2 | E2 D2 | B,4 |]
+[V:T] G,3/2 G,/ G, G,/ G,/ | A, A, z G, | F,2 F,2 | G, B, B, B, | B,2 =A,2 | B,2 z B,/ _A,/ | G, E, A, G, | F, F, z F, | F, B, F, B, | B, B, z2 | B,2 B, B, | B,2 (B, C) | B,2 A,2 | G,4 |]
+[V:B] E,3/2 E,/ E, E,/ E,/ | F, F, z E, | D,2 B,,2 | E, E, D, E, | F,2 F,2 | B,,2 z B,,/ B,,/ | E, E, E, E, | B,, B,, z B,, | B,, B,, B,, B,, | E, E, z2 | A,2 A, A, | G,2 (G,, A,,) | B,,2 B,,2 | E,4 |]
