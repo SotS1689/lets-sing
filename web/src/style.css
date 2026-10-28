@@ -220,6 +220,10 @@ main {
 .hymn-list a:hover { background: color-mix(in srgb, var(--primary) 8%, transparent); }
 .hymn-list .title { display: block; font-weight: 500; }
 .hymn-list .sub { display: block; font-size: 0.875rem; color: var(--text-2); }
+.privacy { margin: 24px 4px 16px; font-size: 0.85rem; color: var(--text-2); }
+.privacy summary { display: inline-block; padding: 10px 0; cursor: pointer; }
+.privacy summary:hover { color: var(--text); text-decoration: underline; }
+.privacy p { margin: 0; max-width: 60ch; line-height: 1.5; }
 .hint { font-size: 0.85rem; color: var(--text-2); }
 
 /* Player */

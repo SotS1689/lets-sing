@@ -110,7 +110,13 @@ async function showList() {
         </div>
         <div id="install-slot"></div>
         <p class="count" id="count"></p>
-        <ul class="hymn-list" id="list"></ul>`;
+        <ul class="hymn-list" id="list"></ul>
+        <details class="privacy">
+            <summary>Privacy</summary>
+            <p>Let's Sing uses Google Analytics to count visits and see which features get used,
+               so the app can be improved. You don't need an account, and nothing you type into
+               the app is collected. Your data will never be sold or given away.</p>
+        </details>`;
 
     const list = document.getElementById("list");
     const count = document.getElementById("count");
@@ -565,6 +571,11 @@ const SUPPORT_MAX_MAYBE_LATER = 5;
 const supportCallout = document.getElementById("support-callout");
 const supportLink = document.getElementById("support");
 
+// Google Analytics event, if the GA script loaded (blockers, offline)
+function track(name, params = {}) {
+    if (typeof gtag === "function") gtag("event", name, params);
+}
+
 function trackSupportUsage() {
     if (store.get("supportDismissedForever", false) || store.get("supportActed", false)) return;
 
@@ -591,6 +602,7 @@ function trackSupportUsage() {
 function showSupportCallout() {
     supportCallout.classList.add("open");
     store.set("supportLastShown", Date.now());
+    track("support_callout_shown");
     // Dismiss on outside click (doesn't count as "Maybe later" -- just closes it)
     setTimeout(() => document.addEventListener("click", supportOutsideClick), 0);
 }
@@ -607,9 +619,16 @@ function supportDismiss(mode) {
     if (mode === "forever") store.set("supportDismissedForever", true);
     else if (mode === "later") store.set("supportMaybeLaterCount", store.get("supportMaybeLaterCount", 0) + 1);
     else if (mode === "acted") store.set("supportActed", true);
+    if (mode === "forever" || mode === "later") track("support_callout_dismiss", { choice: mode });
 }
 
-supportLink.addEventListener("click", () => supportDismiss("acted"));
+supportLink.addEventListener("click", () => {
+    track("support_click", { source: "heart" });
+    supportDismiss("acted");
+});
+supportCallout.querySelector('[data-support="acted"]').addEventListener("click", () =>
+    track("support_click", { source: "callout" })
+);
 supportCallout.querySelectorAll("[data-support]").forEach((el) =>
     el.addEventListener("click", () => supportDismiss(el.dataset.support))
 );
