@@ -267,9 +267,10 @@ function makePainter(state, map, lightWords, host) {
             const scrolling = state.view === "scroll";
             // The verse's line of words: in the scrolling view the only one there is
             const wordsRow = scrolling ? 0 : verse - 1;
-            const next = new Map();
+            // Each part's note sounding at `now`, muted or not: the words follow the
+            // melody's notes even when the melody itself is muted
+            const sounding = [];
             for (const { ch, voice, notes, rank } of parts) {
-                if (!on[ch]) continue;
                 const i = lastStarted(notes, now);
                 if (i < 0) continue;
                 const [head, start, length] = notes[i];
@@ -278,15 +279,24 @@ function makePainter(state, map, lightWords, host) {
                 const list = state.heads[voice] ?? [];
                 const copy = scrolling ? verseAt(start) - state.verse : 0;
                 if (copy < 0 || copy >= state.passes) continue;
-                for (const el of list[head + (copy * list.length) / state.passes] ?? []) {
+                sounding.push({ ch, rank, els: list[head + (copy * list.length) / state.passes] ?? [] });
+            }
+            // The words take the colour of the highest part heard right now (or,
+            // in its rests, the highest part turned on)
+            const wordsPart = sounding.find((s) => on[s.ch])?.ch ?? parts.find((p) => on[p.ch])?.ch;
+            const next = new Map();
+            for (const { ch, rank, els } of sounding) {
+                for (const el of els) {
                     // Two parts on one stem (soprano and alto written as chords):
                     // each lights only its own notehead, the upper part the higher one
-                    const own = rank === null ? el : noteheadOf(el, rank);
-                    if (!next.has(own)) next.set(own, ch);
+                    if (on[ch]) {
+                        const own = rank === null ? el : noteheadOf(el, rank);
+                        if (!next.has(own)) next.set(own, ch);
+                    }
                     // A note's words are one <text> inside it with a line per verse:
                     // only the verse being sung lights (none when it isn't set under the notes)
-                    const line = lightWords && verse > 0 && !rank && el.querySelector?.(":scope > .abcjs-lyric")?.children[wordsRow];
-                    if (line?.textContent && !next.has(line)) next.set(line, ch);
+                    const line = lightWords && verse > 0 && !rank && wordsPart !== undefined && el.querySelector?.(":scope > .abcjs-lyric")?.children[wordsRow];
+                    if (line?.textContent && !next.has(line)) next.set(line, wordsPart);
                 }
             }
             for (const [el, v] of lit) if (next.get(el) !== v) el.classList.remove("is-sounding", `part-${v}`);
