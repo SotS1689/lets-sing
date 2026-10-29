@@ -129,10 +129,10 @@ w: mor- ning new mer- cies I see. All I have nee- ded Thy
 [V: S2V1]  B, B, B, | B, B, =A, | B,3 | D D B, | B,3/2 C/ D |
 [V: S2V2]  E, E, E, | F, F, F, | B,,3 | B, B, B, | E,3/2 E,/ E, |
 % 13
-[V: S1V1] B A G | G F z | !sintro!!emphasis!c !emphasis!d !emphasis!e | !emphasis!e3/2 !emphasis!B/ !fermata!B | G A D | E3!eintro!|]
+[V: S1V1] B A G | G F z | !sintro!!emphasis!c !emphasis!d !emphasis!e | !emphasis!e3/2 !emphasis!B/ B | G A D | E3!eintro!|]
 w: hand hath pro- vi- ded; Great is Thy faith- ful- ness, Lord, un- to me!
-[V: S1V2] G F E | E E z | ^F F F | G3/2 G/ !ferm!G | "^rall."E D B, | B,3 |]
-[V: S2V1] E C B, | C C z | E D C | B,3/2 E/ !ferm!E | B, F, A, | G,3 |]
-[V: S2V2] E, F, G, | A, A, z | =A, A, A, | B,3/2 B,/ !invertedfermata!B, | B,, B,, B,, | E,3 |]
+[V: S1V2] G F E | E E z | ^F F F | G3/2 G/ G | "^rall."E D B, | B,3 |]
+[V: S2V1] E C B, | C C z | E D C | B,3/2 E/ E | B, F, A, | G,3 |]
+[V: S2V2] E, F, G, | A, A, z | =A, A, A, | B,3/2 B,/ B, | B,, B,, B,, | E,3 |]
 % 18
 
