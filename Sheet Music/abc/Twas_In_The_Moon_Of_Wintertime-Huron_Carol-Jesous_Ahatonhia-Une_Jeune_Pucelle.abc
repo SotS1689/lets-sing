@@ -61,7 +61,7 @@
 %OHCOMPLEXITY 2
 %OHCOMPOSER French
 %OHARRANGER Murphy, John (1951-)
-%OHAUTHOR de Brébeuf, Jean (1593-1649)
+%OHAUTHOR de BrÃ©beuf, Jean (1593-1649)
 %OHTRANSLATOR Middleton, Jesse Edgar (1872-1960)
 %%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
 %%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
@@ -71,7 +71,7 @@
 X: 1
 T: Twas In The Moon of Wintertime
 T: (also known as Huron Carol or Jesus He Is Born)
-C: Words: Jean de Brébeuf, 1642.  Translated by Jesse Edgar Middleton, 1926.
+C: Words: Jean de BrÃ©beuf, 1642.  Translated by Jesse Edgar Middleton, 1926.
 C: Music: 'Huron Carol' or 'Jesous Ahatonia' or 'Une Jeunne Pucelle' traditional French, 1557. 
 C: Setting:  John Murphy, 2008.
 C: copyright: Music & Lyrics public domain. Setting: CPDL (see 
@@ -133,7 +133,7 @@ w: Je- sus your King is born, Je- sus is born, In ex- cel- sis glo- ri- a.
 
 %%vskip 0.05in
 %%begintext align
-This hymn was written by Fr. Jean de Brébeuf, a French missionary to the Huron (first nations / native American)
+This hymn was written by Fr. Jean de BrÃ©beuf, a French missionary to the Huron (first nations / native American)
 people.  He was eventually martyred for the faith by Iroquois during the Iroquois-Huron wars.
 
 "When the Japanese have a Christmas devotional booklet, Mary is a Japanese woman, and her Child

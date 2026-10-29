@@ -58,10 +58,10 @@
 %OHCATEGORY CONSECRATION
 %OHMETRICAL 8 7 8 7 7 7 8 8
 %OHCOMPLEXITY 3
-%OHCOMPOSER König, Johann Balthasar (1691-1758)
+%OHCOMPOSER KÃ¶nig, Johann Balthasar (1691-1758)
 %OHARRANGER unknown
 %OHAUTHOR Kingo, Thomas Hansen (1634-1703)
-%OHTRANSLATOR Strømme, Peer Olsen (1856-1921)
+%OHTRANSLATOR StrÃ¸mme, Peer Olsen (1856-1921)
 %%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
 %%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
 %%deco sintro 6 st 6 0 0 
@@ -69,8 +69,8 @@
 
 X: 1
 T: On My Heart Imprint Thine Image
-C: Words: Thomas Hansen Kingo, 1689.  Translated by Peer Olsen Strømme, 1898, alt.
-C: Music: 'Der Am Kreuz' Johann Balthasar König, 1738.  Setting: "Evangelical Lutheran Hymn-Book", 1931.
+C: Words: Thomas Hansen Kingo, 1689.  Translated by Peer Olsen StrÃ¸mme, 1898, alt.
+C: Music: 'Der Am Kreuz' Johann Balthasar KÃ¶nig, 1738.  Setting: "Evangelical Lutheran Hymn-Book", 1931.
 C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2025 Revision.
 S: Music source:  Evangelical Lutheran Hymn Book (LCMS), Edition of 1931 Hymn 194.
 S: Lyrics source: The Lutheran Hymnary, 1913 Hymn 298

@@ -58,8 +58,8 @@
 %OHCATEGORY NEW OBEDIENCE
 %OHMETRICAL 8 8 8 8
 %OHCOMPLEXITY 4
-%OHCOMPOSER from Walter's Geistliche Gesangbüchlein, 1524
-%OHARRANGER Gesius, Bartolomäus (1555-1613)
+%OHCOMPOSER from Walter's Geistliche GesangbÃ¼chlein, 1524
+%OHARRANGER Gesius, BartolomÃ¤us (1555-1613)
 %OHAUTHOR Luther, Martin (1483-1546)
 %OHTRANSLATOR Massie, Richard (1800-1887)
 %%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
@@ -71,8 +71,8 @@ X: 1
 T: Happy the Man Who Feareth God
 T: (also known as Happy Who in God's Fear Doth Stay)
 C: Words: Martin Luther, 1524.  Translated by Richard Massie, 1854. 
-C: Music: 'Wo Gott Zum Haus (Walter)' from Walter's Geistliche Gesangbüchlein, 1524. 
-C: Setting: Bartolomäus Gesius, 1605.
+C: Music: 'Wo Gott Zum Haus (Walter)' from Walter's Geistliche GesangbÃ¼chlein, 1524. 
+C: Setting: BartolomÃ¤us Gesius, 1605.
 C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2009 Revision.
 M: 4/4 % time signature
 L: 1/4 % default length

@@ -61,7 +61,7 @@
 %OHCOMPOSER Lindeman, Ludvig Mathias (1812-1887)
 %OHARRANGER unknown
 %OHAUTHOR Grundtvig, Nikolai Frederik Severin (1783-1872)
-%OHTRANSLATOR Døving, Carl (1867-1937)
+%OHTRANSLATOR DÃ¸ving, Carl (1867-1937)
 %%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
 %%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
 %%deco sintro 6 st 6 0 0 
@@ -69,7 +69,7 @@
 
 X: 1
 T: Built on the Rock
-C: Words: Nikolai F. S. Grundtvig, 1857.  Translated Carl Døving, 1909. 
+C: Words: Nikolai F. S. Grundtvig, 1857.  Translated Carl DÃ¸ving, 1909. 
 C: Music: 'Kirken Den Er Et Gammelt Hus' Ludvig M. Lindeman, 1840.  Setting: "The Lutheran Hymnary", 1913.
 C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2010 Revision.
 S: Music source: The Lutheran Hymnary, 1913 Hymn 132.

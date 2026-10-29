@@ -61,7 +61,7 @@
 %OHCOMPLEXITY 4
 %OHCOMPOSER from Poitiers Antiphoner, 1746
 %OHARRANGER Willan, Healey (1880-1968)
-%OHAUTHOR von Löwenstern, Matthäus Apelles (1594-1648)
+%OHAUTHOR von LÃ¶wenstern, MatthÃ¤us Apelles (1594-1648)
 %OHTRANSLATOR Pusey, Philip (1799-1855)
 %%postscript /st { moveto -8 0 rmoveto 0 8 rlineto 4 0 rlineto stroke } def
 %%postscript /nd { moveto -8 0 rmoveto 0 8 rlineto -4 0 rlineto stroke } def
@@ -70,7 +70,7 @@
 
 X: 1
 T: Lord Of Our Life
-C: Words: Matthäus Apelles von Löwenstern, 1644.  Translated by Philip Pusey, 1840.
+C: Words: MatthÃ¤us Apelles von LÃ¶wenstern, 1644.  Translated by Philip Pusey, 1840.
 C: Music: 'Iste Confessor' or 'Rouen' from Poitiers Antiphoner, 1746. 
 C: Setting: Healey Willan, 1918, alt.
 C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2014 Revision.
