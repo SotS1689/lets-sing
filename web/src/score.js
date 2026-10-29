@@ -269,35 +269,60 @@ function makePainter(state, map, lightWords, host) {
             const wordsRow = scrolling ? 0 : verse - 1;
             // Each part's note sounding at `now`, muted or not: the words follow the
             // melody's notes even when the melody itself is muted
+            // The SVG elements of a part's j-th note; null when it isn't drawn
+            // (the scrolling line holds the tune twice: which copy this note is in)
+            const elsOf = (voice, notes, j) => {
+                const [head, start] = notes[j];
+                const list = state.heads[voice] ?? [];
+                const copy = scrolling ? verseAt(start) - state.verse : 0;
+                if (copy < 0 || copy >= state.passes) return null;
+                return list[head + (copy * list.length) / state.passes] ?? [];
+            };
+            // A note's words are one <text> inside it with a line per verse:
+            // the verse being sung's (none when it isn't set under the notes)
+            const wordOf = (els) => {
+                for (const el of els) {
+                    const line = el.querySelector?.(":scope > .abcjs-lyric")?.children[wordsRow];
+                    if (line?.textContent.trim()) return line; // not the blank under a held note
+                }
+                return null;
+            };
             const sounding = [];
             for (const { ch, voice, notes, rank } of parts) {
                 const i = lastStarted(notes, now);
                 if (i < 0) continue;
-                const [head, start, length] = notes[i];
-                if (now >= start + length) continue; // a rest, or between notes
-                // The scrolling line holds the tune twice: which copy this note is in
-                const list = state.heads[voice] ?? [];
-                const copy = scrolling ? verseAt(start) - state.verse : 0;
-                if (copy < 0 || copy >= state.passes) continue;
-                sounding.push({ ch, rank, els: list[head + (copy * list.length) / state.passes] ?? [] });
+                const [, start, length] = notes[i];
+                // A rest (not the hair's breadth the MIDI leaves between some notes)
+                if (now >= start + length && !(notes[i + 1]?.[1] - (start + length) < 0.05)) continue;
+                const els = elsOf(voice, notes, i);
+                if (els) sounding.push({ ch, voice, notes, rank, i, els });
             }
             // The words take the colour of the highest part heard right now (or,
             // in its rests, the highest part turned on)
             const wordsPart = sounding.find((s) => on[s.ch])?.ch ?? parts.find((p) => on[p.ch])?.ch;
             const next = new Map();
-            for (const { ch, rank, els } of sounding) {
-                for (const el of els) {
-                    // Two parts on one stem (soprano and alto written as chords):
-                    // each lights only its own notehead, the upper part the higher one
-                    if (on[ch]) {
+            for (const { ch, voice, notes, rank, i, els } of sounding) {
+                // Two parts on one stem (soprano and alto written as chords):
+                // each lights only its own notehead, the upper part the higher one
+                if (on[ch]) {
+                    for (const el of els) {
                         const own = rank === null ? el : noteheadOf(el, rank);
                         if (!next.has(own)) next.set(own, ch);
                     }
-                    // A note's words are one <text> inside it with a line per verse:
-                    // only the verse being sung lights (none when it isn't set under the notes)
-                    const line = lightWords && verse > 0 && !rank && wordsPart !== undefined && el.querySelector?.(":scope > .abcjs-lyric")?.children[wordsRow];
-                    if (line?.textContent && !next.has(line)) next.set(line, wordsPart);
                 }
+                // The word stays lit through every note it's sung to: back from a
+                // note with no word of its own to the one that has it, so long as no
+                // rest or new verse comes between. Muted or not, the words follow it
+                if (!lightWords || verse < 1 || rank || wordsPart === undefined) continue;
+                let line = wordOf(els);
+                for (let j = i; !line && j > 0 && i - j < 64; j--) {
+                    const [, start] = notes[j], [, before, length] = notes[j - 1];
+                    if (before + length < start - 0.05 || verseAt(before) !== verseAt(start)) break;
+                    const earlier = elsOf(voice, notes, j - 1);
+                    if (!earlier) break;
+                    line = wordOf(earlier);
+                }
+                if (line && !next.has(line)) next.set(line, wordsPart);
             }
             for (const [el, v] of lit) if (next.get(el) !== v) el.classList.remove("is-sounding", `part-${v}`);
             for (const [el, v] of next) if (lit.get(el) !== v) el.classList.add("is-sounding", `part-${v}`);
