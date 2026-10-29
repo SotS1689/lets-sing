@@ -1,4 +1,4 @@
-/* Colours follow the Android app's theme (ui/theme/Color.kt). */
+/* Colours carried over from the old Android app's theme. */
 :root {
     --primary: #4A5D6B;
     --on-primary: #FFFFFF;

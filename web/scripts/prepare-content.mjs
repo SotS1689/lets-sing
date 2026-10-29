@@ -1,20 +1,20 @@
 // Copies the hymn content into the web app:
 //   ../Sheet Music/abc/<file>.abc             -> public/scores/ (see build-scores.mjs)
 //   ../hymns_data.json (root working master)  -> public/hymns.json (slimmed)
-//   Android assets/midi/<file>.mid            -> public/midi/<file>.mid
+//   ../midi/<file>.mid                        -> public/midi/<file>.mid
 // Runs automatically before `npm run dev` and `npm run build`, so the root
-// hymns_data.json stays the one master copy, as it is for the Android build.
+// hymns_data.json stays the one master copy.
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync, rmSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { buildScores, plainWords } from "./build-scores.mjs";
 
 const MASTER = "../hymns_data.json";
-const MIDI_SRC = "../LetsSing_Android_Project/app/src/main/assets/midi";
+const MIDI_SRC = "../midi";
 const OUT = "public";
 
 const hymns = JSON.parse(readFileSync(MASTER, "utf8"));
 
-// Same rule as the Android loader: the file name is the midi_url's last path segment
+// The file name is the midi_url's last path segment
 const midiFile = (h) => decodeURIComponent((h.midi_url || "").split("/").pop() || "");
 
 rmSync(`${OUT}/midi`, { recursive: true, force: true });

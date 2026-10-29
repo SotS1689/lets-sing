@@ -11,7 +11,7 @@ on:
       - "web/**"
       - "hymns_data.json"
       - "Sheet Music/abc/**"
-      - "LetsSing_Android_Project/app/src/main/assets/midi/**"
+      - "midi/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 

@@ -1,4 +1,4 @@
-// Let's Sing -- web app. Two screens, like the Android app: the hymn list
+// Let's Sing -- web app. Two screens: the hymn list
 // (#/) and the player (#/hymn/<id>). Hash routes keep it working from any
 // static host folder with no server-side setup.
 import * as player from "./player.js";
@@ -10,7 +10,7 @@ const pageTitle = document.getElementById("page-title");
 
 // ---- Settings ---------------------------------------------------------------
 // Theme and instrument are remembered on this device; mix/tempo/pitch carry
-// across hymns for the session, as in the Android app.
+// across hymns for the session.
 
 const store = {
     get(key, fallback) {

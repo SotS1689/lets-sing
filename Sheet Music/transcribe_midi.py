@@ -28,7 +28,7 @@ from pathlib import Path
 import mido
 
 ROOT = Path(__file__).resolve().parent.parent
-MIDI_DIR = ROOT / "LetsSing_Android_Project/app/src/main/assets/midi"
+MIDI_DIR = ROOT / "midi"
 ABC_DIR = ROOT / "Sheet Music/abc"
 GRID = 4  # quantize to a sixteenth (quarter-note beats)
 

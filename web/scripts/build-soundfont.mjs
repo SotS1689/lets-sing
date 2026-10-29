@@ -1,5 +1,5 @@
 // Builds public/soundfont/instruments.sf2: just the instruments the player
-// offers, cut out of the Android app's 32 MB GeneralUser GS soundfont so the
+// offers, cut out of the 32 MB GeneralUser GS soundfont (../soundfonts) so the
 // web app downloads a small file. Presets keep their General MIDI program
 // numbers; src/player.js (INSTRUMENTS) selects one and locks it on every
 // channel, whatever program change the MIDI file itself asks for.
@@ -9,7 +9,7 @@
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, rmSync } from "node:fs";
 import { SoundBankLoader } from "spessasynth_core";
 
-const SRC_DIR = "../LetsSing_Android_Project/app/src/main/assets/soundfonts";
+const SRC_DIR = "../soundfonts";
 const OUT_DIR = "public/soundfont";
 // Keep in step with INSTRUMENTS in src/player.js
 const PROGRAMS = [0, 19, 24, 52]; // Grand Piano, Pipe Organ, Nylon Guitar, Concert Choir

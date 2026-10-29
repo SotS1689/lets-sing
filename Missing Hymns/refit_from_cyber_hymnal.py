@@ -85,7 +85,7 @@ def sets_words(nwc_bytes):
 
 
 def update_hymn(hymn_id, **fields):
-    for path in (ch.HYMNS_JSON, ch.ANDROID_HYMNS_JSON):
+    for path in (ch.HYMNS_JSON,):
         hymns = json.loads(path.read_text(encoding="utf-8"))
         for h in hymns:
             if h["id"] == hymn_id:

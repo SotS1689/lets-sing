@@ -1,5 +1,5 @@
 """Renders the PWA icons (public/icons/*.png and icon.svg) from the same
-artwork as the Android launcher icon (res/drawable/ic_launcher_*.xml):
+artwork as the old Android launcher icon:
 white calligraphic eighth note on #B71C1C, foreground scaled 0.75 about the
 centre of a 108x108 viewport.
 
@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw
 RED = "#B71C1C"
 SCALE = 0.75  # the Android foreground group's scaleX/scaleY
 
-# Cubic paths copied from ic_launcher_foreground.xml: start point, then
+# Cubic paths (from the old ic_launcher_foreground.xml): start point, then
 # (c1, c2, end) triples.
 PATHS = [
     ((53.0, 18.5), [

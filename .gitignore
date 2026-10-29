@@ -1,18 +1,13 @@
-# Release signing key and its passwords -- must never be committed.
-# (Backup copies live in "Important Files"; the Android project's own
-# .gitignore covers its keystore/ folder and keystore.properties.)
+# The old Android app's release signing key and its passwords -- must never
+# be committed. Kept in "Important Files".
 Important Files/
 *.jks
 *.keystore
 
-# Android build output
-LetsSing_Android_Project/app/build/
-LetsSing_Android_Project/.artifacts/
-
 # Web app
 web/node_modules/
 web/dist/
-# generated from the root hymns_data.json + Android MIDI assets by prepare-content
+# generated from the root hymns_data.json + midi/ by prepare-content
 web/public/hymns.json
 web/public/midi/
 web/public/scores/
@@ -24,7 +19,6 @@ __pycache__/
 # Old timestamped data backups -- git history replaces these from here on
 # (the files themselves are left on disk)
 hymns_data.json.*
-LetsSing_Android_Project/app/src/main/assets/hymns_data.json.*
 
 # Local tool state
 .claude/

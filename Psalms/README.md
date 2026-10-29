@@ -173,7 +173,7 @@ set, matching the 1912 Psalter's own first section for this psalm.
 Every downloaded file is verified before being trusted — not just an HTTP
 200, the actual bytes must start with the real MIDI header `MThd` — then
 staged in `psalm_midi/` and copied into
-`../LetsSing_Android_Project/app/src/main/assets/midi/`.
+`../midi/`.
 
 3. **User-supplied files, converted to true SATB.** The last 5 tunes
    (CULROSS, ST. LEONARD, Jude/Galilee, Ulster, Amelia) came back
@@ -214,12 +214,3 @@ A handful of the tunes downloaded automatically are still flagged "medium
 confidence" in `psalm_midi_remaining.json` (Petition, SOUTHPORT, CHRISTINE,
 Sacred Morn, Rose Hill) — meter or title matched but not both independently
 confirmed; worth a quick listen before trusting them fully.
-
-## Note for the Android app
-
-The app's Room entity/JSON importer (`LetsSing_Android_Project/app/.../data/`)
-currently only knows about the original hymn fields. Now that Psalms have
-landed in `hymns_data.json` with `psalm_number`/`meter`/`text_source`, those
-fields need corresponding columns added to the Room entity and the importer
-before a "browse by Psalm number" view can use them — a separate, small
-app-code change, not part of this data-compilation step.

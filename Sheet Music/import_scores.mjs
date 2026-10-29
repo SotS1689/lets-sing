@@ -17,7 +17,7 @@ import { nwcText, nwcToAbc } from "./nwc.mjs";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..");
 const OUT = join(HERE, "abc");
-const MIDI = join(ROOT, "LetsSing_Android_Project/app/src/main/assets/midi");
+const MIDI = join(ROOT, "midi");
 const { screenAbc, noteMap, readMidi, scoreVoices } = await import(pathToFileURL(join(ROOT, "web/scripts/build-scores.mjs")));
 
 const arg = (name) => {

@@ -4,7 +4,7 @@ compile_psalms.py
 
 Merges finished rows from Psalms_To_Add.xlsx into hymns_data.json, the same
 way `Missing Hymns/compile_hymns.py` merges new hymns. Psalms are added into
-the same hymns_data.json list (same Room table the app already seeds from)
+the same hymns_data.json list (the one list the app builds from)
 with an extra "psalm_number" field so the app can offer psalm-order browsing
 alongside the existing alphabetical/search views. Pure local script - no AI
 calls, no internet access.

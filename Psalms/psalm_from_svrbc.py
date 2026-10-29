@@ -15,9 +15,9 @@ the MIDI (played once per stanza), so the two agree by construction.
     <tune file>         a name in its tunes/ folder, e.g. evan (or evan.abc)
     --second            the psalter's second setting (psalm-NNNb.txt)
 
-Writes LetsSing_Android_Project/app/src/main/assets/midi/psalm_NNN_<tune>.mid
+Writes midi/psalm_NNN_<tune>.mid
 and "Sheet Music/abc/psalm_NNN_<tune>.abc", and updates the psalm's entry in
-both hymns_data.json copies (title from its first line, words, tune, meter,
+hymns_data.json (title from its first line, words, tune, meter,
 credits), keeping its id. The old MIDI and score are deleted when no other hymn
 plays them. Then run the web build (npm --prefix web run prepare-content) to see
 whether every stanza's words fit under the notes. Nothing is committed.
@@ -166,9 +166,9 @@ def main():
         seconds = ch.write_midi(MIDI_DIR / f"{stem}.mid", beat, ch.meta_events(src), voices, 0, length, len(verses))
     print(f"  MIDI: {stem}.mid ({seconds / 60:.1f} min); score: {stem}.abc")
 
-    # The entry, moved to its place by the new title (both copies alike)
+    # The entry, moved to its place by the new title
     old_file = ch.midi_file(entry)
-    for path in (ch.HYMNS_JSON, ch.ANDROID_HYMNS_JSON):
+    for path in (ch.HYMNS_JSON,):
         hs = json.loads(path.read_text(encoding="utf-8"))
         h = next(x for x in hs if x["id"] == entry["id"])
         hs.remove(h)

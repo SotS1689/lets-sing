@@ -16,7 +16,7 @@ another title, `--dry-run` shows what it would add without changing anything.
 It takes the words (a refrain is written out after every verse), reuses the
 app's own MIDI and score when it already has the tune, otherwise fetches the
 Cyber Hymnal's MIDI (split into four parts, played once per verse) and score,
-adds the hymn to both `hymns_data.json` copies, and ends with a short summary,
+adds the hymn to `hymns_data.json`, and ends with a short summary,
 including whether every verse's words fit under the notes (any that don't
 still show as text). Nothing is committed; to undo a run, `git checkout -- .`
 and delete the "new files" the summary lists. Needs Python with `mido`

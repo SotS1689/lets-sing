@@ -28,7 +28,7 @@ What it does:
      NoteWorthy score (Sheet Music/import_scores.mjs, kept only when every
      part matches the MIDI), else writes one out from the MIDI
      (Sheet Music/transcribe_midi.py).
-  4. Adds the hymn to both hymns_data.json copies (root and Android assets),
+  4. Adds the hymn to hymns_data.json,
      rebuilds Sheet Music/syllables.tsv, runs the web content build, and says
      whether every verse's words fit under the notes.
 
@@ -53,8 +53,7 @@ import mido
 
 ROOT = Path(__file__).resolve().parent.parent
 HYMNS_JSON = ROOT / "hymns_data.json"
-ANDROID_HYMNS_JSON = ROOT / "LetsSing_Android_Project/app/src/main/assets/hymns_data.json"
-MIDI_DIR = ROOT / "LetsSing_Android_Project/app/src/main/assets/midi"
+MIDI_DIR = ROOT / "midi"
 ABC_DIR = ROOT / "Sheet Music/abc"
 CMUDICT = Path.home() / ".cache/lets-sing/cmudict.dict"
 CMUDICT_URL = "https://raw.githubusercontent.com/cmusphinx/cmudict/master/cmudict.dict"
@@ -320,7 +319,7 @@ def set_meter(hymn_id, verses):
     n = max(set(map(len, per_verse)), key=lambda k: sum(len(c) == k for c in per_verse))
     rows = [c for c in per_verse if len(c) == n]
     meter = ".".join(str(max(set(col), key=col.count)) for col in zip(*rows))
-    for path in (HYMNS_JSON, ANDROID_HYMNS_JSON):
+    for path in (HYMNS_JSON,):
         hymns = json.loads(path.read_text(encoding="utf-8"))
         for h in hymns:
             if h["id"] == hymn_id:
@@ -329,7 +328,7 @@ def set_meter(hymn_id, verses):
 
 
 def insert_hymn(hymn):
-    for path in (HYMNS_JSON, ANDROID_HYMNS_JSON):
+    for path in (HYMNS_JSON,):
         hymns = json.loads(path.read_text(encoding="utf-8"))
         at = next((i for i, h in enumerate(hymns) if h["title"].lower() > hymn["title"].lower()), len(hymns))
         hymns.insert(at, hymn)
