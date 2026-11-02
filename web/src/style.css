@@ -311,6 +311,7 @@ main {
 .match-body { flex: 1; min-width: 0; display: grid; gap: 4px; }
 .match-line { font-size: 0.85rem; color: var(--text-2); overflow-wrap: anywhere; }
 .match-pick { display: flex; align-items: center; gap: 8px; }
+.match-chosen { flex: 1; min-width: 0; font-weight: 500; overflow-wrap: anywhere; }
 .match-pick .mini-btn { width: 36px; height: 36px; }
 .match-pick .mini-btn[aria-pressed="true"] { border-color: var(--primary); background: var(--primary); color: var(--on-primary); }
 .match select {

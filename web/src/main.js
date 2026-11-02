@@ -253,7 +253,6 @@ async function showPaste() {
     const NOTES = {
         sure: "",
         likely: "Check this one",
-        none: "No close match &mdash; pick one, or leave it out",
     };
 
     // Play the chosen hymn where its parts first sing together (past any melody-only
@@ -317,24 +316,38 @@ async function showPaste() {
     const find = () => {
         stopListening();
         pastedText = textEl.value;
-        const matches = matchList(pastedText, hymns);
-        if (!matches.length) {
+        const all = matchList(pastedText, hymns);
+        if (!all.length) {
             results.innerHTML = `<p class="hint">Nothing to look for yet &mdash; paste some hymn titles above.</p>`;
             return;
         }
+        // Lines with no hymn close to them are only named, not offered
+        const matches = all.filter((m) => m.confidence !== "none");
+        const notFound = all
+            .filter((m) => m.confidence === "none")
+            .map((m) => `<p>Couldn't find &ldquo;${esc(m.line)}&rdquo;</p>`)
+            .join("");
+        if (!matches.length) {
+            results.innerHTML = `<div class="not-found" role="status">${notFound}</div>`;
+            return;
+        }
         results.innerHTML = `
-            <div class="not-found" id="not-found" role="status"></div>
+            <div class="not-found" role="status">${notFound}</div>
             <ul class="match-list">
                 ${matches.map((m, i) => `
                     <li class="match is-${m.confidence}">
-                        <input type="checkbox" id="pick-${i}" data-pick="${i}"${m.confidence === "none" ? "" : " checked"}
+                        <input type="checkbox" id="pick-${i}" data-pick="${i}" checked
                                aria-label="Add the hymn for “${esc(m.line)}”">
                         <div class="match-body">
                             <label class="match-line" for="pick-${i}">${esc(m.line)}</label>
                             <div class="match-pick">
-                                <select data-choice="${i}" aria-label="Hymn for “${esc(m.line)}”">
-                                    ${m.candidates.map((c) => `<option value="${c.hymn.id}">${esc(label(c.hymn))}</option>`).join("")}
-                                </select>
+                                ${m.confidence === "sure"
+                                    // Plainly this hymn on this tune: nothing to choose
+                                    ? `<input type="hidden" data-choice="${i}" value="${m.candidates[0].hymn.id}">
+                                       <span class="match-chosen">${esc(m.candidates[0].hymn.title)}</span>`
+                                    : `<select data-choice="${i}" aria-label="Hymn for “${esc(m.line)}”">
+                                        ${m.candidates.map((c) => `<option value="${c.hymn.id}">${esc(label(c.hymn))}</option>`).join("")}
+                                    </select>`}
                                 <button type="button" class="mini-btn" data-listen="${i}">
                                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${LISTEN.play}"/></svg>
                                 </button>
@@ -356,11 +369,6 @@ async function showPaste() {
                     : m.tunes && m.confidence === "likely" ? "Sung to more than one tune &mdash; pick the one you want"
                     : NOTES[m.confidence];
             });
-            // Lines with no hymn close to them, until one is picked by hand
-            document.getElementById("not-found").innerHTML = matches
-                .filter((m) => m.confidence === "none")
-                .map((m) => `<p>Couldn't find &ldquo;${esc(m.line)}&rdquo;</p>`)
-                .join("");
             const n = results.querySelectorAll("[data-pick]:checked").length;
             addBtn.textContent = n ? `Add ${n} ${n === 1 ? "hymn" : "hymns"} to favorites` : "Nothing ticked to add";
             addBtn.disabled = !n;
@@ -387,7 +395,7 @@ async function showPaste() {
             );
             const added = [...new Set(ids)].filter((id) => byId.has(id) && !isFavorite(id));
             added.forEach((id) => setFavorite(id, true));
-            track("favorites_paste", { lines: matches.length, added: added.length });
+            track("favorites_paste", { lines: all.length, added: added.length });
             pastedText = "";
             location.hash = "#/favorites";
             toast(added.length ? `Added ${added.length} ${added.length === 1 ? "hymn" : "hymns"} to favorites` : "Those are already in your favorites", 2500);

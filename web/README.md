@@ -25,7 +25,8 @@ MIDI files, then build.
   page adds or removes one.
 - `src/match.js` — matches a pasted list of hymns (one per line) to the app's
   hymns by letter triples over title, first line and tune, with psalm numbers
-  required to agree. Sure matches come ticked; the rest offer the nearest hymns.
+  required to agree. Close matches come ticked, with the nearest hymns to pick
+  from; lines with no close match are only listed as not found.
 - `src/player.js` — playback via [SpessaSynth](https://github.com/spessasus/spessasynth_lib)
   (Apache-2.0) in an AudioWorklet. Channels 0–3 = S/A/T/B; each voice slider
   sets that channel's gain, tempo is the sequencer's playback rate (no pitch
