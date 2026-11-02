@@ -46,7 +46,11 @@ function applyTheme(theme) {
     if (theme === "system") delete document.documentElement.dataset.theme;
     else document.documentElement.dataset.theme = theme;
 }
-applyTheme(store.get("theme", "system"));
+// Shown inside another app's page (see the embed section below)
+const EMBED = document.documentElement.classList.contains("embed");
+const embedParams = new URLSearchParams(location.search);
+// An embedded player follows the host page's theme (?theme=light|dark) without saving it
+applyTheme(EMBED && THEMES.includes(embedParams.get("theme")) ? embedParams.get("theme") : store.get("theme", "system"));
 document.getElementById("theme-toggle").addEventListener("click", () => {
     const next = THEMES[(THEMES.indexOf(store.get("theme", "system")) + 1) % THEMES.length];
     store.set("theme", next);
@@ -477,6 +481,20 @@ function protectStorage() {
     navigator.storage?.persist?.().catch(() => {});
 }
 
+// Fetches the files six at a time (the service worker saves each one), calling
+// onEach(done) after each; failures are left for the caller's re-check of the cache
+async function fetchAll(files, onEach = () => {}) {
+    const queue = [...files];
+    let done = 0;
+    const next = async () => {
+        while (queue.length) {
+            try { await fetch(queue.pop()); } catch { /* not saved: shows in the re-check */ }
+            onEach(++done);
+        }
+    };
+    await Promise.all(Array.from({ length: 6 }, next));
+}
+
 async function download() {
     if (!navigator.onLine) return toast("Connect to the internet to download.", 3000);
     protectStorage();
@@ -486,14 +504,9 @@ async function download() {
     downloading = true;
     setDownloadState();
     const progress = toast(one ? "Saving this hymn…" : "Downloading hymns…", 0);
-    let done = 0;
-    const next = async () => {
-        while (files.length) {
-            try { await fetch(files.pop()); } catch { /* counted by the re-check below */ }
-            if (!one) progress.textContent = `Downloading hymns… ${++done} of ${total}`;
-        }
-    };
-    await Promise.all(Array.from({ length: 6 }, next));
+    await fetchAll(files, (done) => {
+        if (!one) progress.textContent = `Downloading hymns… ${done} of ${total}`;
+    });
     progress.remove();
     downloading = false;
     const saved = await savedFiles();
@@ -1007,18 +1020,83 @@ supportCallout.querySelector('[data-support="acted"]').addEventListener("click",
 supportCallout.querySelectorAll("[data-support]").forEach((el) =>
     el.addEventListener("click", () => supportDismiss(el.dataset.support))
 );
-trackSupportUsage();
+if (!EMBED) trackSupportUsage(); // the host app has its own support button
 
 // A hymn shouldn't keep singing after you leave the app (as on Android).
 document.addEventListener("visibilitychange", () => {
     if (document.hidden && player.isPlaying()) player.pause();
 });
 
+// ---- Embedded in another app (?embed) ------------------------------------------
+// Family Worship shows a hymn's player in its own page with
+//   <iframe src="https://.../lets-sing/?embed&theme=dark#/hymn/12">
+// Only the hymn's page shows, without the top bar, the favorites star or the
+// support ask, and Google Analytics isn't loaded (index.html). Any other route
+// shows nothing: the host keeps one hidden frame like that to save hymns.
+//
+// Messages are { source: "lets-sing", type, ... }. To the host:
+//   ready   {}                     loaded
+//   reply   { re, saved, noMusic, offline }  answers a request: of the asked-for ids,
+//                                  those saved on this device and those with no music
+//                                  to save; offline = hymns can be saved here at all
+//   progress { re, done, total }   files saved so far
+// From the host, each with a request number `re`:
+//   status { ids }   which of these hymn ids are saved on this device
+//   save   { ids }   save these hymns for offline use, then reply as status does
+// Hymn ids are strings in messages. Nothing here is private, and the requests only
+// fetch Let's Sing's own files, so any page may embed it.
+
+if (EMBED && window.parent !== window) {
+    const tell = (msg, target = window.parent, origin = "*") => target.postMessage({ source: "lets-sing", ...msg }, origin);
+    // The service worker saves hymns; on a first visit it takes over a moment after load
+    const worker = navigator.serviceWorker?.controller ? Promise.resolve(true)
+        : !import.meta.env.PROD || !navigator.serviceWorker ? Promise.resolve(false)
+        : new Promise((resolve) => {
+            navigator.serviceWorker.addEventListener("controllerchange", () => resolve(true), { once: true });
+            setTimeout(() => resolve(!!navigator.serviceWorker.controller), 10000);
+        });
+
+    const hymnsOf = async (ids) => {
+        const want = new Set(ids.map(String));
+        return (await hymnsPromise).filter((h) => want.has(String(h.id)));
+    };
+    const status = async (ids) => {
+        const hymns = await hymnsOf(ids);
+        const offline = await worker;
+        const saved = offline ? await savedFiles() : new Set();
+        const has = (h) => hymnFiles(h).length > 0;
+        return {
+            saved: hymns.filter((h) => has(h) && hymnFiles(h).every((url) => saved.has(url))).map((h) => String(h.id)),
+            noMusic: hymns.filter((h) => !has(h)).map((h) => String(h.id)),
+            offline,
+        };
+    };
+
+    window.addEventListener("message", async (e) => {
+        const { source, type, re, ids } = e.data ?? {};
+        if (source !== "lets-sing-host" || e.source !== window.parent || !Array.isArray(ids)) return;
+        const reply = async () => tell({ type: "reply", re, ...(await status(ids)) }, e.source, e.origin);
+        if (type === "save" && (await worker)) {
+            protectStorage();
+            const saved = await savedFiles();
+            const missing = [...new Set((await hymnsOf(ids)).flatMap(hymnFiles))].filter((url) => !saved.has(url));
+            await fetchAll(missing, (done) => tell({ type: "progress", re, done, total: missing.length }, e.source, e.origin));
+        }
+        if (type === "save" || type === "status") reply();
+    });
+
+    tell({ type: "ready" });
+}
+
 // ---- Router -----------------------------------------------------------------
 
 function route() {
     const m = location.hash.match(/^#\/hymn\/(\d+)/);
     if (m) showHymn(+m[1]);
+    else if (EMBED) {
+        stopPlayer();
+        app.innerHTML = "";
+    }
     else if (location.hash === "#/favorites/paste") showPaste();
     else showList(location.hash.startsWith("#/favorites") ? "favorites" : "all");
 }

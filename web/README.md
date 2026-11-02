@@ -114,6 +114,16 @@ switched on. The design follows the #doreancon hymnal player
 - Scores are cached like MIDI files: on first view, kept across app updates
   unless they change, and saved with their hymn by the download arrow.
 
+## Shown inside another app (embed mode)
+
+`?embed` before the hash (`.../lets-sing/?embed&theme=dark#/hymn/12`) shows just the
+hymn's page, for another app to put in a frame: Family Worship does, for each hymn on
+a family's plan. There's no top bar, favorites star or support ask, Google Analytics
+isn't loaded (`index.html`), and `theme=light|dark|system` follows the host app's
+theme without saving it. Any other route shows an empty page; the host keeps one
+hidden to ask which hymns are saved on the device and to save more, through
+`postMessage`. The messages are listed in the embed section of `src/main.js`.
+
 ## Publishing
 
 The live site is **https://sots1689.github.io/lets-sing/**. Every push to

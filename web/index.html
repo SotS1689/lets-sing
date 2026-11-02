@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YW31K785WW"></script>
+    <!-- Google tag (gtag.js). Not when another app shows Let's Sing inside its own
+         page (?embed, see the embed section of src/main.js): that app's privacy note
+         is the one its users read. -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-YW31K785WW');
+        if (new URLSearchParams(location.search).has("embed")) {
+            document.documentElement.classList.add("embed");
+        } else {
+            const tag = document.createElement("script");
+            tag.async = true;
+            tag.src = "https://www.googletagmanager.com/gtag/js?id=G-YW31K785WW";
+            document.head.append(tag);
+            gtag('js', new Date());
+            gtag('config', 'G-YW31K785WW');
+        }
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Let's Sing</title>

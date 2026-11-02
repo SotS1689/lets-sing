@@ -532,3 +532,10 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--primary); }
     color: var(--bg);
     font-size: 0.9rem;
 }
+
+/* Shown inside another app's page (?embed, see main.js), in a frame the height
+   of the screen: no top bar, so the controls stick to the top of the frame, and
+   no favorites star (they'd be kept apart from the app's own) */
+.embed .topbar, .embed .hymn-head [data-fav] { display: none; }
+.embed .controls { top: 8px; }
+.embed main { padding-bottom: 16px; }
