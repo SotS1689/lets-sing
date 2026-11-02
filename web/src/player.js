@@ -113,6 +113,29 @@ export function seek(seconds) {
     if (seq) seq.currentTime = seconds;
 }
 
+/** Seconds into the loaded hymn where the parts first sing together: past
+ *  an introduction played on the melody alone. 0 when it starts in harmony. */
+export async function harmonyStart() {
+    const midi = await seq.getMIDI();
+    const onsets = new Map(); // tick -> SATB channels starting a note there
+    const first = []; // each part's first note
+    for (const track of midi.tracks) {
+        for (const e of track.events) {
+            const ch = e.statusByte & 0x0f;
+            if ((e.statusByte & 0xf0) !== 0x90 || ch > 3 || !e.data[1]) continue;
+            (onsets.get(e.ticks) ?? onsets.set(e.ticks, new Set()).get(e.ticks)).add(ch);
+            first[ch] = Math.min(first[ch] ?? Infinity, e.ticks);
+        }
+    }
+    const parts = first.filter((t) => t !== undefined).length;
+    if (parts < 2) return 0;
+    // The first chord with (nearly) every part in it; failing that, where the last part comes in
+    const needed = Math.min(3, parts);
+    const chord = [...onsets].filter(([, chs]) => chs.size >= needed).map(([t]) => t);
+    const tick = chord.length ? Math.min(...chord) : Math.max(...first.filter((t) => t !== undefined));
+    return tick > 0 ? midi.midiTicksToSeconds(tick) : 0;
+}
+
 /** volume: 0..1 for one SATB voice (channel gain, so the file's own CC7 can't override it).
  *  0 silences the part immediately, including notes already sounding. */
 export function setVoiceVolume(voice, volume) {
