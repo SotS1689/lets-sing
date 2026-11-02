@@ -104,8 +104,9 @@ a { color: inherit; }
 #theme-toggle, #support, #download { margin-left: 0; }
 /* Occasional "would you consider supporting it?" callout under the heart
    (same look and cadence as DA Tool's -- see the support section of main.js) */
-.support-wrap { position: relative; display: inline-flex; }
-#support-callout {
+.support-wrap, .download-wrap { position: relative; display: inline-flex; }
+/* The download arrow's panel looks the same */
+#support-callout, #download-panel {
     display: none;
     position: absolute;
     top: calc(100% + 8px);
@@ -120,7 +121,7 @@ a { color: inherit; }
     text-align: left;
     z-index: 20;
 }
-#support-callout.open { display: block; animation: support-callout-in 0.18s ease-out; }
+#support-callout.open, #download-panel.open { display: block; animation: support-callout-in 0.18s ease-out; }
 @keyframes support-callout-in {
     from { opacity: 0; transform: translateY(-4px); }
     to { opacity: 1; transform: translateY(0); }
@@ -154,6 +155,13 @@ a { color: inherit; }
 .support-callout-btn-text { padding: 6px 2px; background: none; color: var(--text-2); font-size: 0.8rem; }
 .support-callout-btn-text:hover { color: var(--text); text-decoration: underline; }
 
+/* Hung from the top bar's right edge (the arrow sits further in than the heart,
+   so a panel hung from it would run off a phone's left edge); its pointer
+   lines up with the arrow: bar padding 8px + two 44px buttons + half of one */
+.download-wrap { position: static; }
+#download-panel { top: calc(100% - 4px); right: 8px; }
+#download-panel .support-callout-arrow { right: 113px; }
+.download-hint { margin: 10px 0 0; font-size: 0.75rem; color: var(--text-2); }
 #download[data-state="busy"] svg { animation: pulse 1s ease-in-out infinite alternate; }
 @keyframes pulse { from { opacity: 1; } to { opacity: 0.3; } }
 .icon-btn:hover { background: rgb(255 255 255 / 0.12); }

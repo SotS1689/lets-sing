@@ -131,6 +131,7 @@ function paintStar(btn, h) {
 
 async function showList(mode = "all") {
     stopPlayer();
+    setDownloadScope(null);
     backBtn.hidden = true;
     pageTitle.textContent = "Let's Sing";
     document.title = mode === "favorites" ? "Favorites · Let's Sing" : "Let's Sing";
@@ -227,6 +228,7 @@ let pastedText = "";
 
 async function showPaste() {
     stopPlayer();
+    setDownloadScope(null);
     backBtn.hidden = false;
     pageTitle.textContent = "Paste a list";
     document.title = "Paste a list · Let's Sing";
@@ -397,48 +399,64 @@ async function showPaste() {
     if (!pastedText) textEl.focus();
 }
 
-// ---- Download all for offline (top bar arrow) --------------------------------
-// Fetching a file through the service worker stores it in its cache. Whether
-// everything is downloaded is checked against that cache itself, so the arrow
-// stays truthful after an update replaces the cache.
+// ---- Offline downloads (top bar arrow) ---------------------------------------
+// On a hymn's page the arrow saves that hymn; anywhere else, every hymn. Either
+// way it opens a small panel that also removes what's saved. Fetching a file
+// through the service worker stores it in its cache (the soundfont is in the
+// app's own cache, always there), and what's saved is read back from that
+// cache itself, so the arrow stays truthful after an update replaces it.
 
+const CONTENT_CACHE = "lets-sing-content"; // as in sw-template.js
 const downloadBtn = document.getElementById("download");
+const downloadPanel = document.getElementById("download-panel");
 const DOWNLOAD_ICONS = {
     todo: "M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z",
     done: "M5 20h14v-2H5v2zm4.6-5.6L5.4 10.2 6.8 8.8l2.8 2.8 7.6-7.6 1.4 1.4-9 9z",
 };
-const DOWNLOAD_LABELS = {
-    todo: "Download all hymns for offline use",
-    busy: "Downloading hymns…",
-    done: "All hymns downloaded for offline use",
-};
+let downloadHymn = null; // the hymn whose page is open, or null for all hymns
+let downloading = false;
 
-function setDownloadState(state) {
-    downloadBtn.dataset.state = state;
-    downloadBtn.setAttribute("aria-label", DOWNLOAD_LABELS[state]);
-    downloadBtn.title = DOWNLOAD_LABELS[state];
-    if (state !== "busy") downloadBtn.querySelector("path").setAttribute("d", DOWNLOAD_ICONS[state]);
-}
+const absolute = (url) => new URL(url, location.href).href;
+const hymnFiles = (h) =>
+    [h.midi && midiUrl(h), h.score && scoreUrl(h), h.score && scoreMapUrl(h)].filter(Boolean).map(absolute);
 
 async function offlineFiles() {
     const hymns = await hymnsPromise;
-    const scores = hymns.filter((h) => h.score).flatMap((h) => [scoreUrl(h), scoreMapUrl(h)]);
-    return [...new Set(hymns.filter((h) => h.midi).map(midiUrl).concat(scores))].concat("./soundfont/instruments.sf2");
+    return [...new Set(hymns.flatMap(hymnFiles))];
 }
 
-async function missingFiles() {
-    const missing = [];
-    for (const url of await offlineFiles()) {
-        if (!(await caches.match(url, { ignoreVary: true }))) missing.push(url);
-    }
-    return missing;
+async function savedFiles() {
+    const cache = await caches.open(CONTENT_CACHE);
+    return new Set((await cache.keys()).map((req) => req.url));
+}
+
+// The hymns this page's arrow is about, and how many of them are saved
+async function downloadScope() {
+    const hymns = downloadHymn ? [downloadHymn] : (await hymnsPromise).filter((h) => h.midi);
+    const saved = await savedFiles();
+    const isSaved = (h) => hymnFiles(h).every((url) => saved.has(url));
+    const missing = [...new Set(hymns.flatMap(hymnFiles))].filter((url) => !saved.has(url));
+    return { hymns, saved, isSaved, missing, savedCount: hymns.filter(isSaved).length };
+}
+
+async function setDownloadState() {
+    if (downloadBtn.hidden) return;
+    const scope = await downloadScope();
+    const state = downloading ? "busy" : scope.missing.length ? "todo" : "done";
+    const label = downloadHymn
+        ? { todo: "Save this hymn for offline use", busy: "Saving…", done: "This hymn is saved for offline use" }
+        : { todo: "Download all hymns for offline use", busy: "Downloading hymns…", done: "All hymns downloaded for offline use" };
+    downloadBtn.dataset.state = state;
+    downloadBtn.setAttribute("aria-label", label[state]);
+    downloadBtn.title = label[state];
+    if (state !== "busy") downloadBtn.querySelector("path").setAttribute("d", DOWNLOAD_ICONS[state]);
 }
 
 // Drops saved copies of hymns no current hymn uses (an older version of a
 // changed MIDI file, or a removed hymn), so the saved store doesn't grow.
 async function pruneOldHymns() {
-    const current = new Set((await offlineFiles()).map((u) => new URL(u, location.href).href));
-    const cache = await caches.open("lets-sing-content");
+    const current = new Set(await offlineFiles());
+    const cache = await caches.open(CONTENT_CACHE);
     for (const req of await cache.keys()) {
         if (!current.has(req.url)) await cache.delete(req);
     }
@@ -451,35 +469,118 @@ function protectStorage() {
     navigator.storage?.persist?.().catch(() => {});
 }
 
-async function downloadAll() {
-    if (!navigator.onLine) return toast("Connect to the internet to download the hymns.", 3000);
+async function download() {
+    if (!navigator.onLine) return toast("Connect to the internet to download.", 3000);
     protectStorage();
-    setDownloadState("busy");
-    const files = await missingFiles();
+    const one = downloadHymn;
+    const files = (await downloadScope()).missing;
     const total = files.length;
-    const progress = toast("Downloading hymns…", 0);
+    downloading = true;
+    setDownloadState();
+    const progress = toast(one ? "Saving this hymn…" : "Downloading hymns…", 0);
     let done = 0;
     const next = async () => {
         while (files.length) {
             try { await fetch(files.pop()); } catch { /* counted by the re-check below */ }
-            progress.textContent = `Downloading hymns… ${++done} of ${total}`;
+            if (!one) progress.textContent = `Downloading hymns… ${++done} of ${total}`;
         }
     };
     await Promise.all(Array.from({ length: 6 }, next));
     progress.remove();
-    const failed = (await missingFiles()).length;
-    setDownloadState(failed ? "todo" : "done");
-    toast(failed
-        ? `${failed} files didn't download. Check your connection and tap the arrow again.`
-        : "All hymns downloaded. The app now works offline.", 3500);
+    downloading = false;
+    const saved = await savedFiles();
+    const failed = (one ? hymnFiles(one) : await offlineFiles()).filter((url) => !saved.has(url)).length;
+    setDownloadState();
+    track("offline_download", { scope: one ? "hymn" : "all", failed });
+    if (failed) toast(`${failed} files didn't download. Check your connection and try again.`, 3500);
+    else toast(one ? "Saved. This hymn now plays without internet." : "All hymns downloaded. The app now works offline.", 3500);
+}
+
+async function removeDownloads() {
+    const one = downloadHymn;
+    if (one) {
+        // Keep files another saved hymn shares (hymns on one tune share its score)
+        const { saved } = await downloadScope();
+        const others = (await hymnsPromise).filter((h) => h !== one && hymnFiles(h).every((url) => saved.has(url)));
+        const keep = new Set(others.flatMap(hymnFiles));
+        const cache = await caches.open(CONTENT_CACHE);
+        const shared = hymnFiles(one).filter((url) => keep.has(url));
+        for (const url of hymnFiles(one)) if (!keep.has(url)) await cache.delete(url);
+        if (shared.length === hymnFiles(one).length) {
+            const sharer = others.find((h) => hymnFiles(h).some((url) => shared.includes(url)));
+            setDownloadState();
+            return toast(`This hymn's music is the same as “${sharer.title}”, which is saved, so it stays saved too.`, 4500);
+        }
+    } else {
+        if (!confirm("Remove every downloaded hymn from this device? They'll download again as you play them.")) return;
+        await caches.delete(CONTENT_CACHE);
+    }
+    track("offline_remove", { scope: one ? "hymn" : "all" });
+    setDownloadState();
+    toast(one ? "Removed this hymn's download." : "Removed all downloaded hymns.", 2500);
+}
+
+const fmtSize = (bytes) => (bytes >= 1e9 ? `${(bytes / 1e9).toFixed(1)} GB` : `${Math.max(1, Math.round(bytes / 1e6))} MB`);
+
+async function openDownloadPanel() {
+    const scope = await downloadScope();
+    const all = !downloadHymn;
+    const done = !scope.missing.length;
+    const anySaved = all ? scope.saved.size > 0 : scope.hymns.some((h) => hymnFiles(h).some((url) => scope.saved.has(url)));
+    let usage = "";
+    if (all && anySaved) {
+        const est = await navigator.storage?.estimate?.().catch(() => null);
+        if (est?.usage) usage = ` The app uses about ${fmtSize(est.usage)} on this device.`;
+    }
+    const text = all
+        ? done ? "Every hymn is downloaded, so the app works without internet."
+        : `${scope.savedCount} of ${scope.hymns.length} hymns are downloaded for use without internet.`
+        : done ? "This hymn is saved on this device, so it plays without internet."
+        : "Save this hymn on this device so it plays without internet.";
+    downloadPanel.innerHTML = `
+        <div class="support-callout-arrow"></div>
+        <p class="support-callout-title">${all ? "Offline use" : "Offline use: this hymn"}</p>
+        <p class="support-callout-body">${esc(text + usage)}</p>
+        <div class="support-callout-actions">
+            ${done ? "" : `<button type="button" class="support-callout-btn support-callout-btn-primary" data-offline="download">
+                ${all ? (scope.savedCount ? "Download the rest" : "Download all") : "Save this hymn"}</button>`}
+            ${anySaved ? `<button type="button" class="support-callout-btn support-callout-btn-secondary" data-offline="remove">
+                ${all ? "Remove all downloads" : "Remove from this device"}</button>` : ""}
+            <button type="button" class="support-callout-btn support-callout-btn-text" data-offline="close">Close</button>
+        </div>
+        ${all ? "" : `<p class="download-hint">To download every hymn, use this button on the main page.</p>`}`;
+    downloadPanel.classList.add("open");
+    setTimeout(() => document.addEventListener("click", downloadOutsideClick), 0);
+}
+
+function closeDownloadPanel() {
+    downloadPanel.classList.remove("open");
+    document.removeEventListener("click", downloadOutsideClick);
+}
+
+function downloadOutsideClick(e) {
+    if (!downloadPanel.contains(e.target) && !downloadBtn.contains(e.target)) closeDownloadPanel();
 }
 
 downloadBtn.addEventListener("click", () => {
-    const state = downloadBtn.dataset.state;
-    if (state === "busy") return;
-    if (state === "done") return toast("All hymns are downloaded. The app works offline.", 2500);
-    downloadAll();
+    if (downloading) return;
+    if (downloadPanel.classList.contains("open")) closeDownloadPanel();
+    else openDownloadPanel();
 });
+downloadPanel.addEventListener("click", (e) => {
+    const action = e.target.closest("[data-offline]")?.dataset.offline;
+    if (!action) return;
+    closeDownloadPanel();
+    if (action === "download") download();
+    else if (action === "remove") removeDownloads();
+});
+
+/** Points the arrow at one hymn (its page) or at every hymn (null). */
+function setDownloadScope(hymn) {
+    downloadHymn = hymn;
+    closeDownloadPanel();
+    setDownloadState();
+}
 
 // Only offered once the service worker (production builds) is in control;
 // on a first visit it takes over a moment after the page loads.
@@ -487,7 +588,7 @@ async function showDownloadButton() {
     downloadBtn.hidden = false;
     protectStorage();
     await pruneOldHymns();
-    setDownloadState((await missingFiles()).length ? "todo" : "done");
+    setDownloadState();
 }
 if (navigator.serviceWorker?.controller) showDownloadButton();
 else navigator.serviceWorker?.addEventListener("controllerchange", showDownloadButton, { once: true });
@@ -562,6 +663,7 @@ async function showHymn(id) {
     const hymns = await hymnsPromise;
     const hymn = hymns.find((h) => h.id === id);
     stopPlayer();
+    setDownloadScope(hymn ?? null);
     backBtn.hidden = false;
     if (!hymn) {
         pageTitle.textContent = "Not found";
@@ -791,6 +893,7 @@ async function showHymn(id) {
                 if (location.hash !== `#/hymn/${id}`) return;
                 score = s;
                 paintScore();
+                setDownloadState(); // opening a hymn saves its files
             })
             .catch(() => app.querySelector(".score")?.remove()); // the player works the same without it
     }
@@ -809,6 +912,7 @@ async function showHymn(id) {
         durEl.textContent = fmtTime(player.duration());
         seekEl.disabled = playBtn.disabled = stopBtn.disabled = false;
         statusEl.textContent = "";
+        setDownloadState();
     } catch (err) {
         // fetch() throws a TypeError when the site can't be reached at all, which
         // happens with Wi-Fi "connected" too (no internet, or the server is down)

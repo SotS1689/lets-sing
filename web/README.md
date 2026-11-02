@@ -37,8 +37,10 @@ MIDI files, then build.
 - Each part's name button turns it fully on/off (gain 0) without losing its
   slider setting.
 - `sw-template.js` → `dist/sw.js` — the service worker. Caches the app shell on
-  install and each MIDI on first play (or all at once via the "Download all"
-  button). The cache name is a hash of every published file, so any content
+  install and each MIDI on first play. The top bar's arrow opens a panel that
+  saves (or removes) that hymn on a hymn's page, and every hymn on the main
+  page; removing one hymn keeps files another saved hymn on the same tune
+  needs. The cache name is a hash of every published file, so any content
   change replaces the whole cache — no stale MIDI files.
 - Icons: `python scripts/make_icons.py` redraws them from the note artwork drawn in the script.
 
@@ -109,7 +111,7 @@ switched on. The design follows the #doreancon hymnal player
     it, swapped in as each verse starts, and the clef and key are pinned at the left edge.
   - **Page**: the score as a hymnal prints it, reflowed to the screen.
 - Scores are cached like MIDI files: on first view, kept across app updates
-  unless they change, and included in "Download all".
+  unless they change, and saved with their hymn by the download arrow.
 
 ## Publishing
 
