@@ -21,13 +21,40 @@ const NEW_NOTE = 1.5;
  *  line going where it was; more is a breath or a rest. */
 const GAP = 4;
 
+/** On Android with Bluetooth headphones, the phone's own microphone. Chrome's
+ *  default there is the headphones' mic, which puts them in phone-call mode,
+ *  and then nothing the app plays is heard in them. The phone's mics
+ *  ("Speakerphone", "Headset earpiece") leave them playing music.
+ *  Null elsewhere, or before the microphone is allowed (names are hidden). */
+async function phoneMicId() {
+    if (!/Android/i.test(navigator.userAgent)) return null;
+    try {
+        const inputs = (await navigator.mediaDevices.enumerateDevices()).filter((d) => d.kind === "audioinput");
+        if (!inputs.some((d) => /bluetooth/i.test(d.label))) return null;
+        const phone = inputs.find((d) => /speakerphone/i.test(d.label))
+            ?? inputs.find((d) => /earpiece/i.test(d.label));
+        return phone?.deviceId || null;
+    } catch {
+        return null;
+    }
+}
+
 /** Asks for the microphone and starts listening. Rejects when it's refused or there is none. */
 export async function listen() {
-    const stream = await navigator.mediaDevices.getUserMedia({
-        // The browser's own call-cleaning bends and gates a singing voice
-        audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false },
-    });
-    renewOutput(); // Bluetooth headphones may have just switched to call mode
+    // The browser's own call-cleaning bends and gates a singing voice
+    const audio = { echoCancellation: false, noiseSuppression: false, autoGainControl: false };
+    const open = (id) => navigator.mediaDevices.getUserMedia({ audio: id ? { ...audio, deviceId: { exact: id } } : audio });
+    let phoneMic = await phoneMicId();
+    let stream = await open(phoneMic).catch(() => open(null));
+    // Microphone names are only known once it's allowed: on the first time, look again
+    if (!phoneMic && (phoneMic = await phoneMicId())) {
+        const phone = await open(phoneMic).catch(() => null);
+        if (phone) {
+            stream.getTracks().forEach((t) => t.stop());
+            stream = phone;
+        }
+    }
+    renewOutput(); // the audio route may have changed
     const ctx = new AudioContext();
     await ctx.resume().catch(() => {}); // started suspended when not opened by a tap
     const source = ctx.createMediaStreamSource(stream);
