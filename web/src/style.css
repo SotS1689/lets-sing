@@ -452,7 +452,31 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--primary); }
 /* Scrolling view (src/score.js): one long line sliding past, the note being sung near the left */
 /* contain: the long line must not widen the page around it */
 .score-notation.is-scrolling { position: relative; overflow: hidden; width: 100%; min-width: 0; contain: inline-size; }
-.score-strip { width: max-content; will-change: transform; }
+.score-strip { width: max-content; position: relative; will-change: transform; }
+/* Learn mode (src/learn.js): the singer's voice as a line over the staff, and the
+   note they should be on coloured by how close they are */
+.learn-trace { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.learn-trace line { stroke-width: 3; stroke-linecap: round; }
+.learn-trace .learn-good { stroke: var(--learn-good); fill: var(--learn-good); }
+.learn-trace .learn-close { stroke: var(--learn-close); fill: var(--learn-close); }
+.learn-trace .learn-off { stroke: var(--learn-off); fill: var(--learn-off); }
+.learn-trace .learn-settle { stroke: var(--text); fill: var(--text); opacity: 0.35; }
+.score-notation .learn-good { fill: var(--learn-good); stroke: var(--learn-good); }
+.score-notation .learn-close { fill: var(--learn-close); stroke: var(--learn-close); }
+.score-notation .learn-off { fill: var(--learn-off); stroke: var(--learn-off); }
+:root { --learn-good: #23944a; --learn-close: #c98a00; --learn-off: #d2413a; }
+.learn-btn { padding: 4px 10px; border: 1px solid var(--line); border-radius: 14px; background: transparent; color: var(--text-2); font: inherit; font-size: 0.75rem; cursor: pointer; }
+.learn-btn[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); }
+.learn-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 0 8px 6px; font-size: 0.85rem; color: var(--text-2); }
+.learn-bar[hidden] { display: none; }
+.learn-bar select { font: inherit; padding: 2px 4px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg, transparent); color: var(--text); }
+.learn-readout { display: inline-flex; width: 28px; height: 28px; color: var(--text-2); }
+.learn-readout:empty { display: none; }
+.learn-readout svg { width: 100%; height: 100%; fill: currentColor; }
+.learn-hint[hidden] { display: none; }
+.learn-readout.learn-good { color: var(--learn-good); }
+.learn-readout.learn-close { color: var(--learn-close); }
+.learn-readout.learn-off { color: var(--learn-off); }
 /* The clefs and key, pinned at the left edge while the line slides under them */
 .score-pin {
     position: absolute;
@@ -539,3 +563,103 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--primary); }
 .embed .topbar, .embed .hymn-head [data-fav] { display: none; }
 .embed .controls { top: 8px; }
 .embed main { padding-bottom: 16px; }
+
+/* Learn scores (src/progress.js): flat | on pitch | sharp, named in text beside every colour */
+:root { --split-flat: #3a6fd8; --split-on: #23944a; --split-sharp: #c96a1b; }
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --split-flat: #6a93e0; --split-on: #34a35d; --split-sharp: #c8722a; --learn-good: #34a35d; }
+}
+:root[data-theme="dark"] { --split-flat: #6a93e0; --split-on: #34a35d; --split-sharp: #c8722a; --learn-good: #34a35d; }
+.split-bar { display: flex; gap: 2px; height: 14px; margin: 6px 0; }
+.split-bar span { border-radius: 4px; min-width: 4px; }
+.split-flat { background: var(--split-flat); }
+.split-on { background: var(--split-on); }
+.split-sharp { background: var(--split-sharp); }
+.split-key { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.8rem; color: var(--text-2); }
+.split-key i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+.learn-result { margin: 4px 8px 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; }
+.learn-result[hidden] { display: none; }
+.learn-result-head { display: flex; align-items: center; justify-content: space-between; }
+.learn-result h4 { margin: 0; font-size: 0.9rem; }
+.learn-big { margin: 4px 0 0; font-size: 2rem; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
+.learn-big span { font-size: 0.9rem; font-weight: 500; color: var(--text-2); }
+.learn-sub { margin: 8px 0 4px; font-size: 0.8rem; color: var(--text-2); }
+.learn-more { display: inline-block; margin-top: 6px; font-size: 0.85rem; }
+.chart-wrap { position: relative; }
+.chart { display: block; width: 100%; height: auto; overflow: visible; touch-action: pan-y; }
+.chart-grid { stroke: var(--line); stroke-width: 1; }
+.chart-axis { fill: var(--text-2); font-size: 11px; }
+.chart-line { fill: none; stroke: var(--split-on); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart-dot { fill: var(--split-on); stroke: var(--surface); stroke-width: 2; }
+.chart-cross { stroke: var(--text-2); stroke-width: 1; stroke-dasharray: 3 3; }
+.chart-tip { position: absolute; top: 0; transform: translateX(-50%); padding: 6px 8px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 2px 8px rgb(0 0 0 / 0.15); font-size: 0.75rem; color: var(--text); pointer-events: none; white-space: nowrap; }
+.chart-tip[hidden] { display: none; }
+.chart-tip span { color: var(--text-2); }
+.progress { display: grid; gap: 12px; padding-bottom: 24px; }
+.progress .card { padding: 12px; }
+.progress h3 { margin: 0 0 6px; }
+.progress-tabs { margin: 8px 0 12px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; }
+.tile { display: flex; flex-direction: column; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.tile-n { font-size: 1.6rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.tile-l { font-size: 0.8rem; color: var(--text-2); }
+.progress-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+.progress-table th { text-align: left; font-weight: 600; color: var(--text-2); border-bottom: 1px solid var(--line); padding: 4px 6px; }
+.progress-table td { padding: 6px; border-bottom: 1px solid var(--line); }
+.progress-table .change { font-size: 0.75rem; color: var(--text-2); }
+@media (max-width: 520px) {
+    .progress-table th:nth-child(6), .progress-table td:nth-child(6) { display: none; }
+}
+
+/* Learn tab (src/learnui.js): tracks of lessons, a lesson's exercises, the range check */
+.learn-tabs { margin: 8px 0 12px; }
+.learn-intro { margin: 0 0 10px; color: var(--text-2); font-size: 0.9rem; }
+.learn-suggest { margin: 0 0 10px; font-size: 0.9rem; }
+.track { padding: 0; margin-bottom: 10px; }
+.track summary { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 14px; cursor: pointer; list-style: none; }
+.track summary::-webkit-details-marker { display: none; }
+.track summary::after { content: "\25BE"; color: var(--text-2); margin-left: 4px; transition: transform 0.15s; }
+.track:not([open]) summary::after { transform: rotate(-90deg); }
+.track-name { font-weight: 700; font-size: 1.05rem; flex: 1; }
+.track-count { font-size: 0.8rem; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.track-blurb { margin: -4px 14px 8px; font-size: 0.85rem; color: var(--text-2); }
+.badge { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 10px; font-size: 0.7rem; font-weight: 600; background: var(--primary); color: var(--on-primary); vertical-align: 2px; }
+.lesson-list { list-style: none; margin: 0; padding: 0 0 6px; }
+.lesson-list a { display: flex; align-items: center; gap: 10px; padding: 9px 14px; color: var(--text); text-decoration: none; border-top: 1px solid var(--line); }
+.lesson-list a:hover { background: color-mix(in srgb, var(--text) 5%, transparent); }
+.lesson-icon { display: inline-flex; width: 20px; height: 20px; color: var(--text-2); }
+.lesson-icon svg { width: 100%; height: 100%; fill: currentColor; }
+.lesson-list .is-passed .lesson-icon { color: var(--learn-good); }
+.lesson-list .is-locked a { color: var(--text-2); }
+.lesson-n { width: 1.6em; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.lesson-title { flex: 1; }
+.scores { margin-top: 24px; }
+.scores h2 { margin: 0 0 10px; }
+.lesson { padding-bottom: 24px; }
+.lesson h2 { margin: 4px 0 10px; }
+.lesson-crumb { margin: 8px 0 0; font-size: 0.8rem; color: var(--text-2); }
+.lesson-tip { padding: 12px 14px; margin-bottom: 12px; }
+.lesson-tip p { margin: 0; }
+.lesson-tip .learn-sub { margin-top: 8px; }
+.exercise { padding: 12px 14px; margin-bottom: 12px; }
+.exercise-head { display: flex; gap: 10px; justify-content: space-between; align-items: flex-start; }
+.exercise h3 { margin: 0; font-size: 1rem; }
+.exercise h3 .sub { font-weight: 400; font-size: 0.8rem; color: var(--text-2); }
+.exercise-head .learn-sub { margin: 4px 0 0; }
+.exercise-best { display: inline-flex; align-items: center; gap: 4px; font-size: 0.85rem; color: var(--text-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.exercise-best svg { width: 18px; height: 18px; fill: currentColor; }
+.exercise-best.is-passed { color: var(--learn-good); font-weight: 600; }
+.exercise-actions { display: flex; align-items: center; gap: 12px; margin-top: 10px; flex-wrap: wrap; }
+.tempo-pick { font-size: 0.85rem; color: var(--text-2); }
+.tempo-pick select { font: inherit; padding: 2px 4px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--text); }
+.exercise-stage { margin-top: 10px; }
+.exercise-stage[hidden], .exercise-result[hidden] { display: none; }
+.stage-bar { display: flex; align-items: center; gap: 10px; min-height: 30px; margin-bottom: 6px; }
+.stage-status { font-weight: 600; }
+.exercise-result { margin-top: 10px; }
+.result-line { margin: 0 0 4px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.result-line svg { width: 20px; height: 20px; fill: var(--learn-good); }
+.result-line.is-passed strong { color: var(--text); }
+.range-check p { margin: 0 0 8px; }
+.range-now { font-size: 1.2rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.lesson-nav { display: flex; justify-content: space-between; margin-top: 8px; }

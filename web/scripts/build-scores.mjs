@@ -273,7 +273,7 @@ export function noteMap(abc, midiBytes, verseCount) {
             let t = note.start;
             for (const h of group) {
                 const d = ((note.end - note.start) * heads[h].length) / total;
-                entries.push([h, +t.toFixed(2), +d.toFixed(2)]); // to 1/100 s: plenty to light a note by
+                entries.push([h, +t.toFixed(2), +d.toFixed(2), note.pitch]); // to 1/100 s: plenty to light a note by; then its MIDI pitch (for Learn)
                 t += d;
             }
             // A verse starts where the tune's first note comes round again from

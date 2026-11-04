@@ -17,6 +17,17 @@ import abcjs from "abcjs";
  *  notes just sung stay in sight on the left instead of vanishing mid-breath. */
 const SCROLL_ANCHOR = 0.4;
 
+/** Learn mode: within this many cents of the note is on pitch; within the
+ *  second, close; further off, off. */
+const LEARN_GOOD = 40, LEARN_CLOSE = 90;
+/** Learn mode: the start of each note is let off (up to this many seconds, and
+ *  never more than this share of the note) until the voice first finds it, so a
+ *  consonant ("Do", "Re", "Mi") or the slide into the note isn't counted wrong. */
+const ONSET_GRACE = 0.3, ONSET_SHARE = 0.4;
+/** "learn-good", "learn-close" or "learn-off" for a voice `cents` from its note. */
+export const learnGrade = (cents) =>
+    Math.abs(cents) <= LEARN_GOOD ? "learn-good" : Math.abs(cents) <= LEARN_CLOSE ? "learn-close" : "learn-off";
+
 /**
  * Draws a hymn's score into `host` and returns its controller; rejects when the
  * score can't be loaded (the player works the same without it).
@@ -26,7 +37,8 @@ const SCROLL_ANCHOR = 0.4;
  * line of those words is lit as the verse being sung.
  */
 export async function loadScore(host, url, { words = true, verses = true, view = "page" } = {}) {
-    let [abc, map] = await Promise.all([
+    // `url` may instead be { abc, map } already in hand (a Learn exercise the app wrote)
+    let [abc, map] = typeof url === "object" ? [url.abc, url.map] : await Promise.all([
         fetch(url).then((r) => (r.ok ? r.text() : Promise.reject(new Error(r.status)))),
         fetch(url.replace(/\.abc(\?|$)/, ".json$1")).then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.status)))),
     ]);
@@ -70,6 +82,10 @@ export async function loadScore(host, url, { words = true, verses = true, view =
     return {
         verseAt: (now) => painter.verseAt(now),
         verseCount: map.verses.length,
+        /** When each time through the tune starts (seconds into the MIDI). */
+        verseStarts: map.verses,
+        /** Part `ch`'s notes as [notehead, start, length, pitch]; [] when the hymn hasn't that part. */
+        partNotes: (ch) => map.parts.find((p) => p.ch === ch)?.notes ?? [],
         paint(now, on, follow = false) {
             if (state.view === "scroll") {
                 const verse = painter.verseAt(now);
@@ -86,8 +102,20 @@ export async function loadScore(host, url, { words = true, verses = true, view =
             }
             painter.paint(now, on, follow);
         },
+        /** Learn mode (scrolling view only): marks part `ch`'s note at `now` by how
+         *  close `sung` (a MIDI pitch with fraction, null for silence) is to it, the
+         *  playback being `shift` semitones from the written key, and draws the voice
+         *  as a line over the staff. Returns how far off it is in cents (any octave),
+         *  or null when there's nothing to compare. */
+        trace: (now, ch, sung, shift) => painter.trace(now, ch, sung, shift),
+        /** True when the last trace() fell in a note's let-off start (see ONSET_GRACE):
+         *  its cents are shown on the line but neither graded nor counted. */
+        get settling() { return painter.settling; },
+        clearTrace: () => painter.clearTrace(),
+        grade: learnGrade,
         clear() {
             painter.clear();
+            painter.clearTrace();
             if (state.view === "scroll" && state.verse !== 1) {
                 state.verse = 1;
                 draw();
@@ -257,7 +285,117 @@ function makePainter(state, map, lightWords, host) {
 
     const verseAt = (now) => lastStarted(verseStarts, now) + 1;
 
+    /** The SVG elements of a part's j-th note; null when it isn't drawn (the
+     *  scrolling line holds the tune twice: which copy this note is in) */
+    function notesEls(voice, notes, j, scrolling) {
+        const [head, start] = notes[j];
+        const list = state.heads[voice] ?? [];
+        const copy = scrolling ? verseAt(start) - state.verse : 0;
+        if (copy < 0 || copy >= state.passes) return null;
+        return list[head + (copy * list.length) / state.passes] ?? [];
+    }
+
+    // Learn mode: the voice's line, drawn in a layer inside the sliding strip so it
+    // moves with the music (a new strip, after a redraw, starts a new line)
+    let layer = null, layerStrip = null, lastPoint = null, marked = null;
+    let onsetNote = null, found = false, settling = false;
+    const SVG = "http://www.w3.org/2000/svg";
+    const unmark = () => {
+        marked?.classList.remove("learn-good", "learn-close", "learn-off");
+        marked = null;
+    };
+
     return {
+        get settling() { return settling; },
+
+        trace(now, ch, sung, shift) {
+            settling = false;
+            if (state.view !== "scroll" || !state.strip) return unmark(), null;
+            if (layerStrip !== state.strip) {
+                layer = document.createElementNS(SVG, "svg");
+                layer.setAttribute("class", "learn-trace");
+                layer.setAttribute("aria-hidden", "true");
+                state.strip.append(layer);
+                layerStrip = state.strip;
+                lastPoint = null;
+            }
+            const part = parts.find((p) => p.ch === ch);
+            const i = part ? lastStarted(part.notes, now) : -1;
+            const note = part?.notes[i];
+            // Nothing to sing right now (a rest, before the part comes in), or a note
+            // map from before notes carried their pitch
+            if (!note || now >= note[1] + note[2] || note[3] === undefined) {
+                unmark();
+                lastPoint = null;
+                return null;
+            }
+            const els = notesEls(part.voice, part.notes, i, true);
+            const el = els?.[0];
+            if (!el) return unmark(), null;
+            const head = part.rank === null ? el.querySelector?.(":scope > .abcjs-notehead") ?? el : noteheadOf(el, part.rank);
+            if (head !== marked) unmark();
+            marked = head;
+            if (note !== onsetNote) {
+                onsetNote = note;
+                found = false;
+            }
+            if (sung === null) {
+                head.classList.remove("learn-good", "learn-close", "learn-off");
+                lastPoint = null;
+                return null;
+            }
+            // Any octave counts: a man singing the tune where it sits for him
+            let diff = sung - (note[3] + shift);
+            diff -= 12 * Math.round(diff / 12);
+            const cents = Math.round(diff * 100);
+            let grade = learnGrade(cents);
+            if (grade === "learn-good") found = true;
+            else if (!found && now - note[1] < Math.min(ONSET_GRACE, note[2] * ONSET_SHARE)) {
+                settling = true;
+                grade = "learn-settle";
+            }
+            if (settling) head.classList.remove("learn-good", "learn-close", "learn-off");
+            else if (!head.classList.contains(grade)) {
+                head.classList.remove("learn-good", "learn-close", "learn-off");
+                head.classList.add(grade);
+            }
+            // Height on the staff: the note's own place, then a semitone is 7/12 of
+            // a step and a step is half the space between two lines (a notehead's height)
+            // (measured on the notehead itself: the note's group takes in its stem)
+            const oval = head.classList?.contains("abcjs-notehead") ? head : head.querySelector?.(":scope > .abcjs-notehead") ?? head;
+            const strip = state.strip.getBoundingClientRect(), box = oval.getBoundingClientRect();
+            const y = box.top + box.height / 2 - strip.top - diff * (7 / 12) * (box.height / 2);
+            const points = timeline();
+            if (!points.length) return cents;
+            const x = positionAt(points, now);
+            let mark;
+            if (lastPoint && x >= lastPoint.x && x - lastPoint.x < 40) {
+                mark = document.createElementNS(SVG, "line");
+                mark.setAttribute("x1", lastPoint.x.toFixed(1));
+                mark.setAttribute("y1", lastPoint.y.toFixed(1));
+                mark.setAttribute("x2", x.toFixed(1));
+                mark.setAttribute("y2", y.toFixed(1));
+            } else {
+                mark = document.createElementNS(SVG, "circle");
+                mark.setAttribute("cx", x.toFixed(1));
+                mark.setAttribute("cy", y.toFixed(1));
+                mark.setAttribute("r", "2");
+            }
+            mark.setAttribute("class", grade);
+            layer.append(mark);
+            while (layer.childElementCount > 2000) layer.firstElementChild.remove();
+            lastPoint = { x, y };
+            return cents;
+        },
+
+        clearTrace() {
+            unmark();
+            onsetNote = null;
+            settling = false;
+            layer?.remove();
+            layer = layerStrip = lastPoint = null;
+        },
+
         /** Verse being sung at `now`: 0 for the intro, then 1..n. */
         verseAt,
 
@@ -271,13 +409,7 @@ function makePainter(state, map, lightWords, host) {
             // melody's notes even when the melody itself is muted
             // The SVG elements of a part's j-th note; null when it isn't drawn
             // (the scrolling line holds the tune twice: which copy this note is in)
-            const elsOf = (voice, notes, j) => {
-                const [head, start] = notes[j];
-                const list = state.heads[voice] ?? [];
-                const copy = scrolling ? verseAt(start) - state.verse : 0;
-                if (copy < 0 || copy >= state.passes) return null;
-                return list[head + (copy * list.length) / state.passes] ?? [];
-            };
+            const elsOf = (voice, notes, j) => notesEls(voice, notes, j, scrolling);
             // A note's words are one <text> inside it with a line per verse:
             // the verse being sung's (none when it isn't set under the notes)
             const wordOf = (els) => {
@@ -372,7 +504,7 @@ function makePainter(state, map, lightWords, host) {
         for (const { voice, notes } of parts) {
             const list = state.heads[voice] ?? [];
             const n = list.length / state.passes;
-            for (const [head, start] of notes) {
+            for (const [head, start, dur] of notes) {
                 let el = null, offset = 0;
                 if (start >= startOf(v) && start < startOf(v + 1)) el = list[head]?.[0];
                 else if (state.passes > 1 && start >= startOf(v + 1) && start < startOf(v + 2)) el = list[head + n]?.[0];
@@ -380,7 +512,7 @@ function makePainter(state, map, lightWords, host) {
                     el = list[head]?.[0];
                     offset = -state.passWidth;
                 }
-                if (el) points.push([centre(el) + offset, start]);
+                if (el) points.push([centre(el) + offset, start, start + (dur ?? 1)]);
             }
         }
         points.sort((a, b) => a[1] - b[1] || a[0] - b[0]);
@@ -389,7 +521,19 @@ function makePainter(state, map, lightWords, host) {
         // Each note passes the anchor halfway through its time, until the next one
         // starts: it arrives a little right of it and leaves a little left, rather
         // than starting there and drifting off while it's still being sung
-        state.timeline = moments.map(([x, t], i) => [x, (t + (moments[i + 1]?.[1] ?? t + 1)) / 2]);
+        const last = moments[moments.length - 1];
+        const lastEnd = last ? Math.max(...points.filter((p) => p[1] >= last[1] - 0.02).map((p) => p[2])) : 0;
+        state.timeline = moments.map(([x, t], i) => [x, (t + (moments[i + 1]?.[1] ?? lastEnd)) / 2]);
+        // The first note's first half and the last note's second half move too:
+        // from a little left of the first note as it starts, to a little right of
+        // the last as it ends (half the space to the neighbouring note)
+        if (moments.length) {
+            const first = moments[0];
+            const lead = moments.length > 1 ? Math.max(8, (moments[1][0] - first[0]) / 2) : 20;
+            const tail = moments.length > 1 ? Math.max(8, (last[0] - moments[moments.length - 2][0]) / 2) : 20;
+            state.timeline.unshift([first[0] - lead, first[1]]);
+            state.timeline.push([last[0] + tail, lastEnd]);
+        }
         // Where the second copy's first note is, for pastPreviousVerse
         state.nextStartX = moments.find(([, t]) => t >= startOf(v + 1) && state.passes > 1)?.[0] ?? null;
         return state.timeline;

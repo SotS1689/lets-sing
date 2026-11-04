@@ -3,6 +3,7 @@
 // static host folder with no server-side setup.
 import * as player from "./player.js";
 import { VOICES, INSTRUMENTS } from "./player.js";
+import { loadRuns, addRun, clearRuns, tally, shares, splitBar, onPitchChart, PARTS, MIN_SECONDS } from "./progress.js";
 
 const app = document.getElementById("app");
 const backBtn = document.getElementById("back");
@@ -37,6 +38,8 @@ const SCORE_VIEWS = [
     { id: "scroll", name: "Scroll", title: "One line of music that moves along as it plays" },
     { id: "page", name: "Page", title: "The whole score, as a hymnal prints it" },
 ];
+// Learn mode: the part the singer is learning (0 S, 1 A, 2 T, 3 B)
+let learnPart = [0, 1, 2, 3].includes(store.get("learnPart")) ? store.get("learnPart") : 0;
 let scoreView = SCORE_VIEWS.some((v) => v.id === store.get("scoreView")) ? store.get("scoreView") : "scroll";
 
 const applyVoice = (i) => player.setVoiceVolume(i, mix.on[i] ? mix.volumes[i] / 100 : 0);
@@ -153,6 +156,7 @@ async function showList(mode = "all") {
                 <a href="#/"${mode === "all" ? ' aria-current="page"' : ""}>All hymns</a>
                 <a href="#/favorites"${mode === "favorites" ? ' aria-current="page"' : ""}>Favorites
                     <span class="tab-count" id="fav-count">${favorites.length || ""}</span></a>
+                <a href="#/learn">Learn</a>
             </nav>
         </div>
         <div id="install-slot"></div>
@@ -167,6 +171,9 @@ async function showList(mode = "all") {
             <p>Let's Sing uses Google Analytics to count visits and see which features get used,
                so the app can be improved. You don't need an account, and nothing you type into
                the app is collected. Your data will never be sold or given away.</p>
+            <p>Learn listens through your microphone only while it's turned on. Your voice is
+               analysed on your device as you sing; it's never recorded or sent anywhere. Your
+               scores are kept only on this device.</p>
         </details>`;
 
     const list = document.getElementById("list");
@@ -222,6 +229,110 @@ async function showList(mode = "all") {
     });
     renderInstallBanner();
     window.scrollTo(0, listScroll);
+}
+
+// ---- Learn: the course (src/learnui.js), then the singer's scores ---------------------
+
+const learnNav = () => `<nav class="tabs learn-tabs" aria-label="Which hymns">
+        <a href="#/">All hymns</a><a href="#/favorites">Favorites</a><a href="#/learn" aria-current="page">Learn</a>
+    </nav>`;
+
+/** What the course screens need from the app. */
+const learnCtx = () => ({
+    app, esc, toast, track, hymnsPromise, midiUrl, scoreUrl,
+    setTitle(title) {
+        pageTitle.textContent = title;
+        document.title = `${title} · Let's Sing`;
+    },
+});
+
+async function showLearn() {
+    stopPlayer();
+    setDownloadScope(null);
+    backBtn.hidden = false;
+    pageTitle.textContent = "Learn";
+    document.title = "Learn · Let's Sing";
+    app.innerHTML = `${learnNav()}<div id="course"><p class="message">Loading lessons…</p></div>
+        <section class="scores"><h2>Your scores</h2><div id="scores"></div></section>`;
+    renderScores(document.getElementById("scores"));
+    const { renderCourse } = await import("./learnui.js");
+    if (location.hash !== "#/learn") return;
+    renderCourse(document.getElementById("course"), learnCtx());
+}
+
+async function showLessonPage(trackId, n) {
+    stopPlayer();
+    setDownloadScope(null);
+    backBtn.hidden = false;
+    const { showLesson } = await import("./learnui.js");
+    leaveLesson = await showLesson(learnCtx(), trackId, n);
+    window.scrollTo(0, 0);
+}
+
+/** Learn scores across every hymn, into `host`. */
+function renderScores(host) {
+    const runs = loadRuns();
+    if (!runs.length) {
+        host.innerHTML = `<p class="learn-sub">No scores yet. Each hymn you sing in a lesson, or with <strong>Learn</strong>
+            on a hymn's page, is scored and kept here.</p>`;
+        return;
+    }
+    const avg = (list) => Math.round(list.reduce((sum, r) => sum + shares(r).on, 0) / list.length);
+    const recent = runs.slice(-10);
+    const minutes = Math.round(runs.reduce((sum, r) => sum + r.on + r.flat + r.sharp, 0) / 60);
+    const best = Math.max(...runs.map((r) => shares(r).on));
+    const all = runs.reduce((t, r) => ({ on: t.on + r.on, flat: t.flat + r.flat, sharp: t.sharp + r.sharp }), { on: 0, flat: 0, sharp: 0 });
+    // One row per hymn and part, the most recently practised first
+    const groups = new Map();
+    for (const r of runs) {
+        const key = `${r.hymn}:${r.part}`;
+        groups.set(key, [...(groups.get(key) ?? []), r]);
+    }
+    const rows = [...groups.values()].sort((a, b) => b.at(-1).at - a.at(-1).at);
+    const when = (t) => new Date(t).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+    host.innerHTML = `
+        <section class="progress">
+            <div class="tiles">
+                <div class="tile"><span class="tile-n">${avg(recent)}%</span><span class="tile-l">on pitch, last ${recent.length} ${recent.length === 1 ? "run" : "runs"}</span></div>
+                <div class="tile"><span class="tile-n">${best}%</span><span class="tile-l">best run</span></div>
+                <div class="tile"><span class="tile-n">${runs.length}</span><span class="tile-l">${runs.length === 1 ? "run" : "runs"}</span></div>
+                <div class="tile"><span class="tile-n">${minutes}</span><span class="tile-l">${minutes === 1 ? "minute" : "minutes"} sung</span></div>
+            </div>
+            <div class="card">
+                <h3>All your singing</h3>
+                ${splitBar(all)}
+            </div>
+            <div class="card">
+                <h3>On pitch, run by run</h3>
+                <div id="progress-chart"></div>
+            </div>
+            <div class="card">
+                <h3>By hymn</h3>
+                <table class="progress-table">
+                    <thead><tr><th>Hymn</th><th>Part</th><th>Runs</th><th>Latest</th><th>Best</th><th>Last sung</th></tr></thead>
+                    <tbody>${rows.map((g) => {
+                        const ons = g.map((r) => shares(r).on), last = ons.at(-1), change = g.length > 1 ? last - ons[0] : 0;
+                        return `<tr>
+                            <td><a href="#/hymn/${g[0].hymn}">${esc(g[0].title)}</a></td>
+                            <td>${PARTS[g[0].part]}</td>
+                            <td>${g.length}</td>
+                            <td>${last}%${change ? ` <span class="change">${change > 0 ? "▲" : "▼"} ${Math.abs(change)}</span>` : ""}</td>
+                            <td>${Math.max(...ons)}%</td>
+                            <td>${when(g.at(-1).at)}</td>
+                        </tr>`;
+                    }).join("")}</tbody>
+                </table>
+                <p class="learn-sub">▲/▼ the change since that hymn's first run.</p>
+            </div>
+            <button type="button" class="link-btn" id="progress-clear">Clear all scores</button>
+        </section>`;
+    onPitchChart(host.querySelector("#progress-chart"), runs,
+        (r) => `${esc(r.title)} · ${PARTS[r.part]} · ${new Date(r.at).toLocaleDateString()}`);
+    host.querySelector("#progress-clear").addEventListener("click", () => {
+        if (!confirm(`Delete all ${runs.length} saved scores on this device? Lesson progress is kept.`)) return;
+        clearRuns();
+        renderScores(host);
+    });
 }
 
 // ---- Paste a list into favorites ------------------------------------------------
@@ -665,9 +776,37 @@ window.addEventListener("appinstalled", () => {
 
 let frame = 0;
 let wakeLock = null;
+let learner = null; // Learn mode's microphone, while it's on
+
+/** How far behind the music the singer's voice reaches the app (microphone,
+ *  pitch detection and its smoothing), in seconds: each reading is compared
+ *  with the note then. */
+const LEARN_LAG = 0.16;
+
+const LEARN_ICONS = {
+    idle: '<circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="2"/>',
+    good: '<circle cx="12" cy="12" r="9"/>',
+    up: '<path d="M12 3l8 10h-5v8H9v-8H4z"/>',
+    down: '<path d="M12 21l-8-10h5V3h6v8h5z"/>',
+};
+
+// Ends the hymn page's Learn run, saving its score; set by showHymn
+let finishLearnRun = null;
+// Ends a Learn lesson page (its microphone and exercise); set by showLessonPage
+let leaveLesson = null;
+
+function stopLearning() {
+    learner?.stop();
+    learner = null;
+}
 
 function stopPlayer() {
     cancelAnimationFrame(frame);
+    finishLearnRun?.(false); // leaving the hymn: saved, nothing shown
+    finishLearnRun = null;
+    leaveLesson?.();
+    leaveLesson = null;
+    stopLearning();
     player.stop();
     releaseWakeLock();
 }
@@ -751,12 +890,25 @@ async function showHymn(id) {
             <div class="score-head">
                 <h3>Music</h3>
                 <span class="score-verse" id="score-verse"></span>
+                <button class="learn-btn" id="learn" aria-pressed="false"
+                        title="Sing along and see how close you are to your part's notes">Learn</button>
                 <div class="view-switch" role="group" aria-label="How the music is shown">
                     ${SCORE_VIEWS.map(
                         (v) => `<button data-view="${v.id}" aria-pressed="${v.id === scoreView}" title="${v.title}">${v.name}</button>`
                     ).join("")}
                 </div>
             </div>
+            <div class="learn-bar" id="learn-bar" hidden>
+                <label>Your part
+                    <select id="learn-part">
+                        ${VOICES.map((v, i) => `<option value="${i}"${i === learnPart ? " selected" : ""}>${v}</option>`).join("")}
+                    </select>
+                </label>
+                <span class="learn-readout" id="learn-readout" role="img"></span>
+                <span class="learn-hint" id="learn-hint">Press play and sing</span>
+                <span>Use headphones</span>
+            </div>
+            <div class="learn-result" id="learn-result" hidden></div>
             <div class="score-notation" id="score"></div>
         </section>` : ""}
 
@@ -798,7 +950,110 @@ async function showHymn(id) {
         const now = player.position();
         score.paint(now, mix.on.map((on, i) => on && mix.volumes[i] > 0), follow);
         showVerse(score.verseAt(now));
+        if (learner && player.isPlaying()) {
+            let cents = score.trace(now - LEARN_LAG, learnPart, learner.read(), mix.pitch);
+            // A note's let-off start isn't graded
+            if (score.settling) (run ??= tally()).settle(now - LEARN_LAG), cents = null;
+            else (run ??= tally()).add(now - LEARN_LAG, cents === null ? null : score.grade(cents), cents);
+            showCents(cents);
+        }
     };
+
+    // Learn scores: a run lasts from the first note sung until Stop, the end of
+    // the hymn, Learn turned off, another part picked, or leaving the hymn
+    let run = null;
+    const finishRun = (show = true) => {
+        if (!run) return;
+        const done = run;
+        run = null;
+        if (done.seconds() < MIN_SECONDS) {
+            if (show) toast("Sing a little longer to get a score.");
+            return;
+        }
+        const round = (v) => Math.round(v * 10) / 10;
+        const rec = { hymn: hymn.id, title: hymn.title, part: learnPart, at: Date.now(),
+            on: round(done.sums.on), flat: round(done.sums.flat), sharp: round(done.sums.sharp) };
+        addRun(rec);
+        track("learn_run", { part: PARTS[learnPart], on_pitch: shares(rec).on });
+        if (show) showResult(rec);
+    };
+    finishLearnRun = finishRun;
+
+    /** This run's score (when `rec` is given) and this part's history on this hymn. */
+    const showResult = (rec = null) => {
+        const box = $("#learn-result");
+        if (!box) return;
+        const history = loadRuns().filter((r) => r.hymn === hymn.id && r.part === learnPart);
+        if (!rec && !history.length) return void (box.hidden = true);
+        const ons = history.map((r) => shares(r).on);
+        const best = Math.max(...ons);
+        const s = rec && shares(rec);
+        const isBest = rec && history.length > 1 && s.on >= best;
+        box.innerHTML = `
+            <div class="learn-result-head">
+                <h4>${rec ? "Your score" : "Your progress"} · ${PARTS[learnPart]}</h4>
+                <button type="button" class="link-btn" data-close-result>Close</button>
+            </div>
+            ${rec ? `<p class="learn-big">${s.on}%<span> on pitch${isBest ? " · your best yet" : ""}</span></p>${splitBar(rec)}` : ""}
+            ${history.length ? `<p class="learn-sub">${history.length} ${history.length === 1 ? "run" : "runs"} on this hymn · best ${best}% · first ${ons[0]}%</p>` : ""}
+            ${history.length > 1 ? `<div class="learn-chart"></div>` : ""}
+            <a class="learn-more" href="#/learn">See all your scores and lessons</a>`;
+        box.hidden = false;
+        box.querySelector("[data-close-result]").addEventListener("click", () => (box.hidden = true));
+        const chart = box.querySelector(".learn-chart");
+        if (chart) onPitchChart(chart, history);
+    };
+    // How close the singer is: a green circle on pitch; otherwise an arrow the way
+    // to go (up when flat, down when sharp), yellow when close and red when off
+    let shownReadout = null;
+    const showCents = (cents) => {
+        const grade = cents === null ? "idle" : score.grade(cents);
+        const key = grade === "learn-good" || grade === "idle" ? grade : `${grade} ${cents > 0 ? "down" : "up"}`;
+        if (key === shownReadout) return;
+        shownReadout = key;
+        $("#learn-hint").hidden = true;
+        const out = $("#learn-readout");
+        out.className = `learn-readout ${grade}`;
+        const [icon, label] =
+            grade === "idle" ? [LEARN_ICONS.idle, "Listening"]
+            : grade === "learn-good" ? [LEARN_ICONS.good, "On pitch"]
+            : cents > 0 ? [LEARN_ICONS.down, "Sharp: sing lower"] : [LEARN_ICONS.up, "Flat: sing higher"];
+        out.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true">${icon}</svg>`;
+        out.setAttribute("aria-label", label);
+        out.title = label;
+    };
+
+    // Learn mode: listens through the microphone while it plays (scrolling view)
+    $("#learn")?.addEventListener("click", async (e) => {
+        const btn = e.currentTarget;
+        if (learner) {
+            finishRun();
+            stopLearning();
+            score?.clearTrace();
+        } else {
+            try {
+                const { listen } = await import("./learn.js");
+                learner = await listen();
+            } catch {
+                return toast("Learn needs the microphone. Allow it for this site and try again.", 3500);
+            }
+            if (scoreView !== "scroll") app.querySelector('[data-view="scroll"]')?.click();
+            toast("Wear headphones so the mic hears only you. Your voice stays on this device.", 4000);
+            showResult();
+        }
+        btn.setAttribute("aria-pressed", !!learner);
+        $("#learn-bar").hidden = !learner;
+        shownReadout = null;
+        $("#learn-readout").innerHTML = "";
+        $("#learn-hint").hidden = false;
+    });
+    $("#learn-part")?.addEventListener("change", (e) => {
+        finishRun(); // scored as the part it was sung as
+        learnPart = +e.target.value;
+        store.set("learnPart", learnPart);
+        score?.clearTrace();
+        if (!$("#learn-result .learn-big")) showResult();
+    });
     const showVerse = (verse) => {
         if (verse === shownVerse) return;
         shownVerse = verse;
@@ -824,12 +1079,16 @@ async function showHymn(id) {
         }
         paintScore(player.isPlaying());
         if (player.isPlaying()) frame = requestAnimationFrame(tick);
-        else setPlayingUi(false);
+        else {
+            setPlayingUi(false);
+            if (player.position() >= player.duration() - 0.25) finishRun(); // the hymn has ended
+        }
     };
 
     $("#play").addEventListener("click", async () => {
         if (player.isPlaying()) {
             player.pause();
+            run?.pause();
             setPlayingUi(false);
         } else {
             if (player.position() >= player.duration() - 0.05) player.seek(0);
@@ -841,8 +1100,10 @@ async function showHymn(id) {
         }
     });
     stopBtn.addEventListener("click", () => {
+        finishRun();
         player.stop();
         started = false;
+        score?.clearTrace();
         paintScore();
         setPlayingUi(false);
         seekEl.value = 0;
@@ -1098,6 +1359,14 @@ function route() {
         app.innerHTML = "";
     }
     else if (location.hash === "#/favorites/paste") showPaste();
+    else if (location.hash === "#/learn" || location.hash === "#/progress") {
+        if (location.hash === "#/progress") history.replaceState(null, "", "#/learn");
+        showLearn();
+    }
+    else if (/^#\/learn\/[a-z]+\/\d+$/.test(location.hash)) {
+        const [, , trackId, n] = location.hash.split("/");
+        showLessonPage(trackId, +n);
+    }
     else showList(location.hash.startsWith("#/favorites") ? "favorites" : "all");
 }
 // Whether the previous history entry is a screen of this app. Opening a shared
