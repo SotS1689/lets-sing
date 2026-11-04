@@ -133,6 +133,41 @@ function paintStar(btn, h) {
     btn.querySelector("path").setAttribute("d", on ? STAR.on : STAR.off);
 }
 
+// ---- Search ranking -----------------------------------------------------------
+// How closely a hymn matches the search: a title that is (or starts with) what was
+// typed comes first, then whole-phrase matches, then title words, then tune and
+// composer. Punctuation is ignored so "o god our help" finds "O God, Our Help".
+
+const plain = (s) => norm(s || "").replace(/[^\p{L}\p{N}\s]/gu, "").replace(/\s+/g, " ").trim();
+const words = (s) => s.split(" ");
+
+function fieldScore(field, q, terms, weight) {
+    if (!field) return 0;
+    let score = 0;
+    if (field === q) score += 100;
+    else if (field.startsWith(q)) score += 60;
+    else if (` ${field}`.includes(` ${q}`)) score += 40;
+    else if (field.includes(q)) score += 25;
+    const ws = words(field);
+    for (const t of terms) {
+        if (ws.includes(t)) score += 8;
+        else if (ws.some((w) => w.startsWith(t))) score += 5;
+        else if (field.includes(t)) score += 2;
+    }
+    return score * weight;
+}
+
+function matchScore(h, terms) {
+    h._plain ??= { title: plain(h.title), tune: plain(h.tune), composer: plain(h.composer) };
+    const pterms = terms.map(plain).filter(Boolean);
+    const q = pterms.join(" ");
+    return (
+        fieldScore(h._plain.title, q, pterms, 10) +
+        fieldScore(h._plain.tune, q, pterms, 2) +
+        fieldScore(h._plain.composer, q, pterms, 1)
+    );
+}
+
 // ---- List screen ------------------------------------------------------------
 // mode "all" lists every hymn, "favorites" only the starred ones
 
@@ -181,7 +216,12 @@ async function showList(mode = "all") {
     const render = () => {
         const terms = norm(searchText).split(/\s+/).filter(Boolean);
         const pool = mode === "favorites" ? favorites.map((id) => byId.get(id)).filter(Boolean) : hymns;
-        const shown = pool.filter((h) => terms.every((t) => h._search.includes(t)));
+        let shown = pool.filter((h) => terms.every((t) => h._search.includes(t)));
+        // Closest match first; the sort is stable, so ties keep the list's order
+        if (terms.length) {
+            const scores = new Map(shown.map((h) => [h, matchScore(h, terms)]));
+            shown = shown.sort((a, b) => scores.get(b) - scores.get(a));
+        }
         const noun = pool.length === 1 ? "hymn" : "hymns";
         count.textContent = terms.length ? `${shown.length} of ${pool.length} ${noun}` : `${pool.length} ${noun}`;
         document.getElementById("fav-count").textContent = favorites.length || "";
