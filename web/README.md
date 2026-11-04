@@ -23,6 +23,11 @@ MIDI files, then build.
   `#/favorites/paste`, player `#/hymn/<id>`), search, settings. Favorites are hymn
   ids kept in localStorage on each device; the star on a list row or a hymn's
   page adds or removes one.
+- `src/sync.js`, `src/firebase.js` — optional Google sign-in (on the Learn page)
+  that keeps Learn scores and lesson progress in step across devices, through
+  Firebase's free plan (project `lets-sing-b6277`). Firebase loads only for
+  someone who has signed in. Access rules are in `../firestore.rules`; paste
+  them into Firebase console > Firestore Database > Rules after any change.
 - `src/match.js` — matches a pasted list of hymns (one per line) to the app's
   hymns by letter triples over title, first line and tune, with psalm numbers
   required to agree. Close matches come ticked, with the nearest hymns to pick

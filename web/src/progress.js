@@ -1,6 +1,7 @@
 // Learn mode scores: how much of a run was on pitch, flat or sharp, saved on
 // this device so singers can see how they're doing on each hymn and overall.
-// Nothing leaves the device.
+// Signed in (src/sync.js), they're also kept in the singer's account.
+import { changed, cleared } from "./sync.js";
 
 const KEY = "learnRuns";
 /** Oldest runs are dropped past this many (a few years of daily practice). */
@@ -21,18 +22,24 @@ export function loadRuns() {
     }
 }
 
-function saveRuns(runs) {
+/** A run's name, the same on every device: when it was sung, the hymn and the part. */
+export const runId = (run) => `${run.at.toString(36)}-${String(run.hymn).replace(/[^\w-]/g, "")}-${run.part}`;
+
+/** Saves `runs` (oldest first) as this device's whole history. */
+export function replaceRuns(runs) {
     try { localStorage.setItem(KEY, JSON.stringify(runs.slice(-MAX_RUNS))); } catch { /* private mode / full */ }
 }
 
 export function addRun(run) {
     const runs = loadRuns();
     runs.push(run);
-    saveRuns(runs);
+    replaceRuns(runs);
+    changed();
 }
 
 export function clearRuns() {
     try { localStorage.removeItem(KEY); } catch { /* nothing to clear */ }
+    cleared();
 }
 
 /** Whole-number shares of a run: { on, flat, sharp } adding up to 100. */

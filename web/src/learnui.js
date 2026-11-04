@@ -1,12 +1,14 @@
 // The Learn tab's course screens: the tracks and their lessons (#/learn), a
 // lesson with its exercises (#/learn/<track>/<n>), and the range check.
-// Lesson progress is kept on this device only, like favorites and scores.
+// Lesson progress is kept on this device, like favorites and scores, and in the
+// singer's account when signed in (src/sync.js).
 import * as player from "./player.js";
 import { TRACKS, trackById, SUPPORT, TUNES, PARTS } from "./lessons.js";
 import { buildExercise, parseLine, shiftLine } from "./exercise.js";
 import { tally, shares, splitBar, addRun, MIN_SECONDS } from "./progress.js";
 import { loadScore } from "./score.js";
 import { listen } from "./learn.js";
+import { changed } from "./sync.js";
 
 const KEY = "learnLessons";
 /** How far behind the music the voice reaches the app (as on the hymn page). */
@@ -16,7 +18,7 @@ const MIN_COVERAGE = 0.6;
 
 // ---- Progress through the course ---------------------------------------------
 // { best: { "<track>.<lesson>.<exercise>": { on, passed } }, open: { "<track>.<lesson>": true },
-//   range: { lo, hi, part }, track: "<last track looked at>" }
+//   range: { lo, hi, part }, rangeAt: <when range was set>, track: "<last track looked at>" }
 
 function loadState() {
     try {
@@ -27,6 +29,7 @@ function loadState() {
 }
 function saveState(s) {
     try { localStorage.setItem(KEY, JSON.stringify(s)); } catch { /* private mode */ }
+    changed();
 }
 
 const exKey = (t, l, e) => `${t}.${l}.${e}`;
@@ -241,6 +244,7 @@ function record(t, l, e, { on, passed }) {
 function saveRange(r) {
     const s = loadState();
     s.range = r;
+    s.rangeAt = Date.now();
     saveState(s);
 }
 

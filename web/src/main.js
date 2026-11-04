@@ -4,6 +4,7 @@
 import * as player from "./player.js";
 import { VOICES, INSTRUMENTS } from "./player.js";
 import { loadRuns, addRun, clearRuns, tally, shares, splitBar, onPitchChart, PARTS, MIN_SECONDS } from "./progress.js";
+import { account, syncStatus, onSync, signIn, signOut, sync, favoritesChanged } from "./sync.js";
 
 const app = document.getElementById("app");
 const backBtn = document.getElementById("back");
@@ -102,7 +103,8 @@ let listScroll = 0;
 let listMode = "all";
 
 // ---- Favorites ----------------------------------------------------------------
-// Hymn ids, in the order they were added, remembered on this device
+// Hymn ids, in the order they were added, remembered on this device (and in
+// the singer's account when signed in, src/sync.js)
 
 let favorites = store.get("favorites", []);
 const isFavorite = (id) => favorites.includes(id);
@@ -110,6 +112,7 @@ function setFavorite(id, on) {
     favorites = favorites.filter((f) => f !== id);
     if (on) favorites.push(id);
     store.set("favorites", favorites);
+    favoritesChanged(favorites);
     track("favorite_toggle", { on });
 }
 
@@ -198,7 +201,8 @@ async function showList(mode = "all") {
         ${mode === "favorites" ? `<div class="fav-actions">
             <a class="btn" href="#/favorites/paste">Paste a list</a>
             <button type="button" class="link-btn" id="fav-clear"${favorites.length ? "" : " hidden"}>Clear favorites</button>
-        </div>` : ""}
+        </div>
+        <div id="sync-card"></div>` : ""}
         <p class="count" id="count"></p>
         <ul class="hymn-list" id="list"></ul>
         <details class="privacy">
@@ -208,7 +212,12 @@ async function showList(mode = "all") {
                the app is collected. Your data will never be sold or given away.</p>
             <p>Learn listens through your microphone only while it's turned on. Your voice is
                analysed on your device as you sing; it's never recorded or sent anywhere. Your
-               scores are kept only on this device.</p>
+               scores and lesson progress are kept on this device.</p>
+            <p>If you choose to sign in with Google (on the Favorites or Learn page), your scores and lesson
+               progress and your favorites are also saved to your account, so they appear on your
+               other devices.
+               Let's Sing receives only your name and email address from Google, and you can sign
+               out at any time.</p>
         </details>`;
 
     const list = document.getElementById("list");
@@ -265,8 +274,10 @@ async function showList(mode = "all") {
         if (!confirm(`Remove all ${favorites.length} hymns from your favorites?`)) return;
         favorites = [];
         store.set("favorites", favorites);
+        favoritesChanged(favorites);
         render();
     });
+    renderSyncCard();
     renderInstallBanner();
     window.scrollTo(0, listScroll);
 }
@@ -293,7 +304,8 @@ async function showLearn() {
     pageTitle.textContent = "Learn";
     document.title = "Learn · Let's Sing";
     app.innerHTML = `${learnNav()}<div id="course"><p class="message">Loading lessons…</p></div>
-        <section class="scores"><h2>Your scores</h2><div id="scores"></div></section>`;
+        <section class="scores"><h2>Your scores</h2>${EMBED ? "" : `<div id="sync-card"></div>`}<div id="scores"></div></section>`;
+    renderSyncCard();
     renderScores(document.getElementById("scores"));
     const { renderCourse } = await import("./learnui.js");
     if (location.hash !== "#/learn") return;
@@ -369,11 +381,86 @@ function renderScores(host) {
     onPitchChart(host.querySelector("#progress-chart"), runs,
         (r) => `${esc(r.title)} · ${PARTS[r.part]} · ${new Date(r.at).toLocaleDateString()}`);
     host.querySelector("#progress-clear").addEventListener("click", () => {
-        if (!confirm(`Delete all ${runs.length} saved scores on this device? Lesson progress is kept.`)) return;
+        const where = account() ? "on this device and in your account" : "on this device";
+        if (!confirm(`Delete all ${runs.length} saved scores ${where}? Lesson progress is kept.`)) return;
         clearRuns();
         renderScores(host);
     });
 }
+
+// ---- Sign in to sync (src/sync.js) -----------------------------------------------
+
+const ago = (t) => {
+    const min = Math.round((Date.now() - t) / 60000);
+    return min < 1 ? "just now" : min < 60 ? `${min} min ago` : new Date(t).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+};
+
+/** The Learn page's sign-in box: an invitation signed out, the account and how syncing is going signed in. */
+function renderSyncCard() {
+    const host = document.getElementById("sync-card");
+    if (!host) return;
+    const { account: acct, status, lastSynced } = syncStatus();
+    if (!acct) {
+        host.innerHTML = `<div class="card sync-card">
+            <h3>Use Let's Sing on all your devices</h3>
+            <p class="learn-sub">Sign in with Google to keep your favorites, scores and lesson progress on
+                every phone, tablet and computer you use. Optional: everything works without it.</p>
+            <button type="button" class="btn" id="sync-in">Sign in with Google</button>
+        </div>`;
+        host.querySelector("#sync-in").addEventListener("click", async (e) => {
+            e.target.disabled = true;
+            try {
+                if (await signIn()) {
+                    track("sync_sign_in");
+                    toast("Signed in. Your progress will now sync.", 2500);
+                }
+            } catch (err) {
+                console.warn("sign-in:", err);
+                toast("Couldn't sign in. Please try again.", 3000);
+            }
+            renderSyncCard();
+        });
+        return;
+    }
+    const state = {
+        syncing: "Syncing…",
+        synced: `Synced ${ago(lastSynced)}`,
+        offline: "Offline: will sync when you're back online",
+        error: "Couldn't sync just now; will try again",
+    }[status] ?? "";
+    host.innerHTML = `<div class="sync-line">
+        <span>Signed in as <strong>${esc(acct.email || acct.name)}</strong>${state ? ` · <span class="sync-state">${state}</span>` : ""}</span>
+        <button type="button" class="link-btn" id="sync-out">Sign out</button>
+    </div>`;
+    host.querySelector("#sync-out").addEventListener("click", async () => {
+        const removeHere = confirm("Also remove your favorites, scores and lesson progress from this device?\n\n"
+            + "They stay in your account either way. Choose OK on a shared device, Cancel to keep them here.");
+        try {
+            await signOut(removeHere);
+            toast("Signed out.");
+        } catch (err) {
+            console.warn("sign-out:", err);
+            toast("Couldn't sign out. Please try again.", 3000);
+        }
+    });
+}
+
+onSync(({ changed }) => {
+    renderSyncCard();
+    if (changed) {
+        favorites = store.get("favorites", []);
+        // Favorites from another device: show them if the hymn list is open
+        if (location.hash === "" || location.hash === "#/" || location.hash === "#/favorites") route();
+    }
+    // New progress from another device: show it if the Learn page is open
+    if (changed && location.hash === "#/learn") {
+        const scores = document.getElementById("scores");
+        if (scores) renderScores(scores);
+        const course = document.getElementById("course");
+        if (course) import("./learnui.js").then(({ renderCourse }) => location.hash === "#/learn" && renderCourse(course, learnCtx()));
+    }
+});
+if (!EMBED) sync(); // does nothing unless signed in (or back from signing in)
 
 // ---- Paste a list into favorites ------------------------------------------------
 // Each pasted line is matched to its likeliest hymn (src/match.js). Lines it's

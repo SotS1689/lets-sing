@@ -663,3 +663,9 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--primary); }
 .range-check p { margin: 0 0 8px; }
 .range-now { font-size: 1.2rem; font-weight: 600; font-variant-numeric: tabular-nums; }
 .lesson-nav { display: flex; justify-content: space-between; margin-top: 8px; }
+
+/* Sign in to sync (Learn page) */
+.sync-card { margin-bottom: 12px; padding: 12px; }
+.sync-card .learn-sub { margin: 0 0 10px; }
+.sync-line { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 12px; margin-bottom: 12px; font-size: 0.875rem; color: var(--text-2); overflow-wrap: anywhere; }
+.sync-line strong { color: var(--text); }
