@@ -395,8 +395,15 @@ export function fillVerses(abc, verses, dict) {
     const added = [], missed = [];
     // Verses the score sets with other words, each in its own rhythm first
     const replaced = new Map();
+    // The rhythms of the score's other rows, for a verse whose own row's doesn't fit
+    // (one verse of the other words slurs two notes where the rest sing two syllables)
+    const rowSlots = Array.from({ length: rows }, (_, r) => ({ perLine: null, slots: notes.map((n) => !!n.lyric[r]?.syllable) }));
     for (const { r, slots, near, refrain } of redo) {
-        const row = setVerse(r, [{ perLine: null, slots }]) || (refrain && fillBare(r)) || null;
+        const row =
+            setVerse(r, [{ perLine: null, slots }]) ||
+            (refrain && fillBare(r)) ||
+            (!refrain && setVerse(r, rowSlots.filter((_, i) => i !== r))) ||
+            null;
         if (row) {
             replaced.set(r, row);
             added.push(r + 1);

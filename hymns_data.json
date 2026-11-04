@@ -2384,7 +2384,7 @@
     "id": 419,
     "psalm_number": 97,
     "title": "God Reigneth, Let the Earth Be Glad (Psalm 97)",
-    "tune": "CORONATION",
+    "tune": "St. Anne",
     "meter": "CM",
     "text_source": "The Scottish Psalter, 1650",
     "verses": [
@@ -2392,17 +2392,17 @@
       "3 Fire goes before him, and his foes\nit burns up round about:\n4 His lightnings lighten did the world;\nearth saw, and shook throughout.",
       "5 Hills at the presence of the Lord,\nlike wax, did melt away;\nEv’n at the presence of the Lord\nof all the earth, I say.",
       "6 The heav’ns declare his righteousness,\nall men his glory see.\n7 All who serve graven images,\nconfounded let them be.",
-      "Who do of idols boast themselves,\nlet shame upon them fall:\nYe that are called gods, see that\nye do him worship all.",
+      "Who do of idols boast themselves,\nlet shame upon them fall:\nYe that are callèd gods, see that\nye do him worship all.",
       "8 Zion did hear, and joyful was,\nglad Judah’s daughters were;\nThey much rejoiced, O Lord, because\nthy judgments did appear.",
       "9 For thou, O Lord, art high above\nall things on earth that are;\nAbove all other gods thou art\nexalted very far.",
       "10 Hate ill, all ye that love the Lord:\nhis saints’ souls keepeth he;\nAnd from the hands of wicked men\nhe sets them safe and free.",
       "11 For all those that be righteous\nsown is a joyful light,\nAnd gladness sown is for all those\nthat are in heart upright.",
       "12 Ye righteous, in the Lord rejoice;\nexpress your thankfulness,\nWhen ye into your memory\ndo call his holiness."
     ],
-    "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/All_Hail_The_Power_Of_Jesus_Name-Coronation.mid",
+    "composer_arranger": "Croft, W.",
+    "midi_url": "God_Reigneth_Let_The_Earth_Be_Glad_Psalm_97-St_Anne.mid",
     "mp3_url": "http://openhymnal.org/Mp3/All_Hail_The_Power_Of_Jesus_Name-Coronation.mp3",
-    "credits": "Words: Psalm 97, The Scottish Psalter, 1650 (public domain). Tune: 'CORONATION' (CM)."
+    "credits": "Words: Psalm 97, The Scottish Psalter, 1650 (public domain). Tune: 'ST. ANNE' (CM)."
   },
   {
     "id": 89,
@@ -3573,7 +3573,7 @@
       "10 In God the righteous shall rejoice,\nand trust upon his might;\nYea, they shall greatly glory all\nin heart that are upright."
     ],
     "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/O_For_A_Thousand_Tongues-Azmon.mid",
+    "midi_url": "Hear_My_Voice_O_God_In_My_Prayer_Psalm_64-Azmon.mid",
     "mp3_url": "http://openhymnal.org/Mp3/O_For_A_Thousand_Tongues-Azmon.mp3",
     "credits": "Words: Psalm 64, The Scottish Psalter, 1650 (public domain). Tune: 'AZMON' (CM (verify))."
   },
@@ -3775,8 +3775,8 @@
     "id": 438,
     "psalm_number": 119,
     "title": "How Blest the Perfect in the Way (Psalm 119)",
-    "tune": "Humility",
-    "meter": "CM",
+    "tune": "Old 100th",
+    "meter": "LM",
     "text_source": "The Psalter, 1912",
     "verses": [
       "1 How blest the perfect in the way\nWho from God's law do not depart,\nWho, holding fast the word of truth,\nSeek Him with undivided heart.",
@@ -3784,10 +3784,10 @@
       "3 My wav'ring heart is now resolved\nThy holy statutes to fulfill;\nNo more shall I be brought to shame\nWhen I regard Thy holy will.",
       "4 To Thee my praise sincere shall rise\nWhen I Thy righteous judgments learn;\nForsake me not, but be my guide,\nAnd from Thy truth I will not turn."
     ],
-    "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/See_Amid_The_Winters_Snow-Humility.mid",
+    "composer_arranger": "Genevan Psalter & Bourgeois",
+    "midi_url": "How_Blest_The_Perfect_In_The_Way_Psalm_119-Old_100th.mid",
     "mp3_url": "http://openhymnal.org/Mp3/See_Amid_The_Winters_Snow-Humility.mp3",
-    "credits": "Words: Psalm 119, The Psalter, 1912 (public domain). Tune: 'Humility' (CM)."
+    "credits": "Words: Psalm 119, The Psalter, 1912 (public domain). Tune: 'OLD 100TH' (LM)."
   },
   {
     "id": 118,
@@ -4205,18 +4205,18 @@
     "id": 464,
     "psalm_number": 145,
     "title": "I Will Extol Thee, O My God (Psalm 145)",
-    "tune": "Duke Street",
-    "meter": "LM",
+    "tune": "Ellacombe",
+    "meter": "CMD",
     "text_source": "The Psalter, 1912",
     "verses": [
       "1 I will extol Thee, O my God,\nAnd praise Thee, O my King;\nYes, ev'ry day and evermore\nThy praises I will sing.\nGreat is the Lord, our mighty God,\nAnd greatly to be praised;\nHis greatness is unsearchable,\nAbove all glory raised.",
       "2 Each generation to the next\nShall testimony bear,\nAnd to your praise, from age to age,\nThy wondrous acts declare.\nUpon Thy glorious majesty\nAnd honor I will dwell,\nAnd all Thy grand and glorious works\nAnd all Thy greatness tell.",
       "3 Thy mighty acts and terrible\nShall men with awe confess;\nOf Thy great goodness they shall sing,\nAnd perfect righteousness.\nMost gracious and compassionate\nIs God Who reigns above;\nHis wrath is ever slow to rise,\nUnbounded is His love."
     ],
-    "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/I_Know_That_My_Redeemer_Lives-Duke_Street.mid",
+    "composer_arranger": "from Gesangbuch der Herzogl. Hofkapelle, Wurttemberg, 1784",
+    "midi_url": "I_Will_Extol_Thee_O_My_God_Psalm_145-Ellacombe.mid",
     "mp3_url": "http://openhymnal.org/Mp3/I_Know_That_My_Redeemer_Lives-Duke_Street.mp3",
-    "credits": "Words: Psalm 145, The Psalter, 1912 (public domain). Tune: 'Duke Street' (LM)."
+    "credits": "Words: Psalm 145, The Psalter, 1912 (public domain). Tune: 'ELLACOMBE' (CMD)."
   },
   {
     "id": 500,
@@ -4558,7 +4558,7 @@
       "4 Exalt ye now the Lord,\nOur god is praises laud,\nAnd at His footstool worship Him,\nFor holy is our God."
     ],
     "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/The_Advent_of_Our_God-St_Thomas.mid",
+    "midi_url": "Jehovah_Reigns_Supreme_Psalm_99-St_Thomas.mid",
     "mp3_url": "http://openhymnal.org/Mp3/The_Advent_of_Our_God-St_Thomas.mp3",
     "credits": "Words: Psalm 99, The Psalter, 1912 (public domain). Tune: 'ST. THOMAS' (6.6.8.6)."
   },
@@ -5467,8 +5467,8 @@
     "id": 462,
     "psalm_number": 143,
     "title": "LORD, Hear Me in Distress (Psalm 143)",
-    "tune": "Bradbury",
-    "meter": "LM",
+    "tune": "Jewett",
+    "meter": "6.6.6.6 D",
     "text_source": "The Psalter, 1912",
     "verses": [
       "1 Lord, hear me in distress,\nRegard my suppliant cry,\nAnd in Thy faithfulness\nAnd righteousness reply.\nIn judgment do not cause\nThy servant to be tried;\nBefore Thy holy laws\nNo man is justified.",
@@ -5478,10 +5478,10 @@
       "5 Lord, save me from my foe,\nTo Thee for help I flee;\nTeach me Thy way to know,\nI have no God but Thee.\nBy Thy good Spirit lead\nFrom trouble and distress,\nMy erring feet shall tread\nThe path of uprightness.",
       "6 O Lord, for Thy Name's sake\nRevive my fainting heart;\nMy soul from trouble take,\nFor just and true Thou art.\nRemove my enemy,\nMy cruel foe reward;\nIn mercy rescue me\nWho am Thy servant, Lord."
     ],
-    "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/Savior_Like_A_Shepherd_Lead_Us-Bradbury.mid",
+    "composer_arranger": "von Weber, C.",
+    "midi_url": "LORD_Hear_Me_In_Distress_Psalm_143-Weber.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Savior_Like_A_Shepherd_Lead_Us-Bradbury.mp3",
-    "credits": "Words: Psalm 143, The Psalter, 1912 (public domain). Tune: 'Bradbury' (LM)."
+    "credits": "Words: Psalm 143, The Psalter, 1912 (public domain). Tune: 'JEWETT' (6.6.6.6 D)."
   },
   {
     "id": 394,
@@ -5577,7 +5577,7 @@
       "5 If deepest darkness cover me,\nThe darkness hideth not from Thee;\nTo Thee both night and day are bright,\nThe darkness shineth as the light."
     ],
     "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/Just_As_I_Am_Without_One_Plea-Woodworth.mid",
+    "midi_url": "LORD_Thou_Hast_Searched_Me_And_Dost_Know_Psalm_139-Woodworth.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Just_As_I_Am_Without_One_Plea-Woodworth.mp3",
     "credits": "Words: Psalm 139, The Psalter, 1912 (public domain). Tune: 'Woodworth' (LM)."
   },
@@ -7864,7 +7864,7 @@
       "7 For he hath me delivered\nfrom all adversities;\nAnd his desire mine eye hath seen\nupon mine enemies."
     ],
     "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/Lord_Who_Throughout_These_Forty_Days-St_Flavian.mid",
+    "midi_url": "Save_Me_O_God_By_Thy_Great_Name_Psalm_54-St_Flavian.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Lord_Who_Throughout_These_Forty_Days-St_Flavian.mp3",
     "credits": "Words: Psalm 54, The Scottish Psalter, 1650 (public domain). Tune: 'ST. FLAVIAN' (CM)."
   },
@@ -8854,22 +8854,16 @@
     "title": "There's a Wideness in God's Mercy",
     "tune": "WELLESLEY / IN BABILONE",
     "verses": [
-      "1. There’s a wideness in God’s mercy,\nLike the wideness of the sea;\nThere’s a kindness in His justice,\nWhich is more than liberty.",
-      "2. There is no place where earth’s sorrows\nAre more felt than up in Heaven;\nThere is no place where earth’s failings\nHave such kindly judgment given.",
-      "3. There is welcome for the sinner,\nAnd more graces for the good;\nThere is mercy with the Savior;\nThere is healing in His blood.",
-      "4. There is grace enough for thousands\nOf new worlds as great as this;\nThere is room for fresh creations\nIn that upper home of bliss.",
-      "5. For the love of God is broader\nThan the measure of our mind;\nAnd the heart of the Eternal\nIs most wonderfully kind.",
-      "6. There is plentiful redemption\nIn the blood that has been shed;\nThere is joy for all the members\nIn the sorrows of the Head.",
-      "7. ’Tis not all we owe to Jesus;\nIt is something more than all;\nGreater good because of evil,\nLarger mercy through the fall.",
-      "8. If our love were but more simple,\nWe should take Him at His word;\nAnd our lives would be all sunshine\nIn the sweetness of our Lord.",
-      "9. Souls of men! why will ye scatter\nLike a crowd of frightened sheep?\nFoolish hearts! why will ye wander\nFrom a love so true and deep?",
-      "10. It is God: His love looks mighty,\nBut is mightier than it seems;\n’Tis our Father: and His fondness\nGoes far out beyond our dreams.",
-      "11. But we make His love too narrow\nBy false limits of our own;\nAnd we magnify His strictness\nWith a zeal He will not own.",
-      "12. Was there ever kinder shepherd\nHalf so gentle, half so sweet,\nAs the Savior who would have us\nCome and gather at His feet?"
+      "1. There’s a wideness in God’s mercy,\nLike the wideness of the sea;\nThere’s a kindness in His justice,\nWhich is more than liberty.\nThere is no place where earth’s sorrows\nAre more felt than up in Heaven;\nThere is no place where earth’s failings\nHave such kindly judgment given.",
+      "2. There is welcome for the sinner,\nAnd more graces for the good;\nThere is mercy with the Savior;\nThere is healing in His blood.\nThere is grace enough for thousands\nOf new worlds as great as this;\nThere is room for fresh creations\nIn that upper home of bliss.",
+      "3. For the love of God is broader\nThan the measure of our mind;\nAnd the heart of the Eternal\nIs most wonderfully kind.\nThere is plentiful redemption\nIn the blood that has been shed;\nThere is joy for all the members\nIn the sorrows of the Head.",
+      "4. ’Tis not all we owe to Jesus;\nIt is something more than all;\nGreater good because of evil,\nLarger mercy through the fall.\nIf our love were but more simple,\nWe should take Him at His word;\nAnd our lives would be all sunshine\nIn the sweetness of our Lord.",
+      "5. Souls of men! why will ye scatter\nLike a crowd of frightened sheep?\nFoolish hearts! why will ye wander\nFrom a love so true and deep?\nIt is God: His love looks mighty,\nBut is mightier than it seems;\n’Tis our Father: and His fondness\nGoes far out beyond our dreams.",
+      "6. But we make His love too narrow\nBy false limits of our own;\nAnd we magnify His strictness\nWith a zeal He will not own.\nWas there ever kinder shepherd\nHalf so gentle, half so sweet,\nAs the Savior who would have us\nCome and gather at His feet?"
     ],
     "Author": "Frederick W. Faber",
     "Composer": "Lizzie S. Tourjée / Dutch Traditional",
-    "midi_url": "http://openhymnal.org/Midi/Souls_of_Men_Why_Will_Ye_Scatter-In_Babilone.mid",
+    "midi_url": "Theres_A_Wideness_In_Gods_Mercy-In_Babilone.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Souls_of_Men_Why_Will_Ye_Scatter-In_Babilone.mp3",
     "credits": "Words: Frederick W. Faber. Music: 'WELLESLEY / IN BABILONE' Lizzie S. Tourjée / Dutch Traditional. copyright: public domain."
   },
@@ -9058,7 +9052,7 @@
       "6 The righteous then shall gather round\nTo share the blessing I have found,\nTheir hearts made glad because they see\nHow richly God has dealt with me."
     ],
     "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/When_I_Survey_The_Wondrous_Cross-Hamburg.mid",
+    "midi_url": "To_God_My_Earnest_Voice_I_Raise_Psalm_142-Hamburg.mid",
     "mp3_url": "http://openhymnal.org/Mp3/When_I_Survey_The_Wondrous_Cross-Hamburg.mp3",
     "credits": "Words: Psalm 142, The Psalter, 1912 (public domain). Tune: 'Hamburg' (LM)."
   },
@@ -9112,7 +9106,7 @@
       "5 Recall Thy mercies, Lord,\nTheir tenderness untold,\nAnd all Thy loving-kindnesses,\nFor they have been of old."
     ],
     "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/Blest_Be_The_Tie_That_Binds-Dennis.mid",
+    "midi_url": "To_Thee_I_Lift_My_Soul_Psalm_25-Dennis.mid",
     "mp3_url": "http://openhymnal.org/Mp3/Blest_Be_The_Tie_That_Binds-Dennis.mp3",
     "credits": "Words: Psalm 25, The Psalter, 1912 (public domain). Tune: 'DENNIS' (SM (6.6.8.6))."
   },
@@ -9719,7 +9713,7 @@
       "9 And I for ever will thee praise,\nbecause thou hast done this:\nI on thy name will wait; for good\nbefore thy saints it is."
     ],
     "composer_arranger": "",
-    "midi_url": "http://www.hymntime.com/tch/mid/m/a/r/t/martyrdom.mid",
+    "midi_url": "Why_Dost_Thou_Boast_O_Mighty_Man_Psalm_52-Martyrdom.mid",
     "mp3_url": "",
     "credits": "Words: Psalm 52, The Scottish Psalter, 1650 (public domain). Tune: 'MARTYRDOM' (CM)."
   },
@@ -9889,7 +9883,7 @@
       "3 Ye saints, your joy proclaim\nAnd glory in the Name\nOf God above;\nAnd when the daylight dies,\nEre sleep shall close your eyes,\nLet praise to God arise\nFor all His love."
     ],
     "composer_arranger": "",
-    "midi_url": "http://openhymnal.org/Midi/God_Whose_Almighty_Word-Italian_Hymn.mid",
+    "midi_url": "Ye_Who_His_Temple_Throng_Psalm_150-Italian_Hymn.mid",
     "mp3_url": "http://openhymnal.org/Mp3/God_Whose_Almighty_Word-Italian_Hymn.mp3",
     "credits": "Words: Psalm 150, The Psalter, 1912 (public domain). Tune: 'Italian Hymn' (6.6.4.6.6.6.4)."
   },
@@ -10000,5 +9994,21 @@
     "midi_url": "http://www.hymntime.com/tch/mid/g/u/e/r/guernsey.mid",
     "mp3_url": "",
     "credits": "Words: Psalm 87, The Psalter, 1912 (public domain). Tune: 'GUERNSEY' (7.7.7.7)."
+  },
+  {
+    "id": 571,
+    "title": "Facing a Task Unfinished",
+    "tune": "Aurelia",
+    "composer_arranger": "Wesley, S.",
+    "midi_url": "Facing_A_Task_Unfinished-Aurelia.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Facing a task unfinished\nthat drives us to our knees,\na need that, undiminished,\nrebukes our slothful ease,\nwe who rejoice to know you\nrenew before your throne\nthe solemn pledge we owe you\nto go and make you known.",
+      "2. Where other lords beside you\nhold their unhindered sway,\nwhere forces that defied you\ndefy you still today,\nwith none to heed their crying\nfor life and love and light,\nunnumbered souls are dying\nand pass into the night.",
+      "3. We bear the torch that flaming\nfell from the hands of those\nwho gave their lives proclaiming\nthat Jesus died and rose;\nours is the same commission,\nthe same glad message ours;\nfired by the same ambition,\nto you we yield our pow'rs.",
+      "4. O Father, who sustained them,\nO Spirit, who inspired,\nSavior, whose love constrained them\nto toil with zeal untired,\nfrom cowardice defend us,\nfrom lethargy awake!\nForth on your errands send us\nto labor for your sake."
+    ],
+    "credits": "Words: Frank Houghton, 1928 (alt.). Music: 'Aurelia' Samuel Sebastian Wesley, 1864.",
+    "meter": "7.6.7.6 D"
   }
 ]
