@@ -19,6 +19,14 @@ const DRUM_CHANNEL = 9;
 let ctx, synth, seq;
 let initPromise;
 let program = INSTRUMENTS[0].program;
+let soundfont; // kept so a rebuilt engine needn't fetch it again
+// What the loaded song is set to, so a rebuilt engine can carry on the same
+let song = null, tempo = 1, transpose = 0;
+const gains = [];
+// Set when the microphone turned on or off (see renewOutput)
+let stale = false;
+// Whether the app wants sound now: a rebuild finishing late mustn't restart a stopped hymn
+let wanted = false;
 
 // Created on first use: browsers only allow audio to start from a user action,
 // and the soundfont download is skipped entirely for people who only browse.
@@ -31,8 +39,8 @@ function init() {
         await ctx.audioWorklet.addModule(processorUrl);
         synth = new WorkletSynthesizer(ctx);
         synth.connect(ctx.destination);
-        const sf = await (await fetch("./soundfont/instruments.sf2")).arrayBuffer();
-        await synth.soundBankManager.addSoundBank(sf, "instruments");
+        soundfont ??= await (await fetch("./soundfont/instruments.sf2")).arrayBuffer();
+        await synth.soundBankManager.addSoundBank(soundfont.slice(0), "instruments");
         await synth.isReady;
         seq = new Sequencer(synth, { skipToFirstNoteOn: false });
         seq.loopCount = 0;
@@ -57,15 +65,57 @@ export function load(url) {
         if (!res.ok) throw new Error(`Couldn't load the music (${res.status})`);
         const binary = await res.arrayBuffer();
         if (ticket !== latestLoad) return false;
-        const loaded = new Promise((resolve) =>
-            seq.eventHandler.addEvent("songChange", "load", () => resolve())
-        );
-        seq.loadNewSongList([{ binary, fileName: url }]);
-        await loaded;
-        seq.pause();
-        seq.currentTime = 0;
-        applyInstrument();
+        song = { binary, url };
+        await loadSong(0);
         return true;
+    });
+    loading = run.catch(() => {});
+    return run;
+}
+
+// Puts `song` into the sequencer, paused at `at` seconds, with its settings
+async function loadSong(at) {
+    const loaded = new Promise((resolve) =>
+        seq.eventHandler.addEvent("songChange", "load", () => resolve())
+    );
+    seq.loadNewSongList([{ binary: song.binary.slice(0), fileName: song.url }]);
+    await loaded;
+    seq.pause();
+    seq.currentTime = at;
+    applyInstrument();
+    gains.forEach((g, c) => g !== undefined && synth.midiChannels[c]?.setSystemParameter("gain", g));
+    seq.playbackRate = tempo;
+    synth.setSystemParameter("keyShift", transpose);
+}
+
+/** Call when the microphone turns on or off. On Android, Bluetooth headphones
+ *  switch between music and phone-call mode then, and the audio output
+ *  already open can stay silent from that point on, even for ordinary hymns.
+ *  The engine is built afresh on whatever route is current: now if a hymn is
+ *  playing, else on the next play. */
+export async function renewOutput() {
+    if (!ctx) return;
+    if (!isPlaying()) {
+        stale = true;
+        return;
+    }
+    stale = false;
+    await rebuild();
+    if (!wanted) return; // paused or left while it was being rebuilt
+    await ctx.resume().catch(() => {});
+    seq.play();
+}
+
+// A new AudioContext and synthesizer, carrying on from the same place in the same song
+function rebuild() {
+    const run = loading.then(async () => {
+        const at = position();
+        seq?.pause();
+        await ctx?.close().catch(() => {});
+        ctx = synth = seq = undefined;
+        initPromise = null;
+        await init();
+        if (song) await loadSong(at);
     });
     loading = run.catch(() => {});
     return run;
@@ -90,16 +140,25 @@ function applyInstrument() {
 }
 
 export async function play() {
+    wanted = true;
     await init();
-    await ctx.resume();
+    await ctx.resume().catch(() => {});
+    // Stale after the microphone changed, or stuck after the system took the audio away
+    if (stale || ctx.state !== "running") {
+        stale = false;
+        await rebuild();
+        await ctx.resume().catch(() => {});
+    }
     seq.play();
 }
 
 export function pause() {
+    wanted = false;
     seq?.pause();
 }
 
 export function stop() {
+    wanted = false;
     if (!seq) return;
     seq.pause();
     seq.currentTime = 0;
@@ -139,15 +198,18 @@ export async function harmonyStart() {
 /** volume: 0..1 for one SATB voice (channel gain, so the file's own CC7 can't override it).
  *  0 silences the part immediately, including notes already sounding. */
 export function setVoiceVolume(voice, volume) {
+    gains[voice] = volume;
     synth?.midiChannels[voice]?.setSystemParameter("gain", volume);
 }
 
 /** scale: 0.5..1.5, symbolic tempo change -- pitch is unaffected. */
 export function setTempo(scale) {
+    tempo = scale;
     if (seq) seq.playbackRate = scale;
 }
 
 /** semitones: -6..6 from the hymn's own key. */
 export function setTranspose(semitones) {
+    transpose = semitones;
     synth?.setSystemParameter("keyShift", semitones);
 }

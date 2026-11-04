@@ -4,6 +4,7 @@
 // Pitch detection is pitchy (MIT, github.com/ianprime0509/pitchy), the McLeod
 // pitch method, which is quick enough for a tuner.
 import { PitchDetector } from "pitchy";
+import { renewOutput } from "./player.js";
 
 /** Samples looked at for each reading: about 43 ms at 48 kHz, enough for a bass's low notes. */
 const WINDOW = 2048;
@@ -26,6 +27,7 @@ export async function listen() {
         // The browser's own call-cleaning bends and gates a singing voice
         audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false },
     });
+    renewOutput(); // Bluetooth headphones may have just switched to call mode
     const ctx = new AudioContext();
     await ctx.resume().catch(() => {}); // started suspended when not opened by a tap
     const source = ctx.createMediaStreamSource(stream);
@@ -67,6 +69,7 @@ export async function listen() {
         stop() {
             stream.getTracks().forEach((t) => t.stop());
             ctx.close().catch(() => {});
+            renewOutput(); // and back to music mode
         },
     };
 }
