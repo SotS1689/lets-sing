@@ -304,7 +304,8 @@ async function showLearn() {
     pageTitle.textContent = "Learn";
     document.title = "Learn · Let's Sing";
     app.innerHTML = `${learnNav()}<div id="course"><p class="message">Loading lessons…</p></div>
-        <section class="scores"><h2>Your scores</h2>${EMBED ? "" : `<div id="sync-card"></div>`}<div id="scores"></div></section>`;
+        <section class="scores"><h2>Your scores</h2>${EMBED ? "" : `<div id="sync-card"></div>`}<div id="scores"></div></section>
+        <p style="margin-top:2em;text-align:right;font-size:.75em;opacity:.45"><a href="./audiotest.html" style="color:inherit">audio test</a></p>`;
     renderSyncCard();
     renderScores(document.getElementById("scores"));
     const { renderCourse } = await import("./learnui.js");

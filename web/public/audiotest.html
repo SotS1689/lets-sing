@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audio Test</title>
+<style>
+  :root { --bg: #fff; --fg: #1a1a1a; --btn: #e8e4dc; --on: #2e7d32; --line: #ccc; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151515; --fg: #eee; --btn: #2c2a27; --line: #444; } }
+  body { background: var(--bg); color: var(--fg); font: 17px/1.4 system-ui, sans-serif; margin: 0; padding: 16px; }
+  h1 { font-size: 1.3em; margin: 0 0 .3em; }
+  h2 { font-size: 1.05em; margin: 1.2em 0 .4em; }
+  button { display: block; width: 100%; margin: 6px 0; padding: 12px; font: inherit; text-align: left;
+           background: var(--btn); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; }
+  button.on { border-color: var(--on); box-shadow: inset 4px 0 0 var(--on); }
+  #meter { height: 14px; background: var(--btn); border-radius: 7px; overflow: hidden; }
+  #meter div { height: 100%; width: 0; background: var(--on); }
+  #log { white-space: pre-wrap; font: 13px/1.35 ui-monospace, monospace; border-top: 1px solid var(--line); padding-top: 8px; }
+  p { margin: .3em 0; }
+</style>
+</head>
+<body>
+<h1>Let's Sing audio test</h1>
+<p>With your Bluetooth headphones on: <b>1.</b> tap “Play tone”. <b>2.</b> Tap each microphone button in turn and note whether you still hear the beeps <i>in the headphones</i>, from the phone's speaker, or not at all. <b>3.</b> Copy the box at the bottom into the chat.</p>
+
+<h2>Sound</h2>
+<button id="tone">Play tone</button>
+
+<h2>Microphone</h2>
+<div id="mics"><button data-mic="default">Mic: default</button><button data-mic="default-aec">Mic: default, with echo cancelling on</button></div>
+<button id="stopmic">Stop microphone</button>
+<p>Mic level (tap or speak into a mic to see which one hears):</p>
+<div id="meter"><div></div></div>
+
+<h2>Report</h2>
+<button id="copy">Copy report</button>
+<div id="log"></div>
+
+<script>
+const logEl = document.getElementById("log");
+const log = (m) => { logEl.textContent += `${(performance.now() / 1000).toFixed(1)}s ${m}\n`; };
+log(navigator.userAgent);
+
+let out = null, beeper = 0;
+document.getElementById("tone").onclick = async (e) => {
+    if (out) {
+        clearInterval(beeper); out.close(); out = null;
+        e.target.classList.remove("on"); e.target.textContent = "Play tone";
+        return log("tone stopped");
+    }
+    out = new AudioContext();
+    out.onstatechange = () => log(`tone context: ${out?.state}`);
+    await out.resume();
+    const beep = () => {
+        const o = out.createOscillator(), g = out.createGain(), t = out.currentTime;
+        o.frequency.value = 523; g.gain.setValueAtTime(0.3, t); g.gain.exponentialRampToValueAtTime(0.001, t + 0.4);
+        o.connect(g).connect(out.destination); o.start(t); o.stop(t + 0.45);
+    };
+    beep(); beeper = setInterval(beep, 700);
+    e.target.classList.add("on"); e.target.textContent = "Stop tone";
+    log(`tone playing, ${out.sampleRate} Hz, state ${out.state}`);
+};
+
+let stream = null, inCtx = null, raf = 0;
+function stopMic() {
+    cancelAnimationFrame(raf);
+    stream?.getTracks().forEach((t) => t.stop()); stream = null;
+    inCtx?.close(); inCtx = null;
+    document.querySelectorAll("[data-mic]").forEach((b) => b.classList.remove("on"));
+    document.querySelector("#meter div").style.width = "0";
+}
+document.getElementById("stopmic").onclick = () => { stopMic(); log("mic stopped"); };
+
+async function openMic(btn) {
+    stopMic();
+    const which = btn.dataset.mic, aec = which === "default-aec";
+    const audio = { echoCancellation: aec, noiseSuppression: aec, autoGainControl: aec };
+    if (!which.startsWith("default")) audio.deviceId = { exact: which };
+    try {
+        stream = await navigator.mediaDevices.getUserMedia({ audio });
+    } catch (err) {
+        return log(`mic "${btn.textContent}" failed: ${err.name} ${err.message}`);
+    }
+    btn.classList.add("on");
+    const track = stream.getAudioTracks()[0];
+    log(`mic on: "${btn.textContent}" -> track "${track.label}" ${JSON.stringify(track.getSettings())}`);
+    inCtx = new AudioContext();
+    const an = inCtx.createAnalyser(); an.fftSize = 1024;
+    inCtx.createMediaStreamSource(stream).connect(an);
+    const buf = new Float32Array(1024), bar = document.querySelector("#meter div");
+    const draw = () => {
+        an.getFloatTimeDomainData(buf);
+        let s = 0; for (const v of buf) s += v * v;
+        bar.style.width = Math.min(100, Math.sqrt(s / buf.length) * 400) + "%";
+        raf = requestAnimationFrame(draw);
+    };
+    draw();
+    listDevices();
+}
+document.getElementById("mics").addEventListener("click", (e) => { const b = e.target.closest("[data-mic]"); if (b) openMic(b); });
+
+async function listDevices() {
+    const devs = await navigator.mediaDevices.enumerateDevices();
+    log("devices: " + devs.map((d) => `${d.kind}:"${d.label || "?"}"`).join(", "));
+    const box = document.getElementById("mics");
+    for (const d of devs) {
+        if (d.kind !== "audioinput" || !d.deviceId || d.deviceId === "default" || box.querySelector(`[data-mic="${CSS.escape(d.deviceId)}"]`)) continue;
+        const b = document.createElement("button");
+        b.dataset.mic = d.deviceId; b.textContent = `Mic: ${d.label || d.deviceId.slice(0, 8)}`;
+        box.append(b);
+    }
+}
+navigator.mediaDevices.addEventListener?.("devicechange", () => { log("devices changed"); listDevices(); });
+listDevices();
+
+document.getElementById("copy").onclick = async () => {
+    try { await navigator.clipboard.writeText(logEl.textContent); log("report copied"); }
+    catch { log("couldn't copy: press and hold the text to select it"); }
+};
+</script>
+</body>
+</html>
