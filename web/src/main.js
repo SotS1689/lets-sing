@@ -1411,8 +1411,13 @@ supportCallout.querySelectorAll("[data-support]").forEach((el) =>
 if (!EMBED) trackSupportUsage(); // the host app has its own support button
 
 // A hymn shouldn't keep singing after you leave the app (as on Android).
+// Nor should the microphone stay on: while it is, Android keeps Bluetooth
+// headphones in call mode, and other apps (a podcast) aren't heard in them.
 document.addEventListener("visibilitychange", () => {
-    if (document.hidden && player.isPlaying()) player.pause();
+    if (!document.hidden) return;
+    if (player.isPlaying()) player.pause();
+    if (learner) document.getElementById("learn")?.click(); // Learn off on the hymn's page, its score saved
+    leaveLesson?.(); // a lesson's exercise stopped and its mic off; Start opens it again
 });
 
 // ---- Embedded in another app (?embed) ------------------------------------------
