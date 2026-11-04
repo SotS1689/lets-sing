@@ -99,7 +99,9 @@ export function renderCourse(host, ctx) {
 const describe = (ex) =>
     ex.kind === "echo" ? (ex.along ? "Sing each note with it while it plays." : "Listen to each pattern, then sing it back.")
     : ex.kind === "range" ? "Sing as low, then as high, as is comfortable. The app suggests your part."
-    : ex.kind === "tune" ? (ex.voices.length > 1 ? "Your line is lit on the music; the other line plays with you." : "Sing the tune with it playing.")
+    : ex.kind === "tune" ? (ex.voices.length < 2 ? "Sing the tune with it playing."
+        : ex.mute?.length ? "Your line is lit on the music and plays alone; the other line is shown but silent."
+        : "Your line is lit on the music; the other line plays with you.")
     : `${ex.verses === "all" ? "Every verse" : "Verse 1"} · ${SUPPORT[ex.support].name}: ${SUPPORT[ex.support].say.toLowerCase()}.`;
 
 /** The lesson screen into `ctx.app`. Returns a cleanup for leaving the page. */
@@ -332,8 +334,8 @@ async function exerciseRun(card, ex, mic, ctx, hymn, target, onDone) {
         const listenNotes = ex.kind === "echo" ? score.partNotes(1) : [];
         const noteTime = notes.reduce((sum, nt) => sum + Math.min(nt[2], to - nt[1]), 0);
         const on = [0, 1, 2, 3].map((c) => volumes[c] > 0 || c === learnCh);
-        // A few seconds of the introduction first, to hear the key
-        player.seek(Math.max(0, from - 4));
+        // The whole introduction first, to hear the key and the tune
+        player.seek(0);
         await player.play();
         const run = tally();
         let shown = null;

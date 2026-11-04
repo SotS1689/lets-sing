@@ -20,10 +20,17 @@ const SCROLL_ANCHOR = 0.4;
 /** Learn mode: within this many cents of the note is on pitch; within the
  *  second, close; further off, off. */
 const LEARN_GOOD = 40, LEARN_CLOSE = 90;
-/** Learn mode: the start of each note is let off (up to this many seconds, and
- *  never more than this share of the note) until the voice first finds it, so a
- *  consonant ("Do", "Re", "Mi") or the slide into the note isn't counted wrong. */
-const ONSET_GRACE = 0.3, ONSET_SHARE = 0.4;
+/** Learn mode: moving between notes isn't graded. The start of each note is let
+ *  off until the voice first finds it (for up to ONSET_GRACE seconds, or half a
+ *  short note, and longer while the voice is still on the note before), so a
+ *  consonant ("Do", "Re", "Mi") or the slide into the note isn't counted wrong;
+ *  so is the end of a note once the voice has moved on to the next one. */
+const ONSET_GRACE = 0.3, ONSET_SHARE = 0.5, LATE_GRACE = 0.45, EARLY_GRACE = 0.2;
+/** How far `sung` is from `pitch` in semitones, in whichever octave is nearest. */
+const offBy = (sung, pitch) => {
+    const d = sung - pitch;
+    return d - 12 * Math.round(d / 12);
+};
 /** "learn-good", "learn-close" or "learn-off" for a voice `cents` from its note. */
 export const learnGrade = (cents) =>
     Math.abs(cents) <= LEARN_GOOD ? "learn-good" : Math.abs(cents) <= LEARN_CLOSE ? "learn-close" : "learn-off";
@@ -212,6 +219,10 @@ function drawStrip(host, abc) {
     const music = abc.split("\n").filter((line) => /^\[V:/.test(line));
     const notes = (music.join(" ").replace(/\[V:[^\]]*\]/g, "").match(/[A-Ga-g]/g) || []).length / 4;
     let tune;
+    // Each note keeps its own natural width rather than the line being stretched to
+    // fill: a change of words in one time through the tune (on a redraw) then can't
+    // shift the notes of the other
+    abc = abc.replace(/^(X:.*)$/m, "$1\n%%stretchlast 0");
     for (let staffwidth = Math.max(host.clientWidth, notes * 72); ; staffwidth *= 1.6) {
         [tune] = abcjs.renderAbc(strip, abc, {
             add_classes: true,
@@ -297,7 +308,7 @@ function makePainter(state, map, lightWords, host) {
 
     // Learn mode: the voice's line, drawn in a layer inside the sliding strip so it
     // moves with the music (a new strip, after a redraw, starts a new line)
-    let layer = null, layerStrip = null, lastPoint = null, marked = null;
+    let layer = null, layerStrip = null, layerPoints = null, lastPoint = null, marked = null;
     let onsetNote = null, found = false, settling = false;
     const SVG = "http://www.w3.org/2000/svg";
     const unmark = () => {
@@ -312,13 +323,25 @@ function makePainter(state, map, lightWords, host) {
             settling = false;
             if (state.view !== "scroll" || !state.strip) return unmark(), null;
             if (layerStrip !== state.strip) {
+                const before = layer, beforePoints = layerPoints;
                 layer = document.createElementNS(SVG, "svg");
                 layer.setAttribute("class", "learn-trace");
                 layer.setAttribute("aria-hidden", "true");
                 state.strip.append(layer);
                 layerStrip = state.strip;
-                lastPoint = null;
+                // The line redrawn (moving on to the next verse): what's been sung so far
+                // comes along, moved to where the same moment sits on the new line
+                const points = timeline();
+                if (before?.childElementCount && beforePoints?.length && points.length) {
+                    const dx = positionAt(points, now) - positionAt(beforePoints, now);
+                    const sung = document.createElementNS(SVG, "g");
+                    sung.setAttribute("transform", `translate(${dx.toFixed(1)} 0)`);
+                    sung.append(...before.childNodes);
+                    layer.append(sung);
+                    if (lastPoint) lastPoint = { x: lastPoint.x + dx, y: lastPoint.y };
+                } else lastPoint = null;
             }
+            layerPoints = timeline();
             const part = parts.find((p) => p.ch === ch);
             const i = part ? lastStarted(part.notes, now) : -1;
             const note = part?.notes[i];
@@ -345,14 +368,20 @@ function makePainter(state, map, lightWords, host) {
                 return null;
             }
             // Any octave counts: a man singing the tune where it sits for him
-            let diff = sung - (note[3] + shift);
-            diff -= 12 * Math.round(diff / 12);
+            const diff = offBy(sung, note[3] + shift);
             const cents = Math.round(diff * 100);
             let grade = learnGrade(cents);
             if (grade === "learn-good") found = true;
-            else if (!found && now - note[1] < Math.min(ONSET_GRACE, note[2] * ONSET_SHARE)) {
-                settling = true;
-                grade = "learn-settle";
+            else {
+                // On the way from one note to the next (see ONSET_GRACE)
+                const into = now - note[1], left = note[1] + note[2] - now;
+                const before = part.notes[i - 1], after = part.notes[i + 1];
+                const near = (n) => n?.[3] !== undefined && Math.abs(offBy(sung, n[3] + shift)) * 100 <= LEARN_CLOSE;
+                const joined = (a, b) => b[1] - (a[1] + a[2]) < 0.1;
+                settling = (!found && into < Math.max(Math.min(ONSET_GRACE, note[2] * ONSET_SHARE), 0.12))
+                    || (!found && into < LATE_GRACE && before && joined(before, note) && near(before))
+                    || (left < EARLY_GRACE && after && joined(note, after) && near(after));
+                if (settling) grade = "learn-settle";
             }
             if (settling) head.classList.remove("learn-good", "learn-close", "learn-off");
             else if (!head.classList.contains(grade)) {
@@ -393,7 +422,7 @@ function makePainter(state, map, lightWords, host) {
             onsetNote = null;
             settling = false;
             layer?.remove();
-            layer = layerStrip = lastPoint = null;
+            layer = layerStrip = layerPoints = lastPoint = null;
         },
 
         /** Verse being sung at `now`: 0 for the intro, then 1..n. */
