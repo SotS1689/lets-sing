@@ -78,6 +78,13 @@ a { color: inherit; }
     background: var(--brand);
     color: var(--on-brand);
 }
+/* The taylordrummond.org Home link, the logo and the title share one row */
+.topbar .title-row { flex: 1; min-width: 0; display: flex; align-items: center; gap: 4px; }
+/* Installed copies (home screen or desktop app) have no site to go back to */
+@media (display-mode: standalone), (display-mode: fullscreen), (display-mode: minimal-ui) { #home { display: none; } }
+.installed #home { display: none; }
+/* Beside a visible Back button it needs no pull to the left edge */
+#back:not([hidden]) + .title-row #home { margin-left: 0; }
 /* The app icon's eighth note, without its red square */
 .topbar .logo { flex: none; width: 24px; height: 30px; fill: currentColor; }
 /* The logo is the home button; padding gives it a finger-sized target */
