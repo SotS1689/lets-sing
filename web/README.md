@@ -131,11 +131,23 @@ hidden to ask which hymns are saved on the device and to save more, through
 
 ## Publishing
 
-The live site is **https://sots1689.github.io/lets-sing/**. Every push to
+The live site is **https://taylordrummond.org/lets-sing/** (the GitHub Pages
+address https://sots1689.github.io/lets-sing/ also works). Every push to
 `main` that changes `web/`, `hymns_data.json`, `midi/` or `Sheet Music/abc/`
 rebuilds and republishes it automatically (`.github/workflows/pages.yml`;
 progress shows in the repo's **Actions** tab, usually done in about a minute).
 Installed copies pick up the new version the next time they're opened online.
+
+The same push also publishes a church copy at
+**https://sing.gracecommunityallentown.org**: the workflow's `church` job builds
+it with `npm run build:church` (no support heart, and the Home button goes to gracecommunityallentown.org;
+`npm run dev:church` to try it)
+and pushes it to the `gh-pages` branch of
+[SotS1689/lets-sing-church](https://github.com/SotS1689/lets-sing-church), using
+the `CHURCH_DEPLOY_KEY` secret (the private half of a write deploy key on that
+repo). The domain's DNS has a CNAME record `sing` pointing to `sots1689.github.io`.
+Google sign-in there needs the domain listed under Firebase Authentication >
+Settings > Authorized domains.
 
 ## Testing on a phone
 

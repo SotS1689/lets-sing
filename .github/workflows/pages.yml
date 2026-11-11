@@ -1,5 +1,5 @@
 # Builds the web app (web/) and publishes it to GitHub Pages:
-# https://sots1689.github.io/lets-sing/
+# https://sots1689.github.io/lets-sing/, and the church copy (see "church" below).
 # Runs on every push to main that touches the app or its content, or by hand
 # from the repo's Actions tab ("Run workflow").
 name: Publish web app
@@ -52,3 +52,35 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # The church copy (npm run build:church: no support heart), published at
+  # https://sing.gracecommunityallentown.org (GitHub Pages from the gh-pages
+  # branch of SotS1689/lets-sing-church).
+  # CHURCH_DEPLOY_KEY is the private half of that repo's write-enabled deploy key.
+  church:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run build:church
+      - run: mv dist ../site
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.CHURCH_DEPLOY_KEY }}
+          external_repository: SotS1689/lets-sing-church
+          publish_branch: gh-pages
+          publish_dir: site
+          cname: sing.gracecommunityallentown.org
+          force_orphan: true
+          commit_message: "Publish from SotS1689/lets-sing"

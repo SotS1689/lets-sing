@@ -52,6 +52,8 @@ function applyTheme(theme) {
 }
 // Shown inside another app's page (see the embed section below)
 const EMBED = document.documentElement.classList.contains("embed");
+// The church copy: built with --mode church (npm run build:church)
+const CHURCH = import.meta.env.MODE === "church";
 const embedParams = new URLSearchParams(location.search);
 // An embedded player follows the host page's theme (?theme=light|dark) without saving it
 applyTheme(EMBED && THEMES.includes(embedParams.get("theme")) ? embedParams.get("theme") : store.get("theme", "system"));
@@ -1398,17 +1400,27 @@ function supportDismiss(mode) {
     if (mode === "forever" || mode === "later") track("support_callout_dismiss", { choice: mode });
 }
 
-supportLink.addEventListener("click", () => {
-    track("support_click", { source: "heart" });
-    supportDismiss("acted");
-});
-supportCallout.querySelector('[data-support="acted"]').addEventListener("click", () =>
-    track("support_click", { source: "callout" })
-);
-supportCallout.querySelectorAll("[data-support]").forEach((el) =>
-    el.addEventListener("click", () => supportDismiss(el.dataset.support))
-);
-if (!EMBED) trackSupportUsage(); // the host app has its own support button
+// The church copy (npm run build:church, sing.gracecommunityallentown.org) has no heart,
+// and its Home button goes to the church's site.
+if (CHURCH) {
+    document.querySelector(".support-wrap").remove();
+    const home = document.getElementById("home"); // home is the church's site
+    home.href = "https://gracecommunityallentown.org/";
+    home.title = "gracecommunityallentown.org";
+    home.setAttribute("aria-label", "Home: gracecommunityallentown.org");
+} else {
+    supportLink.addEventListener("click", () => {
+        track("support_click", { source: "heart" });
+        supportDismiss("acted");
+    });
+    supportCallout.querySelector('[data-support="acted"]').addEventListener("click", () =>
+        track("support_click", { source: "callout" })
+    );
+    supportCallout.querySelectorAll("[data-support]").forEach((el) =>
+        el.addEventListener("click", () => supportDismiss(el.dataset.support))
+    );
+    if (!EMBED) trackSupportUsage(); // the host app has its own support button
+}
 
 // A hymn shouldn't keep singing after you leave the app (as on Android).
 // Nor should the microphone stay on: while it is, Android keeps Bluetooth
