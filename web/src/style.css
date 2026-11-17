@@ -309,6 +309,9 @@ main {
 .hymn-list a:hover { background: color-mix(in srgb, var(--primary) 8%, transparent); }
 .hymn-list .title { display: block; font-weight: 500; }
 .hymn-list .sub { display: block; font-size: 0.875rem; color: var(--text-2); }
+/* The line of the words a search found the hymn by */
+.hymn-list .lyric-line { display: block; margin-top: 2px; font-size: 0.875rem; font-style: italic; color: var(--text); }
+.hymn-list .lyric-verse { font-style: normal; color: var(--text-2); }
 .privacy { margin: 24px 4px 16px; font-size: 0.85rem; color: var(--text-2); }
 .privacy summary { display: inline-block; padding: 10px 0; cursor: pointer; }
 .privacy summary:hover { color: var(--text); text-decoration: underline; }

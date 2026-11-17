@@ -143,7 +143,19 @@ function paintStar(btn, h) {
 // typed comes first, then whole-phrase matches, then title words, then tune and
 // composer. Punctuation is ignored so "o god our help" finds "O God, Our Help".
 
-const plain = (s) => norm(s || "").replace(/[^\p{L}\p{N}\s]/gu, "").replace(/\s+/g, " ").trim();
+const plain = (s) => norm(unshorten(s || "")).replace(/[^\p{L}\p{N}\s]/gu, "").replace(/\s+/g, " ").trim();
+
+// Old hymns drop a letter for the metre (heav'n, o'er, wand'ring, bless'd); spelt out,
+// "heaven" finds "heav'n". Lowercase only, so names like O'Neill are left alone.
+function unshorten(s) {
+    return s
+        .replace(/[‘’]/g, "'")
+        .replace(/([oe])'er/g, "$1ver") // o'er, e'er, ne'er, where'er, o'ertaken
+        .replace(/\be'en\b/g, "even")
+        .replace(/([a-z])'n(?=\b|ly\b)/g, "$1en") // heav'n, giv'n, heav'nly
+        .replace(/([a-z])'r/g, "$1er") // pow'r, ev'ry, wand'ring
+        .replace(/\b(?!(?:i|you|he|she|we|they|who|it|that)'d\b)([a-z]+)'d\b/gi, "$1ed"); // bless'd, wander'd
+}
 const words = (s) => s.split(" ");
 
 function fieldScore(field, q, terms, weight) {
@@ -164,13 +176,65 @@ function fieldScore(field, q, terms, weight) {
 
 function matchScore(h, terms) {
     h._plain ??= { title: plain(h.title), tune: plain(h.tune), composer: plain(h.composer) };
-    const pterms = terms.map(plain).filter(Boolean);
+    const pterms = plain(terms.join(" ")).split(" ").filter(Boolean);
     const q = pterms.join(" ");
     return (
         fieldScore(h._plain.title, q, pterms, 10) +
         fieldScore(h._plain.tune, q, pterms, 2) +
-        fieldScore(h._plain.composer, q, pterms, 1)
+        fieldScore(h._plain.composer, q, pterms, 1) +
+        lyricScore(lyricsOf(h), q, pterms, 3)
     );
+}
+
+// ---- Lyrics index --------------------------------------------------------------
+// So a remembered line finds its hymn: every verse's words, punctuation and verse
+// numbers dropped and the lines run together (a phrase can cross a line break).
+// Built the first time a hymn is searched, from the verses already loaded.
+
+/** A hymn's lyrics: `text` to search, and its `lines` ({ raw, p: plain, verse }) to show. */
+function lyricsOf(h) {
+    if (h._lyrics) return h._lyrics;
+    const lines = [];
+    (h.verses || []).forEach((v, i) =>
+        v.replace(/^\s*\d+\.?\s+/, "").split("\n").forEach((raw) => {
+            raw = raw.trim();
+            const p = plain(raw.replace(/[–—]/g, " ")); // dashes join words, not letters
+            if (p) lines.push({ raw, p, verse: i + 1 });
+        })
+    );
+    const text = lines.map((l) => l.p).join(" ");
+    return (h._lyrics = { text, lines, words: new Set(text.split(" ")) });
+}
+
+/** Like fieldScore, for the lyrics: the first line, then a whole phrase, then single words. */
+function lyricScore(lyr, q, terms, weight) {
+    if (!lyr.text || !q) return 0;
+    let score = 0;
+    if (lyr.text.startsWith(q)) score += 60;
+    else if (` ${lyr.text}`.includes(` ${q}`)) score += 40;
+    else if (lyr.text.includes(q)) score += 25;
+    for (const t of terms) score += lyr.words.has(t) ? 8 : lyr.text.includes(t) ? 3 : 0;
+    return score * weight;
+}
+
+/** The line (or pair of lines, for a phrase across a break) that best matches, or null. */
+function matchingLine(lyr, q, terms) {
+    const { lines } = lyr;
+    let line = lines.find((l) => l.p.includes(q));
+    if (!line) {
+        const i = lines.findIndex((l, i) => i + 1 < lines.length && `${l.p} ${lines[i + 1].p}`.includes(q));
+        if (i >= 0) line = { raw: `${lines[i].raw} / ${lines[i + 1].raw}`, verse: lines[i].verse };
+    }
+    if (!line) {
+        // The line holding the most of the words searched for, longer words counting
+        // for more (so "mercy" beats "of")
+        let best = 0;
+        for (const l of lines) {
+            const n = terms.reduce((sum, t) => sum + (` ${l.p}`.includes(` ${t}`) ? t.length : 0), 0);
+            if (n > best) [best, line] = [n, l];
+        }
+    }
+    return line && { text: line.raw.replace(/[\s,;:.\-–—]+$/, ""), verse: line.verse };
 }
 
 // ---- List screen ------------------------------------------------------------
@@ -190,7 +254,7 @@ async function showList(mode = "all") {
 
     app.innerHTML = `
         <div class="search">
-            <input id="search" type="search" placeholder="Search title, tune, or composer"
+            <input id="search" type="search" placeholder="Search title, words, tune, or composer"
                    autocomplete="off" aria-label="Search hymns" value="${esc(searchText)}">
             <nav class="tabs" aria-label="Which hymns">
                 <a href="#/"${mode === "all" ? ' aria-current="page"' : ""}>All hymns</a>
@@ -227,12 +291,30 @@ async function showList(mode = "all") {
     const render = () => {
         const terms = norm(searchText).split(/\s+/).filter(Boolean);
         const pool = mode === "favorites" ? favorites.map((id) => byId.get(id)).filter(Boolean) : hymns;
-        let shown = pool.filter((h) => terms.every((t) => h._search.includes(t)));
+        // A hymn is found by its title, tune and composer, or else by its words
+        // (each word searched for somewhere in them, or in the title and words together)
+        // (Not the words for a letter or two: every hymn's words have an "a" in them)
+        const pterms = plain(searchText).length >= 3 ? plain(searchText).split(" ").filter(Boolean) : [];
+        const q = pterms.join(" ");
+        const inInfo = (h) => terms.every((t) => h._search.includes(t));
+        const inWords = (h) => {
+            h._plain ??= { title: plain(h.title), tune: plain(h.tune), composer: plain(h.composer) };
+            const all = `${h._plain.title} ${h._plain.tune} ${h._plain.composer} ${lyricsOf(h).text}`;
+            return pterms.length > 0 && pterms.every((t) => all.includes(t));
+        };
+        let shown = pool.filter((h) => inInfo(h) || inWords(h));
         // Closest match first; the sort is stable, so ties keep the list's order
         if (terms.length) {
             const scores = new Map(shown.map((h) => [h, matchScore(h, terms)]));
             shown = shown.sort((a, b) => scores.get(b) - scores.get(a));
         }
+        // Under a hymn found by its words, the line that matched (also when a phrase of
+        // two or more words is in its verses but not its title)
+        const lineFor = (h) => {
+            if (!pterms.length) return null;
+            const phrase = pterms.length > 1 && lyricsOf(h).text.includes(q) && !h._plain.title.includes(q);
+            return !inInfo(h) || phrase ? matchingLine(lyricsOf(h), q, pterms) : null;
+        };
         const noun = pool.length === 1 ? "hymn" : "hymns";
         count.textContent = terms.length ? `${shown.length} of ${pool.length} ${noun}` : `${pool.length} ${noun}`;
         document.getElementById("fav-count").textContent = favorites.length || "";
@@ -244,12 +326,14 @@ async function showList(mode = "all") {
             return;
         }
         list.innerHTML = shown
-            .map(
-                (h) => `<li><a href="#/hymn/${h.id}">
+            .map((h) => {
+                const line = lineFor(h);
+                return `<li><a href="#/hymn/${h.id}">
                     <span class="title">${esc(h.title)}</span>
                     <span class="sub">${esc([h.tune, h.composer].filter(Boolean).join(" · "))}</span>
-                </a>${starButton(h)}</li>`
-            )
+                    ${line ? `<span class="lyric-line">“${esc(line.text)}”<span class="lyric-verse"> · verse ${line.verse}</span></span>` : ""}
+                </a>${starButton(h)}</li>`;
+            })
             .join("");
     };
     render();
