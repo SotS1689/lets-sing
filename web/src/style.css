@@ -78,6 +78,31 @@ a { color: inherit; }
     background: var(--brand);
     color: var(--on-brand);
 }
+/* The account button (top right): a round avatar that opens a sign-in / account panel,
+   hung from the bar's right edge like the heart's callout */
+.account-wrap { position: relative; display: inline-flex; flex: none; }
+#account { margin-left: 0; }
+.avatar {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid currentColor;
+    background: rgba(255, 255, 255, 0.14);
+    overflow: hidden;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.avatar svg { width: 26px; height: 26px; margin-top: 5px; fill: currentColor; opacity: 0.85; }
+.avatar.signed-in { border-color: transparent; background: var(--on-brand); color: var(--brand); }
+#account:hover .avatar { background: rgba(255, 255, 255, 0.26); }
+#account:hover .avatar.signed-in { background: var(--on-brand); box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3); }
+#account:focus-visible { outline: 2px solid currentColor; outline-offset: -2px; }
+#account-panel .sync-state { font-size: 0.8rem; }
+/* On a phone, pages with a Back button need the room for their title */
+@media (max-width: 520px) { .topbar:has(#back:not([hidden])) .account-wrap { display: none; } }
 /* The taylordrummond.org Home link, the logo and the title share one row */
 .topbar .title-row { flex: 1; min-width: 0; display: flex; align-items: center; gap: 4px; }
 /* Installed copies (home screen or desktop app) have no site to go back to */
@@ -117,7 +142,7 @@ a { color: inherit; }
    (same look and cadence as DA Tool's -- see the support section of main.js) */
 .support-wrap, .download-wrap { position: relative; display: inline-flex; }
 /* The download arrow's panel looks the same */
-#support-callout, #download-panel {
+#support-callout, #download-panel, #account-panel {
     display: none;
     position: absolute;
     top: calc(100% + 8px);
@@ -132,7 +157,7 @@ a { color: inherit; }
     text-align: left;
     z-index: 20;
 }
-#support-callout.open, #download-panel.open { display: block; animation: support-callout-in 0.18s ease-out; }
+#support-callout.open, #download-panel.open, #account-panel.open { display: block; animation: support-callout-in 0.18s ease-out; }
 @keyframes support-callout-in {
     from { opacity: 0; transform: translateY(-4px); }
     to { opacity: 1; transform: translateY(0); }
@@ -168,7 +193,7 @@ a { color: inherit; }
 
 /* Hung from the top bar's right edge (the arrow sits further in than the heart,
    so a panel hung from it would run off a phone's left edge); its pointer
-   lines up with the arrow: bar padding 8px + two 44px buttons + half of one */
+   is moved over the arrow when it opens (openDownloadPanel in src/main.js) */
 .download-wrap { position: static; }
 #download-panel { top: calc(100% - 4px); right: 8px; }
 #download-panel .support-callout-arrow { right: 113px; }

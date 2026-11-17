@@ -215,7 +215,7 @@ async function showList(mode = "all") {
             <p>Learn listens through your microphone only while it's turned on. Your voice is
                analysed on your device as you sing; it's never recorded or sent anywhere. Your
                scores and lesson progress are kept on this device.</p>
-            <p>If you choose to sign in with Google (on the Favorites or Learn page), your scores and lesson
+            <p>If you choose to sign in with Google (with the round button at the top right, or on the Favorites or Learn page), your scores and lesson
                progress and your favorites are also saved to your account, so they appear on your
                other devices.
                Let's Sing receives only your name and email address from Google, and you can sign
@@ -409,46 +409,133 @@ function renderSyncCard() {
                 every phone, tablet and computer you use. Optional: everything works without it.</p>
             <button type="button" class="btn" id="sync-in">Sign in with Google</button>
         </div>`;
-        host.querySelector("#sync-in").addEventListener("click", async (e) => {
-            e.target.disabled = true;
-            try {
-                if (await signIn()) {
-                    track("sync_sign_in");
-                    toast("Signed in. Your progress will now sync.", 2500);
-                }
-            } catch (err) {
-                console.warn("sign-in:", err);
-                toast("Couldn't sign in. Please try again.", 3000);
-            }
-            renderSyncCard();
-        });
+        host.querySelector("#sync-in").addEventListener("click", (e) => startSignIn(e.target));
         return;
     }
-    const state = {
-        syncing: "Syncing…",
-        synced: `Synced ${ago(lastSynced)}`,
-        offline: "Offline: will sync when you're back online",
-        error: "Couldn't sync just now; will try again",
-    }[status] ?? "";
+    const state = syncState(status, lastSynced);
     host.innerHTML = `<div class="sync-line">
         <span>Signed in as <strong>${esc(acct.email || acct.name)}</strong>${state ? ` · <span class="sync-state">${state}</span>` : ""}</span>
         <button type="button" class="link-btn" id="sync-out">Sign out</button>
     </div>`;
-    host.querySelector("#sync-out").addEventListener("click", async () => {
-        const removeHere = confirm("Also remove your favorites, scores and lesson progress from this device?\n\n"
-            + "They stay in your account either way. Choose OK on a shared device, Cancel to keep them here.");
-        try {
-            await signOut(removeHere);
-            toast("Signed out.");
-        } catch (err) {
-            console.warn("sign-out:", err);
-            toast("Couldn't sign out. Please try again.", 3000);
-        }
-    });
+    host.querySelector("#sync-out").addEventListener("click", startSignOut);
 }
+
+const syncState = (status, lastSynced) => ({
+    syncing: "Syncing…",
+    synced: `Synced ${ago(lastSynced)}`,
+    offline: "Offline: will sync when you're back online",
+    error: "Couldn't sync just now; will try again",
+})[status] ?? "";
+
+/** Signs in with Google from `btn` (greyed out meanwhile): the Learn/Favorites card or the account panel. */
+async function startSignIn(btn) {
+    if (btn) btn.disabled = true;
+    try {
+        if (await signIn()) {
+            track("sync_sign_in");
+            toast("Signed in. Your progress will now sync.", 2500);
+        }
+    } catch (err) {
+        console.warn("sign-in:", err);
+        toast("Couldn't sign in. Please try again.", 3000);
+    }
+    if (btn) btn.disabled = false;
+    renderSyncCard();
+    renderAccount();
+}
+
+async function startSignOut() {
+    const removeHere = confirm("Also remove your favorites, scores and lesson progress from this device?\n\n"
+        + "They stay in your account either way. Choose OK on a shared device, Cancel to keep them here.");
+    try {
+        await signOut(removeHere);
+        toast("Signed out.");
+    } catch (err) {
+        console.warn("sign-out:", err);
+        toast("Couldn't sign out. Please try again.", 3000);
+    }
+    renderAccount();
+}
+
+// ---- The account button (top right) ---------------------------------------------
+// A round avatar: a blank figure while signed out, the first letter of the name
+// once signed in (Google gives the app only the name and email, no photo). It
+// opens a small panel to sign in, or to see the account and sign out.
+
+const accountBtn = document.getElementById("account");
+const accountPanel = document.getElementById("account-panel");
+const BLANK_AVATAR = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="4.2"/><path d="M3.5 23c.8-5 4.3-8 8.5-8s7.7 3 8.5 8z"/></svg>`;
+
+function renderAccount() {
+    const { account: acct, status, lastSynced } = syncStatus();
+    const avatar = document.getElementById("avatar");
+    const label = acct ? `Signed in as ${acct.name || acct.email}` : "Sign in";
+    accountBtn.setAttribute("aria-label", label);
+    accountBtn.title = label;
+    avatar.classList.toggle("signed-in", !!acct);
+    if (acct) avatar.textContent = ([...(acct.name || acct.email || "?").trim()][0] || "?").toUpperCase();
+    else avatar.innerHTML = BLANK_AVATAR;
+    if (!accountPanel.classList.contains("open")) return;
+    const state = acct ? syncState(status, lastSynced) : "";
+    accountPanel.innerHTML = acct ? `
+        <div class="support-callout-arrow"></div>
+        <p class="support-callout-title">${esc(acct.name || "Signed in")}</p>
+        <p class="support-callout-body">${acct.email ? `${esc(acct.email)}<br>` : ""}Your favorites, scores and lesson
+            progress are kept in step on every device you sign in on.${state ? `<br><span class="sync-state">${state}</span>` : ""}</p>
+        <div class="support-callout-actions">
+            <button type="button" class="support-callout-btn support-callout-btn-secondary" data-account="out">Sign out</button>
+            <button type="button" class="support-callout-btn support-callout-btn-text" data-account="close">Close</button>
+        </div>` : `
+        <div class="support-callout-arrow"></div>
+        <p class="support-callout-title">Sign in</p>
+        <p class="support-callout-body">Sign in with Google to keep your favorites, scores and lesson progress on
+            every phone, tablet and computer you use. Optional: everything works without it.</p>
+        <div class="support-callout-actions">
+            <button type="button" class="support-callout-btn support-callout-btn-primary" data-account="in">Sign in with Google</button>
+            <button type="button" class="support-callout-btn support-callout-btn-text" data-account="close">Not now</button>
+        </div>`;
+}
+
+function openAccountPanel() {
+    accountPanel.classList.add("open");
+    accountBtn.setAttribute("aria-expanded", "true");
+    renderAccount();
+    setTimeout(() => document.addEventListener("click", accountOutsideClick), 0);
+}
+
+function closeAccountPanel() {
+    accountPanel.classList.remove("open");
+    accountBtn.setAttribute("aria-expanded", "false");
+    document.removeEventListener("click", accountOutsideClick);
+}
+
+function accountOutsideClick(e) {
+    if (!accountPanel.contains(e.target) && !accountBtn.contains(e.target)) closeAccountPanel();
+}
+
+accountBtn.addEventListener("click", () => {
+    if (accountPanel.classList.contains("open")) return closeAccountPanel();
+    track("account_button", { signed_in: !!account() });
+    openAccountPanel();
+});
+accountPanel.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-account]");
+    const action = btn?.dataset.account;
+    if (action === "close") closeAccountPanel();
+    else if (action === "in") startSignIn(btn).then(() => account() && closeAccountPanel());
+    else if (action === "out") {
+        closeAccountPanel();
+        startSignOut();
+    }
+});
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && accountPanel.classList.contains("open")) closeAccountPanel();
+});
+renderAccount();
 
 onSync(({ changed }) => {
     renderSyncCard();
+    renderAccount();
     if (changed) {
         favorites = store.get("favorites", []);
         // Favorites from another device: show them if the hymn list is open
@@ -811,6 +898,10 @@ async function openDownloadPanel() {
         </div>
         ${all ? "" : `<p class="download-hint">To download every hymn, use this button on the main page.</p>`}`;
     downloadPanel.classList.add("open");
+    // Point the panel's arrow at the download button, however many buttons follow it
+    const arrow = downloadPanel.querySelector(".support-callout-arrow");
+    const btn = downloadBtn.getBoundingClientRect();
+    arrow.style.right = `${Math.round(downloadPanel.getBoundingClientRect().right - (btn.left + btn.width / 2) - 6)}px`;
     setTimeout(() => document.addEventListener("click", downloadOutsideClick), 0);
 }
 
