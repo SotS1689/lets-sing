@@ -221,7 +221,7 @@ main {
     font: inherit;
 }
 .search input:focus { outline: 2px solid var(--primary); outline-offset: 0; }
-/* "Install app" card (Android only -- see the install section of main.js) */
+/* "Install app" card, or the iPhone Share tip (see the install section of main.js) */
 .install-banner {
     margin: 8px 0 4px;
     padding: 14px 16px;

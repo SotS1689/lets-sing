@@ -973,10 +973,32 @@ const INSTALL_TEXT = HANDHELD
               : "Let's Sing is installed. Find it with your other apps.",
       };
 
+// iPhones and iPads have no install prompt: Apple leaves it to Safari's Share
+// menu, so there we show a tip instead of a button. (iPads report themselves
+// as a Mac, but a Mac has no touch screen.)
+const IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+    (/Macintosh/i.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
+const IOS_TIP = IOS && !navigator.standalone && !document.documentElement.classList.contains("embed");
+
 function renderInstallBanner() {
     const slot = document.getElementById("install-slot");
     if (!slot) return;
     const snoozed = Date.now() - store.get("installSnoozed", 0) < INSTALL_SNOOZE_DAYS * 864e5;
+    if (IOS_TIP && !snoozed) {
+        slot.innerHTML = `
+        <div class="install-banner">
+            <p class="install-title">Put Let's Sing on your ${/iPad/i.test(navigator.userAgent) || !/iPhone|iPod/i.test(navigator.userAgent) ? "iPad" : "iPhone"}</p>
+            <p class="install-body">Tap Share, then Add to Home Screen to install.</p>
+            <div class="install-actions">
+                <button type="button" class="install-later" id="install-later">Not now</button>
+            </div>
+        </div>`;
+        document.getElementById("install-later").addEventListener("click", () => {
+            store.set("installSnoozed", Date.now());
+            renderInstallBanner();
+        });
+        return;
+    }
     if (!installPrompt || snoozed) return (slot.innerHTML = "");
     slot.innerHTML = `
         <div class="install-banner">
