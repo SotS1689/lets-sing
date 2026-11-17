@@ -854,14 +854,33 @@ async function showDownloadButton() {
 if (navigator.serviceWorker?.controller) showDownloadButton();
 else navigator.serviceWorker?.addEventListener("controllerchange", showDownloadButton, { once: true });
 
-// ---- Install the app (Android) -----------------------------------------------
-// Chrome, Edge and Samsung Internet on Android announce when the site can be
-// installed (beforeinstallprompt). We hold on to that and show a big Install
-// button on the list screen, so nobody has to find "Install app" in the
-// browser's menu. It never fires once the app is installed, or on iPhones.
+// ---- Install the app (Android and computers) ----------------------------------
+// Chrome, Edge and Samsung Internet announce when the site can be installed
+// (beforeinstallprompt), on Android and on Windows/Mac/ChromeOS alike. We hold
+// on to that and show a big Install button on the list screen, so nobody has to
+// find "Install app" in the browser's menu. It never fires once the app is
+// installed, or on iPhones (or in Firefox).
 
 let installPrompt = null;
 const INSTALL_SNOOZE_DAYS = 14;
+// Phones and tablets get a home-screen icon; computers get a windowed app
+const HANDHELD = navigator.userAgentData?.mobile || /Android|iPhone|iPad|Mobi/i.test(navigator.userAgent);
+const WINDOWS = /Windows/i.test(navigator.userAgentData?.platform || navigator.userAgent);
+const INSTALL_TEXT = HANDHELD
+    ? {
+          title: "Put Let's Sing on your phone",
+          body: "Install it like any other app, with its own icon on your home screen.",
+          done: "Let's Sing is installed. Look for its icon on your home screen.",
+      }
+    : {
+          title: "Put Let's Sing on this computer",
+          body: WINDOWS
+              ? "Install it like any other program. It opens in its own window, from your Start menu or taskbar."
+              : "Install it like any other program. It opens in its own window, with its own icon.",
+          done: WINDOWS
+              ? "Let's Sing is installed. Find it in your Start menu, or pin it to the taskbar."
+              : "Let's Sing is installed. Find it with your other apps.",
+      };
 
 function renderInstallBanner() {
     const slot = document.getElementById("install-slot");
@@ -870,8 +889,8 @@ function renderInstallBanner() {
     if (!installPrompt || snoozed) return (slot.innerHTML = "");
     slot.innerHTML = `
         <div class="install-banner">
-            <p class="install-title">Put Let's Sing on your phone</p>
-            <p class="install-body">Install it like any other app, with its own icon on your home screen.</p>
+            <p class="install-title">${INSTALL_TEXT.title}</p>
+            <p class="install-body">${INSTALL_TEXT.body}</p>
             <div class="install-actions">
                 <button type="button" class="install-btn" id="install-app">Install app</button>
                 <button type="button" class="install-later" id="install-later">Not now</button>
@@ -898,7 +917,7 @@ window.addEventListener("beforeinstallprompt", (event) => {
 window.addEventListener("appinstalled", () => {
     installPrompt = null;
     renderInstallBanner();
-    toast("Let's Sing is installed. Look for its icon on your home screen.", 4000);
+    toast(INSTALL_TEXT.done, 4000);
 });
 
 // ---- Player screen ----------------------------------------------------------
