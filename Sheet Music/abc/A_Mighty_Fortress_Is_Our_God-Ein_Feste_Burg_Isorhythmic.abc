@@ -71,9 +71,9 @@
 X: 1
 T: A Mighty Fortress Is Our God
 C: Words: Martin Luther, 1529. Translation Frederic Henry Hedge, 1853.
-C: Music: 'Ein Feste Burg (Isorhythmic)' Martin Luther, 1529.  Setting: "Common Service Book" (ULCA), 1917, alt.
+C: Music: 'Ein Feste Burg (Isorhythmic)' Martin Luther, 1529.  Setting as in Trinity Hymnal (1990), Hymn 92 (Baptist Edition, 1995, Hymn 81).
 C: copyright: public domain.  This score is a part of the Open Hymnal Project, 2013 Revision.
-S: Music source: 'Common Service Book with Hymnal', ULCA 1918 Hymn 195, alt. to match syncopation of Hedge translation
+S: Music source: Trinity Hymnal, Baptist Edition (1995), Hymn 81.
 S: Lyric source: Presbyterian Hymnal, Revised, 1911 Hymn 122.
 M: 4/4 % time signature
 L: 1/4 % default length
@@ -86,7 +86,7 @@ V: S2V1 clef=bass
 %%MIDI beat 127 125 110 1
 V: S2V2 
 %%MIDI beat 127 125 110 1
-K: D % key signature
+K: C % key signature
 %
 %%MIDI program 1 0 % Piano 1
 %%MIDI program 2 0 % Piano 1
@@ -94,39 +94,39 @@ K: D % key signature
 %%MIDI program 4 0 % Piano 1
 %
 % 1
-[V: S1V1] [Q:1/4=110] d | d d A/B/ c | d/c/ B !fermata!A d | c B A B | (G/F/ E) !fermata!D
+[V: S1V1] [Q:1/4=110] c | c c G/A/ B | c/B/ A !fermata!G c | B A G A | (F/E/ D) !fermata!C
 w: 1.~A might- y for- * tress is * our God, a bul- wark nev- er fail- * * ing;
 w: 2.~Did we in our * own strength * con- fide, our striv- ing would be los- * * ing;
 w: 3.~And though this world, * with de- * vils filled, should threat- en to un- do * * us,
 w: 4.~That word a- bove * all earth- * ly powers, no thanks to them, a- bid- * * eth;
-[V: S1V2] F | D F E E | D E !ferm!C D | F D D D | (B, C) !ferm!D
-[V: S2V1] A, | A, A, A,/^G,/ A, | F, ^G, !invertedfermata!A, F, | A, G, F, F, | (G, A,) !invertedfermata!F,
-[V: S2V2] D, | F, D, C,/B,,/ A,, | B,, E, !ferm!A,, B,, | F, G, D, B,, | (E, A,,) !ferm!D,
+[V: S1V2] E | C E D G | E ^F !ferm!G E | E C C C | (A, B,) !ferm!C
+[V: S2V1] G, | G, G, B, B, | A, D/C/ !invertedfermata!B, A, | G, F, E, E, | (F, G,) !invertedfermata!E,
+[V: S2V2] C, | E, C, G, E, | A, D, !ferm!G, A, | E, F, C, A,, | (D, G,,) !ferm!C,
 % 5
-[V: S1V1] d | d d A/B/ c | d/c/ B !fermata!A d | c B A B | (G/F/ E) !fermata!D
+[V: S1V1] c | c c G/A/ B | c/B/ A !fermata!G c | B A G A | (F/E/ D) !fermata!C
 w: Our help- er He, * a- mid * the flood of mor- tal ills pre- vail- * * ing:
 w: Were not the right * Man on * our side, the Man of God's own choos- * * ing:
 w: We will not fear, * for God * hath willed His truth to tri- umph through * * us:
 w: The Spir- it and * the gifts * are ours through Him who with us sid- * * eth:
-[V: S1V2] F | D F E E | D E !ferm!C D | F D D D | (B, C) !ferm!D
-[V: S2V1] A, | A, A, A,/^G,/ A, | F, ^G, !invertedfermata!A, F, | A, G, F, F, | (G, A,) !invertedfermata!F,
-[V: S2V2] D, | F, D, C,/B,,/ A,, | B,, E, !ferm!A,, B,, | F, G, D, B,, | (E, A,,) !ferm!D,
+[V: S1V2] E | C E D G | E ^F !ferm!G E | E C C C | (A, B,) !ferm!C
+[V: S2V1] G, | G, G, B, B, | A, D/C/ !invertedfermata!B, A, | G, F, E, E, | (F, G,) !invertedfermata!E,
+[V: S2V2] C, | E, C, G, E, | A, D, !ferm!G, A, | E, F, C, A,, | (D, G,,) !ferm!C,
 % 9
-[V: S1V1] D | F A B ^G | !fermata!A D A A | B c !fermata!d c | d c B B | !fermata!A
+[V: S1V1] C | G A G ^F | !fermata!G C G G | A B !fermata!c B | c B A A | !fermata!G
 w: For still our an- cient foe doth seek to work us woe; His craft and power are great, 
 w: Dost ask who that may be? Christ Je- sus, it is He; Lord Sab- a- oth, His name, 
 w: The Prince of Dark- ness grim, we trem- ble not for him; His rage we can en- dure, 
 w: Let goods and kin- dred go, this mor- tal life al- so; The bo- dy they may kill: 
-[V: S1V2] D | D E F E | !ferm!E D E F | G G !ferm!F F | F E (F E/D/) | !ferm!C
-[V: S2V1] F, | A,2 D B, | !invertedfermata!C F, A, D | D E !invertedfermata!A, A, | F, A, (A, ^G,) | !invertedfermata!A,
-[V: S2V2] D, | D, C, B,, E, | !ferm!A,, B,, C, D, | G, E, !ferm!D, F, | B,, C, (D, E,) | !ferm!A,,
+[V: S1V2] C | C E D D/C/ | !ferm!B, C D E | F F !ferm!E E | C D E D/C/ | !ferm!B,
+[V: S2V1] E, | E, C B, A, | !invertedfermata!G, E, G, C | C D !invertedfermata!C G, | E,/^F,/ G, G, ^F, | !invertedfermata!G,
+[V: S2V2] C, | C, A,, B,,/C,/ D, | !ferm!G,, A,, B,, C, | F,/E,/ D, !ferm!A,, E, | A,, B,, C, D, | !ferm!G,
 % 14
-[V: S1V1] B B A | B G !fermata!F !sintro!d | c B A B | (G/F/ E) !fermata!D !eintro!|]
+[V: S1V1] A A G | A F !fermata!E !sintro!c | B A G A | (F/E/ D) !fermata!C !eintro!|]
 w: and, armed with cru- el hate, On earth is not his e- * * qual.
 w: from age to age the same, And He must win the bat- * * tle.
 w: for lo, his doom is sure, One lit- tle word shall fell * * him.
 w: God's truth a- bid- eth still, His king- dom is for- ev- * * er.
-[V: S1V2] G G F | F E !ferm!C F | F/E/ D D/=C/ B, | (B, =C) !ferm!D |]
-[V: S2V1] D D3/2 =C/ | B, B, !invertedfermata!^A, B, | A, G, F, F, | (G, A,/G,/) !invertedfermata!F, |]
-[V: S2V2] G,, B,, D, | ^D, E, !ferm!F, B,, | F, G, D, ^D, | (E, A,,) !ferm!D, |]
+[V: S1V2] F F E | E D !ferm!E C | F F F E | (D/C/ B,) !ferm!C |]
+[V: S2V1] C C3/2 ^A,/ | A, A, !invertedfermata!^G, A, | A,/B,/ C D A, | (A, G,/F,/) !invertedfermata!E, |]
+[V: S2V2] F, F,, C, | ^C, D, !ferm!E, A,, | D, C, B,, ^C, | (D, G,,) !ferm!C, |]
 
