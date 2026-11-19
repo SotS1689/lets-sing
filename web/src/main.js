@@ -1758,6 +1758,45 @@ route();
 
 // ---- Offline support (production builds only) ---------------------------------
 
+// A release installs a new service worker in the background, and it takes over
+// at once (sw-template.js). But the open page keeps running the old code and
+// hymn list until it reloads, and an installed app can stay open, or resume,
+// for days. So when a new worker takes over from an old one, the page quietly
+// reloads itself onto the new version. Reloading keeps favorites and settings
+// (localStorage) and downloaded hymns (their own cache), so nobody has to clear
+// anything.
+const UPDATE_CHECK_MS = 30 * 60e3;
+let updateWaiting = false;
+
+// Not while someone is on a hymn or lesson (it could be mid-song) or pasting
+// favorites; then it waits until they leave that screen or the app.
+const busyScreen = () => document.visibilityState === "visible" &&
+    /^#\/(hymn\/|learn\/|favorites\/paste)/.test(location.hash);
+
+function applyUpdate() {
+    if (updateWaiting && !busyScreen()) location.reload();
+}
+
 if (import.meta.env.PROD && "serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./sw.js").catch((e) => console.warn("service worker:", e));
+    // The first worker only sets up offline use; any later one is an update
+    let controlled = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+        updateWaiting = controlled;
+        controlled = true;
+        applyUpdate();
+    });
+    window.addEventListener("hashchange", applyUpdate);
+    document.addEventListener("visibilitychange", applyUpdate);
+    navigator.serviceWorker.register("./sw.js").then((reg) => {
+        // Browsers look for a new version only when a page loads, so an app
+        // left open (or resumed from the background) looks again itself.
+        let lastCheck = Date.now();
+        const check = () => {
+            if (Date.now() - lastCheck < UPDATE_CHECK_MS || !navigator.onLine) return;
+            lastCheck = Date.now();
+            reg.update().catch(() => { /* offline or server busy: try next time */ });
+        };
+        document.addEventListener("visibilitychange", () => document.visibilityState === "visible" && check());
+        setInterval(check, UPDATE_CHECK_MS);
+    }).catch((e) => console.warn("service worker:", e));
 }
