@@ -16,6 +16,8 @@ const hymns = JSON.parse(readFileSync(MASTER, "utf8"));
 
 // The file name is the midi_url's last path segment
 const midiFile = (h) => decodeURIComponent((h.midi_url || "").split("/").pop() || "");
+const MIDI_FILES = new Set(readdirSync(MIDI_SRC));
+const MIDI_FILES_LOWER = new Map([...MIDI_FILES].map((f) => [f.toLowerCase(), f]));
 
 rmSync(`${OUT}/midi`, { recursive: true, force: true });
 mkdirSync(`${OUT}/midi`, { recursive: true });
@@ -61,7 +63,12 @@ const missing = [];
 const slim = [];
 for (const h of hymns) {
     const file = midiFile(h);
-    const hasMidi = file.endsWith(".mid") && existsSync(`${MIDI_SRC}/${file}`);
+    // Exact match only: Windows finds a file whose name differs in capitals,
+    // but the Linux build that publishes the site doesn't.
+    const hasMidi = file.endsWith(".mid") && MIDI_FILES.has(file);
+    if (!hasMidi && MIDI_FILES_LOWER.has(file.toLowerCase())) {
+        console.warn(`  ${h.id} ${h.title}: midi_url says ${file} but the file is ${MIDI_FILES_LOWER.get(file.toLowerCase())} (capitals differ)`);
+    }
     let midiVersion = null;
     if (hasMidi) {
         copyFileSync(`${MIDI_SRC}/${file}`, `${OUT}/midi/${file}`);
