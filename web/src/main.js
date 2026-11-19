@@ -1058,11 +1058,18 @@ const INSTALL_TEXT = HANDHELD
       };
 
 // iPhones and iPads have no install prompt: Apple leaves it to Safari's Share
-// menu, so there we show a tip instead of a button. (iPads report themselves
+// menu (behind the ••• button since iOS 26), so there we show a tip instead of
+// a button. (iPads report themselves
 // as a Mac, but a Mac has no touch screen.)
 const IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
     (/Macintosh/i.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
 const IOS_TIP = IOS && !navigator.standalone && !document.documentElement.classList.contains("embed");
+// Chrome on an iPhone keeps its Share button in the address bar instead.
+const IOS_CHROME = /CriOS/i.test(navigator.userAgent);
+// Apple's Share symbol (a box with an arrow pointing up), drawn inline in the tip.
+const SHARE_ICON = `<svg class="share-icon" viewBox="0 0 24 24" role="img" aria-label="Share icon"
+    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3v12M7.5 7.5 12 3l4.5 4.5"/><path d="M8 10H6.5A1.5 1.5 0 0 0 5 11.5v8A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5v-8a1.5 1.5 0 0 0-1.5-1.5H16"/></svg>`;
 
 function renderInstallBanner() {
     const slot = document.getElementById("install-slot");
@@ -1072,7 +1079,10 @@ function renderInstallBanner() {
         slot.innerHTML = `
         <div class="install-banner">
             <p class="install-title">Put Let's Sing on your ${/iPad/i.test(navigator.userAgent) || !/iPhone|iPod/i.test(navigator.userAgent) ? "iPad" : "iPhone"}</p>
-            <p class="install-body">Tap Share, then Add to Home Screen to install.</p>
+            <p class="install-body">${IOS_CHROME
+                ? `Tap the Share button ${SHARE_ICON} at the right end of the address bar (or <b>•••</b>, then <b>Share</b> ${SHARE_ICON}).`
+                : `In Safari, tap the <b>•••</b> button beside the address bar, then <b>Share</b> ${SHARE_ICON}.`}
+                Scroll down, tap <b>Add to Home Screen</b>, leave <b>Open as Web App</b> on, and tap <b>Add</b>.</p>
             <div class="install-actions">
                 <button type="button" class="install-later" id="install-later">Not now</button>
             </div>

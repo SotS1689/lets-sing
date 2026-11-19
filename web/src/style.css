@@ -231,6 +231,7 @@ main {
 }
 .install-title { margin: 0 0 2px; font-size: 1.05rem; font-weight: 700; }
 .install-body { margin: 0 0 12px; color: var(--text-2); }
+.share-icon { width: 1.5em; height: 1.5em; vertical-align: -0.35em; color: var(--accent, #0a7aff); }
 .install-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
 .install-btn {
     min-height: 48px;
