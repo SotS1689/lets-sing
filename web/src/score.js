@@ -11,6 +11,7 @@
 //   so the note being sung stays near the left edge with what comes next in
 //   view, and the words of just the verse being sung under it.
 import abcjs from "abcjs";
+import { applyShapes } from "./shapes.js";
 
 /** Where the note being sung sits in the scrolling view: this share of the way
  *  across the space right of the pinned clefs. Just short of the middle, so the
@@ -41,9 +42,10 @@ export const learnGrade = (cents) =>
  * A score belongs to the tune, so for a hymn sharing it: `words` false leaves
  * out the words under the notes (they're another hymn's), and `verses` false
  * means the MIDI doesn't play this hymn's verses one per time through, so no
- * line of those words is lit as the verse being sung.
+ * line of those words is lit as the verse being sung. `shapes` "4" or "7" draws
+ * shape notes (src/shapes.js); "off" the usual round ones.
  */
-export async function loadScore(host, url, { words = true, verses = true, view = "page" } = {}) {
+export async function loadScore(host, url, { words = true, verses = true, view = "page", shapes = "off" } = {}) {
     // `url` may instead be { abc, map } already in hand (a Learn exercise the app wrote)
     let [abc, map] = typeof url === "object" ? [url.abc, url.map] : await Promise.all([
         fetch(url).then((r) => (r.ok ? r.text() : Promise.reject(new Error(r.status)))),
@@ -54,7 +56,7 @@ export async function loadScore(host, url, { words = true, verses = true, view =
     const followVerses = words && verses;
     // In the scrolling view `verse` is the time through the tune drawn first
     // (0 = the introduction); `passes` how many times through the line holds
-    const state = { view, verse: 1, passes: 1, heads: {}, timeline: null, strip: null, passWidth: 0 };
+    const state = { view, shapes, verse: 1, passes: 1, heads: {}, timeline: null, strip: null, passWidth: 0 };
     const lastVerse = map.verses.length;
     // Words under time through the tune k: that verse's, none for the introduction
     // (or for another hymn's words), verse 1's when the MIDI's verses aren't this hymn's
@@ -70,12 +72,12 @@ export async function loadScore(host, url, { words = true, verses = true, view =
             const passes = state.verse < lastVerse ? [state.verse, state.verse + 1] : [state.verse];
             const shown = stripAbc(abc, passes.map(wordsFor)).replace(/\[Q:[^\]]*\]/g, "").replace(/^Q:.*(\r?\n|$)/gm, ""); // the whole line: a blank line would end the tune
             const previousWidth = state.passWidth;
-            Object.assign(state, drawStrip(host, shown), { passes: passes.length });
+            Object.assign(state, drawStrip(host, shown, state.shapes), { passes: passes.length });
             // A single time through (the last verse) can't measure itself, but the
             // line drawn before it had the same notes
             state.passWidth = passWidth(state) || previousWidth;
         } else {
-            Object.assign(state, { heads: drawPage(host, abc), passes: 1, timeline: null, strip: null, pinWidth: 0 });
+            Object.assign(state, { heads: drawPage(host, abc, state.shapes), passes: 1, timeline: null, strip: null, pinWidth: 0 });
         }
     };
     const painter = makePainter(state, map, followVerses, host);
@@ -135,6 +137,13 @@ export async function loadScore(host, url, { words = true, verses = true, view =
             state.verse = 1;
             draw();
         },
+        /** "off", "4" or "7" (see src/shapes.js). */
+        setShapes(next) {
+            if (next === state.shapes) return;
+            state.shapes = next;
+            painter.clear();
+            draw();
+        },
     };
 }
 
@@ -156,7 +165,7 @@ function noteheads(tune) {
 }
 
 /** The score as a hymnal prints it, reflowed to fit `host`. */
-function drawPage(host, abc) {
+function drawPage(host, abc, shapes) {
     host.classList.remove("is-scrolling");
     host.innerHTML = "";
     const width = host.clientWidth;
@@ -170,6 +179,7 @@ function drawPage(host, abc) {
         paddingright: 0,
         paddingtop: 0,
     });
+    applyShapes(tune, shapes);
     return noteheads(tune);
 }
 
@@ -205,7 +215,7 @@ function passWidth(state) {
 }
 
 /** The music on one line inside a strip that slides sideways; returns its noteheads. */
-function drawStrip(host, abc) {
+function drawStrip(host, abc, shapes) {
     // The page view's "resize" mode sizes `host` itself (a padding-bottom as tall
     // as the page); without clearing that, the box stays page-sized
     host.removeAttribute("style");
@@ -235,6 +245,7 @@ function drawStrip(host, abc) {
         });
         if (tune.lines.filter((line) => line.staff).length <= 1 || staffwidth > 60000) break;
     }
+    applyShapes(tune, shapes);
     const heads = noteheads(tune);
     return { heads, timeline: null, strip, pinWidth: pinClefs(host, strip) };
 }

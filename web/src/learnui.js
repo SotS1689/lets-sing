@@ -323,7 +323,7 @@ async function exerciseRun(card, ex, mic, ctx, hymn, target, onDone) {
     try {
         const [loaded, score] = await Promise.all([
             player.load(url),
-            loadScore(stage.querySelector("[data-score]"), source, { words, verses, view: "scroll" }),
+            loadScore(stage.querySelector("[data-score]"), source, { words, verses, view: "scroll", shapes: ctx.shapes }),
         ]);
         if (!loaded || stopped) return handle;
         handle.score = score;

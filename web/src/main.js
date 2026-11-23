@@ -42,8 +42,7 @@ const SCORE_VIEWS = [
 // Learn mode: the part the singer is learning (0 S, 1 A, 2 T, 3 B)
 let learnPart = [0, 1, 2, 3].includes(store.get("learnPart")) ? store.get("learnPart") : 0;
 let scoreView = SCORE_VIEWS.some((v) => v.id === store.get("scoreView")) ? store.get("scoreView") : "scroll";
-// Shape notes on the sheet music. Not drawn yet: the choice is saved now so
-// src/score.js can read it once shape notes are built. "off", "4" (fa-sol-la-mi,
+// Shape notes on the sheet music (src/shapes.js): "off", "4" (fa-sol-la-mi,
 // as in the Sacred Harp) or "7" (do-re-mi, Aikin's seven shapes).
 const SHAPE_NOTES = [
     { id: "off", name: "Off", title: "Ordinary round notes" },
@@ -555,7 +554,7 @@ const learnNav = () => `<nav class="tabs learn-tabs" aria-label="Which hymns">
 
 /** What the course screens need from the app. */
 const learnCtx = () => ({
-    app, esc, toast, track, hymnsPromise, midiUrl, scoreUrl,
+    app, esc, toast, track, hymnsPromise, midiUrl, scoreUrl, shapes: shapeNotes,
     setTitle(title) {
         pageTitle.textContent = title;
         document.title = `${title} · Let's Sing`;
@@ -863,7 +862,7 @@ function showSettings() {
                     ${choiceRow("scoreView", "Sheet music", SCORE_VIEWS, scoreView)}
                 </div>
                 <div class="setting">
-                    <div><p class="setting-name">Shape notes <span class="badge">Coming soon</span></p>
+                    <div><p class="setting-name">Shape notes</p>
                         <p class="hint">Each note gets a shape for its place in the scale, to help you sing at sight.</p></div>
                     ${choiceRow("shapeNotes", "Shape notes", SHAPE_NOTES, shapeNotes)}
                 </div>
@@ -883,7 +882,6 @@ function showSettings() {
             else if (key === "shapeNotes") {
                 shapeNotes = value;
                 store.set("shapeNotes", value);
-                if (value !== "off") toast("Saved. Shape notes will show on the music in a coming update.", 3000);
             }
             track("setting", { name: key, value });
         })
@@ -1796,7 +1794,7 @@ async function showHymn(id) {
         // Loaded only here, so the hymn list doesn't wait for the notation library
         import("./score.js")
             .then(({ loadScore }) =>
-                loadScore($("#score"), scoreUrl(hymn), { words: hymn.scoreWords, verses: hymn.scoreVerses, view: scoreView })
+                loadScore($("#score"), scoreUrl(hymn), { words: hymn.scoreWords, verses: hymn.scoreVerses, view: scoreView, shapes: shapeNotes })
             )
             .then((s) => {
                 if (location.hash !== `#/hymn/${id}`) return;
