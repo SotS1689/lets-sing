@@ -5,7 +5,7 @@
 //
 // In the cloud (Firestore, free plan), per person:
 //   users/<uid>            { favorites: { <hymn id>: { on, at } }, lessons: <lesson progress>,
-//                            cleared: <ms> }
+//                            lists: <the singer's own lists' log, see LISTS_LOG>, cleared: <ms> }
 //   users/<uid>/runs/<id>  one Learn score each, with t = when it reached the cloud
 // Each sync reads only the scores that arrived since the last one, so a long
 // history isn't downloaded again on every visit.
@@ -15,6 +15,10 @@ const ACCOUNT = "syncAccount"; // { uid, name, email } while signed in; { pendin
 const LESSONS = "learnLessons"; // src/learnui.js
 const FAVORITES = "favorites"; // hymn ids in the order they were added (src/main.js)
 const FAV_LOG = "favoritesLog"; // { <hymn id>: { on, at } }: when each was last starred or unstarred
+const LISTS = "hymnLists"; // the singer's own named lists: [{ id, name, hymns: [hymn ids] }] (src/main.js)
+// { <list id>: { name, at, created, deleted?, hymns: { <hymn id>: { on, at } } } }:
+// `at` is when it was last named (or deleted); each hymn's log works like favorites'
+const LISTS_LOG = "hymnListsLog";
 const metaKey = (uid) => `syncMeta:${uid}`;
 const RUN_FIELDS = ["hymn", "title", "part", "at", "on", "flat", "sharp"];
 
@@ -89,6 +93,8 @@ export async function signOut(removeHere = false) {
         drop(LESSONS);
         drop(FAVORITES);
         drop(FAV_LOG);
+        drop(LISTS);
+        drop(LISTS_LOG);
         if (uid) drop(metaKey(uid));
     }
     status = "idle";
@@ -125,18 +131,80 @@ function favoritesLog() {
     return log;
 }
 
+/** Notes in `log` which hymns came onto and went off `list` at time `at`; returns the next free time. */
+function noteHymns(log, list, at) {
+    const now = new Set(list.map(String));
+    for (const [id, e] of Object.entries(log)) if (e.on && !now.has(id)) log[id] = { on: false, at };
+    // A millisecond apart, so hymns added together keep their order
+    for (const id of now) if (!log[id]?.on) log[id] = { on: true, at: at++ };
+    return at;
+}
+
 /** The favorites list was changed here to `list`: note what was starred and unstarred. */
 export function favoritesChanged(list) {
     // (Not favoritesLog(): `list` is already saved, and its new stars are new, not old)
     const log = read(FAV_LOG, {});
-    let at = Date.now();
-    const now = new Set(list.map(String));
-    for (const [id, e] of Object.entries(log)) if (e.on && !now.has(id)) log[id] = { on: false, at };
-    // A millisecond apart, so hymns starred together keep their order
-    for (const id of now) if (!log[id]?.on) log[id] = { on: true, at: at++ };
+    noteHymns(log, list, Date.now());
     write(FAV_LOG, log);
     changed();
 }
+
+// ---- The singer's own lists ------------------------------------------------------
+// Each list's latest name (or deletion) wins, and its hymns merge like favorites,
+// so a hymn added on the phone and another on the computer both stay.
+
+/** The lists' log, started from this device's lists the first time. */
+function listsLog() {
+    const log = read(LISTS_LOG, {});
+    read(LISTS, []).forEach((l, i) => {
+        const e = (log[l.id] ??= { name: l.name, at: i + 1, created: i + 1, hymns: {} });
+        l.hymns.forEach((id, j) => (e.hymns[id] ??= { on: true, at: j + 1 }));
+    });
+    return log;
+}
+
+/** The lists were changed here to `lists`: note what was made, renamed, deleted, added and removed. */
+export function listsChanged(lists) {
+    const log = read(LISTS_LOG, {});
+    let at = Date.now();
+    const here = new Set(lists.map((l) => l.id));
+    for (const [id, e] of Object.entries(log)) {
+        if (!e.deleted && !here.has(id)) log[id] = { name: e.name, at, created: e.created, deleted: true, hymns: {} };
+    }
+    for (const l of lists) {
+        const e = (log[l.id] ??= { name: l.name, at, created: at, hymns: {} });
+        if (e.name !== l.name || e.deleted) Object.assign(e, { name: l.name, at, deleted: false });
+        at = noteHymns(e.hymns, l.hymns, at);
+    }
+    write(LISTS_LOG, log);
+    changed();
+}
+
+/** Two lists' logs as one: the later name or deletion of each list, and both sides' hymns. */
+export function mergeLists(here, there) {
+    const out = { ...there };
+    for (const [id, e] of Object.entries(here ?? {})) {
+        const o = out[id];
+        if (!o) {
+            out[id] = e;
+            continue;
+        }
+        const newer = e.at > o.at ? e : o;
+        out[id] = {
+            name: newer.name,
+            at: newer.at,
+            created: Math.min(e.created ?? newer.at, o.created ?? newer.at),
+            ...(newer.deleted ? { deleted: true, hymns: {} } : { hymns: mergeFavorites(e.hymns, o.hymns) }),
+        };
+    }
+    return out;
+}
+
+/** The lists a log gives, oldest first. */
+const listsFrom = (log) => Object.entries(log)
+    .filter(([, e]) => !e.deleted)
+    .sort((a, b) => a[1].created - b[1].created || (a[0] < b[0] ? -1 : 1))
+    .map(([id, e]) => ({ id, name: e.name, hymns: favoritesFrom(e.hymns ?? {}) }));
 
 /** Two logs as one: for each hymn, whichever change came last. */
 export function mergeFavorites(here, there) {
@@ -255,6 +323,16 @@ export async function syncWith(f, uid) {
     }
     write(FAV_LOG, favLog);
     if (stable(favLog) !== stable(cloud.favorites ?? {})) await f.setDoc(userRef, { favorites: favLog }, { merge: true });
+
+    // The singer's own lists
+    const listLog = mergeLists(listsLog(), cloud.lists ?? {});
+    const lists = listsFrom(listLog);
+    if (stable(lists) !== stable(read(LISTS, []))) {
+        write(LISTS, lists);
+        changedHere = true;
+    }
+    write(LISTS_LOG, listLog);
+    if (stable(listLog) !== stable(cloud.lists ?? {})) await f.setDoc(userRef, { lists: listLog }, { merge: true });
 
     // Lesson progress: the best of both
     const local = read(LESSONS, null);

@@ -22,7 +22,10 @@ MIDI files, then build.
 - `src/main.js` — the screens (list `#/`, favorites `#/favorites`, paste a list
   `#/favorites/paste`, player `#/hymn/<id>`), search, settings. Favorites are hymn
   ids kept in localStorage on each device; the star on a list row or a hymn's
-  page adds or removes one.
+  page adds or removes one. The singer's own named lists (`#/lists/<id>`, paste
+  into one at `#/lists/<id>/paste`) sit beside Favorites under "My lists"; the
+  list button beside a hymn's title adds it to any of them or makes a new one.
+  Signed in, lists sync like favorites (the `lists` field in Firestore).
 - `src/sync.js`, `src/firebase.js` — optional Google sign-in (on the Learn page)
   that keeps Learn scores and lesson progress in step across devices, through
   Firebase's free plan (project `lets-sing-b6277`). Firebase loads only for

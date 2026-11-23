@@ -325,6 +325,52 @@ main {
 .hymn-title-row { display: flex; align-items: flex-start; gap: 4px; }
 .hymn-title-row h2 { flex: 1; }
 .hymn-title-row .star-btn { margin: -6px -8px 0 0; }
+.hymn-title-row .list-pick .star-btn { margin-left: 4px; }
+.embed .hymn-head .list-pick { display: none; }
+
+/* The singer's own lists: one chip each under "My lists", and the menu beside a hymn's title */
+.list-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 4px 0; }
+.list-chips a, .list-chip-new {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    min-height: 36px;
+    padding: 0 14px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.list-chips a svg { width: 16px; height: 16px; fill: var(--secondary); }
+.list-chips a[aria-current="page"] { border-color: var(--primary); background: var(--primary); color: var(--on-primary); }
+.list-chips a[aria-current="page"] .tab-count { color: inherit; opacity: 0.85; }
+.list-chips a[aria-current="page"] svg { fill: currentColor; }
+.list-chip-new { border-style: dashed; color: var(--text-2); }
+.list-chips a:hover, .list-chip-new:hover { border-color: var(--primary); }
+.list-pick { position: relative; flex: none; }
+.list-pick .star-btn[aria-pressed="true"] { color: var(--primary); }
+.list-menu {
+    position: absolute;
+    top: 40px;
+    right: -8px;
+    z-index: 20;
+    min-width: 220px;
+    max-width: min(300px, calc(100vw - 32px));
+    padding: 8px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: 0 6px 24px rgb(0 0 0 / 0.18);
+}
+.list-menu-head { margin: 4px 8px 6px; font-size: 0.8rem; font-weight: 600; color: var(--text-2); }
+.list-menu label { display: flex; align-items: center; gap: 10px; padding: 8px; border-radius: 8px; cursor: pointer; overflow-wrap: anywhere; }
+.list-menu label:hover { background: color-mix(in srgb, var(--primary) 8%, transparent); }
+.list-menu input { width: 18px; height: 18px; margin: 0; accent-color: var(--primary); flex: none; }
+.list-menu .link-btn { display: block; width: 100%; padding: 8px; text-align: left; color: var(--primary); }
 
 /* Paste a list into favorites */
 .paste h2 { margin: 16px 0 4px; font-size: 1.3rem; }
