@@ -8,12 +8,14 @@ permission): the 1650 Scottish Psalter as kept in its modernized/ folder, and a
 four-part tune from its tunes/ library, which becomes both the sheet music and
 the MIDI (played once per stanza), so the two agree by construction.
 
-    python Psalms/psalm_from_svrbc.py <psalter checkout> <psalm> <tune file> [--second] [--dry-run]
+    python Psalms/psalm_from_svrbc.py <psalter checkout> <psalm> <tune file> [--second] [--new] [--dry-run]
 
     <psalter checkout>  a clone of gitlab.com/svrbc/psalter.svrbc.org
     <psalm>             1-150; the app's entry with that psalm_number changes
     <tune file>         a name in its tunes/ folder, e.g. evan (or evan.abc)
     --second            the psalter's second setting (psalm-NNNb.txt)
+    --new               add the psalm as a new entry (the next free id), for a
+                        psalm the app has no entry for yet
 
 Writes midi/psalm_NNN_<tune>.mid
 and "Sheet Music/abc/psalm_NNN_<tune>.abc", and updates the psalm's entry in
@@ -98,6 +100,7 @@ def main():
     ap.add_argument("psalm", type=int)
     ap.add_argument("tune")
     ap.add_argument("--second", action="store_true")
+    ap.add_argument("--new", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
@@ -112,9 +115,14 @@ def main():
 
     hymns = json.loads(ch.HYMNS_JSON.read_text(encoding="utf-8"))
     entry = [h for h in hymns if h.get("psalm_number") == args.psalm]
-    if len(entry) != 1:
-        sys.exit(f"{len(entry)} entries have psalm_number {args.psalm}; expected one.")
-    entry = entry[0]
+    if args.new:
+        if entry:
+            sys.exit(f"Psalm {args.psalm} already has an entry ({entry[0]['title']}); leave out --new to change it.")
+        entry = {"id": max(h["id"] for h in hymns) + 1, "psalm_number": args.psalm, "title": "(new)", "tune": ""}
+    elif len(entry) != 1:
+        sys.exit(f"{len(entry)} entries have psalm_number {args.psalm}; expected one (--new adds a psalm with none).")
+    else:
+        entry = entry[0]
     stem = f"psalm_{args.psalm:03d}_{tune_file.stem.replace('-', '_')}"
     verses = [f"{i + 1} " + "\n".join(lines) for i, lines in enumerate(stanzas)]
     title = f"{title_of(stanzas[0][0])} (Psalm {args.psalm})"
@@ -167,12 +175,15 @@ def main():
     print(f"  MIDI: {stem}.mid ({seconds / 60:.1f} min); score: {stem}.abc")
 
     # The entry, moved to its place by the new title
-    old_file = ch.midi_file(entry)
+    old_file = None if args.new else ch.midi_file(entry)
     for path in (ch.HYMNS_JSON,):
         hs = json.loads(path.read_text(encoding="utf-8"))
-        h = next(x for x in hs if x["id"] == entry["id"])
-        hs.remove(h)
-        h.update(changes)
+        if args.new:
+            h = {"id": entry["id"], "psalm_number": args.psalm, **changes}
+        else:
+            h = next(x for x in hs if x["id"] == entry["id"])
+            hs.remove(h)
+            h.update(changes)
         at = next((i for i, x in enumerate(hs) if x["title"].lower() > h["title"].lower()), len(hs))
         hs.insert(at, h)
         write(path, hs)

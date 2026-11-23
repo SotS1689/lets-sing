@@ -363,6 +363,7 @@
   },
   {
     "id": 15,
+    "psalm_number": 100,
     "title": "All People That On Earth Do Dwell (Psalm 100)",
     "tune": "Old 100th",
     "composer_arranger": "Genevan Psalter & Bourgeois",
@@ -2819,6 +2820,37 @@
     "credits": "Words: Psalm 63, The Scottish Psalter, 1650 (public domain), as kept by the svrbc psalter (psalter.svrbc.org). Tune: 'ST. AGNES' (CM), Setting: \"Hymnal and Canticles of the Protestant Episcopal Church\", 1875.. Music and score from the svrbc psalter's tune library (Open Hymnal Project, 2014.06 (Lamp of Our Feet))."
   },
   {
+    "id": 574,
+    "psalm_number": 90,
+    "title": "Lord, Thou Hast Been Our Dwelling-place (Psalm 90)",
+    "tune": "ST. ANNE",
+    "meter": "CM",
+    "text_source": "The Scottish Psalter, 1650, as kept by the svrbc psalter",
+    "verses": [
+      "1 Lord, thou hast been our dwelling-place\nin generations all.\nBefore thou ever hadst brought forth\nthe mountains great or small;",
+      "2 Ere ever thou hadst formed the earth,\nand all the world abroad;\nEv'n thou from everlasting art\nto everlasting God.",
+      "3 Thou dost unto destruction\nman that is mortal turn;\nAnd unto them thou say'st, Again,\nye sons of men, return.",
+      "4 Because a thousand years appear\nno more before thy sight\nThan yesterday, when it is past,\nor than a watch by night.",
+      "5 As with an overflowing flood\nthou carry'st them away:\nThey like a sleep are, like the grass\nthat grows at morn are they.",
+      "6 At morn it flourishes and grows,\ncut down at ev'n doth fade.\nFor by thine anger we're consumed,\nthy wrath makes us afraid.",
+      "7 Our sins thou and iniquities\ndost in thy presence place,\nAnd sett'st our secret faults before\nthe brightness of thy face.",
+      "8 For in thine anger all our days\ndo pass on to an end;\nAnd as a tale that hath been told,\nso we our years do spend.",
+      "9 Threescore and ten years do sum up\nour days and years, we see;\nOr, if, by reason of more strength,\nin some fourscore they be:",
+      "10 Yet doth the strength of such old men\nbut grief and labor prove;\nFor it is soon cut off, and we\nfly hence, and soon remove.",
+      "11 Who knows the power of thy wrath?\naccording to thy fear\nSo is thy wrath: Lord, teach thou us\nour end in mind to bear;",
+      "12 And so to count our days, that we\nour hearts may still apply\nTo learn thy wisdom and thy truth,\nthat we may live thereby.",
+      "13 Turn yet again to us, O Lord,\nhow long thus shall it be?\nLet it repent thee now for those\nthat servants are to thee.",
+      "14 O with thy tender mercies, Lord,\nus early satisfy;\nSo we rejoice shall all our days,\nand still be glad in thee.",
+      "15 According as the days have been,\nwherein we grief have had,\nAnd years wherein we ill have seen,\nso do thou make us glad.",
+      "16 O let thy work and pow'r appear\nthy servants' face before;\nAnd show unto their children dear\nthy glory evermore:",
+      "17 And let the beauty of the Lord\nour God be us upon:\nOur handy-works establish thou,\nestablish them each one."
+    ],
+    "composer_arranger": "Setting: composite found in \"The Lutheran Hymnary\", 1913.",
+    "midi_url": "assets/midi/psalm_090_st_anne.mid",
+    "mp3_url": "",
+    "credits": "Words: Psalm 90, The Scottish Psalter, 1650 (public domain), as kept by the svrbc psalter (psalter.svrbc.org). Tune: 'ST. ANNE' (CM), Setting: composite found in \"The Lutheran Hymnary\", 1913.. Music and score from the svrbc psalter's tune library (Open Hymnal Project, 2014.06 (Our God, Our Help In Ages Past))."
+  },
+  {
     "id": 565,
     "title": "My Jesus, I Love Thee",
     "tune": "Gordon",
@@ -2919,6 +2951,38 @@
     "credits": "Words: Psalm 85, The Scottish Psalter, 1650 (public domain), as kept by the svrbc psalter (psalter.svrbc.org). Tune: 'EVAN' (CM), Music: 'Evan' or 'Eva' William H. Havergal, 1847.  Setting: Lowell Mason, 1850.. Music and score from the svrbc psalter's tune library (Open Hymnal Project, 2014.06 (O That The Lord Would Guide My Ways))."
   },
   {
+    "id": 573,
+    "psalm_number": 72,
+    "title": "O Lord, Thy Judgments Give the King (Psalm 72)",
+    "tune": "DUNFERMLINE",
+    "meter": "CM",
+    "text_source": "The Scottish Psalter, 1650, as kept by the svrbc psalter",
+    "verses": [
+      "1 O Lord, thy judgments give the king,\nhis son thy righteousness.\nWith right he shall thy people judge,\nthy poor with uprightness.",
+      "2 The lofty mountains shall bring forth\nunto the people peace;\nLikewise the little hills the same\nshall do by righteousness.",
+      "3 The people's poor ones he shall judge,\nthe needy's children save;\nAnd those shall he in pieces break\nwho them oppressèd have.",
+      "4 They shall thee fear, while sun and moon\ndo last, through ages all.\nLike rain on mown grass he shall drop,\nor show'rs on earth that fall.",
+      "5 The just shall flourish in his days,\nand prosper in his reign:\nHe shall, while doth the moon endure,\nabundant peace maintain.",
+      "6 His large and great dominion shall\nfrom sea to sea extend:\nIt from the river shall reach forth\nunto earth's utmost end.",
+      "7 They in the wilderness that dwell\nbow down before him must;\nAnd they that are his enemies\nshall lick the very dust.",
+      "8 The kings of Tarshish, and the isles,\nto him shall presents bring;\nAnd unto him shall offer gifts\nSheba's and Seba's king.",
+      "9 Yea, all the mighty kings on earth\nbefore him down shall fall;\nAnd all the nations of the world\ndo service to him shall.",
+      "10 For he the needy shall preserve,\nwhen he to him doth call;\nThe poor also, and him that hath\nno help of man at all.",
+      "11 The poor man and the indigent\nin mercy he shall spare;\nHe shall preserve alive the souls\nof those that needy are.",
+      "12 Both from deceit and violence\ntheir soul he shall set free;\nAnd in his sight right precious\nand dear their blood shall be.",
+      "13 Yea, he shall live, and giv'n to him\nshall be of Sheba's gold:\nFor him still shall they pray, and he\nshall daily be extolled.",
+      "14 Of corn an handful in the earth\non tops of mountains high,\nWith prosp'rous fruit shall shake, like trees\non Lebanon that be.",
+      "15 The city shall be flourishing,\nher citizens abound\nIn number shall, like to the grass\nthat grows upon the ground.",
+      "16 His name for ever shall endure;\nlast like the sun it shall:\nMen shall be blessed in him, and blessed\nall nations shall him call.",
+      "17 Now blessed be the Lord our God,\nthe God of Israel,\nFor he alone doth wondrous works,\nin glory that excel.",
+      "18 And blessed be his glorious name\nto all eternity:\nThe whole earth let his glory fill.\nAmen, so let it be."
+    ],
+    "composer_arranger": "Scottish Psalter, 1615",
+    "midi_url": "assets/midi/psalm_072_dunfermline.mid",
+    "mp3_url": "",
+    "credits": "Words: Psalm 72, The Scottish Psalter, 1650 (public domain), as kept by the svrbc psalter (psalter.svrbc.org). Tune: 'DUNFERMLINE' (8.6.8.6), Scottish Psalter, 1615. The Scottish Psalter, 1883, names Dunfermline for this psalm (vv. 17-19). Music from the Cyber Hymnal (dunfermline.mid). copyright: public domain."
+  },
+  {
     "id": 421,
     "psalm_number": 102,
     "title": "O Lord, unto My Pray'r Give Ear (Psalm 102)",
@@ -2957,6 +3021,27 @@
     "midi_url": "assets/midi/psalm_102_st_flavian.mid",
     "mp3_url": "",
     "credits": "Words: Psalm 102, The Scottish Psalter, 1650 (public domain), as kept by the svrbc psalter (psalter.svrbc.org). Tune: 'ST. FLAVIAN' (CM), Setting: \"The Church Hymnal, Revised and Enlarged\" (Episcopal), 1905.. Music and score from the svrbc psalter's tune library (Open Hymnal Project, 2014.06 (Lord Who Throughout These Forty Days))."
+  },
+  {
+    "id": 575,
+    "psalm_number": 98,
+    "title": "O Sing a New Song to the Lord (Psalm 98)",
+    "tune": "CREDITON",
+    "meter": "CM",
+    "text_source": "The Scottish Psalter, 1650, as kept by the svrbc psalter",
+    "verses": [
+      "1 O sing a new song to the Lord,\nfor wonders he hath done:\nHis right hand and his holy arm\nhim victory hath won.",
+      "2 The Lord God his salvation\nhath causèd to be known;\nHis justice in the heathen's sight\nhe openly hath shown.",
+      "3 He mindful of his grace and truth\nto Isr'el's house hath been;\nAnd the salvation of our God\nall ends of th' earth have seen.",
+      "4 Let all the earth unto the Lord\nsend forth a joyful noise;\nLift up your voice aloud to him,\nsing praises, and rejoice.",
+      "5 With harp, with harp, and voice of psalms,\nunto Jehovah sing:\nWith trumpets, cornets, gladly sound\nbefore the Lord the King.",
+      "6 Let seas and all their fullness roar;\nthe world, and dwellers there;\nLet floods clap hands, and let the hills\ntogether joy declare",
+      "7 Before the Lord; because he comes,\nto judge the earth comes he:\nHe'll judge the world with righteousness,\nhis folk with equity."
+    ],
+    "composer_arranger": "attr. Jeremiah Clarke (d. 1707)",
+    "midi_url": "assets/midi/psalm_098_crediton.mid",
+    "mp3_url": "",
+    "credits": "Words: Psalm 98, The Scottish Psalter, 1650 (public domain), as kept by the svrbc psalter (psalter.svrbc.org). Tune: 'CREDITON' (8.6.8.6), attr. Jeremiah Clarke (d. 1707). The Scottish Psalter, 1883, names St. Gregory or Crediton for this psalm. Music from the Cyber Hymnal (crediton.mid). copyright: public domain."
   },
   {
     "id": 566,
@@ -3321,6 +3406,7 @@
   },
   {
     "id": 96,
+    "psalm_number": 146,
     "title": "Hallelujah, Praise Jehovah, O My Soul (Psalm 146)",
     "tune": "Ripley (Gregorian)",
     "composer_arranger": "from Gregorian Chant &Mason",

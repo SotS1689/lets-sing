@@ -1,0 +1,17 @@
+% Source: transcribed from the app's own MIDI (psalm_072_dunfermline.mid) by Sheet Music/transcribe_midi.py
+X:1
+T:DUNFERMLINE
+C:Scottish Psalter, 1615
+M:4/4
+L:1/4
+Q:1/4=100
+%%score (S A) (T B)
+V:S clef=treble name=""
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+K:F
+[V:S] F | F G A B | c c A A | d c c =B | c3 c | A c d c | (B/ G/) A G A | G F F E | F4 |]
+[V:A] C | C D/ E/ F F | F E F C | D/ E/ E D G/ F/ | E3 G | F G/ A/ B A | B/ G/ F E F | D A,/ B,/ C C | C4 |]
+[V:T] A, | C B, C F, | G, G, A, F, | A, G, A, D | C3 C | F _E D =E | F/ C/ B,/ D/ E C | B, F, G, G, | A,4 |]
+[V:B] F, | A, G, F, D, | C, C, F, F, | D, E, F, G, | C,3 E, | F, C, B,, C, | D,/ E,/ F, C F, | B,, D, C, C, | F,4 |]

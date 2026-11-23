@@ -788,6 +788,7 @@ carpenter	car-pen-ter
 carried	car-ried
 carries	car-ries
 carry	car-ry
+carryst	car-ryst
 carvd	carvd
 case	case
 casket	ca-sket
@@ -803,6 +804,7 @@ caterpillar	ca-ter-pil-lar
 caterpillars	ca-ter-pil-lars
 cattle	catt-le
 caught	caught
+causd	causd	ca-usd
 cause	cause
 caused	caused	ca-used
 causedst	causedst
@@ -1140,6 +1142,7 @@ cordially	cor-dial-ly
 cords	cords
 corn	corn
 corner	cor-ner
+cornets	cor-nets	cornets
 correct	cor-rect
 correctest	cor-rec-test
 corrupt	cor-rupt
@@ -1619,6 +1622,7 @@ drives	drives
 drivn	drivn
 droop	droop
 drooping	droo-ping	drooping
+drop	drop
 drops	drops
 dross	dross
 drove	drove
@@ -2098,6 +2102,8 @@ flood	flood
 floods	floods
 flounder	floun-der
 flourish	flou-rish
+flourishes	flou-ri-shes
+flourishing	flou-ri-shing	flou-rishing
 flout	flout
 flow	flow
 flowed	flowed
@@ -2214,6 +2220,7 @@ fountainhead	foun-tain-head	foun-tainhead	foun-tain-he-ad
 fountains	foun-tains
 four	four
 fourfold	four-fold
+fourscore	four-score	fourscore	fo-ur-score
 fowlers	fow-lers
 fowls	fowls
 fox	fox
@@ -2515,6 +2522,7 @@ ham	ham
 hammers	ham-mers
 hams	hams
 hand	hand
+handful	hand-ful
 handiwork	han-di-work
 hands	hands
 handyworks	han-dy-works
@@ -2829,6 +2837,7 @@ increase	in-crease
 increased	in-creased	in-cre-ased
 increasing	in-crea-sing	in-creasing
 indeed	in-deed
+indigent	in-di-gent
 indignation	in-dig-na-tion
 indulge	in-dulge
 indulgent	in-dul-gent
@@ -3127,6 +3136,7 @@ lewd	lewd
 liars	li-ars
 liberty	li-ber-ty
 lice	lice
+lick	lick
 lie	lie
 lien	lien
 lies	lies
@@ -3502,6 +3512,7 @@ move	move
 moved	moved
 moves	moves
 mowers	mo-wers	mowers
+mown	mown
 mu	mu
 much	much
 multiform	mul-ti-form	mul-tiform
@@ -3561,6 +3572,7 @@ needing	nee-ding	needing
 needless	need-less
 needs	needs
 needy	nee-dy
+needys	nee-dys
 neer	neer
 neglect	ne-glect
 neglected	ne-glec-ted
@@ -3737,6 +3749,7 @@ overcame	o-ver-came
 overcharged	o-ver-charged
 overcome	o-ver-come
 overflow	o-ver-flow
+overflowing	o-ver-flo-wing	o-ver-flowing
 overflows	o-ver-flows
 overpass	o-ver-pass
 overpower	o-ver-po-wer	o-ver-power
@@ -4694,6 +4707,7 @@ season	sea-son
 seasons	sea-sons
 seat	seat
 seated	sea-ted
+sebas	se-bas	sebas
 second	se-cond
 secret	se-cret
 secretly	se-cret-ly
@@ -4791,6 +4805,7 @@ she	she
 sheaf	sheaf
 sheathes	shea-thes	sheathes	she-a-thes
 sheaves	sheaves
+shebas	she-bas
 shechem	she-chem	shechem
 shed	shed
 sheddeth	shed-deth
@@ -5264,6 +5279,7 @@ sufice	su-fice	sufice	su-fi-ce
 suggest	sug-gest
 sullen	sul-len
 sultry	sul-try
+sum	sum
 summer	sum-mer
 summers	sum-mers
 summoned	sum-moned
@@ -5517,6 +5533,7 @@ threatning	threat-ning	threatning	thre-at-ning
 three	three
 threefold	three-fold
 threeone	three-one
+threescore	three-score	threescore	thre-e-score
 thrice	thrice
 thrill	thrill
 thrilling	thril-ling	thrilling
@@ -5583,6 +5600,8 @@ tonight	to-night
 too	too
 took	took
 tookst	tookst
+tops	tops
+torch	torch
 tore	tore
 torment	tor-ment
 tormented	tor-men-ted
