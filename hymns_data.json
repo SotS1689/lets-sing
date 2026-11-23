@@ -5199,6 +5199,22 @@
     "meter": "8.7.8.7.8.7"
   },
   {
+    "id": 572,
+    "title": "Lo! He Comes With Clouds Descending",
+    "tune": "Regent Square",
+    "composer_arranger": "Smart, H.",
+    "midi_url": "assets/midi/Lo_He_Comes_With_Clouds_Descending-Regent_Square.mid",
+    "mp3_url": "",
+    "verses": [
+      "1. Lo! he comes with clouds descending,\nonce for favored sinners slain;\nthousand thousand saints attending\nswell the triumph of his train.\nAlleluia! Alleluia!\nGod appears on earth to reign.",
+      "2. Ev'ry eye shall now behold him,\nrobed in dreadful majesty;\nthose who set at naught and sold him,\npierced, and nailed him to the tree,\ndeeply wailing, deeply wailing,\nshall the true Messiah see.",
+      "3. Ev'ry island, sea, and mountain,\nheav'n and earth, shall flee away;\nall who hate him must, confounded,\nhear the trump proclaim the day:\nCome to judgment! Come to judgment!\nCome to judgment, come away!",
+      "4. Now Redemption, long expected,\nsee in solemn pomp appear!\nAll his saints, by man rejected,\nnow shall meet him in the air.\nAlleluia! Alleluia!\nSee the day of God appear!"
+    ],
+    "credits": "Words: John Cennick, 1752. Altered by Charles Wesley, 1758, alt. Music: 'Regent Square' Henry Smart, 1867. Setting: \"Psalms and Hymns for Divine Worship\", 1867. copyright: public domain.",
+    "meter": "8.7.8.7.8.7"
+  },
+  {
     "id": 170,
     "title": "Lo, God To Heav'n Ascendeth",
     "tune": "Von Gott will ich Nicht Lazen",
