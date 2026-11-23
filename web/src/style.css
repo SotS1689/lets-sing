@@ -350,6 +350,9 @@ main {
 .list-chips a[aria-current="page"] .tab-count { color: inherit; opacity: 0.85; }
 .list-chips a[aria-current="page"] svg { fill: currentColor; }
 .list-chip-new { border-style: dashed; color: var(--text-2); }
+/* The church copy's own lists (src/church-lists.json), first and in the church's red */
+.list-chips a.church-chip { border-color: var(--brand); font-weight: 600; }
+.list-chips a.church-chip[aria-current="page"] { background: var(--brand); color: var(--on-brand); }
 .list-chips a:hover, .list-chip-new:hover { border-color: var(--primary); }
 .list-pick { position: relative; flex: none; }
 .list-pick .star-btn[aria-pressed="true"] { color: var(--primary); }

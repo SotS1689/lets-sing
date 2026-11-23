@@ -3,6 +3,7 @@
 // static host folder with no server-side setup.
 import * as player from "./player.js";
 import { VOICES, INSTRUMENTS } from "./player.js";
+import churchListsData from "./church-lists.json";
 import { loadRuns, addRun, clearRuns, tally, shares, splitBar, onPitchChart, PARTS, MIN_SECONDS } from "./progress.js";
 import { account, syncStatus, onSync, signIn, signOut, sync, favoritesChanged, listsChanged, tunesChanged } from "./sync.js";
 
@@ -185,7 +186,14 @@ function paintStar(btn, h) {
 // like favorites (and in the account when signed in, src/sync.js)
 
 let lists = store.get("hymnLists", []);
-const listById = (id) => lists.find((l) => l.id === id);
+// The church copy's own lists (src/church-lists.json): shown to everyone first
+// under My lists, fixed (no adding, removing, renaming), each hymn at the tune
+// the church sings it to. The list's titles and tunes are there for reading; the
+// app goes by the ids.
+const churchLists = CHURCH
+    ? churchListsData.map((l) => ({ id: l.id, name: l.name, hymns: l.hymns.map((h) => h.id), fixed: true }))
+    : [];
+const listById = (id) => lists.find((l) => l.id === id) ?? churchLists.find((l) => l.id === id);
 const listHash = (l) => `#/lists/${l.id}`;
 function saveLists() {
     store.set("hymnLists", lists);
@@ -414,6 +422,7 @@ async function showList(mode = "all", listId = null) {
     hymns.forEach((h) => (h._search ??= norm(`${h.title} ${h.tune} ${h.composer}`)));
     const byId = new Map(hymns.map((h) => [h.id, h]));
     const mine = mode !== "all";
+    const fixed = !!own?.fixed; // a church list: read only
     const ids = () => (own ? own.hymns : favorites);
     // How many hymns a list holds (a hymn there in two of its tunes counts once)
     const howMany = (ids) => hymnsFor(ids, byId).length || "";
@@ -430,6 +439,8 @@ async function showList(mode = "all", listId = null) {
         </div>
         <div id="install-slot"></div>
         ${mine ? `<nav class="list-chips" aria-label="Your lists">
+            ${churchLists.map((l) => `<a href="${listHash(l)}" class="church-chip"${l === own ? ' aria-current="page"' : ""}>${esc(l.name)}
+                <span class="tab-count"${l === own ? ' id="own-count"' : ""}>${howMany(l.hymns)}</span></a>`).join("")}
             <a href="#/favorites"${own ? "" : ' aria-current="page"'}>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${STAR.on}"/></svg>Favorites
                 <span class="tab-count" id="fav-count">${howMany(favorites)}</span></a>
@@ -437,12 +448,13 @@ async function showList(mode = "all", listId = null) {
                 <span class="tab-count"${l === own ? ' id="own-count"' : ""}>${howMany(l.hymns)}</span></a>`).join("")}
             <button type="button" class="list-chip-new" id="list-new">+ New list</button>
         </nav>
-        <div class="fav-actions">
+        ${fixed ? `<p class="fav-actions hint">The hymns Grace Community Church sings, each to the church's tune.
+            Tap the star to add one to your favorites.</p>` : `<div class="fav-actions">
             <a class="btn" href="${own ? `${listHash(own)}/paste` : "#/favorites/paste"}">Paste a list</a>
             ${own ? `<button type="button" class="link-btn" id="list-rename">Rename</button>
                 <button type="button" class="link-btn" id="list-delete">Delete list</button>`
             : `<button type="button" class="link-btn" id="fav-clear"${favorites.length ? "" : " hidden"}>Clear favorites</button>`}
-        </div>
+        </div>`}
         <div id="sync-card"></div>` : ""}
         <p class="count" id="count"></p>
         <ul class="hymn-list" id="list"></ul>
@@ -525,7 +537,7 @@ async function showList(mode = "all", listId = null) {
                     <span class="title">${esc(h.title)}</span>
                     <span class="sub">${esc([h.tune, h.composer, h.tunes && `${h.tunes.length} tunes`].filter(Boolean).join(" · "))}</span>
                     ${line ? `<span class="lyric-line">“${esc(line.text)}”<span class="lyric-verse"> · verse ${line.verse}</span></span>` : ""}
-                </a>${own ? `<button type="button" class="star-btn" data-remove="${h.id}"
+                </a>${own && !fixed ? `<button type="button" class="star-btn" data-remove="${h.id}"
                     aria-label="${esc(`Remove ${h.title} from ${own.name}`)}" title="Remove from this list">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${REMOVE_ICON}"/></svg></button>` : starButton(h)}</li>`;
             })
@@ -546,7 +558,7 @@ async function showList(mode = "all", listId = null) {
     });
     list.addEventListener("click", (e) => {
         const remove = e.target.closest("[data-remove]");
-        if (remove && own) {
+        if (remove && own && !fixed) {
             const h = byId.get(+remove.dataset.remove);
             setInList(own, h, false);
             render();
@@ -2079,7 +2091,7 @@ function route() {
     else if (location.hash === "#/favorites/paste") showPaste();
     else if (/^#\/lists\/[\w-]+(\/paste)?$/.test(location.hash)) {
         const [, , id, paste] = location.hash.split("/");
-        if (paste) showPaste(id);
+        if (paste && !listById(id)?.fixed) showPaste(id);
         else showList("list", id);
     }
     else if (location.hash === "#/settings") showSettings();

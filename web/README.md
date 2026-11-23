@@ -153,8 +153,11 @@ Installed copies pick up the new version the next time they're opened online.
 
 The same push also publishes a church copy at
 **https://sing.gracecommunityallentown.org**: the workflow's `church` job builds
-it with `npm run build:church` (no support heart, and the Home button goes to gracecommunityallentown.org;
-`npm run dev:church` to try it)
+it with `npm run build:church` (no support heart, the Home button goes to gracecommunityallentown.org,
+and the church's own fixed lists from `src/church-lists.json`, such as "GCC Hymns", come first
+under My lists; `npm run dev:church` to try it). In that file each hymn is its id in
+`hymns_data.json`, which picks the tune; the title and tune beside it are only for reading
+it)
 and pushes it to the `gh-pages` branch of
 [SotS1689/lets-sing-church](https://github.com/SotS1689/lets-sing-church), using
 the `CHURCH_DEPLOY_KEY` secret (the private half of a write deploy key on that
