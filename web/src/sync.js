@@ -5,7 +5,8 @@
 //
 // In the cloud (Firestore, free plan), per person:
 //   users/<uid>            { favorites: { <hymn id>: { on, at } }, lessons: <lesson progress>,
-//                            lists: <the singer's own lists' log, see LISTS_LOG>, cleared: <ms> }
+//                            lists: <the singer's own lists' log, see LISTS_LOG>,
+//                            tunes: <each hymn's chosen tune, see TUNES>, cleared: <ms> }
 //   users/<uid>/runs/<id>  one Learn score each, with t = when it reached the cloud
 // Each sync reads only the scores that arrived since the last one, so a long
 // history isn't downloaded again on every visit.
@@ -19,6 +20,8 @@ const LISTS = "hymnLists"; // the singer's own named lists: [{ id, name, hymns: 
 // { <list id>: { name, at, created, deleted?, hymns: { <hymn id>: { on, at } } } }:
 // `at` is when it was last named (or deleted); each hymn's log works like favorites'
 const LISTS_LOG = "hymnListsLog";
+// { <hymn's first tune id>: { id, at } }: the tune each hymn was last switched to (src/main.js)
+const TUNES = "tuneChoices";
 const metaKey = (uid) => `syncMeta:${uid}`;
 const RUN_FIELDS = ["hymn", "title", "part", "at", "on", "flat", "sharp"];
 
@@ -95,6 +98,7 @@ export async function signOut(removeHere = false) {
         drop(FAV_LOG);
         drop(LISTS);
         drop(LISTS_LOG);
+        drop(TUNES);
         if (uid) drop(metaKey(uid));
     }
     status = "idle";
@@ -178,6 +182,21 @@ export function listsChanged(lists) {
     }
     write(LISTS_LOG, log);
     changed();
+}
+
+// ---- Tunes ----------------------------------------------------------------------
+// The tune last picked for a hymn, on any device, wins.
+
+/** A hymn's tune was picked here (already saved under TUNES): send it up shortly. */
+export function tunesChanged() {
+    changed();
+}
+
+/** Two devices' tune choices as one: for each hymn, the later pick. */
+export function mergeTunes(here, there) {
+    const out = { ...there };
+    for (const [k, e] of Object.entries(here ?? {})) if (!out[k] || e.at > out[k].at) out[k] = e;
+    return out;
 }
 
 /** Two lists' logs as one: the later name or deletion of each list, and both sides' hymns. */
@@ -333,6 +352,15 @@ export async function syncWith(f, uid) {
     }
     write(LISTS_LOG, listLog);
     if (stable(listLog) !== stable(cloud.lists ?? {})) await f.setDoc(userRef, { lists: listLog }, { merge: true });
+
+    // The tune each hymn is sung to
+    const tunesHere = read(TUNES, {});
+    const tunes = mergeTunes(tunesHere, cloud.tunes ?? {});
+    if (stable(tunes) !== stable(tunesHere)) {
+        write(TUNES, tunes);
+        changedHere = true;
+    }
+    if (stable(tunes) !== stable(cloud.tunes ?? {})) await f.setDoc(userRef, { tunes }, { merge: true });
 
     // Lesson progress: the best of both
     const local = read(LESSONS, null);

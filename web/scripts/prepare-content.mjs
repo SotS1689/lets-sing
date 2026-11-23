@@ -88,7 +88,24 @@ for (const h of hymns) {
         midi: hasMidi ? file : null,
         midiVersion,
         ...scoreFields(h, hasMidi && scores[file]),
+        // The psalm it sings (psalm_number: the psalm settings, and the two hymns
+        // that are true paraphrases, Psalms 100 and 146). For Settings > Psalms only
+        ...(h.psalm_number ? { psalm: h.psalm_number } : {}),
     });
+}
+// A hymn sung to more than one tune is in the master once per tune, under the same
+// title. Each copy gets `tunes`: every copy's id, oldest first, so the app can show
+// the hymn once with a choice of tune (src/main.js, "Tunes").
+const titleKey = (title) => title.normalize("NFD").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+const byTitle = new Map();
+for (const h of slim) {
+    const k = titleKey(h.title);
+    byTitle.set(k, [...(byTitle.get(k) ?? []), h]);
+}
+for (const same of byTitle.values()) {
+    if (same.length < 2) continue;
+    const tunes = same.map((h) => h.id).sort((a, b) => a - b);
+    same.forEach((h) => (h.tunes = tunes));
 }
 // Leading punctuation (the apostrophe in "'Tis So Sweet") is skipped, as
 // HymnJsonLoader.kt's sortKey does, so those hymns file under T, not first.
@@ -96,5 +113,5 @@ const sortKey = (title) => title.trim().replace(/^[^\p{L}\p{N}]+/u, "");
 slim.sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title), "en", { sensitivity: "base" }));
 writeFileSync(`${OUT}/hymns.json`, JSON.stringify(slim));
 
-console.log(`prepare-content: ${slim.length} hymns, ${readdirSync(`${OUT}/midi`).length} MIDI files, ${Object.keys(scores).length} with sheet music`);
+console.log(`prepare-content: ${slim.length} hymns (${[...byTitle.values()].filter((s) => s.length > 1).length} with more than one tune), ${readdirSync(`${OUT}/midi`).length} MIDI files, ${Object.keys(scores).length} with sheet music`);
 if (missing.length) console.warn(`  ${missing.length} without a MIDI file:\n  ` + missing.join("\n  "));

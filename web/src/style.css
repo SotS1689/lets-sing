@@ -421,6 +421,24 @@ main {
 .paste-actions { position: sticky; bottom: 0; padding: 12px 0 calc(12px + env(safe-area-inset-bottom)); background: var(--bg); }
 .paste-actions .btn { width: 100%; min-height: 48px; font-weight: 600; }
 .hymn-head .tune { margin: 4px 0 0; font-size: 1.05rem; color: var(--secondary); font-weight: 500; }
+/* A hymn sung to more than one tune: pick the tune (src/main.js, "Tunes") */
+.tune-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 8px 0 4px; }
+.tune-pick-label { font-size: 0.8rem; color: var(--text-2); margin-right: 2px; }
+.tune-pick button {
+    padding: 5px 12px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: transparent;
+    color: var(--secondary);
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    text-align: left;
+}
+.tune-pick button[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
 .hymn-head .sub { margin: 2px 0 0; font-size: 0.875rem; color: var(--text-2); }
 
 .card {

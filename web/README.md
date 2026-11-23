@@ -26,6 +26,16 @@ MIDI files, then build.
   into one at `#/lists/<id>/paste`) sit beside Favorites under "My lists"; the
   list button beside a hymn's title adds it to any of them or makes a new one.
   Signed in, lists sync like favorites (the `lists` field in Firestore).
+- **More than one tune.** A hymn sung to several tunes is in `hymns_data.json`
+  once per tune, each a full entry with the same title (its own words, MIDI and
+  score, so a tune can keep its own wording). prepare-content gives each copy
+  `tunes` (every copy's id), and the app shows the hymn once: one row in the list
+  (on the tune the singer last picked, or the one a search names), and a "Tune"
+  picker on its page. The pick is remembered per hymn (`tuneChoices` in
+  localStorage; the `tunes` field in Firestore when signed in). Favorites and
+  lists keep the tune a hymn was added with and count it once whichever tune it
+  is; links to `#/hymn/<id>` (Family Worship's too) open that tune. To add a tune,
+  add an entry with exactly the same title. The picker isn't shown in embed mode.
 - `src/sync.js`, `src/firebase.js` — optional Google sign-in (on the Learn page)
   that keeps Learn scores and lesson progress in step across devices, through
   Firebase's free plan (project `lets-sing-b6277`). Firebase loads only for

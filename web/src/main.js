@@ -4,7 +4,7 @@
 import * as player from "./player.js";
 import { VOICES, INSTRUMENTS } from "./player.js";
 import { loadRuns, addRun, clearRuns, tally, shares, splitBar, onPitchChart, PARTS, MIN_SECONDS } from "./progress.js";
-import { account, syncStatus, onSync, signIn, signOut, sync, favoritesChanged, listsChanged } from "./sync.js";
+import { account, syncStatus, onSync, signIn, signOut, sync, favoritesChanged, listsChanged, tunesChanged } from "./sync.js";
 
 const app = document.getElementById("app");
 const backBtn = document.getElementById("back");
@@ -49,6 +49,8 @@ const SHAPE_NOTES = [
     { id: "4", name: "4 shapes", title: "Fa, sol, la, mi, as in the Sacred Harp" },
     { id: "7", name: "7 shapes", title: "Do, re, mi, fa, sol, la, ti, each with its own shape" },
 ];
+// Psalms only: the hymn list shows just the psalms (hymns with a `psalm`, from psalm_number)
+let psalmsOnly = store.get("psalmsOnly", false) === true;
 let shapeNotes = SHAPE_NOTES.some((v) => v.id === store.get("shapeNotes")) ? store.get("shapeNotes") : "off";
 
 const applyVoice = (i) => player.setVoiceVolume(i, mix.on[i] ? mix.volumes[i] / 100 : 0);
@@ -117,11 +119,42 @@ let listMode = "all";
 // Hymn ids, in the order they were added, remembered on this device (and in
 // the singer's account when signed in, src/sync.js)
 
+// ---- Tunes --------------------------------------------------------------------
+// A hymn sung to more than one tune is in hymns.json once per tune, each copy with
+// `tunes` (every copy's id, oldest first; scripts/prepare-content.mjs). The app shows
+// it as one hymn: listed once, with a choice of tune on its page. The tune picked
+// last is remembered per hymn (`tuneChoices`, and in the account, src/sync.js).
+// Favorites and lists keep the tune a hymn was added with, and count it once
+// whichever of its tunes they hold.
+
+const tunesOf = (h) => h.tunes ?? [h.id];
+const tuneKey = (h) => tunesOf(h)[0];
+let tuneChoices = store.get("tuneChoices", {}); // { <first tune's id>: { id, at } }
+/** The id of the tune `h` is sung to unless the singer picks another: their last pick, or the first. */
+function chosenTune(h) {
+    const id = tuneChoices[tuneKey(h)]?.id;
+    return tunesOf(h).includes(id) ? id : tuneKey(h);
+}
+function chooseTune(h, id) {
+    tuneChoices = { ...tuneChoices, [tuneKey(h)]: { id, at: Date.now() } };
+    store.set("tuneChoices", tuneChoices);
+    tunesChanged(tuneChoices);
+    track("tune_pick");
+}
+/** Whether `ids` (favorites, a list) holds hymn `h`, to any of its tunes. */
+const holds = (ids, h) => tunesOf(h).some((id) => ids.includes(id));
+/** `ids` with hymn `h` taken out (every tune of it), and added back to its tune `h` when `on`. */
+const withHymn = (ids, h, on) => [...ids.filter((id) => !tunesOf(h).includes(id)), ...(on ? [h.id] : [])];
+/** Hymns for `ids`, each hymn once (the first of its tunes there). */
+function hymnsFor(ids, byId) {
+    const seen = new Set();
+    return ids.map((id) => byId.get(id)).filter((h) => h && !seen.has(tuneKey(h)) && seen.add(tuneKey(h)));
+}
+
 let favorites = store.get("favorites", []);
-const isFavorite = (id) => favorites.includes(id);
-function setFavorite(id, on) {
-    favorites = favorites.filter((f) => f !== id);
-    if (on) favorites.push(id);
+const isFavorite = (h) => holds(favorites, h);
+function setFavorite(h, on) {
+    favorites = withHymn(favorites, h, on);
     store.set("favorites", favorites);
     favoritesChanged(favorites);
     track("favorite_toggle", { on });
@@ -133,14 +166,14 @@ const STAR = {
 };
 const starLabel = (h, on) => (on ? `Remove ${h.title} from favorites` : `Add ${h.title} to favorites`);
 const starButton = (h) => {
-    const on = isFavorite(h.id);
+    const on = isFavorite(h);
     return `<button type="button" class="star-btn" data-fav="${h.id}" aria-pressed="${on}"
                 aria-label="${esc(starLabel(h, on))}" title="${on ? "Remove from favorites" : "Add to favorites"}">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${on ? STAR.on : STAR.off}"/></svg>
         </button>`;
 };
 function paintStar(btn, h) {
-    const on = isFavorite(h.id);
+    const on = isFavorite(h);
     btn.setAttribute("aria-pressed", on);
     btn.setAttribute("aria-label", starLabel(h, on));
     btn.title = on ? "Remove from favorites" : "Add to favorites";
@@ -173,9 +206,8 @@ function newList() {
     track("list_create");
     return l;
 }
-function setInList(l, id, on) {
-    l.hymns = l.hymns.filter((x) => x !== id);
-    if (on) l.hymns.push(id);
+function setInList(l, h, on) {
+    l.hymns = withHymn(l.hymns, h, on);
     saveLists();
     track("list_toggle", { on });
 }
@@ -190,7 +222,7 @@ const REMOVE_ICON = "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.
  * a tick box for Favorites and each list, and "New list".
  */
 function listButton(h) {
-    const any = lists.some((l) => l.hymns.includes(h.id));
+    const any = lists.some((l) => holds(l.hymns, h));
     return `<div class="list-pick">
         <button type="button" class="star-btn" id="list-btn" aria-haspopup="true" aria-expanded="false"
                 aria-pressed="${any}" aria-label="Add ${esc(h.title)} to a list" title="Add to a list">
@@ -203,15 +235,15 @@ function wireListButton(h, onFavorite) {
     const btn = document.getElementById("list-btn");
     const menu = document.getElementById("list-menu");
     const paintBtn = () => {
-        const any = lists.some((l) => l.hymns.includes(h.id));
+        const any = lists.some((l) => holds(l.hymns, h));
         btn.setAttribute("aria-pressed", any);
         btn.querySelector("path").setAttribute("d", any ? LIST_ICON.has : LIST_ICON.add);
     };
     const fill = () => {
         menu.innerHTML = `
             <p class="list-menu-head">Add to a list</p>
-            <label><input type="checkbox" data-pick-fav${isFavorite(h.id) ? " checked" : ""}> Favorites</label>
-            ${lists.map((l) => `<label><input type="checkbox" data-pick-list="${l.id}"${l.hymns.includes(h.id) ? " checked" : ""}> ${esc(l.name)}</label>`).join("")}
+            <label><input type="checkbox" data-pick-fav${isFavorite(h) ? " checked" : ""}> Favorites</label>
+            ${lists.map((l) => `<label><input type="checkbox" data-pick-list="${l.id}"${holds(l.hymns, h) ? " checked" : ""}> ${esc(l.name)}</label>`).join("")}
             <button type="button" class="link-btn" data-new-list>+ New list</button>`;
     };
     const close = () => {
@@ -242,14 +274,14 @@ function wireListButton(h, onFavorite) {
     menu.addEventListener("change", (e) => {
         const box = e.target;
         if (box.hasAttribute("data-pick-fav")) {
-            setFavorite(h.id, box.checked);
+            setFavorite(h, box.checked);
             onFavorite();
             toast(box.checked ? "Added to favorites" : "Removed from favorites");
             return;
         }
         const l = listById(box.dataset.pickList);
         if (!l) return;
-        setInList(l, h.id, box.checked);
+        setInList(l, h, box.checked);
         paintBtn();
         toast(box.checked ? `Added to ${l.name}` : `Removed from ${l.name}`);
     });
@@ -257,7 +289,7 @@ function wireListButton(h, onFavorite) {
         if (!e.target.closest("[data-new-list]")) return;
         const l = newList();
         if (!l) return;
-        setInList(l, h.id, true);
+        setInList(l, h, true);
         fill();
         paintBtn();
         toast(`Added to ${l.name}`);
@@ -383,13 +415,15 @@ async function showList(mode = "all", listId = null) {
     const byId = new Map(hymns.map((h) => [h.id, h]));
     const mine = mode !== "all";
     const ids = () => (own ? own.hymns : favorites);
+    // How many hymns a list holds (a hymn there in two of its tunes counts once)
+    const howMany = (ids) => hymnsFor(ids, byId).length || "";
 
     app.innerHTML = `
         <div class="search">
             <input id="search" type="search" placeholder="Search title, words, tune, or composer"
                    autocomplete="off" aria-label="Search hymns" value="${esc(searchText)}">
             <nav class="tabs" aria-label="Which hymns">
-                <a href="#/"${mode === "all" ? ' aria-current="page"' : ""}>All hymns</a>
+                <a href="#/"${mode === "all" ? ' aria-current="page"' : ""}>${psalmsOnly ? "All psalms" : "All hymns"}</a>
                 <a href="#/favorites"${mine ? ' aria-current="page"' : ""}>My lists</a>
                 <a href="#/learn">Learn</a>
             </nav>
@@ -398,9 +432,9 @@ async function showList(mode = "all", listId = null) {
         ${mine ? `<nav class="list-chips" aria-label="Your lists">
             <a href="#/favorites"${own ? "" : ' aria-current="page"'}>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${STAR.on}"/></svg>Favorites
-                <span class="tab-count" id="fav-count">${favorites.length || ""}</span></a>
+                <span class="tab-count" id="fav-count">${howMany(favorites)}</span></a>
             ${lists.map((l) => `<a href="${listHash(l)}"${l === own ? ' aria-current="page"' : ""}>${esc(l.name)}
-                <span class="tab-count"${l === own ? ' id="own-count"' : ""}>${l.hymns.length || ""}</span></a>`).join("")}
+                <span class="tab-count"${l === own ? ' id="own-count"' : ""}>${howMany(l.hymns)}</span></a>`).join("")}
             <button type="button" class="list-chip-new" id="list-new">+ New list</button>
         </nav>
         <div class="fav-actions">
@@ -431,7 +465,10 @@ async function showList(mode = "all", listId = null) {
     const count = document.getElementById("count");
     const render = () => {
         const terms = norm(searchText).split(/\s+/).filter(Boolean);
-        const pool = mine ? ids().map((id) => byId.get(id)).filter(Boolean) : hymns;
+        // Psalms only (Settings) narrows All hymns; the singer's own lists stay whole
+        // (All hymns holds every tune of each hymn; one of them is shown, below)
+        const pool = mine ? hymnsFor(ids(), byId) : psalmsOnly ? hymns.filter((h) => h.psalm) : hymns;
+        const total = mine ? pool.length : new Set(pool.map(tuneKey)).size;
         // A hymn is found by its title, tune and composer, or else by its words
         // (each word searched for somewhere in them, or in the title and words together)
         // (Not the words for a letter or two: every hymn's words have an "a" in them)
@@ -444,10 +481,23 @@ async function showList(mode = "all", listId = null) {
             return pterms.length > 0 && pterms.every((t) => all.includes(t));
         };
         let shown = pool.filter((h) => inInfo(h) || inWords(h));
-        // Closest match first; the sort is stable, so ties keep the list's order
+        // Closest match first; the sort is stable, so ties keep the list's order.
         if (terms.length) {
             const scores = new Map(shown.map((h) => [h, matchScore(h, terms)]));
             shown = shown.sort((a, b) => scores.get(b) - scores.get(a));
+        }
+        // A hymn's tunes as one row, where its best-placed tune was: the singer's
+        // tune, unless the search names another of its tunes
+        if (!mine) {
+            const found = new Map();
+            for (const h of shown) found.set(tuneKey(h), [...(found.get(tuneKey(h)) ?? []), h]);
+            const tuneNamed = (h) => pterms.length > 0 && pterms.every((t) => h._plain.tune.includes(t));
+            const pick = (same) => {
+                const named = same.filter(tuneNamed);
+                const from = named.length ? named : same;
+                return from.find((h) => h.id === chosenTune(h)) ?? from[0];
+            };
+            shown = shown.filter((h) => found.get(tuneKey(h))[0] === h).map((h) => pick(found.get(tuneKey(h))));
         }
         // Under a hymn found by its words, the line that matched (also when a phrase of
         // two or more words is in its verses but not its title)
@@ -456,8 +506,8 @@ async function showList(mode = "all", listId = null) {
             const phrase = pterms.length > 1 && lyricsOf(h).text.includes(q) && !h._plain.title.includes(q);
             return !inInfo(h) || phrase ? matchingLine(lyricsOf(h), q, pterms) : null;
         };
-        const noun = pool.length === 1 ? "hymn" : "hymns";
-        count.textContent = terms.length ? `${shown.length} of ${pool.length} ${noun}` : `${pool.length} ${noun}`;
+        const noun = psalmsOnly && !mine ? (total === 1 ? "psalm" : "psalms") : total === 1 ? "hymn" : "hymns";
+        count.textContent = terms.length ? `${shown.length} of ${total} ${noun}` : `${total} ${noun}`;
         paintCounts();
         if (mine && !pool.length) {
             count.textContent = "";
@@ -473,7 +523,7 @@ async function showList(mode = "all", listId = null) {
                 const line = lineFor(h);
                 return `<li><a href="#/hymn/${h.id}">
                     <span class="title">${esc(h.title)}</span>
-                    <span class="sub">${esc([h.tune, h.composer].filter(Boolean).join(" · "))}</span>
+                    <span class="sub">${esc([h.tune, h.composer, h.tunes && `${h.tunes.length} tunes`].filter(Boolean).join(" · "))}</span>
                     ${line ? `<span class="lyric-line">“${esc(line.text)}”<span class="lyric-verse"> · verse ${line.verse}</span></span>` : ""}
                 </a>${own ? `<button type="button" class="star-btn" data-remove="${h.id}"
                     aria-label="${esc(`Remove ${h.title} from ${own.name}`)}" title="Remove from this list">
@@ -483,9 +533,9 @@ async function showList(mode = "all", listId = null) {
     };
     const paintCounts = () => {
         const fav = document.getElementById("fav-count");
-        if (fav) fav.textContent = favorites.length || "";
+        if (fav) fav.textContent = howMany(favorites);
         const ownCount = document.getElementById("own-count");
-        if (ownCount) ownCount.textContent = own.hymns.length || "";
+        if (ownCount) ownCount.textContent = howMany(own.hymns);
         document.getElementById("fav-clear")?.toggleAttribute("hidden", !favorites.length);
     };
     render();
@@ -498,7 +548,7 @@ async function showList(mode = "all", listId = null) {
         const remove = e.target.closest("[data-remove]");
         if (remove && own) {
             const h = byId.get(+remove.dataset.remove);
-            setInList(own, h.id, false);
+            setInList(own, h, false);
             render();
             toast(`Removed ${h.title}`);
             return;
@@ -506,8 +556,8 @@ async function showList(mode = "all", listId = null) {
         const btn = e.target.closest("[data-fav]");
         if (!btn) return;
         const h = byId.get(+btn.dataset.fav);
-        const on = !isFavorite(h.id);
-        setFavorite(h.id, on);
+        const on = !isFavorite(h);
+        setFavorite(h, on);
         if (mode === "favorites") {
             render();
             toast(`Removed ${h.title}`);
@@ -535,7 +585,7 @@ async function showList(mode = "all", listId = null) {
         location.hash = "#/favorites";
     });
     document.getElementById("fav-clear")?.addEventListener("click", () => {
-        if (!confirm(`Remove all ${favorites.length} hymns from your favorites?`)) return;
+        if (!confirm(`Remove all ${howMany(favorites)} hymns from your favorites?`)) return;
         favorites = [];
         store.set("favorites", favorites);
         favoritesChanged(favorites);
@@ -803,7 +853,8 @@ onSync(({ changed }) => {
     if (changed) {
         favorites = store.get("favorites", []);
         lists = store.get("hymnLists", []);
-        // Favorites and lists from another device: show them if the hymn list is open
+        tuneChoices = store.get("tuneChoices", {});
+        // Favorites, lists and tunes from another device: show them if the hymn list is open
         if (/^(#\/?|#\/favorites|#\/lists\/[\w-]+)?$/.test(location.hash)) route();
     }
     // New progress from another device: show it if the Learn page is open
@@ -843,6 +894,14 @@ function showSettings() {
                 </div>
             </div>
             <div class="card">
+                <h3>Hymn list</h3>
+                <div class="setting">
+                    <div><p class="setting-name">Psalms only</p><p class="hint">Show only the metrical psalms
+                        (like All People That On Earth Do Dwell, Psalm 100). Your own lists still show everything in them.</p></div>
+                    ${choiceRow("psalmsOnly", "Psalms only", [{ id: "off", name: "Off" }, { id: "on", name: "On" }], psalmsOnly ? "on" : "off")}
+                </div>
+            </div>
+            <div class="card">
                 <h3>Learn</h3>
                 <div class="setting">
                     <div><p class="setting-name">Your part</p><p class="hint">The voice Learn listens for and scores you on.</p></div>
@@ -879,6 +938,11 @@ function showSettings() {
             if (key === "theme") { store.set("theme", value); applyTheme(value); }
             else if (key === "learnPart") { learnPart = +value; store.set("learnPart", learnPart); }
             else if (key === "scoreView") { scoreView = value; store.set("scoreView", value); }
+            else if (key === "psalmsOnly") {
+                psalmsOnly = value === "on";
+                store.set("psalmsOnly", psalmsOnly);
+                listScroll = 0;
+            }
             else if (key === "shapeNotes") {
                 shapeNotes = value;
                 store.set("shapeNotes", value);
@@ -906,8 +970,8 @@ async function showPaste(listId = null) {
     if (listId && !own) return location.replace("#/favorites");
     // Where the hymns go
     const into = own
-        ? { name: own.name, has: (id) => own.hymns.includes(id), add: (id) => own.hymns.push(id), hash: listHash(own) }
-        : { name: "favorites", has: isFavorite, add: (id) => setFavorite(id, true), hash: "#/favorites" };
+        ? { name: own.name, has: (id) => holds(own.hymns, byId.get(id)), add: (id) => (own.hymns = withHymn(own.hymns, byId.get(id), true)), hash: listHash(own) }
+        : { name: "favorites", has: (id) => isFavorite(byId.get(id)), add: (id) => setFavorite(byId.get(id), true), hash: "#/favorites" };
     const inName = own ? own.name : "your favorites";
     stopPlayer();
     setDownloadScope(null);
@@ -1444,7 +1508,8 @@ function releaseWakeLock() {
 
 async function showHymn(id) {
     const hymns = await hymnsPromise;
-    const hymn = hymns.find((h) => h.id === id);
+    const byId = new Map(hymns.map((h) => [h.id, h]));
+    const hymn = byId.get(id);
     stopPlayer();
     setDownloadScope(hymn ?? null);
     backBtn.hidden = false;
@@ -1463,7 +1528,11 @@ async function showHymn(id) {
                 ${starButton(hymn)}
                 ${listButton(hymn)}
             </div>
-            ${hymn.tune ? `<p class="tune">${esc(hymn.tune)}</p>` : ""}
+            ${hymn.tunes && !EMBED ? `<div class="tune-pick" role="group" aria-label="Tune">
+                <span class="tune-pick-label">Tune</span>
+                ${hymn.tunes.map((id) => byId.get(id)).filter(Boolean).map((t) => `<button type="button" data-tune="${t.id}"
+                    aria-pressed="${t.id === hymn.id}" title="Sing it to ${esc(t.tune || "this tune")}">${esc(t.tune || `Tune ${t.id}`)}</button>`).join("")}
+            </div>` : hymn.tune ? `<p class="tune">${esc(hymn.tune)}</p>` : ""}
             ${hymn.composer ? `<p class="sub">Composer: ${esc(hymn.composer)}</p>` : ""}
         </section>
 
@@ -1543,9 +1612,18 @@ async function showHymn(id) {
         </section>`;
 
     const $ = (sel) => app.querySelector(sel);
+    // Another tune: remembered for this hymn, and opened in this tune's place (so Back
+    // still goes to the list)
+    app.querySelectorAll("[data-tune]").forEach((b) =>
+        b.addEventListener("click", () => {
+            const t = byId.get(+b.dataset.tune);
+            chooseTune(hymn, t.id);
+            if (t.id !== hymn.id) location.replace(`#/hymn/${t.id}`);
+        })
+    );
     $("[data-fav]").addEventListener("click", (e) => {
-        const on = !isFavorite(hymn.id);
-        setFavorite(hymn.id, on);
+        const on = !isFavorite(hymn);
+        setFavorite(hymn, on);
         paintStar(e.currentTarget, hymn);
         toast(on ? "Added to favorites" : "Removed from favorites");
     });
@@ -2019,10 +2097,11 @@ function route() {
 // hymn link starts with it false, so Back goes to the list instead of
 // leaving for the site the link came from.
 let backStaysInApp = false;
-window.addEventListener("hashchange", () => {
+window.addEventListener("hashchange", (e) => {
     backStaysInApp = true;
     if (!location.hash.startsWith("#/hymn/")) return route();
-    listScroll = window.scrollY;
+    // (Not from a hymn to another of its tunes: the list's place is kept)
+    if (!/#\/hymn\//.test(e.oldURL)) listScroll = window.scrollY;
     route();
     window.scrollTo(0, 0);
 });
