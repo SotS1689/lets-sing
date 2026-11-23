@@ -32,11 +32,15 @@ const scores = buildScores(versesOf, MIDI_SRC);
 // and the verse being sung is followed only when the MIDI plays this hymn's verses.
 function scoreFields(h, score) {
     if (!score) return { score: null };
+    const twoPerPass = score.verses > 1 && score.verses * 2 === (h.verses || []).length;
     return {
         score: score.abc,
         scoreVersion: score.version,
         scoreWords: sameWords(score.words, plainWords((h.verses || [])[0] || "")),
-        scoreVerses: score.verses === (h.verses || []).length,
+        scoreVerses: score.verses === (h.verses || []).length || twoPerPass,
+        // A tune that carries two stanzas each time through (Dies Irae: 18 stanzas,
+        // sung through the tune 9 times), as its score sets them
+        ...(twoPerPass ? { versesPerPass: 2 } : {}),
     };
 }
 

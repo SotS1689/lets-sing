@@ -125,7 +125,11 @@ switched on. The design follows the #doreancon hymnal player
 - A score belongs to the tune, so hymns sharing a tune share it. The words under
   its notes are shown only when they are that hymn's own verse 1 (a psalm sung to
   a hymn's tune shows the notes alone), and the verse being sung is followed only
-  when the MIDI plays that hymn's verses.
+  when the MIDI plays that hymn's verses: once through the tune per verse, or per
+  two verses where the score sets two stanzas each time through (Dies Irae;
+  `versesPerPass` in hymns.json). A MIDI file that plays the tune more or fewer
+  times than the hymn has verses should be fixed to match (2026-11-23: ten were,
+  by repeating a middle verse or dropping extra ones, keeping the last).
 - **`src/score.js`** draws the score with [abcjs](https://abcjs.net) (MIT)
   and lights the notes. It loads only on a hymn's page. Two views, switched in
   the Music card's header and remembered per device:

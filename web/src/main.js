@@ -1774,11 +1774,15 @@ async function showHymn(id) {
         shownVerse = verse;
         // Only when the MIDI plays this hymn's verses one per time through the tune
         if (!hymn.scoreVerses) return;
+        // (A tune that carries two stanzas each time through sings stanzas 2k-1 and 2k the k-th time)
+        const per = hymn.versesPerPass ?? 1;
+        const first = verse ? (verse - 1) * per + 1 : verse;
         $("#score-verse").textContent =
-            verse === null ? "" : verse === 0 ? "Introduction" : `Verse ${verse} of ${score.verseCount}`;
+            verse === null ? "" : verse === 0 ? "Introduction"
+            : per > 1 ? `Verses ${first}–${first + per - 1} of ${hymn.verses.length}` : `Verse ${verse} of ${score.verseCount}`;
         // The lyrics below follow along too
         app.querySelectorAll(".lyrics [data-verse]").forEach((p) =>
-            p.classList.toggle("is-current", +p.dataset.verse === verse)
+            p.classList.toggle("is-current", !!verse && +p.dataset.verse >= first && +p.dataset.verse < first + per)
         );
     };
 
