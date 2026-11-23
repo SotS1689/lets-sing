@@ -113,6 +113,15 @@ switched on. The design follows the #doreancon hymnal player
   don't line up with the MIDI is **left out**, with the reason printed during
   the build, rather than lighting the wrong notes. So are scores with organ or
   accompaniment staves. The results go to `public/scores/` (`.abc` + `.json` note map).
+  A verse starts each time the tune's first note comes round again. A short last
+  time through (an Amen, a closing chord, a refrain sung once more) isn't counted
+  as a verse, a first verse that opens off the score's first note is found from the
+  music's start, and one time through too many is an introduction. To check every
+  hymn's verse timing against its words, compare each `public/scores/*.json`
+  `verses` list with the hymn's verse count.
+- **Introductions** are the standard Open Hymnal one: the melody alone playing the
+  tune's last line, then verse 1. A MIDI file that plays the whole tune first (all
+  parts) should be cut down to that; the 21 that did were, on 2026-11-23.
 - A score belongs to the tune, so hymns sharing a tune share it. The words under
   its notes are shown only when they are that hymn's own verse 1 (a psalm sung to
   a hymn's tune shows the notes alone), and the verse being sung is followed only

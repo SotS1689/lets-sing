@@ -286,6 +286,22 @@ export function noteMap(abc, midiBytes, verseCount) {
         map.parts.push({ ch, voice: key, notes: entries });
     }
     if (!map.parts.some((p) => p.ch === 0)) return { error: "no soprano part in the MIDI file" };
+    // How long each time through the tune lasts, the last one to the soprano's last note
+    const sop = map.parts.find((p) => p.ch === 0).notes;
+    const end = Math.max(...sop.map(([, t, d]) => t + d));
+    const passes = map.verses.map((t, i) => (map.verses[i + 1] ?? end) - t);
+    const usual = passes.length > 1 ? passes.slice(0, -1).sort((a, b) => a - b)[Math.floor((passes.length - 1) / 2)] : 0;
+    const shortLast = passes.length > 1 && passes.at(-1) < 0.6 * usual;
+    // A last time through far shorter than the rest (an Amen, a closing chord, a
+    // tag) is no verse: counting it puts every verse's words a verse late
+    if (shortLast) map.verses.pop();
+    // A first verse that opens on a note the score doesn't open with isn't found:
+    // with a verse missing and a whole time through the tune before the first one
+    // found, it starts with the music
+    const before = map.verses[0] - sop[0][1];
+    if (map.verses.length < verseCount && usual > 0 && before >= 0.6 * usual && before <= 1.6 * usual) {
+        map.verses.unshift(sop[0][1]);
+    }
     // An introduction that plays the whole tune looks like one verse too many
     if (map.verses.length === verseCount + 1) map.verses.shift();
     return { map };
