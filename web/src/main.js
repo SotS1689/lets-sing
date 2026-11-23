@@ -42,6 +42,15 @@ const SCORE_VIEWS = [
 // Learn mode: the part the singer is learning (0 S, 1 A, 2 T, 3 B)
 let learnPart = [0, 1, 2, 3].includes(store.get("learnPart")) ? store.get("learnPart") : 0;
 let scoreView = SCORE_VIEWS.some((v) => v.id === store.get("scoreView")) ? store.get("scoreView") : "scroll";
+// Shape notes on the sheet music. Not drawn yet: the choice is saved now so
+// src/score.js can read it once shape notes are built. "off", "4" (fa-sol-la-mi,
+// as in the Sacred Harp) or "7" (do-re-mi, Aikin's seven shapes).
+const SHAPE_NOTES = [
+    { id: "off", name: "Off", title: "Ordinary round notes" },
+    { id: "4", name: "4 shapes", title: "Fa, sol, la, mi, as in the Sacred Harp" },
+    { id: "7", name: "7 shapes", title: "Do, re, mi, fa, sol, la, ti, each with its own shape" },
+];
+let shapeNotes = SHAPE_NOTES.some((v) => v.id === store.get("shapeNotes")) ? store.get("shapeNotes") : "off";
 
 const applyVoice = (i) => player.setVoiceVolume(i, mix.on[i] ? mix.volumes[i] / 100 : 0);
 
@@ -62,6 +71,7 @@ document.getElementById("theme-toggle").addEventListener("click", () => {
     store.set("theme", next);
     applyTheme(next);
     toast(`Theme: ${next}`);
+    if (location.hash === "#/settings") showSettings();
 });
 
 // ---- Helpers ----------------------------------------------------------------
@@ -568,6 +578,7 @@ function renderAccount() {
             progress are kept in step on every device you sign in on.${state ? `<br><span class="sync-state">${state}</span>` : ""}</p>
         <div class="support-callout-actions">
             <button type="button" class="support-callout-btn support-callout-btn-secondary" data-account="out">Sign out</button>
+            <a href="#/settings" class="support-callout-btn support-callout-btn-secondary" data-account="settings">Settings</a>
             <button type="button" class="support-callout-btn support-callout-btn-text" data-account="close">Close</button>
         </div>` : `
         <div class="support-callout-arrow"></div>
@@ -576,6 +587,7 @@ function renderAccount() {
             every phone, tablet and computer you use. Optional: everything works without it.</p>
         <div class="support-callout-actions">
             <button type="button" class="support-callout-btn support-callout-btn-primary" data-account="in">Sign in with Google</button>
+            <a href="#/settings" class="support-callout-btn support-callout-btn-secondary" data-account="settings">Settings</a>
             <button type="button" class="support-callout-btn support-callout-btn-text" data-account="close">Not now</button>
         </div>`;
 }
@@ -605,7 +617,7 @@ accountBtn.addEventListener("click", () => {
 accountPanel.addEventListener("click", (e) => {
     const btn = e.target.closest("[data-account]");
     const action = btn?.dataset.account;
-    if (action === "close") closeAccountPanel();
+    if (action === "close" || action === "settings") closeAccountPanel();
     else if (action === "in") startSignIn(btn).then(() => account() && closeAccountPanel());
     else if (action === "out") {
         closeAccountPanel();
@@ -634,6 +646,85 @@ onSync(({ changed }) => {
     }
 });
 if (!EMBED) sync(); // does nothing unless signed in (or back from signing in)
+
+// ---- Settings page (#/settings, from the account panel) --------------------------
+// Choices kept on this device. The player and Learn save to the same places,
+// so changing one there changes it here too.
+
+/** A row of buttons with one pressed: `options` are { id, name, title }. */
+const choiceRow = (key, label, options, current) => `
+    <div class="view-switch setting-choice" role="group" aria-label="${label}" data-setting="${key}">
+        ${options.map((o) => `<button type="button" data-value="${o.id}" aria-pressed="${o.id === current}"${o.title ? ` title="${esc(o.title)}"` : ""}>${o.name}</button>`).join("")}
+    </div>`;
+
+function showSettings() {
+    stopPlayer();
+    setDownloadScope(null);
+    backBtn.hidden = false;
+    pageTitle.textContent = "Settings";
+    document.title = "Settings · Let's Sing";
+    const theme = store.get("theme", "system");
+    app.innerHTML = `
+        <section class="settings-page">
+            <div class="card">
+                <h3>Look</h3>
+                <div class="setting">
+                    <div><p class="setting-name">Colors</p><p class="hint">System follows your phone or computer.</p></div>
+                    ${choiceRow("theme", "Colors", THEMES.map((t) => ({ id: t, name: t[0].toUpperCase() + t.slice(1) })), theme)}
+                </div>
+            </div>
+            <div class="card">
+                <h3>Learn</h3>
+                <div class="setting">
+                    <div><p class="setting-name">Your part</p><p class="hint">The voice Learn listens for and scores you on.</p></div>
+                    ${choiceRow("learnPart", "Your part", VOICES.map((v, i) => ({ id: String(i), name: v })), String(learnPart))}
+                </div>
+            </div>
+            <div class="card">
+                <h3>Music</h3>
+                <div class="setting">
+                    <div><p class="setting-name">Instrument</p></div>
+                    <select id="setting-instrument" aria-label="Instrument">
+                        ${INSTRUMENTS.map((ins) => `<option value="${ins.id}"${ins.id === instrument.id ? " selected" : ""}>${ins.name}</option>`).join("")}
+                    </select>
+                </div>
+                <div class="setting">
+                    <div><p class="setting-name">Sheet music</p><p class="hint">Scroll shows one moving line; Page shows the whole hymn.</p></div>
+                    ${choiceRow("scoreView", "Sheet music", SCORE_VIEWS, scoreView)}
+                </div>
+                <div class="setting">
+                    <div><p class="setting-name">Shape notes <span class="badge">Coming soon</span></p>
+                        <p class="hint">Each note gets a shape for its place in the scale, to help you sing at sight.</p></div>
+                    ${choiceRow("shapeNotes", "Shape notes", SHAPE_NOTES, shapeNotes)}
+                </div>
+            </div>
+            <p class="hint settings-foot">These settings are kept on this device.</p>
+        </section>`;
+
+    app.querySelectorAll("[data-setting]").forEach((group) =>
+        group.addEventListener("click", (e) => {
+            const btn = e.target.closest("[data-value]");
+            if (!btn) return;
+            const key = group.dataset.setting, value = btn.dataset.value;
+            group.querySelectorAll("[data-value]").forEach((b) => b.setAttribute("aria-pressed", b === btn));
+            if (key === "theme") { store.set("theme", value); applyTheme(value); }
+            else if (key === "learnPart") { learnPart = +value; store.set("learnPart", learnPart); }
+            else if (key === "scoreView") { scoreView = value; store.set("scoreView", value); }
+            else if (key === "shapeNotes") {
+                shapeNotes = value;
+                store.set("shapeNotes", value);
+                if (value !== "off") toast("Saved. Shape notes will show on the music in a coming update.", 3000);
+            }
+            track("setting", { name: key, value });
+        })
+    );
+    app.querySelector("#setting-instrument").addEventListener("change", (e) => {
+        instrument = instrumentById(e.target.value);
+        store.set("instrument", instrument.id);
+        player.setInstrument(instrument.program);
+        track("setting", { name: "instrument", value: instrument.id });
+    });
+}
 
 // ---- Paste a list into favorites ------------------------------------------------
 // Each pasted line is matched to its likeliest hymn (src/match.js). Lines it's
@@ -1729,6 +1820,7 @@ function route() {
         app.innerHTML = "";
     }
     else if (location.hash === "#/favorites/paste") showPaste();
+    else if (location.hash === "#/settings") showSettings();
     else if (location.hash === "#/learn" || location.hash === "#/progress") {
         if (location.hash === "#/progress") history.replaceState(null, "", "#/learn");
         showLearn();

@@ -709,3 +709,24 @@ input[type="range"] { width: 100%; margin: 0; accent-color: var(--primary); }
 .sync-card .learn-sub { margin: 0 0 10px; }
 .sync-line { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 12px; margin-bottom: 12px; font-size: 0.875rem; color: var(--text-2); overflow-wrap: anywhere; }
 .sync-line strong { color: var(--text); }
+
+/* Settings page (#/settings): one row per setting, its choices to the right (below on a phone) */
+.settings-page { max-width: 640px; margin: 0 auto; }
+.setting { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+.card h3 + .setting { border-top: 0; padding-top: 4px; }
+.setting > div:first-child { flex: 1 1 220px; min-width: 0; }
+.setting-name { margin: 0; font-weight: 600; }
+.setting .hint { margin: 2px 0 0; }
+.setting-choice button { padding: 7px 12px; font-size: 0.85rem; }
+.setting select {
+    min-height: 34px;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.875rem;
+}
+.settings-foot { text-align: center; }
+#account-panel a.support-callout-btn { text-decoration: none; }
